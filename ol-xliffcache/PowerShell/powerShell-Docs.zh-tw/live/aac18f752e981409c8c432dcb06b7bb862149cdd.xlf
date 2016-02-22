@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-us" target-language="zh-tw" original="2/22/2016 3:08:13 AM" tool-id="MarkdownTransformer" product-name="N/A" product-version="N/A" build-num="1">
+    <header>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aac18f752e981409c8c432dcb06b7bb862149cdd</xliffext:olfilehash>
+      <tool tool-id="MarkdownTransformer" tool-name="MarkdownToXliff" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group extype="content">
+        <group id="101">
+          <trans-unit id="101" xml:space="preserve">
+            <source>Enacting configurations</source>
+            <target state="new">Enacting configurations</target>
+          </trans-unit>
+          <trans-unit id="102" xml:space="preserve">
+            <source>Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</source>
+            <target state="new">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</target>
+          </trans-unit>
+          <trans-unit id="103" xml:space="preserve">
+            <source>There are two ways to enact PowerShell Desired State Configuration (DSC) configurations: push mode and pull mode.</source>
+            <target state="new">There are two ways to enact PowerShell Desired State Configuration (DSC) configurations: push mode and pull mode.</target>
+          </trans-unit>
+          <trans-unit id="104" xml:space="preserve">
+            <source>Push mode</source>
+            <target state="new">Push mode</target>
+          </trans-unit>
+          <trans-unit id="105" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Push mode<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Push mode<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="106" xml:space="preserve">
+            <source>Push mode refers to a user actively applying a configuration to a target node by calling the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-DscConfiguration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</source>
+            <target state="new">Push mode refers to a user actively applying a configuration to a target node by calling the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-DscConfiguration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet.</target>
+          </trans-unit>
+          <trans-unit id="107" xml:space="preserve">
+            <source>After creating and compiling a configuration, you can enact it in push mode by calling the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-DscConfiguration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet, setting the -Path parameter of the cmdlet to the path where the configuration MOF is located.</source>
+            <target state="new">After creating and compiling a configuration, you can enact it in push mode by calling the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-DscConfiguration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> cmdlet, setting the -Path parameter of the cmdlet to the path where the configuration MOF is located.</target>
+          </trans-unit>
+          <trans-unit id="108" xml:space="preserve">
+            <source>For example, if the configuration MOF is locted at <bpt id="2">&lt;code&gt;</bpt>C:\DSC\Configurations\localhost.mof<ept id="2">&lt;/code&gt;</ept>, you would apply it to the local machine with the following command:</source>
+            <target state="new">For example, if the configuration MOF is locted at <bpt id="2">&lt;code&gt;</bpt>C:\DSC\Configurations\localhost.mof<ept id="2">&lt;/code&gt;</ept>, you would apply it to the local machine with the following command:</target>
+          </trans-unit>
+          <trans-unit id="109" xml:space="preserve">
+            <source><bpt id="1">&lt;code&gt;</bpt>Start-DscConfiguration -Path 'C:\DSC\Configurations'<ept id="1">&lt;/code&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;code&gt;</bpt>Start-DscConfiguration -Path 'C:\DSC\Configurations'<ept id="1">&lt;/code&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="110" xml:space="preserve">
+            <source><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: By default, DSC runs a configuration as a background job.</source>
+            <target state="new"><bpt id="1">&lt;strong&gt;</bpt>Note<ept id="1">&lt;/strong&gt;</ept>: By default, DSC runs a configuration as a background job.</target>
+          </trans-unit>
+          <trans-unit id="111" xml:space="preserve">
+            <source>To run the configuration interactively, call the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-DscConfiguration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with the <bpt id="4">&lt;strong&gt;</bpt>-Wait<ept id="4">&lt;/strong&gt;</ept> parameter.</source>
+            <target state="new">To run the configuration interactively, call the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Start-DscConfiguration<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> with the <bpt id="4">&lt;strong&gt;</bpt>-Wait<ept id="4">&lt;/strong&gt;</ept> parameter.</target>
+          </trans-unit>
+          <trans-unit id="112" xml:space="preserve">
+            <source>Cloud deployment engines typically leverage Pull Mode inside of a broader deployment solution.</source>
+            <target state="new">Cloud deployment engines typically leverage Pull Mode inside of a broader deployment solution.</target>
+          </trans-unit>
+          <trans-unit id="113" xml:space="preserve">
+            <source>For example, Microsoft Azure provides a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>DSC Extension<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for virtual machines.</source>
+            <target state="new">For example, Microsoft Azure provides a <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>DSC Extension<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> for virtual machines.</target>
+          </trans-unit>
+          <trans-unit id="114" xml:space="preserve">
+            <source>This provides an option to include a configuration script and all required DSC modules in an archive file that is extracted and executed within a virtual machine as part of a deployment.</source>
+            <target state="new">This provides an option to include a configuration script and all required DSC modules in an archive file that is extracted and executed within a virtual machine as part of a deployment.</target>
+          </trans-unit>
+          <trans-unit id="115" xml:space="preserve">
+            <source>Pull mode</source>
+            <target state="new">Pull mode</target>
+          </trans-unit>
+          <trans-unit id="116" xml:space="preserve">
+            <source><bpt id="1">&lt;linkText&gt;</bpt>Pull Mode<ept id="1">&lt;/linkText&gt;</ept></source>
+            <target state="new"><bpt id="1">&lt;linkText&gt;</bpt>Pull Mode<ept id="1">&lt;/linkText&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="117" xml:space="preserve">
+            <source>In pull mode, pull clients are configured to get their desired state configurations from a remote pull server.</source>
+            <target state="new">In pull mode, pull clients are configured to get their desired state configurations from a remote pull server.</target>
+          </trans-unit>
+          <trans-unit id="118" xml:space="preserve">
+            <source>Likewise, the pull server has been set up to host the DSC service, and has been provisioned with the configurations and resources that are required by the pull clients.</source>
+            <target state="new">Likewise, the pull server has been set up to host the DSC service, and has been provisioned with the configurations and resources that are required by the pull clients.</target>
+          </trans-unit>
+          <trans-unit id="119" xml:space="preserve">
+            <source>Each one of the pull clients has a scheduled task that performs a periodic compliance check on the configuration of the node.</source>
+            <target state="new">Each one of the pull clients has a scheduled task that performs a periodic compliance check on the configuration of the node.</target>
+          </trans-unit>
+          <trans-unit id="120" xml:space="preserve">
+            <source>When the event is triggered the first time, it causes the Local Configuration Manager (LCM) on the pull client to validate the configuration.</source>
+            <target state="new">When the event is triggered the first time, it causes the Local Configuration Manager (LCM) on the pull client to validate the configuration.</target>
+          </trans-unit>
+          <trans-unit id="121" xml:space="preserve">
+            <source>If the pull client is configured as desired, nothing happens.</source>
+            <target state="new">If the pull client is configured as desired, nothing happens.</target>
+          </trans-unit>
+          <trans-unit id="122" xml:space="preserve">
+            <source>Otherwise, the LCM makes a request to the pull server to get a given configuration.</source>
+            <target state="new">Otherwise, the LCM makes a request to the pull server to get a given configuration.</target>
+          </trans-unit>
+          <trans-unit id="123" xml:space="preserve">
+            <source>If that configuration exists on the pull server, and it passes initial validation checks, the configuration is transmitted to the pull client, where it is then executed by the LCM.</source>
+            <target state="new">If that configuration exists on the pull server, and it passes initial validation checks, the configuration is transmitted to the pull client, where it is then executed by the LCM.</target>
+          </trans-unit>
+          <trans-unit id="124" xml:space="preserve">
+            <source>For more information on deploying a DSC Pull Server on premises, see the DSC Pull Server Configuration and Planning Guide.</source>
+            <target state="new">For more information on deploying a DSC Pull Server on premises, see the DSC Pull Server Configuration and Planning Guide.</target>
+          </trans-unit>
+          <trans-unit id="125" xml:space="preserve">
+            <source>If you would prefer to take advantage of an online service to host Pull Server functionality, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Automation DSC<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> service.</source>
+            <target state="new">If you would prefer to take advantage of an online service to host Pull Server functionality, see the <bpt id="2CapsExtId1">&lt;link&gt;</bpt><bpt id="2CapsExtId2">&lt;linkText&gt;</bpt>Azure Automation DSC<ept id="2CapsExtId2">&lt;/linkText&gt;</ept><bpt id="2CapsExtId3">&lt;title&gt;</bpt><ept id="2CapsExtId3">&lt;/title&gt;</ept><ept id="2CapsExtId1">&lt;/link&gt;</ept> service.</target>
+          </trans-unit>
+          <trans-unit id="126" xml:space="preserve">
+            <source>The following topics explain how to set up pull servers and clients:</source>
+            <target state="new">The following topics explain how to set up pull servers and clients:</target>
+          </trans-unit>
+          <trans-unit id="127" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Setting up a web pull server<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Setting up a web pull server<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="128" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Setting up an SMB pull server<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Setting up an SMB pull server<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+          <trans-unit id="129" xml:space="preserve">
+            <source><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configuring a pull client<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></source>
+            <target state="new"><bpt id="1CapsExtId1">&lt;link&gt;</bpt><bpt id="1CapsExtId2">&lt;linkText&gt;</bpt>Configuring a pull client<ept id="1CapsExtId2">&lt;/linkText&gt;</ept><bpt id="1CapsExtId3">&lt;title&gt;</bpt><ept id="1CapsExtId3">&lt;/title&gt;</ept><ept id="1CapsExtId1">&lt;/link&gt;</ept></target>
+          </trans-unit>
+        </group>
+      </group>
+    </body>
+  </file>
+</xliff>
