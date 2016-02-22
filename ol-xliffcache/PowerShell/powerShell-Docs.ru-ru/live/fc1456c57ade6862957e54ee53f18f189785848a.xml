@@ -1,0 +1,296 @@
+﻿<markdown_skeleton_root>
+  <block_element>
+    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="8a91029d-59ae-4b79-aebb-c1b78d15adfe"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="8a91029d-59ae-4b79-aebb-c1b78d15adfe">
+        <segment
+          trans_unit_id="101">
+          <SegmentId>6e0e51f8-cd79-4169-8367-78f1b481abf9</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="101"
+            trans_unit_id="101-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>1</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownFencedCodeBlock"
+        item_id="77d33ecc-4cac-45b8-9a2b-a5a7236d0b61"
+        item_type="FencedCodeBlock"
+        item_footer=""
+        trans_unit_id="77d33ecc-4cac-45b8-9a2b-a5a7236d0b61">
+        <codeblock_wraper>```</codeblock_wraper>
+        <code_block>function QueryNodeInformation
+{
+Param (      
+       [string] $Uri =
+"http://localhost:7070/PSDSCComplianceServer.svc/Status",                         
+       [string] $ContentType = "application/json"           
+     )
+
+  Write-Host "Querying node information from pull server URI  = $Uri" -ForegroundColor Green
+
+  Write-Host "Querying node status in content type  = $ContentType " -ForegroundColor Green
+
+   $response = Invoke-WebRequest -Uri $Uri -Method Get -ContentType $ContentType -UseDefaultCredentials -Headers 
+    @{Accept = $ContentType}
+
+   if($response.StatusCode -ne 200)
+ {
+     Write-Host "node information was not retrieved." -ForegroundColor Red
+ }
+
+ $jsonResponse = ConvertFrom-Json $response.Content
+
+  return $jsonResponse
+}</code_block>
+        <fenced_code_lang>powershell</fenced_code_lang>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="fc065d07-7451-4043-972c-3a732ae35fc5"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="fc065d07-7451-4043-972c-3a732ae35fc5">
+        <Lines>
+          <MarkdownLine>
+            <LineId>a12453e4-b130-4380-94d6-3848e531eda5</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="102">
+                <SegmentId>a34be309-ebda-4263-964e-d7b4d8bac02b</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="102"
+                  trans_unit_id="102-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <CodeSpanItem
+                  internal_item_id="2"
+                  internal_item_parent_id="102"
+                  trans_unit_id="102-2"
+                  internal_item_type="CodeSpan">
+                  <internal_items />
+                  <ItemValue>Uri</ItemValue>
+                </CodeSpanItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="102"
+                  trans_unit_id="102-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="103">
+                <SegmentId>6f07a15d-7c0b-4eff-a729-e5f7fffdc531</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <CodeSpanItem
+                  internal_item_id="2"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-2"
+                  internal_item_type="CodeSpan">
+                  <internal_items />
+                  <ItemValue>ContentType</ItemValue>
+                </CodeSpanItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <CodeSpanItem
+                  internal_item_id="4"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-4"
+                  internal_item_type="CodeSpan">
+                  <internal_items />
+                  <ItemValue>application/xml</ItemValue>
+                </CodeSpanItem>
+                <InternalNormalItem
+                  internal_item_id="5"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-5"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="102">
+            <SegmentId>a34be309-ebda-4263-964e-d7b4d8bac02b</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="102"
+              trans_unit_id="102-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <CodeSpanItem
+              internal_item_id="2"
+              internal_item_parent_id="102"
+              trans_unit_id="102-2"
+              internal_item_type="CodeSpan">
+              <internal_items />
+              <ItemValue>Uri</ItemValue>
+            </CodeSpanItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="102"
+              trans_unit_id="102-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="103">
+            <SegmentId>6f07a15d-7c0b-4eff-a729-e5f7fffdc531</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="103"
+              trans_unit_id="103-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <CodeSpanItem
+              internal_item_id="2"
+              internal_item_parent_id="103"
+              trans_unit_id="103-2"
+              internal_item_type="CodeSpan">
+              <internal_items />
+              <ItemValue>ContentType</ItemValue>
+            </CodeSpanItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="103"
+              trans_unit_id="103-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <CodeSpanItem
+              internal_item_id="4"
+              internal_item_parent_id="103"
+              trans_unit_id="103-4"
+              internal_item_type="CodeSpan">
+              <internal_items />
+              <ItemValue>application/xml</ItemValue>
+            </CodeSpanItem>
+            <InternalNormalItem
+              internal_item_id="5"
+              internal_item_parent_id="103"
+              trans_unit_id="103-5"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="c20a8a35-4011-495c-9193-99e91caedcab"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="c20a8a35-4011-495c-9193-99e91caedcab">
+        <Lines>
+          <MarkdownLine>
+            <LineId>2d46a4e1-404b-43c2-84d2-0c3ce537782c</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="104">
+                <SegmentId>093b09d1-0c56-4936-a925-9afb5cb1a6f1</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <CodeSpanItem
+                  internal_item_id="2"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-2"
+                  internal_item_type="CodeSpan">
+                  <internal_items />
+                  <ItemValue>$json</ItemValue>
+                </CodeSpanItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="104">
+            <SegmentId>093b09d1-0c56-4936-a925-9afb5cb1a6f1</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="104"
+              trans_unit_id="104-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <CodeSpanItem
+              internal_item_id="2"
+              internal_item_parent_id="104"
+              trans_unit_id="104-2"
+              internal_item_type="CodeSpan">
+              <internal_items />
+              <ItemValue>$json</ItemValue>
+            </CodeSpanItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="104"
+              trans_unit_id="104-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownFencedCodeBlock"
+        item_id="ca213b14-f6ae-4ea1-b06c-d9f13aaa5fe3"
+        item_type="FencedCodeBlock"
+        item_footer="&#xA;&#xA;"
+        trans_unit_id="ca213b14-f6ae-4ea1-b06c-d9f13aaa5fe3">
+        <codeblock_wraper>```</codeblock_wraper>
+        <code_block>$json = QueryNodeInformation –Uri http://localhost:7070/PSDSCComplianceServer.svc/Status 
+
+$json.value | Format-Table TargetName, ConfigurationId, ServerChecksum, NodeCompliant, LastComplianceTime, StatusCode</code_block>
+        <fenced_code_lang>powershell</fenced_code_lang>
+      </MarkdownBlockBase>
+    </ArrayOfMarkdownBlockBase>
+  </block_element>
+  <references>
+    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </references>
+</markdown_skeleton_root>
