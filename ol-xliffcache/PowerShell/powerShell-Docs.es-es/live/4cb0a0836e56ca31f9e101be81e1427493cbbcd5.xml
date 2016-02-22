@@ -1,0 +1,373 @@
+﻿<markdown_skeleton_root>
+  <block_element>
+    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="d7d95dda-5bbf-4a5e-a918-8448b46e4e16"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="d7d95dda-5bbf-4a5e-a918-8448b46e4e16">
+        <segment
+          trans_unit_id="101">
+          <SegmentId>10fd7f43-a72a-4070-9729-498012c488a1</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="101"
+            trans_unit_id="101-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>1</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownBlockQuote"
+        item_id="cf7f5778-1958-4584-90be-aec8b7385281"
+        item_type="BlockQuote"
+        item_footer=""
+        trans_unit_id="cf7f5778-1958-4584-90be-aec8b7385281">
+        <MarkdownParagraphBlock
+          item_id="05c1865e-34f0-4c50-a153-735983832f4c"
+          item_type="NormalParagraph"
+          item_footer="footer_not_set"
+          trans_unit_id="05c1865e-34f0-4c50-a153-735983832f4c">
+          <Lines>
+            <MarkdownLine>
+              <LineId>b068119f-b260-4804-a002-c28bacc119d1</LineId>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="102">
+                  <SegmentId>88fe0816-033d-42bd-a250-7091ed41b559</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="102"
+                    trans_unit_id="102-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+              <PrefixWSLength>1</PrefixWSLength>
+              <SuffixWSLength>0</SuffixWSLength>
+            </MarkdownLine>
+          </Lines>
+          <paragraph_segments>
+            <MarkdownSegment
+              trans_unit_id="102">
+              <SegmentId>88fe0816-033d-42bd-a250-7091ed41b559</SegmentId>
+              <InternalNormalItem
+                internal_item_id="1"
+                internal_item_parent_id="102"
+                trans_unit_id="102-1"
+                internal_item_type="Normal">
+                <internal_items />
+              </InternalNormalItem>
+            </MarkdownSegment>
+          </paragraph_segments>
+        </MarkdownParagraphBlock>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="01deeadd-e0b2-46a6-9b64-95540316ebd2"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="01deeadd-e0b2-46a6-9b64-95540316ebd2">
+        <Lines>
+          <MarkdownLine>
+            <LineId>be865ae5-ae09-4dcb-81aa-40e3035bbe1d</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="103">
+                <SegmentId>09b6a3c1-0534-43ba-ac3d-cc7f31ae1cd1</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="104">
+                <SegmentId>c7eb8fc7-1d60-4e18-b1dd-5b85153394b2</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="103">
+            <SegmentId>09b6a3c1-0534-43ba-ac3d-cc7f31ae1cd1</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="103"
+              trans_unit_id="103-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="104">
+            <SegmentId>c7eb8fc7-1d60-4e18-b1dd-5b85153394b2</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="104"
+              trans_unit_id="104-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownListBlock"
+        item_id="6eb92c9e-19ea-498c-bf25-90fe4cbbc8fd"
+        item_type="List"
+        item_footer=""
+        trans_unit_id="6eb92c9e-19ea-498c-bf25-90fe4cbbc8fd">
+        <inner_list_items>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="d9f19d41-ccfb-4978-b4f6-7f11177cbeba"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="d9f19d41-ccfb-4978-b4f6-7f11177cbeba">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>dc92b15f-c9f1-4171-9a79-2f4649aa16b5</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="105">
+                      <SegmentId>07d5df51-94ba-4678-8c52-21050cad7aff</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="105"
+                        trans_unit_id="105-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Setting up a pull client using configuration names</internal_link_text>
+                        <internal_link_url>pullClientConfigNames.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="105">
+                  <SegmentId>07d5df51-94ba-4678-8c52-21050cad7aff</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="105"
+                    trans_unit_id="105-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Setting up a pull client using configuration names</internal_link_text>
+                    <internal_link_url>pullClientConfigNames.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="18ddbd5d-580a-4f5a-85f6-94703e0f0e43"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="18ddbd5d-580a-4f5a-85f6-94703e0f0e43">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>a89fbf01-b101-45ee-9792-348cb8aac8dd</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="106">
+                      <SegmentId>1f88ac93-6902-493a-a162-1c9a9a0bec4d</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="106"
+                        trans_unit_id="106-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Setting up a pull client using configuration ID</internal_link_text>
+                        <internal_link_url>pullClientConfigID.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="106">
+                  <SegmentId>1f88ac93-6902-493a-a162-1c9a9a0bec4d</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="106"
+                    trans_unit_id="106-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Setting up a pull client using configuration ID</internal_link_text>
+                    <internal_link_url>pullClientConfigID.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+        </inner_list_items>
+        <ListType>Charactor</ListType>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownBlockQuote"
+        item_id="8ec87105-95d9-47dc-91e9-22276b698dda"
+        item_type="BlockQuote"
+        item_footer="&#xA;&#xA;"
+        trans_unit_id="8ec87105-95d9-47dc-91e9-22276b698dda">
+        <MarkdownParagraphBlock
+          item_id="9f9dad99-ff35-4aba-89ed-b1b651263ad9"
+          item_type="NormalParagraph"
+          item_footer="footer_not_set"
+          trans_unit_id="9f9dad99-ff35-4aba-89ed-b1b651263ad9">
+          <Lines>
+            <MarkdownLine>
+              <LineId>867afdec-eb3f-4566-8651-47137950b4b3</LineId>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="107">
+                  <SegmentId>6f2477db-d277-4ec8-94ff-02162be0b585</SegmentId>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="1"
+                    internal_item_parent_id="107"
+                    trans_unit_id="107-1"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="2"
+                    internal_item_parent_id="107"
+                    trans_unit_id="107-2"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+                <MarkdownSegment
+                  trans_unit_id="108">
+                  <SegmentId>8a2e7daa-f134-492e-a974-536f8cd6703e</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <LinkItem
+                    internal_item_id="2"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-2"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Setting up a pull client using configuration ID in PowerShell 4.0</internal_link_text>
+                    <internal_link_url>pullClientConfigID4.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+              <PrefixWSLength>1</PrefixWSLength>
+              <SuffixWSLength>0</SuffixWSLength>
+            </MarkdownLine>
+          </Lines>
+          <paragraph_segments>
+            <MarkdownSegment
+              trans_unit_id="107">
+              <SegmentId>6f2477db-d277-4ec8-94ff-02162be0b585</SegmentId>
+              <MarkdownInternalBoldItem
+                internal_item_id="1"
+                internal_item_parent_id="107"
+                trans_unit_id="107-1"
+                internal_item_type="Bold">
+                <internal_items />
+                <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+              </MarkdownInternalBoldItem>
+              <InternalNormalItem
+                internal_item_id="2"
+                internal_item_parent_id="107"
+                trans_unit_id="107-2"
+                internal_item_type="Normal">
+                <internal_items />
+              </InternalNormalItem>
+            </MarkdownSegment>
+            <MarkdownSegment
+              trans_unit_id="108">
+              <SegmentId>8a2e7daa-f134-492e-a974-536f8cd6703e</SegmentId>
+              <InternalNormalItem
+                internal_item_id="1"
+                internal_item_parent_id="108"
+                trans_unit_id="108-1"
+                internal_item_type="Normal">
+                <internal_items />
+              </InternalNormalItem>
+              <LinkItem
+                internal_item_id="2"
+                internal_item_parent_id="108"
+                trans_unit_id="108-2"
+                internal_item_type="Link">
+                <internal_items />
+                <internal_link_type>Inline</internal_link_type>
+                <internal_link_text>Setting up a pull client using configuration ID in PowerShell 4.0</internal_link_text>
+                <internal_link_url>pullClientConfigID4.md</internal_link_url>
+                <internal_link_title />
+              </LinkItem>
+              <InternalNormalItem
+                internal_item_id="3"
+                internal_item_parent_id="108"
+                trans_unit_id="108-3"
+                internal_item_type="Normal">
+                <internal_items />
+              </InternalNormalItem>
+            </MarkdownSegment>
+          </paragraph_segments>
+        </MarkdownParagraphBlock>
+      </MarkdownBlockBase>
+    </ArrayOfMarkdownBlockBase>
+  </block_element>
+  <references>
+    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </references>
+</markdown_skeleton_root>
