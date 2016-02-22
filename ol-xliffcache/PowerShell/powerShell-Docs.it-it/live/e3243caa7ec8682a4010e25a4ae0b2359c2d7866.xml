@@ -1,0 +1,827 @@
+﻿<markdown_skeleton_root>
+  <block_element>
+    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="8f7b4a79-42c3-46eb-9897-13393ac314ae"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="8f7b4a79-42c3-46eb-9897-13393ac314ae">
+        <segment
+          trans_unit_id="101">
+          <SegmentId>79386705-2f61-4315-af0e-8ec5a1d3bbfb</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="101"
+            trans_unit_id="101-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>1</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownBlockQuote"
+        item_id="b4a6be2a-9498-412f-9958-0545568da0a4"
+        item_type="BlockQuote"
+        item_footer=""
+        trans_unit_id="b4a6be2a-9498-412f-9958-0545568da0a4">
+        <MarkdownParagraphBlock
+          item_id="33043be9-efb5-42cf-8648-d37f18f6b2b5"
+          item_type="NormalParagraph"
+          item_footer="footer_not_set"
+          trans_unit_id="33043be9-efb5-42cf-8648-d37f18f6b2b5">
+          <Lines>
+            <MarkdownLine>
+              <LineId>7b599521-50bf-4241-9f37-a610cfe530fc</LineId>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="102">
+                  <SegmentId>f1544cbe-217c-40de-8197-a8859530502c</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="102"
+                    trans_unit_id="102-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+              <PrefixWSLength>1</PrefixWSLength>
+              <SuffixWSLength>0</SuffixWSLength>
+            </MarkdownLine>
+          </Lines>
+          <paragraph_segments>
+            <MarkdownSegment
+              trans_unit_id="102">
+              <SegmentId>f1544cbe-217c-40de-8197-a8859530502c</SegmentId>
+              <InternalNormalItem
+                internal_item_id="1"
+                internal_item_parent_id="102"
+                trans_unit_id="102-1"
+                internal_item_type="Normal">
+                <internal_items />
+              </InternalNormalItem>
+            </MarkdownSegment>
+          </paragraph_segments>
+        </MarkdownParagraphBlock>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="28387188-e823-41d2-a099-8fae3e05b00a"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="28387188-e823-41d2-a099-8fae3e05b00a">
+        <Lines>
+          <MarkdownLine>
+            <LineId>12fe41ef-a79e-4777-85ca-ce5a0dac9db1</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="103">
+                <SegmentId>c4ee6ff1-f02d-47cb-9d64-7865fb7bc311</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="104">
+                <SegmentId>977c15ff-0f32-41c2-b8fa-892ca8ed9230</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="105">
+                <SegmentId>7638aad1-1d35-467d-83e6-a0e9a1173e6f</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="105"
+                  trans_unit_id="105-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <LinkItem
+                  internal_item_id="2"
+                  internal_item_parent_id="105"
+                  trans_unit_id="105-2"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Build Custom Windows PowerShell Desired State Configuration Resources</internal_link_text>
+                  <internal_link_url>authoringResource.md</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="103">
+            <SegmentId>c4ee6ff1-f02d-47cb-9d64-7865fb7bc311</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="103"
+              trans_unit_id="103-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="104">
+            <SegmentId>977c15ff-0f32-41c2-b8fa-892ca8ed9230</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="104"
+              trans_unit_id="104-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="105">
+            <SegmentId>7638aad1-1d35-467d-83e6-a0e9a1173e6f</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="105"
+              trans_unit_id="105-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <LinkItem
+              internal_item_id="2"
+              internal_item_parent_id="105"
+              trans_unit_id="105-2"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Build Custom Windows PowerShell Desired State Configuration Resources</internal_link_text>
+              <internal_link_url>authoringResource.md</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownListBlock"
+        item_id="f5b5803e-04f1-4828-a732-17eae85a274e"
+        item_type="List"
+        item_footer="&#xA;&#xA;"
+        trans_unit_id="f5b5803e-04f1-4828-a732-17eae85a274e">
+        <inner_list_items>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="5fbda473-e28e-47cd-a01e-571cf6838684"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="5fbda473-e28e-47cd-a01e-571cf6838684">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>64745b2e-aa40-4811-94f4-e64efd140ce3</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="106">
+                      <SegmentId>2720bfa3-eda0-40f3-8c91-2c1b703955a3</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="106"
+                        trans_unit_id="106-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Archive Resource</internal_link_text>
+                        <internal_link_url>archiveResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="106">
+                  <SegmentId>2720bfa3-eda0-40f3-8c91-2c1b703955a3</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="106"
+                    trans_unit_id="106-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Archive Resource</internal_link_text>
+                    <internal_link_url>archiveResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="0519d791-f7ea-45ac-8f18-aa685786c2d7"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="0519d791-f7ea-45ac-8f18-aa685786c2d7">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>c6fa3c11-d559-4cf4-9fb4-4e1a6259785e</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="107">
+                      <SegmentId>bd08aff3-25c9-4217-ba54-7619e880a292</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="107"
+                        trans_unit_id="107-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Environment Resource</internal_link_text>
+                        <internal_link_url>environmentResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="107">
+                  <SegmentId>bd08aff3-25c9-4217-ba54-7619e880a292</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="107"
+                    trans_unit_id="107-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Environment Resource</internal_link_text>
+                    <internal_link_url>environmentResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="5d97d5ee-64a0-48df-b35d-09a5c51a8483"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="5d97d5ee-64a0-48df-b35d-09a5c51a8483">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>f625b33a-302e-40b3-af53-6a998694d04c</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="108">
+                      <SegmentId>7798e4b7-512d-47c8-b101-bdad64549021</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="108"
+                        trans_unit_id="108-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>File Resource</internal_link_text>
+                        <internal_link_url>fileResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="108">
+                  <SegmentId>7798e4b7-512d-47c8-b101-bdad64549021</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="108"
+                    trans_unit_id="108-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>File Resource</internal_link_text>
+                    <internal_link_url>fileResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="f1284939-35d6-4588-b932-7d399d48173e"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="f1284939-35d6-4588-b932-7d399d48173e">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>b6ecc0f6-ee74-43d6-adb1-4f63dc8a2519</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="109">
+                      <SegmentId>205b5d82-a9ed-493d-9437-1a13976ee6ce</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="109"
+                        trans_unit_id="109-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Group Resource</internal_link_text>
+                        <internal_link_url>groupResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="109">
+                  <SegmentId>205b5d82-a9ed-493d-9437-1a13976ee6ce</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="109"
+                    trans_unit_id="109-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Group Resource</internal_link_text>
+                    <internal_link_url>groupResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="ae55063c-4b70-470a-afa1-10b13dcb911c"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="ae55063c-4b70-470a-afa1-10b13dcb911c">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>40efc674-cdd2-42bb-bf45-e7ce04730c1d</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="110">
+                      <SegmentId>48b22a2c-c605-433e-8697-ffe81c120ff9</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="110"
+                        trans_unit_id="110-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Log Resource</internal_link_text>
+                        <internal_link_url>logResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="110">
+                  <SegmentId>48b22a2c-c605-433e-8697-ffe81c120ff9</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="110"
+                    trans_unit_id="110-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Log Resource</internal_link_text>
+                    <internal_link_url>logResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="73c04e18-dbb5-4c59-9648-1d125547a5a9"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="73c04e18-dbb5-4c59-9648-1d125547a5a9">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>7a4a2ade-c66b-4869-ab3b-6ec8562add94</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="111">
+                      <SegmentId>3f1f51b1-acd9-4571-a624-03f2485f5ed5</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="111"
+                        trans_unit_id="111-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Package Resource</internal_link_text>
+                        <internal_link_url>PackageResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="111">
+                  <SegmentId>3f1f51b1-acd9-4571-a624-03f2485f5ed5</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="111"
+                    trans_unit_id="111-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Package Resource</internal_link_text>
+                    <internal_link_url>PackageResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="2864b9d7-328b-43bb-b900-356236500372"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="2864b9d7-328b-43bb-b900-356236500372">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>55172ad9-e5df-4802-81fd-b8e8179439c5</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="112">
+                      <SegmentId>5f32c5f7-c06e-4778-aab3-0d59f3906472</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="112"
+                        trans_unit_id="112-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Registry Resource</internal_link_text>
+                        <internal_link_url>registryResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="112">
+                  <SegmentId>5f32c5f7-c06e-4778-aab3-0d59f3906472</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="112"
+                    trans_unit_id="112-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Registry Resource</internal_link_text>
+                    <internal_link_url>registryResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="f5f73c76-71ce-467a-8146-3e0705481848"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="f5f73c76-71ce-467a-8146-3e0705481848">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>7a1c91cb-8c07-4af3-8922-e5a651d52744</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="113">
+                      <SegmentId>f8b58438-caa7-4922-a99e-38d6ee69e0c5</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="113"
+                        trans_unit_id="113-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Script Resource</internal_link_text>
+                        <internal_link_url>scriptResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="113">
+                  <SegmentId>f8b58438-caa7-4922-a99e-38d6ee69e0c5</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="113"
+                    trans_unit_id="113-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Script Resource</internal_link_text>
+                    <internal_link_url>scriptResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="9621e889-0b2b-4274-9311-79effb74a5a1"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="9621e889-0b2b-4274-9311-79effb74a5a1">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>5a15f2a0-dd72-43e3-a37b-6f2db4f6e1c1</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="114">
+                      <SegmentId>a137a385-96b6-4d99-a7d7-3277831a89af</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="114"
+                        trans_unit_id="114-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Service Resource</internal_link_text>
+                        <internal_link_url>serviceResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="114">
+                  <SegmentId>a137a385-96b6-4d99-a7d7-3277831a89af</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="114"
+                    trans_unit_id="114-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Service Resource</internal_link_text>
+                    <internal_link_url>serviceResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="9750422c-d7ce-4d9f-b855-33f01f62949c"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="9750422c-d7ce-4d9f-b855-33f01f62949c">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>894494cd-c9d7-4960-95fc-28c5bc6a3338</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="115">
+                      <SegmentId>c5cd2dc0-a65f-46a9-9c89-30b94b1d8191</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>User Resource</internal_link_text>
+                        <internal_link_url>userResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="115">
+                  <SegmentId>c5cd2dc0-a65f-46a9-9c89-30b94b1d8191</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>User Resource</internal_link_text>
+                    <internal_link_url>userResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="e9ec25a0-5f5e-46b8-beff-ba1588009ff8"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="e9ec25a0-5f5e-46b8-beff-ba1588009ff8">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>fdcb24fd-c3d8-40bd-936e-871b5eb178b4</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="116">
+                      <SegmentId>1d17ccb9-03d5-4fa4-ba08-4872caa9a02f</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="116"
+                        trans_unit_id="116-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Windows Feature Resource</internal_link_text>
+                        <internal_link_url>windowsFeatureResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="116">
+                  <SegmentId>1d17ccb9-03d5-4fa4-ba08-4872caa9a02f</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="116"
+                    trans_unit_id="116-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Windows Feature Resource</internal_link_text>
+                    <internal_link_url>windowsFeatureResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="c527efdd-eb7f-4acd-80eb-d60e5c68cdec"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="c527efdd-eb7f-4acd-80eb-d60e5c68cdec">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>3403c7a8-1acd-48ba-8f8e-e7d134900866</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="117">
+                      <SegmentId>42acbfaa-5d5d-4e19-bc28-13233dab3ebd</SegmentId>
+                      <LinkItem
+                        internal_item_id="1"
+                        internal_item_parent_id="117"
+                        trans_unit_id="117-1"
+                        internal_item_type="Link">
+                        <internal_items />
+                        <internal_link_type>Inline</internal_link_type>
+                        <internal_link_text>Windows Process Resource</internal_link_text>
+                        <internal_link_url>windowsProcessResource.md</internal_link_url>
+                        <internal_link_title />
+                      </LinkItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="117">
+                  <SegmentId>42acbfaa-5d5d-4e19-bc28-13233dab3ebd</SegmentId>
+                  <LinkItem
+                    internal_item_id="1"
+                    internal_item_parent_id="117"
+                    trans_unit_id="117-1"
+                    internal_item_type="Link">
+                    <internal_items />
+                    <internal_link_type>Inline</internal_link_type>
+                    <internal_link_text>Windows Process Resource</internal_link_text>
+                    <internal_link_url>windowsProcessResource.md</internal_link_url>
+                    <internal_link_title />
+                  </LinkItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>*</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+        </inner_list_items>
+        <ListType>Charactor</ListType>
+      </MarkdownBlockBase>
+    </ArrayOfMarkdownBlockBase>
+  </block_element>
+  <references>
+    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </references>
+</markdown_skeleton_root>
