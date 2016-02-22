@@ -1,0 +1,1363 @@
+﻿<markdown_skeleton_root>
+  <block_element>
+    <ArrayOfMarkdownBlockBase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="b330154b-8b39-45e5-93c2-b1b35666aee0"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="b330154b-8b39-45e5-93c2-b1b35666aee0">
+        <segment
+          trans_unit_id="101">
+          <SegmentId>0453fae3-f5be-46ad-a383-874b62b6798f</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="101"
+            trans_unit_id="101-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+          <CodeSpanItem
+            internal_item_id="2"
+            internal_item_parent_id="101"
+            trans_unit_id="101-2"
+            internal_item_type="CodeSpan">
+            <internal_items />
+            <ItemValue>#</ItemValue>
+          </CodeSpanItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>1</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownBlockQuote"
+        item_id="ed1f9d3e-e313-4094-85e0-d41b3ea4877a"
+        item_type="BlockQuote"
+        item_footer=""
+        trans_unit_id="ed1f9d3e-e313-4094-85e0-d41b3ea4877a">
+        <MarkdownParagraphBlock
+          item_id="aecdc2a9-1aeb-4e58-a107-870dbdbcf0a5"
+          item_type="NormalParagraph"
+          item_footer="footer_not_set"
+          trans_unit_id="aecdc2a9-1aeb-4e58-a107-870dbdbcf0a5">
+          <Lines>
+            <MarkdownLine>
+              <LineId>2c2637e6-11ff-48ca-8ff4-eff55967d19a</LineId>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="102">
+                  <SegmentId>bf892106-4a3a-4347-902c-27556fb6e58b</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="102"
+                    trans_unit_id="102-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+              <PrefixWSLength>1</PrefixWSLength>
+              <SuffixWSLength>0</SuffixWSLength>
+            </MarkdownLine>
+          </Lines>
+          <paragraph_segments>
+            <MarkdownSegment
+              trans_unit_id="102">
+              <SegmentId>bf892106-4a3a-4347-902c-27556fb6e58b</SegmentId>
+              <InternalNormalItem
+                internal_item_id="1"
+                internal_item_parent_id="102"
+                trans_unit_id="102-1"
+                internal_item_type="Normal">
+                <internal_items />
+              </InternalNormalItem>
+            </MarkdownSegment>
+          </paragraph_segments>
+        </MarkdownParagraphBlock>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="ef4ea9a2-f25c-4371-ac10-55915928fea4"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="ef4ea9a2-f25c-4371-ac10-55915928fea4">
+        <Lines>
+          <MarkdownLine>
+            <LineId>fb298e8f-376b-440b-ba23-7bc15d68472c</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="103">
+                <SegmentId>822c76a3-fbc0-4eba-bf00-d7cbe1ec2c14</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="103"
+                  trans_unit_id="103-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="104">
+                <SegmentId>776938f9-6d60-4414-b92a-8b2e16dd5391</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="104"
+                  trans_unit_id="104-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="105">
+                <SegmentId>3381ff92-2c4c-4aea-9d8f-3c07764c4602</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="105"
+                  trans_unit_id="105-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <LinkItem
+                  internal_item_id="2"
+                  internal_item_parent_id="105"
+                  trans_unit_id="105-2"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Writing a Windows PowerShell Cmdlet</internal_link_text>
+                  <internal_link_url>https://technet.microsoft.com/en-us/library/dd878294.aspx</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="105"
+                  trans_unit_id="105-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="103">
+            <SegmentId>822c76a3-fbc0-4eba-bf00-d7cbe1ec2c14</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="103"
+              trans_unit_id="103-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="104">
+            <SegmentId>776938f9-6d60-4414-b92a-8b2e16dd5391</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="104"
+              trans_unit_id="104-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="105">
+            <SegmentId>3381ff92-2c4c-4aea-9d8f-3c07764c4602</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="105"
+              trans_unit_id="105-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <LinkItem
+              internal_item_id="2"
+              internal_item_parent_id="105"
+              trans_unit_id="105-2"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Writing a Windows PowerShell Cmdlet</internal_link_text>
+              <internal_link_url>https://technet.microsoft.com/en-us/library/dd878294.aspx</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="105"
+              trans_unit_id="105-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="266d63bc-fd34-445f-b6e0-2213819929f3"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="266d63bc-fd34-445f-b6e0-2213819929f3">
+        <Lines>
+          <MarkdownLine>
+            <LineId>311de8c0-38be-4e48-86cf-206e4ed95b4f</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="106">
+                <SegmentId>43aef59b-c36d-4abf-8102-15a7ee3fdd5d</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <LinkItem
+                  internal_item_id="2"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-2"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Writing a custom DSC resource with MOF</internal_link_text>
+                  <internal_link_url>authoringResourceMOF.md</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="106"
+                  trans_unit_id="106-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="106">
+            <SegmentId>43aef59b-c36d-4abf-8102-15a7ee3fdd5d</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="106"
+              trans_unit_id="106-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <LinkItem
+              internal_item_id="2"
+              internal_item_parent_id="106"
+              trans_unit_id="106-2"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Writing a custom DSC resource with MOF</internal_link_text>
+              <internal_link_url>authoringResourceMOF.md</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="106"
+              trans_unit_id="106-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="07f361b4-0908-4541-bf0d-07da69385925"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="07f361b4-0908-4541-bf0d-07da69385925">
+        <segment
+          trans_unit_id="107">
+          <SegmentId>d7d0763b-c6e3-40fc-b449-40f4b83db3dd</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="107"
+            trans_unit_id="107-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>2</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="eb77966f-1e76-4c92-b72e-1a8fb3f99624"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="eb77966f-1e76-4c92-b72e-1a8fb3f99624">
+        <Lines>
+          <MarkdownLine>
+            <LineId>51ada2ce-108e-4f4c-95db-1833e011822d</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="108">
+                <SegmentId>d0006891-729c-4f20-9d65-c448db1aded0</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="108"
+                  trans_unit_id="108-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="108">
+            <SegmentId>d0006891-729c-4f20-9d65-c448db1aded0</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="108"
+              trans_unit_id="108-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="dd98df74-05ee-4d7c-840e-7404a66c4970"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="dd98df74-05ee-4d7c-840e-7404a66c4970">
+        <segment
+          trans_unit_id="109">
+          <SegmentId>44e980b3-d1bc-4ed4-a368-e7d57edab242</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="109"
+            trans_unit_id="109-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>3</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="ef185440-efe5-4d65-88b6-62d95ee840cc"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="ef185440-efe5-4d65-88b6-62d95ee840cc">
+        <Lines>
+          <MarkdownLine>
+            <LineId>b77713b4-a377-4206-aba3-45b08a615863</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="110">
+                <SegmentId>839ec219-30cc-4fda-8079-25a65d6c793d</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="110"
+                  trans_unit_id="110-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="110">
+            <SegmentId>839ec219-30cc-4fda-8079-25a65d6c793d</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="110"
+              trans_unit_id="110-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownFencedCodeBlock"
+        item_id="dd74b8ff-a818-48b6-a0e5-d916e2b04f5d"
+        item_type="FencedCodeBlock"
+        item_footer=""
+        trans_unit_id="dd74b8ff-a818-48b6-a0e5-d916e2b04f5d">
+        <codeblock_wraper>```</codeblock_wraper>
+        <code_block>[ClassVersion("1.0.0"), FriendlyName("xDemoFile")]
+class MSFT_XDemoFile : OMI_BaseResource
+{
+                [Key, Description("path")] String Path;
+                [Write, Description("Should the file be present"), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+                [Write, Description("Contentof file.")] String Content;                   
+};</code_block>
+        <fenced_code_lang />
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="7b20ec59-8b5a-43de-a6e6-38bf6492eb6e"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="7b20ec59-8b5a-43de-a6e6-38bf6492eb6e">
+        <segment
+          trans_unit_id="111">
+          <SegmentId>7f710eb6-1597-484f-a4ab-d59a11955e1b</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="111"
+            trans_unit_id="111-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>3</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="5b3e787a-ba4c-46a1-9950-5e88906990b5"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="5b3e787a-ba4c-46a1-9950-5e88906990b5">
+        <segment
+          trans_unit_id="112">
+          <SegmentId>bda5d539-aeae-4322-8119-b91b8613275c</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="112"
+            trans_unit_id="112-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>4</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownListBlock"
+        item_id="8d225940-edc9-462e-beb1-fa9db281696f"
+        item_type="List"
+        item_footer=""
+        trans_unit_id="8d225940-edc9-462e-beb1-fa9db281696f">
+        <inner_list_items>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="d8863bb6-2a69-44d6-abdb-8b2459f268ce"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="d8863bb6-2a69-44d6-abdb-8b2459f268ce">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>ee68a38a-dfb4-422a-8307-83f9669a8f6f</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="113">
+                      <SegmentId>6dc7a11e-5fe9-4452-9153-35efe3761bcc</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="113"
+                        trans_unit_id="113-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="113">
+                  <SegmentId>6dc7a11e-5fe9-4452-9153-35efe3761bcc</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="113"
+                    trans_unit_id="113-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="39a0776b-bd14-4856-92b8-e77875288291"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="39a0776b-bd14-4856-92b8-e77875288291">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>6ec82184-bc8b-4d08-94d7-e9fb64b67f0a</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="114">
+                      <SegmentId>dc936b18-f740-43ac-802c-fcde1a81c2f4</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="114"
+                        trans_unit_id="114-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="114">
+                  <SegmentId>dc936b18-f740-43ac-802c-fcde1a81c2f4</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="114"
+                    trans_unit_id="114-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="8df53dec-0ab5-4507-8be8-0dcd730da4df"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="8df53dec-0ab5-4507-8be8-0dcd730da4df">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>09e5e256-0424-470c-9785-00010b1e8dd8</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="115">
+                      <SegmentId>83dff54e-46b4-454a-b468-de06240c40bf</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <MarkdownInternalBoldItem
+                        internal_item_id="2"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-2"
+                        internal_item_type="Bold">
+                        <internal_items />
+                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                      </MarkdownInternalBoldItem>
+                      <InternalNormalItem
+                        internal_item_id="3"
+                        internal_item_parent_id="115"
+                        trans_unit_id="115-3"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="115">
+                  <SegmentId>83dff54e-46b4-454a-b468-de06240c40bf</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="2"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-2"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="115"
+                    trans_unit_id="115-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="4e810e3f-7055-45ec-ba26-b5cb2904801a"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="4e810e3f-7055-45ec-ba26-b5cb2904801a">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>916ed4e4-62f5-43e2-893c-596a3722b9fb</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="116">
+                      <SegmentId>f8988aa4-fa9f-4739-9564-fd161fdddbe9</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="116"
+                        trans_unit_id="116-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <MarkdownInternalBoldItem
+                        internal_item_id="2"
+                        internal_item_parent_id="116"
+                        trans_unit_id="116-2"
+                        internal_item_type="Bold">
+                        <internal_items />
+                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                      </MarkdownInternalBoldItem>
+                      <InternalNormalItem
+                        internal_item_id="3"
+                        internal_item_parent_id="116"
+                        trans_unit_id="116-3"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="116">
+                  <SegmentId>f8988aa4-fa9f-4739-9564-fd161fdddbe9</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="116"
+                    trans_unit_id="116-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="2"
+                    internal_item_parent_id="116"
+                    trans_unit_id="116-2"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="116"
+                    trans_unit_id="116-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="b484fd7a-bb99-45bd-9a96-b24e9f77c991"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="b484fd7a-bb99-45bd-9a96-b24e9f77c991">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>f94f3d78-15db-405c-8b63-3d2eb98d0a8f</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="117">
+                      <SegmentId>0aaac172-1b20-4c79-a61e-417708f6df97</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="117"
+                        trans_unit_id="117-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="117">
+                  <SegmentId>0aaac172-1b20-4c79-a61e-417708f6df97</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="117"
+                    trans_unit_id="117-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+          <ListItem>
+            <MarkdownParagraphBlock
+              item_id="52e1f2e3-5516-468c-9ce3-f9abfc73b765"
+              item_type="NormalParagraph"
+              item_footer="footer_not_set"
+              trans_unit_id="52e1f2e3-5516-468c-9ce3-f9abfc73b765">
+              <Lines>
+                <MarkdownLine>
+                  <LineId>c766d44f-afea-42c4-9cec-aeefc8263a9b</LineId>
+                  <paragraph_segments>
+                    <MarkdownSegment
+                      trans_unit_id="118">
+                      <SegmentId>da65ae59-160a-4559-9d63-f8cecbaadeeb</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="118"
+                        trans_unit_id="118-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                    <MarkdownSegment
+                      trans_unit_id="119">
+                      <SegmentId>b4c2b2f0-ed8b-4583-b2f1-94cf393bdb20</SegmentId>
+                      <InternalNormalItem
+                        internal_item_id="1"
+                        internal_item_parent_id="119"
+                        trans_unit_id="119-1"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                      <MarkdownInternalBoldItem
+                        internal_item_id="2"
+                        internal_item_parent_id="119"
+                        trans_unit_id="119-2"
+                        internal_item_type="Bold">
+                        <internal_items />
+                        <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                      </MarkdownInternalBoldItem>
+                      <InternalNormalItem
+                        internal_item_id="3"
+                        internal_item_parent_id="119"
+                        trans_unit_id="119-3"
+                        internal_item_type="Normal">
+                        <internal_items />
+                      </InternalNormalItem>
+                    </MarkdownSegment>
+                  </paragraph_segments>
+                  <PrefixWSLength>1</PrefixWSLength>
+                  <SuffixWSLength>0</SuffixWSLength>
+                </MarkdownLine>
+              </Lines>
+              <paragraph_segments>
+                <MarkdownSegment
+                  trans_unit_id="118">
+                  <SegmentId>da65ae59-160a-4559-9d63-f8cecbaadeeb</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="118"
+                    trans_unit_id="118-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+                <MarkdownSegment
+                  trans_unit_id="119">
+                  <SegmentId>b4c2b2f0-ed8b-4583-b2f1-94cf393bdb20</SegmentId>
+                  <InternalNormalItem
+                    internal_item_id="1"
+                    internal_item_parent_id="119"
+                    trans_unit_id="119-1"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                  <MarkdownInternalBoldItem
+                    internal_item_id="2"
+                    internal_item_parent_id="119"
+                    trans_unit_id="119-2"
+                    internal_item_type="Bold">
+                    <internal_items />
+                    <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                  </MarkdownInternalBoldItem>
+                  <InternalNormalItem
+                    internal_item_id="3"
+                    internal_item_parent_id="119"
+                    trans_unit_id="119-3"
+                    internal_item_type="Normal">
+                    <internal_items />
+                  </InternalNormalItem>
+                </MarkdownSegment>
+              </paragraph_segments>
+            </MarkdownParagraphBlock>
+            <Identifier>1.</Identifier>
+            <IndentsLength>
+              <int>0</int>
+            </IndentsLength>
+          </ListItem>
+        </inner_list_items>
+        <ListType>Number</ListType>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="7c654cac-07db-4354-9258-b7966919328f"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="7c654cac-07db-4354-9258-b7966919328f">
+        <segment
+          trans_unit_id="120">
+          <SegmentId>a218ac98-516d-4634-a629-e8492f2b4b0c</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="120"
+            trans_unit_id="120-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>3</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="28ead57f-e6c0-4855-853c-7b3fc1199232"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="28ead57f-e6c0-4855-853c-7b3fc1199232">
+        <Lines>
+          <MarkdownLine>
+            <LineId>46bba2c8-a4e4-4475-b4b9-65cb2a520504</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="121">
+                <SegmentId>2e8268c2-b953-45a0-9aec-73921ae55ba8</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <MarkdownInternalBoldItem
+                  internal_item_id="2"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-2"
+                  internal_item_type="Bold">
+                  <internal_items />
+                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                </MarkdownInternalBoldItem>
+                <InternalNormalItem
+                  internal_item_id="3"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-3"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <MarkdownInternalBoldItem
+                  internal_item_id="4"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-4"
+                  internal_item_type="Bold">
+                  <internal_items />
+                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                </MarkdownInternalBoldItem>
+                <InternalNormalItem
+                  internal_item_id="5"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-5"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+                <MarkdownInternalBoldItem
+                  internal_item_id="6"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-6"
+                  internal_item_type="Bold">
+                  <internal_items />
+                  <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+                </MarkdownInternalBoldItem>
+                <InternalNormalItem
+                  internal_item_id="7"
+                  internal_item_parent_id="121"
+                  trans_unit_id="121-7"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="121">
+            <SegmentId>2e8268c2-b953-45a0-9aec-73921ae55ba8</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="121"
+              trans_unit_id="121-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <MarkdownInternalBoldItem
+              internal_item_id="2"
+              internal_item_parent_id="121"
+              trans_unit_id="121-2"
+              internal_item_type="Bold">
+              <internal_items />
+              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+            </MarkdownInternalBoldItem>
+            <InternalNormalItem
+              internal_item_id="3"
+              internal_item_parent_id="121"
+              trans_unit_id="121-3"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <MarkdownInternalBoldItem
+              internal_item_id="4"
+              internal_item_parent_id="121"
+              trans_unit_id="121-4"
+              internal_item_type="Bold">
+              <internal_items />
+              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+            </MarkdownInternalBoldItem>
+            <InternalNormalItem
+              internal_item_id="5"
+              internal_item_parent_id="121"
+              trans_unit_id="121-5"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+            <MarkdownInternalBoldItem
+              internal_item_id="6"
+              internal_item_parent_id="121"
+              trans_unit_id="121-6"
+              internal_item_type="Bold">
+              <internal_items />
+              <internal_itatic_bold_item_type>Star</internal_itatic_bold_item_type>
+            </MarkdownInternalBoldItem>
+            <InternalNormalItem
+              internal_item_id="7"
+              internal_item_parent_id="121"
+              trans_unit_id="121-7"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownFencedCodeBlock"
+        item_id="54ab9ae9-48b0-46b3-96cd-d272316d73e9"
+        item_type="FencedCodeBlock"
+        item_footer=""
+        trans_unit_id="54ab9ae9-48b0-46b3-96cd-d272316d73e9">
+        <codeblock_wraper>```</codeblock_wraper>
+        <code_block>Get-TargetResource
+       [OutputType(typeof(System.Collections.Hashtable))]
+       [Cmdlet(VerbsCommon.Get, "TargetResource")]
+       public class GetTargetResource : PSCmdlet
+       {
+              [Parameter(Mandatory = true)]
+              public string Path { get; set; }
+
+///&lt;summary&gt;
+/// Implement the logic to write the current state of the resource as a 
+/// Hash table with keys being the resource properties 
+/// and the Values are the corresponding current values on the target machine.
+
+///&lt;/summary&gt;
+              protected override void ProcessRecord()
+              {
+// Download the zip file at the end of this blog to see sample implementation.
+ }
+
+Set-TargetResouce
+         [OutputType(typeof(void))]
+    [Cmdlet(VerbsCommon.Set, "TargetResource")]
+    public class SetTargetResource : PSCmdlet
+    {
+        privatestring _ensure;
+        privatestring _content;
+
+[Parameter(Mandatory = true)]
+        public string Path { get; set; }
+
+[Parameter(Mandatory = false)]      
+       [ValidateSet("Present", "Absent", IgnoreCase = true)]
+       public string Ensure {
+            get
+            {
+                // set the default to present.
+               return (this._ensure ?? "Present");
+            }
+            set
+            {
+                this._ensure = value;
+            }
+           } 
+            public string Content {
+            get { return (string.IsNullOrEmpty(this._content) ? "" : this._content); }
+            set { this._content = value; }
+        }
+
+///&lt;summary&gt;
+        /// Implement the logic to set the state of the machine to the desired state.
+        ///&lt;/summary&gt;
+        protected override void ProcessRecord()
+        {
+//Implement the set method of the resource 
+/* Uncomment this section if your resource needs a machine reboot.
+PSVariable DscMachineStatus = new PSVariable("DSCMachineStatus", 1, ScopedItemOptions.AllScope);
+                this.SessionState.PSVariable.Set(DscMachineStatus);
+*/     
+  }
+    }
+Test-TargetResource    
+       [Cmdlet("Test", "TargetResource")]
+    [OutputType(typeof(Boolean))]
+    public class TestTargetResource : PSCmdlet
+    {   
+
+        private string _ensure;
+        private string _content;
+
+        [Parameter(Mandatory = true)]
+        public string Path { get; set; }
+
+        [Parameter(Mandatory = false)]
+        [ValidateSet("Present", "Absent", IgnoreCase = true)]
+        public string Ensure
+        {
+            get
+            {
+                // set the default to present.
+                return (this._ensure ?? "Present");
+            }
+            set
+            {
+                this._ensure = value;
+            }
+        }
+
+        [Parameter(Mandatory = false)]
+        public string Content
+        {
+            get { return (string.IsNullOrEmpty(this._content) ? "“:this._content);}
+            set { this._content = value; }
+        }
+
+///&lt;summary&gt;
+/// Write a Boolean value which indicates whether the current machine is in    
+/// desired state or not.
+        ///&lt;/summary&gt;
+        protected override void ProcessRecord()
+        {
+                // Implement the test method of the resource.
+        }
+}</code_block>
+        <fenced_code_lang>C#</fenced_code_lang>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="34690986-67ea-4cd2-b3d7-bb94e497e0a0"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="34690986-67ea-4cd2-b3d7-bb94e497e0a0">
+        <segment
+          trans_unit_id="122">
+          <SegmentId>8ee60212-f2b8-46bb-bc67-31dd40a497d7</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="122"
+            trans_unit_id="122-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>3</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="751133f2-2a63-48bb-b7ff-e791364fff3e"
+        item_type="NormalParagraph"
+        item_footer=""
+        trans_unit_id="751133f2-2a63-48bb-b7ff-e791364fff3e">
+        <Lines>
+          <MarkdownLine>
+            <LineId>38042ebd-5849-4a3c-abd0-846dbf9bb3d1</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="123">
+                <SegmentId>d6f16db6-5331-4b1b-af80-5ff6241fbde6</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="123"
+                  trans_unit_id="123-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+              <MarkdownSegment
+                trans_unit_id="124">
+                <SegmentId>fcc29132-6c00-417e-9dd3-9b89efd51d4c</SegmentId>
+                <InternalNormalItem
+                  internal_item_id="1"
+                  internal_item_parent_id="124"
+                  trans_unit_id="124-1"
+                  internal_item_type="Normal">
+                  <internal_items />
+                </InternalNormalItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="123">
+            <SegmentId>d6f16db6-5331-4b1b-af80-5ff6241fbde6</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="123"
+              trans_unit_id="123-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+          <MarkdownSegment
+            trans_unit_id="124">
+            <SegmentId>fcc29132-6c00-417e-9dd3-9b89efd51d4c</SegmentId>
+            <InternalNormalItem
+              internal_item_id="1"
+              internal_item_parent_id="124"
+              trans_unit_id="124-1"
+              internal_item_type="Normal">
+              <internal_items />
+            </InternalNormalItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownFencedCodeBlock"
+        item_id="f7b7e6d9-1e51-483f-8e1e-0d5548c5adb5"
+        item_type="FencedCodeBlock"
+        item_footer=""
+        trans_unit_id="f7b7e6d9-1e51-483f-8e1e-0d5548c5adb5">
+        <codeblock_wraper>```</codeblock_wraper>
+        <code_block>$env: psmodulepath (folder)
+    |- MyDscResources (folder)
+        |- DSCResources (folder)
+            |- MSFT_XDemoFile (folder)
+                |- MSFT_XDemoFile.psd1 (file, optional)
+                |- MSFT_XDemoFile.dll (file, required)
+                |- MSFT_XDemoFile.schema.mof (file, required)</code_block>
+        <fenced_code_lang />
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="dd112db9-859c-4e03-9ef8-dc6cf0421ab6"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="dd112db9-859c-4e03-9ef8-dc6cf0421ab6">
+        <segment
+          trans_unit_id="125">
+          <SegmentId>08f076c1-377b-4b95-b576-bcc11dd78182</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="125"
+            trans_unit_id="125-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>3</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="656c41f4-b4bf-4f01-9897-5f6e16a19d5b"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="656c41f4-b4bf-4f01-9897-5f6e16a19d5b">
+        <segment
+          trans_unit_id="126">
+          <SegmentId>7b44996d-183a-405d-8ca4-7527c139c4b4</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="126"
+            trans_unit_id="126-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>4</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="12f0d432-a835-47db-8ec6-3250bfe810de"
+        item_type="NormalParagraph"
+        item_footer="footer_not_set"
+        trans_unit_id="12f0d432-a835-47db-8ec6-3250bfe810de">
+        <Lines>
+          <MarkdownLine>
+            <LineId>10a51d58-7612-4db6-999c-4a222773ac32</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="127">
+                <SegmentId>d1bd3b13-e389-4791-b762-0c1e8793744d</SegmentId>
+                <LinkItem
+                  internal_item_id="1"
+                  internal_item_parent_id="127"
+                  trans_unit_id="127-1"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Writing a custom DSC resource with MOF</internal_link_text>
+                  <internal_link_url>authoringResourceMOF.md</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="127">
+            <SegmentId>d1bd3b13-e389-4791-b762-0c1e8793744d</SegmentId>
+            <LinkItem
+              internal_item_id="1"
+              internal_item_parent_id="127"
+              trans_unit_id="127-1"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Writing a custom DSC resource with MOF</internal_link_text>
+              <internal_link_url>authoringResourceMOF.md</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownHeaderBlock"
+        item_id="db3bfbcc-7768-4b56-8351-145e7f58462e"
+        item_type="Header"
+        item_footer="footer_not_set"
+        trans_unit_id="db3bfbcc-7768-4b56-8351-145e7f58462e">
+        <segment
+          trans_unit_id="128">
+          <SegmentId>6cbc8ebc-e002-4a0a-a9da-d6c84645a42d</SegmentId>
+          <InternalNormalItem
+            internal_item_id="1"
+            internal_item_parent_id="128"
+            trans_unit_id="128-1"
+            internal_item_type="Normal">
+            <internal_items />
+          </InternalNormalItem>
+        </segment>
+        <header_type>Star</header_type>
+        <header_level>4</header_level>
+      </MarkdownBlockBase>
+      <MarkdownBlockBase
+        xsi:type="MarkdownParagraphBlock"
+        item_id="53a7cb7c-3820-4669-8084-5c30ac9cac6d"
+        item_type="NormalParagraph"
+        item_footer="&#xA;"
+        trans_unit_id="53a7cb7c-3820-4669-8084-5c30ac9cac6d">
+        <Lines>
+          <MarkdownLine>
+            <LineId>f8486b23-32ae-4101-9393-e95131bc9ebd</LineId>
+            <paragraph_segments>
+              <MarkdownSegment
+                trans_unit_id="129">
+                <SegmentId>4efb99d4-0702-41b5-8ece-8f4e0ac24d31</SegmentId>
+                <LinkItem
+                  internal_item_id="1"
+                  internal_item_parent_id="129"
+                  trans_unit_id="129-1"
+                  internal_item_type="Link">
+                  <internal_items />
+                  <internal_link_type>Inline</internal_link_type>
+                  <internal_link_text>Writing a Windows PowerShell Cmdlet</internal_link_text>
+                  <internal_link_url>https://msdn.microsoft.com/en-us/library/dd878294.aspx</internal_link_url>
+                  <internal_link_title />
+                </LinkItem>
+              </MarkdownSegment>
+            </paragraph_segments>
+            <PrefixWSLength>0</PrefixWSLength>
+            <SuffixWSLength>0</SuffixWSLength>
+          </MarkdownLine>
+        </Lines>
+        <paragraph_segments>
+          <MarkdownSegment
+            trans_unit_id="129">
+            <SegmentId>4efb99d4-0702-41b5-8ece-8f4e0ac24d31</SegmentId>
+            <LinkItem
+              internal_item_id="1"
+              internal_item_parent_id="129"
+              trans_unit_id="129-1"
+              internal_item_type="Link">
+              <internal_items />
+              <internal_link_type>Inline</internal_link_type>
+              <internal_link_text>Writing a Windows PowerShell Cmdlet</internal_link_text>
+              <internal_link_url>https://msdn.microsoft.com/en-us/library/dd878294.aspx</internal_link_url>
+              <internal_link_title />
+            </LinkItem>
+          </MarkdownSegment>
+        </paragraph_segments>
+      </MarkdownBlockBase>
+    </ArrayOfMarkdownBlockBase>
+  </block_element>
+  <references>
+    <ArrayOfMarkdownLinkedReference xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </references>
+</markdown_skeleton_root>
