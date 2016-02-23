@@ -1,0 +1,238 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        49
+      ],
+      "content": "Setting up a pull client using configuration ID"
+    },
+    {
+      "pos": [
+        53,
+        87
+      ],
+      "content": "Applies To: Windows PowerShell 5.0"
+    },
+    {
+      "content": "Each target node has to be told to use pull mode and given the URL where it can contact the pull server to get configurations.",
+      "pos": [
+        89,
+        215
+      ]
+    },
+    {
+      "content": "To do this, you have to configure the Local Configuration Manager (LCM) with the necessary information.",
+      "pos": [
+        216,
+        319
+      ]
+    },
+    {
+      "content": "To configure the LCM, you create a special type of configuration, derated with the <bpt id=\"p1\">**</bpt>DSCLocalConfigurationManager<ept id=\"p1\">**</ept> attribute.",
+      "pos": [
+        320,
+        446
+      ]
+    },
+    {
+      "content": "For more information about configuring the LCM, see <bpt id=\"p2\">[</bpt>Configuring the Local Configuration Manager<ept id=\"p2\">](metaConfig.md)</ept>.",
+      "pos": [
+        447,
+        560
+      ]
+    },
+    {
+      "content": "<bpt id=\"p3\">**</bpt>Note<ept id=\"p3\">**</ept>: This topic applies to PowerShell 5.0.",
+      "pos": [
+        564,
+        611
+      ]
+    },
+    {
+      "content": "For information on setting up a pull client in PowerShell 4.0, see <bpt id=\"p4\">[</bpt>Setting up a pull client using configuration ID in PowerShell 4.0<ept id=\"p4\">](pullClientConfigID4.md)</ept>",
+      "pos": [
+        612,
+        770
+      ]
+    },
+    {
+      "pos": [
+        772,
+        873
+      ],
+      "content": "The following script configures the LCM to pull configurations from a server named \"CONTOSO-PullSrv\"."
+    },
+    {
+      "content": "In the script, the <bpt id=\"p5\">**</bpt>ConfigurationRepositoryWeb<ept id=\"p5\">**</ept> block defines the pull server.",
+      "pos": [
+        1395,
+        1475
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p6\">**</bpt>ServerURL<ept id=\"p6\">**</ept>",
+      "pos": [
+        1476,
+        1493
+      ]
+    },
+    {
+      "content": "After this script runs, it creates a new output folder named <bpt id=\"p7\">**</bpt>PullClientConfigID<ept id=\"p7\">**</ept> and puts a metaconfiguration MOF file there.",
+      "pos": [
+        1495,
+        1623
+      ]
+    },
+    {
+      "content": "In this case, the metaconfiguration MOF file will be named <ph id=\"ph1\">`localhost.meta.mof`</ph>.",
+      "pos": [
+        1624,
+        1704
+      ]
+    },
+    {
+      "content": "To apply the configuration, call the <bpt id=\"p8\">**</bpt>Set-DscLocalConfigurationManager<ept id=\"p8\">**</ept> cmdlet, with the <bpt id=\"p9\">**</bpt>Path<ept id=\"p9\">**</ept> set to the location of the metaconfiguration MOF file.",
+      "pos": [
+        1706,
+        1860
+      ]
+    },
+    {
+      "content": "For example: <ph id=\"ph2\">`Set-DSCLocalConfigurationManager localhost –Path .\\PullClientConfigID –Verbose.`</ph>",
+      "pos": [
+        1861,
+        1955
+      ]
+    },
+    {
+      "pos": [
+        1960,
+        1976
+      ],
+      "content": "Configuration ID"
+    },
+    {
+      "content": "The script sets the <bpt id=\"p10\">**</bpt>ConfigurationID<ept id=\"p10\">**</ept> property of LCM to a GUID that had been previously created for this purpose (you can create a GUID by using the <bpt id=\"p11\">**</bpt>New-Guid<ept id=\"p11\">**</ept> cmdlet).",
+      "pos": [
+        1978,
+        2151
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p12\">**</bpt>ConfigurationID<ept id=\"p12\">**</ept> is what the LCM uses to find the appropriate configuration on the pull server.",
+      "pos": [
+        2152,
+        2254
+      ]
+    },
+    {
+      "content": "The configuration MOF file on the pull server must be named <bpt id=\"p13\">_</bpt>ConfigurationID<ept id=\"p13\">_</ept>.mof, where <bpt id=\"p14\">_</bpt>ConfigurationID<ept id=\"p14\">_</ept> is the value of the <bpt id=\"p15\">**</bpt>ConfigurationID<ept id=\"p15\">**</ept> property of the target node's LCM.",
+      "pos": [
+        2255,
+        2436
+      ]
+    },
+    {
+      "pos": [
+        2441,
+        2456
+      ],
+      "content": "SMB pull server"
+    },
+    {
+      "content": "To set up a client to pull configurations from an SMB server, use a <bpt id=\"p16\">**</bpt>ConfigurationRepositoryShare<ept id=\"p16\">**</ept> block.",
+      "pos": [
+        2458,
+        2565
+      ]
+    },
+    {
+      "content": "In a <bpt id=\"p17\">**</bpt>ConfigurationRepositoryShare<ept id=\"p17\">**</ept> block, you specify the path to the server by setting the <bpt id=\"p18\">**</bpt>SourcePath<ept id=\"p18\">**</ept> property.",
+      "pos": [
+        2566,
+        2685
+      ]
+    },
+    {
+      "content": "The following metaconfiguration configures the target node to pull from an SMB pull server named <bpt id=\"p19\">**</bpt>SMBPullServer<ept id=\"p19\">**</ept>.",
+      "pos": [
+        2686,
+        2801
+      ]
+    },
+    {
+      "pos": [
+        3303,
+        3330
+      ],
+      "content": "Resource and report servers"
+    },
+    {
+      "pos": [
+        3332,
+        3999
+      ],
+      "content": "By default, the client node gets required resources from and reports status to the configuration pull server. However, you can specify different pull servers for resources and reporting.\nTo specify a resource server, you use either a **ResourceRepositoryWeb** (for a web pull server) or a **ResourceRepositoryShare** block (for an SMB pull server).\nTo specify a report server, you use a **ReportRepositoryWeb** block. A report server cannot be an SMB server.\nThe following metaconfiguration configures a pull client to get its configurations from **CONTOSO-PullSrv** and its resources from **CONTOSO-ResourceSrv**, and to send status reports to **CONTOSO-ReportSrv**.",
+      "nodes": [
+        {
+          "content": "By default, the client node gets required resources from and reports status to the configuration pull server.",
+          "pos": [
+            0,
+            109
+          ]
+        },
+        {
+          "content": "However, you can specify different pull servers for resources and reporting.",
+          "pos": [
+            110,
+            186
+          ]
+        },
+        {
+          "content": "To specify a resource server, you use either a <bpt id=\"p20\">**</bpt>ResourceRepositoryWeb<ept id=\"p20\">**</ept> (for a web pull server) or a <bpt id=\"p21\">**</bpt>ResourceRepositoryShare<ept id=\"p21\">**</ept> block (for an SMB pull server).",
+          "pos": [
+            187,
+            348
+          ]
+        },
+        {
+          "content": "To specify a report server, you use a <bpt id=\"p22\">**</bpt>ReportRepositoryWeb<ept id=\"p22\">**</ept> block.",
+          "pos": [
+            349,
+            417
+          ]
+        },
+        {
+          "content": "A report server cannot be an SMB server.",
+          "pos": [
+            418,
+            458
+          ]
+        },
+        {
+          "content": "The following metaconfiguration configures a pull client to get its configurations from <bpt id=\"p23\">**</bpt>CONTOSO-PullSrv<ept id=\"p23\">**</ept> and its resources from <bpt id=\"p24\">**</bpt>CONTOSO-ResourceSrv<ept id=\"p24\">**</ept>, and to send status reports to <bpt id=\"p25\">**</bpt>CONTOSO-ReportSrv<ept id=\"p25\">**</ept>.",
+          "pos": [
+            459,
+            667
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        4820,
+        4828
+      ],
+      "content": "See Also"
+    },
+    {
+      "pos": [
+        4832,
+        4909
+      ],
+      "content": "<ph id=\"ph3\">[</ph>Setting up a pull client with configuration names<ph id=\"ph4\">](pullClientConfigNames.md)</ph>"
+    }
+  ],
+  "content": "# Setting up a pull client using configuration ID\n\n> Applies To: Windows PowerShell 5.0\n\nEach target node has to be told to use pull mode and given the URL where it can contact the pull server to get configurations. To do this, you have to configure the Local Configuration Manager (LCM) with the necessary information. To configure the LCM, you create a special type of configuration, derated with the **DSCLocalConfigurationManager** attribute. For more information about configuring the LCM, see [Configuring the Local Configuration Manager](metaConfig.md).\n\n> **Note**: This topic applies to PowerShell 5.0. For information on setting up a pull client in PowerShell 4.0, see [Setting up a pull client using configuration ID in PowerShell 4.0](pullClientConfigID4.md)\n\nThe following script configures the LCM to pull configurations from a server named \"CONTOSO-PullSrv\".\n\n```powershell\n[DSCLocalConfigurationManager()]\nconfiguration PullClientConfigID\n{\n    Node localhost\n    {\n        Settings\n        {\n            RefreshMode = 'Pull'\n            ConfigurationID = 1d545e3b-60c3-47a0-bf65-5afc05182fd0'\n            RefreshFrequencyMins = 30 \n            RebootNodeIfNeeded = $true\n        }\n        ConfigurationRepositoryWeb CONTOSO-PullSrv\n        {\n            ServerURL = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'\n            \n        }      \n    }\n}\nPullClientConfigID\n```\n\nIn the script, the **ConfigurationRepositoryWeb** block defines the pull server. The **ServerURL**\n\nAfter this script runs, it creates a new output folder named **PullClientConfigID** and puts a metaconfiguration MOF file there. In this case, the metaconfiguration MOF file will be named `localhost.meta.mof`.\n\nTo apply the configuration, call the **Set-DscLocalConfigurationManager** cmdlet, with the **Path** set to the location of the metaconfiguration MOF file. For example: `Set-DSCLocalConfigurationManager localhost –Path .\\PullClientConfigID –Verbose.`\n\n## Configuration ID\n\nThe script sets the **ConfigurationID** property of LCM to a GUID that had been previously created for this purpose (you can create a GUID by using the **New-Guid** cmdlet). The **ConfigurationID** is what the LCM uses to find the appropriate configuration on the pull server. The configuration MOF file on the pull server must be named _ConfigurationID_.mof, where _ConfigurationID_ is the value of the **ConfigurationID** property of the target node's LCM.\n\n## SMB pull server\n\nTo set up a client to pull configurations from an SMB server, use a **ConfigurationRepositoryShare** block. In a **ConfigurationRepositoryShare** block, you specify the path to the server by setting the **SourcePath** property. The following metaconfiguration configures the target node to pull from an SMB pull server named **SMBPullServer**.\n\n```powershell\n[DSCLocalConfigurationManager()]\nconfiguration PullClientConfigID\n{\n    Node localhost\n    {\n        Settings\n        {\n            RefreshMode = 'Pull'\n            ConfigurationID = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'\n            RefreshFrequencyMins = 30 \n            RebootNodeIfNeeded = $true\n        }\n        ConfigurationRepositoryWeb SMBPullServer\n        {\n            SourcePath = '\\\\SMBPullServer\\PullSource'\n            \n        }     \n    }\n}\nPullClientConfigID\n```\n\n## Resource and report servers\n\nBy default, the client node gets required resources from and reports status to the configuration pull server. However, you can specify different pull servers for resources and reporting.\nTo specify a resource server, you use either a **ResourceRepositoryWeb** (for a web pull server) or a **ResourceRepositoryShare** block (for an SMB pull server).\nTo specify a report server, you use a **ReportRepositoryWeb** block. A report server cannot be an SMB server.\nThe following metaconfiguration configures a pull client to get its configurations from **CONTOSO-PullSrv** and its resources from **CONTOSO-ResourceSrv**, and to send status reports to **CONTOSO-ReportSrv**.\n\n```powershell\n[DSCLocalConfigurationManager()]\nconfiguration PullClientConfigID\n{\n    Node localhost\n    {\n        Settings\n        {\n            RefreshMode = 'Pull'\n            ConfigurationID = '1d545e3b-60c3-47a0-bf65-5afc05182fd0'\n            RefreshFrequencyMins = 30 \n            RebootNodeIfNeeded = $true\n        }\n\n        ConfigurationRepositoryWeb CONTOSO-PullSrv\n        {\n            ServerURL = 'https://CONTOSO-PullSrv:8080/PSDSCPullServer.svc'\n            \n        }\n        \n        ResourceRepositoryWeb CONTOSO-ResourceSrv\n        {\n            ServerURL = 'https://CONTOSO-REsourceSrv:8080/PSDSCPullServer.svc'\n        }\n\n        ReportServerWeb CONTOSO-ReportSrv\n        {\n            ServerURL = 'https://CONTOSO-REsourceSrv:8080/PSDSCPullServer.svc'\n        }\n    }\n}\nPullClientConfigID\n```\n\n## See Also\n\n* [Setting up a pull client with configuration names](pullClientConfigNames.md)"
+}

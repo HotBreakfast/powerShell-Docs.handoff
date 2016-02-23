@@ -1,0 +1,434 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        43
+      ],
+      "content": "Credentials Options in Configuration Data"
+    },
+    {
+      "pos": [
+        45,
+        79
+      ],
+      "content": "Applies To: Windows PowerShell 5.0"
+    },
+    {
+      "pos": [
+        84,
+        121
+      ],
+      "content": "Plain Text Passwords and Domain Users"
+    },
+    {
+      "content": "DSC configurations containing a credential without encryption will generate an error messages about plain text passwords.",
+      "pos": [
+        123,
+        244
+      ]
+    },
+    {
+      "content": "Also, DSC will generate a warning when using domain credentials.",
+      "pos": [
+        245,
+        309
+      ]
+    },
+    {
+      "content": "To suppress these error and warning messages use the DSC configuration data keywords:",
+      "pos": [
+        310,
+        395
+      ]
+    },
+    {
+      "pos": [
+        398,
+        429
+      ],
+      "content": "<ph id=\"ph1\">**</ph>PsDscAllowPlainTextPassword<ph id=\"ph2\">**</ph>"
+    },
+    {
+      "pos": [
+        432,
+        456
+      ],
+      "content": "<ph id=\"ph3\">**</ph>PsDscAllowDomainUser<ph id=\"ph4\">**</ph>"
+    },
+    {
+      "pos": [
+        461,
+        488
+      ],
+      "content": "Handling Credentials in DSC"
+    },
+    {
+      "pos": [
+        490,
+        691
+      ],
+      "content": "DSC configuration resources run as `Local System` by default.\nHowever, some resources need a credential, for example when the `Package` resource needs to install software under a specific user account.",
+      "nodes": [
+        {
+          "content": "DSC configuration resources run as <ph id=\"ph5\">`Local System`</ph> by default.",
+          "pos": [
+            0,
+            61
+          ]
+        },
+        {
+          "content": "However, some resources need a credential, for example when the <ph id=\"ph6\">`Package`</ph> resource needs to install software under a specific user account.",
+          "pos": [
+            62,
+            201
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        693,
+        974
+      ],
+      "content": "Earlier resources used a hard-coded `Credential` property name to handle this.\nWMF 5.0 added an automatic `PsDscRunAsCredential` property for all resources.\nNewer resources and custom resources can use this automatic property instead of creating their own property for credentials.",
+      "nodes": [
+        {
+          "content": "Earlier resources used a hard-coded <ph id=\"ph7\">`Credential`</ph> property name to handle this.",
+          "pos": [
+            0,
+            78
+          ]
+        },
+        {
+          "content": "WMF 5.0 added an automatic <ph id=\"ph8\">`PsDscRunAsCredential`</ph> property for all resources.",
+          "pos": [
+            79,
+            156
+          ]
+        },
+        {
+          "content": "Newer resources and custom resources can use this automatic property instead of creating their own property for credentials.",
+          "pos": [
+            157,
+            281
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        977,
+        1122
+      ],
+      "content": "Note that the design of some resources are to use multiple credentials for a specific reason, and they will have their own credential properties."
+    },
+    {
+      "pos": [
+        1125,
+        1285
+      ],
+      "content": "To find the available credential properties on a resource use either <ph id=\"ph9\">`Get-DscResource -Name ResourceName -Syntax`</ph> or the Intellisense in the ISE (<ph id=\"ph10\">`CTRL+SPACE`</ph>)."
+    },
+    {
+      "pos": [
+        1687,
+        2187
+      ],
+      "content": "This example uses a [Group](https://msdn.microsoft.com/en-us/powershell/dsc/groupresource) resource from the `PSDesiredStateConfiguration` built-in DSC resource module.\nIt can create local groups and add or remove members.\nIt accepts both the `Credential` property and the automatic `PsDscRunAsCredential` property.\nHowever, the resource only uses the `Credential` property.\nRead more about `PsDscRunAsCredential` in the [WMF Release Notes](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_runas).",
+      "nodes": [
+        {
+          "content": "This example uses a <bpt id=\"p1\">[</bpt>Group<ept id=\"p1\">](https://msdn.microsoft.com/en-us/powershell/dsc/groupresource)</ept> resource from the <ph id=\"ph11\">`PSDesiredStateConfiguration`</ph> built-in DSC resource module.",
+          "pos": [
+            0,
+            168
+          ]
+        },
+        {
+          "content": "It can create local groups and add or remove members.",
+          "pos": [
+            169,
+            222
+          ]
+        },
+        {
+          "content": "It accepts both the <ph id=\"ph12\">`Credential`</ph> property and the automatic <ph id=\"ph13\">`PsDscRunAsCredential`</ph> property.",
+          "pos": [
+            223,
+            315
+          ]
+        },
+        {
+          "content": "However, the resource only uses the <ph id=\"ph14\">`Credential`</ph> property.",
+          "pos": [
+            316,
+            374
+          ]
+        },
+        {
+          "content": "Read more about <ph id=\"ph15\">`PsDscRunAsCredential`</ph> in the <bpt id=\"p2\">[</bpt>WMF Release Notes<ept id=\"p2\">](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_runas)</ept>.",
+          "pos": [
+            375,
+            500
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        2192,
+        2239
+      ],
+      "content": "Example: The Group resource Credential property"
+    },
+    {
+      "pos": [
+        2241,
+        2506
+      ],
+      "content": "DSC runs under `Local System`, so it already has permissions to change local users and groups.\nIf the member added is a local account, then no credential is necessary.\nIf the `Group` resource adds a domain account to the local group, then a credential is necessary.",
+      "nodes": [
+        {
+          "content": "DSC runs under <ph id=\"ph16\">`Local System`</ph>, so it already has permissions to change local users and groups.",
+          "pos": [
+            0,
+            94
+          ]
+        },
+        {
+          "content": "If the member added is a local account, then no credential is necessary.",
+          "pos": [
+            95,
+            167
+          ]
+        },
+        {
+          "content": "If the <ph id=\"ph17\">`Group`</ph> resource adds a domain account to the local group, then a credential is necessary.",
+          "pos": [
+            168,
+            265
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        2508,
+        2799
+      ],
+      "content": "Anonymous queries to Active Directory are not allowed.\nThe `Credential` property of the `Group` resource is the domain account used to query Active Directory.\nFor most purposes this could be a generic user account, because by default users can *read* most of the objects in Active Directory.",
+      "nodes": [
+        {
+          "content": "Anonymous queries to Active Directory are not allowed.",
+          "pos": [
+            0,
+            54
+          ]
+        },
+        {
+          "content": "The <ph id=\"ph18\">`Credential`</ph> property of the <ph id=\"ph19\">`Group`</ph> resource is the domain account used to query Active Directory.",
+          "pos": [
+            55,
+            158
+          ]
+        },
+        {
+          "content": "For most purposes this could be a generic user account, because by default users can <bpt id=\"p3\">*</bpt>read<ept id=\"p3\">*</ept> most of the objects in Active Directory.",
+          "pos": [
+            159,
+            291
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        2804,
+        2825
+      ],
+      "content": "Example Configuration"
+    },
+    {
+      "pos": [
+        2827,
+        2908
+      ],
+      "content": "The following example code uses DSC to populate a local group with a domain user:"
+    },
+    {
+      "pos": [
+        3462,
+        3516
+      ],
+      "content": "This code generates both an error and warning message:"
+    },
+    {
+      "pos": [
+        4448,
+        4476
+      ],
+      "content": "This example has two issues:"
+    },
+    {
+      "pos": [
+        4481,
+        4544
+      ],
+      "content": "An error explains that plain text passwords are not recommended"
+    },
+    {
+      "pos": [
+        4549,
+        4600
+      ],
+      "content": "A warning advises against using a domain credential"
+    },
+    {
+      "pos": [
+        4605,
+        4632
+      ],
+      "content": "PsDscAllowPlainTextPassword"
+    },
+    {
+      "pos": [
+        4634,
+        4936
+      ],
+      "content": "The first error message has a URL with documentation.\nThis link explains how to encrypt passwords using a [ConfigurationData](https://msdn.microsoft.com/en-us/powershell/dsc/configdata) structure and a certificate.\nFor more information on certificates and DSC [read this post](http://aka.ms/certs4dsc).",
+      "nodes": [
+        {
+          "content": "The first error message has a URL with documentation.",
+          "pos": [
+            0,
+            53
+          ]
+        },
+        {
+          "content": "This link explains how to encrypt passwords using a <bpt id=\"p4\">[</bpt>ConfigurationData<ept id=\"p4\">](https://msdn.microsoft.com/en-us/powershell/dsc/configdata)</ept> structure and a certificate.",
+          "pos": [
+            54,
+            214
+          ]
+        },
+        {
+          "content": "For more information on certificates and DSC <bpt id=\"p5\">[</bpt>read this post<ept id=\"p5\">](http://aka.ms/certs4dsc)</ept>.",
+          "pos": [
+            215,
+            302
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        4938,
+        5079
+      ],
+      "content": "To force a plain text password, the resource requires the <ph id=\"ph20\">`PsDscAllowPlainTextPassword`</ph> keyword in the configuration data section as follows:"
+    },
+    {
+      "pos": [
+        5796,
+        5876
+      ],
+      "content": "<ph id=\"ph21\">*</ph>Note that <ph id=\"ph22\">`NodeName`</ph> cannot equal asterisk, a specific node name is mandatory.<ph id=\"ph23\">*</ph>"
+    },
+    {
+      "pos": [
+        5880,
+        5965
+      ],
+      "content": "Microsoft advises to avoid plain text passwords due to the significant security risk."
+    },
+    {
+      "pos": [
+        5972,
+        5990
+      ],
+      "content": "Domain Credentials"
+    },
+    {
+      "content": "Running the example configuration script again (with or without encryption), still generates the warning that using a domain account for a credential is not recommended.",
+      "pos": [
+        5992,
+        6161
+      ]
+    },
+    {
+      "content": "Using a local account eliminates potential exposure of domain credentials that could be used on other servers.",
+      "pos": [
+        6162,
+        6272
+      ]
+    },
+    {
+      "pos": [
+        6276,
+        6378
+      ],
+      "content": "When using credentials with DSC resources, prefer a local account over a domain account when possible."
+    },
+    {
+      "pos": [
+        6382,
+        6598
+      ],
+      "content": "If there is a '\\' or '@' in the `Username` property of the credential, then DSC will treat it as a domain account.\nThere is an exception for \"localhost\", \"127.0.0.1\", and \"::1\" in the domain portion of the user name.",
+      "nodes": [
+        {
+          "content": "If there is a '\\' or '@' in the <ph id=\"ph24\">`Username`</ph> property of the credential, then DSC will treat it as a domain account.",
+          "pos": [
+            0,
+            114
+          ]
+        },
+        {
+          "content": "There is an exception for \"localhost\", \"127.0.0.1\", and \"::1\" in the domain portion of the user name.",
+          "pos": [
+            115,
+            216
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        6603,
+        6623
+      ],
+      "content": "PSDscAllowDomainUser"
+    },
+    {
+      "pos": [
+        6625,
+        6830
+      ],
+      "content": "In the DSC `Group` resource example above, querying an Active Directory domain *requires* a domain account.\nIn this case add the `PSDscAllowDomainUser` property to the `ConfigurationData` block as follows:",
+      "nodes": [
+        {
+          "content": "In the DSC <ph id=\"ph25\">`Group`</ph> resource example above, querying an Active Directory domain <bpt id=\"p6\">*</bpt>requires<ept id=\"p6\">*</ept> a domain account.",
+          "pos": [
+            0,
+            107
+          ]
+        },
+        {
+          "content": "In this case add the <ph id=\"ph26\">`PSDscAllowDomainUser`</ph> property to the <ph id=\"ph27\">`ConfigurationData`</ph> block as follows:",
+          "pos": [
+            108,
+            205
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        7091,
+        7174
+      ],
+      "content": "Now the configuration script will generate the MOF file with no errors or warnings."
+    }
+  ],
+  "content": "# Credentials Options in Configuration Data\n>Applies To: Windows PowerShell 5.0\n\n## Plain Text Passwords and Domain Users\n\nDSC configurations containing a credential without encryption will generate an error messages about plain text passwords.\nAlso, DSC will generate a warning when using domain credentials.\nTo suppress these error and warning messages use the DSC configuration data keywords:\n* **PsDscAllowPlainTextPassword**\n* **PsDscAllowDomainUser**\n\n## Handling Credentials in DSC\n\nDSC configuration resources run as `Local System` by default.\nHowever, some resources need a credential, for example when the `Package` resource needs to install software under a specific user account.\n\nEarlier resources used a hard-coded `Credential` property name to handle this.\nWMF 5.0 added an automatic `PsDscRunAsCredential` property for all resources.\nNewer resources and custom resources can use this automatic property instead of creating their own property for credentials.\n\n*Note that the design of some resources are to use multiple credentials for a specific reason, and they will have their own credential properties.*\n\nTo find the available credential properties on a resource use either `Get-DscResource -Name ResourceName -Syntax` or the Intellisense in the ISE (`CTRL+SPACE`).\n\n```PowerShell\nPS C:\\> Get-DscResource -Name Group -Syntax\nGroup [String] #ResourceName\n{\n    GroupName = [string]\n    [Credential = [PSCredential]]\n    [DependsOn = [string[]]]\n    [Description = [string]]\n    [Ensure = [string]{ Absent | Present }]\n    [Members = [string[]]]\n    [MembersToExclude = [string[]]]\n    [MembersToInclude = [string[]]]\n    [PsDscRunAsCredential = [PSCredential]]\n}\n```\n\nThis example uses a [Group](https://msdn.microsoft.com/en-us/powershell/dsc/groupresource) resource from the `PSDesiredStateConfiguration` built-in DSC resource module.\nIt can create local groups and add or remove members.\nIt accepts both the `Credential` property and the automatic `PsDscRunAsCredential` property.\nHowever, the resource only uses the `Credential` property.\nRead more about `PsDscRunAsCredential` in the [WMF Release Notes](https://msdn.microsoft.com/en-us/powershell/wmf/dsc_runas).\n\n## Example: The Group resource Credential property\n\nDSC runs under `Local System`, so it already has permissions to change local users and groups.\nIf the member added is a local account, then no credential is necessary.\nIf the `Group` resource adds a domain account to the local group, then a credential is necessary.\n\nAnonymous queries to Active Directory are not allowed.\nThe `Credential` property of the `Group` resource is the domain account used to query Active Directory.\nFor most purposes this could be a generic user account, because by default users can *read* most of the objects in Active Directory.\n\n## Example Configuration\n\nThe following example code uses DSC to populate a local group with a domain user:\n\n```PowerShell\nConfiguration DomainCredentialExample\n{\n    param\n    (\n        [PSCredential] $DomainCredential\n    )\n    Import-DscResource -ModuleName PSDesiredStateConfiguration\n\n    node localhost\n    {\n        Group DomainUserToLocalGroup\n        {\n            GroupName        = 'ApplicationAdmins'\n            MembersToInclude = 'contoso\\alice'\n            Credential       = $DomainCredential\n        }\n    }\n}\n\n$cred = Get-Credential -UserName contoso\\genericuser -Message \"Password please\"\nDomainCredentialExample -DomainCredential $cred\n```\n\nThis code generates both an error and warning message:\n\n```\nConvertTo-MOFInstance : System.InvalidOperationException error processing\nproperty 'Credential' OF TYPE 'Group': Converting and storing encrypted\npasswords as plain text is not recommended. For more information on securing\ncredentials in MOF file, please refer to MSDN blog:\nhttp://go.microsoft.com/fwlink/?LinkId=393729\n\nAt line:11 char:9\n+   Group\nAt line:297 char:16\n+     $aliasId = ConvertTo-MOFInstance $keywordName $canonicalizedValue\n+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : InvalidOperation: (:) [Write-Error], InvalidOperationException\n    + FullyQualifiedErrorId : FailToProcessProperty,ConvertTo-MOFInstance\n\nWARNING: It is not recommended to use domain credential for node 'localhost'.\nIn order to suppress the warning, you can add a property named\n'PSDscAllowDomainUser' with a value of $true to your DSC configuration data\nfor node 'localhost'.\n```\n\nThis example has two issues:\n1.  An error explains that plain text passwords are not recommended\n2.  A warning advises against using a domain credential\n\n## PsDscAllowPlainTextPassword\n\nThe first error message has a URL with documentation.\nThis link explains how to encrypt passwords using a [ConfigurationData](https://msdn.microsoft.com/en-us/powershell/dsc/configdata) structure and a certificate.\nFor more information on certificates and DSC [read this post](http://aka.ms/certs4dsc).\n\nTo force a plain text password, the resource requires the `PsDscAllowPlainTextPassword` keyword in the configuration data section as follows:\n\n```PowerShell\nConfiguration DomainCredentialExample\n{\n    param\n    (\n        [PSCredential] $DomainCredential\n    )\n    Import-DscResource -ModuleName PSDesiredStateConfiguration\n\n    node localhost\n    {\n        Group DomainUserToLocalGroup\n        {\n            GroupName        = 'ApplicationAdmins'\n            MembersToInclude = 'contoso\\alice'\n            Credential       = $DomainCredential\n        }\n    }\n}\n\n$cd = @{\n    AllNodes = @(\n        @{\n            NodeName = 'localhost'\n            PSDscAllowPlainTextPassword = $true\n        }\n    )\n}\n\n$cred = Get-Credential -UserName contoso\\genericuser -Message \"Password please\"\nDomainCredentialExample -DomainCredential $cred -ConfigurationData $cd\n```\n\n*Note that `NodeName` cannot equal asterisk, a specific node name is mandatory.*\n\n**Microsoft advises to avoid plain text passwords due to the significant security risk.**\n\n## Domain Credentials\n\nRunning the example configuration script again (with or without encryption), still generates the warning that using a domain account for a credential is not recommended.\nUsing a local account eliminates potential exposure of domain credentials that could be used on other servers.\n\n**When using credentials with DSC resources, prefer a local account over a domain account when possible.**\n\nIf there is a '\\' or '@' in the `Username` property of the credential, then DSC will treat it as a domain account.\nThere is an exception for \"localhost\", \"127.0.0.1\", and \"::1\" in the domain portion of the user name.\n\n## PSDscAllowDomainUser\n\nIn the DSC `Group` resource example above, querying an Active Directory domain *requires* a domain account.\nIn this case add the `PSDscAllowDomainUser` property to the `ConfigurationData` block as follows:\n\n```PowerShell\n$cd = @{\n    AllNodes = @(\n        @{\n            NodeName = 'localhost'\n            PSDscAllowDomainUser = $true\n            # PSDscAllowPlainTextPassword = $true\n            CertificateFile = \"C:\\PublicKeys\\server1.cer\"\n        }\n    )\n}\n```\n\nNow the configuration script will generate the MOF file with no errors or warnings.\n"
+}
