@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        25
+      ],
+      "content": "Enacting configurations"
+    },
+    {
+      "pos": [
+        28,
+        86
+      ],
+      "content": "Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0"
+    },
+    {
+      "pos": [
+        88,
+        201
+      ],
+      "content": "There are two ways to enact PowerShell Desired State Configuration (DSC) configurations: push mode and pull mode."
+    },
+    {
+      "pos": [
+        206,
+        215
+      ],
+      "content": "Push mode"
+    },
+    {
+      "pos": [
+        216,
+        267
+      ],
+      "content": "<ph id=\"ph1\">![</ph>Push mode<ph id=\"ph2\">](images/Push.png \"How push mode works\")</ph>"
+    },
+    {
+      "pos": [
+        269,
+        453
+      ],
+      "content": "Push mode refers to a user actively applying a configuration to a target node by calling the <bpt id=\"p1\">[</bpt>Start-DscConfiguration<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet."
+    },
+    {
+      "pos": [
+        455,
+        944
+      ],
+      "content": "After creating and compiling a configuration, you can enact it in push mode by calling the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet, setting the -Path parameter of the cmdlet to the path where the configuration MOF is located. For example, if the configuration MOF is locted at `C:\\DSC\\Configurations\\localhost.mof`, you would apply it to the local machine with the following command:\n`Start-DscConfiguration -Path 'C:\\DSC\\Configurations'`",
+      "nodes": [
+        {
+          "content": "After creating and compiling a configuration, you can enact it in push mode by calling the <bpt id=\"p2\">[</bpt>Start-DscConfiguration<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, setting the -Path parameter of the cmdlet to the path where the configuration MOF is located.",
+          "pos": [
+            0,
+            276
+          ]
+        },
+        {
+          "content": "For example, if the configuration MOF is locted at <ph id=\"ph3\">`C:\\DSC\\Configurations\\localhost.mof`</ph>, you would apply it to the local machine with the following command:\n<ph id=\"ph4\">`Start-DscConfiguration -Path 'C:\\DSC\\Configurations'`</ph>",
+          "pos": [
+            277,
+            489
+          ]
+        }
+      ]
+    },
+    {
+      "content": "<bpt id=\"p3\">__</bpt>Note<ept id=\"p3\">__</ept>: By default, DSC runs a configuration as a background job.",
+      "pos": [
+        948,
+        1015
+      ]
+    },
+    {
+      "content": "To run the configuration interactively, call the <bpt id=\"p4\">[</bpt>Start-DscConfiguration<ept id=\"p4\">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> with the <bpt id=\"p5\">__</bpt>-Wait<ept id=\"p5\">__</ept> parameter.",
+      "pos": [
+        1016,
+        1178
+      ]
+    },
+    {
+      "content": "Cloud deployment engines typically leverage Pull Mode inside of a broader deployment solution.",
+      "pos": [
+        1180,
+        1274
+      ]
+    },
+    {
+      "content": "For example, Microsoft Azure provides a <bpt id=\"p6\">[</bpt>DSC Extension<ept id=\"p6\">](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-extensions-features/)</ept> for virtual machines.",
+      "pos": [
+        1276,
+        1449
+      ]
+    },
+    {
+      "content": "This provides an option to include a configuration script and all required DSC modules in an archive file that is extracted and executed within a virtual machine as part of a deployment.",
+      "pos": [
+        1451,
+        1637
+      ]
+    },
+    {
+      "pos": [
+        1644,
+        1653
+      ],
+      "content": "Pull mode"
+    },
+    {
+      "pos": [
+        1654,
+        2580
+      ],
+      "content": "![Pull Mode](images/Pull.png \"How pull mode works\")\nIn pull mode, pull clients are configured to get their desired state configurations from a remote pull server. Likewise, the pull server has been set up to host the DSC service, and has been provisioned with the configurations and resources that are required by the pull clients.\nEach one of the pull clients has a scheduled task that performs a periodic compliance check on the configuration of the node. When the event is triggered the first time, it causes the Local Configuration Manager (LCM) on the pull client to validate the configuration. If the pull client is configured as desired, nothing happens. Otherwise, the LCM makes a request to the pull server to get a given configuration. If that configuration exists on the pull server, and it passes initial validation checks, the configuration is transmitted to the pull client, where it is then executed by the LCM.",
+      "nodes": [
+        {
+          "content": "<ph id=\"ph5\">![</ph>Pull Mode<ph id=\"ph6\">](images/Pull.png \"How pull mode works\")</ph>\nIn pull mode, pull clients are configured to get their desired state configurations from a remote pull server.",
+          "pos": [
+            0,
+            162
+          ]
+        },
+        {
+          "content": "Likewise, the pull server has been set up to host the DSC service, and has been provisioned with the configurations and resources that are required by the pull clients.",
+          "pos": [
+            163,
+            331
+          ]
+        },
+        {
+          "content": "Each one of the pull clients has a scheduled task that performs a periodic compliance check on the configuration of the node.",
+          "pos": [
+            332,
+            457
+          ]
+        },
+        {
+          "content": "When the event is triggered the first time, it causes the Local Configuration Manager (LCM) on the pull client to validate the configuration.",
+          "pos": [
+            458,
+            599
+          ]
+        },
+        {
+          "content": "If the pull client is configured as desired, nothing happens.",
+          "pos": [
+            600,
+            661
+          ]
+        },
+        {
+          "content": "Otherwise, the LCM makes a request to the pull server to get a given configuration.",
+          "pos": [
+            662,
+            745
+          ]
+        },
+        {
+          "content": "If that configuration exists on the pull server, and it passes initial validation checks, the configuration is transmitted to the pull client, where it is then executed by the LCM.",
+          "pos": [
+            746,
+            926
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        2582,
+        2704
+      ],
+      "content": "For more information on deploying a DSC Pull Server on premises, see the DSC Pull Server Configuration and Planning Guide."
+    },
+    {
+      "pos": [
+        2706,
+        2922
+      ],
+      "content": "If you would prefer to take advantage of an online service to host Pull Server functionality, see the <bpt id=\"p7\">[</bpt>Azure Automation DSC<ept id=\"p7\">](https://azure.microsoft.com/en-us/documentation/articles/automation-dsc-overview/)</ept> service."
+    },
+    {
+      "pos": [
+        2924,
+        2992
+      ],
+      "content": "The following topics explain how to set up pull servers and clients:"
+    },
+    {
+      "pos": [
+        2996,
+        3041
+      ],
+      "content": "<ph id=\"ph7\">[</ph>Setting up a web pull server<ph id=\"ph8\">](pullServer.md)</ph>"
+    },
+    {
+      "pos": [
+        3044,
+        3093
+      ],
+      "content": "<ph id=\"ph9\">[</ph>Setting up an SMB pull server<ph id=\"ph10\">](pullServerSMB.md)</ph>"
+    },
+    {
+      "pos": [
+        3096,
+        3146
+      ],
+      "content": "<ph id=\"ph11\">[</ph>Configuring a pull client<ph id=\"ph12\">](pullClientConfigID.md)</ph>"
+    }
+  ],
+  "content": "# Enacting configurations\n\n>Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0\n\nThere are two ways to enact PowerShell Desired State Configuration (DSC) configurations: push mode and pull mode.\n\n## Push mode\n![Push mode](images/Push.png \"How push mode works\")\n\nPush mode refers to a user actively applying a configuration to a target node by calling the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet.\n\nAfter creating and compiling a configuration, you can enact it in push mode by calling the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet, setting the -Path parameter of the cmdlet to the path where the configuration MOF is located. For example, if the configuration MOF is locted at `C:\\DSC\\Configurations\\localhost.mof`, you would apply it to the local machine with the following command:\n`Start-DscConfiguration -Path 'C:\\DSC\\Configurations'`\n\n> __Note__: By default, DSC runs a configuration as a background job. To run the configuration interactively, call the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) with the __-Wait__ parameter.\n\nCloud deployment engines typically leverage Pull Mode inside of a broader deployment solution.  For example, Microsoft Azure provides a [DSC Extension](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-extensions-features/) for virtual machines.  This provides an option to include a configuration script and all required DSC modules in an archive file that is extracted and executed within a virtual machine as part of a deployment.  \n\n## Pull mode\n![Pull Mode](images/Pull.png \"How pull mode works\")\nIn pull mode, pull clients are configured to get their desired state configurations from a remote pull server. Likewise, the pull server has been set up to host the DSC service, and has been provisioned with the configurations and resources that are required by the pull clients.\nEach one of the pull clients has a scheduled task that performs a periodic compliance check on the configuration of the node. When the event is triggered the first time, it causes the Local Configuration Manager (LCM) on the pull client to validate the configuration. If the pull client is configured as desired, nothing happens. Otherwise, the LCM makes a request to the pull server to get a given configuration. If that configuration exists on the pull server, and it passes initial validation checks, the configuration is transmitted to the pull client, where it is then executed by the LCM.\n\nFor more information on deploying a DSC Pull Server on premises, see the DSC Pull Server Configuration and Planning Guide.\n\nIf you would prefer to take advantage of an online service to host Pull Server functionality, see the [Azure Automation DSC](https://azure.microsoft.com/en-us/documentation/articles/automation-dsc-overview/) service.\n\nThe following topics explain how to set up pull servers and clients:\n\n- [Setting up a web pull server](pullServer.md)\n- [Setting up an SMB pull server](pullServerSMB.md)\n- [Configuring a pull client](pullClientConfigID.md)"
+}
