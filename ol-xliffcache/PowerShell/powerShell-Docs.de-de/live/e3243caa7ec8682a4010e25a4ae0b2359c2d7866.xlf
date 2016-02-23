@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de-de">
+    <body>
+      <group id="main" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Built-In Windows PowerShell Desired State Configuration Resources</source>
+          <target state="new">Built-In Windows PowerShell Desired State Configuration Resources</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</source>
+          <target state="new">Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Desired State Configuration (DSC) comes with a set of built-in configuration resources.</source>
+          <target state="new">Windows PowerShell Desired State Configuration (DSC) comes with a set of built-in configuration resources.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The following table provides an alphabetical list of these resources and links to topics that describe them in detail.</source>
+          <target state="new">The following table provides an alphabetical list of these resources and links to topics that describe them in detail.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>If you need to create additional resources, see <bpt id="p1">[</bpt>Build Custom Windows PowerShell Desired State Configuration Resources<ept id="p1">](authoringResource.md)</ept></source>
+          <target state="new">If you need to create additional resources, see <bpt id="p1">[</bpt>Build Custom Windows PowerShell Desired State Configuration Resources<ept id="p1">](authoringResource.md)</ept></target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><ph id="ph1">[</ph>Archive Resource<ph id="ph2">](archiveResource.md)</ph></source>
+          <target state="new"><ph id="ph1">[</ph>Archive Resource<ph id="ph2">](archiveResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><ph id="ph3">[</ph>Environment Resource<ph id="ph4">](environmentResource.md)</ph></source>
+          <target state="new"><ph id="ph3">[</ph>Environment Resource<ph id="ph4">](environmentResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source><ph id="ph5">[</ph>File Resource<ph id="ph6">](fileResource.md)</ph></source>
+          <target state="new"><ph id="ph5">[</ph>File Resource<ph id="ph6">](fileResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><ph id="ph7">[</ph>Group Resource<ph id="ph8">](groupResource.md)</ph></source>
+          <target state="new"><ph id="ph7">[</ph>Group Resource<ph id="ph8">](groupResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source><ph id="ph9">[</ph>Log Resource<ph id="ph10">](logResource.md)</ph></source>
+          <target state="new"><ph id="ph9">[</ph>Log Resource<ph id="ph10">](logResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><ph id="ph11">[</ph>Package Resource<ph id="ph12">](PackageResource.md)</ph></source>
+          <target state="new"><ph id="ph11">[</ph>Package Resource<ph id="ph12">](PackageResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><ph id="ph13">[</ph>Registry Resource<ph id="ph14">](registryResource.md)</ph></source>
+          <target state="new"><ph id="ph13">[</ph>Registry Resource<ph id="ph14">](registryResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source><ph id="ph15">[</ph>Script Resource<ph id="ph16">](scriptResource.md)</ph></source>
+          <target state="new"><ph id="ph15">[</ph>Script Resource<ph id="ph16">](scriptResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source><ph id="ph17">[</ph>Service Resource<ph id="ph18">](serviceResource.md)</ph></source>
+          <target state="new"><ph id="ph17">[</ph>Service Resource<ph id="ph18">](serviceResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><ph id="ph19">[</ph>User Resource<ph id="ph20">](userResource.md)</ph></source>
+          <target state="new"><ph id="ph19">[</ph>User Resource<ph id="ph20">](userResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><ph id="ph21">[</ph>Windows Feature Resource<ph id="ph22">](windowsFeatureResource.md)</ph></source>
+          <target state="new"><ph id="ph21">[</ph>Windows Feature Resource<ph id="ph22">](windowsFeatureResource.md)</ph></target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source><ph id="ph23">[</ph>Windows Process Resource<ph id="ph24">](windowsProcessResource.md)</ph></source>
+          <target state="new"><ph id="ph23">[</ph>Windows Process Resource<ph id="ph24">](windowsProcessResource.md)</ph></target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e3243caa7ec8682a4010e25a4ae0b2359c2d7866</xliffext:olfilehash>
+  </header>
+</xliff>

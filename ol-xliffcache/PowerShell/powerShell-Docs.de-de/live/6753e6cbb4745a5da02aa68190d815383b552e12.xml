@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        27
+      ],
+      "content": "Using a DSC report server"
+    },
+    {
+      "pos": [
+        31,
+        65
+      ],
+      "content": "Applies To: Windows PowerShell 5.0"
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> The report server described in this topic is not availalbe in PowerShell 4.0.",
+      "pos": [
+        69,
+        156
+      ]
+    },
+    {
+      "content": "For reporting in PowerShell 4.0, see Using a DSC compliance server.",
+      "pos": [
+        157,
+        224
+      ]
+    },
+    {
+      "content": "The Local Configuration Manager (LCM) of a node can be configured to send reports about its configuration status to a pull server, which can then be queried to retrieve that data.",
+      "pos": [
+        226,
+        405
+      ]
+    },
+    {
+      "content": "Each time the node checks and applies\na configuration, it sends a report to the report server.",
+      "pos": [
+        406,
+        500
+      ]
+    },
+    {
+      "content": "These reports are stored in a database on the server, and can be retrieved by calling the reporting web service.",
+      "pos": [
+        501,
+        613
+      ]
+    },
+    {
+      "content": "Each report contains\ninformation such as what configurations were applied and whether they succeeded, the resources used, any errors that were thrown, and start and finish times.",
+      "pos": [
+        614,
+        792
+      ]
+    },
+    {
+      "pos": [
+        797,
+        831
+      ],
+      "content": "Configuring a node to send reports"
+    },
+    {
+      "pos": [
+        833,
+        1421
+      ],
+      "content": "You tell a node to send reports to a server by using a **ReportServerWeb** block in the node's LCM configuration (for information about configuring the LCM,\n see [Configuring the Local Configuration Manager](metaConfig.md)). The server to which the node sends reports must be set up as a web pull server (you cannot send reports\n to an SMB share). For information about setting up a pull server, see [Setting up a DSC web pull server](pullServer.md). The report server can be the same service from which\n the node pulls configurations and gets resources, or it can be a different service.",
+      "nodes": [
+        {
+          "content": "You tell a node to send reports to a server by using a <bpt id=\"p2\">**</bpt>ReportServerWeb<ept id=\"p2\">**</ept> block in the node's LCM configuration (for information about configuring the LCM,\n see <bpt id=\"p3\">[</bpt>Configuring the Local Configuration Manager<ept id=\"p3\">](metaConfig.md)</ept>).",
+          "pos": [
+            0,
+            224
+          ]
+        },
+        {
+          "content": "The server to which the node sends reports must be set up as a web pull server (you cannot send reports\n to an SMB share).",
+          "pos": [
+            225,
+            347
+          ]
+        },
+        {
+          "content": "For information about setting up a pull server, see <bpt id=\"p4\">[</bpt>Setting up a DSC web pull server<ept id=\"p4\">](pullServer.md)</ept>.",
+          "pos": [
+            348,
+            450
+          ]
+        },
+        {
+          "content": "The report server can be the same service from which\n the node pulls configurations and gets resources, or it can be a different service.",
+          "pos": [
+            451,
+            588
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        1425,
+        1551
+      ],
+      "content": "In the <bpt id=\"p5\">**</bpt>ReportServerWeb<ept id=\"p5\">**</ept> block, you specify the URL of the pull service\n and a registration key that is known to the server."
+    },
+    {
+      "pos": [
+        1556,
+        1696
+      ],
+      "content": "The following configuration configures a node to pull configurations from one service, and send reports\n to a service on a different server."
+    },
+    {
+      "pos": [
+        2550,
+        2569
+      ],
+      "content": "Getting report data"
+    },
+    {
+      "pos": [
+        2571,
+        3146
+      ],
+      "content": "Reports sent to the pull server are entered into a database on the server. The reports are available through calls to the web service. To retrieve reports for a specific node, \nsend an HTTP request to the report web service in the following form:\n`http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID = MyNodeAgentId)/Reports` \nwhere `MyNodeAgentId` is the AgentId of the node for which you want to get reports. You can get the AgentID for a node by calling [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)\non that node.",
+      "nodes": [
+        {
+          "content": "Reports sent to the pull server are entered into a database on the server.",
+          "pos": [
+            0,
+            74
+          ]
+        },
+        {
+          "content": "The reports are available through calls to the web service.",
+          "pos": [
+            75,
+            134
+          ]
+        },
+        {
+          "content": "To retrieve reports for a specific node, \nsend an HTTP request to the report web service in the following form:\n<ph id=\"ph1\">`http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID = MyNodeAgentId)/Reports`</ph> \nwhere <ph id=\"ph2\">`MyNodeAgentId`</ph> is the AgentId of the node for which you want to get reports.",
+          "pos": [
+            135,
+            421
+          ]
+        },
+        {
+          "content": "You can get the AgentID for a node by calling <bpt id=\"p6\">[</bpt>Get-DscLocalConfigurationManager<ept id=\"p6\">](https://technet.microsoft.com/en-us/library/dn407378.aspx)</ept>\non that node.",
+          "pos": [
+            422,
+            575
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        3148,
+        3201
+      ],
+      "content": "The reports are returned as an array of JSON objects."
+    },
+    {
+      "pos": [
+        3203,
+        3276
+      ],
+      "content": "The following script returns the reports for the node on which it is run:"
+    },
+    {
+      "pos": [
+        3872,
+        3891
+      ],
+      "content": "Viewing report data"
+    },
+    {
+      "pos": [
+        3893,
+        4039
+      ],
+      "content": "If you set a variable to the result of the <bpt id=\"p7\">**</bpt>GetReport<ept id=\"p7\">**</ept> function, you can view the individual fields in an element of the array that is returned:"
+    },
+    {
+      "pos": [
+        5135,
+        5525
+      ],
+      "content": "Notice that the **StatusData** field is an object with three properties: **NumberOfResources**, **Locale**, and **ResourcesInDesiredState**. The **ResourcesInDesiredState**\nproperty is an array of objects that each have a number of properties. The following script takes a single report as a parameter, iterates through its **ResourcesInDesiredState**\narray, and writes them to the console:",
+      "nodes": [
+        {
+          "content": "Notice that the <bpt id=\"p8\">**</bpt>StatusData<ept id=\"p8\">**</ept> field is an object with three properties: <bpt id=\"p9\">**</bpt>NumberOfResources<ept id=\"p9\">**</ept>, <bpt id=\"p10\">**</bpt>Locale<ept id=\"p10\">**</ept>, and <bpt id=\"p11\">**</bpt>ResourcesInDesiredState<ept id=\"p11\">**</ept>.",
+          "pos": [
+            0,
+            140
+          ]
+        },
+        {
+          "content": "The <bpt id=\"p12\">**</bpt>ResourcesInDesiredState<ept id=\"p12\">**</ept>\nproperty is an array of objects that each have a number of properties.",
+          "pos": [
+            141,
+            243
+          ]
+        },
+        {
+          "content": "The following script takes a single report as a parameter, iterates through its <bpt id=\"p13\">**</bpt>ResourcesInDesiredState<ept id=\"p13\">**</ept>\narray, and writes them to the console:",
+          "pos": [
+            244,
+            390
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        6128,
+        6197
+      ],
+      "content": "Here is a sample output after calling the <bpt id=\"p14\">**</bpt>GetStatusData<ept id=\"p14\">**</ept> function:"
+    },
+    {
+      "pos": [
+        6730,
+        7015
+      ],
+      "content": "Note that these examples are meant to give you an idea of what you can do with report data. For an introduction on working with JSON in PowerShell, see\n[Playing with JSON and PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/08/playing-with-json-and-powershell/).",
+      "nodes": [
+        {
+          "content": "Note that these examples are meant to give you an idea of what you can do with report data.",
+          "pos": [
+            0,
+            91
+          ]
+        },
+        {
+          "content": "For an introduction on working with JSON in PowerShell, see\n<bpt id=\"p15\">[</bpt>Playing with JSON and PowerShell<ept id=\"p15\">](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/08/playing-with-json-and-powershell/)</ept>.",
+          "pos": [
+            92,
+            285
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        7020,
+        7028
+      ],
+      "content": "See Also"
+    },
+    {
+      "pos": [
+        7030,
+        7221
+      ],
+      "leadings": [
+        "",
+        ">",
+        ">"
+      ],
+      "content": "<bpt id=\"p16\">[</bpt>Configuring the Local Configuration Manager<ept id=\"p16\">](metaConfig.md)</ept>\n<bpt id=\"p17\">[</bpt>Setting up a DSC web pull server<ept id=\"p17\">](pullServer.md)</ept>\n<bpt id=\"p18\">[</bpt>Setting up a pull client using configuration names<ept id=\"p18\">](pullClientConfigNames.md)</ept>"
+    }
+  ],
+  "content": "# Using a DSC report server\n\n> Applies To: Windows PowerShell 5.0\n\n> **Note:** The report server described in this topic is not availalbe in PowerShell 4.0. For reporting in PowerShell 4.0, see Using a DSC compliance server.\n\nThe Local Configuration Manager (LCM) of a node can be configured to send reports about its configuration status to a pull server, which can then be queried to retrieve that data. Each time the node checks and applies\na configuration, it sends a report to the report server. These reports are stored in a database on the server, and can be retrieved by calling the reporting web service. Each report contains\ninformation such as what configurations were applied and whether they succeeded, the resources used, any errors that were thrown, and start and finish times.\n\n## Configuring a node to send reports\n\nYou tell a node to send reports to a server by using a **ReportServerWeb** block in the node's LCM configuration (for information about configuring the LCM,\n see [Configuring the Local Configuration Manager](metaConfig.md)). The server to which the node sends reports must be set up as a web pull server (you cannot send reports\n to an SMB share). For information about setting up a pull server, see [Setting up a DSC web pull server](pullServer.md). The report server can be the same service from which\n the node pulls configurations and gets resources, or it can be a different service.\n \n In the **ReportServerWeb** block, you specify the URL of the pull service\n and a registration key that is known to the server.\n \n  The following configuration configures a node to pull configurations from one service, and send reports\n to a service on a different server. \n \n```powershell\n[DSCLocalConfigurationManager()]\nconfiguration ReportClientConfig\n{\n    Node localhost\n    {\n        Settings\n        {\n            RefreshMode          = 'Pull'\n            RefreshFrequencyMins = 30 \n            RebootNodeIfNeeded   = $true\n        }\n\n        ConfigurationRepositoryWeb CONTOSO-PullSrv\n        {\n            ServerURL          = 'https://CONTOSO-PULL:8080/PSDSCPullServer.svc'\n            RegistrationKey    = 'bbb9778f-43f2-47de-b61e-a0daff474c6d'\n            ConfigurationNames = @('ClientConfig')\n        }\n\n        ReportServerWeb CONTOSO-ReportSrv\n        {\n            ServerURL               = 'http://CONTOSO-REPORT:8080/PSDSCReportServer.svc'\n            RegistrationKey         = 'ba39daaa-96c5-4f2f-9149-f95c46460faa'\n            AllowUnsecureConnection = $true\n        }\n    }\n}\nPullClientConfigID\n```\n\n## Getting report data\n\nReports sent to the pull server are entered into a database on the server. The reports are available through calls to the web service. To retrieve reports for a specific node, \nsend an HTTP request to the report web service in the following form:\n`http://CONTOSO-REPORT:8080/PSDSCReportServer.svc/Nodes(AgentID = MyNodeAgentId)/Reports` \nwhere `MyNodeAgentId` is the AgentId of the node for which you want to get reports. You can get the AgentID for a node by calling [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx)\non that node.\n\nThe reports are returned as an array of JSON objects.\n\nThe following script returns the reports for the node on which it is run:\n\n```powershell\nfunction GetReport\n{\n    param($AgentId = \"$((glcm).AgentId)\", $serviceURL = \"http://CONTOSO-REPORT:8080/PSDSCReportServer.svc\")\n    $requestUri = \"$serviceURL/Nodes(AgentId= '$AgentId')/Reports\"\n    $request = Invoke-WebRequest -Uri $requestUri  -ContentType \"application/json;odata=minimalmetadata;streaming=true;charset=utf-8\" `\n               -UseBasicParsing -Headers @{Accept = \"application/json\";ProtocolVersion = \"2.0\"} `\n               -ErrorAction SilentlyContinue -ErrorVariable ev\n    $object = ConvertFrom-Json $request.content\n    return $object.value\n}\n```\n    \n## Viewing report data\n\nIf you set a variable to the result of the **GetReport** function, you can view the individual fields in an element of the array that is returned:\n\n```powershell\n$reports = GetReport\n$reports[1]\n\nJobId                : 71515ae8-7294-40a3-8137-fc85bf4b678f\nOperationType        : Consistency\nRefreshMode          : \nStatus               : \nReportFormatVersion  : 1.0\nConfigurationVersion : 2.0.0\nStartTime            : 02/08/2016 01:28:54\nEndTime              : 02/08/2016 01:28:57\nRebootRequested      : False\nErrors               : {}\nStatusData           : {{\"NumberOfResources\":\"2\",\"Locale\":\"en-US\",\"ResourcesInDesiredState\":[{\"ResourceId\":\"[WindowsFeature]MyFeatureInstance\",\"SourceI\n                       nfo\":\"C:\\\\ReportTest\\\\ClientConfig.ps1::4::9::WindowsFeature\",\"ModuleName\":\"PsDesiredStateConfiguration\",\"ModuleVersion\":\"1.0\",\"\n                       ConfigurationName\":\"ClientConfig\",\"ResourceName\":\"WindowsFeature\"},{\"ResourceId\":\"[WindowsFeature]My2ndFeatureInstance\",\"SourceI\n                       nfo\":\"C:\\\\ReportTest\\\\ClientConfig.ps1::8::9::WindowsFeature\",\"ModuleName\":\"PsDesiredStateConfiguration\",\"ModuleVersion\":\"1.0\",\"\n                       ConfigurationName\":\"ClientConfig\",\"ResourceName\":\"WindowsFeature\"}]}}\n```\n\nNotice that the **StatusData** field is an object with three properties: **NumberOfResources**, **Locale**, and **ResourcesInDesiredState**. The **ResourcesInDesiredState**\nproperty is an array of objects that each have a number of properties. The following script takes a single report as a parameter, iterates through its **ResourcesInDesiredState**\narray, and writes them to the console:\n \n```powershell\nfunction GetStatusData\n{\n    param ($Report)\n    $statusData = $Report.StatusData | ConvertFrom-Json\n\n    $Resources = $statusData.ResourcesInDesiredState\n\n    Foreach ($Resource in $Resources)\n    {\n        Write-Host 'ResourceId: ' $Resource.ResourceId\n        Write-Host 'SourceInfo: ' $Resource.SourceInfo\n        Write-Host 'ModuleName: ' $Resource.ModuleName\n        Write-Host 'ModuleVersion: ' $Resource.ModuleVersion\n        Write-Host 'ConfigurationName: ' $Resource.ConfigurationName\n        Write-Host 'ResourceName: ' $Resource.ResourceName\n        Write-Host\n    }\n}\n```\n\nHere is a sample output after calling the **GetStatusData** function:\n\n```powershell\nGetStatusData -Report $report[1]\n\nResourceId:  [WindowsFeature]MyFeatureInstance\nSourceInfo:  C:\\ReportTest\\ClientConfig.ps1::4::9::WindowsFeature\nModuleName:  PsDesiredStateConfiguration\nModuleVersion:  1.0\nConfigurationName:  ClientConfig\nResourceName:  WindowsFeature\n\nResourceId:  [WindowsFeature]My2ndFeatureInstance\nSourceInfo:  C:\\ReportTest\\ClientConfig.ps1::8::9::WindowsFeature\nModuleName:  PsDesiredStateConfiguration\nModuleVersion:  1.0\nConfigurationName:  ClientConfig\nResourceName:  WindowsFeature\n```\n\nNote that these examples are meant to give you an idea of what you can do with report data. For an introduction on working with JSON in PowerShell, see\n[Playing with JSON and PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/08/playing-with-json-and-powershell/).\n\n## See Also\n>[Configuring the Local Configuration Manager](metaConfig.md)\n>[Setting up a DSC web pull server](pullServer.md)\n>[Setting up a pull client using configuration names](pullClientConfigNames.md)\n"
+}
