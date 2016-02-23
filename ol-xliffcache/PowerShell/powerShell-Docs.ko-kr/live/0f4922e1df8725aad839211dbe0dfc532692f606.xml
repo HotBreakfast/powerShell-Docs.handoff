@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        18
+      ],
+      "content": "DSC Log Resource"
+    },
+    {
+      "pos": [
+        23,
+        81
+      ],
+      "content": "Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0"
+    },
+    {
+      "pos": [
+        83,
+        271
+      ],
+      "content": "The <bpt id=\"p1\">__</bpt>Log<ept id=\"p1\">__</ept> resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to write messages to the Microsoft-Windows-Desired State Configuration/Analytic event log."
+    },
+    {
+      "pos": [
+        378,
+        388
+      ],
+      "content": "Properties"
+    },
+    {
+      "pos": [
+        392,
+        400
+      ],
+      "content": "Property"
+    },
+    {
+      "pos": [
+        405,
+        416
+      ],
+      "content": "Description"
+    },
+    {
+      "pos": [
+        435,
+        442
+      ],
+      "content": "Message"
+    },
+    {
+      "pos": [
+        444,
+        556
+      ],
+      "content": "Indicates the message you want to write to the Microsoft-Windows-Desired State Configuration/Analytic event log."
+    },
+    {
+      "pos": [
+        561,
+        570
+      ],
+      "content": "DependsOn"
+    },
+    {
+      "content": "Indicates that the configuration of another resource must run before this log message gets written.",
+      "pos": [
+        573,
+        672
+      ]
+    },
+    {
+      "content": "For example, if the ID of the resource configuration script block that you want to run first is <bpt id=\"p2\">__</bpt>ResourceName<ept id=\"p2\">__</ept> and its type is <bpt id=\"p3\">__</bpt>ResourceType<ept id=\"p3\">__</ept>, the syntax for using this property is <ph id=\"ph1\">`DependsOn = \"[ResourceType]ResourceName\"`</ph>.",
+      "pos": [
+        673,
+        901
+      ]
+    },
+    {
+      "pos": [
+        908,
+        915
+      ],
+      "content": "Example"
+    },
+    {
+      "pos": [
+        917,
+        1042
+      ],
+      "content": "The following example shows how to include a message in the Microsoft-Windows-Desired State Configuration/Analytic event log."
+    },
+    {
+      "pos": [
+        1046,
+        1214
+      ],
+      "content": "<bpt id=\"p4\">**</bpt>Note<ept id=\"p4\">**</ept>: if you run <bpt id=\"p5\">[</bpt>Test-DscConfiguration<ept id=\"p5\">](https://technet.microsoft.com/en-us/library/dn407382.aspx)</ept> with this resource configured, it will always return <bpt id=\"p6\">**</bpt>$false<ept id=\"p6\">**</ept>."
+    }
+  ],
+  "content": "# DSC Log Resource \n\n> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0\n\nThe __Log__ resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to write messages to the Microsoft-Windows-Desired State Configuration/Analytic event log.\n\n```\nSyntax\n\nLog [string] #ResourceName\n{\n    Message = [string]\n    [ DependsOn = [string[]] ]\n}\n```\n\n## Properties\n|  Property  |  Description   | \n|---|---| \n| Message| Indicates the message you want to write to the Microsoft-Windows-Desired State Configuration/Analytic event log.| \n| DependsOn | Indicates that the configuration of another resource must run before this log message gets written. For example, if the ID of the resource configuration script block that you want to run first is __ResourceName__ and its type is __ResourceType__, the syntax for using this property is `DependsOn = \"[ResourceType]ResourceName\"`.| \n\n## Example\n\nThe following example shows how to include a message in the Microsoft-Windows-Desired State Configuration/Analytic event log.\n\n> **Note**: if you run [Test-DscConfiguration](https://technet.microsoft.com/en-us/library/dn407382.aspx) with this resource configured, it will always return **$false**.\n\n```powershell \nLog LogExample\n{\n    Message = \"This message will appear in the Microsoft-Windows-Desired State Configuration/Analytic event log.\"\n} \n```\n\n"
+}
