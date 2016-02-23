@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        25
+      ],
+      "content": "Debugging DSC resources"
+    },
+    {
+      "pos": [
+        29,
+        63
+      ],
+      "content": "Applies To: Windows PowerShell 5.0"
+    },
+    {
+      "pos": [
+        65,
+        226
+      ],
+      "content": "In PowerShell 5.0, a new feature was introduced in Desired State Configuraiton (DSC) that allows you to debug a DSC resource as a configuration is being applied."
+    },
+    {
+      "pos": [
+        231,
+        253
+      ],
+      "content": "Enabling DSC debugging"
+    },
+    {
+      "content": "Before you can debug a resource, you have to enable debugging by calling the <bpt id=\"p1\">[</bpt>Enable-DscDebug<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/mt517870.aspx)</ept> cmdlet.",
+      "pos": [
+        254,
+        415
+      ]
+    },
+    {
+      "content": "This cmdlet takes a mandatory parameter, <bpt id=\"p2\">**</bpt>BreakAll<ept id=\"p2\">**</ept>.",
+      "pos": [
+        416,
+        470
+      ]
+    },
+    {
+      "content": "You can verify that debugging has been enabled by looking at the result of a call to <bpt id=\"p3\">[</bpt>Get-DscLocalConfigurationManager<ept id=\"p3\">](https://technet.microsoft.com/en-us/library/dn407378.aspx)</ept>.",
+      "pos": [
+        471,
+        650
+      ]
+    },
+    {
+      "content": "The following PowerShell output shows the result of enabling debugging:",
+      "pos": [
+        651,
+        722
+      ]
+    },
+    {
+      "pos": [
+        1037,
+        1080
+      ],
+      "content": "Starting a configuration with debug enabled"
+    },
+    {
+      "content": "To debug a DSC resource, you start a configuration that calls that resource.",
+      "pos": [
+        1081,
+        1157
+      ]
+    },
+    {
+      "content": "For this example, we'll look at a simple configuration that calls the <bpt id=\"p4\">[</bpt>WindowsFeature<ept id=\"p4\">](windowsfeatureResource.md)</ept> resource to ensure that the \"WindowsPowerShellWebAccess\" feature is installed:",
+      "pos": [
+        1158,
+        1350
+      ]
+    },
+    {
+      "pos": [
+        1659,
+        2038
+      ],
+      "content": "After compiling the configuration, start it by calling [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx). The configuration will stop when the\nLocal Configuration Manager (LCM) calls into the first resoure in the configuration. If you use the `-Verbose` and `-Wait` parameters, the output displays the lines you need to enter\nto start debugging.",
+      "nodes": [
+        {
+          "content": "After compiling the configuration, start it by calling <bpt id=\"p5\">[</bpt>Start-DscConfiguration<ept id=\"p5\">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept>.",
+          "pos": [
+            0,
+            139
+          ]
+        },
+        {
+          "content": "The configuration will stop when the\nLocal Configuration Manager (LCM) calls into the first resoure in the configuration.",
+          "pos": [
+            140,
+            261
+          ]
+        },
+        {
+          "content": "If you use the <ph id=\"ph1\">`-Verbose`</ph> and <ph id=\"ph2\">`-Wait`</ph> parameters, the output displays the lines you need to enter\nto start debugging.",
+          "pos": [
+            262,
+            379
+          ]
+        }
+      ]
+    },
+    {
+      "content": "At this point, the LCM has called the resource, and come to the first break point.",
+      "pos": [
+        3715,
+        3797
+      ]
+    },
+    {
+      "content": "The last three lines in the output show you how to attach to the process and start debugging the resource script.",
+      "pos": [
+        3798,
+        3911
+      ]
+    },
+    {
+      "pos": [
+        3916,
+        3945
+      ],
+      "content": "Debugging the resource script"
+    },
+    {
+      "pos": [
+        3947,
+        4188
+      ],
+      "content": "Start a new instance of the PowerShell ISE. In the console pane, enter the last three lines of output from the `Start-DscConifiguration` output as commands, replacing `<credentials>` with\nvalid user credentials. Here is the resulting output.",
+      "nodes": [
+        {
+          "content": "Start a new instance of the PowerShell ISE.",
+          "pos": [
+            0,
+            43
+          ]
+        },
+        {
+          "content": "In the console pane, enter the last three lines of output from the <ph id=\"ph3\">`Start-DscConifiguration`</ph> output as commands, replacing <ph id=\"ph4\">`&lt;credentials&gt;`</ph> with\nvalid user credentials.",
+          "pos": [
+            44,
+            211
+          ]
+        },
+        {
+          "content": "Here is the resulting output.",
+          "pos": [
+            212,
+            241
+          ]
+        }
+      ]
+    }
+  ],
+  "content": "# Debugging DSC resources\n\n> Applies To: Windows PowerShell 5.0\n\nIn PowerShell 5.0, a new feature was introduced in Desired State Configuraiton (DSC) that allows you to debug a DSC resource as a configuration is being applied.\n\n## Enabling DSC debugging\nBefore you can debug a resource, you have to enable debugging by calling the [Enable-DscDebug](https://technet.microsoft.com/en-us/library/mt517870.aspx) cmdlet. This cmdlet takes a mandatory parameter, **BreakAll**. You can verify that debugging has been enabled by looking at the result of a call to [Get-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx). The following PowerShell output shows the result of enabling debugging:\n\n\n```powershell\nPS C:\\DebugTest> $LCM = Get-DscLocalConfigurationManager\n\nPS C:\\DebugTest> $LCM.DebugMode\nNONE\n\nPS C:\\DebugTest> Enable-DscDebug -BreakAll\n\nPS C:\\DebugTest> $LCM = Get-DscLocalConfigurationManager\n\nPS C:\\DebugTest> $LCM.DebugMode\nForceModuleImport\nResourceScriptBreakAll\n\nPS C:\\DebugTest>\n```\n\n\n## Starting a configuration with debug enabled\nTo debug a DSC resource, you start a configuration that calls that resource. For this example, we'll look at a simple configuration that calls the [WindowsFeature](windowsfeatureResource.md) resource to ensure that the \"WindowsPowerShellWebAccess\" feature is installed:\n\n```powershell\nConfiguration PSWebAccess\n    {\n    Import-DscResource -ModuleName 'PsDesiredStateConfiguration'\n    Node localhost\n        {\n        WindowsFeature PSWA\n            {\n            Name = 'WindowsPowerShellWebAccess'\n            Ensure = 'Present'\n            }\n        }\n    }\nPSWebAccess\n```\nAfter compiling the configuration, start it by calling [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx). The configuration will stop when the\nLocal Configuration Manager (LCM) calls into the first resoure in the configuration. If you use the `-Verbose` and `-Wait` parameters, the output displays the lines you need to enter\nto start debugging.\n\n```powershell\nPS C:\\DebugTest> Start-DscConfiguration .\\PSWebAccess -Wait -Verbose\nVERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' = SendConfigurationApply,'className' = MSFT_DSCLocalConfiguration\nManager,'namespaceName' = root/Microsoft/Windows/DesiredStateConfiguration'.\nVERBOSE: An LCM method call arrived from computer TEST-SRV with user sid S-1-5-21-2127521184-1604012920-1887927527-108583.\nVERBOSE: An LCM method call arrived from computer TEST-SRV with user sid S-1-5-21-2127521184-1604012920-1887927527-108583.\nVERBOSE: [TEST-SRV]: LCM:  [ Start  Set      ]\nWARNING: [TEST-SRV]:                            [DSCEngine] Warning LCM is in Debug 'ResourceScriptBreakAll' mode.  Resource script processing will \nbe stopped to wait for PowerShell script debugger to attach.\nVERBOSE: [TEST-SRV]:                            [DSCEngine] Importing the module C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\PSDesiredStateCo\nnfiguration\\DscResources\\MSFT_RoleResource\\MSFT_RoleResource.psm1 in force mode.\nVERBOSE: [TEST-SRV]: LCM:  [ Start  Resource ]  [[WindowsFeature]PSWA]\nVERBOSE: [TEST-SRV]: LCM:  [ Start  Test     ]  [[WindowsFeature]PSWA]\nVERBOSE: [TEST-SRV]:                            [[WindowsFeature]PSWA] Importing the module MSFT_RoleResource in force mode.\nWARNING: [TEST-SRV]:                            [[WindowsFeature]PSWA] Resource is waiting for PowerShell script debugger to attach.  Use the follow\ning commands to begin debugging this resource script:\nEnter-PSSession -ComputerName TEST-SRV -Credential <credentials>\nEnter-PSHostProcess -Id 9000 -AppDomainName DscPsPluginWkr_AppDomain\nDebug-Runspace -Id 9\n```\nAt this point, the LCM has called the resource, and come to the first break point. The last three lines in the output show you how to attach to the process and start debugging the resource script.\n\n## Debugging the resource script\n\nStart a new instance of the PowerShell ISE. In the console pane, enter the last three lines of output from the `Start-DscConifiguration` output as commands, replacing `<credentials>` with\nvalid user credentials. Here is the resulting output.\n\n\n\n"
+}
