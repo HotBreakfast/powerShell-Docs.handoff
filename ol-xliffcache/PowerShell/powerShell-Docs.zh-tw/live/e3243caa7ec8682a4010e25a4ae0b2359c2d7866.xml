@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        67
+      ],
+      "content": "Built-In Windows PowerShell Desired State Configuration Resources"
+    },
+    {
+      "pos": [
+        71,
+        129
+      ],
+      "content": "Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0"
+    },
+    {
+      "content": "Windows PowerShell Desired State Configuration (DSC) comes with a set of built-in configuration resources.",
+      "pos": [
+        131,
+        237
+      ]
+    },
+    {
+      "content": "The following table provides an alphabetical list of these resources and links to topics that describe them in detail.",
+      "pos": [
+        238,
+        356
+      ]
+    },
+    {
+      "content": "If you need to create additional resources, see <bpt id=\"p1\">[</bpt>Build Custom Windows PowerShell Desired State Configuration Resources<ept id=\"p1\">](authoringResource.md)</ept>",
+      "pos": [
+        357,
+        498
+      ]
+    },
+    {
+      "pos": [
+        502,
+        540
+      ],
+      "content": "<ph id=\"ph1\">[</ph>Archive Resource<ph id=\"ph2\">](archiveResource.md)</ph>"
+    },
+    {
+      "pos": [
+        543,
+        589
+      ],
+      "content": "<ph id=\"ph3\">[</ph>Environment Resource<ph id=\"ph4\">](environmentResource.md)</ph>"
+    },
+    {
+      "pos": [
+        592,
+        624
+      ],
+      "content": "<ph id=\"ph5\">[</ph>File Resource<ph id=\"ph6\">](fileResource.md)</ph>"
+    },
+    {
+      "pos": [
+        627,
+        661
+      ],
+      "content": "<ph id=\"ph7\">[</ph>Group Resource<ph id=\"ph8\">](groupResource.md)</ph>"
+    },
+    {
+      "pos": [
+        664,
+        694
+      ],
+      "content": "<ph id=\"ph9\">[</ph>Log Resource<ph id=\"ph10\">](logResource.md)</ph>"
+    },
+    {
+      "pos": [
+        697,
+        735
+      ],
+      "content": "<ph id=\"ph11\">[</ph>Package Resource<ph id=\"ph12\">](PackageResource.md)</ph>"
+    },
+    {
+      "pos": [
+        738,
+        778
+      ],
+      "content": "<ph id=\"ph13\">[</ph>Registry Resource<ph id=\"ph14\">](registryResource.md)</ph>"
+    },
+    {
+      "pos": [
+        781,
+        817
+      ],
+      "content": "<ph id=\"ph15\">[</ph>Script Resource<ph id=\"ph16\">](scriptResource.md)</ph>"
+    },
+    {
+      "pos": [
+        820,
+        858
+      ],
+      "content": "<ph id=\"ph17\">[</ph>Service Resource<ph id=\"ph18\">](serviceResource.md)</ph>"
+    },
+    {
+      "pos": [
+        861,
+        893
+      ],
+      "content": "<ph id=\"ph19\">[</ph>User Resource<ph id=\"ph20\">](userResource.md)</ph>"
+    },
+    {
+      "pos": [
+        896,
+        949
+      ],
+      "content": "<ph id=\"ph21\">[</ph>Windows Feature Resource<ph id=\"ph22\">](windowsFeatureResource.md)</ph>"
+    },
+    {
+      "pos": [
+        952,
+        1005
+      ],
+      "content": "<ph id=\"ph23\">[</ph>Windows Process Resource<ph id=\"ph24\">](windowsProcessResource.md)</ph>"
+    }
+  ],
+  "content": "# Built-In Windows PowerShell Desired State Configuration Resources\n\n> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0\n\nWindows PowerShell Desired State Configuration (DSC) comes with a set of built-in configuration resources. The following table provides an alphabetical list of these resources and links to topics that describe them in detail. If you need to create additional resources, see [Build Custom Windows PowerShell Desired State Configuration Resources](authoringResource.md)\n\n* [Archive Resource](archiveResource.md)\n* [Environment Resource](environmentResource.md)\n* [File Resource](fileResource.md)\n* [Group Resource](groupResource.md)\n* [Log Resource](logResource.md)\n* [Package Resource](PackageResource.md)\n* [Registry Resource](registryResource.md)\n* [Script Resource](scriptResource.md)\n* [Service Resource](serviceResource.md)\n* [User Resource](userResource.md)\n* [Windows Feature Resource](windowsFeatureResource.md)\n* [Windows Process Resource](windowsProcessResource.md)\n"
+}
