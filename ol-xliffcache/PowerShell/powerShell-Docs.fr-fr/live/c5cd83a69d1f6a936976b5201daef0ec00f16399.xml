@@ -1,0 +1,250 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        58
+      ],
+      "content": "Desired State Configuration Overview for Decision Makers"
+    },
+    {
+      "content": "This document describes the business benefits of using PowerShell Desired State Configuration (DSC).",
+      "pos": [
+        62,
+        162
+      ]
+    },
+    {
+      "content": "It is not a technical guide.",
+      "pos": [
+        163,
+        191
+      ]
+    },
+    {
+      "pos": [
+        196,
+        232
+      ],
+      "content": "What Is Desired State Configuration?"
+    },
+    {
+      "content": "Windows PowerShell Desired State Configuration (DSC) provides a configuration platform built into Windows that is based on open standards.",
+      "pos": [
+        237,
+        375
+      ]
+    },
+    {
+      "content": "DSC is flexible enough to function reliably and consistently in each stage of the deployment lifecycle (development, test, pre-production, production), as well as during scale-out.",
+      "pos": [
+        376,
+        556
+      ]
+    },
+    {
+      "content": "DSC centers around the idea of \"<bpt id=\"p1\">[</bpt>configurations<ept id=\"p1\">](https://msdn.microsoft.com/en-us/powershell/dsc/configurations)</ept>\", which are easy-to-read documents that describe an environment made up of computers (\"nodes\") with specific characteristics.",
+      "pos": [
+        559,
+        797
+      ]
+    },
+    {
+      "content": "These characteristics can be as simple as ensuring a specific Windows feature is enabled, or as complex as deploying SharePoint.",
+      "pos": [
+        798,
+        926
+      ]
+    },
+    {
+      "content": "DSC also has monitoring and reporting built in.",
+      "pos": [
+        929,
+        976
+      ]
+    },
+    {
+      "content": "If a system is no longer compliant, DSC can raise an alert and act to correct the system.",
+      "pos": [
+        977,
+        1066
+      ]
+    },
+    {
+      "pos": [
+        1072,
+        1117
+      ],
+      "content": "Benefits of Using Desired State Configuration"
+    },
+    {
+      "content": "Configurations are designed to be easily read, stored, and updated.",
+      "pos": [
+        1122,
+        1189
+      ]
+    },
+    {
+      "content": "Configurations simply declare the state target devices should be in, instead of writing instructions for how to put them in that state.",
+      "pos": [
+        1190,
+        1325
+      ]
+    },
+    {
+      "content": "This makes it much less costly for to learn, adopt, implement, and maintain configuration through DSC.",
+      "pos": [
+        1326,
+        1428
+      ]
+    },
+    {
+      "content": "Creating configurations means that complex deployment steps are captured as a \"single source of truth\" in a single location.",
+      "pos": [
+        1431,
+        1555
+      ]
+    },
+    {
+      "content": "This makes repeated deployments of a specific set of machines much less error-prone.",
+      "pos": [
+        1556,
+        1640
+      ]
+    },
+    {
+      "content": "In turn, this makes deployments faster and more reliable.",
+      "pos": [
+        1641,
+        1698
+      ]
+    },
+    {
+      "content": "This enables quick turnaround on complex deployments.",
+      "pos": [
+        1699,
+        1752
+      ]
+    },
+    {
+      "content": "Configurations are also shareable via the PowerShell gallery.",
+      "pos": [
+        1754,
+        1815
+      ]
+    },
+    {
+      "content": "This means common scenarios and best practices might already exist for the work you need done.",
+      "pos": [
+        1816,
+        1910
+      ]
+    },
+    {
+      "pos": [
+        1916,
+        1954
+      ],
+      "content": "Desired State Configuration and DevOps"
+    },
+    {
+      "content": "<bpt id=\"p2\">[</bpt>DevOps<ept id=\"p2\">](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx)</ept> is a combination of people, technologies and culture that allow for rapid deployment and iteration.",
+      "pos": [
+        1959,
+        2168
+      ]
+    },
+    {
+      "content": "DSC was designed with DevOps in mind.",
+      "pos": [
+        2169,
+        2206
+      ]
+    },
+    {
+      "content": "Having a single configuration define an environment means that developers can encode their requirements into a configuration, check that configuration into source control, and operations teams can easily deploy code without having to go through error-prone manual processes.",
+      "pos": [
+        2207,
+        2481
+      ]
+    },
+    {
+      "pos": [
+        2484,
+        2686
+      ],
+      "content": "Configurations are also <bpt id=\"p3\">[</bpt>data-driven<ept id=\"p3\">](https://msdn.microsoft.com/en-us/powershell/dsc/configdata)</ept>, which makes it easier for ops teams to identify and change environments without developer intervention."
+    },
+    {
+      "pos": [
+        2692,
+        2738
+      ],
+      "content": "Desired State Configuration On and Off Premise"
+    },
+    {
+      "content": "DSC can be used to manage both on-premise and off-premise deployments.",
+      "pos": [
+        2743,
+        2813
+      ]
+    },
+    {
+      "content": "For on-premise solutions, Desired State Configuration has a <bpt id=\"p4\">[</bpt>pull server<ept id=\"p4\">](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver)</ept> that can be used to centralize management of machines and report on their status.",
+      "pos": [
+        2814,
+        3029
+      ]
+    },
+    {
+      "content": "For cloud solutions, Desired State Configuration is usable wherever Windows is usable.",
+      "pos": [
+        3030,
+        3116
+      ]
+    },
+    {
+      "content": "There are also specific offerings from Azure built on Desired State Configuration, such as <bpt id=\"p5\">[</bpt>Azure Automation<ept id=\"p5\">](https://azure.microsoft.com/en-us/documentation/services/automation/)</ept>, which  centralizes reporting of Desired State Configuration.",
+      "pos": [
+        3117,
+        3358
+      ]
+    },
+    {
+      "pos": [
+        3364,
+        3385
+      ],
+      "content": "DSC and Compatibility"
+    },
+    {
+      "content": "Although DSC was introduced in Windows Server 2012 R2, it is available for downlevel operating systems via the Windows Management Framework (WMF) package.",
+      "pos": [
+        3390,
+        3544
+      ]
+    },
+    {
+      "content": "More information about the WMF can be found on the <bpt id=\"p6\">[</bpt>PowerShell landing page<ept id=\"p6\">](https://msdn.microsoft.com/en-us/powershell/)</ept>.",
+      "pos": [
+        3545,
+        3668
+      ]
+    },
+    {
+      "content": "DSC can also be used to manage Linux.",
+      "pos": [
+        3671,
+        3708
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p7\">[</bpt>Getting Started with DSC for Linux<ept id=\"p7\">](https://msdn.microsoft.com/en-us/powershell/dsc/lnxgettingstarted)</ept>",
+      "pos": [
+        3709,
+        3838
+      ]
+    }
+  ],
+  "content": "# Desired State Configuration Overview for Decision Makers #\n\nThis document describes the business benefits of using PowerShell Desired State Configuration (DSC). It is not a technical guide.\n\n## What Is Desired State Configuration? ##\n\nWindows PowerShell Desired State Configuration (DSC) provides a configuration platform built into Windows that is based on open standards. DSC is flexible enough to function reliably and consistently in each stage of the deployment lifecycle (development, test, pre-production, production), as well as during scale-out. \n\nDSC centers around the idea of \"[configurations](https://msdn.microsoft.com/en-us/powershell/dsc/configurations)\", which are easy-to-read documents that describe an environment made up of computers (\"nodes\") with specific characteristics. These characteristics can be as simple as ensuring a specific Windows feature is enabled, or as complex as deploying SharePoint. \n\nDSC also has monitoring and reporting built in. If a system is no longer compliant, DSC can raise an alert and act to correct the system. \n\n## Benefits of Using Desired State Configuration ##\n\nConfigurations are designed to be easily read, stored, and updated. Configurations simply declare the state target devices should be in, instead of writing instructions for how to put them in that state. This makes it much less costly for to learn, adopt, implement, and maintain configuration through DSC. \n\nCreating configurations means that complex deployment steps are captured as a \"single source of truth\" in a single location. This makes repeated deployments of a specific set of machines much less error-prone. In turn, this makes deployments faster and more reliable. This enables quick turnaround on complex deployments.\n\nConfigurations are also shareable via the PowerShell gallery. This means common scenarios and best practices might already exist for the work you need done.\n\n\n## Desired State Configuration and DevOps ##\n\n[DevOps](http://blogs.technet.com/b/ashleymcglone/archive/2015/11/20/devops-for-n00bs-ie-windows-people.aspx) is a combination of people, technologies and culture that allow for rapid deployment and iteration. DSC was designed with DevOps in mind. Having a single configuration define an environment means that developers can encode their requirements into a configuration, check that configuration into source control, and operations teams can easily deploy code without having to go through error-prone manual processes. \n\nConfigurations are also [data-driven](https://msdn.microsoft.com/en-us/powershell/dsc/configdata), which makes it easier for ops teams to identify and change environments without developer intervention. \n\n## Desired State Configuration On and Off Premise ##\n\nDSC can be used to manage both on-premise and off-premise deployments. For on-premise solutions, Desired State Configuration has a [pull server](https://msdn.microsoft.com/en-us/powershell/dsc/pullserver) that can be used to centralize management of machines and report on their status. For cloud solutions, Desired State Configuration is usable wherever Windows is usable. There are also specific offerings from Azure built on Desired State Configuration, such as [Azure Automation](https://azure.microsoft.com/en-us/documentation/services/automation/), which  centralizes reporting of Desired State Configuration. \n\n## DSC and Compatibility ##\n\nAlthough DSC was introduced in Windows Server 2012 R2, it is available for downlevel operating systems via the Windows Management Framework (WMF) package. More information about the WMF can be found on the [PowerShell landing page](https://msdn.microsoft.com/en-us/powershell/). \n\nDSC can also be used to manage Linux. For more information, see [Getting Started with DSC for Linux](https://msdn.microsoft.com/en-us/powershell/dsc/lnxgettingstarted)"
+}
