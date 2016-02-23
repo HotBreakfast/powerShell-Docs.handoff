@@ -1,0 +1,429 @@
+{
+  "nodes": [
+    {
+      "pos": [
+        2,
+        20
+      ],
+      "content": "DSC Configurations"
+    },
+    {
+      "pos": [
+        23,
+        81
+      ],
+      "content": "Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0"
+    },
+    {
+      "pos": [
+        83,
+        242
+      ],
+      "content": "DSC configurations are PowerShell scripts that define a special type of function. \nTo define a configuration, you use the PowerShell keyword __Configuration__.",
+      "nodes": [
+        {
+          "content": "DSC configurations are PowerShell scripts that define a special type of function.",
+          "pos": [
+            0,
+            81
+          ]
+        },
+        {
+          "content": "To define a configuration, you use the PowerShell keyword <bpt id=\"p1\">__</bpt>Configuration<ept id=\"p1\">__</ept>.",
+          "pos": [
+            83,
+            159
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        558,
+        589
+      ],
+      "content": "Save the script as a .ps1 file."
+    },
+    {
+      "pos": [
+        594,
+        614
+      ],
+      "content": "Configuration syntax"
+    },
+    {
+      "pos": [
+        616,
+        671
+      ],
+      "content": "A configuration script consists of the following parts:"
+    },
+    {
+      "content": "The <bpt id=\"p2\">**</bpt>Configuration<ept id=\"p2\">**</ept> block.",
+      "pos": [
+        675,
+        703
+      ]
+    },
+    {
+      "content": "This is the outermost script block.",
+      "pos": [
+        704,
+        739
+      ]
+    },
+    {
+      "content": "You define it by using the <bpt id=\"p3\">**</bpt>Configuration<ept id=\"p3\">**</ept> keyword and providing a name.",
+      "pos": [
+        740,
+        814
+      ]
+    },
+    {
+      "content": "In this case, the name of the configuration is \"MyDscConfiguration\".",
+      "pos": [
+        815,
+        883
+      ]
+    },
+    {
+      "content": "One or more <bpt id=\"p4\">**</bpt>Node<ept id=\"p4\">**</ept> blocks.",
+      "pos": [
+        886,
+        914
+      ]
+    },
+    {
+      "content": "These define the nodes (computers or VMs) that you are configuring.",
+      "pos": [
+        915,
+        982
+      ]
+    },
+    {
+      "content": "In the above configuration, there is one <bpt id=\"p5\">**</bpt>Node<ept id=\"p5\">**</ept> block that targets a computer named \"TEST-PC1\".",
+      "pos": [
+        983,
+        1080
+      ]
+    },
+    {
+      "content": "One or more resource blocks.",
+      "pos": [
+        1083,
+        1111
+      ]
+    },
+    {
+      "content": "This is where the configuration sets the properties for the resources that it is configuring.",
+      "pos": [
+        1112,
+        1205
+      ]
+    },
+    {
+      "content": "In this case, there are two resource blocks, each of which call the \"WindowsFeature\" resource.",
+      "pos": [
+        1206,
+        1300
+      ]
+    },
+    {
+      "content": "Within a <bpt id=\"p6\">**</bpt>Configuration<ept id=\"p6\">**</ept> block, you can do anything that you normally could in a PoweShell function.",
+      "pos": [
+        1302,
+        1404
+      ]
+    },
+    {
+      "content": "For example, in the previous example, if you didn't want to hard code the name of the target computer in the configuration, you could add a parameter for the node name:",
+      "pos": [
+        1405,
+        1573
+      ]
+    },
+    {
+      "content": "In this example, you specify the name of the node by passing it as the $computerName parameter when you [compile the configuraton](# Compiling the configuration).",
+      "pos": [
+        1953,
+        2115
+      ]
+    },
+    {
+      "content": "The name defaults to \"localhost\".",
+      "pos": [
+        2116,
+        2149
+      ]
+    },
+    {
+      "pos": [
+        2154,
+        2181
+      ],
+      "content": "Compiling the configuration"
+    },
+    {
+      "content": "Before you can enact a configuration, you have to compile it into a MOF document.",
+      "pos": [
+        2182,
+        2263
+      ]
+    },
+    {
+      "content": "You do this by calling the configuration like you would a PowerShell function.",
+      "pos": [
+        2264,
+        2342
+      ]
+    },
+    {
+      "content": "<bpt id=\"p7\">__</bpt>Note:<ept id=\"p7\">__</ept> To call a configuration, the function must be in global scope (as with any other PowerShell function).",
+      "pos": [
+        2344,
+        2456
+      ]
+    },
+    {
+      "content": "You can make this happen either by \"dot-sourcing\" the script, or by running the configuration script by using F5 or clicking on the <bpt id=\"p8\">__</bpt>Run Script<ept id=\"p8\">__</ept> button in the ISE.",
+      "pos": [
+        2457,
+        2622
+      ]
+    },
+    {
+      "content": "To dot-source the script, run the command <ph id=\"ph1\">`. .\\myConfig.ps1`</ph> where <ph id=\"ph2\">`myConfig.ps1`</ph> is the name of the script file that contains your configuration.",
+      "pos": [
+        2623,
+        2769
+      ]
+    },
+    {
+      "pos": [
+        2771,
+        2815
+      ],
+      "content": "When you call the configuration, it creates:"
+    },
+    {
+      "pos": [
+        2819,
+        2893
+      ],
+      "content": "A folder in the current directory with the same name as the configuration."
+    },
+    {
+      "content": "A file named <bpt id=\"p9\">_</bpt>NodeName<ept id=\"p9\">_</ept>.mof in the new directory, where <bpt id=\"p10\">_</bpt>NodeName<ept id=\"p10\">_</ept> is the name of the target node of the configuration.",
+      "pos": [
+        2896,
+        3015
+      ]
+    },
+    {
+      "content": "If there are more than one nodes, a MOF file will be created for each node.",
+      "pos": [
+        3016,
+        3091
+      ]
+    },
+    {
+      "content": "<bpt id=\"p11\">__</bpt>Note<ept id=\"p11\">__</ept>: The MOF file contains all of the configuration information for the target node.",
+      "pos": [
+        3094,
+        3183
+      ]
+    },
+    {
+      "content": "Because of this, it’s important to keep it secure.",
+      "pos": [
+        3184,
+        3234
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p12\">[</bpt>Securing the MOF file<ept id=\"p12\">](secureMOF.md)</ept>.",
+      "pos": [
+        3235,
+        3299
+      ]
+    },
+    {
+      "pos": [
+        3301,
+        3383
+      ],
+      "content": "Compiling the first configuration above results in the following folder structure:"
+    },
+    {
+      "content": "If the configuration takes a parameter, as in the second example, that has to be provided at compile time.",
+      "pos": [
+        3985,
+        4091
+      ]
+    },
+    {
+      "content": "Here's how that would look:",
+      "pos": [
+        4092,
+        4119
+      ]
+    },
+    {
+      "pos": [
+        4757,
+        4772
+      ],
+      "content": "Using DependsOn"
+    },
+    {
+      "content": "A useful DSC keyword is <bpt id=\"p13\">__</bpt>DependsOn<ept id=\"p13\">__</ept>.",
+      "pos": [
+        4773,
+        4811
+      ]
+    },
+    {
+      "content": "Typically (though not necessarily always), DSC applies the resources in the order that they appear within the configuration.",
+      "pos": [
+        4812,
+        4936
+      ]
+    },
+    {
+      "content": "However, <bpt id=\"p14\">__</bpt>DependsOn<ept id=\"p14\">__</ept> specifies which resources depend on other resources, and the LCM ensures that they are applied in the correct order, regardless of the order in which resource instances are defined.",
+      "pos": [
+        4937,
+        5141
+      ]
+    },
+    {
+      "content": "For example, a configuration might specify that an instance of the <bpt id=\"p15\">__</bpt>User<ept id=\"p15\">__</ept> resource depends on the existence of a <bpt id=\"p16\">__</bpt>Group<ept id=\"p16\">__</ept> instance:",
+      "pos": [
+        5142,
+        5276
+      ]
+    },
+    {
+      "pos": [
+        5609,
+        5650
+      ],
+      "content": "Using New Resources in Your Configuration"
+    },
+    {
+      "pos": [
+        5651,
+        6589
+      ],
+      "content": "If you ran the previous examples, you might have noticed that you were warned that you were using a resource without explicitly importing it.\nToday, DSC ships with 12 resources as part of the PSDesiredStateConfiguration module. Other resources in external modules must be placed in `$env:PSModulePath` in order to be recognized by the LCM. A new cmdlet, [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), can be used to determine what resources are installed on the system and available for use by the LCM. \nOnce these modules have been placed in `$env:PSModulePath` and are properly recognized by [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), they still need to be loaded within your configuration. __Import-DscResource__ is a dynamic keyword that can only be recognized within a __Configuration__ block (i.e. it is not a cmdlet). __Import-DscResource__ supports two parameters:",
+      "nodes": [
+        {
+          "content": "If you ran the previous examples, you might have noticed that you were warned that you were using a resource without explicitly importing it.",
+          "pos": [
+            0,
+            141
+          ]
+        },
+        {
+          "content": "Today, DSC ships with 12 resources as part of the PSDesiredStateConfiguration module.",
+          "pos": [
+            142,
+            227
+          ]
+        },
+        {
+          "content": "Other resources in external modules must be placed in <ph id=\"ph3\">`$env:PSModulePath`</ph> in order to be recognized by the LCM.",
+          "pos": [
+            228,
+            339
+          ]
+        },
+        {
+          "content": "A new cmdlet, <bpt id=\"p17\">[</bpt>Get-DscResource<ept id=\"p17\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept>, can be used to determine what resources are installed on the system and available for use by the LCM.",
+          "pos": [
+            340,
+            533
+          ]
+        },
+        {
+          "content": "Once these modules have been placed in <ph id=\"ph4\">`$env:PSModulePath`</ph> and are properly recognized by <bpt id=\"p18\">[</bpt>Get-DscResource<ept id=\"p18\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept>, they still need to be loaded within your configuration.",
+          "pos": [
+            535,
+            758
+          ]
+        },
+        {
+          "content": "<bpt id=\"p19\">__</bpt>Import-DscResource<ept id=\"p19\">__</ept> is a dynamic keyword that can only be recognized within a <bpt id=\"p20\">__</bpt>Configuration<ept id=\"p20\">__</ept> block (i.e. it is not a cmdlet).",
+          "pos": [
+            759,
+            890
+          ]
+        },
+        {
+          "content": "<bpt id=\"p21\">__</bpt>Import-DscResource<ept id=\"p21\">__</ept> supports two parameters:",
+          "pos": [
+            891,
+            938
+          ]
+        }
+      ]
+    },
+    {
+      "content": "<bpt id=\"p22\">__</bpt>ModuleName<ept id=\"p22\">__</ept> is the recommended way of using <bpt id=\"p23\">__</bpt>Import-DscResource<ept id=\"p23\">__</ept>.",
+      "pos": [
+        6592,
+        6662
+      ]
+    },
+    {
+      "content": "It accepts the name of the module that contains the resources to be imported (as well as a string array of module names).",
+      "pos": [
+        6663,
+        6784
+      ]
+    },
+    {
+      "content": "<bpt id=\"p24\">__</bpt>Name<ept id=\"p24\">__</ept> is the name of the resource to import.",
+      "pos": [
+        6788,
+        6835
+      ]
+    },
+    {
+      "content": "This is not the friendly name returned as \"Name\" by <bpt id=\"p25\">[</bpt>Get-DscResource<ept id=\"p25\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept>, but the class name used when defining the resource schema (returned as <bpt id=\"p26\">__</bpt>ResourceType<ept id=\"p26\">__</ept> by <bpt id=\"p27\">[</bpt>Get-DscResource<ept id=\"p27\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept>).",
+      "pos": [
+        6836,
+        7135
+      ]
+    },
+    {
+      "pos": [
+        7141,
+        7149
+      ],
+      "content": "See Also"
+    },
+    {
+      "pos": [
+        7152,
+        7222
+      ],
+      "content": "<ph id=\"ph5\">[</ph>Windows PowerShell Desired State Configuration Overview<ph id=\"ph6\">](overview.md)</ph>"
+    },
+    {
+      "pos": [
+        7225,
+        7254
+      ],
+      "content": "<ph id=\"ph7\">[</ph>DSC Resources<ph id=\"ph8\">](resources.md)</ph>"
+    },
+    {
+      "pos": [
+        7257,
+        7317
+      ],
+      "content": "<ph id=\"ph9\">[</ph>Configuring The Local Configuration Manager<ph id=\"ph10\">](metaconfig.md)</ph>"
+    }
+  ],
+  "content": "# DSC Configurations\n\n>Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0\n\nDSC configurations are PowerShell scripts that define a special type of function. \nTo define a configuration, you use the PowerShell keyword __Configuration__.\n\n```powershell\nConfiguration MyDscConfiguration {\n\n    Node \"TEST-PC1\" {\n        WindowsFeature MyFeatureInstance {\n            Ensure = \"Present\"\n            Name =  \"RSAT\"\n        }\n        WindowsFeature My2ndFeatureInstance {\n            Ensure = \"Present\"\n            Name = \"Bitlocker\"\n        }\n    }\n}\n```\n\nSave the script as a .ps1 file.\n\n## Configuration syntax\n\nA configuration script consists of the following parts:\n\n- The **Configuration** block. This is the outermost script block. You define it by using the **Configuration** keyword and providing a name. In this case, the name of the configuration is \"MyDscConfiguration\".\n- One or more **Node** blocks. These define the nodes (computers or VMs) that you are configuring. In the above configuration, there is one **Node** block that targets a computer named \"TEST-PC1\".\n- One or more resource blocks. This is where the configuration sets the properties for the resources that it is configuring. In this case, there are two resource blocks, each of which call the \"WindowsFeature\" resource.\n\nWithin a **Configuration** block, you can do anything that you normally could in a PoweShell function. For example, in the previous example, if you didn't want to hard code the name of the target computer in the configuration, you could add a parameter for the node name:\n\n```powershell\nConfiguration MyDscConfiguration {\n\n    param(\n        [string[]]$computerName=\"localhost\"\n    )\n    Node $computerName {\n        WindowsFeature MyFeatureInstance {\n            Ensure = \"Present\"\n            Name =  \"RSAT\"\n        }\n        WindowsFeature My2ndFeatureInstance {\n            Ensure = \"Present\"\n            Name = \"Bitlocker\"\n        }\n    }\n}\n```\n\nIn this example, you specify the name of the node by passing it as the $computerName parameter when you [compile the configuraton](# Compiling the configuration). The name defaults to \"localhost\".\n\n## Compiling the configuration\nBefore you can enact a configuration, you have to compile it into a MOF document. You do this by calling the configuration like you would a PowerShell function.\n>__Note:__ To call a configuration, the function must be in global scope (as with any other PowerShell function). You can make this happen either by \"dot-sourcing\" the script, or by running the configuration script by using F5 or clicking on the __Run Script__ button in the ISE. To dot-source the script, run the command `. .\\myConfig.ps1` where `myConfig.ps1` is the name of the script file that contains your configuration.\n\nWhen you call the configuration, it creates:\n\n- A folder in the current directory with the same name as the configuration.\n- A file named _NodeName_.mof in the new directory, where _NodeName_ is the name of the target node of the configuration. If there are more than one nodes, a MOF file will be created for each node.\n\n>__Note__: The MOF file contains all of the configuration information for the target node. Because of this, it’s important to keep it secure. For more information, see [Securing the MOF file](secureMOF.md).\n\nCompiling the first configuration above results in the following folder structure:\n\n```powershell\nPS C:\\users\\default\\Documents\\DSC Configurations> . .\\MyDscConfiguration.ps1\nPS C:\\users\\default\\Documents\\DSC Configurations> MyDscConfiguration\n    Directory: C:\\users\\default\\Documents\\DSC Configurations\\MyDscConfiguration\nMode                LastWriteTime         Length Name                                                                                              \n----                -------------         ------ ----                                                                                         \n-a----       10/23/2015   4:32 PM           2842 TEST-PC1.mof\n```  \n\nIf the configuration takes a parameter, as in the second example, that has to be provided at compile time. Here's how that would look:\n\n```powershell\nPS C:\\users\\default\\Documents\\DSC Configurations> . .\\MyDscConfiguration.ps1\nPS C:\\users\\default\\Documents\\DSC Configurations> MyDscConfiguration -computerName 'MyTestNode'\n    Directory: C:\\users\\default\\Documents\\DSC Configurations\\MyDscConfiguration\nMode                LastWriteTime         Length Name                                                                                              \n----                -------------         ------ ----                                                                                         \n-a----       10/23/2015   4:32 PM           2842 MyTestNode.mof\n```      \n\n## Using DependsOn\nA useful DSC keyword is __DependsOn__. Typically (though not necessarily always), DSC applies the resources in the order that they appear within the configuration. However, __DependsOn__ specifies which resources depend on other resources, and the LCM ensures that they are applied in the correct order, regardless of the order in which resource instances are defined. For example, a configuration might specify that an instance of the __User__ resource depends on the existence of a __Group__ instance:\n\n```powershell\nConfiguration DependsOnExample {\n    Node Test-PC1 {\n        Group GroupExample {\n            Ensure = \"Present\"\n            GroupName = \"TestGroup\"\n        }\n\n        User UserExample {\n            Ensure = \"Present\"\n            FullName = \"TestUser\"\n            DependsOn = \"GroupExample\"\n        }\n    }\n}\n```\n\n## Using New Resources in Your Configuration\nIf you ran the previous examples, you might have noticed that you were warned that you were using a resource without explicitly importing it.\nToday, DSC ships with 12 resources as part of the PSDesiredStateConfiguration module. Other resources in external modules must be placed in `$env:PSModulePath` in order to be recognized by the LCM. A new cmdlet, [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), can be used to determine what resources are installed on the system and available for use by the LCM. \nOnce these modules have been placed in `$env:PSModulePath` and are properly recognized by [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), they still need to be loaded within your configuration. __Import-DscResource__ is a dynamic keyword that can only be recognized within a __Configuration__ block (i.e. it is not a cmdlet). __Import-DscResource__ supports two parameters:\n* __ModuleName__ is the recommended way of using __Import-DscResource__. It accepts the name of the module that contains the resources to be imported (as well as a string array of module names). \n* __Name__ is the name of the resource to import. This is not the friendly name returned as \"Name\" by [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx), but the class name used when defining the resource schema (returned as __ResourceType__ by [Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx)). \n\n## See Also\n* [Windows PowerShell Desired State Configuration Overview](overview.md)\n* [DSC Resources](resources.md)\n* [Configuring The Local Configuration Manager](metaconfig.md)\n"
+}
