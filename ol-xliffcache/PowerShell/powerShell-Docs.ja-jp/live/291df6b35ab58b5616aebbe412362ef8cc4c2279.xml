@@ -1,0 +1,1090 @@
+{
+  "nodes": [
+    {
+      "content": "Resource authoring checklist",
+      "pos": [
+        2,
+        30
+      ]
+    },
+    {
+      "content": "Resource module contains .psd1 file and schema.mof for every resource",
+      "pos": [
+        35,
+        104
+      ]
+    },
+    {
+      "content": "The first think you should do is to check that your resource has correct structure and contains all required files.",
+      "pos": [
+        106,
+        221
+      ]
+    },
+    {
+      "content": "Every resource module should contain a .psd1 file and every non-composite resource should have schema.mof file.",
+      "pos": [
+        222,
+        333
+      ]
+    },
+    {
+      "content": "Resources that do not contain schema will not be listed by <bpt id=\"p1\">**</bpt>Get-DscResource<ept id=\"p1\">**</ept> and users will not be able to use the intellisense when writing code against those modules in ISE.",
+      "pos": [
+        334,
+        511
+      ]
+    },
+    {
+      "content": "The sample directory structure for xRemoteFile resource, which is part of the xPSDesiredStateConfiguration resource module, could look as follows:",
+      "pos": [
+        513,
+        659
+      ]
+    },
+    {
+      "content": "Resource and schema are correct and have been verified using DscResourceDesigner cmdlets",
+      "pos": [
+        1017,
+        1105
+      ]
+    },
+    {
+      "content": "Another important aspect is verifying the resource schema (*.schema.mof) file.",
+      "pos": [
+        1109,
+        1187
+      ]
+    },
+    {
+      "content": "Make sure that:",
+      "pos": [
+        1189,
+        1204
+      ]
+    },
+    {
+      "content": "Property types are correct (e.g. don’t use String for properties which accept numeric values, you should use UInt32 or other numeric types instead)",
+      "pos": [
+        1209,
+        1356
+      ]
+    },
+    {
+      "content": "Property attributes are specified correctly ([key], [required], [write], [read])",
+      "pos": [
+        1361,
+        1441
+      ]
+    },
+    {
+      "content": "At least one parameter in the schema has to be marked as [key]",
+      "pos": [
+        1446,
+        1508
+      ]
+    },
+    {
+      "content": "[read] property cannot coexist together with any of: [required], [key], [write]",
+      "pos": [
+        1513,
+        1592
+      ]
+    },
+    {
+      "content": "If multiple qualifiers are specified except [read], then [key] takes precedence",
+      "pos": [
+        1597,
+        1676
+      ]
+    },
+    {
+      "content": "If [write] and [required] are specified, then [required] takes precedence",
+      "pos": [
+        1677,
+        1750
+      ]
+    },
+    {
+      "content": "ValueMap is specified where appropriate",
+      "pos": [
+        1755,
+        1794
+      ]
+    },
+    {
+      "content": "Example:",
+      "pos": [
+        1796,
+        1804
+      ]
+    },
+    {
+      "content": "Friendly name is specified and confirms to DSC naming conventions",
+      "pos": [
+        1967,
+        2032
+      ]
+    },
+    {
+      "content": "Example:",
+      "pos": [
+        2034,
+        2042
+      ]
+    },
+    {
+      "content": "Every field has meaningful description",
+      "pos": [
+        2110,
+        2148
+      ]
+    },
+    {
+      "content": "Below you can find a good example of the resource schema file (this is the actual schema of xRemoteFile resource from the DSC Resource Kit)",
+      "pos": [
+        2150,
+        2289
+      ]
+    },
+    {
+      "pos": [
+        3168,
+        3326
+      ],
+      "content": "Additionally, you should use <bpt id=\"p1\">**</bpt>Test-xDscResource<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Test-xDscSchema<ept id=\"p2\">**</ept> cmdlets from Dsc Resource Designer to automatically verify the resource and schema:"
+    },
+    {
+      "content": "For example:",
+      "pos": [
+        3418,
+        3430
+      ]
+    },
+    {
+      "content": "Resource loads without errors",
+      "pos": [
+        3581,
+        3610
+      ]
+    },
+    {
+      "content": "Once you verified that resource contains all necessary files and verified them using DSC Resource Designer, it’s time to check whether resource module can be successfully loaded.",
+      "pos": [
+        3614,
+        3792
+      ]
+    },
+    {
+      "content": "You can do it either manually, by running <ph id=\"ph1\">`Import-Module &lt;resource_module&gt; -force `</ph> and confirming that no errors occurred, or by writing test automation.",
+      "pos": [
+        3793,
+        3947
+      ]
+    },
+    {
+      "content": "In case of the latter, you can follow this structure in your test case:",
+      "pos": [
+        3948,
+        4019
+      ]
+    },
+    {
+      "content": "4   Resource is idempotent in the positive case",
+      "pos": [
+        4191,
+        4238
+      ]
+    },
+    {
+      "content": "One of the fundamental characteristics of every DSC resource should be idempotence.",
+      "pos": [
+        4240,
+        4323
+      ]
+    },
+    {
+      "content": "It means that we can apply a DSC configuration containing that resource multiple times without changing the result beyond the initial application.",
+      "pos": [
+        4324,
+        4470
+      ]
+    },
+    {
+      "content": "For example, if we create a configuration which contains the following File resource:",
+      "pos": [
+        4471,
+        4556
+      ]
+    },
+    {
+      "content": "After applying it for the first time, file test.txt should appear in C:\\test folder.",
+      "pos": [
+        4660,
+        4744
+      ]
+    },
+    {
+      "content": "However, subsequent runs of the same configuration should not change the state of the machine (e.g. no copies of the test.txt file should be created).",
+      "pos": [
+        4745,
+        4895
+      ]
+    },
+    {
+      "content": "To ensure our resource is idempotent we can repeatedly call <bpt id=\"p1\">**</bpt>Set-TargetResource<ept id=\"p1\">**</ept> when testing the resource directly, or call <bpt id=\"p2\">**</bpt>Start-DscConfiguration<ept id=\"p2\">**</ept> multiple times when doing end to end testing.",
+      "pos": [
+        4896,
+        5095
+      ]
+    },
+    {
+      "content": "The result should be the same after every run.",
+      "pos": [
+        5096,
+        5142
+      ]
+    },
+    {
+      "content": "User modification scenario was tested",
+      "pos": [
+        5149,
+        5186
+      ]
+    },
+    {
+      "content": "User modification is another common scenario worth testing out.",
+      "pos": [
+        5190,
+        5253
+      ]
+    },
+    {
+      "content": "It helps you verify that <bpt id=\"p1\">**</bpt>Set-TargetResource<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Test-TargetResource<ept id=\"p2\">**</ept> function properly.",
+      "pos": [
+        5254,
+        5348
+      ]
+    },
+    {
+      "content": "Here are steps you should take to test it:",
+      "pos": [
+        5349,
+        5391
+      ]
+    },
+    {
+      "content": "Start with the resource not in the desired state.",
+      "pos": [
+        5396,
+        5445
+      ]
+    },
+    {
+      "content": "Run configuration with your resource",
+      "pos": [
+        5450,
+        5486
+      ]
+    },
+    {
+      "pos": [
+        5491,
+        5536
+      ],
+      "content": "Verify <bpt id=\"p1\">**</bpt>Test-DscConfiguration<ept id=\"p1\">**</ept> returns True"
+    },
+    {
+      "content": "Modify the resource out of the desired state",
+      "pos": [
+        5541,
+        5585
+      ]
+    },
+    {
+      "content": "Verify <bpt id=\"p1\">**</bpt>Test-DscConfiguration<ept id=\"p1\">**</ept> returns false",
+      "pos": [
+        5590,
+        5636
+      ]
+    },
+    {
+      "content": "Here’s a more concrete example using Registry resource:",
+      "pos": [
+        5637,
+        5692
+      ]
+    },
+    {
+      "content": "Start with registry key not in the desired state",
+      "pos": [
+        5697,
+        5745
+      ]
+    },
+    {
+      "pos": [
+        5750,
+        5854
+      ],
+      "content": "Run <bpt id=\"p1\">**</bpt>Start-DscConfiguration<ept id=\"p1\">**</ept> with a configuration to put it in the desired state and verify it passes."
+    },
+    {
+      "pos": [
+        5859,
+        5915
+      ],
+      "content": "Run <bpt id=\"p1\">**</bpt>Test-DscConfiguration<ept id=\"p1\">**</ept> and verify it returns true"
+    },
+    {
+      "content": "Modify the value of the key so that it is not in the desired state",
+      "pos": [
+        5920,
+        5986
+      ]
+    },
+    {
+      "pos": [
+        5991,
+        6048
+      ],
+      "content": "Run <bpt id=\"p1\">**</bpt>Test-DscConfiguration<ept id=\"p1\">**</ept> and verify it returns false"
+    },
+    {
+      "content": "Get-TargetResource functionality was verified using Get-DscConfiguration",
+      "pos": [
+        6053,
+        6125
+      ]
+    },
+    {
+      "content": "Get-TargetResource should return details of the current state of the resource.",
+      "pos": [
+        6127,
+        6205
+      ]
+    },
+    {
+      "content": "Make sure you test it by calling Get-DscConfiguration after you apply the configuration and verifying that output correctly reflects the current state of the machine.",
+      "pos": [
+        6206,
+        6372
+      ]
+    },
+    {
+      "content": "It's important to test it separately, since any issues in this area won't appear when calling Start-DscConfiguration.",
+      "pos": [
+        6373,
+        6490
+      ]
+    },
+    {
+      "pos": [
+        6495,
+        6578
+      ],
+      "content": "Resource was verified by calling <bpt id=\"p1\">**</bpt>Get/Set/Test-TargetResource<ept id=\"p1\">**</ept> functions directly"
+    },
+    {
+      "pos": [
+        6583,
+        6743
+      ],
+      "content": "Make sure you test the <bpt id=\"p1\">**</bpt>Get/Set/Test-TargetResource<ept id=\"p1\">**</ept> functions implemented in your resource by calling them directly and verifying that they work as expected."
+    },
+    {
+      "pos": [
+        6748,
+        6813
+      ],
+      "content": "Resource was verified End to End using <bpt id=\"p1\">**</bpt>Start-DscConfiguration<ept id=\"p1\">**</ept>"
+    },
+    {
+      "content": "Testing <bpt id=\"p1\">**</bpt>Get/Set/Test-TargetResource<ept id=\"p1\">**</ept> functions by calling them directly is important, but not all issues will be discovered this way.",
+      "pos": [
+        6818,
+        6954
+      ]
+    },
+    {
+      "content": "You should focus significant part of your testing on using <bpt id=\"p1\">**</bpt>Start-DscConfiguration<ept id=\"p1\">**</ept> or the pull server.",
+      "pos": [
+        6955,
+        7060
+      ]
+    },
+    {
+      "content": "In fact, this is how users will use the resource, so don’t underestimate the significance of this type of tests.",
+      "pos": [
+        7061,
+        7173
+      ]
+    },
+    {
+      "content": "Possible types of issues:",
+      "pos": [
+        7175,
+        7200
+      ]
+    },
+    {
+      "content": "Credential/Session may behave differently because the DSC agent runs as a service.",
+      "pos": [
+        7205,
+        7287
+      ]
+    },
+    {
+      "content": "Be sure to test any features here end to end.",
+      "pos": [
+        7289,
+        7334
+      ]
+    },
+    {
+      "content": "Verify error messages displayed by the resource make sense.",
+      "pos": [
+        7339,
+        7398
+      ]
+    },
+    {
+      "content": "For example, errors outputted by <bpt id=\"p1\">**</bpt>Start-DscConfiguration<ept id=\"p1\">**</ept> may be different than those displayed when calling the <bpt id=\"p2\">**</bpt>Set-TargetResource<ept id=\"p2\">**</ept> function directly.",
+      "pos": [
+        7399,
+        7555
+      ]
+    },
+    {
+      "content": "Resource behaves correctly on all DSC supported platforms (or returns a specific error otherwise)",
+      "pos": [
+        7560,
+        7657
+      ]
+    },
+    {
+      "content": "Resource should work on all DSC supported platforms (Windows Server 2008 R2 and newer).",
+      "pos": [
+        7661,
+        7748
+      ]
+    },
+    {
+      "content": "Make sure you install latest WMF (Windows Management Framework) on your OS to get the latest version of DSC.",
+      "pos": [
+        7749,
+        7857
+      ]
+    },
+    {
+      "content": "If resource by-design does not work on some of these platforms, a specific error message should be returned.",
+      "pos": [
+        7858,
+        7966
+      ]
+    },
+    {
+      "content": "Also, make sure your resource checks whether cmdlets you are calling are present on particular machine.",
+      "pos": [
+        7967,
+        8070
+      ]
+    },
+    {
+      "content": "Windows Server 2012 added a large number of new cmdlets that are not available on Windows Server 2008R2, even with WMF installed.",
+      "pos": [
+        8071,
+        8200
+      ]
+    },
+    {
+      "content": "Resource functionality was verified on Windows Client (if applicable)",
+      "pos": [
+        8206,
+        8275
+      ]
+    },
+    {
+      "content": "One very common test gap is verifying the resource only on server versions of Windows.",
+      "pos": [
+        8279,
+        8365
+      ]
+    },
+    {
+      "content": "Many resources are also designed to work on Client SKUs, so if that’s true in your case, don’t forget to test it on those platforms as well.",
+      "pos": [
+        8366,
+        8506
+      ]
+    },
+    {
+      "content": "Get-DSCResource lists the resource",
+      "pos": [
+        8511,
+        8545
+      ]
+    },
+    {
+      "content": "After deploying the module on the machine, calling Get-DscResource should list your resource among others as a result.",
+      "pos": [
+        8549,
+        8667
+      ]
+    },
+    {
+      "content": "If you can’t find your resource in the list, make sure that schema.mof file for that resource exists.",
+      "pos": [
+        8668,
+        8769
+      ]
+    },
+    {
+      "content": "Resource module contains examples",
+      "pos": [
+        8774,
+        8807
+      ]
+    },
+    {
+      "content": "If you intend to share the resource (which you hopefully do), creating quality examples which will help others understand how to use it.",
+      "pos": [
+        8811,
+        8947
+      ]
+    },
+    {
+      "content": "This is crucial, especially since many users treat sample code as documentation.",
+      "pos": [
+        8948,
+        9028
+      ]
+    },
+    {
+      "content": "First, you should determine the examples that will be included with the module – at minimum, you should cover most important use cases for your resource:",
+      "pos": [
+        9034,
+        9187
+      ]
+    },
+    {
+      "content": "If your module contains several resources that need to work together for an end-to-end scenario, the basic end-to-end example would ideally be first.",
+      "pos": [
+        9192,
+        9341
+      ]
+    },
+    {
+      "content": "The initial examples should be very simple -- how to get started with your resources in small manageable chunks (e.g. creating a new VHD)",
+      "pos": [
+        9346,
+        9483
+      ]
+    },
+    {
+      "content": "Subsequent examples should build on those examples (e.g. creating a VM from a VHD, removing VM, modifying VM), and show advanced functionality (e.g. creating a VM with dynamic memory)",
+      "pos": [
+        9488,
+        9671
+      ]
+    },
+    {
+      "content": "Example configurations should be parameterized (all values should be passed to the configuration as parameters and there should be no hardcoded values):",
+      "pos": [
+        9676,
+        9828
+      ]
+    },
+    {
+      "content": "It’s a good practice to include (commented out) example of how to call the configuration with the actual values at the end of the example script.",
+      "pos": [
+        10545,
+        10690
+      ]
+    },
+    {
+      "content": "For example, in the configuration above it won’t be obvious for everyone that the best way to specify UserAgent is:",
+      "pos": [
+        10692,
+        10807
+      ]
+    },
+    {
+      "content": "That’s why we should include comment with sample execution of the configuration:",
+      "pos": [
+        10887,
+        10967
+      ]
+    },
+    {
+      "content": "For each example, write a short description which explains what it does, and the meaning of the parameters.",
+      "pos": [
+        11425,
+        11532
+      ]
+    },
+    {
+      "content": "Make sure examples cover most the important scenarios for your resource and if there’s nothing missing, verify that they all execute and put machine in the desired state.",
+      "pos": [
+        11538,
+        11708
+      ]
+    },
+    {
+      "content": "Error messages are easy to understand and help users solve problems",
+      "pos": [
+        11715,
+        11782
+      ]
+    },
+    {
+      "content": "Good error messages should be:",
+      "pos": [
+        11786,
+        11816
+      ]
+    },
+    {
+      "content": "There: The biggest problem with error messages is that they often don’t exist, so make sure they are there.",
+      "pos": [
+        11821,
+        11928
+      ]
+    },
+    {
+      "content": "Easy to understand: Human readable, no obscure error codes",
+      "pos": [
+        11934,
+        11992
+      ]
+    },
+    {
+      "content": "Precise: Describe what’s exactly the problem",
+      "pos": [
+        11997,
+        12041
+      ]
+    },
+    {
+      "content": "Constructive: Advice how to fix the issue",
+      "pos": [
+        12046,
+        12087
+      ]
+    },
+    {
+      "content": "Polite: Don’t blame user or make them feel stupid",
+      "pos": [
+        12092,
+        12141
+      ]
+    },
+    {
+      "content": "Make sure you verify errors in End to End scenarios (using <bpt id=\"p1\">**</bpt>Start-DscConfiguration<ept id=\"p1\">**</ept>), because they may differ from those returned when running resource functions directly.",
+      "pos": [
+        12142,
+        12315
+      ]
+    },
+    {
+      "content": "Log messages are easy to understand and informative (including –verbose, –debug and ETW logs)",
+      "pos": [
+        12321,
+        12414
+      ]
+    },
+    {
+      "content": "Ensure that logs outputted by the resource are easy to understand and provide value to the user.",
+      "pos": [
+        12418,
+        12514
+      ]
+    },
+    {
+      "content": "Resources should output all information which might be helpful to the user, but more logs is not always better.",
+      "pos": [
+        12515,
+        12626
+      ]
+    },
+    {
+      "content": "You should avoid redundancy and outputting data which does not provide additional value – don’t make someone go through hundreds of log entries in order to find what they're looking for.",
+      "pos": [
+        12627,
+        12813
+      ]
+    },
+    {
+      "content": "Of course, no logs is not an acceptable solution for this problem either.",
+      "pos": [
+        12814,
+        12887
+      ]
+    },
+    {
+      "content": "When testing, you should also analyze verbose and debug logs (by running <bpt id=\"p1\">**</bpt>Start-DscConfiguration<ept id=\"p1\">**</ept> with –verbose and –debug switches appropriately), as well as ETW logs.",
+      "pos": [
+        12890,
+        13060
+      ]
+    },
+    {
+      "content": "To see DSC ETW logs, go to Event Viewer and open the following folder: Applications and Services- Microsoft - Windows - Desired State Configuration.",
+      "pos": [
+        13061,
+        13209
+      ]
+    },
+    {
+      "content": "By default there will be Operational channel, but make sure you enable Analytic and Debug channels (you have to do it before running the configuration).",
+      "pos": [
+        13211,
+        13363
+      ]
+    },
+    {
+      "content": "To enable Analytic/Debug channels, you can execute script below:",
+      "pos": [
+        13365,
+        13429
+      ]
+    },
+    {
+      "content": "Resource implementation does not contain hardcoded paths",
+      "pos": [
+        13920,
+        13976
+      ]
+    },
+    {
+      "content": "Ensure there are no hardcoded paths in the resource implementation, particularly if they assume language (en-us), or when there are system variables that can be used.",
+      "pos": [
+        13980,
+        14146
+      ]
+    },
+    {
+      "content": "If your resource need to access specific paths, use environment variables instead of hardcoding the path, as it may differ on other machines.",
+      "pos": [
+        14147,
+        14288
+      ]
+    },
+    {
+      "content": "Example:",
+      "pos": [
+        14290,
+        14298
+      ]
+    },
+    {
+      "content": "Instead of:",
+      "pos": [
+        14300,
+        14311
+      ]
+    },
+    {
+      "content": "You can write:",
+      "pos": [
+        14427,
+        14441
+      ]
+    },
+    {
+      "content": "Resource implementation does not contain user information",
+      "pos": [
+        14544,
+        14601
+      ]
+    },
+    {
+      "content": "Make sure there are no email names, account information, or names of people in the code.",
+      "pos": [
+        14605,
+        14693
+      ]
+    },
+    {
+      "content": "Resource was tested with valid/invalid credentials",
+      "pos": [
+        14697,
+        14747
+      ]
+    },
+    {
+      "content": "If your resource takes a credential as parameter:",
+      "pos": [
+        14751,
+        14800
+      ]
+    },
+    {
+      "content": "Verify the resource works when Local System (or the computer account for remote resources) does not have access.",
+      "pos": [
+        14805,
+        14917
+      ]
+    },
+    {
+      "content": "Verify the resource works with a credential specified for Get, Set and Test",
+      "pos": [
+        14922,
+        14997
+      ]
+    },
+    {
+      "content": "If your resource accesses shares, test all the variants you need to support.",
+      "pos": [
+        15003,
+        15079
+      ]
+    },
+    {
+      "content": "For example:",
+      "pos": [
+        15082,
+        15094
+      ]
+    },
+    {
+      "content": "Standard windows shares.",
+      "pos": [
+        15097,
+        15121
+      ]
+    },
+    {
+      "content": "DFS shares.",
+      "pos": [
+        15124,
+        15135
+      ]
+    },
+    {
+      "content": "SAMBA shares (if you want to support Linux.)",
+      "pos": [
+        15138,
+        15182
+      ]
+    },
+    {
+      "content": "Resource is not using cmdlets requiring interactive input",
+      "pos": [
+        15187,
+        15244
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Get/Set/Test-TargetResource<ept id=\"p1\">**</ept> functions should be executed automatically and must not wait for user’s input at any stage of execution (e.g. you should not use <bpt id=\"p2\">**</bpt>Get-Credential<ept id=\"p2\">**</ept> inside these functions).",
+      "pos": [
+        15248,
+        15452
+      ]
+    },
+    {
+      "content": "If you need to provide user’s input, you should pass it to the configuration as parameter during the compilation phase.",
+      "pos": [
+        15453,
+        15572
+      ]
+    },
+    {
+      "content": "Resource functionality was thoroughly tested",
+      "pos": [
+        15577,
+        15621
+      ]
+    },
+    {
+      "content": "You are responsible to make sure the resource is behaving correctly, so test its functionality manually or, better yet, write automation.",
+      "pos": [
+        15625,
+        15762
+      ]
+    },
+    {
+      "content": "This checklist contains items which are important to be tested and/or are often missed.",
+      "pos": [
+        15763,
+        15850
+      ]
+    },
+    {
+      "content": "There will be bunch of tests, mainly functional ones which will be specific to the resource you are testing and are not mentioned here.",
+      "pos": [
+        15851,
+        15986
+      ]
+    },
+    {
+      "content": "Don’t forget about negative test cases.",
+      "pos": [
+        15987,
+        16026
+      ]
+    },
+    {
+      "content": "This will likely be the most time consuming part of the resource testing.",
+      "pos": [
+        16027,
+        16100
+      ]
+    },
+    {
+      "content": "Best practice: Resource module contains Tests folder with ResourceDesignerTests.ps1 script",
+      "pos": [
+        16105,
+        16195
+      ]
+    },
+    {
+      "content": "It’s a good practice to create folder “Tests” inside resource module, create ResourceDesignerTests.ps1 file and add tests using <bpt id=\"p1\">**</bpt>Test-xDscResource<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Test-xDscSchema<ept id=\"p2\">**</ept> for all resources in given module.",
+      "pos": [
+        16199,
+        16407
+      ]
+    },
+    {
+      "content": "This way we can quickly validate schemas of all resources from given modules and do sanity check before publishing.",
+      "pos": [
+        16409,
+        16524
+      ]
+    },
+    {
+      "content": "For xRemoteFile, ResourceTests.ps1 could look as simple as:",
+      "pos": [
+        16525,
+        16584
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Best practice: Resource folder contains resource designer script for generating schema<ept id=\"p1\">**</ept>",
+      "pos": [
+        16732,
+        16822
+      ]
+    },
+    {
+      "content": "Each resource should contain a resource designer script which generates a mof schema of the resource.",
+      "pos": [
+        16823,
+        16924
+      ]
+    },
+    {
+      "content": "This file should be placed in",
+      "pos": [
+        16925,
+        16954
+      ]
+    },
+    {
+      "content": "\\ResourceDesignerScripts and be named Generate",
+      "pos": [
+        16969,
+        17015
+      ]
+    },
+    {
+      "content": "Schema.ps1",
+      "pos": [
+        17029,
+        17039
+      ]
+    },
+    {
+      "content": "For xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:",
+      "pos": [
+        17040,
+        17133
+      ]
+    },
+    {
+      "content": "22  Best practice: Resource supports -whatif",
+      "pos": [
+        18543,
+        18587
+      ]
+    },
+    {
+      "content": "If your resource is performing “dangerous” operations, it’s a good practice to implement -whatif functionality.",
+      "pos": [
+        18588,
+        18699
+      ]
+    },
+    {
+      "content": "After it’s done, make sure that whatif output correctly describes operations which would happen if command was executed without whatif switch.",
+      "pos": [
+        18700,
+        18842
+      ]
+    },
+    {
+      "content": "Also, verify that operations does not execute (no changes to the node’s state are made) when –whatif switch is present.",
+      "pos": [
+        18843,
+        18962
+      ]
+    },
+    {
+      "content": "For example, let’s assume we are testing File resource.",
+      "pos": [
+        18964,
+        19019
+      ]
+    },
+    {
+      "content": "Below is simple configuration which creates file “test.txt” with contents “test”:",
+      "pos": [
+        19020,
+        19101
+      ]
+    },
+    {
+      "content": "If we compile and then execute the configuration with the –whatif switch, the output is telling us exactly what would happen when we run the configuration.",
+      "pos": [
+        19298,
+        19453
+      ]
+    },
+    {
+      "content": "The configuration itself however was not executed (test.txt file was not created).",
+      "pos": [
+        19454,
+        19536
+      ]
+    },
+    {
+      "content": "This wraps up our checklist.",
+      "pos": [
+        21062,
+        21090
+      ]
+    },
+    {
+      "content": "Please keep in mind that this list is not exhaustive, but it covers many important issues which we encountered while designing, developing and testing DSC resources.",
+      "pos": [
+        21091,
+        21256
+      ]
+    },
+    {
+      "content": "Having a checklist helps to ensure we didn’t forget about any of those aspects and in fact, we use it at Microsoft when developing DSC resources ourselves.",
+      "pos": [
+        21257,
+        21412
+      ]
+    },
+    {
+      "content": "If you developed guidelines and best practices which you use for writing and testing DSC resources, please share them!",
+      "pos": [
+        21414,
+        21532
+      ]
+    }
+  ],
+  "content": "# Resource authoring checklist\n\n## Resource module contains .psd1 file and schema.mof for every resource \nThe first think you should do is to check that your resource has correct structure and contains all required files. Every resource module should contain a .psd1 file and every non-composite resource should have schema.mof file. Resources that do not contain schema will not be listed by **Get-DscResource** and users will not be able to use the intellisense when writing code against those modules in ISE. \nThe sample directory structure for xRemoteFile resource, which is part of the xPSDesiredStateConfiguration resource module, could look as follows:\n\n\n```\nxPSDesiredStateConfiguration\n    DSCResources\n        MSFT_xRemoteFile\n            MSFT_xRemoteFile.psm1\n            MSFT_xRemoteFile.schema.mof\n    Examples\n        xRemoteFile_DownloadFile.ps1\n    ResourceDesignerScripts\n        GenerateXRemoteFileSchema.ps1\n    Tests\n        ResourceDesignerTests.ps1\n    xPSDesiredStateConfiguration.psd1\n```\n\n## Resource and schema are correct and have been verified using DscResourceDesigner cmdlets ##\nAnother important aspect is verifying the resource schema (*.schema.mof) file. \nMake sure that:\n-   Property types are correct (e.g. don’t use String for properties which accept numeric values, you should use UInt32 or other numeric types instead)\n-   Property attributes are specified correctly ([key], [required], [write], [read])\n\n\n- At least one parameter in the schema has to be marked as [key]\n\n\n- [read] property cannot coexist together with any of: [required], [key], [write]\n\n\n- If multiple qualifiers are specified except [read], then [key] takes precedence\nIf [write] and [required] are specified, then [required] takes precedence\n-   ValueMap is specified where appropriate\n\nExample:\n```\n[Read, ValueMap{\"Present\", \"Absent\"}, Values{\"Present\", \"Absent\"}, Description(\"Says whether DestinationPath exists on the machine\")] String Ensure;\n```\n\n-   Friendly name is specified and confirms to DSC naming conventions\n\nExample: \n```[ClassVersion(\"1.0.0.0\"), FriendlyName(\"xRemoteFile\")]```\n\n-   Every field has meaningful description\n\nBelow you can find a good example of the resource schema file (this is the actual schema of xRemoteFile resource from the DSC Resource Kit)\n```\n[ClassVersion(\"1.0.0.0\"), FriendlyName(\"xRemoteFile\")]\nclass MSFT_xRemoteFile : OMI_BaseResource\n{\n    [Key, Description(\"Path under which downloaded or copied file should be accessible after operation.\")] String DestinationPath;\n    [Required, Description(\"Uri of a file which should be copied or downloaded. This parameter supports HTTP and HTTPS values.\")] String Uri;\n    [Write, Description(\"User agent for the web request.\")] String UserAgent;\n    [Write, EmbeddedInstance(\"MSFT_KeyValuePair\"), Description(\"Headers of the web request.\")] String Headers[];\n    [Write, EmbeddedInstance(\"MSFT_Credential\"), Description(\"Specifies a user account that has permission to send the request.\")] String Credential;\n    [Read, ValueMap{\"Present\", \"Absent\"}, Values{\"Present\", \"Absent\"}, Description(\"Says whether DestinationPath exists on the machine\")] String Ensure;\n}; \n```\nAdditionally, you should use **Test-xDscResource** and **Test-xDscSchema** cmdlets from Dsc Resource Designer to automatically verify the resource and schema:\n```\nTest-xDscResource <Resource_folder>\nTest-xDscSchema <Path_to_resource_schema_file>\n```\nFor example:\n```powershell\nTest-xDscResource ..\\DSCResources\\MSFT_xRemoteFile\nTest-xDscSchema ..\\DSCResources\\MSFT_xRemoteFile\\MSFT_xRemoteFile.schema.mof\n```\n\n## Resource loads without errors ##\nOnce you verified that resource contains all necessary files and verified them using DSC Resource Designer, it’s time to check whether resource module can be successfully loaded.\nYou can do it either manually, by running `Import-Module <resource_module> -force ` and confirming that no errors occurred, or by writing test automation. In case of the latter, you can follow this structure in your test case:\n```powershell\n$error = $null\nImport-Module <resource_module> –force\nIf ($error.count –ne 0) {\n    Throw “Module was not imported correctly. Errors returned: $error”\n}\n```\n4   Resource is idempotent in the positive case \nOne of the fundamental characteristics of every DSC resource should be idempotence. It means that we can apply a DSC configuration containing that resource multiple times without changing the result beyond the initial application. For example, if we create a configuration which contains the following File resource:\n```powershell\nFile file {\n    DestinationPath = \"C:\\test\\test.txt\"\n    Contents = \"Sample text\"\n} \n```\nAfter applying it for the first time, file test.txt should appear in C:\\test folder. However, subsequent runs of the same configuration should not change the state of the machine (e.g. no copies of the test.txt file should be created).\nTo ensure our resource is idempotent we can repeatedly call **Set-TargetResource** when testing the resource directly, or call **Start-DscConfiguration** multiple times when doing end to end testing. The result should be the same after every run. \n\n\n## User modification scenario was tested ##\nUser modification is another common scenario worth testing out. It helps you verify that **Set-TargetResource** and **Test-TargetResource** function properly. Here are steps you should take to test it:\n1.  Start with the resource not in the desired state.\n2.  Run configuration with your resource\n3.  Verify **Test-DscConfiguration** returns True\n4.  Modify the resource out of the desired state\n5.  Verify **Test-DscConfiguration** returns false\nHere’s a more concrete example using Registry resource:\n1.  Start with registry key not in the desired state\n2.  Run **Start-DscConfiguration** with a configuration to put it in the desired state and verify it passes.\n3.  Run **Test-DscConfiguration** and verify it returns true\n4.  Modify the value of the key so that it is not in the desired state\n5.  Run **Test-DscConfiguration** and verify it returns false\n6.  Get-TargetResource functionality was verified using Get-DscConfiguration\n\nGet-TargetResource should return details of the current state of the resource. Make sure you test it by calling Get-DscConfiguration after you apply the configuration and verifying that output correctly reflects the current state of the machine. It's important to test it separately, since any issues in this area won't appear when calling Start-DscConfiguration.\n\n## Resource was verified by calling **Get/Set/Test-TargetResource** functions directly ##\n\nMake sure you test the **Get/Set/Test-TargetResource** functions implemented in your resource by calling them directly and verifying that they work as expected.\n\n## Resource was verified End to End using **Start-DscConfiguration** ##\n\nTesting **Get/Set/Test-TargetResource** functions by calling them directly is important, but not all issues will be discovered this way. You should focus significant part of your testing on using **Start-DscConfiguration** or the pull server. In fact, this is how users will use the resource, so don’t underestimate the significance of this type of tests. \nPossible types of issues:\n-   Credential/Session may behave differently because the DSC agent runs as a service.  Be sure to test any features here end to end.\n-   Verify error messages displayed by the resource make sense. For example, errors outputted by **Start-DscConfiguration** may be different than those displayed when calling the **Set-TargetResource** function directly.\n\n## Resource behaves correctly on all DSC supported platforms (or returns a specific error otherwise) ##\nResource should work on all DSC supported platforms (Windows Server 2008 R2 and newer). Make sure you install latest WMF (Windows Management Framework) on your OS to get the latest version of DSC. If resource by-design does not work on some of these platforms, a specific error message should be returned. Also, make sure your resource checks whether cmdlets you are calling are present on particular machine. Windows Server 2012 added a large number of new cmdlets that are not available on Windows Server 2008R2, even with WMF installed. \n\n## Resource functionality was verified on Windows Client (if applicable) ##\nOne very common test gap is verifying the resource only on server versions of Windows. Many resources are also designed to work on Client SKUs, so if that’s true in your case, don’t forget to test it on those platforms as well. \n## Get-DSCResource lists the resource ##\nAfter deploying the module on the machine, calling Get-DscResource should list your resource among others as a result. If you can’t find your resource in the list, make sure that schema.mof file for that resource exists. \n## Resource module contains examples ##\nIf you intend to share the resource (which you hopefully do), creating quality examples which will help others understand how to use it. This is crucial, especially since many users treat sample code as documentation. \n-   First, you should determine the examples that will be included with the module – at minimum, you should cover most important use cases for your resource:\n-   If your module contains several resources that need to work together for an end-to-end scenario, the basic end-to-end example would ideally be first.\n-   The initial examples should be very simple -- how to get started with your resources in small manageable chunks (e.g. creating a new VHD)\n-   Subsequent examples should build on those examples (e.g. creating a VM from a VHD, removing VM, modifying VM), and show advanced functionality (e.g. creating a VM with dynamic memory)\n-   Example configurations should be parameterized (all values should be passed to the configuration as parameters and there should be no hardcoded values):\n```powershell\nconfiguration Sample_xRemoteFile_DownloadFile\n{\n    param\n    (\n        [string[]] $nodeName = 'localhost',\n\n        [parameter(Mandatory = $true)]\n        [ValidateNotNullOrEmpty()]\n        [String] $destinationPath,\n\n        [parameter(Mandatory = $true)]\n        [ValidateNotNullOrEmpty()]\n        [String] $uri,\n\n        [String] $userAgent,\n\n        [Hashtable] $headers\n    )\n\n    Import-DscResource -Name MSFT_xRemoteFile -ModuleName xPSDesiredStateConfiguration\n\n    Node $nodeName\n    {\n        xRemoteFile DownloadFile\n        {\n            DestinationPath = $destinationPath\n            Uri = $uri\n            UserAgent = $userAgent\n            Headers = $headers\n        }\n    }\n} \n```\n-   It’s a good practice to include (commented out) example of how to call the configuration with the actual values at the end of the example script. \nFor example, in the configuration above it won’t be obvious for everyone that the best way to specify UserAgent is:\n\n`UserAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::InternetExplorer`  \nThat’s why we should include comment with sample execution of the configuration:\n```\n<# \nSample use (parameter values need to be changed according to your scenario):\n\nSample_xRemoteFile_DownloadFile -destinationPath \"$env:SystemDrive\\fileName.jpg\" -uri \"http://www.contoso.com/image.jpg\"\n\nSample_xRemoteFile_DownloadFile -destinationPath \"$env:SystemDrive\\fileName.jpg\" -uri \"http://www.contoso.com/image.jpg\" `\n-userAgent [Microsoft.PowerShell.Commands.PSUserAgent]::InternetExplorer -headers @{\"Accept-Language\" = \"en-US\"}\n#>  \n```\n-   For each example, write a short description which explains what it does, and the meaning of the parameters. \n-   Make sure examples cover most the important scenarios for your resource and if there’s nothing missing, verify that they all execute and put machine in the desired state.  \n\n## Error messages are easy to understand and help users solve problems ##\nGood error messages should be:\n-   There: The biggest problem with error messages is that they often don’t exist, so make sure they are there. \n-   Easy to understand: Human readable, no obscure error codes\n-   Precise: Describe what’s exactly the problem\n-   Constructive: Advice how to fix the issue\n-   Polite: Don’t blame user or make them feel stupid\nMake sure you verify errors in End to End scenarios (using **Start-DscConfiguration**), because they may differ from those returned when running resource functions directly. \n\n## Log messages are easy to understand and informative (including –verbose, –debug and ETW logs) ##\nEnsure that logs outputted by the resource are easy to understand and provide value to the user. Resources should output all information which might be helpful to the user, but more logs is not always better. You should avoid redundancy and outputting data which does not provide additional value – don’t make someone go through hundreds of log entries in order to find what they're looking for. Of course, no logs is not an acceptable solution for this problem either. \n\nWhen testing, you should also analyze verbose and debug logs (by running **Start-DscConfiguration** with –verbose and –debug switches appropriately), as well as ETW logs. To see DSC ETW logs, go to Event Viewer and open the following folder: Applications and Services- Microsoft - Windows - Desired State Configuration.  By default there will be Operational channel, but make sure you enable Analytic and Debug channels (you have to do it before running the configuration). \nTo enable Analytic/Debug channels, you can execute script below:\n```powershell\n$statusEnabled = $true\n# Use \"Analytic\" to enable Analytic channel\n$eventLogFullName = \"Microsoft-Windows-Dsc/Debug\" \n$commandToExecute = \"wevtutil set-log $eventLogFullName /e:$statusEnabled /q:$statusEnabled   \"\n$log = New-Object System.Diagnostics.Eventing.Reader.EventLogConfiguration $eventLogFullName\nif($statusEnabled -eq $log.IsEnabled)\n{\n    Write-Host -Verbose \"The channel event log is already enabled\"\n    return\n}     \nInvoke-Expression $commandToExecute \n```\n## Resource implementation does not contain hardcoded paths ##\nEnsure there are no hardcoded paths in the resource implementation, particularly if they assume language (en-us), or when there are system variables that can be used.\nIf your resource need to access specific paths, use environment variables instead of hardcoding the path, as it may differ on other machines.\n\nExample:\n\nInstead of:\n```\n$tempPath = \"C:\\Users\\kkaczma\\AppData\\Local\\Temp\\MyResource\"\n$programFilesPath = \"C:\\Program Files (x86)\"\n ```\nYou can write:\n```\n$tempPath = Join-Path $env:temp \"MyResource\"\n$programFilesPath = ${env:ProgramFiles(x86)} \n```\n## Resource implementation does not contain user information ##\nMake sure there are no email names, account information, or names of people in the code.\n## Resource was tested with valid/invalid credentials ##\nIf your resource takes a credential as parameter:\n-   Verify the resource works when Local System (or the computer account for remote resources) does not have access.\n-   Verify the resource works with a credential specified for Get, Set and Test \n-   If your resource accesses shares, test all the variants you need to support.  \nFor example:\n- Standard windows shares.\n- DFS shares.\n- SAMBA shares (if you want to support Linux.)\n\n## Resource is not using cmdlets requiring interactive input ##\n**Get/Set/Test-TargetResource** functions should be executed automatically and must not wait for user’s input at any stage of execution (e.g. you should not use **Get-Credential** inside these functions). If you need to provide user’s input, you should pass it to the configuration as parameter during the compilation phase. \n## Resource functionality was thoroughly tested ##\nYou are responsible to make sure the resource is behaving correctly, so test its functionality manually or, better yet, write automation. This checklist contains items which are important to be tested and/or are often missed. There will be bunch of tests, mainly functional ones which will be specific to the resource you are testing and are not mentioned here. Don’t forget about negative test cases. This will likely be the most time consuming part of the resource testing. \n## Best practice: Resource module contains Tests folder with ResourceDesignerTests.ps1 script ##\nIt’s a good practice to create folder “Tests” inside resource module, create ResourceDesignerTests.ps1 file and add tests using **Test-xDscResource** and **Test-xDscSchema** for all resources in given module. \nThis way we can quickly validate schemas of all resources from given modules and do sanity check before publishing.\nFor xRemoteFile, ResourceTests.ps1 could look as simple as:\n```powershell\nTest-xDscResource ..\\DSCResources\\MSFT_xRemoteFile\nTest-xDscSchema ..\\DSCResources\\MSFT_xRemoteFile\\MSFT_xRemoteFile.schema.mof \n```\n**Best practice: Resource folder contains resource designer script for generating schema**\nEach resource should contain a resource designer script which generates a mof schema of the resource. This file should be placed in <ResourceName>\\ResourceDesignerScripts and be named Generate<ResourceName>Schema.ps1\nFor xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:\n```powershell \n$DestinationPath = New-xDscResourceProperty -Name DestinationPath -Type String -Attribute Key -Description 'Path under which downloaded or copied file should be accessible after operation.'\n$Uri = New-xDscResourceProperty -Name Uri -Type String -Attribute Required -Description 'Uri of a file which should be copied or downloaded. This parameter supports HTTP and HTTPS values.'\n$Headers = New-xDscResourceProperty -Name Headers -Type Hashtable[] -Attribute Write -Description 'Headers of the web request.'\n$UserAgent = New-xDscResourceProperty -Name UserAgent -Type String -Attribute Write -Description 'User agent for the web request.' \n$Ensure = New-xDscResourceProperty -Name Ensure -Type String -Attribute Read -ValidateSet \"Present\", \"Absent\" -Description 'Says whether DestinationPath exists on the machine'\n$Credential = New-xDscResourceProperty -Name Credential -Type PSCredential -Attribute Write -Description 'Specifies a user account that has permission to send the request.'\n$CertificateThumbprint = New-xDscResourceProperty -Name CertificateThumbprint -Type String -Attribute Write -Description 'Digital public key certificate that is used to send the request.'\n\nNew-xDscResource -Name MSFT_xRemoteFile -Property @($DestinationPath, $Uri, $Headers, $UserAgent, $Ensure, $Credential, $CertificateThumbprint) -ModuleName xPSDesiredStateConfiguration2 -FriendlyName xRemoteFile \n```\n22  Best practice: Resource supports -whatif\nIf your resource is performing “dangerous” operations, it’s a good practice to implement -whatif functionality. After it’s done, make sure that whatif output correctly describes operations which would happen if command was executed without whatif switch.\nAlso, verify that operations does not execute (no changes to the node’s state are made) when –whatif switch is present. \nFor example, let’s assume we are testing File resource. Below is simple configuration which creates file “test.txt” with contents “test”:\n```powershell\nconfiguration config\n{\n    node localhost \n    {\n        File file\n        {\n            Contents=\"test\"\n            DestinationPath=\"C:\\test\\test.txt\"\n        }\n    }\n}\nconfig \n```\nIf we compile and then execute the configuration with the –whatif switch, the output is telling us exactly what would happen when we run the configuration. The configuration itself however was not executed (test.txt file was not created).\n```powershell \nStart-DscConfiguration -path .\\config -ComputerName localhost -wait -verbose -whatif\nVERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''methodName' =\nSendConfigurationApply,'className' = MSFT_DSCLocalConfigurationManager,'namespaceName' =\nroot/Microsoft/Windows/DesiredStateConfiguration'.\nVERBOSE: An LCM method call arrived from computer CHARLESX1 with user sid\nS-1-5-21-397955417-626881126-188441444-5179871.\nWhat if: [X]: LCM:  [ Start  Set      ]\nWhat if: [X]: LCM:  [ Start  Resource ]  [[File]file]\nWhat if: [X]: LCM:  [ Start  Test     ]  [[File]file]\nWhat if: [X]:                            [[File]file] The system cannot find the file specified.\nWhat if: [X]:                            [[File]file] The related file/directory is: C:\\test\\test.txt.\nWhat if: [X]: LCM:  [ End    Test     ]  [[File]file]  in 0.0270 seconds.\nWhat if: [X]: LCM:  [ Start  Set      ]  [[File]file]\nWhat if: [X]:                            [[File]file] The system cannot find the file specified.\nWhat if: [X]:                            [[File]file] The related file/directory is: C:\\test\\test.txt.\nWhat if: [X]:                            [C:\\test\\test.txt] Creating and writing contents and setting attributes.\nWhat if: [X]: LCM:  [ End    Set      ]  [[File]file]  in 0.0180 seconds.\nWhat if: [X]: LCM:  [ End    Resource ]  [[File]file]\nWhat if: [X]: LCM:  [ End    Set      ]\nVERBOSE: [X]: LCM:  [ End    Set      ]    in  0.1050 seconds.\nVERBOSE: Operation 'Invoke CimMethod' complete.\n```\n\nThis wraps up our checklist. Please keep in mind that this list is not exhaustive, but it covers many important issues which we encountered while designing, developing and testing DSC resources. Having a checklist helps to ensure we didn’t forget about any of those aspects and in fact, we use it at Microsoft when developing DSC resources ourselves. \nIf you developed guidelines and best practices which you use for writing and testing DSC resources, please share them!\n"
+}
