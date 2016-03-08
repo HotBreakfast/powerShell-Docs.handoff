@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "content": "Configure DSC LCM with new meta-configuration attribute",
+      "pos": [
+        2,
+        57
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">`DscLocalConfigurationManager`</ph> attribute designates a configuration block as a meta-configuration, which is used to configure the DSC Local Configuration Manager.",
+      "pos": [
+        59,
+        225
+      ]
+    },
+    {
+      "content": "This attribute restricts a configuration to containing only items which configure the DSC Local Configuration Manager.",
+      "pos": [
+        226,
+        344
+      ]
+    },
+    {
+      "content": "During processing, this configuration generates a <ph id=\"ph1\">`*.meta.mof`</ph> file that is then sent to the appropriate target nodes by using the <ph id=\"ph2\">`Set-DscLocalConfigurationManager`</ph> cmdlet.",
+      "pos": [
+        345,
+        518
+      ]
+    },
+    {
+      "content": "The above example configures the refresh mode for LCM to use pull mode, changes the configuration mode to ApplyAndAutocorrect, and defines the type and location of the pull server.",
+      "pos": [
+        972,
+        1152
+      ]
+    },
+    {
+      "content": "This new configuration attribute replaces and extends the functionality of the LocalConfigurationManager resource from PowerShell 4.0.",
+      "pos": [
+        1154,
+        1288
+      ]
+    },
+    {
+      "content": "This LocalConfigurationManager is still supported in configurations without this attribute for backwards compatibility.",
+      "pos": [
+        1289,
+        1408
+      ]
+    },
+    {
+      "content": "Meta-resources:",
+      "pos": [
+        1410,
+        1425
+      ]
+    },
+    {
+      "content": "Resource Name",
+      "pos": [
+        1431,
+        1444
+      ]
+    },
+    {
+      "content": "Description",
+      "pos": [
+        1462,
+        1473
+      ]
+    },
+    {
+      "content": "LocalConfigurationManager",
+      "pos": [
+        1593,
+        1618
+      ]
+    },
+    {
+      "content": "Various settings for DSC engine execution",
+      "pos": [
+        1624,
+        1665
+      ]
+    },
+    {
+      "content": "PartialConfiguration",
+      "pos": [
+        1675,
+        1695
+      ]
+    },
+    {
+      "content": "Partial configuration settings",
+      "pos": [
+        1706,
+        1736
+      ]
+    },
+    {
+      "content": "ConfigurationRepositoryWeb",
+      "pos": [
+        1757,
+        1783
+      ]
+    },
+    {
+      "content": "Web-based configuration repository",
+      "pos": [
+        1788,
+        1822
+      ]
+    },
+    {
+      "content": "ConfigurationRepositoryShare",
+      "pos": [
+        1839,
+        1867
+      ]
+    },
+    {
+      "content": "File share-based configuration repository",
+      "pos": [
+        1870,
+        1911
+      ]
+    },
+    {
+      "content": "ResourceRepositoryWeb",
+      "pos": [
+        1921,
+        1942
+      ]
+    },
+    {
+      "content": "Web-based resource repository",
+      "pos": [
+        1952,
+        1981
+      ]
+    },
+    {
+      "content": "ResourceRepositoryShare",
+      "pos": [
+        2003,
+        2026
+      ]
+    },
+    {
+      "content": "File-based resource repository",
+      "pos": [
+        2034,
+        2064
+      ]
+    },
+    {
+      "content": "ReportServerWeb",
+      "pos": [
+        2085,
+        2100
+      ]
+    },
+    {
+      "content": "Web-based reporting endpoint for pull scenario",
+      "pos": [
+        2116,
+        2162
+      ]
+    }
+  ],
+  "content": "# Configure DSC LCM with new meta-configuration attribute\n\nThe `DscLocalConfigurationManager` attribute designates a configuration block as a meta-configuration, which is used to configure the DSC Local Configuration Manager. This attribute restricts a configuration to containing only items which configure the DSC Local Configuration Manager. During processing, this configuration generates a `*.meta.mof` file that is then sent to the appropriate target nodes by using the `Set-DscLocalConfigurationManager` cmdlet.\n\n```powershell\n[DscLocalConfigurationManager()]\nconfiguration meta\n{\n    Node localhost\n    {\n        Settings\n        {\n            ConfigurationMode = \"ApplyAndAutocorrect\"\n            ConfigurationID = \"5603f952-d6c6-4971-88c4-948636bf5c3f\"\n            RefreshMode = \"Pull\"\n        }\n        ConfigurationRepositoryWeb PullServer\n        {\n            ServerURL = \"https://corp.contoso.com/PSDSCPullServer/PSDSCPullServer.svc\"\n        }\n    }\n}\n```\n\nThe above example configures the refresh mode for LCM to use pull mode, changes the configuration mode to ApplyAndAutocorrect, and defines the type and location of the pull server.\n\nThis new configuration attribute replaces and extends the functionality of the LocalConfigurationManager resource from PowerShell 4.0. This LocalConfigurationManager is still supported in configurations without this attribute for backwards compatibility.\n\nMeta-resources:\n\n| **Resource Name**            | **Description**                                |\n|------------------------------|------------------------------------------------|\n| LocalConfigurationManager    | Various settings for DSC engine execution      |\n| PartialConfiguration         | Partial configuration settings                 |\n| ConfigurationRepositoryWeb   | Web-based configuration repository             |\n| ConfigurationRepositoryShare | File share-based configuration repository      |\n| ResourceRepositoryWeb        | Web-based resource repository                  |\n| ResourceRepositoryShare      | File-based resource repository                 |\n| ReportServerWeb              | Web-based reporting endpoint for pull scenario |\n"
+}

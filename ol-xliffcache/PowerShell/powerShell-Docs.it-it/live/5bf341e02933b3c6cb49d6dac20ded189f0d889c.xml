@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "content": "Additional value for RefreshMode property",
+      "pos": [
+        2,
+        43
+      ]
+    },
+    {
+      "content": "This release introduces a new <ph id=\"ph1\">`RefreshMode`</ph> value, <bpt id=\"p1\">**</bpt>Disabled<ept id=\"p1\">**</ept>.",
+      "pos": [
+        45,
+        109
+      ]
+    },
+    {
+      "content": "When this mode is set, LCM does not do document management.",
+      "pos": [
+        110,
+        169
+      ]
+    },
+    {
+      "content": "This mode can be used when a third party configuration management tool is used instead of DSC while still making use of DSC resources with the <ph id=\"ph1\">`Invoke-DscResource`</ph> cmdlet or if you just need to stop DSC processing for any reason.",
+      "pos": [
+        170,
+        399
+      ]
+    }
+  ],
+  "content": "# Additional value for RefreshMode property\n\nThis release introduces a new `RefreshMode` value, **Disabled**. When this mode is set, LCM does not do document management. This mode can be used when a third party configuration management tool is used instead of DSC while still making use of DSC resources with the `Invoke-DscResource` cmdlet or if you just need to stop DSC processing for any reason.\n\n```powershell\nConfiguration LCMSettings\n{\n    Node localhost\n    {\n        LocalConfigurationManager\n        {\n           RefreshMode = 'Disabled'\n        }\n    }\n}\n\nLCMSettings -OutputPath .\\LCMSettings\nSet-DscLocalConfigurationManager -Path .\\LCMSettings -Verbose -ComputerName localhost\n```\n"
+}

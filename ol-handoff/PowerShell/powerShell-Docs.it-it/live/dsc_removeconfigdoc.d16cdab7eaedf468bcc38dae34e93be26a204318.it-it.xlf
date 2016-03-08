@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="it-it">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Remove DSC documents</source>
+          <target state="new">Remove DSC documents</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>When a configuration document is delivered to DSC, the document goes through various stages (pending, current, previous).</source>
+          <target state="new">When a configuration document is delivered to DSC, the document goes through various stages (pending, current, previous).</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>We added a new cmdlet to DSC in Windows PowerShell 4.0, Remove-DscConfigurationDocument, as part of KB3000850.</source>
+          <target state="new">We added a new cmdlet to DSC in Windows PowerShell 4.0, Remove-DscConfigurationDocument, as part of KB3000850.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">02a9740760bba423c617993ddcb15a2260b576db</xliffext:olfilehash>
+  </header>
+</xliff>

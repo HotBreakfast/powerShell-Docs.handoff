@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="it-it">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Interact with Symbolic links using improved Item cmdlets</source>
+          <target state="new">Interact with Symbolic links using improved Item cmdlets</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>To support symbolic links, <bpt id="p1">**</bpt>\*-Item<ept id="p1">**</ept> and a few related cmdlets have been extended.</source>
+          <target state="new">To support symbolic links, <bpt id="p1">**</bpt>\*-Item<ept id="p1">**</ept> and a few related cmdlets have been extended.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Now you can create symbolic links in a single, simple line with <bpt id="p1">**</bpt>New-Item<ept id="p1">**</ept>.</source>
+          <target state="new">Now you can create symbolic links in a single, simple line with <bpt id="p1">**</bpt>New-Item<ept id="p1">**</ept>.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You’ll notice that the Item-related cmdlets (<bpt id="p1">**</bpt>Remove-Item, Get-ChildItem<ept id="p1">**</ept>) behave very similarly to before.</source>
+          <target state="new">You’ll notice that the Item-related cmdlets (<bpt id="p1">**</bpt>Remove-Item, Get-ChildItem<ept id="p1">**</ept>) behave very similarly to before.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The following shows some use cases of the new capabilities:</source>
+          <target state="new">The following shows some use cases of the new capabilities:</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>NEW-ITEM</source>
+          <target state="new">NEW-ITEM</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>SYMBOLIC LINK FILES</source>
+          <target state="new">SYMBOLIC LINK FILES</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>SYMBOLIC LINK DIRECTORIES</source>
+          <target state="new">SYMBOLIC LINK DIRECTORIES</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>HARD LINKS</source>
+          <target state="new">HARD LINKS</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>DIRECTORY JUNCTIONS</source>
+          <target state="new">DIRECTORY JUNCTIONS</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>GET-CHILDITEM</source>
+          <target state="new">GET-CHILDITEM</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>REMOVE-ITEM</source>
+          <target state="new">REMOVE-ITEM</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fcafa99f4a7b9cefcb98a7e159a5adf03e7ac17f</xliffext:olfilehash>
+  </header>
+</xliff>
