@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="ru-ru">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Known Issues and Limitations</source>
+          <target state="new">Known Issues and Limitations</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>PowerShell Shortcuts are broken when used for the first time</source>
+          <target state="new">PowerShell Shortcuts are broken when used for the first time</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Perform one of the following actions:</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Perform one of the following actions:</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Right click on the PowerShell shortcut.</source>
+          <target state="new">Right click on the PowerShell shortcut.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Select “Windows PowerShell” to launch in a non-elevated mode.</source>
+          <target state="new">Select “Windows PowerShell” to launch in a non-elevated mode.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Right click on the PowerShell shortcut.</source>
+          <target state="new">Right click on the PowerShell shortcut.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Right click on “Windows PowerShell” and select “Run As Administrator” to launch in an elevated mode.</source>
+          <target state="new">Right click on “Windows PowerShell” and select “Run As Administrator” to launch in an elevated mode.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Once you have performed either of the above actions, the PowerShell shortcuts will work.</source>
+          <target state="new">Once you have performed either of the above actions, the PowerShell shortcuts will work.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>These actions need to be performed only once.</source>
+          <target state="new">These actions need to be performed only once.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>PowerShell Modules and DSC Resources report errors about ExecutionPolicy on Windows 7</source>
+          <target state="new">PowerShell Modules and DSC Resources report errors about ExecutionPolicy on Windows 7</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>On Windows 7, the use of PowerShell modules and DSC resources may result in errors reported about ExecutionPolicy.</source>
+          <target state="new">On Windows 7, the use of PowerShell modules and DSC resources may result in errors reported about ExecutionPolicy.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Set the ExecutionPolicy to RemoteSigned by running the following command in an elevated PowerShell session (Run as Administrator):</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Set the ExecutionPolicy to RemoteSigned by running the following command in an elevated PowerShell session (Run as Administrator):</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Connecting to an old remote Exchange endpoint causes a crash</source>
+          <target state="new">Connecting to an old remote Exchange endpoint causes a crash</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>The old Exchange endpoint redirects to a new endpoint.</source>
+          <target state="new">The old Exchange endpoint redirects to a new endpoint.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>There is a bug in the redirection logic that results in a crash.</source>
+          <target state="new">There is a bug in the redirection logic that results in a crash.</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Connect directly to the new endpoint.</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Connect directly to the new endpoint.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Software Inventory Logging feature is erroneously stopped after WMF 5.0 installation on Windows Server 2012 R2</source>
+          <target state="new">Software Inventory Logging feature is erroneously stopped after WMF 5.0 installation on Windows Server 2012 R2</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>When installing WMF 5.0 on a Windows Server 2012 R2 that is already running SIL, the Software Inventory Logging feature is erroneously stopped after installation.</source>
+          <target state="new">When installing WMF 5.0 on a Windows Server 2012 R2 that is already running SIL, the Software Inventory Logging feature is erroneously stopped after installation.</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Run the Start-SilLogging cmdlet once after the WMF installation, as the installation process will errantly stop the Software Inventory Logging feature.</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Run the Start-SilLogging cmdlet once after the WMF installation, as the installation process will errantly stop the Software Inventory Logging feature.</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Get-ChildItem does not work if -LiteralPath and -Recurse are used together</source>
+          <target state="new">Get-ChildItem does not work if -LiteralPath and -Recurse are used together</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>If a directory name contains an invalid wildcard character, then Get-ChildItem will not produce expected results when both</source>
+          <target state="new">If a directory name contains an invalid wildcard character, then Get-ChildItem will not produce expected results when both</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>-LiteralPath and -Recurse are used together.</source>
+          <target state="new">-LiteralPath and -Recurse are used together.</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Not ideal, but current workaround is to implement recursion in the script rather than rely on the cmdlet.</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Not ideal, but current workaround is to implement recursion in the script rather than rely on the cmdlet.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5452d087bf0f56c02679a22599b6016348cbaa47</xliffext:olfilehash>
+  </header>
+</xliff>

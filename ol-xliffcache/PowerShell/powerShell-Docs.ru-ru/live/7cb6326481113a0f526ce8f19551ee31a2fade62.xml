@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "content": "Clipboard cmdlets",
+      "pos": [
+        2,
+        19
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Get-Clipboard<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Set-Clipboard<ept id=\"p2\">**</ept> make it easier for you to transfer content to and from a Windows PowerShell session.",
+      "pos": [
+        20,
+        144
+      ]
+    },
+    {
+      "content": "The following example uses File Explorer to copy three files:",
+      "pos": [
+        145,
+        206
+      ]
+    },
+    {
+      "content": "Now, you can easily access the contents of the clipboard as a list of files:",
+      "pos": [
+        208,
+        284
+      ]
+    },
+    {
+      "content": "PS C:\\\\&amp;gt; Get-Clipboard -Format FileDropList",
+      "pos": [
+        286,
+        332
+      ]
+    },
+    {
+      "content": "Directory: C:\\\\Users\\\\slee\\\\Downloads\\\\Example",
+      "pos": [
+        334,
+        380
+      ]
+    },
+    {
+      "content": "Mode LastWriteTime Length Name",
+      "pos": [
+        382,
+        412
+      ]
+    },
+    {
+      "content": "-a---- 4/14/2015 1:19 PM 0 File2.txt",
+      "pos": [
+        446,
+        482
+      ]
+    },
+    {
+      "content": "-a---- 4/14/2015 1:19 PM 0 File3.txt",
+      "pos": [
+        484,
+        520
+      ]
+    },
+    {
+      "content": "-a---- 4/14/2015 1:19 PM 0 File1.txt",
+      "pos": [
+        522,
+        558
+      ]
+    },
+    {
+      "content": "The Clipboard cmdlets support images, audio files, file lists, and text.",
+      "pos": [
+        560,
+        632
+      ]
+    }
+  ],
+  "content": "# Clipboard cmdlets\n**Get-Clipboard** and **Set-Clipboard** make it easier for you to transfer content to and from a Windows PowerShell session. The following example uses File Explorer to copy three files:\n\nNow, you can easily access the contents of the clipboard as a list of files:\n\nPS C:\\\\&gt; Get-Clipboard -Format FileDropList\n\nDirectory: C:\\\\Users\\\\slee\\\\Downloads\\\\Example\n\nMode LastWriteTime Length Name\n\n---- ------------- ------ ----\n\n-a---- 4/14/2015 1:19 PM 0 File2.txt\n\n-a---- 4/14/2015 1:19 PM 0 File3.txt\n\n-a---- 4/14/2015 1:19 PM 0 File1.txt\n\nThe Clipboard cmdlets support images, audio files, file lists, and text.\n"
+}
