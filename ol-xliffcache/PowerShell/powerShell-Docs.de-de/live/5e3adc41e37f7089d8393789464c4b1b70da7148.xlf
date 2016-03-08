@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="de-de">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Configure DSC LCM with new meta-configuration attribute</source>
+          <target state="new">Configure DSC LCM with new meta-configuration attribute</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`DscLocalConfigurationManager`</ph> attribute designates a configuration block as a meta-configuration, which is used to configure the DSC Local Configuration Manager.</source>
+          <target state="new">The <ph id="ph1">`DscLocalConfigurationManager`</ph> attribute designates a configuration block as a meta-configuration, which is used to configure the DSC Local Configuration Manager.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>This attribute restricts a configuration to containing only items which configure the DSC Local Configuration Manager.</source>
+          <target state="new">This attribute restricts a configuration to containing only items which configure the DSC Local Configuration Manager.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>During processing, this configuration generates a <ph id="ph1">`*.meta.mof`</ph> file that is then sent to the appropriate target nodes by using the <ph id="ph2">`Set-DscLocalConfigurationManager`</ph> cmdlet.</source>
+          <target state="new">During processing, this configuration generates a <ph id="ph1">`*.meta.mof`</ph> file that is then sent to the appropriate target nodes by using the <ph id="ph2">`Set-DscLocalConfigurationManager`</ph> cmdlet.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The above example configures the refresh mode for LCM to use pull mode, changes the configuration mode to ApplyAndAutocorrect, and defines the type and location of the pull server.</source>
+          <target state="new">The above example configures the refresh mode for LCM to use pull mode, changes the configuration mode to ApplyAndAutocorrect, and defines the type and location of the pull server.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>This new configuration attribute replaces and extends the functionality of the LocalConfigurationManager resource from PowerShell 4.0.</source>
+          <target state="new">This new configuration attribute replaces and extends the functionality of the LocalConfigurationManager resource from PowerShell 4.0.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>This LocalConfigurationManager is still supported in configurations without this attribute for backwards compatibility.</source>
+          <target state="new">This LocalConfigurationManager is still supported in configurations without this attribute for backwards compatibility.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Meta-resources:</source>
+          <target state="new">Meta-resources:</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Resource Name</source>
+          <target state="new">Resource Name</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>LocalConfigurationManager</source>
+          <target state="new">LocalConfigurationManager</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Various settings for DSC engine execution</source>
+          <target state="new">Various settings for DSC engine execution</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>PartialConfiguration</source>
+          <target state="new">PartialConfiguration</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Partial configuration settings</source>
+          <target state="new">Partial configuration settings</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>ConfigurationRepositoryWeb</source>
+          <target state="new">ConfigurationRepositoryWeb</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Web-based configuration repository</source>
+          <target state="new">Web-based configuration repository</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>ConfigurationRepositoryShare</source>
+          <target state="new">ConfigurationRepositoryShare</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>File share-based configuration repository</source>
+          <target state="new">File share-based configuration repository</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>ResourceRepositoryWeb</source>
+          <target state="new">ResourceRepositoryWeb</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Web-based resource repository</source>
+          <target state="new">Web-based resource repository</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>ResourceRepositoryShare</source>
+          <target state="new">ResourceRepositoryShare</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>File-based resource repository</source>
+          <target state="new">File-based resource repository</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>ReportServerWeb</source>
+          <target state="new">ReportServerWeb</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Web-based reporting endpoint for pull scenario</source>
+          <target state="new">Web-based reporting endpoint for pull scenario</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5e3adc41e37f7089d8393789464c4b1b70da7148</xliffext:olfilehash>
+  </header>
+</xliff>

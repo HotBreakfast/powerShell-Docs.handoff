@@ -1,0 +1,366 @@
+{
+  "nodes": [
+    {
+      "content": "System Requirements",
+      "pos": [
+        2,
+        21
+      ]
+    },
+    {
+      "content": "Install the latest Windows updates before installing WMF 5.0 RTM.",
+      "pos": [
+        25,
+        90
+      ]
+    },
+    {
+      "content": "You can install WMF 5.0 RTM only on the following operating systems:",
+      "pos": [
+        93,
+        161
+      ]
+    },
+    {
+      "pos": [
+        167,
+        1514
+      ],
+      "content": "| Operating System       | Editions         | Prerequisites        |  Package Links |\n  |------------------------|--------------|------------------|----------------------| --------------|\n  | Windows Server 2012 R2 |  |  | [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) |\n  | Windows Server 2012    |  |  | [W2K12-KB3134759-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717506) |\n  | Windows Server 2008 R2 SP1 | All, except IA64 | [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) and [.NET Framework 4.5 or above](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx) are installed| [Win7AndW2K8R2-KB3134760-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717504)|\n  | Windows 8.1 | Pro, Enterprise | | **x64:** [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) </br> **x86:** [Win8.1-KB3134758-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717963)|\n  | Windows 7 SP1 | All | [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) and [.NET Framework 4.5 or above](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx) are installed | **x64:** [Win7AndW2K8R2-KB3134760-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717504)  </br> **x86:** [Win7-KB3134760-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717962)|",
+      "leadings": [
+        "",
+        "  ",
+        "  ",
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "nodes": [
+        {
+          "content": "| Operating System       | Editions         | Prerequisites        |  Package Links |",
+          "pos": [
+            0,
+            85
+          ]
+        },
+        {
+          "content": "|------------------------|--------------|------------------|----------------------| --------------|",
+          "pos": [
+            88,
+            187
+          ]
+        },
+        {
+          "content": "| Windows Server 2012 R2 |  |  | <bpt id=\"p1\">[</bpt>Win8.1AndW2K12R2-KB3134758-x64.msu<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=717507)</ept> |",
+          "pos": [
+            190,
+            308
+          ]
+        },
+        {
+          "content": "| Windows Server 2012    |  |  | <bpt id=\"p1\">[</bpt>W2K12-KB3134759-x64.msu<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=717506)</ept> |",
+          "pos": [
+            311,
+            418
+          ]
+        },
+        {
+          "content": "| Windows Server 2008 R2 SP1 | All, except IA64 | <bpt id=\"p1\">[</bpt>WMF 4.0<ept id=\"p1\">](http://www.microsoft.com/en-us/download/details.aspx?id=40855)</ept> and <bpt id=\"p2\">[</bpt>.NET Framework 4.5 or above<ept id=\"p2\">](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx)</ept> are installed| <bpt id=\"p3\">[</bpt>Win7AndW2K8R2-KB3134760-x64.msu<ept id=\"p3\">](http://go.microsoft.com/fwlink/?LinkId=717504)</ept>|",
+          "pos": [
+            421,
+            730
+          ]
+        },
+        {
+          "content": "| Windows 8.1 | Pro, Enterprise | | <bpt id=\"p1\">**</bpt>x64:<ept id=\"p1\">**</ept> <bpt id=\"p2\">[</bpt>Win8.1AndW2K12R2-KB3134758-x64.msu<ept id=\"p2\">](http://go.microsoft.com/fwlink/?LinkId=717507)</ept>",
+          "pos": [
+            733,
+            861
+          ]
+        },
+        {
+          "content": "<bpt id=\"p1\">**</bpt>x86:<ept id=\"p1\">**</ept> <bpt id=\"p2\">[</bpt>Win8.1-KB3134758-x86.msu<ept id=\"p2\">](http://go.microsoft.com/fwlink/?LinkID=717963)</ept>|",
+          "pos": [
+            868,
+            951
+          ]
+        },
+        {
+          "content": "| Windows 7 SP1 | All | <bpt id=\"p1\">[</bpt>WMF 4.0<ept id=\"p1\">](http://www.microsoft.com/en-us/download/details.aspx?id=40855)</ept> and <bpt id=\"p2\">[</bpt>.NET Framework 4.5 or above<ept id=\"p2\">](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx)</ept> are installed | <bpt id=\"p3\">**</bpt>x64:<ept id=\"p3\">**</ept> <bpt id=\"p4\">[</bpt>Win7AndW2K8R2-KB3134760-x64.msu<ept id=\"p4\">](http://go.microsoft.com/fwlink/?LinkId=717504)</ept>",
+          "pos": [
+            954,
+            1246
+          ]
+        },
+        {
+          "content": "<bpt id=\"p1\">**</bpt>x86:<ept id=\"p1\">**</ept> <bpt id=\"p2\">[</bpt>Win7-KB3134760-x86.msu<ept id=\"p2\">](http://go.microsoft.com/fwlink/?LinkID=717962)</ept>|",
+          "pos": [
+            1254,
+            1335
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Installation Instructions",
+      "pos": [
+        1518,
+        1543
+      ]
+    },
+    {
+      "content": "To install WMF 5.0 from Windows Explorer (or File Explorer):",
+      "pos": [
+        1549,
+        1609
+      ]
+    },
+    {
+      "content": "Navigate to the folder into which you downloaded the MSU file.",
+      "pos": [
+        1614,
+        1676
+      ]
+    },
+    {
+      "content": "Double-click the MSU to run it.",
+      "pos": [
+        1681,
+        1712
+      ]
+    },
+    {
+      "content": "To install WMF 5.0 from Command Prompt:",
+      "pos": [
+        1718,
+        1757
+      ]
+    },
+    {
+      "content": "After downloading the correct package for your computer's architecture, open a Command Prompt window with elevated user rights (Run as Administrator).",
+      "pos": [
+        1762,
+        1912
+      ]
+    },
+    {
+      "content": "On the Server Core installation options of Windows Server 2012 R2 or Windows Server 2012 or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.",
+      "pos": [
+        1913,
+        2091
+      ]
+    },
+    {
+      "content": "Change directories to the folder into which you have downloaded or copied the WMF 5.0 installation package.",
+      "pos": [
+        2096,
+        2203
+      ]
+    },
+    {
+      "content": "Run one of the following commands:",
+      "pos": [
+        2208,
+        2242
+      ]
+    },
+    {
+      "pos": [
+        2249,
+        2372
+      ],
+      "content": "On computers that are running Windows Server 2012 R2 or Windows 8.1 x64, run <bpt id=\"p1\">**</bpt>Win8.1AndW2K12R2-KB3134758-x64.msu /quiet<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        2379,
+        2469
+      ],
+      "content": "On computers that are running Windows Server 2012, run <bpt id=\"p1\">**</bpt>W2K12-KB3134759-x64.msu /quiet<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        2476,
+        2602
+      ],
+      "content": "On computers that are running Windows Server 2008 R2 SP1 or Windows 7 SP1 x64, run <bpt id=\"p1\">**</bpt>Win7AndW2K8R2-KB3134760-x64.msu /quiet<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        2609,
+        2696
+      ],
+      "content": "On computers that are running Windows 8.1 x86, run <bpt id=\"p1\">**</bpt>Win8.1-KB3134758-x86.msu /quiet<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        2703,
+        2790
+      ],
+      "content": "On computers that are running Windows 7 SP1 x86, run <bpt id=\"p1\">**</bpt>Win7-KB3134760-x86.msu /quiet<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Additional Installation Notes for Windows Server 2008 SP1 and Windows 7 SP1:",
+      "pos": [
+        2796,
+        2872
+      ]
+    },
+    {
+      "content": "Ensure following prerequisites have been met:",
+      "pos": [
+        2874,
+        2919
+      ]
+    },
+    {
+      "content": "Latest service pack is installed.",
+      "pos": [
+        2922,
+        2955
+      ]
+    },
+    {
+      "pos": [
+        2958,
+        3044
+      ],
+      "content": "<bpt id=\"p1\">[</bpt>WMF 4.0<ept id=\"p1\">](http://www.microsoft.com/en-us/download/details.aspx?id=40855)</ept> is installed."
+    },
+    {
+      "pos": [
+        3047,
+        3146
+      ],
+      "content": "<bpt id=\"p1\">[</bpt>.NET Framework 4.5 or above<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx)</ept> is installed."
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>WinRM Dependency:<ept id=\"p1\">*</ept>",
+      "pos": [
+        3148,
+        3167
+      ]
+    },
+    {
+      "content": "Windows PowerShell Desired State Configuration (DSC) depends on WinRM.",
+      "pos": [
+        3168,
+        3238
+      ]
+    },
+    {
+      "content": "WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7.",
+      "pos": [
+        3239,
+        3311
+      ]
+    },
+    {
+      "content": "To enable WinRM, in a Windows PowerShell elevated session, run <bpt id=\"p1\">**</bpt>Set-WSManQuickConfig<ept id=\"p1\">**</ept>.",
+      "pos": [
+        3312,
+        3400
+      ]
+    },
+    {
+      "content": "Uninstallation Instructions",
+      "pos": [
+        3404,
+        3431
+      ]
+    },
+    {
+      "content": "Using Command Prompt",
+      "pos": [
+        3437,
+        3457
+      ]
+    },
+    {
+      "pos": [
+        3463,
+        3487
+      ],
+      "content": "Open <bpt id=\"p1\">**</bpt>Command Prompt.<ept id=\"p1\">**</ept>"
+    },
+    {
+      "pos": [
+        3493,
+        3600
+      ],
+      "content": "Run the <bpt id=\"p1\">[</bpt>Windows Update Standalone Launcher<ept id=\"p1\">](https://support.microsoft.com/en-us/kb/934307)</ept> as shown below:"
+    },
+    {
+      "content": "On Windows Server 2012 R2 and Windows 8.1:",
+      "pos": [
+        3602,
+        3644
+      ]
+    },
+    {
+      "content": "On Windows Server 2012:",
+      "pos": [
+        3691,
+        3714
+      ]
+    },
+    {
+      "content": "On Windows Server 2008 R2 SP1 and Windows 7 SP1:",
+      "pos": [
+        3761,
+        3809
+      ]
+    },
+    {
+      "content": "Using Control Panel",
+      "pos": [
+        3861,
+        3880
+      ]
+    },
+    {
+      "pos": [
+        3886,
+        3909
+      ],
+      "content": "Open <bpt id=\"p1\">**</bpt>Control Panel.<ept id=\"p1\">**</ept>"
+    },
+    {
+      "pos": [
+        3915,
+        3968
+      ],
+      "content": "Open <bpt id=\"p1\">**</bpt>Programs<ept id=\"p1\">**</ept>, then open <bpt id=\"p2\">**</bpt>Uninstall a program.<ept id=\"p2\">**</ept>"
+    },
+    {
+      "pos": [
+        3974,
+        4007
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>View installed updates.<ept id=\"p1\">**</ept>"
+    },
+    {
+      "content": "Select <bpt id=\"p1\">**</bpt>Windows Management Framework 5.0<ept id=\"p1\">**</ept> from the list of installed updates.",
+      "pos": [
+        4013,
+        4092
+      ]
+    },
+    {
+      "content": "This corresponds to <bpt id=\"p1\">*</bpt>KB3134758<ept id=\"p1\">*</ept>, <bpt id=\"p2\">*</bpt>KB3134759<ept id=\"p2\">*</ept>, or <bpt id=\"p3\">*</bpt>KB3134760<ept id=\"p3\">*</ept>.",
+      "pos": [
+        4093,
+        4154
+      ]
+    },
+    {
+      "content": "Click <bpt id=\"p1\">**</bpt>Uninstall.<ept id=\"p1\">**</ept>",
+      "pos": [
+        4155,
+        4175
+      ]
+    }
+  ],
+  "content": "# System Requirements\n\n- Install the latest Windows updates before installing WMF 5.0 RTM.\n- You can install WMF 5.0 RTM only on the following operating systems:\n\n    | Operating System       | Editions         | Prerequisites        |  Package Links |\n    |------------------------|--------------|------------------|----------------------| --------------|\n    | Windows Server 2012 R2 |  |  | [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) |\n    | Windows Server 2012    |  |  | [W2K12-KB3134759-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717506) |\n    | Windows Server 2008 R2 SP1 | All, except IA64 | [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) and [.NET Framework 4.5 or above](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx) are installed| [Win7AndW2K8R2-KB3134760-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717504)|\n    | Windows 8.1 | Pro, Enterprise | | **x64:** [Win8.1AndW2K12R2-KB3134758-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717507) </br> **x86:** [Win8.1-KB3134758-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717963)|\n    | Windows 7 SP1 | All | [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) and [.NET Framework 4.5 or above](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx) are installed | **x64:** [Win7AndW2K8R2-KB3134760-x64.msu](http://go.microsoft.com/fwlink/?LinkId=717504)  </br> **x86:** [Win7-KB3134760-x86.msu](http://go.microsoft.com/fwlink/?LinkID=717962)|\n\n# Installation Instructions\n\n### To install WMF 5.0 from Windows Explorer (or File Explorer):\n\n1. Navigate to the folder into which you downloaded the MSU file.\n\n2. Double-click the MSU to run it.\n\n### To install WMF 5.0 from Command Prompt:\n\n1. After downloading the correct package for your computer's architecture, open a Command Prompt window with elevated user rights (Run as Administrator). On the Server Core installation options of Windows Server 2012 R2 or Windows Server 2012 or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.\n\n2. Change directories to the folder into which you have downloaded or copied the WMF 5.0 installation package.\n\n3. Run one of the following commands:\n    - On computers that are running Windows Server 2012 R2 or Windows 8.1 x64, run **Win8.1AndW2K12R2-KB3134758-x64.msu /quiet**.\n    - On computers that are running Windows Server 2012, run **W2K12-KB3134759-x64.msu /quiet**.\n    - On computers that are running Windows Server 2008 R2 SP1 or Windows 7 SP1 x64, run **Win7AndW2K8R2-KB3134760-x64.msu /quiet**.\n    - On computers that are running Windows 8.1 x86, run **Win8.1-KB3134758-x86.msu /quiet**.\n    - On computers that are running Windows 7 SP1 x86, run **Win7-KB3134760-x86.msu /quiet**.\n\n### Additional Installation Notes for Windows Server 2008 SP1 and Windows 7 SP1:\n\nEnsure following prerequisites have been met:\n- Latest service pack is installed.\n- [WMF 4.0](http://www.microsoft.com/en-us/download/details.aspx?id=40855) is installed.\n- [.NET Framework 4.5 or above](https://msdn.microsoft.com/en-us/library/5a4x27ek.aspx) is installed.\n\n*WinRM Dependency:*\nWindows PowerShell Desired State Configuration (DSC) depends on WinRM. WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7. To enable WinRM, in a Windows PowerShell elevated session, run **Set-WSManQuickConfig**.\n\n# Uninstallation Instructions\n\n### Using Command Prompt\n\n1.  Open **Command Prompt.**\n\n2.  Run the [Windows Update Standalone Launcher](https://support.microsoft.com/en-us/kb/934307) as shown below:\n\nOn Windows Server 2012 R2 and Windows 8.1:\n```powershell\nwusa /uninstall /kb:3134758\n```\nOn Windows Server 2012:\n```powershell\nwusa /uninstall /kb:3134759\n```\nOn Windows Server 2008 R2 SP1 and Windows 7 SP1:\n```powershell\nwusa /uninstall /kb:3134760\n```\n\n### Using Control Panel\n\n1.  Open **Control Panel.**\n\n2.  Open **Programs**, then open **Uninstall a program.**\n\n3.  Click **View installed updates.**\n\n4.  Select **Windows Management Framework 5.0** from the list of installed updates. This corresponds to *KB3134758*, *KB3134759*, or *KB3134760*. Click **Uninstall.**\n"
+}

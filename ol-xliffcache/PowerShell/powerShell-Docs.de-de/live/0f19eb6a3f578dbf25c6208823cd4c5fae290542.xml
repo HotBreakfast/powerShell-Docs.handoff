@@ -1,0 +1,586 @@
+{
+  "nodes": [
+    {
+      "content": "WMF Release Notes Overview",
+      "pos": [
+        3,
+        29
+      ]
+    },
+    {
+      "content": "Installation Details",
+      "pos": [
+        52,
+        72
+      ]
+    },
+    {
+      "content": "Known Product Incompatibilites",
+      "pos": [
+        95,
+        125
+      ]
+    },
+    {
+      "content": "Feedback",
+      "pos": [
+        151,
+        159
+      ]
+    },
+    {
+      "content": "Scenarios Enabled by WMF 5.0",
+      "pos": [
+        178,
+        206
+      ]
+    },
+    {
+      "content": "Just Enough Administration (JEA)",
+      "pos": [
+        214,
+        246
+      ]
+    },
+    {
+      "content": "Creating and Connecting to a JEA Endpoint",
+      "pos": [
+        270,
+        311
+      ]
+    },
+    {
+      "content": "Reporting on JEA",
+      "pos": [
+        335,
+        351
+      ]
+    },
+    {
+      "content": "Creating Custom Types using PowerShell Classes",
+      "pos": [
+        373,
+        419
+      ]
+    },
+    {
+      "content": "Define Custom Types",
+      "pos": [
+        445,
+        464
+      ]
+    },
+    {
+      "content": "Declare Base Class",
+      "pos": [
+        489,
+        507
+      ]
+    },
+    {
+      "content": "Declare Implemented Interface",
+      "pos": [
+        529,
+        558
+      ]
+    },
+    {
+      "content": "Call Base Class Constructor",
+      "pos": [
+        585,
+        612
+      ]
+    },
+    {
+      "content": "Call Base Class Method",
+      "pos": [
+        645,
+        667
+      ]
+    },
+    {
+      "content": "Improvements in PowerShell Script Debugging",
+      "pos": [
+        695,
+        738
+      ]
+    },
+    {
+      "content": "Improvements in Desired State Configuration (DSC)",
+      "pos": [
+        764,
+        813
+      ]
+    },
+    {
+      "content": "Configurations",
+      "pos": [
+        841,
+        855
+      ]
+    },
+    {
+      "content": "Specifying Cross Node Dependencies",
+      "pos": [
+        865,
+        899
+      ]
+    },
+    {
+      "content": "Encrypted MOFs",
+      "pos": [
+        923,
+        937
+      ]
+    },
+    {
+      "content": "Help support for DSC Configuration",
+      "pos": [
+        966,
+        1000
+      ]
+    },
+    {
+      "content": "Authoring Improvements using PowerShell ISE",
+      "pos": [
+        1027,
+        1070
+      ]
+    },
+    {
+      "content": "Allowance for Identical Duplicate Resources in a Configuration",
+      "pos": [
+        1096,
+        1158
+      ]
+    },
+    {
+      "content": "Import-DscResource keyword supports -moduleversion parameter",
+      "pos": [
+        1193,
+        1253
+      ]
+    },
+    {
+      "content": "WOW64 support for Configuration Keyword",
+      "pos": [
+        1287,
+        1326
+      ]
+    },
+    {
+      "content": "Resources",
+      "pos": [
+        1347,
+        1356
+      ]
+    },
+    {
+      "content": "Class-based DSC Resources",
+      "pos": [
+        1366,
+        1391
+      ]
+    },
+    {
+      "content": "DSC Resource Script Debugging",
+      "pos": [
+        1426,
+        1455
+      ]
+    },
+    {
+      "content": "Automatic RunAs support for DSC Resources",
+      "pos": [
+        1489,
+        1530
+      ]
+    },
+    {
+      "content": "Side-By-Side Versioning Support for DSC Resources",
+      "pos": [
+        1552,
+        1601
+      ]
+    },
+    {
+      "content": "New in-box Resources",
+      "pos": [
+        1629,
+        1649
+      ]
+    },
+    {
+      "content": "Local Configuration Manager",
+      "pos": [
+        1677,
+        1704
+      ]
+    },
+    {
+      "content": "Configure Node with Multiple Configuration Fragments",
+      "pos": [
+        1714,
+        1766
+      ]
+    },
+    {
+      "content": "Support for Mixed RefreshModes",
+      "pos": [
+        1797,
+        1827
+      ]
+    },
+    {
+      "content": "Configure DSC Engine with New Attribute",
+      "pos": [
+        1867,
+        1906
+      ]
+    },
+    {
+      "content": "Mix and Match of PUSH and PULL modes",
+      "pos": [
+        1940,
+        1976
+      ]
+    },
+    {
+      "content": "Detailed information about LCM State",
+      "pos": [
+        2009,
+        2045
+      ]
+    },
+    {
+      "content": "Frequencies for RefreshMode and ConfigurationMode need not be multiple of each other",
+      "pos": [
+        2070,
+        2154
+      ]
+    },
+    {
+      "content": "Additional Value for RefreshMode Property",
+      "pos": [
+        2185,
+        2226
+      ]
+    },
+    {
+      "content": "Cmdlets",
+      "pos": [
+        2253,
+        2260
+      ]
+    },
+    {
+      "content": "Details about Configuration Status",
+      "pos": [
+        2270,
+        2304
+      ]
+    },
+    {
+      "content": "Test-DscConfiguration cmdlet supports Reference Configurations",
+      "pos": [
+        2343,
+        2405
+      ]
+    },
+    {
+      "content": "Direct Access to DSC Resource Methods",
+      "pos": [
+        2439,
+        2476
+      ]
+    },
+    {
+      "content": "Deliver Configuration Document without Applying",
+      "pos": [
+        2505,
+        2552
+      ]
+    },
+    {
+      "content": "Remove DSC Documents",
+      "pos": [
+        2582,
+        2602
+      ]
+    },
+    {
+      "content": "Unified and Consistent State and Status Representation",
+      "pos": [
+        2634,
+        2688
+      ]
+    },
+    {
+      "content": "Set-DscLocalConfigurationManager cmdlet supports -force parameter",
+      "pos": [
+        2716,
+        2781
+      ]
+    },
+    {
+      "content": "Pull Mode",
+      "pos": [
+        2806,
+        2815
+      ]
+    },
+    {
+      "content": "On-demand PULL of DSC Configurations",
+      "pos": [
+        2825,
+        2861
+      ]
+    },
+    {
+      "content": "Seperation of Node and Configuration Ids",
+      "pos": [
+        2890,
+        2930
+      ]
+    },
+    {
+      "content": "Separation of Configuration, Resource and Report Repositories",
+      "pos": [
+        2953,
+        3014
+      ]
+    },
+    {
+      "content": "Report Configuration Status to Central Location",
+      "pos": [
+        3041,
+        3088
+      ]
+    },
+    {
+      "content": "Audit PowerShell Usage using Transcript and Logging",
+      "pos": [
+        3113,
+        3164
+      ]
+    },
+    {
+      "content": "Enhanced Transcription Options",
+      "pos": [
+        3190,
+        3220
+      ]
+    },
+    {
+      "content": "Script Tracing and Logging",
+      "pos": [
+        3248,
+        3274
+      ]
+    },
+    {
+      "content": "Cryptographic Message Syntax (CMS) cmdlets",
+      "pos": [
+        3298,
+        3340
+      ]
+    },
+    {
+      "content": "Software Discovery, Install, and Inventory with PackageManagement",
+      "pos": [
+        3361,
+        3426
+      ]
+    },
+    {
+      "content": "PackageManagement Cmdlets",
+      "pos": [
+        3453,
+        3478
+      ]
+    },
+    {
+      "content": "PowerShell Module Discovery, Install, and Inventory with PowerShellGet",
+      "pos": [
+        3504,
+        3574
+      ]
+    },
+    {
+      "content": "Register a PowerShell Repository",
+      "pos": [
+        3607,
+        3639
+      ]
+    },
+    {
+      "content": "Side-by-Side Version Support on PowerShell 5.0 or newer",
+      "pos": [
+        3669,
+        3724
+      ]
+    },
+    {
+      "content": "Installation of Module Dependencies",
+      "pos": [
+        3758,
+        3793
+      ]
+    },
+    {
+      "content": "PowerShellGet Cmdlets for Module Management",
+      "pos": [
+        3827,
+        3870
+      ]
+    },
+    {
+      "content": "PowerShell Script Discovery, Install, and Management with PowerShellGet",
+      "pos": [
+        3901,
+        3972
+      ]
+    },
+    {
+      "content": "PowerShellGet Cmdlets for Script Management",
+      "pos": [
+        4005,
+        4048
+      ]
+    },
+    {
+      "content": "New and updated cmdlets based on community feedback",
+      "pos": [
+        4079,
+        4130
+      ]
+    },
+    {
+      "content": "Symbolic links using Item cmdlets",
+      "pos": [
+        4159,
+        4192
+      ]
+    },
+    {
+      "content": "Archive cmdlets",
+      "pos": [
+        4221,
+        4236
+      ]
+    },
+    {
+      "content": "Clipboard cmdlets",
+      "pos": [
+        4264,
+        4281
+      ]
+    },
+    {
+      "content": "Convert-String",
+      "pos": [
+        4311,
+        4325
+      ]
+    },
+    {
+      "content": "Extract and Parse Structured Objects out of String",
+      "pos": [
+        4359,
+        4409
+      ]
+    },
+    {
+      "content": "Format-Hex",
+      "pos": [
+        4447,
+        4457
+      ]
+    },
+    {
+      "content": "NoNewLine parameter",
+      "pos": [
+        4487,
+        4506
+      ]
+    },
+    {
+      "content": "New-TemporaryFile",
+      "pos": [
+        4536,
+        4553
+      ]
+    },
+    {
+      "content": "New-Guid",
+      "pos": [
+        4582,
+        4590
+      ]
+    },
+    {
+      "content": "Get-ChildItem has -Depth parameter",
+      "pos": [
+        4618,
+        4652
+      ]
+    },
+    {
+      "content": "Updates to FileInfo object",
+      "pos": [
+        4685,
+        4711
+      ]
+    },
+    {
+      "content": "Modules support for declaring version ranges (1.*, etc)",
+      "pos": [
+        4740,
+        4795
+      ]
+    },
+    {
+      "content": "Information Stream",
+      "pos": [
+        4835,
+        4853
+      ]
+    },
+    {
+      "content": "Generate PowerShell Cmdlets based on OData Endpoint",
+      "pos": [
+        4891,
+        4942
+      ]
+    },
+    {
+      "content": "Network Switch Management with PowerShell",
+      "pos": [
+        4968,
+        5009
+      ]
+    },
+    {
+      "content": "Software Inventory Logging (SIL)",
+      "pos": [
+        5043,
+        5075
+      ]
+    },
+    {
+      "content": "Known Issues and Limitations",
+      "pos": [
+        5098,
+        5126
+      ]
+    },
+    {
+      "content": "Desired State Configuration (DSC) Known Issues",
+      "pos": [
+        5156,
+        5202
+      ]
+    }
+  ],
+  "content": "# [WMF Release Notes Overview](releasenotes.md)\n\n# [Installation Details](requirements.md)\n\n# [Known Product Incompatibilites](productincompat.md)\n\n# [Feedback](feedback.md)\n\n# [Scenarios Enabled by WMF 5.0]()\n## [Just Enough Administration (JEA)](jea_overview.md)\n### [Creating and Connecting to a JEA Endpoint](jea_endpoint.md)\n### [Reporting on JEA](jea_report.md)\n\n## [Creating Custom Types using PowerShell Classes](class_overview.md)\n### [Define Custom Types](class_newtype.md)\n### [Declare Base Class](class_base.md)\n### [Declare Implemented Interface](class_interface.md)\n### [Call Base Class Constructor](class_baseconstructor.md)\n### [Call Base Class Method](class_basemethod.md)\n\n## [Improvements in PowerShell Script Debugging](debug_overview.md)\n\n## [Improvements in Desired State Configuration (DSC)](dsc_improvements.md)\n### [Configurations]()\n#### [Specifying Cross Node Dependencies](dsc_waitfor.md)\n#### [Encrypted MOFs](dsc_encryptedmof.md)\n#### [Help support for DSC Configuration](dsc_confighelp.md)\n#### [Authoring Improvements using PowerShell ISE](dsc_authoring.md)\n#### [Allowance for Identical Duplicate Resources in a Configuration](dsc_identicalduplicate.md)\n#### [Import-DscResource keyword supports -moduleversion parameter](dsc_importdscresource.md)\n#### [WOW64 support for Configuration Keyword](dsc_wow64.md)\n### [Resources]()\n#### [Class-based DSC Resources](dsc_classbasedresource.md)\n#### [DSC Resource Script Debugging](dsc_resourcedebugging.md)\n#### [Automatic RunAs support for DSC Resources](dsc_runas.md)\n#### [Side-By-Side Versioning Support for DSC Resources](dsc_sxsresource.md)\n#### [New in-box Resources](dsc_newresources.md)\n### [Local Configuration Manager]()\n#### [Configure Node with Multiple Configuration Fragments](dsc_partialconfig.md)\n##### [Support for Mixed RefreshModes](dsc_partialconfig_mixedmode.md)\n#### [Configure DSC Engine with New Attribute](dsc_metaconfiguration.md)\n#### [Mix and Match of PUSH and PULL modes](dsc_mixedrefreshmode.md)\n#### [Detailed information about LCM State](dsc_lcmstate.md)\n#### [Frequencies for RefreshMode and ConfigurationMode need not be multiple of each other](dsc_freqnomultiple.md)\n#### [Additional Value for RefreshMode Property](dsc_refreshmode.md)\n### [Cmdlets]()\n#### [Details about Configuration Status](dsc_getconfigurationstatus.md)\n#### [Test-DscConfiguration cmdlet supports Reference Configurations](dsc_testconfiguration.md)\n#### [Direct Access to DSC Resource Methods](dsc_directaccess.md)\n#### [Deliver Configuration Document without Applying](dsc_publishconfig.md)\n#### [Remove DSC Documents](dsc_removeconfigdoc.md)\n#### [Unified and Consistent State and Status Representation](dsc_statestatus.md)\n#### [Set-DscLocalConfigurationManager cmdlet supports -force parameter](dsc_setdsclcm.md)\n### [Pull Mode]()\n#### [On-demand PULL of DSC Configurations](dsc_updateconfig.md)\n#### [Seperation of Node and Configuration Ids](dsc_nodeid.md)\n#### [Separation of Configuration, Resource and Report Repositories](dsc_repository.md)\n#### [Report Configuration Status to Central Location](dsc_reporting.md)\n\n## [Audit PowerShell Usage using Transcript and Logging](audit_overview.md)\n### [Enhanced Transcription Options](audit_transcript.md)\n### [Script Tracing and Logging](audit_script.md)\n### [Cryptographic Message Syntax (CMS) cmdlets](audit_cms.md)\n\n## [Software Discovery, Install, and Inventory with PackageManagement](oneget_overview.md)\n### [PackageManagement Cmdlets](oneget_cmdlets.md)\n\n## [PowerShell Module Discovery, Install, and Inventory with PowerShellGet](psget_module_overview.md)\n### [Register a PowerShell Repository](psget_psrepository.md)\n### [Side-by-Side Version Support on PowerShell 5.0 or newer](psget_modulesxsinstall.md)\n### [Installation of Module Dependencies](psget_moduledependency.md)\n### [PowerShellGet Cmdlets for Module Management](psget_modulecmdlets.md)\n\n## [PowerShell Script Discovery, Install, and Management with PowerShellGet](psget_script_overview.md)\n### [PowerShellGet Cmdlets for Script Management](psget_scriptcmdlets.md)\n\n## [New and updated cmdlets based on community feedback ](feedback_cmdlets.md)\n### [Symbolic links using Item cmdlets](feedback_symbolic.md)\n### [Archive cmdlets](feedback_archive.md)\n### [Clipboard cmdlets](feedback_clipboard.md)\n### [Convert-String](feedback_convertstring.md)\n### [Extract and Parse Structured Objects out of String](feedback_convertfromString.md)\n### [Format-Hex](feedback_formathex.md)\n### [NoNewLine parameter](feedback_nonewline.md)\n### [New-TemporaryFile](feedback_tempfile.md)\n### [New-Guid](feedback_newguid.md)\n### [Get-ChildItem has -Depth parameter](feedback_getchilditem.md)\n### [Updates to FileInfo object](feedback_fileinfo.md)\n### [Modules support for declaring version ranges (1.*, etc)](feedback_moduleversionranges.md)\n\n## [Information Stream](informationstream_overview.md)\n\n## [Generate PowerShell Cmdlets based on OData Endpoint](odata_overview.md)\n\n## [Network Switch Management with PowerShell](networkswitch_overview.md)\n\n## [Software Inventory Logging (SIL)](sil_overview.md)\n\n# [Known Issues and Limitations](limitation_overview.md)\n## [Desired State Configuration (DSC) Known Issues](limitation_dsc.md)\n"
+}

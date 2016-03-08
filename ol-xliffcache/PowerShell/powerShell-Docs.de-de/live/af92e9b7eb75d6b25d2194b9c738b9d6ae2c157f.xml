@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "content": "Class-based DSC Resources",
+      "pos": [
+        2,
+        27
+      ]
+    },
+    {
+      "content": "Defining DSC resources with classes",
+      "pos": [
+        32,
+        67
+      ]
+    },
+    {
+      "content": "Based on feedback, we’ve made authoring class-based DSC resources simpler and easier to understand.",
+      "pos": [
+        69,
+        168
+      ]
+    },
+    {
+      "content": "The major differences between a class-based DSC resource and a cmdlet DSC resource provider are:",
+      "pos": [
+        170,
+        266
+      ]
+    },
+    {
+      "content": "A MOF file for the schema is not required.",
+      "pos": [
+        270,
+        312
+      ]
+    },
+    {
+      "pos": [
+        315,
+        380
+      ],
+      "content": "A <bpt id=\"p1\">**</bpt>DSCResource<ept id=\"p1\">**</ept> subfolder in the module folder is not required."
+    },
+    {
+      "content": "A PowerShell module file can contain multiple DSC resource classes.",
+      "pos": [
+        383,
+        450
+      ]
+    },
+    {
+      "content": "The following is an example of a class-based DSC resource that extends the other class DSC resource in the same file.",
+      "pos": [
+        452,
+        569
+      ]
+    },
+    {
+      "content": "This is saved as a module, <bpt id=\"p1\">**</bpt>MyDSCResource.psm1<ept id=\"p1\">**</ept>.",
+      "pos": [
+        570,
+        620
+      ]
+    },
+    {
+      "content": "Note that you must always include at least one key property and Get, Set, Test method in a class-defined DSC resource or its base classes.",
+      "pos": [
+        622,
+        760
+      ]
+    },
+    {
+      "content": "After creating the class-defined DSC resource provider, and saving it as a module, create a module manifest for the module.",
+      "pos": [
+        6856,
+        6979
+      ]
+    },
+    {
+      "content": "In this example, the following module manifest is saved as <bpt id=\"p1\">**</bpt>MyDscResource.psd1<ept id=\"p1\">**</ept>.",
+      "pos": [
+        6980,
+        7062
+      ]
+    },
+    {
+      "content": "Deploy the new DSC resource provider by creating a <bpt id=\"p1\">**</bpt>MyDscResource<ept id=\"p1\">**</ept> folder for it under <ph id=\"ph1\">`$env:SystemDrive\\Program Files\\WindowsPowerShell\\Modules`</ph>.",
+      "pos": [
+        7954,
+        8102
+      ]
+    },
+    {
+      "content": "You do not need to create a DSCResource subfolder.",
+      "pos": [
+        8103,
+        8153
+      ]
+    },
+    {
+      "content": "Copy the module and module manifest files (<bpt id=\"p1\">**</bpt>MyDscResource.psm1<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>MyDscResource.psd1<ept id=\"p2\">**</ept>) to the <bpt id=\"p3\">**</bpt>MyDscResource<ept id=\"p3\">**</ept> folder.",
+      "pos": [
+        8154,
+        8280
+      ]
+    },
+    {
+      "content": "From this point, you create and run a configuration script as you would with any DSC resource.",
+      "pos": [
+        8282,
+        8376
+      ]
+    },
+    {
+      "content": "The following is a configuration that references the MyDSCResource module.",
+      "pos": [
+        8378,
+        8452
+      ]
+    },
+    {
+      "content": "Save this as a script, <bpt id=\"p1\">**</bpt>MyResource.ps1<ept id=\"p1\">**</ept>.",
+      "pos": [
+        8454,
+        8496
+      ]
+    },
+    {
+      "content": "Run this as you would any DSC configuration script.",
+      "pos": [
+        8872,
+        8923
+      ]
+    },
+    {
+      "content": "To start the configuration, in an elevated Windows PowerShell console, run the following cmdlet.",
+      "pos": [
+        8924,
+        9020
+      ]
+    },
+    {
+      "content": "You will see the output of Get-DscConfiguration from FileResource contains more information than BaseFileResource.",
+      "pos": [
+        9022,
+        9136
+      ]
+    },
+    {
+      "content": "Known issues",
+      "pos": [
+        9253,
+        9265
+      ]
+    },
+    {
+      "content": "In this release, the following are known issues with class-based DSC resources:",
+      "pos": [
+        9267,
+        9346
+      ]
+    },
+    {
+      "content": "Get-DscConfiguration may return empty values (null) or errors if a complex type is returned by Get() function of a class based DSC resource.",
+      "pos": [
+        9350,
+        9490
+      ]
+    },
+    {
+      "content": "Composite resources cannot be written as a class-based resource.",
+      "pos": [
+        9493,
+        9557
+      ]
+    }
+  ],
+  "content": "# Class-based DSC Resources\n\n## Defining DSC resources with classes\n\nBased on feedback, we’ve made authoring class-based DSC resources simpler and easier to understand. \nThe major differences between a class-based DSC resource and a cmdlet DSC resource provider are:\n\n* A MOF file for the schema is not required.\n* A **DSCResource** subfolder in the module folder is not required.\n* A PowerShell module file can contain multiple DSC resource classes.\n\nThe following is an example of a class-based DSC resource that extends the other class DSC resource in the same file. This is saved as a module, **MyDSCResource.psm1**. \nNote that you must always include at least one key property and Get, Set, Test method in a class-defined DSC resource or its base classes.\n\n```powershell\nenum Ensure\n{\n    Absent\n    Present\n}\n\n<#\nThis resource manages the file in a specific path.\n[DscResource()] indicates the class is a DSC resource\n#>\n\n[DscResource()]\nclass BaseFileResource\n{\n<#\nThis property is the fully qualified path to the file that is expected to be present or absent.\n\nThe [DscProperty(Key)] attribute indicates the property is a key and its value uniquely identifies a resource instance. Defining this attribute also means the property is required and DSC will ensure a value is set before calling the resource.\n\nA DSC resource must define at least one key property.\n#>\n\n[DscProperty(Key)]\n[string]$Path\n\n<#\nThis property indicates if the settings should be present or absent on the system.\n\nFor present, the resource ensures the file pointed to by $Path exists. For absent, it ensures the file that $Path points to does not exist.\n\nThe [DscProperty(Mandatory)] attribute indicates the property is required and DSC will guarantee it is set.\n\nIf Mandatory is not specified or if it is defined as Mandatory=$false, the value is not guaranteed to be set when DSC calls the resource. This is appropriate for optional properties.\n#>\n\n[DscProperty(Mandatory)]\n[Ensure] $Ensure\n\n<#\nThis property defines the fully qualified path to a file that will be placed on the system if $Ensure = Present and $Path does not exist.\nNOTE: This property is required because [DscProperty(Mandatory)] is set.\n#>\n\n[DscProperty(Mandatory)]\n[string] $SourcePath\n\n<#\nThis property reports the file's creation timestamp.\n\n[DscProperty(NotConfigurable)] attribute indicates the property is not configurable in a DSC configuration. Properties marked this way are populated by the Get() method to report additional details about the resource when it is present.\n#>\n\n[DscProperty(NotConfigurable)]\n[Nullable[datetime]] $CreationTime\n\n<#\nThis method is equivalent of the Set-TargetResource script function.\nIt sets the resource to the desired state.\n#>\n\n[void] Set()\n{\n    $fileExists = $this.TestFilePath($this.Path)\n    if($this.ensure -eq [Ensure]::Present)\n    {\n        if(-not $fileExists)\n        {\n            $this.CopyFile()\n        }\n    }\n\n    else\n    {\n        if($fileExists)\n        {\n            Write-Verbose -Message \"Deleting the file $($this.Path)\"\n            Remove-Item -LiteralPath $this.Path -Force\n        }\n    }\n}\n\n<#\nThis method is equivalent of the Test-TargetResource script function.\nIt should return True or False, showing whether the resource is in a desired state.\n#>\n\n[bool] Test()\n{\n    $present = $this.TestFilePath($this.Path)\n\n    if($this.Ensure -eq [Ensure]::Present)\n    {\n        return $present\n    }\n\n    else\n    {\n        return -not $present\n    }\n}\n\n<#\nThis method is equal to the Get-TargetResource script function.\nThe implementation should use the keys to find appropriate resources.\nThis method returns an instance of this class with the updated key properties.\n#>\n\n[BaseFileResource] Get()\n{\n    $present = $this.TestFilePath($this.Path)\n\n    if ($present)\n    {\n        $file = Get-ChildItem -LiteralPath $this.Path\n        $this.CreationTime = $file.CreationTime\n        $this.Ensure = [Ensure]::Present\n    }\n\n    else\n    {\n        $this.CreationTime = $null\n        $this.Ensure = [Ensure]::Absent\n    }\n    \n    return $this\n}\n\n<#\nHelper method to check if the file exists and it is the right file\n#>\n\n[bool] TestFilePath([string] $location)\n{\n    $present = $true\n    $item = Get-ChildItem -LiteralPath $location -ea Ignore\n    \n    if ($item -eq $null)\n    {\n        $present = $false\n    }\n    elseif($item.PSProvider.Name -ne \"FileSystem\")\n    {\n        throw \"Path $($location) is not a file path.\"\n    }\n    elseif($item.PSIsContainer)\n    {\n        throw \"Path $($location) is a directory path.\"\n    }\n\nreturn $present\n}\n\n<#\nHelper method to copy the file from source to path\n#>\n\n[void] CopyFile()\n{\n    if(-not $this.TestFilePath($this.SourcePath))\n    {\n        throw \"SourcePath $($this.SourcePath) is not found.\"\n    }\n\n    [System.IO.FileInfo] $destFileInfo = new-object System.IO.FileInfo($this.Path)\n    if (-not $destFileInfo.Directory.Exists)\n    {\n        Write-Verbose -Message \"Creating directory $($destFileInfo.Directory.FullName)\"\n    \n        # use CreateDirectory instead of New-Item to avoid code\n        # to handle the non-terminating error\n        [System.IO.Directory]::CreateDirectory($destFileInfo.Directory.FullName)\n    }\n\n    if(Test-Path -LiteralPath $this.Path -PathType Container)\n    {\n        throw \"Path $($this.Path) is a directory path\"\n    }\n\n    Write-Verbose -Message \"Copying $($this.SourcePath) to $($this.Path)\"\n    # DSC engine catches and reports any error that occurs\n    Copy-Item -LiteralPath $this.SourcePath -Destination $this.Path -Force\n}\n}\n\n<#\nThis resource inherits from the [BaseFileResource]\nIt reports additional information in Get method\n#>\n\n[DscResource()]\nclass FileResource : BaseFileResource\n{\n    <#\n    This property reports if it is a readonly file\n    #>\n    [DscProperty(NotConfigurable)]\n    [bool] $IsReadOnly\n\n    <#\n    This property reports the file's LastAccessTime timestamp.\n    #>\n    [DscProperty(NotConfigurable)]\n    [Nullable[datetime]] $LastAccessTime\n\n    <#\n    This property reports the file's LastWriteTime timestamp.\n    #>\n    [DscProperty(NotConfigurable)]\n    [Nullable[datetime]] $LastWriteTime\n\n    <#\n    This method overrides the Get method in the base class.\n    #>\n    [FileResource] Get()\n    {\n        $present = $this.TestFilePath($this.Path)\n        if ($present)\n        {\n            $file = Get-ChildItem -LiteralPath $this.Path\n            $this.CreationTime = $file.CreationTime\n            $this.IsReadOnly = $file.IsReadOnly\n            $this.LastAccessTime = $file.LastAccessTime\n            $this.LastWriteTime = $file.LastWriteTime\n            $this.Ensure = [Ensure]::Present\n        }\n        else\n        {\n            $this.CreationTime = $null\n            $this.LastAccessTime = $null\n            $this.LastWriteTime = $null\n            $this.Ensure = [Ensure]::Absent\n        }\n\n    return $this\n}\n\n}\n```\n\nAfter creating the class-defined DSC resource provider, and saving it as a module, create a module manifest for the module. In this example, the following module manifest is saved as **MyDscResource.psd1**.\n\n```powershell\n@{\n# Script module or binary module file associated with this manifest.\nRootModule = 'MyDscResource.psm1'\n\n# Version number of this module.\nModuleVersion = '1.0'\n\n# ID used to identify this module uniquely\nGUID = '81624038-5e71-40f8-8905-b1a87afe22d7'\n\n# Author of this module\nAuthor = 'User01'\n\n# Company or vendor of this module\nCompanyName = 'Unknown'\n\n# Copyright statement for this module\nCopyright = '(c) 2015 User01. All rights reserved.'\n\n# Description of the functionality provided by this module\nDescription = 'DSC resource provider for FileResource.'\n\n# Minimum version of the Windows PowerShell engine required by this module\nPowerShellVersion = '5.0'\n\n# Name of the Windows PowerShell host required by this module\n# PowerShellHostName = ''\n\n# Required for DSC to detect PS class-based resources.\nDscResourcesToExport = @('BaseFileResource','FileResource')\n}\n```\n\nDeploy the new DSC resource provider by creating a **MyDscResource** folder for it under `$env:SystemDrive\\Program Files\\WindowsPowerShell\\Modules`.\nYou do not need to create a DSCResource subfolder.\nCopy the module and module manifest files (**MyDscResource.psm1** and **MyDscResource.psd1**) to the **MyDscResource** folder.\n\nFrom this point, you create and run a configuration script as you would with any DSC resource. \nThe following is a configuration that references the MyDSCResource module. \nSave this as a script, **MyResource.ps1**.\n\n```powershell\nConfiguration MyConfig\n{\n    Import-Dscresource -ModuleName MyDscResource\n    BaseFileResource file\n    {\n        Path = \"C:\\test\\baseFile.txt\"\n        SourcePath = \"c:\\test.txt\"\n        Ensure = \"Present\"\n    }\n\n    FileResource file\n    {\n        Path = \"C:\\test\\File.txt\"\n        SourcePath = \"c:\\test.txt\"\n        Ensure = \"Present\"\n    }\n}\n\nMyConfig\n```\n\nRun this as you would any DSC configuration script. To start the configuration, in an elevated Windows PowerShell console, run the following cmdlet. \nYou will see the output of Get-DscConfiguration from FileResource contains more information than BaseFileResource.\n\n```powershell\n.\\MyResource.ps1\nStart-DscConfiguration c:\\test\\MyConfig –Wait –Verbose\nGet-DscConfiguration\n```\n\n## Known issues\n\nIn this release, the following are known issues with class-based DSC resources:\n\n* Get-DscConfiguration may return empty values (null) or errors if a complex type is returned by Get() function of a class based DSC resource.\n* Composite resources cannot be written as a class-based resource.\n"
+}
