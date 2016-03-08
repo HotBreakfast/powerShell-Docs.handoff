@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "content": "Import-DscResource keyword supports -ModuleVersion parameter",
+      "pos": [
+        2,
+        62
+      ]
+    },
+    {
+      "content": "We have added a new parameter to the <ph id=\"ph1\">`Import-DscResource`</ph> dynamic keyword available when authoring DSC configurations.",
+      "pos": [
+        64,
+        182
+      ]
+    },
+    {
+      "content": "Configuration authors can now specify exactly which module version to load the DSC resources from.",
+      "pos": [
+        183,
+        281
+      ]
+    },
+    {
+      "content": "The new syntax of the keyword is:",
+      "pos": [
+        282,
+        315
+      ]
+    },
+    {
+      "pos": [
+        446,
+        497
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Name<ept id=\"p1\">**</ept>: Names of one or more reosurces to import."
+    },
+    {
+      "pos": [
+        500,
+        593
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>ModuleName<ept id=\"p1\">**</ept>: Module names or ModuleSpecification objects of one or more modules to import."
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>ModuleVersion<ept id=\"p1\">**</ept>: Version of module ot import.",
+      "pos": [
+        596,
+        643
+      ]
+    },
+    {
+      "content": "If used, ModuleName must represent only one module by name.",
+      "pos": [
+        644,
+        703
+      ]
+    },
+    {
+      "content": "In the Windows PowerShell ISE, it shows up with IntelliSense:",
+      "pos": [
+        706,
+        767
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Note<ept id=\"p1\">**</ept>: the <ph id=\"ph1\">`–ModuleVersion`</ph> parameter can only be used in combination with the <ph id=\"ph2\">`–ModuleName`</ph> parameter.",
+      "pos": [
+        816,
+        922
+      ]
+    },
+    {
+      "content": "It cannot be used with resource names using only the <ph id=\"ph1\">`–Name`</ph> parameter.",
+      "pos": [
+        923,
+        994
+      ]
+    },
+    {
+      "pos": [
+        996,
+        1198
+      ],
+      "content": "Before this, the only way to specify the module version when loading DSC resources was by using the Module specification object e.g.: <ph id=\"ph1\">`–ModuleName @{ModuleName=\"UserConfigProvider\";ModuleVersion=\"3.0\"}`</ph>"
+    }
+  ],
+  "content": "# Import-DscResource keyword supports -ModuleVersion parameter\n\nWe have added a new parameter to the `Import-DscResource` dynamic keyword available when authoring DSC configurations. Configuration authors can now specify exactly which module version to load the DSC resources from. The new syntax of the keyword is:\n\n```powershell\nImport-DscResource [-Name <ResourceName(s)>] [-ModuleName <ModuleName(s)>] [-ModuleVersion <ModuleVersion>]\n```\n\n* **Name**: Names of one or more reosurces to import.\n* **ModuleName**: Module names or ModuleSpecification objects of one or more modules to import.\n* **ModuleVersion**: Version of module ot import. If used, ModuleName must represent only one module by name. \n\nIn the Windows PowerShell ISE, it shows up with IntelliSense:\n\n![](images/Import-DscResource-Modversion.jpg)\n\n**Note**: the `–ModuleVersion` parameter can only be used in combination with the `–ModuleName` parameter. It cannot be used with resource names using only the `–Name` parameter.\n\nBefore this, the only way to specify the module version when loading DSC resources was by using the Module specification object e.g.: `–ModuleName @{ModuleName=\"UserConfigProvider\";ModuleVersion=\"3.0\"}`\n\n"
+}

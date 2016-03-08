@@ -1,0 +1,348 @@
+{
+  "nodes": [
+    {
+      "content": "Separation of Node and Configuration IDs",
+      "pos": [
+        2,
+        42
+      ]
+    },
+    {
+      "content": "Overview",
+      "pos": [
+        47,
+        55
+      ]
+    },
+    {
+      "content": "In order to provide a more flexible and streamlined experience when using DSC in Pull mode, we have added a number of features in this release.",
+      "pos": [
+        57,
+        200
+      ]
+    },
+    {
+      "content": "These features are intended to allow you to have the flexibility to easily setup and deploy configurations across multiple nodes, while still tracking status and reporting information for each node individually.",
+      "pos": [
+        201,
+        412
+      ]
+    },
+    {
+      "content": "These features are as follows:",
+      "pos": [
+        413,
+        443
+      ]
+    },
+    {
+      "content": "A configuration name which identifies the configuration for a computer.",
+      "pos": [
+        447,
+        518
+      ]
+    },
+    {
+      "content": "This name can be shared by multiple target nodes",
+      "pos": [
+        519,
+        567
+      ]
+    },
+    {
+      "content": "An agent ID which uniquely identifies a single node",
+      "pos": [
+        571,
+        622
+      ]
+    },
+    {
+      "content": "A registration step which only occurs the first time a target node connects to a pull server",
+      "pos": [
+        625,
+        717
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> These features and functionality have been added and do not replace the existing pull features and concepts.",
+      "pos": [
+        719,
+        837
+      ]
+    },
+    {
+      "content": "You can use these new features or the older ones with the new pull server shipping in this release.",
+      "pos": [
+        838,
+        937
+      ]
+    },
+    {
+      "content": "Agent ID",
+      "pos": [
+        942,
+        950
+      ]
+    },
+    {
+      "content": "This feature is for users who do not want to setup and manage unique identifiers for each target node.",
+      "pos": [
+        952,
+        1054
+      ]
+    },
+    {
+      "content": "Now, there is no more bookkeeping of GUIDs required.",
+      "pos": [
+        1055,
+        1107
+      ]
+    },
+    {
+      "content": "DSC automatically generates an agent ID that it uses when communicating with the pull server.",
+      "pos": [
+        1108,
+        1201
+      ]
+    },
+    {
+      "content": "This ID is used by the pull server to uniquely identify all information with a given node.",
+      "pos": [
+        1202,
+        1292
+      ]
+    },
+    {
+      "content": "It also means that you do not need to set up each target node with a unique meta-configuation containing a unique ID so a single meta-configuation can be used by many target nodes while still retaining each node's unique identity.",
+      "pos": [
+        1293,
+        1523
+      ]
+    },
+    {
+      "content": "Configuration name",
+      "pos": [
+        1529,
+        1547
+      ]
+    },
+    {
+      "content": "The configuration name is a friendly name that defines that name of the configuration that a target node will apply.",
+      "pos": [
+        1549,
+        1665
+      ]
+    },
+    {
+      "content": "The changes associated to this are as follows:",
+      "pos": [
+        1666,
+        1712
+      ]
+    },
+    {
+      "content": "Friendly naming",
+      "pos": [
+        1720,
+        1735
+      ]
+    },
+    {
+      "content": "This can be any string!",
+      "pos": [
+        1737,
+        1760
+      ]
+    },
+    {
+      "content": "It does not need to be in the format of a GUID so a configuration that sets up SQL server can simply be named 'SQL_Server'.",
+      "pos": [
+        1761,
+        1884
+      ]
+    },
+    {
+      "content": "This makes it much easier to identify what a given configuration does.",
+      "pos": [
+        1885,
+        1955
+      ]
+    },
+    {
+      "content": "Assignment",
+      "pos": [
+        1961,
+        1971
+      ]
+    },
+    {
+      "content": "The configuration that a target node is assigned is centrally managed on the pull server.",
+      "pos": [
+        1973,
+        2062
+      ]
+    },
+    {
+      "content": "This can be bootstrapped by defining the ConfigrationName property in the meta-configuration but this is only used during registration.",
+      "pos": [
+        2063,
+        2198
+      ]
+    },
+    {
+      "content": "After registration, the server tells the target node what configuration it will get.",
+      "pos": [
+        2199,
+        2283
+      ]
+    },
+    {
+      "content": "For the on-premises pull server this mapping between configurations and target nodes can only be done during registration, but in Azure Automation these changes can be made easily in the UI or through their cmdlets.",
+      "pos": [
+        2284,
+        2499
+      ]
+    },
+    {
+      "content": "To change the configuration assigned to a target node for the on-premises pull server you can re-run registration.",
+      "pos": [
+        2500,
+        2614
+      ]
+    },
+    {
+      "content": "Multiple/Partial configurations",
+      "pos": [
+        2620,
+        2651
+      ]
+    },
+    {
+      "content": "If multiple configuration names are assigned to a target node, they will be treated like partial configurations.",
+      "pos": [
+        2653,
+        2765
+      ]
+    },
+    {
+      "content": "In order for this to work, the meta-configuration on the target node must be configured to accept the partial configurations.",
+      "pos": [
+        2766,
+        2891
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> This is only supported on the on-premises pull server.",
+      "pos": [
+        2892,
+        2956
+      ]
+    },
+    {
+      "content": "Azure Automation does not support partial configurations.",
+      "pos": [
+        2957,
+        3014
+      ]
+    },
+    {
+      "content": "Registration",
+      "pos": [
+        3019,
+        3031
+      ]
+    },
+    {
+      "content": "Because configuration names are no longer GUIDs (they are now friendly names), anyone can guess them.",
+      "pos": [
+        3033,
+        3134
+      ]
+    },
+    {
+      "content": "To mitigate the inherent security issue with this, we added a registration step before a node can start requesting configurations from a server.",
+      "pos": [
+        3135,
+        3279
+      ]
+    },
+    {
+      "content": "A node registers itself with the pull server with a shared secret (which the node and the server both know already), and, optionally, the name of the configuration it will request.",
+      "pos": [
+        3280,
+        3460
+      ]
+    },
+    {
+      "content": "This shared secret doesn't have to be unique for each computer.",
+      "pos": [
+        3461,
+        3524
+      ]
+    },
+    {
+      "content": "Assumption: the shared secret is a hard-to-guess identifier, like a GUID.",
+      "pos": [
+        3525,
+        3598
+      ]
+    },
+    {
+      "content": "This shared secret is defined by the <bpt id=\"p1\">**</bpt>RegistrationKey<ept id=\"p1\">**</ept> property in the target node's meta-configuration.",
+      "pos": [
+        3599,
+        3705
+      ]
+    },
+    {
+      "content": "Example meta-configuration",
+      "pos": [
+        3711,
+        3737
+      ]
+    },
+    {
+      "content": "The RegistrationKey value must be defined by on the pull server.",
+      "pos": [
+        4263,
+        4327
+      ]
+    },
+    {
+      "content": "In order to do this while setting up the pull server, create a text file with the name <bpt id=\"p1\">**</bpt>RegistrationKeys.txt<ept id=\"p1\">**</ept> in a specific location, and then set this location in the web.config of the pull server, as shown below.",
+      "pos": [
+        4328,
+        4544
+      ]
+    },
+    {
+      "content": "Use the latest version of the xDSCWebService DSC resource to fully deploy an on-premises pull server for use with this.",
+      "pos": [
+        4831,
+        4950
+      ]
+    },
+    {
+      "content": "See <bpt id=\"p1\">[</bpt>Example Configuration<ept id=\"p1\">](https://github.com/grayzu/PSSummitEU2015/blob/master/PullServer/02%20-%20PullServer%20Config.ps1)</ept> for a complete configuration.",
+      "pos": [
+        4951,
+        5106
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> This feature is not supported when the pull server is set up to be a file share.",
+      "pos": [
+        5108,
+        5198
+      ]
+    },
+    {
+      "content": "It is only supported for the web-based pull server.",
+      "pos": [
+        5199,
+        5250
+      ]
+    }
+  ],
+  "content": "# Separation of Node and Configuration IDs\n\n## Overview\n\nIn order to provide a more flexible and streamlined experience when using DSC in Pull mode, we have added a number of features in this release. These features are intended to allow you to have the flexibility to easily setup and deploy configurations across multiple nodes, while still tracking status and reporting information for each node individually. These features are as follows:\n\n* A configuration name which identifies the configuration for a computer. This name can be shared by multiple target nodes \n* An agent ID which uniquely identifies a single node\n* A registration step which only occurs the first time a target node connects to a pull server\n\n**Note:** These features and functionality have been added and do not replace the existing pull features and concepts. You can use these new features or the older ones with the new pull server shipping in this release.\n\n## Agent ID\n\nThis feature is for users who do not want to setup and manage unique identifiers for each target node. Now, there is no more bookkeeping of GUIDs required. DSC automatically generates an agent ID that it uses when communicating with the pull server. This ID is used by the pull server to uniquely identify all information with a given node. It also means that you do not need to set up each target node with a unique meta-configuation containing a unique ID so a single meta-configuation can be used by many target nodes while still retaining each node's unique identity. \n\n## Configuration name\n\nThe configuration name is a friendly name that defines that name of the configuration that a target node will apply. The changes associated to this are as follows:  \n\n### Friendly naming\n\nThis can be any string! It does not need to be in the format of a GUID so a configuration that sets up SQL server can simply be named 'SQL_Server'. This makes it much easier to identify what a given configuration does.\n\n### Assignment\n\nThe configuration that a target node is assigned is centrally managed on the pull server. This can be bootstrapped by defining the ConfigrationName property in the meta-configuration but this is only used during registration. After registration, the server tells the target node what configuration it will get. For the on-premises pull server this mapping between configurations and target nodes can only be done during registration, but in Azure Automation these changes can be made easily in the UI or through their cmdlets. To change the configuration assigned to a target node for the on-premises pull server you can re-run registration.\n\n### Multiple/Partial configurations\n\nIf multiple configuration names are assigned to a target node, they will be treated like partial configurations. In order for this to work, the meta-configuration on the target node must be configured to accept the partial configurations. **Note:** This is only supported on the on-premises pull server. Azure Automation does not support partial configurations.\n\n## Registration\n\nBecause configuration names are no longer GUIDs (they are now friendly names), anyone can guess them. To mitigate the inherent security issue with this, we added a registration step before a node can start requesting configurations from a server. A node registers itself with the pull server with a shared secret (which the node and the server both know already), and, optionally, the name of the configuration it will request. This shared secret doesn't have to be unique for each computer. Assumption: the shared secret is a hard-to-guess identifier, like a GUID. This shared secret is defined by the **RegistrationKey** property in the target node's meta-configuration.\n\n### Example meta-configuration\n\n```powershell\n[DscLocalConfigurationManager()]\nConfiguration SampleMetaConfig\n{\n    Settings\n    {\n        RefreshMode = \"PULL\";\n        AllowModuleOverwrite = $true;\n        RebootNodeIfNeeded = $true;\n        ConfigurationModeFrequencyMins = 60;\n    }\n\n    ConfigurationRepositoryWeb ConfigurationManager\n    {\n        ServerURL = “https://PullServerMachine:8080/psdscpullserver.svc”\n        RegistrationKey = \"140a952b-b9d6-406b-b416-e0f759c9c0e4\"\n        ConfigurationNames = @(“WebRole”)\n    }\n}\n\nSampleMetaConfig\n```\n\nThe RegistrationKey value must be defined by on the pull server. In order to do this while setting up the pull server, create a text file with the name **RegistrationKeys.txt** in a specific location, and then set this location in the web.config of the pull server, as shown below.  \n\n```XML\n<add key=\"ConfigurationPath\" value=\"C:\\Program Files\\WindowsPowerShell\\DscService\\Configuration\">\n\n<add key=\"ModulePath\" value=\"C:\\Program Files\\WindowsPowerShell\\DscService\\Modules\">\n\n<add key=\"RegistrationKeyPath\" value=\"C:\\Program Files\\WindowsPowerShell\\DscService\">\n```\n\nUse the latest version of the xDSCWebService DSC resource to fully deploy an on-premises pull server for use with this. See [Example Configuration](https://github.com/grayzu/PSSummitEU2015/blob/master/PullServer/02%20-%20PullServer%20Config.ps1) for a complete configuration.\n\n**Note:** This feature is not supported when the pull server is set up to be a file share. It is only supported for the web-based pull server."
+}

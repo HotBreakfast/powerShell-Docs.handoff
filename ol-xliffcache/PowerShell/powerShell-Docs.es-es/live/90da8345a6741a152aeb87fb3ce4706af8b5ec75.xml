@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {
+      "content": "Support for mixed RefreshMode",
+      "pos": [
+        2,
+        31
+      ]
+    },
+    {
+      "content": "When you use partial configurations, you can now define each individual partial configuration with a <ph id=\"ph1\">`RefreshMode`</ph>.",
+      "pos": [
+        33,
+        148
+      ]
+    },
+    {
+      "content": "Valid values are <ph id=\"ph1\">`PUSH`</ph> or <ph id=\"ph2\">`PULL`</ph>.",
+      "pos": [
+        149,
+        183
+      ]
+    }
+  ],
+  "content": "# Support for mixed RefreshMode\n\nWhen you use partial configurations, you can now define each individual partial configuration with a `RefreshMode`. Valid values are `PUSH` or `PULL`.\n\n```powershell\n[DscLocalConfigurationManager()]\nConfiguration partialMeta\n{\n    Settings\n    {\n        RefreshMode = \"PULL\"\n        RefreshFrequencyMins = 30\n        ConfigurationModeFrequencyMins = 15\n        ConfigurationMode = \"ApplyAndAutoCorrect\"\n        RebootNodeIfNeeded = $false\n        ConfigurationId = \"922A3987-6647-4665-B770-0FD008436CE3\"\n    }\n\n    PartialConfiguration Partial1\n    {\n        RefreshMode = \"PUSH\"\n        Description = \"Partial1\"\n    }\n\n    PartialConfiguration Partial2\n    {\n        RefreshMode = \"PULL\"\n        Description = \"Partial1\"\n        ConfigurationSource = \"[ConfigurationRepositoryShare]FileShare\"\n        DependsOn = \"[PartialConfiguration]Partial1\"\n    }\n\n    PartialConfiguration Partial3\n    {\n        RefreshMode = \"PUSH\"\n        Description = \"Partial3\"\n        ConfigurationSource = \"[ConfigurationRepositoryWeb]PullServerWeb1\"\n        DependsOn = \"[PartialConfiguration]Partial2\"\n    }\n\n    ConfigurationRepositoryShare FileShare\n    {\n        SourcePath = \"\\\\testserver\\pullserver\"\n    }\n\n}\n```\n"
+}

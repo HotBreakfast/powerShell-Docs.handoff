@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {
+      "content": "Deliver a configuration document without applying",
+      "pos": [
+        2,
+        51
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Publish-DscConfiguration<ept id=\"p1\">**</ept> cmdlet copies a configuration MOF file to a target node, but does not apply the configuration.",
+      "pos": [
+        53,
+        180
+      ]
+    },
+    {
+      "content": "This configuration is applied during the next consistency pass, or when you run the <ph id=\"ph1\">`Update-DscConfiguration`</ph> cmdlet.",
+      "pos": [
+        181,
+        298
+      ]
+    }
+  ],
+  "content": "# Deliver a configuration document without applying\n\nThe **Publish-DscConfiguration** cmdlet copies a configuration MOF file to a target node, but does not apply the configuration. This configuration is applied during the next consistency pass, or when you run the `Update-DscConfiguration` cmdlet.\n\n```powershell\nPublish-DscConfiguration [-Path] <string> [[-ComputerName] <string[]>] [-Force] [-Credential <pscredential>] [-ThrottleLimit <int>] [-WhatIf] [-Confirm] [<CommonParameters>]\n\nPublish-DscConfiguration [-Path] <string> -CimSession <CimSession[]> [-Force] [-ThrottleLimit <int>] [-WhatIf] [-Confirm] [<CommonParameters>]\n```\n"
+}

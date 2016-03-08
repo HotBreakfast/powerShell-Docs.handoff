@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "content": "Help support for DSC configurations",
+      "pos": [
+        2,
+        37
+      ]
+    },
+    {
+      "pos": [
+        39,
+        197
+      ],
+      "content": "You can now use comment-based help inside of DSC configurations and get help on usage of that configuration when calling the configuration function with <ph id=\"ph1\">`-?`</ph>:"
+    },
+    {
+      "content": "First, we define two configuration functions called HelpSample1 and HelpSample2, including comment-based help with each of them:",
+      "pos": [
+        201,
+        329
+      ]
+    },
+    {
+      "content": "To get help for HelpSample1, simply run:",
+      "pos": [
+        2130,
+        2170
+      ]
+    },
+    {
+      "content": "You can also get detailed help using Get-Help:",
+      "pos": [
+        2901,
+        2947
+      ]
+    }
+  ],
+  "content": "# Help support for DSC configurations\n\nYou can now use comment-based help inside of DSC configurations and get help on usage of that configuration when calling the configuration function with `-?`:  \n\nFirst, we define two configuration functions called HelpSample1 and HelpSample2, including comment-based help with each of them:\n\n```powershell\n<#\n.SYNOPSIS\nThe synopsis for the configuration goes here. This can be one line, or many.\n\n.DESCRIPTION\nThe description for the configuration is usually a longer, more detailed explanation of what the script or function does. Use as many lines as you need.\n\n.PARAMETER computername\nHere, the dotted keyword is followed by a single parameter name. Don't precede that with a hyphen. The following lines describe the purpose of the parameter:\n\n.PARAMETER filePath\nProvide a PARAMETER section for each parameter that your script or function accepts.\n\n.EXAMPLE\nThere's no need to number your examples.\n\n.EXAMPLE\nWindows PowerShell will number them for you when it displays your help text to a user.\n#>\n\nconfiguration HelpSample1\n{\n    param([string]$computername,[string]$filePath)\n    File f\n    {\n        Contents=\"Hello World\"\n        DestinationPath = \"c:\\Destination.txt\"\n    }\n}\n\n<#\n.SYNOPSIS\nThe synopsis for the configuration HelpSample2 goes here. This can be one line, or many.\n\n.DESCRIPTION\nThe description for the configuration bar is usually a longer, more detailed explanation of what the script or function does. Take as many lines as you need.\n\n.PARAMETER computername\nHere, the dotted keyword is followed by a single parameter name. Don't precede that with a hyphen. The following lines describe the purpose of the parameter:\n\n.PARAMETER filePath\nProvide a PARAMETER section for each parameter that your script or function accepts.\n\n.EXAMPLE\nThere's no need to number your examples.\n\n.EXAMPLE\nWindows PowerShell will number them for you when it displays your help text to a user.\n\n#>\n\nconfiguration HelpSample2\n{\n    param([string]$computername,[string]$filePath)\n\n    File f\n    {\n        Contents=\"Hello World\"\n        DestinationPath = \"c:\\Destination.txt\"\n    }\n}\n```\n\nTo get help for HelpSample1, simply run:\n\n```powershell\nHelpSample1 -?\n```\n\n```\nNAME\nHelpSample1\n\nSYNOPSIS\nThe synopsis for the configuration goes here. This can be one line, or many.\n\nSYNTAX\nHelpSample1 [[-InstanceName] <String>] [[-DependsOn] <String[]>] [[-OutputPath] <String>] [[-ConfigurationData] <Hashtable>] [[-computername] <String>] [[-filePath] <String>] [<CommonParameters>]\n\nDESCRIPTION\nThe description for the configuration is usually a longer, more detailed explanation of what the script or function does. Take as many lines as you need.\n\nRELATED LINKS\n\nREMARKS\n\nTo see the examples, type: \"get-help HelpSample1 -examples\".\nFor more information, type: \"get-help HelpSample1 -detailed\".\nFor technical information, type: \"get-help HelpSample1 -full\".\n```\n\nYou can also get detailed help using Get-Help:\n\n```powershell\nget-help HelpSample2 -detailed\n```\n\n```\nNAME\nHelpSample2\n\nSYNOPSIS\nThe synopsis for the configuration HelpSample2 goes here. This can be one line, or many.\n\nSYNTAX\nHelpSample2 [[-InstanceName] <String>] [[-DependsOn] <String[]>] [[-OutputPath] <String>] [[-ConfigurationData] <Hashtable>] [[-computername] <String>] [[-filePath] <String>] [<CommonParameters>]\n\nDESCRIPTION\nThe description for the configuration bar is usually a longer, more detailed explanation of what the script or function does. Take as many lines as you need.\n\nPARAMETERS\n-InstanceName <String>\n-DependsOn <String[]>\n-OutputPath <String>\n-ConfigurationData <Hashtable>\n-computername <String>\n\nHere, the dotted keyword is followed by a single parameter name. Don't precede that with a hyphen. The following lines describe the purpose of the parameter:\n\n-filePath <String>\n\nProvide a PARAMETER section for each parameter that your script or function accepts.\n\n<CommonParameters>\n\nThis cmdlet supports the common parameters: Verbose, Debug,\nErrorAction, ErrorVariable, WarningAction, WarningVariable,\nOutBuffer, PipelineVariable, and OutVariable. For more information, see\nabout_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).\n\n-------------------------- EXAMPLE 1 --------------------------\n\nPS C:\\>There's no need to number your examples.\n\n-------------------------- EXAMPLE 2 --------------------------\n\nPS C:\\>Windows PowerShell will number them for you when it displays your help text to a user.\n\nREMARKS\nTo see the examples, type: \"get-help HelpSample2 -examples\".\nFor more information, type: \"get-help HelpSample2 -detailed\".\nFor technical information, type: \"get-help HelpSample2 -full\".\n```"
+}
