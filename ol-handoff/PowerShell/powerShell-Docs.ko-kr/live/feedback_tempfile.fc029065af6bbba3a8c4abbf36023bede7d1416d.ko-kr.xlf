@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="ko-kr">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>New-TemporaryFile</source>
+          <target state="new">New-TemporaryFile</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Sometimes in your scripts, you must create a temporary file.</source>
+          <target state="new">Sometimes in your scripts, you must create a temporary file.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>You can easily do this with the <bpt id="p1">**</bpt>New-TemporaryFile<ept id="p1">**</ept> cmdlet:</source>
+          <target state="new">You can easily do this with the <bpt id="p1">**</bpt>New-TemporaryFile<ept id="p1">**</ept> cmdlet:</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>PS C:\\&amp;gt; $tempFile = New-TemporaryFile</source>
+          <target state="new">PS C:\\&amp;gt; $tempFile = New-TemporaryFile</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>PS C:\\&amp;gt; $tempFile.FullName</source>
+          <target state="new">PS C:\\&amp;gt; $tempFile.FullName</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>C:\\Users\\slee\\AppData\\Local\\Temp\\tmp375.tmp</source>
+          <target state="new">C:\\Users\\slee\\AppData\\Local\\Temp\\tmp375.tmp</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2741204c16027d7e8e8f785b90b9cc301880a262</xliffext:olfilehash>
+  </header>
+</xliff>
