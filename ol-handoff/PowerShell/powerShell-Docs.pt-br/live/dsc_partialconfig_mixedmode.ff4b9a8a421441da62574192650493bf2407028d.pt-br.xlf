@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="pt-br">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Support for mixed RefreshMode</source>
+          <target state="new">Support for mixed RefreshMode</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>When you use partial configurations, you can now define each individual partial configuration with a <ph id="ph1">`RefreshMode`</ph>.</source>
+          <target state="new">When you use partial configurations, you can now define each individual partial configuration with a <ph id="ph1">`RefreshMode`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Valid values are <ph id="ph1">`PUSH`</ph> or <ph id="ph2">`PULL`</ph>.</source>
+          <target state="new">Valid values are <ph id="ph1">`PUSH`</ph> or <ph id="ph2">`PULL`</ph>.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">90da8345a6741a152aeb87fb3ce4706af8b5ec75</xliffext:olfilehash>
+  </header>
+</xliff>

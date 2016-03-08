@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "content": "Details about Configuration Status",
+      "pos": [
+        2,
+        36
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">`Get-DscConfigurationStatus`</ph> cmdlet gets information about configuration status from a target node.",
+      "pos": [
+        38,
+        141
+      ]
+    },
+    {
+      "content": "A rich object is returned that includes high-level information about whether or not the configuration run was successful or not.",
+      "pos": [
+        142,
+        270
+      ]
+    },
+    {
+      "content": "You can dig into the object to discover details about the configuration run such as:",
+      "pos": [
+        271,
+        355
+      ]
+    },
+    {
+      "content": "All of the resources that failed",
+      "pos": [
+        359,
+        391
+      ]
+    },
+    {
+      "content": "Any resource that requested a reboot",
+      "pos": [
+        394,
+        430
+      ]
+    },
+    {
+      "content": "Meta-Configuration settings at time of configuration run",
+      "pos": [
+        433,
+        489
+      ]
+    },
+    {
+      "content": "Etc.",
+      "pos": [
+        492,
+        496
+      ]
+    },
+    {
+      "content": "The following parameter set returns the status information for the last configuration run:",
+      "pos": [
+        498,
+        588
+      ]
+    },
+    {
+      "content": "The following parameter set returns the status information for all previous configuration runs:",
+      "pos": [
+        805,
+        900
+      ]
+    },
+    {
+      "content": "Example",
+      "pos": [
+        1155,
+        1162
+      ]
+    }
+  ],
+  "content": "# Details about Configuration Status\n\nThe `Get-DscConfigurationStatus` cmdlet gets information about configuration status from a target node. A rich object is returned that includes high-level information about whether or not the configuration run was successful or not. You can dig into the object to discover details about the configuration run such as:\n\n* All of the resources that failed\n* Any resource that requested a reboot\n* Meta-Configuration settings at time of configuration run\n* Etc.\n\nThe following parameter set returns the status information for the last configuration run:\n\n```powershell\nGet-DscConfigurationStatus  [-CimSession <CimSession[]>] \n                            [-ThrottleLimit <int>] \n                            [-AsJob] \n                            [<CommonParameters>]\n```\nThe following parameter set returns the status information for all previous configuration runs:\n\n```powershell\nGet-DscConfigurationStatus  -All \n                            [-CimSession <CimSession[]>] \n                            [-ThrottleLimit <int>] \n                            [-AsJob] \n                            [<CommonParameters>]\n```\n\n## Example\n\n```powershell\nPS C:\\> $Status = Get-DscConfigurationStatus \n\nPS C:\\> $Status\n\nStatus      StartDate               Type            Mode    RebootRequested     NumberOfResources\n------      ---------               ----            ----    ---------------     -----------------\nFailure     11/24/2015  3:44:56     Consistency     Push    True                36\n\nPS C:\\> $Status.ResourcesNotInDesiredState\n\nConfigurationName       :   MyService\nDependsOn               :   \nModuleName              :   PSDesiredStateConfiguration\nModuleVersion           :   1.1\nPsDscRunAsCredential    :   \nResourceID              :   [File]ServiceDll\nSourceInfo              :   c:\\git\\CustomerService\\Configs\\MyCustomService.ps1::5::34::File\nDurationInSeconds       :   0.19\nError                   :   SourcePath must be accessible for current configuration. The related file/directory is:\n                            \\\\Server93\\Shared\\contosoApp.dll. The related ResourceID is [File]ServiceDll\nFinalState              :   \nInDesiredState          :   False\nInitialState            :   \nInstanceName            :   ServiceDll\nRebootRequested         :   False\nReosurceName            :   File\nStartDate               :   11/24/2015  3:44:56\nPSComputerName          :\n```"
+}
