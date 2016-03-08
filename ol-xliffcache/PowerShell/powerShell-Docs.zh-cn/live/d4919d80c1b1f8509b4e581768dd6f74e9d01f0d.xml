@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "content": "Automatic RunAs support for DSC Resources",
+      "pos": [
+        2,
+        43
+      ]
+    },
+    {
+      "content": "Support for DSC RunAs credential",
+      "pos": [
+        44,
+        76
+      ]
+    },
+    {
+      "content": "WMF 5.0 Preview April 2015 includes support for running <bpt id=\"p1\">**</bpt>any<ept id=\"p1\">**</ept> DSC resource under a specified set of credentials by using the property PsDscRunAsCredential.",
+      "pos": [
+        111,
+        268
+      ]
+    },
+    {
+      "content": "It enables scenarios like installing MSI packages in a specific user context, accessing a user’s registry hive, accessing a user’s specific local directory, accessing a network share, etc.",
+      "pos": [
+        269,
+        457
+      ]
+    },
+    {
+      "content": "The following shows an example of using the PsDscRunAsCredential property in DSC to change the background color of the command prompt of a user.",
+      "pos": [
+        459,
+        603
+      ]
+    },
+    {
+      "content": "Configuration ChangeCmdBackGroundColor",
+      "pos": [
+        605,
+        643
+      ]
+    },
+    {
+      "content": "{",
+      "pos": [
+        645,
+        646
+      ]
+    },
+    {
+      "content": "}",
+      "pos": [
+        1057,
+        1058
+      ]
+    },
+    {
+      "content": "$configData = @{",
+      "pos": [
+        1060,
+        1076
+      ]
+    },
+    {
+      "content": "AllNodes = @(",
+      "pos": [
+        1078,
+        1091
+      ]
+    },
+    {
+      "content": "@{",
+      "pos": [
+        1093,
+        1095
+      ]
+    },
+    {
+      "content": "NodeName=\"localhost\";",
+      "pos": [
+        1097,
+        1118
+      ]
+    },
+    {
+      "content": "CertificateFile = \"C:\\\\publicKeys\\\\targetNode.cer\"",
+      "pos": [
+        1120,
+        1170
+      ]
+    },
+    {
+      "content": "}",
+      "pos": [
+        1172,
+        1173
+      ]
+    },
+    {
+      "content": ")",
+      "pos": [
+        1175,
+        1176
+      ]
+    },
+    {
+      "content": "}",
+      "pos": [
+        1178,
+        1179
+      ]
+    },
+    {
+      "content": "ChangeCmdBackGroundColor -ConfigurationData $configData",
+      "pos": [
+        1181,
+        1236
+      ]
+    },
+    {
+      "content": "Known issues",
+      "pos": [
+        1241,
+        1253
+      ]
+    },
+    {
+      "content": "In this release, the following are known issues of the DSC RunAs credential feature:",
+      "pos": [
+        1255,
+        1339
+      ]
+    },
+    {
+      "content": "The WindowsProcess resource doesn’t support RunAs credential.",
+      "pos": [
+        1345,
+        1406
+      ]
+    }
+  ],
+  "content": "# Automatic RunAs support for DSC Resources\nSupport for DSC RunAs credential\n--------------------------------\n\nWMF 5.0 Preview April 2015 includes support for running **any** DSC resource under a specified set of credentials by using the property PsDscRunAsCredential. It enables scenarios like installing MSI packages in a specific user context, accessing a user’s registry hive, accessing a user’s specific local directory, accessing a network share, etc.\n\nThe following shows an example of using the PsDscRunAsCredential property in DSC to change the background color of the command prompt of a user.\n\nConfiguration ChangeCmdBackGroundColor\n\n{\n\n    Node (\"localhost\")\n\n    {\n\n        Registry CmdPath\n\n        {\n\n            Key = \"HKEY\\_CURRENT\\_USER\\\\\\\\Software\\\\Microsoft\\\\\\\\Command Processor\"\n\n            ValueName = \"DefaultColor\"\n\n            ValueData = '1F'\n\n            ValueType = \"DWORD\"\n\n            Ensure = \"Present\"\n\n            Force = $true\n\n            Hex = $true\n\n            PsDscRunAsCredential = get-credential\n\n        }\n\n    }\n\n}\n\n$configData = @{\n\nAllNodes = @(\n\n@{\n\nNodeName=\"localhost\";\n\nCertificateFile = \"C:\\\\publicKeys\\\\targetNode.cer\"\n\n}\n\n)\n\n}\n\nChangeCmdBackGroundColor -ConfigurationData $configData\n\n## Known issues\n\nIn this release, the following are known issues of the DSC RunAs credential feature:\n\n-   The WindowsProcess resource doesn’t support RunAs credential.\n\n"
+}

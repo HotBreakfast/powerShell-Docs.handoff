@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "content": "Known Issues and Limitations",
+      "pos": [
+        2,
+        30
+      ]
+    },
+    {
+      "content": "PowerShell Shortcuts are broken when used for the first time",
+      "pos": [
+        32,
+        92
+      ]
+    },
+    {
+      "pos": [
+        155,
+        208
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Resolution:<ept id=\"p1\">**</ept> Perform one of the following actions:"
+    },
+    {
+      "content": "Right click on the PowerShell shortcut.",
+      "pos": [
+        214,
+        253
+      ]
+    },
+    {
+      "content": "Select “Windows PowerShell” to launch in a non-elevated mode.",
+      "pos": [
+        254,
+        315
+      ]
+    },
+    {
+      "content": "Right click on the PowerShell shortcut.",
+      "pos": [
+        320,
+        359
+      ]
+    },
+    {
+      "content": "Right click on “Windows PowerShell” and select “Run As Administrator” to launch in an elevated mode.",
+      "pos": [
+        360,
+        460
+      ]
+    },
+    {
+      "content": "Once you have performed either of the above actions, the PowerShell shortcuts will work.",
+      "pos": [
+        462,
+        550
+      ]
+    },
+    {
+      "content": "These actions need to be performed only once.",
+      "pos": [
+        551,
+        596
+      ]
+    },
+    {
+      "content": "PowerShell Modules and DSC Resources report errors about ExecutionPolicy on Windows 7",
+      "pos": [
+        599,
+        684
+      ]
+    },
+    {
+      "content": "On Windows 7, the use of PowerShell modules and DSC resources may result in errors reported about ExecutionPolicy.",
+      "pos": [
+        771,
+        885
+      ]
+    },
+    {
+      "pos": [
+        887,
+        1033
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Resolution:<ept id=\"p1\">**</ept> Set the ExecutionPolicy to RemoteSigned by running the following command in an elevated PowerShell session (Run as Administrator):"
+    },
+    {
+      "content": "Connecting to an old remote Exchange endpoint causes a crash",
+      "pos": [
+        1087,
+        1147
+      ]
+    },
+    {
+      "content": "The old Exchange endpoint redirects to a new endpoint.",
+      "pos": [
+        1210,
+        1264
+      ]
+    },
+    {
+      "content": "There is a bug in the redirection logic that results in a crash.",
+      "pos": [
+        1265,
+        1329
+      ]
+    },
+    {
+      "pos": [
+        1331,
+        1384
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Resolution:<ept id=\"p1\">**</ept> Connect directly to the new endpoint."
+    },
+    {
+      "content": "Software Inventory Logging feature is erroneously stopped after WMF 5.0 installation on Windows Server 2012 R2",
+      "pos": [
+        1387,
+        1497
+      ]
+    },
+    {
+      "content": "When installing WMF 5.0 on a Windows Server 2012 R2 that is already running SIL, the Software Inventory Logging feature is erroneously stopped after installation.",
+      "pos": [
+        1609,
+        1771
+      ]
+    },
+    {
+      "pos": [
+        1773,
+        1940
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Resolution:<ept id=\"p1\">**</ept> Run the Start-SilLogging cmdlet once after the WMF installation, as the installation process will errantly stop the Software Inventory Logging feature."
+    },
+    {
+      "content": "Get-ChildItem does not work if -LiteralPath and -Recurse are used together",
+      "pos": [
+        1942,
+        2016
+      ]
+    },
+    {
+      "content": "If a directory name contains an invalid wildcard character, then Get-ChildItem will not produce expected results when both",
+      "pos": [
+        2093,
+        2215
+      ]
+    },
+    {
+      "content": "-LiteralPath and -Recurse are used together.",
+      "pos": [
+        2216,
+        2260
+      ]
+    },
+    {
+      "pos": [
+        2262,
+        2383
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Resolution:<ept id=\"p1\">**</ept> Not ideal, but current workaround is to implement recursion in the script rather than rely on the cmdlet."
+    }
+  ],
+  "content": "# Known Issues and Limitations\n\nPowerShell Shortcuts are broken when used for the first time\n------------------------------------------------------------\n\n**Resolution:** Perform one of the following actions:\n\n1.  Right click on the PowerShell shortcut. Select “Windows PowerShell” to launch in a non-elevated mode.\n2.  Right click on the PowerShell shortcut. Right click on “Windows PowerShell” and select “Run As Administrator” to launch in an elevated mode.\n\nOnce you have performed either of the above actions, the PowerShell shortcuts will work. These actions need to be performed only once.\n\n\nPowerShell Modules and DSC Resources report errors about ExecutionPolicy on Windows 7\n-------------------------------------------------------------------------------------\nOn Windows 7, the use of PowerShell modules and DSC resources may result in errors reported about ExecutionPolicy.\n\n**Resolution:** Set the ExecutionPolicy to RemoteSigned by running the following command in an elevated PowerShell session (Run as Administrator):\n\n```powershell\nSet-ExecutionPolicy RemoteSigned\n```\n\nConnecting to an old remote Exchange endpoint causes a crash\n------------------------------------------------------------\n\nThe old Exchange endpoint redirects to a new endpoint. There is a bug in the redirection logic that results in a crash.\n\n**Resolution:** Connect directly to the new endpoint.\n\n\nSoftware Inventory Logging feature is erroneously stopped after WMF 5.0 installation on Windows Server 2012 R2\n-------------------------------------------------------------------------------------------------------------\n\nWhen installing WMF 5.0 on a Windows Server 2012 R2 that is already running SIL, the Software Inventory Logging feature is erroneously stopped after installation.\n\n**Resolution:** Run the Start-SilLogging cmdlet once after the WMF installation, as the installation process will errantly stop the Software Inventory Logging feature.\n\nGet-ChildItem does not work if -LiteralPath and -Recurse are used together\n--------------------------------------------------------------------------\n\nIf a directory name contains an invalid wildcard character, then Get-ChildItem will not produce expected results when both\n-LiteralPath and -Recurse are used together.\n\n**Resolution:** Not ideal, but current workaround is to implement recursion in the script rather than rely on the cmdlet.\n"
+}

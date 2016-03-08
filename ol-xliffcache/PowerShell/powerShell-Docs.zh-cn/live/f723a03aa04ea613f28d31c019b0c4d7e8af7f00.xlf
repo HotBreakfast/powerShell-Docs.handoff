@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="zh-cn">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Installation of Module Dependencies</source>
+          <target state="new">Installation of Module Dependencies</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>There is now side-by-side (SxS) module version support in Install-Module, Update-Module, and Publish-Module cmdlets that run in Windows PowerShell 5.0 or newer.</source>
+          <target state="new">There is now side-by-side (SxS) module version support in Install-Module, Update-Module, and Publish-Module cmdlets that run in Windows PowerShell 5.0 or newer.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Also, we have added a -RequiredVersion parameter to the Publish-Module cmdlet to specify the version to be published.</source>
+          <target state="new">Also, we have added a -RequiredVersion parameter to the Publish-Module cmdlet to specify the version to be published.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The Path parameter now supports the module base path with the version folder.</source>
+          <target state="new">The Path parameter now supports the module base path with the version folder.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Install-Module examples:</source>
+          <target state="new">Install-Module examples:</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Install a module with dependencies:</source>
+          <target state="new">Install a module with dependencies:</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Contents of ModuleWithDependencies2 module manifest file:</source>
+          <target state="new">Contents of ModuleWithDependencies2 module manifest file:</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Update-Module examples:</source>
+          <target state="new">Update-Module examples:</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Publish-Module examples:</source>
+          <target state="new">Publish-Module examples:</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f723a03aa04ea613f28d31c019b0c4d7e8af7f00</xliffext:olfilehash>
+  </header>
+</xliff>

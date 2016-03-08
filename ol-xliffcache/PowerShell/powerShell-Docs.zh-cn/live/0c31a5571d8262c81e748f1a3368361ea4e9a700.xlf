@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="zh-cn">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Help support for DSC configurations</source>
+          <target state="new">Help support for DSC configurations</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>You can now use comment-based help inside of DSC configurations and get help on usage of that configuration when calling the configuration function with <ph id="ph1">`-?`</ph>:</source>
+          <target state="new">You can now use comment-based help inside of DSC configurations and get help on usage of that configuration when calling the configuration function with <ph id="ph1">`-?`</ph>:</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>First, we define two configuration functions called HelpSample1 and HelpSample2, including comment-based help with each of them:</source>
+          <target state="new">First, we define two configuration functions called HelpSample1 and HelpSample2, including comment-based help with each of them:</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>To get help for HelpSample1, simply run:</source>
+          <target state="new">To get help for HelpSample1, simply run:</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>You can also get detailed help using Get-Help:</source>
+          <target state="new">You can also get detailed help using Get-Help:</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0c31a5571d8262c81e748f1a3368361ea4e9a700</xliffext:olfilehash>
+  </header>
+</xliff>

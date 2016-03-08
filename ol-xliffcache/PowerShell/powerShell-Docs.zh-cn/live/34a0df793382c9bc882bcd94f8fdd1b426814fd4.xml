@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "content": "Frequencies for RefreshMode and ConfigurationMode don't need to be multiples of each other",
+      "pos": [
+        2,
+        92
+      ]
+    },
+    {
+      "content": "In the previous version of DSC, the LCM would treat <ph id=\"ph1\">`RefreshFrequencyMins`</ph> and <ph id=\"ph2\">`ConfigurationModeFrequencyMins`</ph> as multiples of each other as explained in the blog <bpt id=\"p1\">[</bpt>here<ept id=\"p1\">](http://blogs.msdn.com/b/powershell/archive/2013/12/09/understanding-meta-configuration-in-windows-powershell-desired-state-configuration.aspx)</ept>.",
+      "pos": [
+        94,
+        408
+      ]
+    },
+    {
+      "content": "In WMF 5.0 RTM, these properties are processed independent of each other.",
+      "pos": [
+        409,
+        482
+      ]
+    },
+    {
+      "content": "The tables below illustrate this behavior:",
+      "pos": [
+        483,
+        525
+      ]
+    },
+    {
+      "pos": [
+        527,
+        554
+      ],
+      "content": "Behaviour in <bpt id=\"p1\">**</bpt>PULL<ept id=\"p1\">**</ept> mode:"
+    },
+    {
+      "content": "Value in Meta Configuration",
+      "pos": [
+        595,
+        622
+      ]
+    },
+    {
+      "content": "Value after Meta Configuration is applied",
+      "pos": [
+        627,
+        668
+      ]
+    },
+    {
+      "content": "How often pull happens (in mins)",
+      "pos": [
+        673,
+        705
+      ]
+    },
+    {
+      "content": "How often configuration is applied (in mins)",
+      "pos": [
+        710,
+        754
+      ]
+    },
+    {
+      "content": "ConfigurationModeFrequencyMins",
+      "pos": [
+        962,
+        992
+      ]
+    },
+    {
+      "content": "70",
+      "pos": [
+        995,
+        997
+      ]
+    },
+    {
+      "content": "70",
+      "pos": [
+        1027,
+        1029
+      ]
+    },
+    {
+      "content": "70",
+      "pos": [
+        1110,
+        1112
+      ]
+    },
+    {
+      "content": "RefreshFrequencyMins",
+      "pos": [
+        1163,
+        1183
+      ]
+    },
+    {
+      "content": "40",
+      "pos": [
+        1196,
+        1198
+      ]
+    },
+    {
+      "content": "40",
+      "pos": [
+        1228,
+        1230
+      ]
+    },
+    {
+      "content": "40",
+      "pos": [
+        1274,
+        1276
+      ]
+    },
+    {
+      "pos": [
+        1362,
+        1388
+      ],
+      "content": "Behavior in <bpt id=\"p1\">**</bpt>PUSH<ept id=\"p1\">**</ept> mode:"
+    },
+    {
+      "content": "Value in Meta Configuration",
+      "pos": [
+        1428,
+        1455
+      ]
+    },
+    {
+      "content": "Value after Meta Configuration is applied",
+      "pos": [
+        1460,
+        1501
+      ]
+    },
+    {
+      "content": "How often configuration is applied (in mins)",
+      "pos": [
+        1506,
+        1550
+      ]
+    },
+    {
+      "content": "ConfigurationModeFrequencyMins",
+      "pos": [
+        1721,
+        1751
+      ]
+    },
+    {
+      "content": "70",
+      "pos": [
+        1754,
+        1756
+      ]
+    },
+    {
+      "content": "70",
+      "pos": [
+        1786,
+        1788
+      ]
+    },
+    {
+      "content": "70",
+      "pos": [
+        1832,
+        1834
+      ]
+    },
+    {
+      "content": "RefreshFrequencyMins",
+      "pos": [
+        1885,
+        1905
+      ]
+    },
+    {
+      "content": "40",
+      "pos": [
+        1918,
+        1920
+      ]
+    },
+    {
+      "content": "40",
+      "pos": [
+        1950,
+        1952
+      ]
+    }
+  ],
+  "content": "# Frequencies for RefreshMode and ConfigurationMode don't need to be multiples of each other\n\nIn the previous version of DSC, the LCM would treat `RefreshFrequencyMins` and `ConfigurationModeFrequencyMins` as multiples of each other as explained in the blog [here](http://blogs.msdn.com/b/powershell/archive/2013/12/09/understanding-meta-configuration-in-windows-powershell-desired-state-configuration.aspx). In WMF 5.0 RTM, these properties are processed independent of each other. The tables below illustrate this behavior:\n\nBehaviour in **PULL** mode: \n\n|                                  |**Value in Meta Configuration**|**Value after Meta Configuration is applied**|**How often pull happens (in mins)**|**How often configuration is applied (in mins)**|\n|----------------------------------|-------------------------------|---------------------------------------------|------------------------------------|------------------------------------------------|\n|**ConfigurationModeFrequencyMins**|70                             |70                                           |                                    |70                                              |\n|**RefreshFrequencyMins**          |40                             |40                                           |40                                  |                                                |\n\nBehavior in **PUSH** mode:\n\n|                                  |**Value in Meta Configuration**|**Value after Meta Configuration is applied**|**How often configuration is applied (in mins)**|\n|----------------------------------|-------------------------------|---------------------------------------------|------------------------------------------------|\n|**ConfigurationModeFrequencyMins**|70                             |70                                           |70                                              |\n|**RefreshFrequencyMins**          |40                             |40                                           |                                                |\n"
+}

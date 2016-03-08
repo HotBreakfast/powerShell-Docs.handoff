@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "content": "Separation of Configuration, Resource and Report Repositories",
+      "pos": [
+        2,
+        63
+      ]
+    },
+    {
+      "content": "In this release we allow you all of the flexibility that you need to pull and report to one or more DSC Pull Servers.",
+      "pos": [
+        65,
+        182
+      ]
+    },
+    {
+      "content": "Each endpoint can be defined separately so that you can pull configurations from one location, resources from another and report to yet another location.",
+      "pos": [
+        183,
+        336
+      ]
+    },
+    {
+      "content": "The following meta-configuration does just this.",
+      "pos": [
+        337,
+        385
+      ]
+    },
+    {
+      "content": "Additionally you can use any combination of these.",
+      "pos": [
+        1158,
+        1208
+      ]
+    },
+    {
+      "content": "The following meta-configuration configures a target node in push mode but the node will pull resources that it does not have installed from a 'DSC Pull server' and report its status to another 'DSC Pull Server.",
+      "pos": [
+        1209,
+        1420
+      ]
+    }
+  ],
+  "content": "# Separation of Configuration, Resource and Report Repositories\n\nIn this release we allow you all of the flexibility that you need to pull and report to one or more DSC Pull Servers. Each endpoint can be defined separately so that you can pull configurations from one location, resources from another and report to yet another location. The following meta-configuration does just this.\n\n```PowerShell\n[DscLocalConfigurationManager()]\nConfiguration SampleMetaConfig\n{\n    Settings\n    {\n        RefreshMode = \"PULL\";\n        AllowModuleOverwrite = $true;\n        RebootNodeIfNeeded = $true;\n    }\n\n    ConfigurationRepositoryWeb Configurations\n    {\n        ServerURL = “https://PullServerMachine:8080/psdscpullserver.svc”\n        RegistrationKey = \"140a952b-b9d6-406b-b416-e0f759c9c0e4\"\n    }\n\n    ResourceRepositoryWeb Resources\n    {\n        ServerURL = “https://ResourceServer:8080/psdscpullserver.svc”\n        RegistrationKey = \"aaaf952b-b9d6-406b-b416-e0f759c6e000\"\n    }\n\n    ReportServerWeb Reports\n    {\n        ServerURL = “https://ReportServer:8080/psdscpullserver.svc”\n        RegistrationKey = \"fefe592b-b9d6-046b-b146-e0f759c0c0c0\"\n    }\n}\n```\n\nAdditionally you can use any combination of these. The following meta-configuration configures a target node in push mode but the node will pull resources that it does not have installed from a 'DSC Pull server' and report its status to another 'DSC Pull Server.\n\n\n```PowerShell\n[DscLocalConfigurationManager()]\nConfiguration SampleMetaConfig\n{\n    Settings\n    {\n        RefreshMode = \"Push\";\n        RebootNodeIfNeeded = $true;\n    }\n\n    ResourceRepositoryWeb Resources\n    {\n        ServerURL = “https://ResourceServer:8080/psdscpullserver.svc”\n        RegistrationKey = \"aaaf952b-b9d6-406b-b416-e0f759c6e000\"\n    }\n\n    ReportServerWeb Reports\n    {\n        ServerURL = “https://ReportServer:8080/psdscpullserver.svc”\n        RegistrationKey = \"fefe592b-b9d6-046b-b146-e0f759c0c0c0\"\n    }\n}\n```"
+}

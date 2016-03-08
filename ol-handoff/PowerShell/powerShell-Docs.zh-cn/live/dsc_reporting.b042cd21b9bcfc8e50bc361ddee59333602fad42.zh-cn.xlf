@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="zh-cn">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Report Configuration Status to Central Location</source>
+          <target state="new">Report Configuration Status to Central Location</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Detailed information about DSC configuration status can be sent to a server running the DSC service.</source>
+          <target state="new">Detailed information about DSC configuration status can be sent to a server running the DSC service.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>The same information that is returned by the Get-DscConfigurationStatus cmdlet is sent to the DSC Service.</source>
+          <target state="new">The same information that is returned by the Get-DscConfigurationStatus cmdlet is sent to the DSC Service.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>By defining the report server in a meta-configuration, this status is sent to the server when an error occurs or the configuration completes successfully.</source>
+          <target state="new">By defining the report server in a meta-configuration, this status is sent to the server when an error occurs or the configuration completes successfully.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This information is sent when a node is configured in either pull or push mode.</source>
+          <target state="new">This information is sent when a node is configured in either pull or push mode.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Status information is stored in the DSC service database.</source>
+          <target state="new">Status information is stored in the DSC service database.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Sample meta-configuration for reporting status</source>
+          <target state="new">Sample meta-configuration for reporting status</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>A new OData endpoint is created with the DSC service which exposes this status information.</source>
+          <target state="new">A new OData endpoint is created with the DSC service which exposes this status information.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>By passing a configuration ID or agent ID {$guid} to the endpoint, all of the status for a node can be collected and parsed.</source>
+          <target state="new">By passing a configuration ID or agent ID {$guid} to the endpoint, all of the status for a node can be collected and parsed.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Sample web request to gather configuration status</source>
+          <target state="new">Sample web request to gather configuration status</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3f286a0cdcff33aa396c745a661d52d07f25817d</xliffext:olfilehash>
+  </header>
+</xliff>
