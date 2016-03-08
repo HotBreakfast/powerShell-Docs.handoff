@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "content": "Detailed information about LCM state",
+      "pos": [
+        2,
+        38
+      ]
+    },
+    {
+      "content": "We have made improvements in exposing details about the LCM state.",
+      "pos": [
+        40,
+        106
+      ]
+    },
+    {
+      "content": "The LCMState that is returned by Get-DscLocalConfigurationManager can now contain the following values:",
+      "pos": [
+        107,
+        210
+      ]
+    },
+    {
+      "content": "Idle",
+      "pos": [
+        216,
+        220
+      ]
+    },
+    {
+      "content": "Busy",
+      "pos": [
+        227,
+        231
+      ]
+    },
+    {
+      "content": "PendingReboot",
+      "pos": [
+        238,
+        251
+      ]
+    },
+    {
+      "content": "PendingConfiguration",
+      "pos": [
+        258,
+        278
+      ]
+    },
+    {
+      "content": "We have also added an LCMStateDetail property that contains more information about the state.",
+      "pos": [
+        282,
+        375
+      ]
+    }
+  ],
+  "content": "# Detailed information about LCM state\n\nWe have made improvements in exposing details about the LCM state. The LCMState that is returned by Get-DscLocalConfigurationManager can now contain the following values:\n\n* **Idle**\n* **Busy**\n* **PendingReboot**\n* **PendingConfiguration**\n\nWe have also added an LCMStateDetail property that contains more information about the state.\n"
+}

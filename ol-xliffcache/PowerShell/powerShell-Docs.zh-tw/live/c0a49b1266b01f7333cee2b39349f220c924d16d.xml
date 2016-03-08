@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "content": "Configure Node with multiple configuration fragments (partial configurations)",
+      "pos": [
+        2,
+        79
+      ]
+    },
+    {
+      "content": "WMF 5.0 helps you deliver configuration documents to a node in fragments.",
+      "pos": [
+        81,
+        154
+      ]
+    },
+    {
+      "content": "For a node to receive multiple fragments of a configuration document, its Local Configuration Manager (LCM) must be set to specify the expected fragments, as shown in this example.",
+      "pos": [
+        155,
+        335
+      ]
+    },
+    {
+      "content": "In a partial configuration, the configuration name must match what is defined in the LCM.",
+      "pos": [
+        1379,
+        1468
+      ]
+    },
+    {
+      "content": "In the above example, the configurations should be named <ph id=\"ph1\">`OSConfig`</ph> and <ph id=\"ph2\">`SQLConfig`</ph>.",
+      "pos": [
+        1469,
+        1553
+      ]
+    },
+    {
+      "content": "Setting the LCM for partial configurations enables configuration coordination, but does NOT provide security functionality.",
+      "pos": [
+        1555,
+        1678
+      ]
+    }
+  ],
+  "content": "# Configure Node with multiple configuration fragments (partial configurations)\n\nWMF 5.0 helps you deliver configuration documents to a node in fragments. For a node to receive multiple fragments of a configuration document, its Local Configuration Manager (LCM) must be set to specify the expected fragments, as shown in this example.\n\n```powershell\n[DSCLocalConfigurationManager()]\nconfiguration SQLServerDSCSettings\n{\n    Node localhost\n    {\n        Settings\n        {\n            ConfigurationModeFrequencyMins = 30\n        }\n\n        ConfigurationRepositoryWeb OSConfigServer\n        {\n            ServerURL = \"https://corp.contoso.com/OSConfigServer/PSDSCPullServer.svc\"\n        }\n\n        ConfigurationRepositoryWeb SQLConfigServer\n        {\n            ServerURL = \"https://corp.contoso.com/SQLConfigServer/PSDSCPullServer.svc\"\n        }\n\n        PartialConfiguration OSConfig\n        {\n            Description = 'Configuration for the Base OS'\n            ExclusiveResources = 'PSDesiredStateConfiguration\\*'\n            ConfigurationSource = '[ConfigurationRepositoryWeb]OSConfigServer'\n        }\n\n        PartialConfiguration SQLConfig\n        {\n            Description = 'Configuration for the SQL Server'\n            ConfigurationSource = '[ConfigurationRepositoryWeb]SQLConfigServer'\n            DependsOn = '[PartialConfiguration]OSConfig'\n        }\n    }\n}\n```\n\nIn a partial configuration, the configuration name must match what is defined in the LCM. In the above example, the configurations should be named `OSConfig` and `SQLConfig`.\n\nSetting the LCM for partial configurations enables configuration coordination, but does NOT provide security functionality."
+}

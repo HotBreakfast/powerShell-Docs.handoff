@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "content": "DSC Resource Script Debugging",
+      "pos": [
+        2,
+        31
+      ]
+    },
+    {
+      "content": "WMF 5.0 Production Preview includes support for debugging DSC resource scripts while they run on target nodes.",
+      "pos": [
+        32,
+        142
+      ]
+    },
+    {
+      "content": "In older WMF 5.0 releases, we added advanced script debugging features with the ability to attach to local processes (Get-PSHostProcessInfo, Enter-PSHostProcessInfo, Exit-PSHostProcessInfo), enumerate all runspaces in a process, and debug an arbitrary runspace in a process (Get-Runspace, Debug-Runspace).",
+      "pos": [
+        143,
+        448
+      ]
+    },
+    {
+      "content": "DSC resource script debugging builds on this work by adding two new cmdlets.",
+      "pos": [
+        450,
+        526
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        530,
+        536
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Enable-DscDebug<ept id=\"p1\">**</ept>",
+      "pos": [
+        537,
+        556
+      ]
+    },
+    {
+      "content": "Enable-DscDebug \\[-BreakAll\\] \\[-CimSession &amp;lt;CimSession\\[\\]&amp;gt;\\] \\[-ThrottleLimit &amp;lt;int&amp;gt;\\] \\[-AsJob\\] \\[-WhatIf\\] \\[-Confirm\\] \\[&amp;lt;CommonParameters&amp;gt;\\]",
+      "pos": [
+        557,
+        721
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Disable-DscDebug<ept id=\"p1\">**</ept>",
+      "pos": [
+        723,
+        743
+      ]
+    },
+    {
+      "content": "Disable-DscDebug \\[-CimSession &amp;lt;CimSession\\[\\]&amp;gt;\\] \\[-ThrottleLimit &amp;lt;int&amp;gt;\\] \\[-AsJob\\] \\[-WhatIf\\] \\[-Confirm\\] \\[&amp;lt;CommonParameters&amp;gt;\\]",
+      "pos": [
+        744,
+        895
+      ]
+    },
+    {
+      "content": "Typical WorkFlow",
+      "pos": [
+        899,
+        915
+      ]
+    },
+    {
+      "content": "Now lets take a look at each of these commands and what they do:",
+      "pos": [
+        2463,
+        2527
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Enable-DscDebug –BreakAll<ept id=\"p1\">**</ept>",
+      "pos": [
+        2529,
+        2558
+      ]
+    },
+    {
+      "content": "Enable-DscDebug cmdlet with BreakAll configures the DSC LCM to run Get-TargetResource, Set-TargetResource, and Test-TargetResource scripts in Break All mode.",
+      "pos": [
+        2559,
+        2716
+      ]
+    },
+    {
+      "content": "This means that the script stops at the first script statement and waits for a debugger to be attached.",
+      "pos": [
+        2717,
+        2820
+      ]
+    },
+    {
+      "content": "You can then connect to the target computer by using Windows PowerShell remoting, and attach the Windows PowerShell debugger to the LCM process and runspace to debug the script.",
+      "pos": [
+        2821,
+        2998
+      ]
+    },
+    {
+      "content": "After you do this, you can set breakpoints and debug the script in the normal Windows PowerShell way.",
+      "pos": [
+        2999,
+        3100
+      ]
+    },
+    {
+      "content": "Start-DscConfiguration -path .\\TestConfig2 -Wait -Verbose",
+      "pos": [
+        3104,
+        3161
+      ]
+    },
+    {
+      "content": "This kicks off DSC but as noted above, since the target node has debug mode enabled it will stop at the first DSC resource that the LCM executes.",
+      "pos": [
+        3165,
+        3310
+      ]
+    },
+    {
+      "content": "In order to begin the debugging session run the commands shown in the warning message after running Start-DscConfiguration, you attach your client Windows PowerShell script debugger to the appropriate computer, process, application domain, and runspace.",
+      "pos": [
+        3312,
+        3565
+      ]
+    },
+    {
+      "content": "Run this command to optionally use Windows PowerShell remoting to connect to the target computer.",
+      "pos": [
+        3569,
+        3666
+      ]
+    },
+    {
+      "content": "Skip this if you already have a remote desktop connection.",
+      "pos": [
+        3667,
+        3725
+      ]
+    },
+    {
+      "content": "This command attaches to the DSC LCM host process and app domain where the resource script is running.",
+      "pos": [
+        3791,
+        3893
+      ]
+    },
+    {
+      "content": "This last command lets you debug the DSC runspace running the script.",
+      "pos": [
+        3985,
+        4054
+      ]
+    },
+    {
+      "content": "After you have the debugger attached, set line breakpoints where you want to investigate script execution and run the <bpt id=\"p1\">**</bpt>continue<ept id=\"p1\">**</ept> debugger command to let the script run in the debugger.",
+      "pos": [
+        4132,
+        4318
+      ]
+    },
+    {
+      "content": "When you are done debugging, you can stop the script from running by typing the <bpt id=\"p1\">**</bpt>quit<ept id=\"p1\">**</ept> debugger command, or let the script continue to run without the debugger by running the <bpt id=\"p2\">**</bpt>detach<ept id=\"p2\">**</ept> debugger command.",
+      "pos": [
+        4319,
+        4524
+      ]
+    },
+    {
+      "content": "Notice that <bpt id=\"p1\">***</bpt>all<ept id=\"p1\">***</ept> resource scripts are stopped in the debugger.",
+      "pos": [
+        4526,
+        4593
+      ]
+    },
+    {
+      "content": "This means that Test-TargetResoruce, Set-TargetResource, and Get-TargetResource scripts each in turn stop in the debugger.",
+      "pos": [
+        4594,
+        4716
+      ]
+    },
+    {
+      "content": "If you don't want to debug a resource script, you can exit debug mode in the runspace by running this command.",
+      "pos": [
+        4717,
+        4827
+      ]
+    },
+    {
+      "content": "Disable-RunspaceDebug -RunspaceId 3",
+      "pos": [
+        4829,
+        4864
+      ]
+    },
+    {
+      "pos": [
+        4866,
+        4972
+      ],
+      "content": "Or you can attach the debugger by running Debug-Runspace, and then immediately run the <bpt id=\"p1\">**</bpt>detach<ept id=\"p1\">**</ept> command."
+    },
+    {
+      "content": "After you are done debugging your resource script, you should stop the DSC configuration by running the following command.",
+      "pos": [
+        4974,
+        5096
+      ]
+    },
+    {
+      "content": "Stop-DscConfiguration –Force",
+      "pos": [
+        5098,
+        5126
+      ]
+    },
+    {
+      "content": "Finally, you must reconfigure the target computer LCM to disable debug mode using Disable-DscDebug cmdlet..",
+      "pos": [
+        5128,
+        5235
+      ]
+    }
+  ],
+  "content": "# DSC Resource Script Debugging\nWMF 5.0 Production Preview includes support for debugging DSC resource scripts while they run on target nodes. In older WMF 5.0 releases, we added advanced script debugging features with the ability to attach to local processes (Get-PSHostProcessInfo, Enter-PSHostProcessInfo, Exit-PSHostProcessInfo), enumerate all runspaces in a process, and debug an arbitrary runspace in a process (Get-Runspace, Debug-Runspace).\n\nDSC resource script debugging builds on this work by adding two new cmdlets.\n\n##Syntax\n**Enable-DscDebug**\nEnable-DscDebug \\[-BreakAll\\] \\[-CimSession &lt;CimSession\\[\\]&gt;\\] \\[-ThrottleLimit &lt;int&gt;\\] \\[-AsJob\\] \\[-WhatIf\\] \\[-Confirm\\] \\[&lt;CommonParameters&gt;\\]\n\n**Disable-DscDebug**\nDisable-DscDebug \\[-CimSession &lt;CimSession\\[\\]&gt;\\] \\[-ThrottleLimit &lt;int&gt;\\] \\[-AsJob\\] \\[-WhatIf\\] \\[-Confirm\\] \\[&lt;CommonParameters&gt;\\]\n\n##Typical WorkFlow\n\n\n```PowerShell\nPS C:\\Test> Enable-DscDebug –BreakAll\n\nPS C:\\Test> Start-DscConfiguration -path .\\TestConfig2 -Wait -Verbose\nVERBOSE: Perform operation 'Invoke CimMethod' with following parameters, ''namespaceName' = root/Microsoft/Windows/DesiredStateConfiguration,'className' = MSFT\\_DSCLocalConfigurationManager,'methodName' = SendConfigurationApply'.\nVERBOSE: An LCM method call arrived from computer MGMT-10001-827 with user sid S-1-5-21-397955417-626881126-188441444-3860663.\nVERBOSE: [MGMT-10001-827]: LCM: [ Start Set ]\nWARNING: [MGMT-10001-827]: [DSCEngine] Warning LCM is in Debug 'ResourceScriptBreakAll' mode. Resource script processing will be stopped to wait for PowerShell script debugger to attach.\nVERBOSE: [MGMT-10001-827]: [DSCEngine] Importing the module C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\PSDesiredStateConfiguration\\DscResources\\MSFT_EnvironmentResource\\MSFT_EnvironmentResource.psm1 in force mode.\nVERBOSE: [MGMT-10001-827]: LCM: [ Start Resource ] [[Environment]e1]\nVERBOSE: [MGMT-10001-827]: LCM: [ Start Test ] [[Environment]e1]\nVERBOSE: [MGMT-10001-827]: [[Environment]e1] Importing the module MSFT_EnvironmentResource in force mode.\nWARNING: [MGMT-10001-827]: [[Environment]e1] Resource is waiting for PowerShell script debugger to attach. Use the following commands to begin debugging this resource script:\nEnter-PSSession -ComputerName MGMT-10001-827 -Credential <credentials>\nEnter-PSHostProcess -Id 2640 -AppDomainName DscPsPluginWkr_AppDomain\nDebug-Runspace -Id 3\n\nPS C:\\Test> Disable-DscDebug\n```\nNow lets take a look at each of these commands and what they do:\n\n**Enable-DscDebug –BreakAll**\nEnable-DscDebug cmdlet with BreakAll configures the DSC LCM to run Get-TargetResource, Set-TargetResource, and Test-TargetResource scripts in Break All mode. This means that the script stops at the first script statement and waits for a debugger to be attached. You can then connect to the target computer by using Windows PowerShell remoting, and attach the Windows PowerShell debugger to the LCM process and runspace to debug the script. After you do this, you can set breakpoints and debug the script in the normal Windows PowerShell way.\n\n**Start-DscConfiguration -path .\\TestConfig2 -Wait -Verbose**\n\nThis kicks off DSC but as noted above, since the target node has debug mode enabled it will stop at the first DSC resource that the LCM executes.\n\nIn order to begin the debugging session run the commands shown in the warning message after running Start-DscConfiguration, you attach your client Windows PowerShell script debugger to the appropriate computer, process, application domain, and runspace.\n\n* Run this command to optionally use Windows PowerShell remoting to connect to the target computer. Skip this if you already have a remote desktop connection.\n```PowerShell\nEnter-PSSession -ComputerName MGMT-10001-827\n```\n* This command attaches to the DSC LCM host process and app domain where the resource script is running.\n```PowerShell\nEnter-PSHostProcess -Id 2640 -AppDomainName DscPsPluginWkr\\_AppDomain\n```\n*  This last command lets you debug the DSC runspace running the script.\n```PowerShell\nDebug-Runspace -Id 3\n```\n![](images/DscResourceDebugging.jpg)\n\nAfter you have the debugger attached, set line breakpoints where you want to investigate script execution and run the **continue** debugger command to let the script run in the debugger. When you are done debugging, you can stop the script from running by typing the **quit** debugger command, or let the script continue to run without the debugger by running the **detach** debugger command.\n\nNotice that ***all*** resource scripts are stopped in the debugger. This means that Test-TargetResoruce, Set-TargetResource, and Get-TargetResource scripts each in turn stop in the debugger. If you don't want to debug a resource script, you can exit debug mode in the runspace by running this command.\n\nDisable-RunspaceDebug -RunspaceId 3\n\nOr you can attach the debugger by running Debug-Runspace, and then immediately run the **detach** command.\n\nAfter you are done debugging your resource script, you should stop the DSC configuration by running the following command.\n\nStop-DscConfiguration –Force\n\nFinally, you must reconfigure the target computer LCM to disable debug mode using Disable-DscDebug cmdlet.."
+}
