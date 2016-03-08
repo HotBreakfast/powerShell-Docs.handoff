@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "content": "Report Configuration Status to Central Location",
+      "pos": [
+        2,
+        49
+      ]
+    },
+    {
+      "content": "Detailed information about DSC configuration status can be sent to a server running the DSC service.",
+      "pos": [
+        51,
+        151
+      ]
+    },
+    {
+      "content": "The same information that is returned by the Get-DscConfigurationStatus cmdlet is sent to the DSC Service.",
+      "pos": [
+        152,
+        258
+      ]
+    },
+    {
+      "content": "By defining the report server in a meta-configuration, this status is sent to the server when an error occurs or the configuration completes successfully.",
+      "pos": [
+        259,
+        413
+      ]
+    },
+    {
+      "content": "This information is sent when a node is configured in either pull or push mode.",
+      "pos": [
+        414,
+        493
+      ]
+    },
+    {
+      "content": "Status information is stored in the DSC service database.",
+      "pos": [
+        494,
+        551
+      ]
+    },
+    {
+      "content": "Sample meta-configuration for reporting status",
+      "pos": [
+        556,
+        602
+      ]
+    },
+    {
+      "content": "A new OData endpoint is created with the DSC service which exposes this status information.",
+      "pos": [
+        1090,
+        1181
+      ]
+    },
+    {
+      "content": "By passing a configuration ID or agent ID {$guid} to the endpoint, all of the status for a node can be collected and parsed.",
+      "pos": [
+        1182,
+        1306
+      ]
+    },
+    {
+      "content": "Sample web request to gather configuration status",
+      "pos": [
+        1311,
+        1360
+      ]
+    }
+  ],
+  "content": "# Report Configuration Status to Central Location\n\nDetailed information about DSC configuration status can be sent to a server running the DSC service. The same information that is returned by the Get-DscConfigurationStatus cmdlet is sent to the DSC Service. By defining the report server in a meta-configuration, this status is sent to the server when an error occurs or the configuration completes successfully. This information is sent when a node is configured in either pull or push mode. Status information is stored in the DSC service database.\n\n## Sample meta-configuration for reporting status\n```PowerShell\n[DscLocalConfigurationManager()]\nConfiguration ReportingClientMetaConfig\n{\n    Settings\n        {\n            RefreshFrequencyMins = 30\n            RefreshMode = \"PUSH\"\n            ConfigurationModeFrequencyMins = 15\n            AllowModuleOverwrite = $true\n        }\n\n        ReportServerWeb ReportManager\n        {\n            ServerUrL = \"http://localhost:8080/PSDSCPullServer/PSDSCPullserver.svc\"\n            AllowUnsecureConnection  = $true\n        }           \n}\n```\nA new OData endpoint is created with the DSC service which exposes this status information. By passing a configuration ID or agent ID {$guid} to the endpoint, all of the status for a node can be collected and parsed.\n\n## Sample web request to gather configuration status \n```PowerShell\n$statusReports = Invoke-WebRequest -Uri \"[http://localhost:8080/PSDSCPullserver/PSDSCPullserver.svc/Node(ConfigurationId='$guid')/StatusReport](http://localhost:8080/PSDSCPullserver/psdscpullserver.svc/Node(ConfigurationId='$guid')/StatusReport)s\" -UseBasicParsing -UseDefaultCredentials -ContentType \"application/json;odata=minimalmetadata;streaming=true;charset=utf-8\" -Headers @{Accept = \"application/json\"; ProtocolVersion = “1.1”}\n```"
+}

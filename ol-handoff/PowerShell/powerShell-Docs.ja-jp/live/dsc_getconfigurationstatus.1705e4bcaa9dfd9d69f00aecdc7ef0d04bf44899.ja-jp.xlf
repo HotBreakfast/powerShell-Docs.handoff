@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="ja-jp">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Details about Configuration Status</source>
+          <target state="new">Details about Configuration Status</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Get-DscConfigurationStatus`</ph> cmdlet gets information about configuration status from a target node.</source>
+          <target state="new">The <ph id="ph1">`Get-DscConfigurationStatus`</ph> cmdlet gets information about configuration status from a target node.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>A rich object is returned that includes high-level information about whether or not the configuration run was successful or not.</source>
+          <target state="new">A rich object is returned that includes high-level information about whether or not the configuration run was successful or not.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>You can dig into the object to discover details about the configuration run such as:</source>
+          <target state="new">You can dig into the object to discover details about the configuration run such as:</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>All of the resources that failed</source>
+          <target state="new">All of the resources that failed</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Any resource that requested a reboot</source>
+          <target state="new">Any resource that requested a reboot</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Meta-Configuration settings at time of configuration run</source>
+          <target state="new">Meta-Configuration settings at time of configuration run</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Etc.</source>
+          <target state="new">Etc.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The following parameter set returns the status information for the last configuration run:</source>
+          <target state="new">The following parameter set returns the status information for the last configuration run:</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>The following parameter set returns the status information for all previous configuration runs:</source>
+          <target state="new">The following parameter set returns the status information for all previous configuration runs:</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Example</source>
+          <target state="new">Example</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">290c205d4e88b23974b126ea8157442e6cbf740f</xliffext:olfilehash>
+  </header>
+</xliff>

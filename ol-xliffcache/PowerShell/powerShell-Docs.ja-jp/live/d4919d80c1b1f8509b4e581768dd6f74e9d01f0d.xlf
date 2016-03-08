@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="ja-jp">
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Automatic RunAs support for DSC Resources</source>
+          <target state="new">Automatic RunAs support for DSC Resources</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Support for DSC RunAs credential</source>
+          <target state="new">Support for DSC RunAs credential</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>WMF 5.0 Preview April 2015 includes support for running <bpt id="p1">**</bpt>any<ept id="p1">**</ept> DSC resource under a specified set of credentials by using the property PsDscRunAsCredential.</source>
+          <target state="new">WMF 5.0 Preview April 2015 includes support for running <bpt id="p1">**</bpt>any<ept id="p1">**</ept> DSC resource under a specified set of credentials by using the property PsDscRunAsCredential.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>It enables scenarios like installing MSI packages in a specific user context, accessing a user’s registry hive, accessing a user’s specific local directory, accessing a network share, etc.</source>
+          <target state="new">It enables scenarios like installing MSI packages in a specific user context, accessing a user’s registry hive, accessing a user’s specific local directory, accessing a network share, etc.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>The following shows an example of using the PsDscRunAsCredential property in DSC to change the background color of the command prompt of a user.</source>
+          <target state="new">The following shows an example of using the PsDscRunAsCredential property in DSC to change the background color of the command prompt of a user.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Configuration ChangeCmdBackGroundColor</source>
+          <target state="new">Configuration ChangeCmdBackGroundColor</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>{</source>
+          <target state="new">{</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>}</source>
+          <target state="new">}</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>$configData = @{</source>
+          <target state="new">$configData = @{</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>AllNodes = @(</source>
+          <target state="new">AllNodes = @(</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>@{</source>
+          <target state="new">@{</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>NodeName="localhost";</source>
+          <target state="new">NodeName="localhost";</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>CertificateFile = "C:\\publicKeys\\targetNode.cer"</source>
+          <target state="new">CertificateFile = "C:\\publicKeys\\targetNode.cer"</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>}</source>
+          <target state="new">}</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>}</source>
+          <target state="new">}</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>ChangeCmdBackGroundColor -ConfigurationData $configData</source>
+          <target state="new">ChangeCmdBackGroundColor -ConfigurationData $configData</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Known issues</source>
+          <target state="new">Known issues</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>In this release, the following are known issues of the DSC RunAs credential feature:</source>
+          <target state="new">In this release, the following are known issues of the DSC RunAs credential feature:</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>The WindowsProcess resource doesn’t support RunAs credential.</source>
+          <target state="new">The WindowsProcess resource doesn’t support RunAs credential.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <header xmlns="">
+    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d4919d80c1b1f8509b4e581768dd6f74e9d01f0d</xliffext:olfilehash>
+  </header>
+</xliff>
