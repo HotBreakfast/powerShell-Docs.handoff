@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "content": "Specifying Cross Node Dependencies",
+      "pos": [
+        2,
+        36
+      ]
+    },
+    {
+      "content": "By using the built-in WaitFor\\* resources (WaitForAll, WaitForAny, and WaitForSome), you can now specify dependencies across computers during configuration runs, without external orchestration.",
+      "pos": [
+        38,
+        231
+      ]
+    },
+    {
+      "content": "The behavior or each WaitFor\\* resource is:",
+      "pos": [
+        232,
+        275
+      ]
+    },
+    {
+      "pos": [
+        279,
+        409
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>WaitForAll<ept id=\"p1\">**</ept> Waits for the specified resource to be in the desired state on <bpt id=\"p2\">*</bpt>All<ept id=\"p2\">*</ept> target nodes defined in the NodeName property."
+    },
+    {
+      "pos": [
+        412,
+        541
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>WaitForAny<ept id=\"p1\">**</ept> Waits for the specified resource to be in the desired state on <bpt id=\"p2\">*</bpt>Any<ept id=\"p2\">*</ept> target node defined in the NodeName property."
+    },
+    {
+      "pos": [
+        544,
+        724
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>WaitForSome<ept id=\"p1\">**</ept> Waits for the specified resource to be in the desired state on specific number, defined by the property NodeCount, of target nodes defined in the NodeName property."
+    },
+    {
+      "content": "These resources provide node-to-node synchronization by using CIM connections over the WS-Man protocol.",
+      "pos": [
+        726,
+        829
+      ]
+    },
+    {
+      "content": "By using these resources, a configuration can wait for another computer’s specific resource state to change before it continues with its own configuration.",
+      "pos": [
+        830,
+        985
+      ]
+    },
+    {
+      "pos": [
+        988,
+        1185
+      ],
+      "content": "For example, in the following configuration, the target node is waiting for the <bpt id=\"p1\">**</bpt>xADDomain<ept id=\"p1\">**</ept> resource to finish on the <bpt id=\"p2\">**</bpt>MyDC<ept id=\"p2\">**</ept> node with a few retries, before the target node can join the domain."
+    },
+    {
+      "pos": [
+        1665,
+        1831
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Hint:<ept id=\"p1\">**</ept> By default the WaitFor\\* resources try one time and then fail so although it is not required, you will typically want to specify a retry interval and count."
+    }
+  ],
+  "content": "# Specifying Cross Node Dependencies\n\nBy using the built-in WaitFor\\* resources (WaitForAll, WaitForAny, and WaitForSome), you can now specify dependencies across computers during configuration runs, without external orchestration. The behavior or each WaitFor\\* resource is:\n\n* **WaitForAll** Waits for the specified resource to be in the desired state on *All* target nodes defined in the NodeName property.\n* **WaitForAny** Waits for the specified resource to be in the desired state on *Any* target node defined in the NodeName property.\n* **WaitForSome** Waits for the specified resource to be in the desired state on specific number, defined by the property NodeCount, of target nodes defined in the NodeName property.\n\nThese resources provide node-to-node synchronization by using CIM connections over the WS-Man protocol. By using these resources, a configuration can wait for another computer’s specific resource state to change before it continues with its own configuration. \n\nFor example, in the following configuration, the target node is waiting for the **xADDomain** resource to finish on the **MyDC** node with a few retries, before the target node can join the domain.\n\n```PowerShell\nConfiguration JoinDomain\n\n{\n    Import-DscResource -Module xComputerManagement\n\n    WaitForAll DC\n    {\n        ResourceName      = '[xADDomain]NewDomain'\n        NodeName          = 'MyDC'\n        RetryIntervalSec  = 15\n        RetryCount        = 30\n    }\n\n    xComputer JoinDomain\n    {\n        Name             = 'MyPC'\n        DomainName       = 'Contoso.com'\n        Credential       = (get-credential)\n        DependsOn        ='[WaitForAll]DC'\n    }\n}\n```\n**Hint:** By default the WaitFor\\* resources try one time and then fail so although it is not required, you will typically want to specify a retry interval and count.\n"
+}
