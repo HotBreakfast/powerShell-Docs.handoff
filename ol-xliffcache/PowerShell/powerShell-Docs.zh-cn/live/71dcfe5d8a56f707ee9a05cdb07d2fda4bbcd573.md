@@ -1,37 +1,37 @@
-# Test-DscConfiguration cmdlet supports Reference Configurations
+# Test-DscConfiguration cmdlet 支持引用配置
 
-The Test-DscConfiguration cmdlet has been updated to allow testing of desired configuration state of one or more target nodes by specifying a reference configuration document to compare against.
+已更新 Test-DscConfiguration cmdlet，以允许通过指定用于比较的参考配置文档来测试一个或多个目标节点的所需配置状态。
 
-The following new parameter sets use DSC configurations in the path specified to only test and never apply each configuration on the specified targt node(s). As with Start-DscConfiguration and other DSC cmdlets, the name of each MOF is used to determine which target node to test the configuration on. 
-
-```PowerShell
-Test-DscConfiguration 	[-Path] <string> 
-						[[-ComputerName] <string[]>] 
-						[-Credential <pscredential>] 
-						[-ThrottleLimit <int>] 
-						[-AsJob] 
-						[<CommonParameters>]
-
-Test-DscConfiguration 	[-Path] <string> 
-						-CimSession <CimSession[]> 
-						[-ThrottleLimit <int>] 
-						[-AsJob] 
-						[<CommonParameters>]
-```
-
-The following new parameter sets use a single DSC configuration to only test and never apply the configuration on the specified targt node(s). 
+以下新参数集使用指定路径中的 DSC 配置，在指定目标节点上仅测试而绝不应用每个配置。 与 Start-DscConfiguration 和其他 DSC cmdlet，使用每个 MOF 的名称确定要在其上测试配置的目标节点。 
 
 ```PowerShell
-Test-DscConfiguration 	-ReferenceConfiguration <string> 
-						[[-ComputerName] <string[]>]
-						[-Credential <pscredential>] 
-						[-ThrottleLimit <int>] 
-						[-AsJob] 
-						[<CommonParameters>]
+Test-DscConfiguration   [-Path] <string> 
+                        [[-ComputerName] <string[]>] 
+                        [-Credential <pscredential>] 
+                        [-ThrottleLimit <int>] 
+                        [-AsJob] 
+                        [<CommonParameters>]
 
-Test-DscConfiguration 	-ReferenceConfiguration <string> 
-						-CimSession <CimSession[]> 
-						[-ThrottleLimit <int>] 
-						[-AsJob] 
-						[<CommonParameters>]
+Test-DscConfiguration   [-Path] <string> 
+                        -CimSession <CimSession[]> 
+                        [-ThrottleLimit <int>] 
+                        [-AsJob] 
+                        [<CommonParameters>]
 ```
+
+以下新参数集使用单个 DSC 配置，在指定的目标节点上仅测试而绝不应用配置。 
+
+```PowerShell
+Test-DscConfiguration   -ReferenceConfiguration <string> 
+                        [[-ComputerName] <string[]>]
+                        [-Credential <pscredential>] 
+                        [-ThrottleLimit <int>] 
+                        [-AsJob] 
+                        [<CommonParameters>]
+
+Test-DscConfiguration   -ReferenceConfiguration <string> 
+                        -CimSession <CimSession[]> 
+                        [-ThrottleLimit <int>] 
+                        [-AsJob] 
+                        [<CommonParameters>]
+```<!--HONumber=Mar16_HO2-->
