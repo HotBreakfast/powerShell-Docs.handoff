@@ -1,31 +1,31 @@
-# Call Base Class Constructor
+# Вызов конструктора базовых классов
 
-To call a base class constructor from a subclass, use the keyword **base**:
+Чтобы вызвать конструктор базовых классов из подкласса, используйте ключевое слово **base**:
 
 ```PowerShell
 class A 
 {
-	[int]$a
+    [int]$a
 
-	A([int]$a)
-	{
-		$this.a = $a
-	}
+    A([int]$a)
+    {
+        $this.a = $a
+    }
 }
 
 class B : A
 {
-	B() : base(103) {}
+    B() : base(103) {}
 }
 
 [B]::new().a # return 103
 ```
 
-If a base class has a default (no parameter) constructor, you can omit an explicit constructor call:
+Если базовый класс имеет конструктор по умолчанию (без параметров), явный вызов конструктора можно опустить:
 
 ```PowerShell
 class C : B
 {
-	C([int]$c) {}
+    C([int]$c) {}
 }
-```
+```<!--HONumber=Mar16_HO2-->
