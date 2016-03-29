@@ -1,8 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="es-es">
+  <file datatype="xml" original="md" source-language="en-US" target-language="es-es">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ba98768c88f78fec890f115053d8f4a343e8417a</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-02a95cf" tool-company="Microsoft" />
+    </header>
     <body>
-      <group id="main" extype="content">
+      <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
           <source>Built-In Desired State Configuration Resources for Linux</source>
           <target state="new">Built-In Desired State Configuration Resources for Linux</target>
@@ -28,41 +34,42 @@
           <target state="new"><bpt id="p1">[</bpt>nxArchive Resource<ept id="p1">](lnxArchiveResource.md)</ept>--Provides a mechanism to unpack archive (.tar, .zip) files at a specific path.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source><bpt id="p2">[</bpt>nxEnvironment Resource<ept id="p2">](lnxEnvironmentResource.md)</ept>--Manages environment variables on target nodes.</source>
-          <target state="new"><bpt id="p2">[</bpt>nxEnvironment Resource<ept id="p2">](lnxEnvironmentResource.md)</ept>--Manages environment variables on target nodes.</target>
+          <source><bpt id="p1">[</bpt>nxEnvironment Resource<ept id="p1">](lnxEnvironmentResource.md)</ept>--Manages environment variables on target nodes.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxEnvironment Resource<ept id="p1">](lnxEnvironmentResource.md)</ept>--Manages environment variables on target nodes.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source><bpt id="p3">[</bpt>nxFile Resource<ept id="p3">](lnxFileResource.md)</ept>--Manages Linux files and directories.</source>
-          <target state="new"><bpt id="p3">[</bpt>nxFile Resource<ept id="p3">](lnxFileResource.md)</ept>--Manages Linux files and directories.</target>
+          <source><bpt id="p1">[</bpt>nxFile Resource<ept id="p1">](lnxFileResource.md)</ept>--Manages Linux files and directories.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxFile Resource<ept id="p1">](lnxFileResource.md)</ept>--Manages Linux files and directories.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source><bpt id="p4">[</bpt>nxFileLine Resource<ept id="p4">](lnxFileLineResource.md)</ept>--Manages individual lines in a Linux file.</source>
-          <target state="new"><bpt id="p4">[</bpt>nxFileLine Resource<ept id="p4">](lnxFileLineResource.md)</ept>--Manages individual lines in a Linux file.</target>
+          <source><bpt id="p1">[</bpt>nxFileLine Resource<ept id="p1">](lnxFileLineResource.md)</ept>--Manages individual lines in a Linux file.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxFileLine Resource<ept id="p1">](lnxFileLineResource.md)</ept>--Manages individual lines in a Linux file.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source><bpt id="p5">[</bpt>nxGroup Resource<ept id="p5">](lnxGroupResource.md)</ept>--Manages local Linux groups.</source>
-          <target state="new"><bpt id="p5">[</bpt>nxGroup Resource<ept id="p5">](lnxGroupResource.md)</ept>--Manages local Linux groups.</target>
+          <source><bpt id="p1">[</bpt>nxGroup Resource<ept id="p1">](lnxGroupResource.md)</ept>--Manages local Linux groups.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxGroup Resource<ept id="p1">](lnxGroupResource.md)</ept>--Manages local Linux groups.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source><bpt id="p6">[</bpt>nxPackage Resource<ept id="p6">](lnxPackageResource.md)</ept>--Manages packages on Linux nodes.- <bpt id="p7">[</bpt>nxScript Resource<ept id="p7">](lnxScriptResource.md)</ept>--Runs scripts on target nodes.</source>
-          <target state="new"><bpt id="p6">[</bpt>nxPackage Resource<ept id="p6">](lnxPackageResource.md)</ept>--Manages packages on Linux nodes.- <bpt id="p7">[</bpt>nxScript Resource<ept id="p7">](lnxScriptResource.md)</ept>--Runs scripts on target nodes.</target>
+          <source><bpt id="p1">[</bpt>nxPackage Resource<ept id="p1">](lnxPackageResource.md)</ept>--Manages packages on Linux nodes.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxPackage Resource<ept id="p1">](lnxPackageResource.md)</ept>--Manages packages on Linux nodes.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source><bpt id="p8">[</bpt>nxService Resource<ept id="p8">](lnxServiceResource.md)</ept>--Manages Linux services (daemons).</source>
-          <target state="new"><bpt id="p8">[</bpt>nxService Resource<ept id="p8">](lnxServiceResource.md)</ept>--Manages Linux services (daemons).</target>
+          <source><bpt id="p1">[</bpt>nxScript Resource<ept id="p1">](lnxScriptResource.md)</ept>--Runs scripts on target nodes.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxScript Resource<ept id="p1">](lnxScriptResource.md)</ept>--Runs scripts on target nodes.</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source><bpt id="p9">[</bpt>nxSshAuthorizedKeys Resource<ept id="p9">](lnxSshAuthorizedKeysResource.md)</ept>--Manages public ssh keys for a Linux user.</source>
-          <target state="new"><bpt id="p9">[</bpt>nxSshAuthorizedKeys Resource<ept id="p9">](lnxSshAuthorizedKeysResource.md)</ept>--Manages public ssh keys for a Linux user.</target>
+          <source><bpt id="p1">[</bpt>nxService Resource<ept id="p1">](lnxServiceResource.md)</ept>--Manages Linux services (daemons).</source>
+          <target state="new"><bpt id="p1">[</bpt>nxService Resource<ept id="p1">](lnxServiceResource.md)</ept>--Manages Linux services (daemons).</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source><bpt id="p10">[</bpt>nxUser Resource<ept id="p10">](lnxUserResource.md)</ept>--Manages local Linux users.</source>
-          <target state="new"><bpt id="p10">[</bpt>nxUser Resource<ept id="p10">](lnxUserResource.md)</ept>--Manages local Linux users.</target>
+          <source><bpt id="p1">[</bpt>nxSshAuthorizedKeys Resource<ept id="p1">](lnxSshAuthorizedKeysResource.md)</ept>--Manages public ssh keys for a Linux user.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxSshAuthorizedKeys Resource<ept id="p1">](lnxSshAuthorizedKeysResource.md)</ept>--Manages public ssh keys for a Linux user.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>nxUser Resource<ept id="p1">](lnxUserResource.md)</ept>--Manages local Linux users.</source>
+          <target state="new"><bpt id="p1">[</bpt>nxUser Resource<ept id="p1">](lnxUserResource.md)</ept>--Manages local Linux users.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e4d20bc0f083c463514e2044ce86679041263075</xliffext:olfilehash>
-  </header>
 </xliff>
