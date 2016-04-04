@@ -1,26 +1,26 @@
-# Setting up a DSC web pull server
+# Настройка опрашивающего веб-сервера DSC
 
-> Applies To: Windows PowerShell 5.0
+> Область применения: Windows PowerShell 5.0
 
-A DSC web pull server is a web service in IIS that uses an OData interface to make DSC configuration files available to target nodes when those nodes ask for them.
+Опрашивающий веб-сервер DSC — это веб-служба в IIS, которая использует интерфейс OData для создания файлов конфигурации DSC, доступных на целевых узлах при запросе.
 
-Requirements for using a pull server:
+Требования к использованию опрашивающего сервера:
 
-* A server running:
-  - WMF/PowerShell 5.0 or greater
-  - IIS server role
-  - DSC Service
-* Ideally, some means of generating a certificate, to secure credentials passed to the Local Configuration Manager (LCM) on target nodes
+* Сервер под управлением:
+  - WMF/PowerShell 5.0 или более поздней версии
+  - Роль сервера служб IIS
+  - Служба DSC
+* Рекомендуется использовать средства создания сертификата для защиты учетных данных, передаваемых в локальный диспетчер конфигураций (LCM) на целевых узлах
 
-You can add the IIS server role and DSC Service with the Add Roles and Features wizard in Server Manager, or by using PowerShell. The sample scripts included in this topic will handle both of these steps for you as well.
+Вы можете добавить роль сервера служб IIS и службу DSC с помощью мастера добавления ролей и компонентов в диспетчере сервера или PowerShell. В примерах сценариев в этом разделе также охватываются оба шага.
 
-## Using the xWebService resource
-The easiest way to set up a web pull server is to use the xWebService resource, included in the xPSDesiredStateConfiguration module. The following steps explain how to use the resource in a configuration that sets up the web service.
+## Использование ресурса xWebService
+Самый простой способ настроить опрашивающий веб-сервер — использовать ресурс xWebService, включенный в модуль xPSDesiredStateConfiguration. В следующих действиях показано, как использовать ресурс в конфигурации, которая настраивает веб-службу.
 
-1. Call the [Install-Module](https://technet.microsoft.com/en-us/library/dn807162.aspx) cmdlet to install the **xPSDesiredStateConfiguration** module. **Note**: **Install-Module** is included in the **PowerShellGet** module, which is included in PowerShell 5.0. You can download the **PowerShellGet** module for PowerShell 3.0 and 4.0 at [PackageManagement PowerShell Modules Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49186). 
-1. Get an SSL certificate for the DSC Pull server from a trusted Certificate Authority, either within your orgnaization or a public authority. The certificate recieved from the authority is usually in the PFX format. Install the certificate on the node that will become the DSC Pull server in the default location which should be CERT:\LocalMachine\My. Make a note of the certificate thumbprint.
-1. Select a GUID to be used as the Registration Key. To generate one using PowerShell enter the following at the PS prompt and press enter: '``` [guid]::newGuid()```'. This key will be used by client nodes as a shared key to authenticate during registration. For more information see [Registration Key](#RegKey) section below.
-1. In the PowerShell ISE, start (F5) the following configuration script (included in the Example folder of the  **xPSDesiredStateConfiguration** module as Sample_xDscWebService.ps1). This script sets up the pull server.
+1. Вызовите командлет Install-Module, чтобы установить модуль xPSDesiredStateConfiguration. Примечание. Install-Module включен в модуль PowerShellGet, который входит в состав PowerShell 5.0. Вы можете скачать модуль PowerShellGetдля PowerShell 3.0 и 4.0 в разделе Предварительная версия модулей PackageManagement PowerShell. 
+1. Получите SSL-сертификат для опрашивающего сервера DSC из доверенного центра сертификации (публичного или входящего в состав вашей организации). Сертификат, полученный от центра сертификации, обычно имеет формат PFX. Установите сертификат на узле, который должен стать опрашивающим сервером DSC, в расположении по умолчанию (CERT:\LocalMachine\My). Запишите отпечаток сертификата.
+1. Выберите идентификатор GUID для использования в качестве ключа регистрации. Для его создания с помощью PowerShell введите следующую команду в командной строке PS и нажмите клавишу ВВОД: "``` [guid]::newGuid()```". Этот ключ будет использоваться клиентскими узлами в качестве общего ключа для проверки подлинности во время регистрации. Дополнительные сведения см. в разделе Ключ регистрации ниже.
+1. В среде PowerShell ISE запустите (нажав клавишу F5) следующий сценарий конфигурации (файл Sample_xDscWebService.ps1 в папке с примерами для модуля xPSDesiredStateConfiguration). Этот сценарий настраивает опрашивающий сервер.
   
 ```powershell
 configuration Sample_xDscWebService 
@@ -74,7 +74,7 @@ configuration Sample_xDscWebService
 
 ```
 
-1. Run the configuration, passing the thumbprint of the SSL certificate as the **certificateThumbPrint** parameter and a GUID registration key as the **RegistrationKey** parameter:
+1. Запустите конфигурацию, передав отпечаток SSL-сертификата с параметром certificateThumbPrint и ключ регистрации GUID с параметром RegistrationKey:
 
 ```powershell
 # To find the Thumbprint for an installed SSL certificate for use with the pull server list all certifcates in your local store 
@@ -85,11 +85,11 @@ dir Cert:\LocalMachine\my
 Sample_xDSCService -certificateThumbprint 'A7000024B753FA6FFF88E966FD6E19301FAE9CCC' -RegistrationKey '140a952b-b9d6-406b-b416-e0f759c9c0e4' -OutpuPath c:\Configs\PullServer
 ```
 
-## Registration Key
-To allow client nodes to register with the server so that they can use configuration names instead of a configuration ID, a registration key which was created by the above configuration is saved in a file named `RegistrationKeys.txt` in `C:\Program Files\WindowsPowerShell\DscService`. The registration key functions as a shared secret used during the initial registration by the client with the pull server. The client will generate a self-signed certificate which is used to uniquely authenticate to the pull server once registration is successfully completed. The thumbprint of the this certificate is stored locally and associated with the URL of the pull server.
-> **Note**: Registration keys are not supported in PowerShell 4.0. 
+## Ключ регистрации
+Чтобы разрешить клиентским узлам регистрироваться на сервере для использования имен конфигурации вместо идентификаторов конфигурации, созданный конфигурацией ключ конфигурации сохраняется в файле `RegistrationKeys.txt` и `C:\Program Files\WindowsPowerShell\DscService`. Ключ регистрации работает как общий секрет, используемый во время первоначальной регистрации клиента с опрашивающим сервером. Клиент создает самозаверяющий сертификат, который используется для уникальной проверки подлинности на опрашивающем сервере после успешного завершения регистрации. Отпечаток этого сертификата хранится локально и связывается с URL-адресом опрашивающего сервера.
+> Примечание. Ключи регистрации не поддерживаются в PowerShell 4.0. 
 
-In order to configure the a node to authenticate with the pull server the registration key needs to be in the metaconfiguration for any target node that will be registering with this pull server. Note that the **RegistrationKey** in the metaconfiguration below is removed after the target machine has successfully registered, and that the value '140a952b-b9d6-406b-b416-e0f759c9c0e4' must match the value stored in the RegistrationKeys.txt file on the pull server. Always treat the registration key value securely, because knowing it allows any target machine to register with the pull server.
+Для настройки проверки подлинности узла на опрашивающем сервере необходимо поместить ключ регистрации в метаконфигурацию всех целевых узлов, которые будут регистрироваться на этом опрашивающем сервере. Обратите внимание, что RegistrationKey в метаконфигурации ниже удаляется после успешной регистрации целевого компьютера и значение "140a952b-b9d6-406b-b416-e0f759c9c0e4" должно соответствовать значению в файле RegistrationKeys.txt на опрашивающем сервере. Значение ключа регистрации должно оставаться конфиденциальным, так как с ним любой целевой компьютер сможет зарегистрироваться на опрашивающем сервере.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -121,26 +121,26 @@ configuration PullClientConfigID
 
 PullClientConfigID -OutputPath c:\Configs\TargetNodes
 ```
-> **Note**: The **ReportServerWeb** section allows reporting data to be sent to the pull server. 
+> Примечание. Раздел ReportServerWeb позволяет отправлять данные отчетов на опрашивающий сервер. 
 
-The lack of the **ConfigurationID** property in the metaconfiguration file implicitly means that pull server is supporting the V2 version of the pull server protocol so an initial registration is required. Conversely, the presents of a **ConfigurationID** means that the V1 version of the pull server protocol is used and there is no registration processing.
+Отсутствие свойства ConfigurationID в файле метаконфигурации неявно означает, что опрашивающий сервер поддерживает версию 2 протокола опрашивающего сервера и требуется начальная регистрация. Наоборот, наличие свойства ConfigurationID означает, что используется версия 1 протокола опрашивающего сервера и регистрация не выполняется.
 
->**Note**: In a PUSH scenario, a bug exists in the current relase that makes it necessary to define a ConfigurationID property in the metaconfiguration file for nodes that have never registered with a pull server. This will force the V1 Pull Server protocol and avoid registration failure messages.
+>Примечание. В сценарии PUSH в текущем выпуске есть ошибка, из-за которой необходимо определять свойство ConfigurationID в файле метаконфигурации для узлов, которые никогда не регистрировались на опрашивающем сервере. Это приведет к принудительному использованию версии 1 протокола опрашивающего сервера и позволит избежать сообщений об ошибках регистрации.
 
-## Placing configurations and resources
-After the pull server setup completes, the folders defined by the **ConfigurationPath** and **ModulePath** properties in the pull server configuration are where you will place modules and configurations that will be available for target nodes to pull. These files need to be in a specific format in order for the pull server to correctly process them. 
+## Размещение конфигураций и ресурсов
+После завершения установки опрашивающего сервера папки для размещения модулей и конфигурации, которые будут доступны целевым узлам, задаются свойствами ConfigurationPath и ModulePath в конфигурации опрашивающего сервера. Для правильной обработки опрашивающим сервером эти файлы должны иметь специальный формат. 
 
-### DSC resource module package format
-Each resource module needs to be zipped and named according the the following pattern **{Module Name}_{Module Version}.zip**. For example, a module named xWebAdminstration with a module version of 3.1.2.0 would be named 'xWebAdministration_3.2.1.0.zip'. Each version of a module must be contained in a single zip file. Since there is only a single version of a resource in each zip file the module format added in WMF 5.0 with support for multiple module versions in a single directory is not supported. This means that before packaging up DSC resource modules for use with pull server you will need to make a small change to the directory structure. The default format of modules containing DSC resource in WMF 5.0 is '{Module Folder}\{Module Version}\DscResources\{DSC Resource Folder}\'. Before packaging up for the pull server simply remove the **{Module version}** folder so the path becomes '{Module Folder}\DscResources\{DSC Resource Folder}\'. With this change, zip the folder as described above and place these zip files in the **ModulePath** folder.
+### Формат пакета модуля для ресурсов DSC
+Каждый модуль ресурса необходимо упаковать в ZIP-архив и переименовать по шаблону {название_модуля}_{версия_модуля}.zip. Например, модуль с именем xWebAdminstration с версией модуля 3.1.2.0 будет иметь имя "xWebAdministration_3.2.1.0.zip". Каждая версия модуля должна находиться в собственном ZIP-файле. Поскольку в каждом ZIP-файле существует только одна версия ресурса, формат модулей с поддержкой нескольких версий модуля в одном каталоге, который появился в WMF 5.0, не поддерживается. Это означает, что перед упаковкой модулей ресурсов DSC для опрашивающего сервера необходимо внести небольшое изменение в структуру каталогов. Формат модулей, содержащих ресурсы DSC, в WMF 5.0 по умолчанию таков: "{папка_модуля}\{версия_модуля}\DscResources\{папка_ресурса_DSC}\". Перед упаковкой для опрашивающего сервера просто удалите папку {версия модуля}, чтобы путь стал таким: "{папка_модуля}\DscResources\{папка_ресурса_DSC}\". Выполнив это изменение, упакуйте папку в ZIP-архив, как описано выше, и поместите ZIP-архивы в папку ModulePath.
 
-### Configuration MOF format 
-A configuration MOF file needs to be paired with a checksum file so that an LCM on a target node can validate the configuration. To create a checksum, call the [New-DSCCheckSum](https://technet.microsoft.com/en-us/library/dn521622.aspx) cmdlet. The cmdlet takes a **Path** parameter that specifies the folder where the configuration MOF is located. The cmdlet creates a checksum file named `ConfigurationMOFName.mof.checksum`, where `ConfigurationMOFName` is the name of the configuration mof file. If there are more than one configuration MOF files in the specified folder, a checksum is created for each configuration in the folder. Place the MOF files and their associated checksum files in the the **ConfigurationPath** folder.
+### Формат файлов конфигурации MOF 
+MOF-файл конфигурации необходимо сопоставить с файлом контрольной суммы, чтобы LCM на целевом узле мог проверить конфигурацию. Для вычисления контрольной суммы вызовите командлет New-DSCCheckSum. Командлет принимает параметр Path, указывающий папку, в которой располагается MOF-файл конфигурации. Командлет создает файл контрольной суммы `ConfigurationMOFName.mof.checksum`, где `ConfigurationMOFName` — имя MOF-файла конфигурации. Если в указанной папке есть несколько MOF-файлов конфигурации, контрольная сумма создается для каждой конфигурации в папке. Поместите файлы MOF и их файлы контрольной суммы в папку ConfigurationPath.
 
->**Note**: If you change the configuration MOF file in any way, you must also recreate the checksum file.
+>Примечание. При изменении MOF-файла конфигурации необходимо повторно создать файл контрольной суммы.
 
-## Tooling
-In order to make setting up, validating and managing the pull server easier, the following tools are included as examples in the latest version of the xPSDesiredStateConfiguration module:
-1. A module that will help with packaging DSC resource modules and configuration files for use on the pull server. [PublishModulesAndMofsToPullServer.psm1](https://github.com/PowerShell/xPSDesiredStateConfiguration/blob/dev/DSCPullServerSetup/PublishModulesAndMofsToPullServer.psm1). Examples below:
+## Инструменты
+Для упрощения настройки, проверки опрашивающего сервера и управления им в последнюю версию модуля xPSDesiredStateConfiguration в качестве примеров включены следующие инструменты:
+1. Модуль, который помогает упаковывать модули ресурсов и конфигурационные файлы DSC для использования на опрашивающем сервере. PublishModulesAndMofsToPullServer.psm1. Примеры ниже:
 
 ```powershell
     # Example 1 - Package all versions of given modules installed locally and MOF files are in c:\LocalDepot
@@ -151,18 +151,23 @@ In order to make setting up, validating and managing the pull server easier, the
      Publish-DSCModuleAndMof -Source C:\LocalDepot -Force
 ```
 
-1. A script that validates the Pull Server is configured correctly. [PullServerSetupTests.ps1](https://github.com/PowerShell/xPSDesiredStateConfiguration/blob/dev/Examples/PullServerDeploymentVerificationTest/PullServerSetupTests.ps1).
+1. Сценарий, который проверяет, что опрашивающий сервер настроен правильно. PullServerSetupTests.ps1.
 
 
-## Pull client configuration 
-The following topics describe setting up pull clients in detail:
+## Настройка опрашивающего клиента 
+В следующих разделах настройка опрашивающих клиентов описывается более подробно:
 
-* [Setting up a DSC pull client using a configuration ID](pullClientConfigID.md)
-* [Setting up a DSC pull client using configuration names](pullClientConfigNames.md)
-* [Partial configurations](partialConfigs.md)
+* [Настройка опрашивающего клиента DSC с помощью идентификатора конфигурации](pullClientConfigID.md)
+* [Настройка опрашивающего клиента DSC с помощью имен конфигурации](pullClientConfigNames.md)
+* [Частичные конфигурации](partialConfigs.md)
 
 
-## See also
-* [Windows PowerShell Desired State Configuration Overview](overview.md)
-* [Enacting configurations](enactingConfigurations.md)
-* [How to retrieve node information from DSC pull server](retrieveNodeInfo.md)
+## См. также:
+* [Общие сведения о службе настройки требуемого состояния Windows PowerShell](overview.md)
+* [Применение конфигураций](enactingConfigurations.md)
+* [Извлечение сведений об узле с опрашивающего сервера DSC](retrieveNodeInfo.md)
+
+
+<!--HONumber=Mar16_HO4-->
+
+
