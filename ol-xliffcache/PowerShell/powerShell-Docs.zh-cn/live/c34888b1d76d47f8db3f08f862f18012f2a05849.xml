@@ -1,0 +1,460 @@
+{
+  "nodes": [
+    {
+      "content": "Using Windows PowerShell",
+      "pos": [
+        11,
+        35
+      ]
+    },
+    {
+      "content": "Using Windows PowerShell",
+      "pos": [
+        170,
+        194
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[wps_1](../Token/wps_1_md.md)]</ph> is a task\\-based command\\-line shell and scripting language designed especially for system administration.",
+      "pos": [
+        195,
+        341
+      ]
+    },
+    {
+      "content": "Built on the .NET Framework, <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> helps IT professionals and power users control and automate the administration of the Windows operating system and applications that run on Windows.",
+      "pos": [
+        342,
+        559
+      ]
+    },
+    {
+      "pos": [
+        561,
+        861
+      ],
+      "content": "Resources in this section help you learn about <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, features that are included with <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, and the graphical <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> editor, <ph id=\"ph4\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Integrated Scripting Environment."
+    },
+    {
+      "content": "What’s In This Section",
+      "pos": [
+        866,
+        888
+      ]
+    },
+    {
+      "pos": [
+        889,
+        1124
+      ],
+      "content": "Content in this section can help you learn more about <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, how to use <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, and what is new in <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> in the most current releases."
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>What's New in Windows PowerShell<ept id=\"p1\">](../Topic/What-s-New-in-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        1130,
+        1211
+      ]
+    },
+    {
+      "content": "This topic describes changes to <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> 3.0 and <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> 4.0.",
+      "pos": [
+        1212,
+        1336
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Getting Started with Windows PowerShell<ept id=\"p1\">](../Topic/Getting-Started-with-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        1342,
+        1437
+      ]
+    },
+    {
+      "content": "An introduction and tutorial, including system requirements and instructions for installing and starting <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> on all supported operating systems.",
+      "pos": [
+        1438,
+        1618
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell User's Guide<ept id=\"p1\">](../Topic/Windows-PowerShell-User-s-Guide.md)</ept>.",
+      "pos": [
+        1624,
+        1703
+      ]
+    },
+    {
+      "content": "A detailed introduction, including real\\-world scripts and scenarios to get you started.",
+      "pos": [
+        1704,
+        1792
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Integrated Scripting Environment &amp;#40;ISE&amp;#41;<ept id=\"p1\">](../Topic/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md)</ept>.",
+      "pos": [
+        1798,
+        1937
+      ]
+    },
+    {
+      "content": "Documentation for <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> ISE, a graphical <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> script editor and console.",
+      "pos": [
+        1938,
+        2079
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Desired State Configuration (DSC) Overview<ept id=\"p1\">](assetId:///04c9e716-822c-40f0-8fdf-f2dda8abd888)</ept>.",
+      "pos": [
+        2085,
+        2198
+      ]
+    },
+    {
+      "content": "An introduction to a new feature for <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> 4.0, Windows PowerShell Desired State Configuration (DSC).",
+      "pos": [
+        2199,
+        2334
+      ]
+    },
+    {
+      "content": "DSC can help administrators achieve consistent configurations in Windows environments, and on devices such as network switches.",
+      "pos": [
+        2335,
+        2462
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>PowerShell.exe Command-Line Help<ept id=\"p1\">](../Topic/PowerShell.exe-Command-Line-Help.md)</ept>.",
+      "pos": [
+        2468,
+        2549
+      ]
+    },
+    {
+      "content": "How to start <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> from the Windows Command Prompt, and run basic <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> commands.",
+      "pos": [
+        2550,
+        2699
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Glossary<ept id=\"p1\">](../Topic/Windows-PowerShell-Glossary.md)</ept>.",
+      "pos": [
+        2705,
+        2776
+      ]
+    },
+    {
+      "content": "Learn about common terms used in <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> and its documentation.",
+      "pos": [
+        2777,
+        2872
+      ]
+    },
+    {
+      "content": "Related Technologies",
+      "pos": [
+        2877,
+        2897
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> is part of a family of related scripting technologies that help you automate remote management of Windows\\-based computers.",
+      "pos": [
+        2898,
+        3061
+      ]
+    },
+    {
+      "content": "Links to more information about these technologies are included here for you.",
+      "pos": [
+        3062,
+        3139
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Workflow<ept id=\"p1\">](http://technet.microsoft.com/library/jj134242.aspx)</ept>.",
+      "pos": [
+        3145,
+        3227
+      ]
+    },
+    {
+      "content": "First introduced in <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Workflow lets IT Pros and developers leverage the benefits of <bpt id=\"p1\">[</bpt>Windows Workflow Foundation<ept id=\"p1\">](http://msdn.microsoft.com/library/ee342461.aspx)</ept> with the automation capabilities and ease of <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>.",
+      "pos": [
+        3228,
+        3565
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Web Access<ept id=\"p1\">](http://technet.microsoft.com/library/hh831611.aspx)</ept>.",
+      "pos": [
+        3571,
+        3655
+      ]
+    },
+    {
+      "content": "First introduced in <ph id=\"ph1\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Web Access acts as a <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> gateway, providing a web\\-based <ph id=\"ph4\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> console that is targeted at a remote computer.",
+      "pos": [
+        3656,
+        3952
+      ]
+    },
+    {
+      "content": "It enables IT Pros to run <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> commands and scripts from a <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> console in a web browser, with no <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, remote management software, or browser plug\\-in installation necessary on the client device.",
+      "pos": [
+        3953,
+        4254
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Web Services (Management OData IIS Extension)<ept id=\"p1\">](http://msdn.microsoft.com/library/windows/desktop/hh880865.aspx)</ept>.",
+      "pos": [
+        4260,
+        4392
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Web Services is a framework for easily exposing <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> cmdlets through an OData\\-based web service that is running in Web Server (IIS).",
+      "pos": [
+        4393,
+        4601
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Get Started with Windows PowerShell Desired State Configuration<ept id=\"p1\">](assetId:///c134aa32-b085-4656-9a89-955d8ff768d0)</ept>.",
+      "pos": [
+        4607,
+        4722
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Desired State Configuration (DSC), introduced in <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>, is a new management platform in <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> that enables the deployment and management of configuration data for software services and the environment on which these services run.",
+      "pos": [
+        4723,
+        5070
+      ]
+    },
+    {
+      "content": "DSC provides a set of <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> language extensions, new cmdlets, and resources that you can use to declaratively specify how you want the state of your software environment to be configured.",
+      "pos": [
+        5071,
+        5292
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows Management Framework 4.0 Preview<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=293881)</ept> includes updates to <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> ISE, <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Infrastructure (WMI), the Server Manager WMI provider, and a new feature for 4.0, <ph id=\"ph4\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Desired State Configuration (DSC).",
+      "pos": [
+        5298,
+        5791
+      ]
+    },
+    {
+      "content": "Windows Management Framework 4.0 Preview allows you to install and use these technologies on computers that are running <ph id=\"ph1\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)]</ph> SP1, and <ph id=\"ph3\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph> SP1.",
+      "pos": [
+        5792,
+        6124
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows Management Framework 3.0<ept id=\"p1\">](http://www.microsoft.com/download/details.aspx?id=34595)</ept> includes updates to <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> ISE, <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Infrastructure (WMI), and the Server Manager WMI provider.",
+      "pos": [
+        6130,
+        6527
+      ]
+    },
+    {
+      "content": "Windows Management Framework 3.0 allows you to install and use these technologies on computers that are running <ph id=\"ph1\">[!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)]</ph> SP1, Windows Server 2008 SP2, and <ph id=\"ph2\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph> SP1.",
+      "pos": [
+        6528,
+        6820
+      ]
+    },
+    {
+      "content": "Learning Windows PowerShell",
+      "pos": [
+        6825,
+        6852
+      ]
+    },
+    {
+      "pos": [
+        6853,
+        6947
+      ],
+      "content": "To begin learning <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, start with the following resources:"
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Microsoft Virtual Academy: Getting Started with PowerShell 3.0 Jump Start<ept id=\"p1\">](http://www.microsoftvirtualacademy.com/training-courses/advanced-tools-scripting-with-powershell-3-0-jump-start)</ept>.",
+      "pos": [
+        6953,
+        7142
+      ]
+    },
+    {
+      "content": "This Jump Start is designed to teach busy IT professionals, admins, and help desk people how to use <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> to improve management capabilities, automate redundant tasks, and manage the environment in scale.",
+      "pos": [
+        7143,
+        7381
+      ]
+    },
+    {
+      "content": "Learn how <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>works and how to make <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> work for you from the experts Jeffrey Snover, the inventor of <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, and Jason Helmick, Senior Technologist at Concentrated Technology.",
+      "pos": [
+        7382,
+        7662
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Microsoft Virtual Academy: Advanced Tools &amp; Scripting with PowerShell 3.0 Jump Start<ept id=\"p1\">](http://www.microsoftvirtualacademy.com/training-courses/getting-started-with-powershell-3-0-jump-start)</ept>.",
+      "pos": [
+        7668,
+        7859
+      ]
+    },
+    {
+      "content": "IT pros, take this advanced <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> course to find out how to turn your real time management and automation scripts into useful reusable tools and cmdlets.",
+      "pos": [
+        7860,
+        8047
+      ]
+    },
+    {
+      "content": "You’ll learn the best patterns and practices for building and maintaining tools and you’ll pick up some special tips and tricks along the way from the architect and inventor of <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, Distinguished Engineer Jeffrey Snover, and IT pro, Jason Helmick.",
+      "pos": [
+        8048,
+        8331
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Getting Started with Windows PowerShell<ept id=\"p1\">](../Topic/Getting-Started-with-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        8337,
+        8432
+      ]
+    },
+    {
+      "content": "An introduction and tutorial, including system requirements and instructions for installing and starting <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> on all supported operating systems.",
+      "pos": [
+        8433,
+        8613
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell User's Guide<ept id=\"p1\">](../Topic/Windows-PowerShell-User-s-Guide.md)</ept>.",
+      "pos": [
+        8619,
+        8698
+      ]
+    },
+    {
+      "content": "A detailed introduction, including real\\-world scripts and scenarios to get you started.",
+      "pos": [
+        8699,
+        8787
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows PowerShell Core Module Reference<ept id=\"p1\">](http://technet.microsoft.com/library/hh847741(v=wps.630).aspx)</ept>.",
+      "pos": [
+        8793,
+        8899
+      ]
+    },
+    {
+      "content": "An alphabetized list of help topics for the language features and cmdlets included as part of the <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> engine.",
+      "pos": [
+        8900,
+        9045
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Windows and Windows Server Automation with Windows PowerShell<ept id=\"p1\">](http://technet.microsoft.com/library/dn249523.aspx)</ept>.",
+      "pos": [
+        9051,
+        9167
+      ]
+    },
+    {
+      "content": "An alphabetized list of help topics for <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> modules that are included as part of features or server roles included in Windows Server and Windows Client.",
+      "pos": [
+        9168,
+        9356
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>System Center Automation with Windows PowerShell<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/mt156962.aspx)</ept>.",
+      "pos": [
+        9362,
+        9472
+      ]
+    },
+    {
+      "content": "An alphabetized list of help topics for <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> modules that are included with components of Microsoft System Center.",
+      "pos": [
+        9473,
+        9622
+      ]
+    },
+    {
+      "content": "Downloading and Updating Windows PowerShell Help",
+      "pos": [
+        9627,
+        9675
+      ]
+    },
+    {
+      "pos": [
+        9676,
+        9859
+      ],
+      "content": "The following topics describe how you can get the latest Help for <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> and display it at the <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> command prompt."
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Update-Help<ept id=\"p1\">](http://technet.microsoft.com/library/hh849720.aspx)</ept> cmdlet.",
+      "pos": [
+        9865,
+        9938
+      ]
+    },
+    {
+      "content": "A <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> cmdlet that downloads and installs the newest versions of help topics for <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> modules on your computer.",
+      "pos": [
+        9939,
+        10120
+      ]
+    },
+    {
+      "pos": [
+        10126,
+        10521
+      ],
+      "content": "For more information about the Updatable Help system in <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, including how to install Updatable Help on network\\-isolated computers, see <bpt id=\"p1\">[</bpt>about_Updatable_Help<ept id=\"p1\">](http://technet.microsoft.com/library/hh847735.aspx)</ept>, <bpt id=\"p2\">[</bpt>Save-Help<ept id=\"p2\">](http://technet.microsoft.com/library/hh849724.aspx)</ept>, and <bpt id=\"p3\">[</bpt>Supporting Updatable Help<ept id=\"p3\">](http://msdn.microsoft.com/library/hh852754.aspx)</ept>."
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Get-Help<ept id=\"p1\">](http://technet.microsoft.com/library/hh849696(v=wps.630).aspx)</ept> cmdlet.",
+      "pos": [
+        10527,
+        10608
+      ]
+    },
+    {
+      "content": "A <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> cmdlet that you can use to learn about the cmdlets and providers that are installed on your system.",
+      "pos": [
+        10609,
+        10750
+      ]
+    },
+    {
+      "pos": [
+        10756,
+        10991
+      ],
+      "content": "You can get notifications about any updates to published Help files by subscribing to the following RSS feed: <bpt id=\"p1\">[</bpt>http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions<ept id=\"p1\">](http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions)</ept>."
+    }
+  ],
+  "content": "---\ntitle: Using Windows PowerShell\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: cf06f1e5-3945-47e4-98be-412f5a1f43fe\n---\n# Using Windows PowerShell\n[!INCLUDE[wps_1](../Token/wps_1_md.md)] is a task\\-based command\\-line shell and scripting language designed especially for system administration. Built on the .NET Framework, [!INCLUDE[wps_2](../Token/wps_2_md.md)] helps IT professionals and power users control and automate the administration of the Windows operating system and applications that run on Windows.\n\nResources in this section help you learn about [!INCLUDE[wps_2](../Token/wps_2_md.md)], features that are included with [!INCLUDE[wps_2](../Token/wps_2_md.md)], and the graphical [!INCLUDE[wps_2](../Token/wps_2_md.md)] editor, [!INCLUDE[wps_2](../Token/wps_2_md.md)] Integrated Scripting Environment.\n\n## What’s In This Section\nContent in this section can help you learn more about [!INCLUDE[wps_2](../Token/wps_2_md.md)], how to use [!INCLUDE[wps_2](../Token/wps_2_md.md)], and what is new in [!INCLUDE[wps_2](../Token/wps_2_md.md)] in the most current releases.\n\n-   [What's New in Windows PowerShell](../Topic/What-s-New-in-Windows-PowerShell.md). This topic describes changes to [!INCLUDE[wps_2](../Token/wps_2_md.md)] 3.0 and [!INCLUDE[wps_2](../Token/wps_2_md.md)] 4.0.\n\n-   [Getting Started with Windows PowerShell](../Topic/Getting-Started-with-Windows-PowerShell.md). An introduction and tutorial, including system requirements and instructions for installing and starting [!INCLUDE[wps_2](../Token/wps_2_md.md)] on all supported operating systems.\n\n-   [Windows PowerShell User's Guide](../Topic/Windows-PowerShell-User-s-Guide.md). A detailed introduction, including real\\-world scripts and scenarios to get you started.\n\n-   [Windows PowerShell Integrated Scripting Environment &#40;ISE&#41;](../Topic/Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md). Documentation for [!INCLUDE[wps_2](../Token/wps_2_md.md)] ISE, a graphical [!INCLUDE[wps_2](../Token/wps_2_md.md)] script editor and console.\n\n-   [Windows PowerShell Desired State Configuration (DSC) Overview](assetId:///04c9e716-822c-40f0-8fdf-f2dda8abd888). An introduction to a new feature for [!INCLUDE[wps_2](../Token/wps_2_md.md)] 4.0, Windows PowerShell Desired State Configuration (DSC). DSC can help administrators achieve consistent configurations in Windows environments, and on devices such as network switches.\n\n-   [PowerShell.exe Command-Line Help](../Topic/PowerShell.exe-Command-Line-Help.md). How to start [!INCLUDE[wps_2](../Token/wps_2_md.md)] from the Windows Command Prompt, and run basic [!INCLUDE[wps_2](../Token/wps_2_md.md)] commands.\n\n-   [Windows PowerShell Glossary](../Topic/Windows-PowerShell-Glossary.md). Learn about common terms used in [!INCLUDE[wps_2](../Token/wps_2_md.md)] and its documentation.\n\n## Related Technologies\n[!INCLUDE[wps_2](../Token/wps_2_md.md)] is part of a family of related scripting technologies that help you automate remote management of Windows\\-based computers. Links to more information about these technologies are included here for you.\n\n-   [Windows PowerShell Workflow](http://technet.microsoft.com/library/jj134242.aspx). First introduced in [!INCLUDE[psversion3](../Token/psversion3_md.md)], [!INCLUDE[wps_2](../Token/wps_2_md.md)] Workflow lets IT Pros and developers leverage the benefits of [Windows Workflow Foundation](http://msdn.microsoft.com/library/ee342461.aspx) with the automation capabilities and ease of [!INCLUDE[wps_2](../Token/wps_2_md.md)].\n\n-   [Windows PowerShell Web Access](http://technet.microsoft.com/library/hh831611.aspx). First introduced in [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], [!INCLUDE[wps_2](../Token/wps_2_md.md)] Web Access acts as a [!INCLUDE[wps_2](../Token/wps_2_md.md)] gateway, providing a web\\-based [!INCLUDE[wps_2](../Token/wps_2_md.md)] console that is targeted at a remote computer. It enables IT Pros to run [!INCLUDE[wps_2](../Token/wps_2_md.md)] commands and scripts from a [!INCLUDE[wps_2](../Token/wps_2_md.md)] console in a web browser, with no [!INCLUDE[wps_2](../Token/wps_2_md.md)], remote management software, or browser plug\\-in installation necessary on the client device.\n\n-   [Windows PowerShell Web Services (Management OData IIS Extension)](http://msdn.microsoft.com/library/windows/desktop/hh880865.aspx). [!INCLUDE[wps_2](../Token/wps_2_md.md)] Web Services is a framework for easily exposing [!INCLUDE[wps_2](../Token/wps_2_md.md)] cmdlets through an OData\\-based web service that is running in Web Server (IIS).\n\n-   [Get Started with Windows PowerShell Desired State Configuration](assetId:///c134aa32-b085-4656-9a89-955d8ff768d0). [!INCLUDE[wps_2](../Token/wps_2_md.md)] Desired State Configuration (DSC), introduced in [!INCLUDE[psversion4](../Token/psversion4_md.md)], is a new management platform in [!INCLUDE[wps_2](../Token/wps_2_md.md)] that enables the deployment and management of configuration data for software services and the environment on which these services run. DSC provides a set of [!INCLUDE[wps_2](../Token/wps_2_md.md)] language extensions, new cmdlets, and resources that you can use to declaratively specify how you want the state of your software environment to be configured.\n\n-   [Windows Management Framework 4.0 Preview](http://go.microsoft.com/fwlink/?LinkID=293881) includes updates to [!INCLUDE[wps_2](../Token/wps_2_md.md)], [!INCLUDE[wps_2](../Token/wps_2_md.md)] ISE, [!INCLUDE[wps_2](../Token/wps_2_md.md)] Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Infrastructure (WMI), the Server Manager WMI provider, and a new feature for 4.0, [!INCLUDE[wps_2](../Token/wps_2_md.md)] Desired State Configuration (DSC). Windows Management Framework 4.0 Preview allows you to install and use these technologies on computers that are running [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], [!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)] SP1, and [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] SP1.\n\n-   [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) includes updates to [!INCLUDE[wps_2](../Token/wps_2_md.md)], [!INCLUDE[wps_2](../Token/wps_2_md.md)] ISE, [!INCLUDE[wps_2](../Token/wps_2_md.md)] Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Infrastructure (WMI), and the Server Manager WMI provider. Windows Management Framework 3.0 allows you to install and use these technologies on computers that are running [!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)] SP1, Windows Server 2008 SP2, and [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] SP1.\n\n## Learning Windows PowerShell\nTo begin learning [!INCLUDE[wps_2](../Token/wps_2_md.md)], start with the following resources:\n\n-   [Microsoft Virtual Academy: Getting Started with PowerShell 3.0 Jump Start](http://www.microsoftvirtualacademy.com/training-courses/advanced-tools-scripting-with-powershell-3-0-jump-start). This Jump Start is designed to teach busy IT professionals, admins, and help desk people how to use [!INCLUDE[wps_2](../Token/wps_2_md.md)] to improve management capabilities, automate redundant tasks, and manage the environment in scale. Learn how [!INCLUDE[wps_2](../Token/wps_2_md.md)]works and how to make [!INCLUDE[wps_2](../Token/wps_2_md.md)] work for you from the experts Jeffrey Snover, the inventor of [!INCLUDE[wps_2](../Token/wps_2_md.md)], and Jason Helmick, Senior Technologist at Concentrated Technology.\n\n-   [Microsoft Virtual Academy: Advanced Tools & Scripting with PowerShell 3.0 Jump Start](http://www.microsoftvirtualacademy.com/training-courses/getting-started-with-powershell-3-0-jump-start). IT pros, take this advanced [!INCLUDE[wps_2](../Token/wps_2_md.md)] course to find out how to turn your real time management and automation scripts into useful reusable tools and cmdlets. You’ll learn the best patterns and practices for building and maintaining tools and you’ll pick up some special tips and tricks along the way from the architect and inventor of [!INCLUDE[wps_2](../Token/wps_2_md.md)], Distinguished Engineer Jeffrey Snover, and IT pro, Jason Helmick.\n\n-   [Getting Started with Windows PowerShell](../Topic/Getting-Started-with-Windows-PowerShell.md). An introduction and tutorial, including system requirements and instructions for installing and starting [!INCLUDE[wps_2](../Token/wps_2_md.md)] on all supported operating systems.\n\n-   [Windows PowerShell User's Guide](../Topic/Windows-PowerShell-User-s-Guide.md). A detailed introduction, including real\\-world scripts and scenarios to get you started.\n\n-   [Windows PowerShell Core Module Reference](http://technet.microsoft.com/library/hh847741(v=wps.630).aspx). An alphabetized list of help topics for the language features and cmdlets included as part of the [!INCLUDE[wps_2](../Token/wps_2_md.md)] engine.\n\n-   [Windows and Windows Server Automation with Windows PowerShell](http://technet.microsoft.com/library/dn249523.aspx). An alphabetized list of help topics for [!INCLUDE[wps_2](../Token/wps_2_md.md)] modules that are included as part of features or server roles included in Windows Server and Windows Client.\n\n-   [System Center Automation with Windows PowerShell](https://technet.microsoft.com/en-us/library/mt156962.aspx). An alphabetized list of help topics for [!INCLUDE[wps_2](../Token/wps_2_md.md)] modules that are included with components of Microsoft System Center.\n\n## Downloading and Updating Windows PowerShell Help\nThe following topics describe how you can get the latest Help for [!INCLUDE[wps_2](../Token/wps_2_md.md)] and display it at the [!INCLUDE[wps_2](../Token/wps_2_md.md)] command prompt.\n\n-   [Update-Help](http://technet.microsoft.com/library/hh849720.aspx) cmdlet. A [!INCLUDE[wps_2](../Token/wps_2_md.md)] cmdlet that downloads and installs the newest versions of help topics for [!INCLUDE[wps_2](../Token/wps_2_md.md)] modules on your computer.\n\n    For more information about the Updatable Help system in [!INCLUDE[wps_2](../Token/wps_2_md.md)], including how to install Updatable Help on network\\-isolated computers, see [about_Updatable_Help](http://technet.microsoft.com/library/hh847735.aspx), [Save-Help](http://technet.microsoft.com/library/hh849724.aspx), and [Supporting Updatable Help](http://msdn.microsoft.com/library/hh852754.aspx).\n\n-   [Get-Help](http://technet.microsoft.com/library/hh849696(v=wps.630).aspx) cmdlet. A [!INCLUDE[wps_2](../Token/wps_2_md.md)] cmdlet that you can use to learn about the cmdlets and providers that are installed on your system.\n\n-   You can get notifications about any updates to published Help files by subscribing to the following RSS feed: [http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions](http://sxp.microsoft.com/feeds/msdntn/PowerShellHelpVersions).\n\n"
+}
