@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "content": "Introducing the Windows PowerShell ISE",
+      "pos": [
+        11,
+        49
+      ]
+    },
+    {
+      "content": "Introducing the Windows PowerShell ISE",
+      "pos": [
+        184,
+        222
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">[!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]</ph> is a host application for <ph id=\"ph2\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph>.",
+      "pos": [
+        223,
+        361
+      ]
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph>, you can run commands and write, test, and debug scripts in a single Windows\\-based graphic user interface with multiline editing, tab completion, syntax coloring, selective execution, context\\-sensitive help, and support for right\\-to\\-left languages.",
+      "pos": [
+        362,
+        689
+      ]
+    },
+    {
+      "content": "You can use menu items and keyboard shortcuts to perform many of the same tasks that you would perform in the <ph id=\"ph1\">[!INCLUDE[psconsole](../Token/psconsole_md.md)]</ph>.",
+      "pos": [
+        690,
+        848
+      ]
+    },
+    {
+      "content": "For example, when you debug a script in the <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph>, to set a line breakpoint in a script, right\\-click the line of code, and then click <bpt id=\"p1\">**</bpt>Toggle Breakpoint<ept id=\"p1\">**</ept>.",
+      "pos": [
+        850,
+        1073
+      ]
+    },
+    {
+      "pos": [
+        1075,
+        1169
+      ],
+      "content": "Try these features in <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph>."
+    },
+    {
+      "content": "Multiline editing: To insert a blank line under the current line in the Command pane, press SHIFT\\+ENTER.",
+      "pos": [
+        1175,
+        1280
+      ]
+    },
+    {
+      "content": "Selective execution: To run part of a script, select the text you want to run, and then click the <bpt id=\"p1\">**</bpt>Run Script<ept id=\"p1\">**</ept> button.",
+      "pos": [
+        1286,
+        1406
+      ]
+    },
+    {
+      "content": "Or, press F5.",
+      "pos": [
+        1407,
+        1420
+      ]
+    },
+    {
+      "content": "Context\\-sensitive help: Type <bpt id=\"p1\">**</bpt>Invoke\\-Item<ept id=\"p1\">**</ept>, and then press F1.",
+      "pos": [
+        1426,
+        1492
+      ]
+    },
+    {
+      "content": "The Help file opens to the Help topic for the <bpt id=\"p1\">**</bpt>Invoke\\-Item<ept id=\"p1\">**</ept> cmdlet.",
+      "pos": [
+        1493,
+        1563
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> lets you customize some aspects of its appearance.",
+      "pos": [
+        1565,
+        1691
+      ]
+    },
+    {
+      "content": "It also has its own <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> profile, where you can store functions, aliases, variables, and commands you use in the <ph id=\"ph2\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph>.",
+      "pos": [
+        1692,
+        1918
+      ]
+    },
+    {
+      "content": "To start the Windows PowerShell ISE",
+      "pos": [
+        1924,
+        1959
+      ]
+    },
+    {
+      "content": "Do one of the following:",
+      "pos": [
+        1965,
+        1989
+      ]
+    },
+    {
+      "pos": [
+        1999,
+        2121
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept>, point to <bpt id=\"p2\">**</bpt>All Programs<ept id=\"p2\">**</ept>, point to <bpt id=\"p3\">**</bpt>Windows PowerShell V2<ept id=\"p3\">**</ept>, and then click <bpt id=\"p4\">**</bpt>Windows PowerShell ISE<ept id=\"p4\">**</ept>."
+    },
+    {
+      "pos": [
+        2131,
+        2244
+      ],
+      "content": "In the <ph id=\"ph1\">[!INCLUDE[psconsole](../Token/psconsole_md.md)]</ph> Cmd.exe, or in the Run box, type, <bpt id=\"p1\">**</bpt>powershell\\_ise.exe<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "To get Help in the Windows PowerShell ISE",
+      "pos": [
+        2250,
+        2291
+      ]
+    },
+    {
+      "content": "On the <bpt id=\"p1\">**</bpt>Help<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Windows PowerShell Help<ept id=\"p2\">**</ept>.",
+      "pos": [
+        2297,
+        2353
+      ]
+    },
+    {
+      "content": "Or, press F1.",
+      "pos": [
+        2354,
+        2367
+      ]
+    },
+    {
+      "content": "The file that opens describes Windows PowerShell ISE and Windows PowerShell, including all of the help available from the Get\\-Help cmdlet.",
+      "pos": [
+        2368,
+        2507
+      ]
+    }
+  ],
+  "content": "---\ntitle: Introducing the Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: a0de70ca-909a-4807-94d1-6da86e5b52a0\n---\n# Introducing the Windows PowerShell ISE\nThe [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)] is a host application for [!INCLUDE[mshshort](../Token/mshshort_md.md)]. In [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)], you can run commands and write, test, and debug scripts in a single Windows\\-based graphic user interface with multiline editing, tab completion, syntax coloring, selective execution, context\\-sensitive help, and support for right\\-to\\-left languages.\nYou can use menu items and keyboard shortcuts to perform many of the same tasks that you would perform in the [!INCLUDE[psconsole](../Token/psconsole_md.md)].  For example, when you debug a script in the [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)], to set a line breakpoint in a script, right\\-click the line of code, and then click **Toggle Breakpoint**.\n\nTry these features in [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)].\n\n-   Multiline editing: To insert a blank line under the current line in the Command pane, press SHIFT\\+ENTER.\n\n-   Selective execution: To run part of a script, select the text you want to run, and then click the **Run Script** button. Or, press F5.\n\n-   Context\\-sensitive help: Type **Invoke\\-Item**, and then press F1. The Help file opens to the Help topic for the **Invoke\\-Item** cmdlet.\n\nThe [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] lets you customize some aspects of its appearance. It also has its own [!INCLUDE[mshshort](../Token/mshshort_md.md)] profile, where you can store functions, aliases, variables, and commands you use in the [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)].\n\n### To start the Windows PowerShell ISE\n\n1.  Do one of the following:\n\n    -   Click **Start**, point to **All Programs**, point to **Windows PowerShell V2**, and then click **Windows PowerShell ISE**.\n\n    -   In the [!INCLUDE[psconsole](../Token/psconsole_md.md)] Cmd.exe, or in the Run box, type, **powershell\\_ise.exe**.\n\n### To get Help in the Windows PowerShell ISE\n\n-   On the **Help** menu, click **Windows PowerShell Help**. Or, press F1. The file that opens describes Windows PowerShell ISE and Windows PowerShell, including all of the help available from the Get\\-Help cmdlet.\n\n"
+}

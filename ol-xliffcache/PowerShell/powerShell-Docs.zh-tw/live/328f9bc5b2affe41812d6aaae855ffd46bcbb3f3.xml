@@ -1,0 +1,1336 @@
+{
+  "nodes": [
+    {
+      "content": "Keyboard Shortcuts for the Windows PowerShell ISE",
+      "pos": [
+        11,
+        60
+      ]
+    },
+    {
+      "content": "Keyboard Shortcuts for the Windows PowerShell ISE",
+      "pos": [
+        195,
+        244
+      ]
+    },
+    {
+      "content": "Use the following keyboard shortcuts to perform actions in <ph id=\"ph1\">[!INCLUDE[ise_1](../Token/ise_1_md.md)]</ph>.",
+      "pos": [
+        245,
+        344
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the <bpt id=\"p1\">[</bpt>Windows Management Framework 4.0 download package<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=293881)</ept>.",
+      "pos": [
+        345,
+        646
+      ]
+    },
+    {
+      "content": "Keyboard shortcuts for editing text",
+      "pos": [
+        651,
+        686
+      ]
+    },
+    {
+      "content": "You can use the following keyboard shortcuts when you edit text.",
+      "pos": [
+        687,
+        751
+      ]
+    },
+    {
+      "content": "Action",
+      "pos": [
+        754,
+        760
+      ]
+    },
+    {
+      "content": "Keyboard Shortcuts",
+      "pos": [
+        761,
+        779
+      ]
+    },
+    {
+      "content": "Use in",
+      "pos": [
+        780,
+        786
+      ]
+    },
+    {
+      "content": "Help",
+      "pos": [
+        838,
+        842
+      ]
+    },
+    {
+      "content": "F1",
+      "pos": [
+        845,
+        847
+      ]
+    },
+    {
+      "content": "Script Pane <bpt id=\"p1\">**</bpt>Important:<ept id=\"p1\">**</ept> You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update\\-Help).",
+      "pos": [
+        848,
+        984
+      ]
+    },
+    {
+      "content": "To select, click <bpt id=\"p1\">**</bpt>Tools<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>Options<ept id=\"p2\">**</ept>, then on the <bpt id=\"p3\">**</bpt>General Settings<ept id=\"p3\">**</ept>tab, set or clear <bpt id=\"p4\">**</bpt>Use local help content instead of online content.<ept id=\"p4\">**</ept>",
+      "pos": [
+        985,
+        1129
+      ]
+    },
+    {
+      "content": "Copy",
+      "pos": [
+        1134,
+        1138
+      ]
+    },
+    {
+      "content": "CTRL\\+C",
+      "pos": [
+        1141,
+        1148
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane, Output Pane",
+      "pos": [
+        1149,
+        1187
+      ]
+    },
+    {
+      "content": "Cut",
+      "pos": [
+        1192,
+        1195
+      ]
+    },
+    {
+      "content": "CTRL\\+X",
+      "pos": [
+        1198,
+        1205
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane",
+      "pos": [
+        1206,
+        1231
+      ]
+    },
+    {
+      "content": "Expand or Collapse Outlining",
+      "pos": [
+        1236,
+        1264
+      ]
+    },
+    {
+      "content": "CTRL\\+M",
+      "pos": [
+        1267,
+        1274
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1275,
+        1286
+      ]
+    },
+    {
+      "content": "Find in Script",
+      "pos": [
+        1291,
+        1305
+      ]
+    },
+    {
+      "content": "CTRL\\+F",
+      "pos": [
+        1308,
+        1315
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1316,
+        1327
+      ]
+    },
+    {
+      "content": "Find Next in Script",
+      "pos": [
+        1332,
+        1351
+      ]
+    },
+    {
+      "content": "F3",
+      "pos": [
+        1354,
+        1356
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1357,
+        1368
+      ]
+    },
+    {
+      "content": "Find Previous in Script",
+      "pos": [
+        1373,
+        1396
+      ]
+    },
+    {
+      "content": "SHIFT\\+F3",
+      "pos": [
+        1399,
+        1408
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1409,
+        1420
+      ]
+    },
+    {
+      "content": "Find Matching Brace",
+      "pos": [
+        1425,
+        1444
+      ]
+    },
+    {
+      "content": "CTRL\\+]",
+      "pos": [
+        1447,
+        1454
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1455,
+        1466
+      ]
+    },
+    {
+      "content": "Paste",
+      "pos": [
+        1471,
+        1476
+      ]
+    },
+    {
+      "content": "CTRL\\+V",
+      "pos": [
+        1479,
+        1486
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane",
+      "pos": [
+        1487,
+        1512
+      ]
+    },
+    {
+      "content": "Redo",
+      "pos": [
+        1517,
+        1521
+      ]
+    },
+    {
+      "content": "CTRL\\+Y",
+      "pos": [
+        1524,
+        1531
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane",
+      "pos": [
+        1532,
+        1557
+      ]
+    },
+    {
+      "content": "Replace in Script",
+      "pos": [
+        1562,
+        1579
+      ]
+    },
+    {
+      "content": "CTRL\\+H",
+      "pos": [
+        1582,
+        1589
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1590,
+        1601
+      ]
+    },
+    {
+      "content": "Save",
+      "pos": [
+        1606,
+        1610
+      ]
+    },
+    {
+      "content": "CTRL\\+S",
+      "pos": [
+        1613,
+        1620
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        1621,
+        1632
+      ]
+    },
+    {
+      "content": "Select All",
+      "pos": [
+        1637,
+        1647
+      ]
+    },
+    {
+      "content": "CTRL\\+A",
+      "pos": [
+        1650,
+        1657
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane, Output Pane",
+      "pos": [
+        1658,
+        1696
+      ]
+    },
+    {
+      "content": "Show Snippets",
+      "pos": [
+        1701,
+        1714
+      ]
+    },
+    {
+      "content": "CTRL\\+J",
+      "pos": [
+        1717,
+        1724
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane",
+      "pos": [
+        1725,
+        1750
+      ]
+    },
+    {
+      "content": "Undo",
+      "pos": [
+        1755,
+        1759
+      ]
+    },
+    {
+      "content": "CTRL\\+Z",
+      "pos": [
+        1762,
+        1769
+      ]
+    },
+    {
+      "content": "Script Pane, Command Pane",
+      "pos": [
+        1770,
+        1795
+      ]
+    },
+    {
+      "content": "Keyboard shortcuts for running scripts",
+      "pos": [
+        1801,
+        1839
+      ]
+    },
+    {
+      "content": "You can use the following keyboard shortcuts when you run scripts in the Script Pane.",
+      "pos": [
+        1840,
+        1925
+      ]
+    },
+    {
+      "content": "Action",
+      "pos": [
+        1928,
+        1934
+      ]
+    },
+    {
+      "content": "Keyboard Shortcut",
+      "pos": [
+        1935,
+        1952
+      ]
+    },
+    {
+      "content": "New",
+      "pos": [
+        1992,
+        1995
+      ]
+    },
+    {
+      "content": "CTRL\\+N",
+      "pos": [
+        1998,
+        2005
+      ]
+    },
+    {
+      "content": "Open",
+      "pos": [
+        2010,
+        2014
+      ]
+    },
+    {
+      "content": "CTRL\\+O",
+      "pos": [
+        2017,
+        2024
+      ]
+    },
+    {
+      "content": "Run",
+      "pos": [
+        2029,
+        2032
+      ]
+    },
+    {
+      "content": "F5",
+      "pos": [
+        2035,
+        2037
+      ]
+    },
+    {
+      "content": "Run Selection",
+      "pos": [
+        2042,
+        2055
+      ]
+    },
+    {
+      "content": "F8",
+      "pos": [
+        2058,
+        2060
+      ]
+    },
+    {
+      "content": "Stop Execution",
+      "pos": [
+        2065,
+        2079
+      ]
+    },
+    {
+      "content": "CTRL\\+BREAK.",
+      "pos": [
+        2082,
+        2094
+      ]
+    },
+    {
+      "content": "CTRL\\+C can be used when the context is unambiguous (when there is no text selected).",
+      "pos": [
+        2095,
+        2180
+      ]
+    },
+    {
+      "pos": [
+        2183,
+        2207
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Tab<ept id=\"p1\">**</ept> (to next script)"
+    },
+    {
+      "pos": [
+        2208,
+        2406
+      ],
+      "content": "CTRL\\+TAB <bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane."
+    },
+    {
+      "pos": [
+        2409,
+        2437
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Tab<ept id=\"p1\">**</ept> (to previous script)"
+    },
+    {
+      "pos": [
+        2438,
+        2640
+      ],
+      "content": "CTRL\\+SHIFT\\+TAB <bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane."
+    },
+    {
+      "content": "Keyboard shortcuts for customizing the view",
+      "pos": [
+        2646,
+        2689
+      ]
+    },
+    {
+      "content": "You can use the following keyboard shortcuts to customize the view in <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph>.",
+      "pos": [
+        2690,
+        2832
+      ]
+    },
+    {
+      "content": "They are accessible from all the panes in the application.",
+      "pos": [
+        2833,
+        2891
+      ]
+    },
+    {
+      "content": "Action",
+      "pos": [
+        2894,
+        2900
+      ]
+    },
+    {
+      "content": "Keyboard Shortcut",
+      "pos": [
+        2901,
+        2918
+      ]
+    },
+    {
+      "content": "Go to Command (v2) or Console (v3 and later) Pane",
+      "pos": [
+        2958,
+        3007
+      ]
+    },
+    {
+      "content": "CTRL\\+D",
+      "pos": [
+        3010,
+        3017
+      ]
+    },
+    {
+      "content": "Go to Output Pane (v2 only)",
+      "pos": [
+        3022,
+        3049
+      ]
+    },
+    {
+      "content": "CTRL\\+SHIFT\\+O",
+      "pos": [
+        3052,
+        3066
+      ]
+    },
+    {
+      "content": "Go to Script Pane",
+      "pos": [
+        3071,
+        3088
+      ]
+    },
+    {
+      "content": "CTRL\\+I",
+      "pos": [
+        3091,
+        3098
+      ]
+    },
+    {
+      "content": "Show Script Pane",
+      "pos": [
+        3103,
+        3119
+      ]
+    },
+    {
+      "content": "CTRL\\+R",
+      "pos": [
+        3122,
+        3129
+      ]
+    },
+    {
+      "content": "Hide Script Pane",
+      "pos": [
+        3134,
+        3150
+      ]
+    },
+    {
+      "content": "CTRL\\+R",
+      "pos": [
+        3153,
+        3160
+      ]
+    },
+    {
+      "content": "Move Script Pane Up",
+      "pos": [
+        3165,
+        3184
+      ]
+    },
+    {
+      "content": "CTRL\\+1",
+      "pos": [
+        3187,
+        3194
+      ]
+    },
+    {
+      "content": "Move Script Pane Right",
+      "pos": [
+        3199,
+        3221
+      ]
+    },
+    {
+      "content": "CTRL\\+2",
+      "pos": [
+        3224,
+        3231
+      ]
+    },
+    {
+      "content": "Maximize Script Pane",
+      "pos": [
+        3236,
+        3256
+      ]
+    },
+    {
+      "content": "CTRL\\+3",
+      "pos": [
+        3259,
+        3266
+      ]
+    },
+    {
+      "content": "Zoom In",
+      "pos": [
+        3271,
+        3278
+      ]
+    },
+    {
+      "content": "CTRL\\+PLUS SIGN",
+      "pos": [
+        3281,
+        3296
+      ]
+    },
+    {
+      "content": "Zoom Out",
+      "pos": [
+        3301,
+        3309
+      ]
+    },
+    {
+      "content": "CTRL\\+MINUS SIGN",
+      "pos": [
+        3312,
+        3328
+      ]
+    },
+    {
+      "content": "Keyboard shortcuts for debugging scripts",
+      "pos": [
+        3334,
+        3374
+      ]
+    },
+    {
+      "content": "You can use the following keyboard shortcuts when you debug scripts.",
+      "pos": [
+        3375,
+        3443
+      ]
+    },
+    {
+      "content": "Action",
+      "pos": [
+        3446,
+        3452
+      ]
+    },
+    {
+      "content": "Keyboard Shortcut",
+      "pos": [
+        3453,
+        3470
+      ]
+    },
+    {
+      "content": "Use in",
+      "pos": [
+        3471,
+        3477
+      ]
+    },
+    {
+      "content": "Run\\/Continue",
+      "pos": [
+        3528,
+        3541
+      ]
+    },
+    {
+      "content": "F5",
+      "pos": [
+        3544,
+        3546
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3547,
+        3583
+      ]
+    },
+    {
+      "content": "Step Into",
+      "pos": [
+        3588,
+        3597
+      ]
+    },
+    {
+      "content": "F11",
+      "pos": [
+        3600,
+        3603
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3604,
+        3640
+      ]
+    },
+    {
+      "content": "Step Over",
+      "pos": [
+        3645,
+        3654
+      ]
+    },
+    {
+      "content": "F10",
+      "pos": [
+        3657,
+        3660
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3661,
+        3697
+      ]
+    },
+    {
+      "content": "Step Out",
+      "pos": [
+        3702,
+        3710
+      ]
+    },
+    {
+      "content": "SHIFT\\+F11",
+      "pos": [
+        3713,
+        3723
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3724,
+        3760
+      ]
+    },
+    {
+      "content": "Display Call Stack",
+      "pos": [
+        3765,
+        3783
+      ]
+    },
+    {
+      "content": "CTRL\\+SHIFT\\+D",
+      "pos": [
+        3786,
+        3800
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3801,
+        3837
+      ]
+    },
+    {
+      "content": "List Breakpoints",
+      "pos": [
+        3842,
+        3858
+      ]
+    },
+    {
+      "content": "CTRL\\+SHIFT\\+L",
+      "pos": [
+        3861,
+        3875
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3876,
+        3912
+      ]
+    },
+    {
+      "content": "Toggle Breakpoint",
+      "pos": [
+        3917,
+        3934
+      ]
+    },
+    {
+      "content": "F9",
+      "pos": [
+        3937,
+        3939
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        3940,
+        3976
+      ]
+    },
+    {
+      "content": "Remove All Breakpoints",
+      "pos": [
+        3981,
+        4003
+      ]
+    },
+    {
+      "content": "CTRL\\+SHIFT\\+F9",
+      "pos": [
+        4006,
+        4021
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        4022,
+        4058
+      ]
+    },
+    {
+      "content": "Stop Debugger",
+      "pos": [
+        4063,
+        4076
+      ]
+    },
+    {
+      "content": "SHIFT\\+F5",
+      "pos": [
+        4079,
+        4088
+      ]
+    },
+    {
+      "content": "Script Pane, when debugging a script",
+      "pos": [
+        4089,
+        4125
+      ]
+    },
+    {
+      "pos": [
+        4130,
+        4361
+      ],
+      "content": "[!NOTE]\nYou can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.",
+          "pos": [
+            8,
+            229
+          ],
+          "nodes": [
+            {
+              "content": "You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE.",
+              "pos": [
+                0,
+                133
+              ]
+            },
+            {
+              "content": "To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.",
+              "pos": [
+                134,
+                221
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Action",
+      "pos": [
+        4364,
+        4370
+      ]
+    },
+    {
+      "content": "Keyboard Shortcut",
+      "pos": [
+        4371,
+        4388
+      ]
+    },
+    {
+      "content": "Use in",
+      "pos": [
+        4389,
+        4395
+      ]
+    },
+    {
+      "content": "Continue",
+      "pos": [
+        4446,
+        4454
+      ]
+    },
+    {
+      "content": "C",
+      "pos": [
+        4457,
+        4458
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4459,
+        4496
+      ]
+    },
+    {
+      "content": "Step Into",
+      "pos": [
+        4501,
+        4510
+      ]
+    },
+    {
+      "content": "S",
+      "pos": [
+        4513,
+        4514
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4515,
+        4552
+      ]
+    },
+    {
+      "content": "Step Over",
+      "pos": [
+        4557,
+        4566
+      ]
+    },
+    {
+      "content": "V",
+      "pos": [
+        4569,
+        4570
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4571,
+        4608
+      ]
+    },
+    {
+      "content": "Step Out",
+      "pos": [
+        4613,
+        4621
+      ]
+    },
+    {
+      "content": "O",
+      "pos": [
+        4624,
+        4625
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4626,
+        4663
+      ]
+    },
+    {
+      "pos": [
+        4666,
+        4718
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Repeat Last Command<ept id=\"p1\">**</ept> (for Step Into or Step Over)"
+    },
+    {
+      "content": "ENTER",
+      "pos": [
+        4719,
+        4724
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4725,
+        4762
+      ]
+    },
+    {
+      "content": "Display Call Stack",
+      "pos": [
+        4767,
+        4785
+      ]
+    },
+    {
+      "content": "K",
+      "pos": [
+        4788,
+        4789
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4790,
+        4827
+      ]
+    },
+    {
+      "content": "Stop Debugging",
+      "pos": [
+        4832,
+        4846
+      ]
+    },
+    {
+      "content": "Q",
+      "pos": [
+        4849,
+        4850
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4851,
+        4888
+      ]
+    },
+    {
+      "content": "List the Script",
+      "pos": [
+        4893,
+        4908
+      ]
+    },
+    {
+      "content": "L",
+      "pos": [
+        4911,
+        4912
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4913,
+        4950
+      ]
+    },
+    {
+      "content": "Display Console Debugging Commands",
+      "pos": [
+        4955,
+        4989
+      ]
+    },
+    {
+      "content": "H or ?",
+      "pos": [
+        4992,
+        4998
+      ]
+    },
+    {
+      "content": "Console Pane, when debugging a script",
+      "pos": [
+        4999,
+        5036
+      ]
+    },
+    {
+      "content": "Keyboard shortcuts for Windows PowerShell tabs",
+      "pos": [
+        5042,
+        5088
+      ]
+    },
+    {
+      "content": "You can use the following keyboard shortcuts when you use Windows PowerShell tabs.",
+      "pos": [
+        5089,
+        5171
+      ]
+    },
+    {
+      "content": "Action",
+      "pos": [
+        5174,
+        5180
+      ]
+    },
+    {
+      "content": "Keyboard Shortcut",
+      "pos": [
+        5181,
+        5198
+      ]
+    },
+    {
+      "content": "Close PowerShell Tab",
+      "pos": [
+        5238,
+        5258
+      ]
+    },
+    {
+      "content": "CTRL\\+W",
+      "pos": [
+        5261,
+        5268
+      ]
+    },
+    {
+      "content": "New PowerShell Tab",
+      "pos": [
+        5273,
+        5291
+      ]
+    },
+    {
+      "content": "CTRL\\+T",
+      "pos": [
+        5294,
+        5301
+      ]
+    },
+    {
+      "content": "Previous PowerShell tab",
+      "pos": [
+        5306,
+        5329
+      ]
+    },
+    {
+      "content": "CTRL\\+SHIFT\\+TAB.",
+      "pos": [
+        5332,
+        5349
+      ]
+    },
+    {
+      "content": "This shortcut works only when no files are open on any Windows PowerShell tab.",
+      "pos": [
+        5350,
+        5428
+      ]
+    },
+    {
+      "content": "Next Windows PowerShell tab",
+      "pos": [
+        5433,
+        5460
+      ]
+    },
+    {
+      "content": "CTRL\\+TAB.",
+      "pos": [
+        5463,
+        5473
+      ]
+    },
+    {
+      "content": "This shortcut works only when no files are open on any Windows PowerShell tab.",
+      "pos": [
+        5474,
+        5552
+      ]
+    },
+    {
+      "content": "Keyboard shortcuts for starting and exiting",
+      "pos": [
+        5558,
+        5601
+      ]
+    },
+    {
+      "pos": [
+        5602,
+        5755
+      ],
+      "content": "You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>."
+    },
+    {
+      "content": "Action",
+      "pos": [
+        5758,
+        5764
+      ]
+    },
+    {
+      "content": "Keyboard Shortcut",
+      "pos": [
+        5765,
+        5782
+      ]
+    },
+    {
+      "content": "Exit",
+      "pos": [
+        5822,
+        5826
+      ]
+    },
+    {
+      "content": "ALT\\+F4",
+      "pos": [
+        5829,
+        5836
+      ]
+    },
+    {
+      "pos": [
+        5839,
+        5913
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Start PowerShell.exe<ept id=\"p1\">**</ept> (<ph id=\"ph1\">[!INCLUDE[psconsole](../Token/psconsole_md.md)]</ph>)"
+    },
+    {
+      "content": "CTRL\\+SHIFT\\+P",
+      "pos": [
+        5914,
+        5928
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        5934,
+        5942
+      ]
+    },
+    {
+      "content": "PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts",
+      "pos": [
+        5944,
+        6027
+      ]
+    }
+  ],
+  "content": "---\ntitle: Keyboard Shortcuts for the Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b\n---\n# Keyboard Shortcuts for the Windows PowerShell ISE\nUse the following keyboard shortcuts to perform actions in [!INCLUDE[ise_1](../Token/ise_1_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the [Windows Management Framework 4.0 download package](http://go.microsoft.com/fwlink/?LinkID=293881).\n\n## Keyboard shortcuts for editing text\nYou can use the following keyboard shortcuts when you edit text.\n\n|Action|Keyboard Shortcuts|Use in|\n|----------|----------------------|----------|\n|**Help**|F1|Script Pane **Important:** You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update\\-Help). To select, click **Tools**, **Options**, then on the **General Settings**tab, set or clear **Use local help content instead of online content.**|\n|**Copy**|CTRL\\+C|Script Pane, Command Pane, Output Pane|\n|**Cut**|CTRL\\+X|Script Pane, Command Pane|\n|**Expand or Collapse Outlining**|CTRL\\+M|Script Pane|\n|**Find in Script**|CTRL\\+F|Script Pane|\n|**Find Next in Script**|F3|Script Pane|\n|**Find Previous in Script**|SHIFT\\+F3|Script Pane|\n|**Find Matching Brace**|CTRL\\+]|Script Pane|\n|**Paste**|CTRL\\+V|Script Pane, Command Pane|\n|**Redo**|CTRL\\+Y|Script Pane, Command Pane|\n|**Replace in Script**|CTRL\\+H|Script Pane|\n|**Save**|CTRL\\+S|Script Pane|\n|**Select All**|CTRL\\+A|Script Pane, Command Pane, Output Pane|\n|**Show Snippets**|CTRL\\+J|Script Pane, Command Pane|\n|**Undo**|CTRL\\+Z|Script Pane, Command Pane|\n\n## Keyboard shortcuts for running scripts\nYou can use the following keyboard shortcuts when you run scripts in the Script Pane.\n\n|Action|Keyboard Shortcut|\n|----------|---------------------|\n|**New**|CTRL\\+N|\n|**Open**|CTRL\\+O|\n|**Run**|F5|\n|**Run Selection**|F8|\n|**Stop Execution**|CTRL\\+BREAK. CTRL\\+C can be used when the context is unambiguous (when there is no text selected).|\n|**Tab** (to next script)|CTRL\\+TAB **Note:** Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane.|\n|**Tab** (to previous script)|CTRL\\+SHIFT\\+TAB **Note:** Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane.|\n\n## Keyboard shortcuts for customizing the view\nYou can use the following keyboard shortcuts to customize the view in [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]. They are accessible from all the panes in the application.\n\n|Action|Keyboard Shortcut|\n|----------|---------------------|\n|**Go to Command (v2) or Console (v3 and later) Pane**|CTRL\\+D|\n|**Go to Output Pane (v2 only)**|CTRL\\+SHIFT\\+O|\n|**Go to Script Pane**|CTRL\\+I|\n|**Show Script Pane**|CTRL\\+R|\n|**Hide Script Pane**|CTRL\\+R|\n|**Move Script Pane Up**|CTRL\\+1|\n|**Move Script Pane Right**|CTRL\\+2|\n|**Maximize Script Pane**|CTRL\\+3|\n|**Zoom In**|CTRL\\+PLUS SIGN|\n|**Zoom Out**|CTRL\\+MINUS SIGN|\n\n## Keyboard shortcuts for debugging scripts\nYou can use the following keyboard shortcuts when you debug scripts.\n\n|Action|Keyboard Shortcut|Use in|\n|----------|---------------------|----------|\n|**Run\\/Continue**|F5|Script Pane, when debugging a script|\n|**Step Into**|F11|Script Pane, when debugging a script|\n|**Step Over**|F10|Script Pane, when debugging a script|\n|**Step Out**|SHIFT\\+F11|Script Pane, when debugging a script|\n|**Display Call Stack**|CTRL\\+SHIFT\\+D|Script Pane, when debugging a script|\n|**List Breakpoints**|CTRL\\+SHIFT\\+L|Script Pane, when debugging a script|\n|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|\n|**Remove All Breakpoints**|CTRL\\+SHIFT\\+F9|Script Pane, when debugging a script|\n|**Stop Debugger**|SHIFT\\+F5|Script Pane, when debugging a script|\n\n> [!NOTE]\n> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.\n\n|Action|Keyboard Shortcut|Use in|\n|----------|---------------------|----------|\n|**Continue**|C|Console Pane, when debugging a script|\n|**Step Into**|S|Console Pane, when debugging a script|\n|**Step Over**|V|Console Pane, when debugging a script|\n|**Step Out**|O|Console Pane, when debugging a script|\n|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|\n|**Display Call Stack**|K|Console Pane, when debugging a script|\n|**Stop Debugging**|Q|Console Pane, when debugging a script|\n|**List the Script**|L|Console Pane, when debugging a script|\n|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|\n\n## Keyboard shortcuts for Windows PowerShell tabs\nYou can use the following keyboard shortcuts when you use Windows PowerShell tabs.\n\n|Action|Keyboard Shortcut|\n|----------|---------------------|\n|**Close PowerShell Tab**|CTRL\\+W|\n|**New PowerShell Tab**|CTRL\\+T|\n|**Previous PowerShell tab**|CTRL\\+SHIFT\\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|\n|**Next Windows PowerShell tab**|CTRL\\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|\n\n## Keyboard shortcuts for starting and exiting\nYou can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n|Action|Keyboard Shortcut|\n|----------|---------------------|\n|**Exit**|ALT\\+F4|\n|**Start PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL\\+SHIFT\\+P|\n\n## See Also\n[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)\n\n"
+}

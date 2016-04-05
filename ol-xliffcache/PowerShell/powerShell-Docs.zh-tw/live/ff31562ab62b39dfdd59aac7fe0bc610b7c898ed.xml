@@ -1,0 +1,356 @@
+{
+  "nodes": [
+    {
+      "content": "How to Use Profiles in Windows PowerShell ISE",
+      "pos": [
+        11,
+        56
+      ]
+    },
+    {
+      "content": "How to Use Profiles in Windows PowerShell ISE",
+      "pos": [
+        191,
+        236
+      ]
+    },
+    {
+      "content": "This topic explains how to use Profiles in <ph id=\"ph1\">[!INCLUDE[ise_1](../Token/ise_1_md.md)]</ph>.",
+      "pos": [
+        237,
+        320
+      ]
+    },
+    {
+      "content": "We recommend that before performing the tasks in this section, you review <bpt id=\"p1\">[</bpt>about_Profiles [v4]<ept id=\"p1\">](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054)</ept>, or in the Console Pane, type, “get\\-help about\\_profiles” and press <bpt id=\"p2\">**</bpt>ENTER<ept id=\"p2\">**</ept>.",
+      "pos": [
+        321,
+        545
+      ]
+    },
+    {
+      "content": "A profile is a <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> script that runs automatically when you start a new session.",
+      "pos": [
+        547,
+        662
+      ]
+    },
+    {
+      "content": "You can create one or more <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> profiles for <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> and use them to add the configure the <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> or <ph id=\"ph4\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> environment, preparing it for your use, with variables, aliases, functions, and color and font preferences that you want available.",
+      "pos": [
+        664,
+        1036
+      ]
+    },
+    {
+      "content": "A profile affects every <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> session that you start.",
+      "pos": [
+        1037,
+        1124
+      ]
+    },
+    {
+      "pos": [
+        1128,
+        1548
+      ],
+      "content": "[!NOTE]\nThe [!INCLUDE[wps_2](../Token/wps_2_md.md)] execution policy determines whether you can run scripts and load a profile. The default execution policy, “Restricted,” prevents all scripts from running, including profiles. If you use the “Restricted” policy, the profile cannot load. For more information about execution policy, see [about_Execution_Policies [v4]](assetId:///347708dc-1515-4d74-978b-8334603472e6).",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "The [!INCLUDE[wps_2](../Token/wps_2_md.md)] execution policy determines whether you can run scripts and load a profile. The default execution policy, “Restricted,” prevents all scripts from running, including profiles. If you use the “Restricted” policy, the profile cannot load. For more information about execution policy, see [about_Execution_Policies [v4]](assetId:///347708dc-1515-4d74-978b-8334603472e6).",
+          "pos": [
+            8,
+            418
+          ],
+          "nodes": [
+            {
+              "content": "The <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> execution policy determines whether you can run scripts and load a profile.",
+              "pos": [
+                0,
+                119
+              ]
+            },
+            {
+              "content": "The default execution policy, “Restricted,” prevents all scripts from running, including profiles.",
+              "pos": [
+                120,
+                218
+              ]
+            },
+            {
+              "content": "If you use the “Restricted” policy, the profile cannot load.",
+              "pos": [
+                219,
+                279
+              ]
+            },
+            {
+              "content": "For more information about execution policy, see <bpt id=\"p1\">[</bpt>about_Execution_Policies [v4]<ept id=\"p1\">](assetId:///347708dc-1515-4d74-978b-8334603472e6)</ept>.",
+              "pos": [
+                280,
+                410
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Selecting a profile to use in the Windows PowerShell ISE",
+      "pos": [
+        1553,
+        1609
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> supports profiles for the current user and all users.",
+      "pos": [
+        1610,
+        1703
+      ]
+    },
+    {
+      "content": "It also supports the <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> profiles that apply to all hosts.",
+      "pos": [
+        1704,
+        1798
+      ]
+    },
+    {
+      "pos": [
+        1800,
+        1938
+      ],
+      "content": "The profile that you use is determined by how you use <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>."
+    },
+    {
+      "pos": [
+        1944,
+        2256
+      ],
+      "content": "If you use only <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> to run Windows PowerShell, then save all your items in one of the ISE\\-specific profiles, such as the CurrentUserCurrentHost profile for <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> or the AllUsersCurrentHost profile for <ph id=\"ph3\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>."
+    },
+    {
+      "pos": [
+        2262,
+        2723
+      ],
+      "content": "If you use multiple host programs to run Windows PowerShell, save your functions, aliases, variables, and commands in a profile that affects all host programs, such as the CurrentUserAllHosts or the AllUsersAllHosts profile, and save ISE\\-specific features, like color and font customization in the CurrentUserCurrentHost profile for <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> profile or the AllUsersCurrentHost profile for <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>."
+    },
+    {
+      "content": "The following are profiles that can be created and used in <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>.",
+      "pos": [
+        2725,
+        2824
+      ]
+    },
+    {
+      "content": "Each profile is saved to its own specific path.",
+      "pos": [
+        2825,
+        2872
+      ]
+    },
+    {
+      "content": "Profile Type",
+      "pos": [
+        2875,
+        2887
+      ]
+    },
+    {
+      "content": "Profile Path",
+      "pos": [
+        2888,
+        2900
+      ]
+    },
+    {
+      "content": "“Current user, PowerShell ISE”",
+      "pos": [
+        2939,
+        2969
+      ]
+    },
+    {
+      "content": "$profile.CurrentUserCurrentHost, or $profile",
+      "pos": [
+        2970,
+        3014
+      ]
+    },
+    {
+      "content": "“All users, PowerShell ISE”",
+      "pos": [
+        3017,
+        3044
+      ]
+    },
+    {
+      "content": "$profile.AllUsersCurrentHost",
+      "pos": [
+        3045,
+        3073
+      ]
+    },
+    {
+      "content": "“Current user, All hosts”",
+      "pos": [
+        3076,
+        3101
+      ]
+    },
+    {
+      "content": "$profile.CurrentUserAllHosts",
+      "pos": [
+        3102,
+        3130
+      ]
+    },
+    {
+      "content": "“All users, All hosts”",
+      "pos": [
+        3133,
+        3155
+      ]
+    },
+    {
+      "content": "$profile.AllUsersAllHosts",
+      "pos": [
+        3156,
+        3181
+      ]
+    },
+    {
+      "content": "To create a new profile",
+      "pos": [
+        3187,
+        3210
+      ]
+    },
+    {
+      "content": "To create a new “Current user, Windows PowerShell ISE” profile, run this command:",
+      "pos": [
+        3211,
+        3292
+      ]
+    },
+    {
+      "content": "To create a new “All users, Windows PowerShell ISE” profile, run this command:",
+      "pos": [
+        3376,
+        3454
+      ]
+    },
+    {
+      "content": "To create a new “Current user, All Hosts” profile, run this command:",
+      "pos": [
+        3577,
+        3645
+      ]
+    },
+    {
+      "content": "To create a new “All users, All Hosts” profile, type:",
+      "pos": [
+        3768,
+        3821
+      ]
+    },
+    {
+      "content": "To edit a profile",
+      "pos": [
+        3940,
+        3957
+      ]
+    },
+    {
+      "content": "To open the profile, run the command psedit with the variable that specifies the profile you want to edit.",
+      "pos": [
+        3963,
+        4069
+      ]
+    },
+    {
+      "content": "For example, to open the “Current user, Windows PowerShell ISE” profile, type: <ph id=\"ph1\">`psEdit $profile`</ph>",
+      "pos": [
+        4070,
+        4166
+      ]
+    },
+    {
+      "content": "Add some items to your profile.",
+      "pos": [
+        4172,
+        4203
+      ]
+    },
+    {
+      "content": "The following are a few examples to get you started:",
+      "pos": [
+        4204,
+        4256
+      ]
+    },
+    {
+      "content": "To change the default background color of the Console Pane to blue, in the profile file type: <ph id=\"ph1\">`$psISE.Options.OutputPaneBackground = 'blue'`</ph> .",
+      "pos": [
+        4266,
+        4408
+      ]
+    },
+    {
+      "content": "For more information about the $psISE variable, see <bpt id=\"p1\">[</bpt>Windows PowerShell ISE Object Model Reference<ept id=\"p1\">](assetId:///e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)</ept>.",
+      "pos": [
+        4409,
+        4558
+      ]
+    },
+    {
+      "pos": [
+        4568,
+        4650
+      ],
+      "content": "To change font size to 20, in the profile file type: <ph id=\"ph1\">`$psISE.Options.FontSize =20`</ph>"
+    },
+    {
+      "content": "To save your profile file, on the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Save<ept id=\"p2\">**</ept>.",
+      "pos": [
+        4656,
+        4720
+      ]
+    },
+    {
+      "content": "Next time you open the <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>, your customizations are applied.",
+      "pos": [
+        4721,
+        4817
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        4822,
+        4830
+      ]
+    },
+    {
+      "content": "about_Profiles [v4]",
+      "pos": [
+        4832,
+        4851
+      ]
+    },
+    {
+      "content": "Using the Windows PowerShell ISE",
+      "pos": [
+        4903,
+        4935
+      ]
+    }
+  ],
+  "content": "---\ntitle: How to Use Profiles in Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 0219626a-6da5-4acc-b630-d058e8b29cc6\n---\n# How to Use Profiles in Windows PowerShell ISE\nThis topic explains how to use Profiles in [!INCLUDE[ise_1](../Token/ise_1_md.md)]. We recommend that before performing the tasks in this section, you review [about_Profiles [v4]](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054), or in the Console Pane, type, “get\\-help about\\_profiles” and press **ENTER**.\n\nA profile is a [!INCLUDE[ise_2](../Token/ise_2_md.md)] script that runs automatically when you start a new session.  You can create one or more [!INCLUDE[wps_2](../Token/wps_2_md.md)] profiles for [!INCLUDE[ise_2](../Token/ise_2_md.md)] and use them to add the configure the [!INCLUDE[wps_2](../Token/wps_2_md.md)] or [!INCLUDE[ise_2](../Token/ise_2_md.md)] environment, preparing it for your use, with variables, aliases, functions, and color and font preferences that you want available. A profile affects every [!INCLUDE[ise_2](../Token/ise_2_md.md)] session that you start.\n\n> [!NOTE]\n> The [!INCLUDE[wps_2](../Token/wps_2_md.md)] execution policy determines whether you can run scripts and load a profile. The default execution policy, “Restricted,” prevents all scripts from running, including profiles. If you use the “Restricted” policy, the profile cannot load. For more information about execution policy, see [about_Execution_Policies [v4]](assetId:///347708dc-1515-4d74-978b-8334603472e6).\n\n## Selecting a profile to use in the Windows PowerShell ISE\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] supports profiles for the current user and all users. It also supports the [!INCLUDE[wps_2](../Token/wps_2_md.md)] profiles that apply to all hosts.\n\nThe profile that you use is determined by how you use [!INCLUDE[wps_2](../Token/wps_2_md.md)] and [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n-   If you use only [!INCLUDE[ise_2](../Token/ise_2_md.md)] to run Windows PowerShell, then save all your items in one of the ISE\\-specific profiles, such as the CurrentUserCurrentHost profile for [!INCLUDE[ise_2](../Token/ise_2_md.md)] or the AllUsersCurrentHost profile for [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n-   If you use multiple host programs to run Windows PowerShell, save your functions, aliases, variables, and commands in a profile that affects all host programs, such as the CurrentUserAllHosts or the AllUsersAllHosts profile, and save ISE\\-specific features, like color and font customization in the CurrentUserCurrentHost profile for [!INCLUDE[ise_2](../Token/ise_2_md.md)] profile or the AllUsersCurrentHost profile for [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\nThe following are profiles that can be created and used in [!INCLUDE[ise_2](../Token/ise_2_md.md)]. Each profile is saved to its own specific path.\n\n|Profile Type|Profile Path|\n|----------------|----------------|\n|“Current user, PowerShell ISE”|$profile.CurrentUserCurrentHost, or $profile|\n|“All users, PowerShell ISE”|$profile.AllUsersCurrentHost|\n|“Current user, All hosts”|$profile.CurrentUserAllHosts|\n|“All users, All hosts”|$profile.AllUsersAllHosts|\n\n## To create a new profile\nTo create a new “Current user, Windows PowerShell ISE” profile, run this command:\n\n```\nif (!(test-path $profile )) \n{new-item -type file -path $profile -force}\n```\n\nTo create a new “All users, Windows PowerShell ISE” profile, run this command:\n\n```\nif (!(test-path $profile.AllUsersCurrentHost)) \n{new-item -type file -path $profile.AllUsersCurrentHost -force}\n```\n\nTo create a new “Current user, All Hosts” profile, run this command:\n\n```\nif (!(test-path $profile.CurrentUserAllHosts)) \n{new-item -type file -path $profile.CurrentUserAllHosts -force}\n```\n\nTo create a new “All users, All Hosts” profile, type:\n\n```\nif (!(test-path $profile.AllUsersAllHosts)) \n{new-item -type file -path $profile.AllUsersAllHosts-force}\n```\n\n## To edit a profile\n\n1.  To open the profile, run the command psedit with the variable that specifies the profile you want to edit. For example, to open the “Current user, Windows PowerShell ISE” profile, type: `psEdit $profile`\n\n2.  Add some items to your profile. The following are a few examples to get you started:\n\n    -   To change the default background color of the Console Pane to blue, in the profile file type: `$psISE.Options.OutputPaneBackground = 'blue'` . For more information about the $psISE variable, see [Windows PowerShell ISE Object Model Reference](assetId:///e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c).\n\n    -   To change font size to 20, in the profile file type: `$psISE.Options.FontSize =20`\n\n3.  To save your profile file, on the **File** menu, click **Save**. Next time you open the [!INCLUDE[ise_2](../Token/ise_2_md.md)], your customizations are applied.\n\n## See Also\n[about_Profiles [v4]](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054)\n[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)\n\n"
+}
