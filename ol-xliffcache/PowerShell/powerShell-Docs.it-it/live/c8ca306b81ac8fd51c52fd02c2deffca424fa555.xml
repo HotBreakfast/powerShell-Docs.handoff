@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "content": "Windows PowerShell Navigation",
+      "pos": [
+        11,
+        40
+      ]
+    },
+    {
+      "content": "Windows PowerShell Navigation",
+      "pos": [
+        175,
+        204
+      ]
+    },
+    {
+      "content": "Folders are a familiar organizational feature of the File Explorer interface, Cmd.exe, and UNIX tools such as BASH.",
+      "pos": [
+        205,
+        320
+      ]
+    },
+    {
+      "content": "Folders, or directories as they are more commonly known, are a useful concept for organizing files and other directories.",
+      "pos": [
+        321,
+        442
+      ]
+    },
+    {
+      "content": "UNIX\\-family operating systems extend this by treating everything possible as a file; specific hardware and network connections appear as files within particular folders.",
+      "pos": [
+        443,
+        613
+      ]
+    },
+    {
+      "content": "This approach does not ensure that the content is readable or usable by particular applications, but it does make it simpler to find specific items.",
+      "pos": [
+        614,
+        762
+      ]
+    },
+    {
+      "content": "Tools that enumerate or search through files and folders work with these devices as well.",
+      "pos": [
+        763,
+        852
+      ]
+    },
+    {
+      "content": "You can also address a specific item by using the path to the file that represents it.",
+      "pos": [
+        853,
+        939
+      ]
+    },
+    {
+      "content": "Analogously, the Windows PowerShell infrastructure supports exposing virtually anything that can be navigated like a standard Microsoft Windows disk drive or a UNIX filesystem as a Windows PowerShell Drive.",
+      "pos": [
+        941,
+        1147
+      ]
+    },
+    {
+      "content": "A Windows PowerShell Drive does not necessarily represent a real drive, either locally or on the network.",
+      "pos": [
+        1148,
+        1253
+      ]
+    },
+    {
+      "content": "This chapter primarily discusses navigation for file systems, but the concepts apply to Windows PowerShell Drives that are not associated with file systems.",
+      "pos": [
+        1254,
+        1410
+      ]
+    }
+  ],
+  "content": "---\ntitle: Windows PowerShell Navigation\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 846f5233-43be-496a-9ca1-e3e34207cb49\n---\n# Windows PowerShell Navigation\nFolders are a familiar organizational feature of the File Explorer interface, Cmd.exe, and UNIX tools such as BASH. Folders, or directories as they are more commonly known, are a useful concept for organizing files and other directories. UNIX\\-family operating systems extend this by treating everything possible as a file; specific hardware and network connections appear as files within particular folders. This approach does not ensure that the content is readable or usable by particular applications, but it does make it simpler to find specific items. Tools that enumerate or search through files and folders work with these devices as well. You can also address a specific item by using the path to the file that represents it.\n\nAnalogously, the Windows PowerShell infrastructure supports exposing virtually anything that can be navigated like a standard Microsoft Windows disk drive or a UNIX filesystem as a Windows PowerShell Drive. A Windows PowerShell Drive does not necessarily represent a real drive, either locally or on the network. This chapter primarily discusses navigation for file systems, but the concepts apply to Windows PowerShell Drives that are not associated with file systems.\n\n"
+}

@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "content": "Appendix 1 - Compatibility Aliases",
+      "pos": [
+        11,
+        45
+      ]
+    },
+    {
+      "content": "Appendix 1 - Compatibility Aliases",
+      "pos": [
+        180,
+        214
+      ]
+    },
+    {
+      "content": "Windows PowerShell has several transition aliases that allow UNIX and Cmd users to use familiar command names in Windows PowerShell.",
+      "pos": [
+        215,
+        347
+      ]
+    },
+    {
+      "content": "The most common aliases are shown in the table below, along with the Windows PowerShell command behind the alias and the standard Windows PowerShell alias if one exists.",
+      "pos": [
+        348,
+        517
+      ]
+    },
+    {
+      "content": "You can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get\\-Alias cmdlet.",
+      "pos": [
+        519,
+        650
+      ]
+    },
+    {
+      "content": "For example, type <bpt id=\"p1\">**</bpt>get\\-alias cls<ept id=\"p1\">**</ept>.",
+      "pos": [
+        651,
+        688
+      ]
+    },
+    {
+      "content": "CMD Command",
+      "pos": [
+        877,
+        888
+      ]
+    },
+    {
+      "content": "UNIX Command",
+      "pos": [
+        889,
+        901
+      ]
+    },
+    {
+      "content": "PS Command",
+      "pos": [
+        902,
+        912
+      ]
+    },
+    {
+      "content": "PS Alias",
+      "pos": [
+        913,
+        921
+      ]
+    },
+    {
+      "content": "dir",
+      "pos": [
+        989,
+        992
+      ]
+    },
+    {
+      "content": "ls",
+      "pos": [
+        997,
+        999
+      ]
+    },
+    {
+      "content": "Get\\-ChildItem",
+      "pos": [
+        1004,
+        1018
+      ]
+    },
+    {
+      "content": "gci",
+      "pos": [
+        1023,
+        1026
+      ]
+    },
+    {
+      "content": "cls",
+      "pos": [
+        1033,
+        1036
+      ]
+    },
+    {
+      "content": "clear",
+      "pos": [
+        1041,
+        1046
+      ]
+    },
+    {
+      "pos": [
+        1049,
+        1075
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Clear\\-Host<ept id=\"p1\">**</ept> (function)"
+    },
+    {
+      "content": "N\\/A",
+      "pos": [
+        1076,
+        1080
+      ]
+    },
+    {
+      "content": "del, erase, rmdir",
+      "pos": [
+        1085,
+        1102
+      ]
+    },
+    {
+      "content": "rm",
+      "pos": [
+        1107,
+        1109
+      ]
+    },
+    {
+      "content": "Remove\\-Item",
+      "pos": [
+        1114,
+        1126
+      ]
+    },
+    {
+      "content": "ri",
+      "pos": [
+        1131,
+        1133
+      ]
+    },
+    {
+      "content": "copy",
+      "pos": [
+        1140,
+        1144
+      ]
+    },
+    {
+      "content": "cp",
+      "pos": [
+        1149,
+        1151
+      ]
+    },
+    {
+      "content": "Copy\\-Item",
+      "pos": [
+        1156,
+        1166
+      ]
+    },
+    {
+      "content": "ci",
+      "pos": [
+        1171,
+        1173
+      ]
+    },
+    {
+      "content": "move",
+      "pos": [
+        1180,
+        1184
+      ]
+    },
+    {
+      "content": "mv",
+      "pos": [
+        1189,
+        1191
+      ]
+    },
+    {
+      "content": "Move\\-Item",
+      "pos": [
+        1196,
+        1206
+      ]
+    },
+    {
+      "content": "mi",
+      "pos": [
+        1211,
+        1213
+      ]
+    },
+    {
+      "content": "rename",
+      "pos": [
+        1220,
+        1226
+      ]
+    },
+    {
+      "content": "mv",
+      "pos": [
+        1231,
+        1233
+      ]
+    },
+    {
+      "content": "Rename\\-Item",
+      "pos": [
+        1238,
+        1250
+      ]
+    },
+    {
+      "content": "rni",
+      "pos": [
+        1255,
+        1258
+      ]
+    },
+    {
+      "content": "type",
+      "pos": [
+        1265,
+        1269
+      ]
+    },
+    {
+      "content": "cat",
+      "pos": [
+        1274,
+        1277
+      ]
+    },
+    {
+      "content": "Get\\-Content",
+      "pos": [
+        1282,
+        1294
+      ]
+    },
+    {
+      "content": "gc",
+      "pos": [
+        1299,
+        1301
+      ]
+    },
+    {
+      "content": "cd",
+      "pos": [
+        1308,
+        1310
+      ]
+    },
+    {
+      "content": "cd",
+      "pos": [
+        1315,
+        1317
+      ]
+    },
+    {
+      "content": "Set\\-Location",
+      "pos": [
+        1322,
+        1335
+      ]
+    },
+    {
+      "content": "sl",
+      "pos": [
+        1340,
+        1342
+      ]
+    },
+    {
+      "content": "md",
+      "pos": [
+        1349,
+        1351
+      ]
+    },
+    {
+      "content": "mkdir",
+      "pos": [
+        1356,
+        1361
+      ]
+    },
+    {
+      "content": "New\\-Item",
+      "pos": [
+        1366,
+        1375
+      ]
+    },
+    {
+      "content": "ni",
+      "pos": [
+        1380,
+        1382
+      ]
+    },
+    {
+      "content": "N\\/A",
+      "pos": [
+        1387,
+        1391
+      ]
+    },
+    {
+      "content": "pushd",
+      "pos": [
+        1394,
+        1399
+      ]
+    },
+    {
+      "content": "Push\\-Location",
+      "pos": [
+        1404,
+        1418
+      ]
+    },
+    {
+      "content": "N\\/A",
+      "pos": [
+        1421,
+        1425
+      ]
+    },
+    {
+      "content": "N\\/A",
+      "pos": [
+        1428,
+        1432
+      ]
+    },
+    {
+      "content": "popd",
+      "pos": [
+        1435,
+        1439
+      ]
+    },
+    {
+      "content": "Pop\\-Location",
+      "pos": [
+        1444,
+        1457
+      ]
+    },
+    {
+      "content": "N\\/A",
+      "pos": [
+        1460,
+        1464
+      ]
+    }
+  ],
+  "content": "---\ntitle: Appendix 1 - Compatibility Aliases\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 96ad921e-1a57-463e-8e60-424faf8b6ef8\n---\n# Appendix 1 - Compatibility Aliases\nWindows PowerShell has several transition aliases that allow UNIX and Cmd users to use familiar command names in Windows PowerShell. The most common aliases are shown in the table below, along with the Windows PowerShell command behind the alias and the standard Windows PowerShell alias if one exists.\n\nYou can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get\\-Alias cmdlet. For example, type **get\\-alias cls**.\n\n```\nCommandType     Name                            Definition\n-----------     ----                            ----------\nAlias           cls                             Clear-Host\n```\n\n|CMD Command|UNIX Command|PS Command|PS Alias|\n|---------------|----------------|--------------|------------|\n|**dir**|**ls**|**Get\\-ChildItem**|**gci**|\n|**cls**|**clear**|**Clear\\-Host** (function)|N\\/A|\n|**del, erase, rmdir**|**rm**|**Remove\\-Item**|**ri**|\n|**copy**|**cp**|**Copy\\-Item**|**ci**|\n|**move**|**mv**|**Move\\-Item**|**mi**|\n|**rename**|**mv**|**Rename\\-Item**|**rni**|\n|**type**|**cat**|**Get\\-Content**|**gc**|\n|**cd**|**cd**|**Set\\-Location**|**sl**|\n|**md**|**mkdir**|**New\\-Item**|**ni**|\n|N\\/A|**pushd**|**Push\\-Location**|N\\/A|\n|N\\/A|**popd**|**Pop\\-Location**|N\\/A|\n\n"
+}
