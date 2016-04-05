@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "content": "How to Use the Console Pane in the Windows PowerShell ISE",
+      "pos": [
+        11,
+        68
+      ]
+    },
+    {
+      "content": "How to Use the Console Pane in the Windows PowerShell ISE",
+      "pos": [
+        203,
+        260
+      ]
+    },
+    {
+      "pos": [
+        261,
+        419
+      ],
+      "content": "The Console pane in the <ph id=\"ph1\">[!INCLUDE[ise_1](../Token/ise_1_md.md)]</ph> operates exactly like the stand\\-alone <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> console window."
+    },
+    {
+      "content": "To run a command in the Console Pane, type a command, and then press ENTER.",
+      "pos": [
+        421,
+        496
+      ]
+    },
+    {
+      "content": "To enter multiple commands that you want to execute in sequence, type SHIFT\\+ENTER between commands.",
+      "pos": [
+        497,
+        597
+      ]
+    },
+    {
+      "content": "See <bpt id=\"p1\">[</bpt>How to Use Tab Completion in the Script Pane and Console Pane<ept id=\"p1\">](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)</ept> for help in typing commands.",
+      "pos": [
+        598,
+        769
+      ]
+    },
+    {
+      "content": "To stop a command, on the toolbar, click <bpt id=\"p1\">**</bpt>Stop Operation<ept id=\"p1\">**</ept>, or press CTRL\\+BREAK.",
+      "pos": [
+        771,
+        853
+      ]
+    },
+    {
+      "content": "You can also use CTRL\\+C to stop a command if the context is unambiguous.",
+      "pos": [
+        854,
+        927
+      ]
+    },
+    {
+      "content": "For example, if some text has been selected in the current Pane, then CTRL\\+C maps to the copy operation.",
+      "pos": [
+        928,
+        1033
+      ]
+    },
+    {
+      "content": "Beginning in <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> v3, the Output pane was combined with the Console pane.",
+      "pos": [
+        1035,
+        1143
+      ]
+    },
+    {
+      "content": "This has the benefit of behaving like the stand\\-alone <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> console and eliminates the differences in procedures that were needed when they were separate.",
+      "pos": [
+        1144,
+        1333
+      ]
+    },
+    {
+      "content": "You can:",
+      "pos": [
+        1334,
+        1342
+      ]
+    },
+    {
+      "content": "Select and copy text from the Console pane to the Clipboard for pasting in any other window.",
+      "pos": [
+        1348,
+        1440
+      ]
+    },
+    {
+      "content": "To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture.",
+      "pos": [
+        1441,
+        1560
+      ]
+    },
+    {
+      "content": "You can also use the cursor arrow keys while holding <bpt id=\"p1\">**</bpt>SHIFT<ept id=\"p1\">**</ept> to select text.",
+      "pos": [
+        1561,
+        1639
+      ]
+    },
+    {
+      "content": "Then press CTRL\\+C or click the <bpt id=\"p1\">**</bpt>Copy<ept id=\"p1\">**</ept> icon in the toolbar.",
+      "pos": [
+        1640,
+        1701
+      ]
+    },
+    {
+      "content": "Paste the selected text at a current cursor position.",
+      "pos": [
+        1707,
+        1760
+      ]
+    },
+    {
+      "content": "Click the <bpt id=\"p1\">**</bpt>Paste<ept id=\"p1\">**</ept> icon on the toolbar.",
+      "pos": [
+        1761,
+        1801
+      ]
+    },
+    {
+      "content": "Clear all the text in the Console pane.",
+      "pos": [
+        1807,
+        1846
+      ]
+    },
+    {
+      "content": "To clear the Console pane, you can click the <bpt id=\"p1\">**</bpt>Clear Console Pane<ept id=\"p1\">**</ept> icon on the toolbar, or run the command <bpt id=\"p2\">**</bpt>Clear\\-Host<ept id=\"p2\">**</ept> or its alias, <bpt id=\"p3\">**</bpt>cls<ept id=\"p3\">**</ept>.",
+      "pos": [
+        1847,
+        1993
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        1998,
+        2006
+      ]
+    },
+    {
+      "content": "Using the Windows PowerShell ISE",
+      "pos": [
+        2008,
+        2040
+      ]
+    }
+  ],
+  "content": "---\ntitle: How to Use the Console Pane in the Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757\n---\n# How to Use the Console Pane in the Windows PowerShell ISE\nThe Console pane in the [!INCLUDE[ise_1](../Token/ise_1_md.md)] operates exactly like the stand\\-alone [!INCLUDE[ise_2](../Token/ise_2_md.md)] console window.\n\nTo run a command in the Console Pane, type a command, and then press ENTER. To enter multiple commands that you want to execute in sequence, type SHIFT\\+ENTER between commands. See [How to Use Tab Completion in the Script Pane and Console Pane](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for help in typing commands.\n\nTo stop a command, on the toolbar, click **Stop Operation**, or press CTRL\\+BREAK. You can also use CTRL\\+C to stop a command if the context is unambiguous. For example, if some text has been selected in the current Pane, then CTRL\\+C maps to the copy operation.\n\nBeginning in [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, the Output pane was combined with the Console pane. This has the benefit of behaving like the stand\\-alone [!INCLUDE[wps_2](../Token/wps_2_md.md)] console and eliminates the differences in procedures that were needed when they were separate. You can:\n\n-   Select and copy text from the Console pane to the Clipboard for pasting in any other window. To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture. You can also use the cursor arrow keys while holding **SHIFT** to select text. Then press CTRL\\+C or click the **Copy** icon in the toolbar.\n\n-   Paste the selected text at a current cursor position. Click the **Paste** icon on the toolbar.\n\n-   Clear all the text in the Console pane. To clear the Console pane, you can click the **Clear Console Pane** icon on the toolbar, or run the command **Clear\\-Host** or its alias, **cls**.\n\n## See Also\n[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)\n\n"
+}

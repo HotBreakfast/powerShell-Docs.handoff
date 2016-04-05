@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "content": "Changing Computer State",
+      "pos": [
+        11,
+        34
+      ]
+    },
+    {
+      "content": "Changing Computer State",
+      "pos": [
+        169,
+        192
+      ]
+    },
+    {
+      "content": "To reset a computer in Windows PowerShell, use either a standard command\\-line tool or a WMI class.",
+      "pos": [
+        193,
+        292
+      ]
+    },
+    {
+      "content": "Although you are using Windows PowerShell only to run the tool, learning how to change a computer's power state in Windows PowerShell illustrates some of the important details about working with external tools in Windows PowerShell.",
+      "pos": [
+        293,
+        525
+      ]
+    },
+    {
+      "content": "Locking a Computer",
+      "pos": [
+        531,
+        549
+      ]
+    },
+    {
+      "pos": [
+        550,
+        689
+      ],
+      "content": "The only way to lock a computer directly with the standard available tools is to call the <bpt id=\"p1\">**</bpt>LockWorkstation()<ept id=\"p1\">**</ept> function in <bpt id=\"p2\">**</bpt>user32.dll<ept id=\"p2\">**</ept>:"
+    },
+    {
+      "content": "This command immediately locks the workstation.",
+      "pos": [
+        740,
+        787
+      ]
+    },
+    {
+      "content": "It uses <bpt id=\"p1\">*</bpt>rundll32.exe<ept id=\"p1\">*</ept>, which runs Windows DLLs (and saves their libraries for repeated use) to run user32.dll, a library of Windows management functions.",
+      "pos": [
+        788,
+        942
+      ]
+    },
+    {
+      "content": "When you lock a workstation while Fast User Switching is enabled, such as on Windows XP, the computer displays the user logon screen rather than starting the current user's screensaver.",
+      "pos": [
+        944,
+        1129
+      ]
+    },
+    {
+      "pos": [
+        1131,
+        1229
+      ],
+      "content": "To shut down particular sessions on a Terminal Server, use the <bpt id=\"p1\">**</bpt>tsshutdn.exe<ept id=\"p1\">**</ept> command line tool."
+    },
+    {
+      "content": "Logging Off the Current Session",
+      "pos": [
+        1235,
+        1266
+      ]
+    },
+    {
+      "content": "You can use several different techniques to log off of a session on the local system.",
+      "pos": [
+        1267,
+        1352
+      ]
+    },
+    {
+      "content": "The simplest way is to use the Remote Desktop\\/Terminal Services command\\-line tool, <bpt id=\"p1\">**</bpt>logoff.exe<ept id=\"p1\">**</ept> (For details, at the Windows PowerShell prompt, type <bpt id=\"p2\">**</bpt>logoff \\/?<ept id=\"p2\">**</ept>).",
+      "pos": [
+        1353,
+        1522
+      ]
+    },
+    {
+      "content": "To log off the current active session, type <bpt id=\"p1\">**</bpt>logoff<ept id=\"p1\">**</ept> with no arguments.",
+      "pos": [
+        1523,
+        1596
+      ]
+    },
+    {
+      "pos": [
+        1598,
+        1664
+      ],
+      "content": "You can also use the <bpt id=\"p1\">**</bpt>shutdown.exe<ept id=\"p1\">**</ept> tool with its logoff option:"
+    },
+    {
+      "content": "A third option is to use WMI.",
+      "pos": [
+        1691,
+        1720
+      ]
+    },
+    {
+      "content": "The Win32\\_OperatingSystem class has a Win32Shutdown method.",
+      "pos": [
+        1721,
+        1781
+      ]
+    },
+    {
+      "content": "Invoking the method with the 0 flag initiates logoff:",
+      "pos": [
+        1782,
+        1835
+      ]
+    },
+    {
+      "content": "For more information, and to find other features of the Win32Shutdown method, see \"Win32Shutdown Method of the Win32\\_OperatingSystem Class\" in MSDN.",
+      "pos": [
+        1924,
+        2073
+      ]
+    },
+    {
+      "content": "Shutting Down or Restarting a Computer",
+      "pos": [
+        2079,
+        2117
+      ]
+    },
+    {
+      "content": "Shutting down and restarting computers are generally the same types of task.",
+      "pos": [
+        2118,
+        2194
+      ]
+    },
+    {
+      "content": "Tools that shut down a computer will generally restart it as well—and vice versa.",
+      "pos": [
+        2195,
+        2276
+      ]
+    },
+    {
+      "content": "There are two straightforward options for restarting a computer from Windows PowerShell.",
+      "pos": [
+        2277,
+        2365
+      ]
+    },
+    {
+      "content": "Use either Tsshutdn.exe or Shutdown.exe with appropriate arguments.",
+      "pos": [
+        2366,
+        2433
+      ]
+    },
+    {
+      "content": "You can get detailed usage information from <bpt id=\"p1\">**</bpt>tsshutdn.exe \\/?<ept id=\"p1\">**</ept>",
+      "pos": [
+        2434,
+        2498
+      ]
+    },
+    {
+      "content": "or <bpt id=\"p1\">**</bpt>shutdown.exe \\/?<ept id=\"p1\">**</ept>.",
+      "pos": [
+        2499,
+        2523
+      ]
+    },
+    {
+      "pos": [
+        2525,
+        2655
+      ],
+      "content": "You can also perform shutdown and restart operations by using <bpt id=\"p1\">**</bpt>Win32\\_OperatingSystem<ept id=\"p1\">**</ept> directly from Windows PowerShell as well."
+    },
+    {
+      "pos": [
+        2657,
+        2733
+      ],
+      "content": "To shut down the computer, use the Win32Shutdown method with the <bpt id=\"p1\">**</bpt>1<ept id=\"p1\">**</ept> flag."
+    },
+    {
+      "pos": [
+        2822,
+        2904
+      ],
+      "content": "To restart the operating system, use the Win32Shutdown method with the <bpt id=\"p1\">**</bpt>2<ept id=\"p1\">**</ept> flag."
+    }
+  ],
+  "content": "---\ntitle: Changing Computer State\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 8093268b-27f8-4a49-8871-142c5cc33f01\n---\n# Changing Computer State\nTo reset a computer in Windows PowerShell, use either a standard command\\-line tool or a WMI class. Although you are using Windows PowerShell only to run the tool, learning how to change a computer's power state in Windows PowerShell illustrates some of the important details about working with external tools in Windows PowerShell.\n\n### Locking a Computer\nThe only way to lock a computer directly with the standard available tools is to call the **LockWorkstation()** function in **user32.dll**:\n\n```\nrundll32.exe user32.dll,LockWorkStation\n```\n\nThis command immediately locks the workstation. It uses *rundll32.exe*, which runs Windows DLLs (and saves their libraries for repeated use) to run user32.dll, a library of Windows management functions.\n\nWhen you lock a workstation while Fast User Switching is enabled, such as on Windows XP, the computer displays the user logon screen rather than starting the current user's screensaver.\n\nTo shut down particular sessions on a Terminal Server, use the **tsshutdn.exe** command line tool.\n\n### Logging Off the Current Session\nYou can use several different techniques to log off of a session on the local system. The simplest way is to use the Remote Desktop\\/Terminal Services command\\-line tool, **logoff.exe** (For details, at the Windows PowerShell prompt, type **logoff \\/?**). To log off the current active session, type **logoff** with no arguments.\n\nYou can also use the **shutdown.exe** tool with its logoff option:\n\n```\nshutdown.exe -l\n```\n\nA third option is to use WMI. The Win32\\_OperatingSystem class has a Win32Shutdown method. Invoking the method with the 0 flag initiates logoff:\n\n```\n(Get-WmiObject -Class Win32_OperatingSystem -ComputerName .).Win32Shutdown(0)\n```\n\nFor more information, and to find other features of the Win32Shutdown method, see \"Win32Shutdown Method of the Win32\\_OperatingSystem Class\" in MSDN.\n\n### Shutting Down or Restarting a Computer\nShutting down and restarting computers are generally the same types of task. Tools that shut down a computer will generally restart it as well—and vice versa. There are two straightforward options for restarting a computer from Windows PowerShell. Use either Tsshutdn.exe or Shutdown.exe with appropriate arguments. You can get detailed usage information from **tsshutdn.exe \\/?** or **shutdown.exe \\/?**.\n\nYou can also perform shutdown and restart operations by using **Win32\\_OperatingSystem** directly from Windows PowerShell as well.\n\nTo shut down the computer, use the Win32Shutdown method with the **1** flag.\n\n```\n(Get-WmiObject -Class Win32_OperatingSystem -ComputerName .).Win32Shutdown(1)\n```\n\nTo restart the operating system, use the Win32Shutdown method with the **2** flag.\n\n```\n(Get-WmiObject -Class Win32_OperatingSystem -ComputerName .).Win32Shutdown(2)\n```\n\n"
+}
