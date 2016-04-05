@@ -1,0 +1,516 @@
+{
+  "nodes": [
+    {
+      "content": "Using Familiar Command Names",
+      "pos": [
+        11,
+        39
+      ]
+    },
+    {
+      "content": "Using Familiar Command Names",
+      "pos": [
+        174,
+        202
+      ]
+    },
+    {
+      "content": "Using a mechanism called <bpt id=\"p1\">*</bpt>aliasing<ept id=\"p1\">*</ept>, Windows PowerShell allows users to refer to commands by alternate names.",
+      "pos": [
+        203,
+        312
+      ]
+    },
+    {
+      "content": "Aliasing allows users with experience in other shells to reuse common command names that they already know to perform similar operations in Windows PowerShell.",
+      "pos": [
+        313,
+        472
+      ]
+    },
+    {
+      "content": "Although we will not discuss Windows PowerShell aliases in detail, you can still use them as you get started with Windows PowerShell.",
+      "pos": [
+        473,
+        606
+      ]
+    },
+    {
+      "content": "Aliasing associates a command name that you type with another command.",
+      "pos": [
+        608,
+        678
+      ]
+    },
+    {
+      "content": "For example, Windows PowerShell has an internal function named <bpt id=\"p1\">**</bpt>Clear\\-Host<ept id=\"p1\">**</ept> that clears the output window.",
+      "pos": [
+        679,
+        788
+      ]
+    },
+    {
+      "content": "If you type either the <bpt id=\"p1\">**</bpt>cls<ept id=\"p1\">**</ept> or <bpt id=\"p2\">**</bpt>clear<ept id=\"p2\">**</ept> command at a command prompt, Windows PowerShell interprets that this is an alias for the <bpt id=\"p3\">**</bpt>Clear\\-Host<ept id=\"p3\">**</ept> function and runs the <bpt id=\"p4\">**</bpt>Clear\\-Host<ept id=\"p4\">**</ept> function.",
+      "pos": [
+        789,
+        985
+      ]
+    },
+    {
+      "content": "This feature helps users to learn Windows PowerShell.",
+      "pos": [
+        987,
+        1040
+      ]
+    },
+    {
+      "content": "First, most Cmd.exe and UNIX users have a large repertoire of commands that users already know by name, and although the Windows PowerShell equivalents may not produce identical results, they are close enough in form that users can use them to do work without having to first memorize the Windows PowerShell names.",
+      "pos": [
+        1041,
+        1355
+      ]
+    },
+    {
+      "content": "Second, the major source of frustration in learning a new shell when the user is already familiar with another shell, is the errors that are caused by \"finger memory\".",
+      "pos": [
+        1356,
+        1523
+      ]
+    },
+    {
+      "content": "If you have used Cmd.exe for years, when you have a screen full of output and want to clean it up, you would reflexively type the <bpt id=\"p1\">**</bpt>cls<ept id=\"p1\">**</ept> command and press the ENTER key.",
+      "pos": [
+        1524,
+        1694
+      ]
+    },
+    {
+      "content": "Without the alias to the <bpt id=\"p1\">**</bpt>Clear\\-Host<ept id=\"p1\">**</ept> function in Windows PowerShell, you would simply get the error message \"<bpt id=\"p2\">**</bpt>'cls' is not recognized as a cmdlet, function, operable program, or script file.<ept id=\"p2\">**</ept>\"",
+      "pos": [
+        1695,
+        1893
+      ]
+    },
+    {
+      "content": "and be left with no idea of what to do to clear the output.",
+      "pos": [
+        1894,
+        1953
+      ]
+    },
+    {
+      "content": "The following is a brief listing of the common Cmd.exe and UNIX commands that you can use inside Windows PowerShell:",
+      "pos": [
+        1955,
+        2071
+      ]
+    },
+    {
+      "content": "cat",
+      "pos": [
+        2090,
+        2093
+      ]
+    },
+    {
+      "content": "dir",
+      "pos": [
+        2094,
+        2097
+      ]
+    },
+    {
+      "content": "mount",
+      "pos": [
+        2098,
+        2103
+      ]
+    },
+    {
+      "content": "rm",
+      "pos": [
+        2104,
+        2106
+      ]
+    },
+    {
+      "content": "cd",
+      "pos": [
+        2109,
+        2111
+      ]
+    },
+    {
+      "content": "echo",
+      "pos": [
+        2112,
+        2116
+      ]
+    },
+    {
+      "content": "move",
+      "pos": [
+        2117,
+        2121
+      ]
+    },
+    {
+      "content": "rmdir",
+      "pos": [
+        2122,
+        2127
+      ]
+    },
+    {
+      "content": "chdir",
+      "pos": [
+        2130,
+        2135
+      ]
+    },
+    {
+      "content": "erase",
+      "pos": [
+        2136,
+        2141
+      ]
+    },
+    {
+      "content": "popd",
+      "pos": [
+        2142,
+        2146
+      ]
+    },
+    {
+      "content": "sleep",
+      "pos": [
+        2147,
+        2152
+      ]
+    },
+    {
+      "content": "clear",
+      "pos": [
+        2155,
+        2160
+      ]
+    },
+    {
+      "content": "h",
+      "pos": [
+        2161,
+        2162
+      ]
+    },
+    {
+      "content": "ps",
+      "pos": [
+        2163,
+        2165
+      ]
+    },
+    {
+      "content": "sort",
+      "pos": [
+        2166,
+        2170
+      ]
+    },
+    {
+      "content": "cls",
+      "pos": [
+        2173,
+        2176
+      ]
+    },
+    {
+      "content": "history",
+      "pos": [
+        2177,
+        2184
+      ]
+    },
+    {
+      "content": "pushd",
+      "pos": [
+        2185,
+        2190
+      ]
+    },
+    {
+      "content": "tee",
+      "pos": [
+        2191,
+        2194
+      ]
+    },
+    {
+      "content": "copy",
+      "pos": [
+        2197,
+        2201
+      ]
+    },
+    {
+      "content": "kill",
+      "pos": [
+        2202,
+        2206
+      ]
+    },
+    {
+      "content": "pwd",
+      "pos": [
+        2207,
+        2210
+      ]
+    },
+    {
+      "content": "type",
+      "pos": [
+        2211,
+        2215
+      ]
+    },
+    {
+      "content": "del",
+      "pos": [
+        2218,
+        2221
+      ]
+    },
+    {
+      "content": "lp",
+      "pos": [
+        2222,
+        2224
+      ]
+    },
+    {
+      "content": "r",
+      "pos": [
+        2225,
+        2226
+      ]
+    },
+    {
+      "content": "write",
+      "pos": [
+        2227,
+        2232
+      ]
+    },
+    {
+      "content": "diff",
+      "pos": [
+        2235,
+        2239
+      ]
+    },
+    {
+      "content": "ls",
+      "pos": [
+        2240,
+        2242
+      ]
+    },
+    {
+      "content": "ren",
+      "pos": [
+        2243,
+        2246
+      ]
+    },
+    {
+      "pos": [
+        2250,
+        2424
+      ],
+      "content": "If you find yourself using one of these commands reflexively and want to learn the real name of the native Windows PowerShell command, you can use the <bpt id=\"p1\">**</bpt>Get\\-Alias<ept id=\"p1\">**</ept> command:"
+    },
+    {
+      "content": "To make examples more readable, the Windows PowerShell User's Guide generally avoids using aliases.",
+      "pos": [
+        2631,
+        2730
+      ]
+    },
+    {
+      "content": "However, knowing more about aliases this early can still be useful if you are working with arbitrary snippets of Windows PowerShell code from another source or want to define your own aliases.",
+      "pos": [
+        2731,
+        2923
+      ]
+    },
+    {
+      "content": "The rest of this section will discuss standard aliases and how to define your own aliases.",
+      "pos": [
+        2924,
+        3014
+      ]
+    },
+    {
+      "content": "Interpreting Standard Aliases",
+      "pos": [
+        3020,
+        3049
+      ]
+    },
+    {
+      "content": "Unlike the aliases described above, which were designed for name\\-compatibility with other interfaces, the aliases built into Windows PowerShell are generally designed for brevity.",
+      "pos": [
+        3050,
+        3230
+      ]
+    },
+    {
+      "content": "These shorter names can be typed quickly, but are impossible to read if you do not know what they refer to.",
+      "pos": [
+        3231,
+        3338
+      ]
+    },
+    {
+      "content": "Windows PowerShell tries to compromise between clarity and brevity by providing a set of standard aliases that are based on shorthand names for common verbs and nouns.",
+      "pos": [
+        3340,
+        3507
+      ]
+    },
+    {
+      "content": "This allows a core set of aliases for common cmdlets that are readable when you know the shorthand names.",
+      "pos": [
+        3508,
+        3613
+      ]
+    },
+    {
+      "content": "For example, in standard aliases the verb <bpt id=\"p1\">**</bpt>Get<ept id=\"p1\">**</ept> is abbreviated to <bpt id=\"p2\">**</bpt>g<ept id=\"p2\">**</ept>, the verb <bpt id=\"p3\">**</bpt>Set<ept id=\"p3\">**</ept> is abbreviated to <bpt id=\"p4\">**</bpt>s<ept id=\"p4\">**</ept>, the noun <bpt id=\"p5\">**</bpt>Item<ept id=\"p5\">**</ept> is abbreviated to <bpt id=\"p6\">**</bpt>i<ept id=\"p6\">**</ept>, the noun <bpt id=\"p7\">**</bpt>Location<ept id=\"p7\">**</ept> is abbreviated to <bpt id=\"p8\">**</bpt>l<ept id=\"p8\">**</ept>, and the noun Command is abbreviated to <bpt id=\"p9\">**</bpt>cm<ept id=\"p9\">**</ept>.",
+      "pos": [
+        3614,
+        3867
+      ]
+    },
+    {
+      "content": "Here is a brief example to illustrate how this works.",
+      "pos": [
+        3869,
+        3922
+      ]
+    },
+    {
+      "content": "The standard alias for Get\\-Item comes from combining <bpt id=\"p1\">**</bpt>g<ept id=\"p1\">**</ept> for Get and <bpt id=\"p2\">**</bpt>i<ept id=\"p2\">**</ept> for Item: <bpt id=\"p3\">**</bpt>gi<ept id=\"p3\">**</ept>.",
+      "pos": [
+        3923,
+        4018
+      ]
+    },
+    {
+      "content": "The standard alias for Set\\-Item comes from combining <bpt id=\"p1\">**</bpt>s<ept id=\"p1\">**</ept> for Set and <bpt id=\"p2\">**</bpt>i<ept id=\"p2\">**</ept> for Item: <bpt id=\"p3\">**</bpt>si<ept id=\"p3\">**</ept>.",
+      "pos": [
+        4019,
+        4114
+      ]
+    },
+    {
+      "content": "The standard alias for Get\\-Location comes from combining <bpt id=\"p1\">**</bpt>g<ept id=\"p1\">**</ept> for Get and <bpt id=\"p2\">**</bpt>l<ept id=\"p2\">**</ept> for Location, <bpt id=\"p3\">**</bpt>gl<ept id=\"p3\">**</ept>.",
+      "pos": [
+        4115,
+        4218
+      ]
+    },
+    {
+      "content": "The standard alias for Set\\-Location comes from combining <bpt id=\"p1\">**</bpt>s<ept id=\"p1\">**</ept> for Set and <bpt id=\"p2\">**</bpt>l<ept id=\"p2\">**</ept> for Location, <bpt id=\"p3\">**</bpt>sl<ept id=\"p3\">**</ept>.",
+      "pos": [
+        4219,
+        4322
+      ]
+    },
+    {
+      "content": "The standard alias for Get\\-Command comes from combining <bpt id=\"p1\">**</bpt>g<ept id=\"p1\">**</ept> for Get and <bpt id=\"p2\">**</bpt>cm<ept id=\"p2\">**</ept> for Command, <bpt id=\"p3\">**</bpt>gcm<ept id=\"p3\">**</ept>.",
+      "pos": [
+        4323,
+        4426
+      ]
+    },
+    {
+      "content": "There is no Set\\-Command cmdlet, but if there were, we would be able to guess that the standard alias comes from <bpt id=\"p1\">**</bpt>s<ept id=\"p1\">**</ept> for Set and <bpt id=\"p2\">**</bpt>cm<ept id=\"p2\">**</ept> for Command: <bpt id=\"p3\">**</bpt>scm<ept id=\"p3\">**</ept>.",
+      "pos": [
+        4427,
+        4586
+      ]
+    },
+    {
+      "content": "Furthermore, people familiar with Windows PowerShell aliasing who encounter <bpt id=\"p1\">**</bpt>scm<ept id=\"p1\">**</ept> would be able to guess that the alias refers to Set\\-Command.",
+      "pos": [
+        4587,
+        4732
+      ]
+    },
+    {
+      "content": "Creating New Aliases",
+      "pos": [
+        4738,
+        4758
+      ]
+    },
+    {
+      "content": "You can create your own aliases using the Set\\-Alias cmdlet.",
+      "pos": [
+        4759,
+        4819
+      ]
+    },
+    {
+      "content": "For example, the following statements create the standard cmdlet aliases discussed in Interpreting Standard Aliases:",
+      "pos": [
+        4820,
+        4936
+      ]
+    },
+    {
+      "content": "Internally, Windows PowerShell uses commands like these during startup, but these aliases are not changeable.",
+      "pos": [
+        5134,
+        5243
+      ]
+    },
+    {
+      "content": "If you attempt to actually execute one of these commands, you will get an error explaining that the alias cannot be modified.",
+      "pos": [
+        5244,
+        5369
+      ]
+    },
+    {
+      "content": "For example:",
+      "pos": [
+        5370,
+        5382
+      ]
+    },
+    {
+      "content": "PS&gt; Set-Alias -Name gi -Value Get-Item",
+      "pos": [
+        5389,
+        5427
+      ]
+    },
+    {
+      "content": "Set-Alias : Alias is not writeable because alias gi is read-only or constant and cannot be written to.",
+      "pos": [
+        5428,
+        5530
+      ]
+    },
+    {
+      "content": "At line:1 char:10\n+ Set-Alias  &lt;&lt;&lt;&lt; -Name gi -Value Get-Item",
+      "pos": [
+        5531,
+        5591
+      ]
+    }
+  ],
+  "content": "---\ntitle: Using Familiar Command Names\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 021e2424-c64e-4fa5-aa98-aa6405758d5d\n---\n# Using Familiar Command Names\nUsing a mechanism called *aliasing*, Windows PowerShell allows users to refer to commands by alternate names. Aliasing allows users with experience in other shells to reuse common command names that they already know to perform similar operations in Windows PowerShell. Although we will not discuss Windows PowerShell aliases in detail, you can still use them as you get started with Windows PowerShell.\n\nAliasing associates a command name that you type with another command. For example, Windows PowerShell has an internal function named **Clear\\-Host** that clears the output window. If you type either the **cls** or **clear** command at a command prompt, Windows PowerShell interprets that this is an alias for the **Clear\\-Host** function and runs the **Clear\\-Host** function.\n\nThis feature helps users to learn Windows PowerShell. First, most Cmd.exe and UNIX users have a large repertoire of commands that users already know by name, and although the Windows PowerShell equivalents may not produce identical results, they are close enough in form that users can use them to do work without having to first memorize the Windows PowerShell names. Second, the major source of frustration in learning a new shell when the user is already familiar with another shell, is the errors that are caused by \"finger memory\". If you have used Cmd.exe for years, when you have a screen full of output and want to clean it up, you would reflexively type the **cls** command and press the ENTER key. Without the alias to the **Clear\\-Host** function in Windows PowerShell, you would simply get the error message \"**'cls' is not recognized as a cmdlet, function, operable program, or script file.**\" and be left with no idea of what to do to clear the output.\n\nThe following is a brief listing of the common Cmd.exe and UNIX commands that you can use inside Windows PowerShell:\n\n|||||\n|-|-|-|-|\n|cat|dir|mount|rm|\n|cd|echo|move|rmdir|\n|chdir|erase|popd|sleep|\n|clear|h|ps|sort|\n|cls|history|pushd|tee|\n|copy|kill|pwd|type|\n|del|lp|r|write|\n|diff|ls|ren||\n\nIf you find yourself using one of these commands reflexively and want to learn the real name of the native Windows PowerShell command, you can use the **Get\\-Alias** command:\n\n```\nPS> Get-Alias cls\n\nCommandType     Name                            Definition\n-----------     ----                            ----------\nAlias           cls                             Clear-Host\n```\n\nTo make examples more readable, the Windows PowerShell User's Guide generally avoids using aliases. However, knowing more about aliases this early can still be useful if you are working with arbitrary snippets of Windows PowerShell code from another source or want to define your own aliases. The rest of this section will discuss standard aliases and how to define your own aliases.\n\n### Interpreting Standard Aliases\nUnlike the aliases described above, which were designed for name\\-compatibility with other interfaces, the aliases built into Windows PowerShell are generally designed for brevity. These shorter names can be typed quickly, but are impossible to read if you do not know what they refer to.\n\nWindows PowerShell tries to compromise between clarity and brevity by providing a set of standard aliases that are based on shorthand names for common verbs and nouns. This allows a core set of aliases for common cmdlets that are readable when you know the shorthand names. For example, in standard aliases the verb **Get** is abbreviated to **g**, the verb **Set** is abbreviated to **s**, the noun **Item** is abbreviated to **i**, the noun **Location** is abbreviated to **l**, and the noun Command is abbreviated to **cm**.\n\nHere is a brief example to illustrate how this works. The standard alias for Get\\-Item comes from combining **g** for Get and **i** for Item: **gi**. The standard alias for Set\\-Item comes from combining **s** for Set and **i** for Item: **si**. The standard alias for Get\\-Location comes from combining **g** for Get and **l** for Location, **gl**. The standard alias for Set\\-Location comes from combining **s** for Set and **l** for Location, **sl**. The standard alias for Get\\-Command comes from combining **g** for Get and **cm** for Command, **gcm**. There is no Set\\-Command cmdlet, but if there were, we would be able to guess that the standard alias comes from **s** for Set and **cm** for Command: **scm**. Furthermore, people familiar with Windows PowerShell aliasing who encounter **scm** would be able to guess that the alias refers to Set\\-Command.\n\n### Creating New Aliases\nYou can create your own aliases using the Set\\-Alias cmdlet. For example, the following statements create the standard cmdlet aliases discussed in Interpreting Standard Aliases:\n\n```\nSet-Alias -Name gi -Value Get-Item\nSet-Alias -Name si -Value Set-Item\nSet-Alias -Name gl -Value Get-Location\nSet-Alias -Name sl -Value Set-Location\nSet-Alias -Name gcm -Value Get-Command\n```\n\nInternally, Windows PowerShell uses commands like these during startup, but these aliases are not changeable. If you attempt to actually execute one of these commands, you will get an error explaining that the alias cannot be modified. For example:\n\n<pre>PS> Set-Alias -Name gi -Value Get-Item\nSet-Alias : Alias is not writeable because alias gi is read-only or constant and cannot be written to.\nAt line:1 char:10\n+ Set-Alias  <<<< -Name gi -Value Get-Item</pre>\n\n"
+}

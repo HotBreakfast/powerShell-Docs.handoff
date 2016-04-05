@@ -1,0 +1,599 @@
+{
+  "nodes": [
+    {
+      "content": "Removing Objects from the Pipeline (Where-Object)",
+      "pos": [
+        11,
+        60
+      ]
+    },
+    {
+      "content": "Removing Objects from the Pipeline (Where-Object)",
+      "pos": [
+        195,
+        244
+      ]
+    },
+    {
+      "content": "In Windows PowerShell, you often generate and pass along more objects to a pipeline than you want.",
+      "pos": [
+        245,
+        343
+      ]
+    },
+    {
+      "content": "You can specify the properties of particular objects to display by using the <bpt id=\"p1\">**</bpt>Format<ept id=\"p1\">**</ept> cmdlets, but this does not help with the problem of removing entire objects from the display.",
+      "pos": [
+        344,
+        525
+      ]
+    },
+    {
+      "content": "You may want to filter objects before the end of a pipeline, so you can perform actions on only a subset of the initially\\-generated objects.",
+      "pos": [
+        526,
+        667
+      ]
+    },
+    {
+      "content": "Windows PowerShell includes a <bpt id=\"p1\">**</bpt>Where\\-Object<ept id=\"p1\">**</ept> cmdlet that allows you to test each object in the pipeline and only pass it along the pipeline if it meets a particular test condition.",
+      "pos": [
+        669,
+        852
+      ]
+    },
+    {
+      "content": "Objects that do not pass the test are removed from the pipeline.",
+      "pos": [
+        853,
+        917
+      ]
+    },
+    {
+      "content": "You supply the test condition as the value of the <bpt id=\"p1\">**</bpt>Where\\-ObjectFilterScript<ept id=\"p1\">**</ept> parameter.",
+      "pos": [
+        918,
+        1008
+      ]
+    },
+    {
+      "content": "Performing Simple Tests with Where\\-Object",
+      "pos": [
+        1014,
+        1056
+      ]
+    },
+    {
+      "content": "The value of <bpt id=\"p1\">**</bpt>FilterScript<ept id=\"p1\">**</ept> is a <bpt id=\"p2\">*</bpt>script block<ept id=\"p2\">*</ept> \\-  one or more Windows PowerShell commands surrounded by braces {} \\- that evaluates to true or false.",
+      "pos": [
+        1057,
+        1210
+      ]
+    },
+    {
+      "content": "These script blocks can be very simple, but creating them requires knowing about another Windows PowerShell concept, comparison operators.",
+      "pos": [
+        1211,
+        1349
+      ]
+    },
+    {
+      "content": "A comparison operator compares the items that appear on each side of it.",
+      "pos": [
+        1350,
+        1422
+      ]
+    },
+    {
+      "content": "Comparison operators begin with a '\\-' character and are followed by a name.",
+      "pos": [
+        1423,
+        1499
+      ]
+    },
+    {
+      "content": "Basic comparison operators work on almost any kind of object.",
+      "pos": [
+        1500,
+        1561
+      ]
+    },
+    {
+      "content": "The more advanced comparison operators might only work on text or arrays.",
+      "pos": [
+        1562,
+        1635
+      ]
+    },
+    {
+      "pos": [
+        1639,
+        1747
+      ],
+      "content": "[!NOTE]\nBy default, when working with text, Windows PowerShell comparison operators are case\\-insensitive.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "By default, when working with text, Windows PowerShell comparison operators are case\\-insensitive.",
+          "pos": [
+            8,
+            106
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Due to parsing considerations, symbols such as &lt;,&gt;, and \\= are not used as comparison operators.",
+      "pos": [
+        1749,
+        1845
+      ]
+    },
+    {
+      "content": "Instead, comparison operators are comprised of letters.",
+      "pos": [
+        1846,
+        1901
+      ]
+    },
+    {
+      "content": "The basic comparison operators are listed in the following table.",
+      "pos": [
+        1902,
+        1967
+      ]
+    },
+    {
+      "content": "Comparison Operator",
+      "pos": [
+        1970,
+        1989
+      ]
+    },
+    {
+      "content": "Meaning",
+      "pos": [
+        1990,
+        1997
+      ]
+    },
+    {
+      "content": "Example (returns true)",
+      "pos": [
+        1998,
+        2020
+      ]
+    },
+    {
+      "content": "\\-eq",
+      "pos": [
+        2088,
+        2092
+      ]
+    },
+    {
+      "content": "is equal to",
+      "pos": [
+        2093,
+        2104
+      ]
+    },
+    {
+      "content": "1 \\-eq 1",
+      "pos": [
+        2105,
+        2113
+      ]
+    },
+    {
+      "content": "\\-ne",
+      "pos": [
+        2116,
+        2120
+      ]
+    },
+    {
+      "content": "Is not equal to",
+      "pos": [
+        2121,
+        2136
+      ]
+    },
+    {
+      "content": "1 \\-ne 2",
+      "pos": [
+        2137,
+        2145
+      ]
+    },
+    {
+      "content": "\\-lt",
+      "pos": [
+        2148,
+        2152
+      ]
+    },
+    {
+      "content": "Is less than",
+      "pos": [
+        2153,
+        2165
+      ]
+    },
+    {
+      "content": "1 \\-lt 2",
+      "pos": [
+        2166,
+        2174
+      ]
+    },
+    {
+      "content": "\\-le",
+      "pos": [
+        2177,
+        2181
+      ]
+    },
+    {
+      "content": "Is less than or equal to",
+      "pos": [
+        2182,
+        2206
+      ]
+    },
+    {
+      "content": "1 \\-le 2",
+      "pos": [
+        2207,
+        2215
+      ]
+    },
+    {
+      "content": "\\-gt",
+      "pos": [
+        2218,
+        2222
+      ]
+    },
+    {
+      "content": "Is greater than",
+      "pos": [
+        2223,
+        2238
+      ]
+    },
+    {
+      "content": "2 \\-gt 1",
+      "pos": [
+        2239,
+        2247
+      ]
+    },
+    {
+      "content": "\\-ge",
+      "pos": [
+        2250,
+        2254
+      ]
+    },
+    {
+      "content": "Is greater than or equal to",
+      "pos": [
+        2255,
+        2282
+      ]
+    },
+    {
+      "content": "2 \\-ge 1",
+      "pos": [
+        2283,
+        2291
+      ]
+    },
+    {
+      "content": "\\-like",
+      "pos": [
+        2294,
+        2300
+      ]
+    },
+    {
+      "content": "Is like (wildcard comparison for text)",
+      "pos": [
+        2301,
+        2339
+      ]
+    },
+    {
+      "content": "\"file.doc\" \\-like \"f\\*.do?\"",
+      "pos": [
+        2340,
+        2367
+      ]
+    },
+    {
+      "content": "\\-notlike",
+      "pos": [
+        2370,
+        2379
+      ]
+    },
+    {
+      "content": "Is not like (wildcard comparison for text)",
+      "pos": [
+        2380,
+        2422
+      ]
+    },
+    {
+      "content": "\"file.doc\" \\-notlike \"p\\*.doc\"",
+      "pos": [
+        2423,
+        2453
+      ]
+    },
+    {
+      "content": "\\-contains",
+      "pos": [
+        2456,
+        2466
+      ]
+    },
+    {
+      "content": "Contains",
+      "pos": [
+        2467,
+        2475
+      ]
+    },
+    {
+      "content": "1,2,3 \\-contains 1",
+      "pos": [
+        2476,
+        2494
+      ]
+    },
+    {
+      "content": "\\-notcontains",
+      "pos": [
+        2497,
+        2510
+      ]
+    },
+    {
+      "content": "Does not contain",
+      "pos": [
+        2511,
+        2527
+      ]
+    },
+    {
+      "content": "1,2,3 \\-notcontains 4",
+      "pos": [
+        2528,
+        2549
+      ]
+    },
+    {
+      "content": "Where\\-Object script blocks use the special variable '$\\_' to refer to the current object in the pipeline.",
+      "pos": [
+        2552,
+        2658
+      ]
+    },
+    {
+      "content": "Here is an example of how it works.",
+      "pos": [
+        2659,
+        2694
+      ]
+    },
+    {
+      "content": "If you have a list of numbers, and only want to return the ones that are less than 3, you can use Where\\-Object to filter the numbers by typing:",
+      "pos": [
+        2695,
+        2839
+      ]
+    },
+    {
+      "content": "Filtering Based on Object Properties",
+      "pos": [
+        2910,
+        2946
+      ]
+    },
+    {
+      "content": "Since $\\_ refers to the current pipeline object, we can access its properties for our tests.",
+      "pos": [
+        2947,
+        3039
+      ]
+    },
+    {
+      "content": "As an example, we can look at the Win32\\_SystemDriver class in WMI.",
+      "pos": [
+        3041,
+        3108
+      ]
+    },
+    {
+      "content": "There might be hundreds of system drivers on a particular system, but you might only be interested in a particular set of the system drivers, such as those which are currently running.",
+      "pos": [
+        3109,
+        3293
+      ]
+    },
+    {
+      "content": "If you use Get\\-Member to view Win32\\_SystemDriver members (<bpt id=\"p1\">**</bpt>Get\\-WmiObject \\-Class Win32\\_SystemDriver | Get\\-Member \\-MemberType Property<ept id=\"p1\">**</ept>) you will see that the relevant property is State, and that it has a value of \"Running\" when the driver is running.",
+      "pos": [
+        3294,
+        3552
+      ]
+    },
+    {
+      "content": "You can filter the system drivers, selecting only the running ones by typing:",
+      "pos": [
+        3553,
+        3630
+      ]
+    },
+    {
+      "content": "This still produces a long list.",
+      "pos": [
+        3735,
+        3767
+      ]
+    },
+    {
+      "content": "You may want to filter to only select the drivers set to start automatically by testing the StartMode value as well:",
+      "pos": [
+        3768,
+        3884
+      ]
+    },
+    {
+      "content": "This gives us a lot of information we no longer need because we know that the drivers are running.",
+      "pos": [
+        4287,
+        4385
+      ]
+    },
+    {
+      "content": "In fact, the only information we probably need at this point are the name and the display name.",
+      "pos": [
+        4386,
+        4481
+      ]
+    },
+    {
+      "content": "The following command includes only those two properties, resulting in much simpler output:",
+      "pos": [
+        4482,
+        4573
+      ]
+    },
+    {
+      "content": "There are two Where\\-Object elements in the above command, but they can be expressed in a single Where\\-Object element by using the \\-and logical operator, like this:",
+      "pos": [
+        5423,
+        5589
+      ]
+    },
+    {
+      "content": "The standard logical operators are listed in the following table.",
+      "pos": [
+        5773,
+        5838
+      ]
+    },
+    {
+      "content": "Logical Operator",
+      "pos": [
+        5841,
+        5857
+      ]
+    },
+    {
+      "content": "Meaning",
+      "pos": [
+        5858,
+        5865
+      ]
+    },
+    {
+      "content": "Example (returns true)",
+      "pos": [
+        5866,
+        5888
+      ]
+    },
+    {
+      "content": "\\-and",
+      "pos": [
+        5953,
+        5958
+      ]
+    },
+    {
+      "content": "Logical and; true if both sides are true",
+      "pos": [
+        5959,
+        5999
+      ]
+    },
+    {
+      "content": "(1 \\-eq 1) \\-and (2 \\-eq 2)",
+      "pos": [
+        6000,
+        6027
+      ]
+    },
+    {
+      "content": "\\-or",
+      "pos": [
+        6030,
+        6034
+      ]
+    },
+    {
+      "content": "Logical or; true if either side is true",
+      "pos": [
+        6035,
+        6074
+      ]
+    },
+    {
+      "content": "(1 \\-eq 1) \\-or (1 \\-eq 2)",
+      "pos": [
+        6075,
+        6101
+      ]
+    },
+    {
+      "content": "\\-not",
+      "pos": [
+        6104,
+        6109
+      ]
+    },
+    {
+      "content": "Logical not; reverses true and false",
+      "pos": [
+        6110,
+        6146
+      ]
+    },
+    {
+      "content": "\\-not (1 \\-eq 2)",
+      "pos": [
+        6147,
+        6163
+      ]
+    },
+    {
+      "content": "\\!",
+      "pos": [
+        6166,
+        6168
+      ]
+    },
+    {
+      "content": "Logical not; reverses true and false",
+      "pos": [
+        6169,
+        6205
+      ]
+    },
+    {
+      "content": "\\!(1 \\-eq 2)",
+      "pos": [
+        6206,
+        6218
+      ]
+    }
+  ],
+  "content": "---\ntitle: Removing Objects from the Pipeline (Where-Object)\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284\n---\n# Removing Objects from the Pipeline (Where-Object)\nIn Windows PowerShell, you often generate and pass along more objects to a pipeline than you want. You can specify the properties of particular objects to display by using the **Format** cmdlets, but this does not help with the problem of removing entire objects from the display. You may want to filter objects before the end of a pipeline, so you can perform actions on only a subset of the initially\\-generated objects.\n\nWindows PowerShell includes a **Where\\-Object** cmdlet that allows you to test each object in the pipeline and only pass it along the pipeline if it meets a particular test condition. Objects that do not pass the test are removed from the pipeline. You supply the test condition as the value of the **Where\\-ObjectFilterScript** parameter.\n\n### Performing Simple Tests with Where\\-Object\nThe value of **FilterScript** is a *script block* \\-  one or more Windows PowerShell commands surrounded by braces {} \\- that evaluates to true or false. These script blocks can be very simple, but creating them requires knowing about another Windows PowerShell concept, comparison operators. A comparison operator compares the items that appear on each side of it. Comparison operators begin with a '\\-' character and are followed by a name. Basic comparison operators work on almost any kind of object. The more advanced comparison operators might only work on text or arrays.\n\n> [!NOTE]\n> By default, when working with text, Windows PowerShell comparison operators are case\\-insensitive.\n\nDue to parsing considerations, symbols such as <,>, and \\= are not used as comparison operators. Instead, comparison operators are comprised of letters. The basic comparison operators are listed in the following table.\n\n|Comparison Operator|Meaning|Example (returns true)|\n|-----------------------|-----------|--------------------------|\n|\\-eq|is equal to|1 \\-eq 1|\n|\\-ne|Is not equal to|1 \\-ne 2|\n|\\-lt|Is less than|1 \\-lt 2|\n|\\-le|Is less than or equal to|1 \\-le 2|\n|\\-gt|Is greater than|2 \\-gt 1|\n|\\-ge|Is greater than or equal to|2 \\-ge 1|\n|\\-like|Is like (wildcard comparison for text)|\"file.doc\" \\-like \"f\\*.do?\"|\n|\\-notlike|Is not like (wildcard comparison for text)|\"file.doc\" \\-notlike \"p\\*.doc\"|\n|\\-contains|Contains|1,2,3 \\-contains 1|\n|\\-notcontains|Does not contain|1,2,3 \\-notcontains 4|\n\nWhere\\-Object script blocks use the special variable '$\\_' to refer to the current object in the pipeline. Here is an example of how it works. If you have a list of numbers, and only want to return the ones that are less than 3, you can use Where\\-Object to filter the numbers by typing:\n\n```\nPS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}\n1\n2\n```\n\n### Filtering Based on Object Properties\nSince $\\_ refers to the current pipeline object, we can access its properties for our tests.\n\nAs an example, we can look at the Win32\\_SystemDriver class in WMI. There might be hundreds of system drivers on a particular system, but you might only be interested in a particular set of the system drivers, such as those which are currently running. If you use Get\\-Member to view Win32\\_SystemDriver members (**Get\\-WmiObject \\-Class Win32\\_SystemDriver | Get\\-Member \\-MemberType Property**) you will see that the relevant property is State, and that it has a value of \"Running\" when the driver is running. You can filter the system drivers, selecting only the running ones by typing:\n\n```\nGet-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq \"Running\"}\n```\n\nThis still produces a long list. You may want to filter to only select the drivers set to start automatically by testing the StartMode value as well:\n\n```\nPS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq \"Running\"} | Where-Object -FilterScript {$_.StartMode -eq \"Auto\"}\n\nDisplayName : RAS Asynchronous Media Driver\nName        : AsyncMac\nState       : Running\nStatus      : OK\nStarted     : True\n\nDisplayName : Audio Stub Driver\nName        : audstub\nState       : Running\nStatus      : OK\nStarted     : True\n```\n\nThis gives us a lot of information we no longer need because we know that the drivers are running. In fact, the only information we probably need at this point are the name and the display name. The following command includes only those two properties, resulting in much simpler output:\n\n```\nPS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq \"Running\"} | Where-Object -FilterScript {$_.StartMode -eq \"Manual\"} | Format-Table -Property Name,DisplayName\n\nName                                    DisplayName\n----                                    -----------\nAsyncMac                                RAS Asynchronous Media Driver\nFdc                                     Floppy Disk Controller Driver\nFlpydisk                                Floppy Disk Driver\nGpc                                     Generic Packet Classifier\nIpNat                                   IP Network Address Translator\nmouhid                                  Mouse HID Driver\nMRxDAV                                  WebDav Client Redirector\nmssmbios                                Microsoft System Management BIOS Driver\n```\n\nThere are two Where\\-Object elements in the above command, but they can be expressed in a single Where\\-Object element by using the \\-and logical operator, like this:\n\n```\nGet-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State -eq \"Running\") -and ($_.StartMode -eq \"Manual\") } | Format-Table -Property Name,DisplayName\n```\n\nThe standard logical operators are listed in the following table.\n\n|Logical Operator|Meaning|Example (returns true)|\n|--------------------|-----------|--------------------------|\n|\\-and|Logical and; true if both sides are true|(1 \\-eq 1) \\-and (2 \\-eq 2)|\n|\\-or|Logical or; true if either side is true|(1 \\-eq 1) \\-or (1 \\-eq 2)|\n|\\-not|Logical not; reverses true and false|\\-not (1 \\-eq 2)|\n|\\!|Logical not; reverses true and false|\\!(1 \\-eq 2)|\n\n"
+}
