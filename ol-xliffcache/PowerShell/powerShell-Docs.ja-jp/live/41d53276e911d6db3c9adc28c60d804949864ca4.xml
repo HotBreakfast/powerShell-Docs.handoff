@@ -1,0 +1,243 @@
+{
+  "nodes": [
+    {
+      "content": "About Windows PowerShell",
+      "pos": [
+        11,
+        35
+      ]
+    },
+    {
+      "content": "About Windows PowerShell",
+      "pos": [
+        170,
+        194
+      ]
+    },
+    {
+      "content": "Windows PowerShell is designed to improve the command\\-line and scripting environment by eliminating long\\-standing problems and adding new features.",
+      "pos": [
+        195,
+        344
+      ]
+    },
+    {
+      "content": "Discoverability",
+      "pos": [
+        349,
+        364
+      ]
+    },
+    {
+      "content": "Windows PowerShell makes it easy to discover its features.",
+      "pos": [
+        365,
+        423
+      ]
+    },
+    {
+      "content": "For example, to find a list of cmdlets that view and change Windows services, type:",
+      "pos": [
+        424,
+        507
+      ]
+    },
+    {
+      "content": "After discovering which cmdlet accomplishes a task, you can learn more about the cmdlet by using the Get\\-Help cmdlet.",
+      "pos": [
+        540,
+        658
+      ]
+    },
+    {
+      "content": "For example, to display help about the Get\\-Service cmdlet, type:",
+      "pos": [
+        659,
+        724
+      ]
+    },
+    {
+      "content": "To fully understand the output of that cmdlet, pipe its output to the Get\\-Member cmdlet.",
+      "pos": [
+        756,
+        845
+      ]
+    },
+    {
+      "content": "For example, the following command displays information about the members of the object output by the Get\\-Service cmdlet.",
+      "pos": [
+        846,
+        968
+      ]
+    },
+    {
+      "content": "Consistency",
+      "pos": [
+        1007,
+        1018
+      ]
+    },
+    {
+      "content": "Managing systems can be a complex endeavor and tools that have a consistent interface help to control the inherent complexity.",
+      "pos": [
+        1019,
+        1145
+      ]
+    },
+    {
+      "content": "Unfortunately, neither command\\-line tools nor scriptable COM objects have been known for their consistency.",
+      "pos": [
+        1146,
+        1254
+      ]
+    },
+    {
+      "content": "The consistency of Windows PowerShell is one of its primary assets.",
+      "pos": [
+        1256,
+        1323
+      ]
+    },
+    {
+      "content": "For example, if you learn how to use the Sort\\-Object cmdlet, you can use that knowledge to sort the output of any cmdlet.",
+      "pos": [
+        1324,
+        1446
+      ]
+    },
+    {
+      "content": "You do not have to learn the different sorting routines of each cmdlet.",
+      "pos": [
+        1447,
+        1518
+      ]
+    },
+    {
+      "content": "In addition, cmdlet developers do not have to design sorting features for their cmdlets.",
+      "pos": [
+        1520,
+        1608
+      ]
+    },
+    {
+      "content": "Windows PowerShell gives them a framework that provides the basic features and forces them to be consistent about many aspects of the interface.",
+      "pos": [
+        1609,
+        1753
+      ]
+    },
+    {
+      "content": "The framework eliminates some of the choices that are typically left to the developer, but, in return, it makes the development of robust and easy\\-to\\-use cmdlets much simpler.",
+      "pos": [
+        1754,
+        1931
+      ]
+    },
+    {
+      "content": "Interactive and Scripting Environments",
+      "pos": [
+        1936,
+        1974
+      ]
+    },
+    {
+      "content": "Windows PowerShell is a combined interactive and scripting environment that gives you access to command\\-line tools and COM objects, and also enables you to use the power of the .NET Framework Class Library (FCL).",
+      "pos": [
+        1975,
+        2188
+      ]
+    },
+    {
+      "content": "This environment improves upon the Windows Command Prompt, which provides an interactive environment with multiple command\\-line tools.",
+      "pos": [
+        2190,
+        2325
+      ]
+    },
+    {
+      "content": "It also improves upon Windows Script Host (WSH) scripts, which let you use multiple command\\-line tools and COM automation objects, but do not provide an interactive environment.",
+      "pos": [
+        2326,
+        2504
+      ]
+    },
+    {
+      "content": "By combining access to all of these features, Windows PowerShell extends the ability of the interactive user and the script writer, and makes system administration more manageable.",
+      "pos": [
+        2506,
+        2686
+      ]
+    },
+    {
+      "content": "Object Orientation",
+      "pos": [
+        2691,
+        2709
+      ]
+    },
+    {
+      "content": "Although you interact with Windows PowerShell by typing commands in text, Windows PowerShell is based on objects, not text.",
+      "pos": [
+        2710,
+        2833
+      ]
+    },
+    {
+      "content": "The output of a command is an object.",
+      "pos": [
+        2834,
+        2871
+      ]
+    },
+    {
+      "content": "You can send the output object to another command as its input.",
+      "pos": [
+        2872,
+        2935
+      ]
+    },
+    {
+      "content": "As a result, Windows PowerShell provides a familiar interface to people experienced with other shells, while introducing a new and powerful command\\-line paradigm.",
+      "pos": [
+        2936,
+        3099
+      ]
+    },
+    {
+      "content": "It extends the concept of sending data between commands by enabling you to send objects, rather than text.",
+      "pos": [
+        3100,
+        3206
+      ]
+    },
+    {
+      "content": "Easy Transition to Scripting",
+      "pos": [
+        3211,
+        3239
+      ]
+    },
+    {
+      "content": "Windows PowerShell makes it easy to transition from typing commands interactively to creating and running scripts.",
+      "pos": [
+        3240,
+        3354
+      ]
+    },
+    {
+      "content": "You can type commands at the Windows PowerShell command prompt to discover the commands that perform a task.",
+      "pos": [
+        3355,
+        3463
+      ]
+    },
+    {
+      "content": "Then, you can save those commands in a transcript or a history before copying them to a file for use as a script.",
+      "pos": [
+        3464,
+        3577
+      ]
+    }
+  ],
+  "content": "---\ntitle: About Windows PowerShell\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 979654ae-7994-47f8-be43-d79e7a140143\n---\n# About Windows PowerShell\nWindows PowerShell is designed to improve the command\\-line and scripting environment by eliminating long\\-standing problems and adding new features.\n\n## Discoverability\nWindows PowerShell makes it easy to discover its features. For example, to find a list of cmdlets that view and change Windows services, type:\n\n```\nget-command *-service\n```\n\nAfter discovering which cmdlet accomplishes a task, you can learn more about the cmdlet by using the Get\\-Help cmdlet. For example, to display help about the Get\\-Service cmdlet, type:\n\n```\nget-help get-service\n```\n\nTo fully understand the output of that cmdlet, pipe its output to the Get\\-Member cmdlet. For example, the following command displays information about the members of the object output by the Get\\-Service cmdlet.\n\n```\nget-service | get-member\n```\n\n## Consistency\nManaging systems can be a complex endeavor and tools that have a consistent interface help to control the inherent complexity. Unfortunately, neither command\\-line tools nor scriptable COM objects have been known for their consistency.\n\nThe consistency of Windows PowerShell is one of its primary assets. For example, if you learn how to use the Sort\\-Object cmdlet, you can use that knowledge to sort the output of any cmdlet. You do not have to learn the different sorting routines of each cmdlet.\n\nIn addition, cmdlet developers do not have to design sorting features for their cmdlets. Windows PowerShell gives them a framework that provides the basic features and forces them to be consistent about many aspects of the interface. The framework eliminates some of the choices that are typically left to the developer, but, in return, it makes the development of robust and easy\\-to\\-use cmdlets much simpler.\n\n## Interactive and Scripting Environments\nWindows PowerShell is a combined interactive and scripting environment that gives you access to command\\-line tools and COM objects, and also enables you to use the power of the .NET Framework Class Library (FCL).\n\nThis environment improves upon the Windows Command Prompt, which provides an interactive environment with multiple command\\-line tools. It also improves upon Windows Script Host (WSH) scripts, which let you use multiple command\\-line tools and COM automation objects, but do not provide an interactive environment.\n\nBy combining access to all of these features, Windows PowerShell extends the ability of the interactive user and the script writer, and makes system administration more manageable.\n\n## Object Orientation\nAlthough you interact with Windows PowerShell by typing commands in text, Windows PowerShell is based on objects, not text. The output of a command is an object. You can send the output object to another command as its input. As a result, Windows PowerShell provides a familiar interface to people experienced with other shells, while introducing a new and powerful command\\-line paradigm. It extends the concept of sending data between commands by enabling you to send objects, rather than text.\n\n## Easy Transition to Scripting\nWindows PowerShell makes it easy to transition from typing commands interactively to creating and running scripts. You can type commands at the Windows PowerShell command prompt to discover the commands that perform a task. Then, you can save those commands in a transcript or a history before copying them to a file for use as a script.\n\n"
+}

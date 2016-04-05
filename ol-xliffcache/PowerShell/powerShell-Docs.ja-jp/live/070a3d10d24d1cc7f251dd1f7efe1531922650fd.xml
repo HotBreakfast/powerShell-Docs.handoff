@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "content": "Windows PowerShell Basics",
+      "pos": [
+        11,
+        36
+      ]
+    },
+    {
+      "content": "Windows PowerShell Basics",
+      "pos": [
+        171,
+        196
+      ]
+    },
+    {
+      "content": "Graphical user interfaces use some basic concepts that are well known to most computer users.",
+      "pos": [
+        197,
+        290
+      ]
+    },
+    {
+      "content": "Users rely on the familiarity of those interfaces to accomplish tasks.",
+      "pos": [
+        291,
+        361
+      ]
+    },
+    {
+      "content": "Operating systems present users with a graphical representation of items that can be browsed, usually with drop\\-down menus for accessing specific functionality and context menus for accessing context\\-specific functionality.",
+      "pos": [
+        362,
+        587
+      ]
+    },
+    {
+      "content": "A command\\-line interface (CLI), such as Windows PowerShell, must use a different approach to expose information, because it does not have menus or graphical systems to help the user.",
+      "pos": [
+        589,
+        772
+      ]
+    },
+    {
+      "content": "You need to know command names before you can use them.",
+      "pos": [
+        773,
+        828
+      ]
+    },
+    {
+      "content": "Although you can type complex commands that are equivalent to the features in a GUI environment, you must become familiar with commonly\\-used commands and command parameters.",
+      "pos": [
+        829,
+        1003
+      ]
+    },
+    {
+      "content": "Most CLIs do not have patterns that can help the user to learn the interface.",
+      "pos": [
+        1005,
+        1082
+      ]
+    },
+    {
+      "content": "Because CLIs were the first operating system shells, many command names and parameter names were selected arbitrarily.",
+      "pos": [
+        1083,
+        1201
+      ]
+    },
+    {
+      "content": "Terse command names were generally chosen over clear ones.",
+      "pos": [
+        1202,
+        1260
+      ]
+    },
+    {
+      "content": "Although help systems and command design standards are integrated into most CLIs, they have been generally designed for compatibility with the earliest commands, so the command set is still shaped by decisions made decades ago.",
+      "pos": [
+        1261,
+        1488
+      ]
+    },
+    {
+      "content": "Windows PowerShell was designed to take advantage of a user's historic knowledge of CLIs.",
+      "pos": [
+        1490,
+        1579
+      ]
+    },
+    {
+      "content": "In this chapter, we will talk about some basic tools and concepts that you can use to learn Windows PowerShell quickly.",
+      "pos": [
+        1580,
+        1699
+      ]
+    },
+    {
+      "content": "They include:",
+      "pos": [
+        1700,
+        1713
+      ]
+    },
+    {
+      "content": "Using Get\\-Command",
+      "pos": [
+        1719,
+        1737
+      ]
+    },
+    {
+      "content": "Using Cmd.exe and UNIX commands",
+      "pos": [
+        1743,
+        1774
+      ]
+    },
+    {
+      "content": "Using External Commands",
+      "pos": [
+        1780,
+        1803
+      ]
+    },
+    {
+      "content": "Using Tab\\-Completion",
+      "pos": [
+        1809,
+        1830
+      ]
+    },
+    {
+      "content": "Using Get\\-Help",
+      "pos": [
+        1836,
+        1851
+      ]
+    }
+  ],
+  "content": "---\ntitle: Windows PowerShell Basics\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 6b3cbbc8-060c-4877-b00b-7300dbbe4e28\n---\n# Windows PowerShell Basics\nGraphical user interfaces use some basic concepts that are well known to most computer users. Users rely on the familiarity of those interfaces to accomplish tasks. Operating systems present users with a graphical representation of items that can be browsed, usually with drop\\-down menus for accessing specific functionality and context menus for accessing context\\-specific functionality.\n\nA command\\-line interface (CLI), such as Windows PowerShell, must use a different approach to expose information, because it does not have menus or graphical systems to help the user. You need to know command names before you can use them. Although you can type complex commands that are equivalent to the features in a GUI environment, you must become familiar with commonly\\-used commands and command parameters.\n\nMost CLIs do not have patterns that can help the user to learn the interface. Because CLIs were the first operating system shells, many command names and parameter names were selected arbitrarily. Terse command names were generally chosen over clear ones. Although help systems and command design standards are integrated into most CLIs, they have been generally designed for compatibility with the earliest commands, so the command set is still shaped by decisions made decades ago.\n\nWindows PowerShell was designed to take advantage of a user's historic knowledge of CLIs. In this chapter, we will talk about some basic tools and concepts that you can use to learn Windows PowerShell quickly. They include:\n\n-   Using Get\\-Command\n\n-   Using Cmd.exe and UNIX commands\n\n-   Using External Commands\n\n-   Using Tab\\-Completion\n\n-   Using Get\\-Help\n\n"
+}
