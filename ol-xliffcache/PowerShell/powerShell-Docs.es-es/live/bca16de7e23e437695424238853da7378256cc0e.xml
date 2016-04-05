@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "content": "Starting the 32-Bit Version of Windows PowerShell",
+      "pos": [
+        11,
+        60
+      ]
+    },
+    {
+      "content": "Starting the 32-Bit Version of Windows PowerShell",
+      "pos": [
+        195,
+        244
+      ]
+    },
+    {
+      "content": "When you install <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> on a 64\\-bit computer, <bpt id=\"p1\">**</bpt>Windows PowerShell (x86)<ept id=\"p1\">**</ept>, a 32\\-bit version of <ph id=\"ph2\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> is installed in addition to the 64\\-bit version.",
+      "pos": [
+        245,
+        476
+      ]
+    },
+    {
+      "content": "When you run <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph>, the 64\\-bit version runs by default.",
+      "pos": [
+        477,
+        573
+      ]
+    },
+    {
+      "pos": [
+        575,
+        777
+      ],
+      "content": "However, you might occasionally need to run <bpt id=\"p1\">**</bpt>Windows PowerShell (x86)<ept id=\"p1\">**</ept>, such as when you are using a module that requires the 32\\-bit version or when you are connecting remotely to a 32\\-bit computer."
+    },
+    {
+      "pos": [
+        779,
+        892
+      ],
+      "content": "To start a 32\\-bit version of <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph>, use any of the following procedures."
+    },
+    {
+      "pos": [
+        899,
+        963
+      ],
+      "content": "In <ph id=\"ph1\">[!INCLUDE[winblue_server_1](../Token/winblue_server_1_md.md)]</ph>"
+    },
+    {
+      "content": "On the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> screen, type <bpt id=\"p2\">**</bpt>Windows PowerShell (x86)<ept id=\"p2\">**</ept>.",
+      "pos": [
+        969,
+        1028
+      ]
+    },
+    {
+      "content": "Click the <bpt id=\"p1\">**</bpt>Windows PowerShell x86<ept id=\"p1\">**</ept> tile.",
+      "pos": [
+        1029,
+        1071
+      ]
+    },
+    {
+      "pos": [
+        1077,
+        1161
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Server Manager<ept id=\"p1\">**</ept>, from the <bpt id=\"p2\">**</bpt>Tools<ept id=\"p2\">**</ept> menu, select <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1167,
+        1312
+      ],
+      "content": "On the desktop, move the cursor to the upper right corner, click <bpt id=\"p1\">**</bpt>Search<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>PowerShell x86<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1319,
+        1377
+      ],
+      "content": "In <ph id=\"ph1\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        1383,
+        1472
+      ],
+      "content": "On the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> screen, type <bpt id=\"p2\">**</bpt>PowerShell<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1478,
+        1562
+      ],
+      "content": "In <bpt id=\"p1\">**</bpt>Server Manager<ept id=\"p1\">**</ept>, from the <bpt id=\"p2\">**</bpt>Tools<ept id=\"p2\">**</ept> menu, select <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1568,
+        1709
+      ],
+      "content": "On the desktop, move the cursor to the upper right corner, click <bpt id=\"p1\">**</bpt>Search<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>PowerShell<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1716,
+        1780
+      ],
+      "content": "In <ph id=\"ph1\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph>"
+    },
+    {
+      "content": "On the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> screen, type <bpt id=\"p2\">**</bpt>Windows PowerShell (x86)<ept id=\"p2\">**</ept>.",
+      "pos": [
+        1786,
+        1845
+      ]
+    },
+    {
+      "content": "Click the <bpt id=\"p1\">**</bpt>Windows PowerShell x86<ept id=\"p1\">**</ept> tile.",
+      "pos": [
+        1846,
+        1888
+      ]
+    },
+    {
+      "content": "If you are running <bpt id=\"p1\">[</bpt>Remote Server Administration Tools<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=304145)</ept> for <ph id=\"ph1\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph>, you can also open <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> x86 from the <bpt id=\"p2\">**</bpt>Server ManagerTools<ept id=\"p2\">**</ept> menu.",
+      "pos": [
+        1894,
+        2164
+      ]
+    },
+    {
+      "content": "Select <bpt id=\"p1\">**</bpt>Windows PowerShell (x86)<ept id=\"p1\">**</ept>.",
+      "pos": [
+        2165,
+        2201
+      ]
+    },
+    {
+      "pos": [
+        2207,
+        2352
+      ],
+      "content": "On the desktop, move the cursor to the upper right corner, click <bpt id=\"p1\">**</bpt>Search<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>PowerShell x86<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        2359,
+        2417
+      ],
+      "content": "In <ph id=\"ph1\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph>"
+    },
+    {
+      "content": "On the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> screen, move the cursor to the upper right corner, click <bpt id=\"p2\">**</bpt>Settings<ept id=\"p2\">**</ept>, click <bpt id=\"p3\">**</bpt>Tiles<ept id=\"p3\">**</ept>, and then move the <bpt id=\"p4\">**</bpt>Show Administrative Tools<ept id=\"p4\">**</ept> slider to Yes.",
+      "pos": [
+        2423,
+        2590
+      ]
+    },
+    {
+      "content": "Then, type <bpt id=\"p1\">**</bpt>PowerShell<ept id=\"p1\">**</ept> and click <bpt id=\"p2\">**</bpt>Windows PowerShell (x86)<ept id=\"p2\">**</ept>.",
+      "pos": [
+        2591,
+        2656
+      ]
+    },
+    {
+      "content": "If you are running <bpt id=\"p1\">[</bpt>Remote Server Administration Tools<ept id=\"p1\">](http://www.microsoft.com/download/details.aspx?id=28972)</ept> for <ph id=\"ph1\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph>, you can also open <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> x86 from the <bpt id=\"p2\">**</bpt>Server ManagerTools<ept id=\"p2\">**</ept> menu.",
+      "pos": [
+        2662,
+        2936
+      ]
+    },
+    {
+      "content": "Select <bpt id=\"p1\">**</bpt>Windows PowerShell (x86)<ept id=\"p1\">**</ept>.",
+      "pos": [
+        2937,
+        2973
+      ]
+    },
+    {
+      "pos": [
+        2979,
+        3089
+      ],
+      "content": "On the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> screen or the desktop, type <bpt id=\"p2\">**</bpt>PowerShell (x86)<ept id=\"p2\">**</ept> and then click <bpt id=\"p3\">**</bpt>Windows PowerShell (x86)<ept id=\"p3\">**</ept>."
+    }
+  ],
+  "content": "---\ntitle: Starting the 32-Bit Version of Windows PowerShell\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50\n---\n# Starting the 32-Bit Version of Windows PowerShell\nWhen you install [!INCLUDE[mshshort](../Token/mshshort_md.md)] on a 64\\-bit computer, **Windows PowerShell (x86)**, a 32\\-bit version of [!INCLUDE[mshshort](../Token/mshshort_md.md)] is installed in addition to the 64\\-bit version. When you run [!INCLUDE[mshshort](../Token/mshshort_md.md)], the 64\\-bit version runs by default.\n\nHowever, you might occasionally need to run **Windows PowerShell (x86)**, such as when you are using a module that requires the 32\\-bit version or when you are connecting remotely to a 32\\-bit computer.\n\nTo start a 32\\-bit version of [!INCLUDE[mshshort](../Token/mshshort_md.md)], use any of the following procedures.\n\n#### In [!INCLUDE[winblue_server_1](../Token/winblue_server_1_md.md)]\n\n-   On the **Start** screen, type **Windows PowerShell (x86)**. Click the **Windows PowerShell x86** tile.\n\n-   In **Server Manager**, from the **Tools** menu, select **Windows PowerShell (x86)**.\n\n-   On the desktop, move the cursor to the upper right corner, click **Search**, type **PowerShell x86** and then click **Windows PowerShell (x86)**.\n\n#### In [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]\n\n-   On the **Start** screen, type **PowerShell** and then click **Windows PowerShell (x86)**.\n\n-   In **Server Manager**, from the **Tools** menu, select **Windows PowerShell (x86)**.\n\n-   On the desktop, move the cursor to the upper right corner, click **Search**, type **PowerShell** and then click **Windows PowerShell (x86)**.\n\n#### In [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]\n\n-   On the **Start** screen, type **Windows PowerShell (x86)**. Click the **Windows PowerShell x86** tile.\n\n-   If you are running [Remote Server Administration Tools](http://go.microsoft.com/fwlink/?LinkID=304145) for [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)], you can also open [!INCLUDE[wps_2](../Token/wps_2_md.md)] x86 from the **Server ManagerTools** menu. Select **Windows PowerShell (x86)**.\n\n-   On the desktop, move the cursor to the upper right corner, click **Search**, type **PowerShell x86** and then click **Windows PowerShell (x86)**.\n\n#### In [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]\n\n-   On the **Start** screen, move the cursor to the upper right corner, click **Settings**, click **Tiles**, and then move the **Show Administrative Tools** slider to Yes. Then, type **PowerShell** and click **Windows PowerShell (x86)**.\n\n-   If you are running [Remote Server Administration Tools](http://www.microsoft.com/download/details.aspx?id=28972) for [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)], you can also open [!INCLUDE[wps_2](../Token/wps_2_md.md)] x86 from the **Server ManagerTools** menu. Select **Windows PowerShell (x86)**.\n\n-   On the **Start** screen or the desktop, type **PowerShell (x86)** and then click **Windows PowerShell (x86)**.\n\n"
+}

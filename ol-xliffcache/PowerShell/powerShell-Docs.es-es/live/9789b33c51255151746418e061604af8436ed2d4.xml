@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "content": "Getting Started with Windows PowerShell",
+      "pos": [
+        11,
+        50
+      ]
+    },
+    {
+      "content": "Getting Started with Windows PowerShell",
+      "pos": [
+        185,
+        224
+      ]
+    },
+    {
+      "content": "Windows PowerShell is a new Windows command\\-line shell designed especially for system administrators.",
+      "pos": [
+        225,
+        327
+      ]
+    },
+    {
+      "content": "Windows PowerShell includes an interactive prompt and a scripting environment that can be used independently or in combination.",
+      "pos": [
+        328,
+        455
+      ]
+    },
+    {
+      "content": "Unlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework common language runtime (CLR) and the .NET Framework, and accepts and returns .NET Framework objects.",
+      "pos": [
+        457,
+        665
+      ]
+    },
+    {
+      "content": "This fundamental change in the environment brings entirely new tools and methods to the management and configuration of Windows.",
+      "pos": [
+        666,
+        794
+      ]
+    },
+    {
+      "content": "Windows PowerShell introduces the concept of a cmdlet (pronounced \"command\\-let\"), a simple, single\\-function command\\-line tool built into the shell.",
+      "pos": [
+        796,
+        946
+      ]
+    },
+    {
+      "content": "You can use each cmdlet separately, but their power is realized when you use these simple tools in combination to perform complex tasks.",
+      "pos": [
+        947,
+        1083
+      ]
+    },
+    {
+      "content": "Windows PowerShell includes more than one hundred basic core cmdlets, and you can write your own cmdlets and share them with other users.",
+      "pos": [
+        1084,
+        1221
+      ]
+    },
+    {
+      "content": "Like many shells, Windows PowerShell gives you access to the file system on the computer.",
+      "pos": [
+        1223,
+        1312
+      ]
+    },
+    {
+      "content": "In addition, Windows PowerShell <bpt id=\"p1\">*</bpt>providers<ept id=\"p1\">*</ept> enable you to access other data stores, such as the registry and the digital signature certificate stores, as easily as you access the file system.",
+      "pos": [
+        1313,
+        1504
+      ]
+    },
+    {
+      "content": "This Getting Started guide provides an introduction to Windows PowerShell: the language, the cmdlets, the providers, and the use of objects.",
+      "pos": [
+        1506,
+        1646
+      ]
+    },
+    {
+      "content": "In this topic:",
+      "pos": [
+        1648,
+        1662
+      ]
+    },
+    {
+      "content": "Windows PowerShell System Requirements",
+      "pos": [
+        1669,
+        1707
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell",
+      "pos": [
+        1767,
+        1796
+      ]
+    },
+    {
+      "content": "Starting Windows PowerShell",
+      "pos": [
+        1847,
+        1874
+      ]
+    },
+    {
+      "content": "Getting Ready to Use Windows PowerShell",
+      "pos": [
+        1923,
+        1962
+      ]
+    }
+  ],
+  "content": "---\ntitle: Getting Started with Windows PowerShell\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: b0e2ad92-875f-421d-b612-f624e644aa69\n---\n# Getting Started with Windows PowerShell\nWindows PowerShell is a new Windows command\\-line shell designed especially for system administrators. Windows PowerShell includes an interactive prompt and a scripting environment that can be used independently or in combination.\n\nUnlike most shells, which accept and return text, Windows PowerShell is built on top of the .NET Framework common language runtime (CLR) and the .NET Framework, and accepts and returns .NET Framework objects. This fundamental change in the environment brings entirely new tools and methods to the management and configuration of Windows.\n\nWindows PowerShell introduces the concept of a cmdlet (pronounced \"command\\-let\"), a simple, single\\-function command\\-line tool built into the shell. You can use each cmdlet separately, but their power is realized when you use these simple tools in combination to perform complex tasks. Windows PowerShell includes more than one hundred basic core cmdlets, and you can write your own cmdlets and share them with other users.\n\nLike many shells, Windows PowerShell gives you access to the file system on the computer. In addition, Windows PowerShell *providers* enable you to access other data stores, such as the registry and the digital signature certificate stores, as easily as you access the file system.\n\nThis Getting Started guide provides an introduction to Windows PowerShell: the language, the cmdlets, the providers, and the use of objects.\n\nIn this topic:\n\n-   [Windows PowerShell System Requirements](../Topic/Windows-PowerShell-System-Requirements.md)\n\n-   [Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md)\n\n-   [Starting Windows PowerShell](../Topic/Starting-Windows-PowerShell.md)\n\n-   [Getting Ready to Use Windows PowerShell](../Topic/Getting-Ready-to-Use-Windows-PowerShell.md)\n\n"
+}
