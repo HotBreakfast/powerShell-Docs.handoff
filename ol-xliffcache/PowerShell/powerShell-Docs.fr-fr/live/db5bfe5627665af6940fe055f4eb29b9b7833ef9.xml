@@ -1,0 +1,544 @@
+{
+  "nodes": [
+    {
+      "content": "Running Remote Commands",
+      "pos": [
+        11,
+        34
+      ]
+    },
+    {
+      "content": "Running Remote Commands",
+      "pos": [
+        169,
+        192
+      ]
+    },
+    {
+      "content": "You can run commands on one or hundreds of computers with a single Windows PowerShell command.",
+      "pos": [
+        193,
+        287
+      ]
+    },
+    {
+      "content": "Windows PowerShell supports remote computing by using various technologies, including WMI, RPC, and WS\\-Management.",
+      "pos": [
+        288,
+        403
+      ]
+    },
+    {
+      "content": "Remoting Without Configuration",
+      "pos": [
+        408,
+        438
+      ]
+    },
+    {
+      "content": "Many Windows PowerShell cmdlets have a ComputerName parameter that enables you to collect data and change settings one or more remote computers.",
+      "pos": [
+        439,
+        583
+      ]
+    },
+    {
+      "content": "They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.",
+      "pos": [
+        584,
+        747
+      ]
+    },
+    {
+      "content": "These cmdlets include:",
+      "pos": [
+        749,
+        771
+      ]
+    },
+    {
+      "content": "Restart-Computer",
+      "pos": [
+        778,
+        794
+      ]
+    },
+    {
+      "content": "Test-Connection",
+      "pos": [
+        851,
+        866
+      ]
+    },
+    {
+      "content": "Clear-EventLog",
+      "pos": [
+        923,
+        937
+      ]
+    },
+    {
+      "content": "Get-EventLog [m2]",
+      "pos": [
+        994,
+        1011
+      ]
+    },
+    {
+      "content": "Get-Hotfix",
+      "pos": [
+        1068,
+        1078
+      ]
+    },
+    {
+      "content": "Get-Process [m2]",
+      "pos": [
+        1135,
+        1151
+      ]
+    },
+    {
+      "content": "Get-Service [m2]",
+      "pos": [
+        1208,
+        1224
+      ]
+    },
+    {
+      "content": "Set-Service [m2]",
+      "pos": [
+        1281,
+        1297
+      ]
+    },
+    {
+      "content": "Get-WinEvent",
+      "pos": [
+        1354,
+        1366
+      ]
+    },
+    {
+      "content": "Get-WmiObject [m2]",
+      "pos": [
+        1423,
+        1441
+      ]
+    },
+    {
+      "content": "Typically, cmdlets that support remoting without special configuration have a ComputerName parameter and do not have a Session parameter.",
+      "pos": [
+        1493,
+        1630
+      ]
+    },
+    {
+      "content": "To find these cmdlets in your session, type:",
+      "pos": [
+        1631,
+        1675
+      ]
+    },
+    {
+      "content": "Windows PowerShell Remoting",
+      "pos": [
+        1803,
+        1830
+      ]
+    },
+    {
+      "content": "Windows PowerShell remoting, which uses the WS\\-Management protocol, lets you run any Windows PowerShell command on one or many remote computers.",
+      "pos": [
+        1831,
+        1976
+      ]
+    },
+    {
+      "content": "It lets you establish persistent connections, start 1:1 interactive sessions, and run scripts on multiple computers.",
+      "pos": [
+        1977,
+        2093
+      ]
+    },
+    {
+      "content": "To use Windows PowerShell remoting, the remote computer must be configured for remote management.",
+      "pos": [
+        2095,
+        2192
+      ]
+    },
+    {
+      "content": "For more information, including instructions, see <bpt id=\"p1\">[</bpt>about_Remote_Requirements<ept id=\"p1\">](assetId:///da213949-134c-4741-b307-81f4492ba1bd)</ept>.",
+      "pos": [
+        2193,
+        2320
+      ]
+    },
+    {
+      "content": "After you have configured Windows PowerShell remoting, many remoting strategies are available to you.",
+      "pos": [
+        2322,
+        2423
+      ]
+    },
+    {
+      "content": "The remainder of this document lists just a few of them.",
+      "pos": [
+        2424,
+        2480
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>about_Remote<ept id=\"p1\">](assetId:///9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)</ept> and <bpt id=\"p2\">[</bpt>about_Remote_FAQ<ept id=\"p2\">](assetId:///e23702fd-9415-4a98-9975-390a4d3adc42)</ept>.",
+      "pos": [
+        2481,
+        2643
+      ]
+    },
+    {
+      "content": "Start an Interactive Session",
+      "pos": [
+        2649,
+        2677
+      ]
+    },
+    {
+      "content": "To start an interactive session with a single remote computer, use the <bpt id=\"p1\">[</bpt>Enter-PSSession<ept id=\"p1\">](assetId:///f4fd89b4-80e9-434e-bd46-952aa8d40d4c)</ept> cmdlet.",
+      "pos": [
+        2678,
+        2823
+      ]
+    },
+    {
+      "content": "For example, to start an interactive session with the Server01 remote computer, type:",
+      "pos": [
+        2824,
+        2909
+      ]
+    },
+    {
+      "content": "The command prompt changes to display the name of the computer to which you are connected.",
+      "pos": [
+        2945,
+        3035
+      ]
+    },
+    {
+      "content": "From then on, any commands that you type at the prompt run on the remote computer and the results are displayed on the local computer.",
+      "pos": [
+        3036,
+        3170
+      ]
+    },
+    {
+      "content": "To end the interactive session, type:",
+      "pos": [
+        3172,
+        3209
+      ]
+    },
+    {
+      "pos": [
+        3235,
+        3453
+      ],
+      "content": "For more information about the Enter\\-PSSession and Exit\\-PSSession cmdlets, see <bpt id=\"p1\">[</bpt>Enter-PSSession<ept id=\"p1\">](assetId:///f4fd89b4-80e9-434e-bd46-952aa8d40d4c)</ept> and <bpt id=\"p2\">[</bpt>Exit-PSSession<ept id=\"p2\">](assetId:///b6daa1ce-48a5-41a3-ac4b-b64dbe03465d)</ept>."
+    },
+    {
+      "content": "Run a Remote Command",
+      "pos": [
+        3459,
+        3479
+      ]
+    },
+    {
+      "content": "To run any command on one or many remote computers, use the <bpt id=\"p1\">[</bpt>Invoke-Command<ept id=\"p1\">](assetId:///22fd98ba-1874-492e-95a5-c069467b8462)</ept> cmdlet.",
+      "pos": [
+        3480,
+        3613
+      ]
+    },
+    {
+      "content": "For example, to run a <bpt id=\"p1\">[</bpt>Get-UICulture [m2]<ept id=\"p1\">](assetId:///99175c2e-e856-4208-970e-3dd2f6bac5b8)</ept> command on the Server01 and Server02 remote computers, type:",
+      "pos": [
+        3614,
+        3766
+      ]
+    },
+    {
+      "content": "The output is returned to your computer.",
+      "pos": [
+        3841,
+        3881
+      ]
+    },
+    {
+      "pos": [
+        4148,
+        4273
+      ],
+      "content": "For more information about the Invoke\\-Command cmdlet, see <bpt id=\"p1\">[</bpt>Invoke-Command<ept id=\"p1\">](assetId:///22fd98ba-1874-492e-95a5-c069467b8462)</ept>."
+    },
+    {
+      "content": "Run a Script",
+      "pos": [
+        4279,
+        4291
+      ]
+    },
+    {
+      "content": "To run a script on one or many remote computers, use the FilePath parameter of the Invoke\\-Command cmdlet.",
+      "pos": [
+        4292,
+        4398
+      ]
+    },
+    {
+      "content": "The script must be on or accessible to your local computer.",
+      "pos": [
+        4399,
+        4458
+      ]
+    },
+    {
+      "content": "The results are returned to your local computer.",
+      "pos": [
+        4459,
+        4507
+      ]
+    },
+    {
+      "content": "For example, the following command runs the DiskCollect.ps1 script on the Server01 and Server02 remote computers.",
+      "pos": [
+        4509,
+        4622
+      ]
+    },
+    {
+      "pos": [
+        4718,
+        4843
+      ],
+      "content": "For more information about the Invoke\\-Command cmdlet, see <bpt id=\"p1\">[</bpt>Invoke-Command<ept id=\"p1\">](assetId:///22fd98ba-1874-492e-95a5-c069467b8462)</ept>."
+    },
+    {
+      "content": "Establish a Persistent Connection",
+      "pos": [
+        4849,
+        4882
+      ]
+    },
+    {
+      "content": "To run a series of related commands that share data, create a session on the remote computer and then use the Invoke\\-Command cmdlet to run commands in the session that you create.",
+      "pos": [
+        4883,
+        5063
+      ]
+    },
+    {
+      "content": "To create a remote session, use the New\\-PSSession cmdlet.",
+      "pos": [
+        5064,
+        5122
+      ]
+    },
+    {
+      "content": "For example, the following command creates a remote session on the Server01 computer and another remote session on the Server02 computer.",
+      "pos": [
+        5124,
+        5261
+      ]
+    },
+    {
+      "content": "It saves the session objects in the $s variable.",
+      "pos": [
+        5262,
+        5310
+      ]
+    },
+    {
+      "content": "Now that the sessions are established, you can run any command in them.",
+      "pos": [
+        5373,
+        5444
+      ]
+    },
+    {
+      "content": "And because the sessions are persistent, you can collect data in one command and use it in a subsequent command.",
+      "pos": [
+        5445,
+        5557
+      ]
+    },
+    {
+      "content": "For example, the following command runs a Get\\-Hotfix command in the sessions in the $s variable and it saves the results in the $h variable.",
+      "pos": [
+        5559,
+        5700
+      ]
+    },
+    {
+      "content": "The $h variable is created in each of the sessions in $s, but it does not exist in the local session.",
+      "pos": [
+        5701,
+        5802
+      ]
+    },
+    {
+      "content": "Now you can use the data in the $h variable in subsequent commands, such as the following one.",
+      "pos": [
+        5858,
+        5952
+      ]
+    },
+    {
+      "content": "The results are displayed on the local computer.",
+      "pos": [
+        5953,
+        6001
+      ]
+    },
+    {
+      "content": "Advanced Remoting",
+      "pos": [
+        6096,
+        6113
+      ]
+    },
+    {
+      "content": "Windows PowerShell remote management just begins here.",
+      "pos": [
+        6114,
+        6168
+      ]
+    },
+    {
+      "content": "By using the cmdlets installed with Windows PowerShell, you can establish and configure remote sessions both from the local and remote ends, create customized and restricted sessions, allow users to import commands from a remote session that actually run implicitly on the remote session, configure the security of a remote session, and much more.",
+      "pos": [
+        6169,
+        6516
+      ]
+    },
+    {
+      "content": "To facilitate remote configuration, Windows PowerShell includes a WSMan provider.",
+      "pos": [
+        6518,
+        6599
+      ]
+    },
+    {
+      "content": "The WSMAN: drive that the provider creates lets you navigate through a hierarchy of configuration settings on the local computer and remote computers.",
+      "pos": [
+        6600,
+        6750
+      ]
+    },
+    {
+      "content": "For more information about the WSMan provider, see  <bpt id=\"p1\">[</bpt>WSMan Provider<ept id=\"p1\">](assetId:///66fe1241-e08f-49ca-832f-a84c33ca8735)</ept> and <bpt id=\"p2\">[</bpt>about_WS-Management_Cmdlets<ept id=\"p2\">](assetId:///6ed3370a-ea10-45a5-9493-696aeace27ed)</ept>, or in the Windows PowerShell console, type \"get\\-help wsman\".",
+      "pos": [
+        6751,
+        7014
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>about_Remote_FAQ<ept id=\"p1\">](assetId:///e23702fd-9415-4a98-9975-390a4d3adc42)</ept>, <bpt id=\"p2\">[</bpt>Register-PSSessionConfiguration<ept id=\"p2\">](assetId:///af68867a-d201-4b19-a1de-594015ed8a25)</ept>, and <bpt id=\"p3\">[</bpt>Import-PSSession<ept id=\"p3\">](assetId:///048c115e-a6fb-4e0d-8cea-c5ca24630c9d)</ept>.",
+      "pos": [
+        7016,
+        7267
+      ]
+    },
+    {
+      "content": "For help with remoting errors, see <bpt id=\"p1\">[</bpt>about_Remote_Troubleshooting<ept id=\"p1\">](assetId:///2f890148-8578-49ed-85ea-79a489dd6317)</ept>.",
+      "pos": [
+        7268,
+        7383
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        7388,
+        7396
+      ]
+    },
+    {
+      "content": "about_Remote",
+      "pos": [
+        7398,
+        7410
+      ]
+    },
+    {
+      "content": "about_Remote_FAQ",
+      "pos": [
+        7462,
+        7478
+      ]
+    },
+    {
+      "content": "about_Remote_Requirements",
+      "pos": [
+        7530,
+        7555
+      ]
+    },
+    {
+      "content": "about_Remote_Troubleshooting",
+      "pos": [
+        7607,
+        7635
+      ]
+    },
+    {
+      "content": "about_PSSessions",
+      "pos": [
+        7687,
+        7703
+      ]
+    },
+    {
+      "content": "about_WS-Management_Cmdlets",
+      "pos": [
+        7755,
+        7782
+      ]
+    },
+    {
+      "content": "Invoke-Command",
+      "pos": [
+        7834,
+        7848
+      ]
+    },
+    {
+      "content": "Import-PSSession",
+      "pos": [
+        7900,
+        7916
+      ]
+    },
+    {
+      "content": "New-PSSession",
+      "pos": [
+        7968,
+        7981
+      ]
+    },
+    {
+      "content": "Register-PSSessionConfiguration",
+      "pos": [
+        8033,
+        8064
+      ]
+    },
+    {
+      "content": "WSMan Provider",
+      "pos": [
+        8116,
+        8130
+      ]
+    }
+  ],
+  "content": "---\ntitle: Running Remote Commands\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: d6938b56-7dc8-44ba-b4d4-cd7b169fd74d\n---\n# Running Remote Commands\nYou can run commands on one or hundreds of computers with a single Windows PowerShell command. Windows PowerShell supports remote computing by using various technologies, including WMI, RPC, and WS\\-Management.\n\n## Remoting Without Configuration\nMany Windows PowerShell cmdlets have a ComputerName parameter that enables you to collect data and change settings one or more remote computers. They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.\n\nThese cmdlets include:\n\n-   [Restart-Computer](assetId:///bd52bcf6-80ee-4866-9320-04ee1d1dca4a)\n\n-   [Test-Connection](assetId:///87d293e5-10e2-489b-b0a9-922d77c05f3f)\n\n-   [Clear-EventLog](assetId:///05d0de31-3c9d-4cd6-8e1a-dac19835464c)\n\n-   [Get-EventLog [m2]](assetId:///a4372a60-b7d9-4b1c-a268-aa5240300141)\n\n-   [Get-Hotfix](assetId:///e1ef636f-5170-4675-b564-199d9ef6f101)\n\n-   [Get-Process [m2]](assetId:///27a05dbd-4b69-48a3-8d55-b295f6225f15)\n\n-   [Get-Service [m2]](assetId:///0a09cb22-0a1c-4a79-9851-4e53075f9cf6)\n\n-   [Set-Service [m2]](assetId:///b71e29ed-372b-4e32-a4b7-5eb6216e56c3)\n\n-   [Get-WinEvent](assetId:///e1ef636f-5170-4675-b564-199d9ef6f101)\n\n-   [Get-WmiObject [m2]](assetId:///a4c499fa-deec-4c4b-b3fb-6e195d48a396)\n\nTypically, cmdlets that support remoting without special configuration have a ComputerName parameter and do not have a Session parameter. To find these cmdlets in your session, type:\n\n```\nget-command | where { $_.parameters.keys -contains \"ComputerName\" -and $_.parameters.keys -notcontains \"Session\"}\n```\n\n## Windows PowerShell Remoting\nWindows PowerShell remoting, which uses the WS\\-Management protocol, lets you run any Windows PowerShell command on one or many remote computers. It lets you establish persistent connections, start 1:1 interactive sessions, and run scripts on multiple computers.\n\nTo use Windows PowerShell remoting, the remote computer must be configured for remote management. For more information, including instructions, see [about_Remote_Requirements](assetId:///da213949-134c-4741-b307-81f4492ba1bd).\n\nAfter you have configured Windows PowerShell remoting, many remoting strategies are available to you. The remainder of this document lists just a few of them. For more information, see [about_Remote](assetId:///9b4a5c87-9162-4adf-bdfe-fbc80b9b8970) and [about_Remote_FAQ](assetId:///e23702fd-9415-4a98-9975-390a4d3adc42).\n\n### Start an Interactive Session\nTo start an interactive session with a single remote computer, use the [Enter-PSSession](assetId:///f4fd89b4-80e9-434e-bd46-952aa8d40d4c) cmdlet. For example, to start an interactive session with the Server01 remote computer, type:\n\n```\nenter-pssession Server01\n```\n\nThe command prompt changes to display the name of the computer to which you are connected. From then on, any commands that you type at the prompt run on the remote computer and the results are displayed on the local computer.\n\nTo end the interactive session, type:\n\n```\nexit-pssession\n```\n\nFor more information about the Enter\\-PSSession and Exit\\-PSSession cmdlets, see [Enter-PSSession](assetId:///f4fd89b4-80e9-434e-bd46-952aa8d40d4c) and [Exit-PSSession](assetId:///b6daa1ce-48a5-41a3-ac4b-b64dbe03465d).\n\n### Run a Remote Command\nTo run any command on one or many remote computers, use the [Invoke-Command](assetId:///22fd98ba-1874-492e-95a5-c069467b8462) cmdlet. For example, to run a [Get-UICulture [m2]](assetId:///99175c2e-e856-4208-970e-3dd2f6bac5b8) command on the Server01 and Server02 remote computers, type:\n\n```\ninvoke-command -computername Server01, Server02 {get-UICulture}\n```\n\nThe output is returned to your computer.\n\n```\nLCID    Name     DisplayName               PSComputerName\n----    ----     -----------               --------------\n1033    en-US    English (United States)   server01.corp.fabrikam.com\n1033    en-US    English (United States)   server02.corp.fabrikam.com\n```\n\nFor more information about the Invoke\\-Command cmdlet, see [Invoke-Command](assetId:///22fd98ba-1874-492e-95a5-c069467b8462).\n\n### Run a Script\nTo run a script on one or many remote computers, use the FilePath parameter of the Invoke\\-Command cmdlet. The script must be on or accessible to your local computer. The results are returned to your local computer.\n\nFor example, the following command runs the DiskCollect.ps1 script on the Server01 and Server02 remote computers.\n\n```\ninvoke-command -computername Server01, Server02 -filepath c:\\Scripts\\DiskCollect.ps1\n```\n\nFor more information about the Invoke\\-Command cmdlet, see [Invoke-Command](assetId:///22fd98ba-1874-492e-95a5-c069467b8462).\n\n### Establish a Persistent Connection\nTo run a series of related commands that share data, create a session on the remote computer and then use the Invoke\\-Command cmdlet to run commands in the session that you create. To create a remote session, use the New\\-PSSession cmdlet.\n\nFor example, the following command creates a remote session on the Server01 computer and another remote session on the Server02 computer. It saves the session objects in the $s variable.\n\n```\n$s = new-pssession -computername Server01, Server02\n```\n\nNow that the sessions are established, you can run any command in them. And because the sessions are persistent, you can collect data in one command and use it in a subsequent command.\n\nFor example, the following command runs a Get\\-Hotfix command in the sessions in the $s variable and it saves the results in the $h variable. The $h variable is created in each of the sessions in $s, but it does not exist in the local session.\n\n```\ninvoke-command -session $s {$h = get-hotfix}\n```\n\nNow you can use the data in the $h variable in subsequent commands, such as the following one. The results are displayed on the local computer.\n\n```\ninvoke-command -session $s {$h | where {$_.installedby -ne \"NTAUTHORITY\\SYSTEM\"\n```\n\n### Advanced Remoting\nWindows PowerShell remote management just begins here. By using the cmdlets installed with Windows PowerShell, you can establish and configure remote sessions both from the local and remote ends, create customized and restricted sessions, allow users to import commands from a remote session that actually run implicitly on the remote session, configure the security of a remote session, and much more.\n\nTo facilitate remote configuration, Windows PowerShell includes a WSMan provider. The WSMAN: drive that the provider creates lets you navigate through a hierarchy of configuration settings on the local computer and remote computers. For more information about the WSMan provider, see  [WSMan Provider](assetId:///66fe1241-e08f-49ca-832f-a84c33ca8735) and [about_WS-Management_Cmdlets](assetId:///6ed3370a-ea10-45a5-9493-696aeace27ed), or in the Windows PowerShell console, type \"get\\-help wsman\".\n\nFor more information, see [about_Remote_FAQ](assetId:///e23702fd-9415-4a98-9975-390a4d3adc42), [Register-PSSessionConfiguration](assetId:///af68867a-d201-4b19-a1de-594015ed8a25), and [Import-PSSession](assetId:///048c115e-a6fb-4e0d-8cea-c5ca24630c9d). For help with remoting errors, see [about_Remote_Troubleshooting](assetId:///2f890148-8578-49ed-85ea-79a489dd6317).\n\n## See Also\n[about_Remote](assetId:///9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)\n[about_Remote_FAQ](assetId:///e23702fd-9415-4a98-9975-390a4d3adc42)\n[about_Remote_Requirements](assetId:///da213949-134c-4741-b307-81f4492ba1bd)\n[about_Remote_Troubleshooting](assetId:///2f890148-8578-49ed-85ea-79a489dd6317)\n[about_PSSessions](assetId:///7a9b4e0e-fa1b-47b0-92f6-6e2995d70acb)\n[about_WS-Management_Cmdlets](assetId:///6ed3370a-ea10-45a5-9493-696aeace27ed)\n[Invoke-Command](assetId:///22fd98ba-1874-492e-95a5-c069467b8462)\n[Import-PSSession](assetId:///048c115e-a6fb-4e0d-8cea-c5ca24630c9d)\n[New-PSSession](assetId:///59452f12-a11d-4558-99ea-e6ca6ad5ffd3)\n[Register-PSSessionConfiguration](assetId:///af68867a-d201-4b19-a1de-594015ed8a25)\n[WSMan Provider](assetId:///66fe1241-e08f-49ca-832f-a84c33ca8735)\n\n"
+}
