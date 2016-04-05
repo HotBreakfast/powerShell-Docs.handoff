@@ -1,0 +1,591 @@
+{
+  "nodes": [
+    {
+      "content": "Exploring the Windows PowerShell ISE",
+      "pos": [
+        11,
+        47
+      ]
+    },
+    {
+      "content": "Exploring the Windows PowerShell ISE",
+      "pos": [
+        182,
+        218
+      ]
+    },
+    {
+      "content": "You can use the <ph id=\"ph1\">[!INCLUDE[ise_1](../Token/ise_1_md.md)]</ph> to create, run, and debug commands and scripts.",
+      "pos": [
+        219,
+        322
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> consists of the menu bar, Windows PowerShell tabs, the toolbar, script tabs, a Script Pane, a Console Pane, a status bar, a text\\-size slider and context\\-sensitive Help.",
+      "pos": [
+        323,
+        537
+      ]
+    },
+    {
+      "pos": [
+        541,
+        680
+      ],
+      "content": "[!NOTE]\nBeginning with [!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0 the Command and Output Panes were combined into a single Console Pane.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "Beginning with <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0 the Command and Output Panes were combined into a single Console Pane.",
+          "pos": [
+            8,
+            137
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Menu Bar",
+      "pos": [
+        685,
+        693
+      ]
+    },
+    {
+      "content": "The menu bar contains the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>Edit<ept id=\"p2\">**</ept>, <bpt id=\"p3\">**</bpt>View<ept id=\"p3\">**</ept>, <bpt id=\"p4\">**</bpt>Tools<ept id=\"p4\">**</ept>, <bpt id=\"p5\">**</bpt>Debug<ept id=\"p5\">**</ept>, <bpt id=\"p6\">**</bpt>Add\\-ons<ept id=\"p6\">**</ept>, and <bpt id=\"p7\">**</bpt>Help<ept id=\"p7\">**</ept> menus.",
+      "pos": [
+        694,
+        805
+      ]
+    },
+    {
+      "content": "The buttons on the menus allow you to perform tasks related to writing and running scripts and running commands in the <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>.",
+      "pos": [
+        806,
+        965
+      ]
+    },
+    {
+      "content": "Additionally, an <bpt id=\"p1\">[</bpt>Add-ons menu<ept id=\"p1\">](assetId:///412dd662-417a-4661-ada2-558802d0f6d2#submenus)</ept> may be placed on the menu bar by running scripts that use the <bpt id=\"p2\">[</bpt>Windows PowerShell ISE Scripting Object Model<ept id=\"p2\">](assetId:///1737ddb7-c20d-4e6b-a0d3-68cc2650f2a1)</ept>.",
+      "pos": [
+        966,
+        1215
+      ]
+    },
+    {
+      "pos": [
+        1219,
+        1331
+      ],
+      "content": "[!NOTE]\nIn [!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0, The **Tools** and **Add\\-ons** menus were not present.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "In <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0, The <bpt id=\"p1\">**</bpt>Tools<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>Add\\-ons<ept id=\"p2\">**</ept> menus were not present.",
+          "pos": [
+            8,
+            110
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Windows PowerShell Tabs",
+      "pos": [
+        1336,
+        1359
+      ]
+    },
+    {
+      "content": "A Windows PowerShell tab is the environment in which a Windows PowerShell script runs.",
+      "pos": [
+        1360,
+        1446
+      ]
+    },
+    {
+      "content": "You can open new Windows PowerShell tabs in the <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> to create separate environments on your local computer or on remote computers.",
+      "pos": [
+        1447,
+        1613
+      ]
+    },
+    {
+      "content": "You may have a maximum of eight PowerShell tabs simultaneously open.",
+      "pos": [
+        1614,
+        1682
+      ]
+    },
+    {
+      "content": "Toolbar",
+      "pos": [
+        1687,
+        1694
+      ]
+    },
+    {
+      "content": "The following buttons are located on the toolbar.",
+      "pos": [
+        1695,
+        1744
+      ]
+    },
+    {
+      "content": "Button",
+      "pos": [
+        1747,
+        1753
+      ]
+    },
+    {
+      "content": "Function",
+      "pos": [
+        1754,
+        1762
+      ]
+    },
+    {
+      "content": "New",
+      "pos": [
+        1793,
+        1796
+      ]
+    },
+    {
+      "content": "Opens a new script.",
+      "pos": [
+        1799,
+        1818
+      ]
+    },
+    {
+      "content": "Open",
+      "pos": [
+        1823,
+        1827
+      ]
+    },
+    {
+      "content": "Opens an existing script or file.",
+      "pos": [
+        1830,
+        1863
+      ]
+    },
+    {
+      "content": "Save",
+      "pos": [
+        1868,
+        1872
+      ]
+    },
+    {
+      "content": "Saves a script or file.",
+      "pos": [
+        1875,
+        1898
+      ]
+    },
+    {
+      "content": "Cut",
+      "pos": [
+        1903,
+        1906
+      ]
+    },
+    {
+      "content": "Cuts the selected text and copies it to the clipboard.",
+      "pos": [
+        1909,
+        1963
+      ]
+    },
+    {
+      "content": "Copy",
+      "pos": [
+        1968,
+        1972
+      ]
+    },
+    {
+      "content": "Copies the selected text to the clipboard.",
+      "pos": [
+        1975,
+        2017
+      ]
+    },
+    {
+      "content": "Paste",
+      "pos": [
+        2022,
+        2027
+      ]
+    },
+    {
+      "content": "Pastes the contents of the clipboard at the cursor location.",
+      "pos": [
+        2030,
+        2090
+      ]
+    },
+    {
+      "content": "Clear Output Pane",
+      "pos": [
+        2095,
+        2112
+      ]
+    },
+    {
+      "content": "Clears all content in the Output Pane.",
+      "pos": [
+        2115,
+        2153
+      ]
+    },
+    {
+      "content": "Undo",
+      "pos": [
+        2158,
+        2162
+      ]
+    },
+    {
+      "content": "Reverses the action that was just performed.",
+      "pos": [
+        2165,
+        2209
+      ]
+    },
+    {
+      "content": "Redo",
+      "pos": [
+        2214,
+        2218
+      ]
+    },
+    {
+      "content": "Performs the action that was just undone.",
+      "pos": [
+        2221,
+        2262
+      ]
+    },
+    {
+      "content": "Run Script",
+      "pos": [
+        2267,
+        2277
+      ]
+    },
+    {
+      "content": "Runs a script.",
+      "pos": [
+        2280,
+        2294
+      ]
+    },
+    {
+      "content": "Run Selction",
+      "pos": [
+        2299,
+        2311
+      ]
+    },
+    {
+      "content": "Runs a selected portion of a script.",
+      "pos": [
+        2314,
+        2350
+      ]
+    },
+    {
+      "content": "Stop Execution",
+      "pos": [
+        2355,
+        2369
+      ]
+    },
+    {
+      "content": "Stops a script that is running.",
+      "pos": [
+        2372,
+        2403
+      ]
+    },
+    {
+      "content": "New Remote PowerShell Tab",
+      "pos": [
+        2408,
+        2433
+      ]
+    },
+    {
+      "content": "Creates a new PowerShell Tab that establishes a session on a remote computer.",
+      "pos": [
+        2436,
+        2513
+      ]
+    },
+    {
+      "content": "A dialog box appears and prompts you to enter details required to establish the remote connection.",
+      "pos": [
+        2514,
+        2612
+      ]
+    },
+    {
+      "content": "Start PowerShell.exe",
+      "pos": [
+        2617,
+        2637
+      ]
+    },
+    {
+      "content": "Opens a PowerShell Console.",
+      "pos": [
+        2640,
+        2667
+      ]
+    },
+    {
+      "content": "Show Script Pane Top",
+      "pos": [
+        2672,
+        2692
+      ]
+    },
+    {
+      "content": "Moves the Script Pane to the top in the display.",
+      "pos": [
+        2695,
+        2743
+      ]
+    },
+    {
+      "content": "Show Script Pane Right",
+      "pos": [
+        2748,
+        2770
+      ]
+    },
+    {
+      "content": "Moves the Script Pane to the right in the display.",
+      "pos": [
+        2773,
+        2823
+      ]
+    },
+    {
+      "content": "Show Script Pane Maximized",
+      "pos": [
+        2828,
+        2854
+      ]
+    },
+    {
+      "content": "Maximizes the Script Pane.",
+      "pos": [
+        2857,
+        2883
+      ]
+    },
+    {
+      "content": "Script Tab",
+      "pos": [
+        2889,
+        2899
+      ]
+    },
+    {
+      "content": "Displays the name of the script you are editing.",
+      "pos": [
+        2900,
+        2948
+      ]
+    },
+    {
+      "content": "You can click a script tab to select the script you want to edit.",
+      "pos": [
+        2949,
+        3014
+      ]
+    },
+    {
+      "content": "When you point to the script tab, the fully qualified path to the script file appears in a tooltip.",
+      "pos": [
+        3016,
+        3115
+      ]
+    },
+    {
+      "content": "Script Pane",
+      "pos": [
+        3120,
+        3131
+      ]
+    },
+    {
+      "content": "Allows you to create and run scripts.",
+      "pos": [
+        3132,
+        3169
+      ]
+    },
+    {
+      "content": "You can open, edit and run existing scripts in the Script Pane.",
+      "pos": [
+        3170,
+        3233
+      ]
+    },
+    {
+      "content": "Output Pane",
+      "pos": [
+        3238,
+        3249
+      ]
+    },
+    {
+      "content": "Displays the results of the commands and scripts you have run.",
+      "pos": [
+        3250,
+        3312
+      ]
+    },
+    {
+      "content": "You can also copy and clear the contents in the Output Pane.",
+      "pos": [
+        3313,
+        3373
+      ]
+    },
+    {
+      "content": "Command Pane",
+      "pos": [
+        3378,
+        3390
+      ]
+    },
+    {
+      "content": "Allows you to write commands.",
+      "pos": [
+        3391,
+        3420
+      ]
+    },
+    {
+      "content": "You can run a one line command or a multiline command in the Command Pane.",
+      "pos": [
+        3421,
+        3495
+      ]
+    },
+    {
+      "content": "Press SHIFT\\+ENTER to enter each line of a multiline command, and press ENTER after the last line to execute the multiline command.",
+      "pos": [
+        3496,
+        3627
+      ]
+    },
+    {
+      "content": "The prompt displayed on top of the Command Pane shows the path to the current working directory.",
+      "pos": [
+        3628,
+        3724
+      ]
+    },
+    {
+      "content": "Status Bar",
+      "pos": [
+        3729,
+        3739
+      ]
+    },
+    {
+      "content": "Allows you to see whether the commands and scripts that you run are complete.",
+      "pos": [
+        3740,
+        3817
+      ]
+    },
+    {
+      "content": "The status bar is at the very bottom of the display.",
+      "pos": [
+        3818,
+        3870
+      ]
+    },
+    {
+      "content": "Selected portions of error messages are displayed on the status bar.",
+      "pos": [
+        3871,
+        3939
+      ]
+    },
+    {
+      "content": "Text\\-Size Slider",
+      "pos": [
+        3944,
+        3961
+      ]
+    },
+    {
+      "content": "Increases or decreases the size of the text on the screen.",
+      "pos": [
+        3962,
+        4020
+      ]
+    },
+    {
+      "content": "Help",
+      "pos": [
+        4025,
+        4029
+      ]
+    },
+    {
+      "content": "Help for <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> is available on the Web in the TechNet Library.",
+      "pos": [
+        4030,
+        4126
+      ]
+    },
+    {
+      "content": "You can open the Help by clicking <bpt id=\"p1\">**</bpt>Windows PowerShell ISE Help<ept id=\"p1\">**</ept> on the <bpt id=\"p2\">**</bpt>Help<ept id=\"p2\">**</ept> menu or by pressing the F1 key anywhere except when the cursor is on a cmdlet name in either the Script Pane or the Console Pane.",
+      "pos": [
+        4127,
+        4338
+      ]
+    },
+    {
+      "content": "From the <bpt id=\"p1\">**</bpt>Help<ept id=\"p1\">**</ept> menu you can also run the Update\\-Help cmdlet, and display the Command Window which assists you in constructing commands by showing you all of the parameters for a cmdlet and enabling you to fill in the parameters in an easy\\-to\\-use form.",
+      "pos": [
+        4339,
+        4596
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        4601,
+        4609
+      ]
+    },
+    {
+      "content": "Using the Windows PowerShell ISE",
+      "pos": [
+        4611,
+        4643
+      ]
+    }
+  ],
+  "content": "---\ntitle: Exploring the Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: e0d2c6e8-5126-40e7-a1e1-d1cff29fe94a\n---\n# Exploring the Windows PowerShell ISE\nYou can use the [!INCLUDE[ise_1](../Token/ise_1_md.md)] to create, run, and debug commands and scripts. The [!INCLUDE[ise_2](../Token/ise_2_md.md)] consists of the menu bar, Windows PowerShell tabs, the toolbar, script tabs, a Script Pane, a Console Pane, a status bar, a text\\-size slider and context\\-sensitive Help.\n\n> [!NOTE]\n> Beginning with [!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0 the Command and Output Panes were combined into a single Console Pane.\n\n## Menu Bar\nThe menu bar contains the **File**, **Edit**, **View**, **Tools**, **Debug**, **Add\\-ons**, and **Help** menus. The buttons on the menus allow you to perform tasks related to writing and running scripts and running commands in the [!INCLUDE[ise_2](../Token/ise_2_md.md)]. Additionally, an [Add-ons menu](assetId:///412dd662-417a-4661-ada2-558802d0f6d2#submenus) may be placed on the menu bar by running scripts that use the [Windows PowerShell ISE Scripting Object Model](assetId:///1737ddb7-c20d-4e6b-a0d3-68cc2650f2a1).\n\n> [!NOTE]\n> In [!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0, The **Tools** and **Add\\-ons** menus were not present.\n\n## Windows PowerShell Tabs\nA Windows PowerShell tab is the environment in which a Windows PowerShell script runs. You can open new Windows PowerShell tabs in the [!INCLUDE[ise_2](../Token/ise_2_md.md)] to create separate environments on your local computer or on remote computers. You may have a maximum of eight PowerShell tabs simultaneously open.\n\n## Toolbar\nThe following buttons are located on the toolbar.\n\n|Button|Function|\n|----------|------------|\n|**New**|Opens a new script.|\n|**Open**|Opens an existing script or file.|\n|**Save**|Saves a script or file.|\n|**Cut**|Cuts the selected text and copies it to the clipboard.|\n|**Copy**|Copies the selected text to the clipboard.|\n|**Paste**|Pastes the contents of the clipboard at the cursor location.|\n|**Clear Output Pane**|Clears all content in the Output Pane.|\n|**Undo**|Reverses the action that was just performed.|\n|**Redo**|Performs the action that was just undone.|\n|**Run Script**|Runs a script.|\n|**Run Selction**|Runs a selected portion of a script.|\n|**Stop Execution**|Stops a script that is running.|\n|**New Remote PowerShell Tab**|Creates a new PowerShell Tab that establishes a session on a remote computer. A dialog box appears and prompts you to enter details required to establish the remote connection.|\n|**Start PowerShell.exe**|Opens a PowerShell Console.|\n|**Show Script Pane Top**|Moves the Script Pane to the top in the display.|\n|**Show Script Pane Right**|Moves the Script Pane to the right in the display.|\n|**Show Script Pane Maximized**|Maximizes the Script Pane.|\n\n## Script Tab\nDisplays the name of the script you are editing. You can click a script tab to select the script you want to edit.\n\nWhen you point to the script tab, the fully qualified path to the script file appears in a tooltip.\n\n## Script Pane\nAllows you to create and run scripts. You can open, edit and run existing scripts in the Script Pane.\n\n## Output Pane\nDisplays the results of the commands and scripts you have run. You can also copy and clear the contents in the Output Pane.\n\n## Command Pane\nAllows you to write commands. You can run a one line command or a multiline command in the Command Pane. Press SHIFT\\+ENTER to enter each line of a multiline command, and press ENTER after the last line to execute the multiline command. The prompt displayed on top of the Command Pane shows the path to the current working directory.\n\n## Status Bar\nAllows you to see whether the commands and scripts that you run are complete. The status bar is at the very bottom of the display. Selected portions of error messages are displayed on the status bar.\n\n## Text\\-Size Slider\nIncreases or decreases the size of the text on the screen.\n\n## Help\nHelp for [!INCLUDE[ise_2](../Token/ise_2_md.md)] is available on the Web in the TechNet Library. You can open the Help by clicking **Windows PowerShell ISE Help** on the **Help** menu or by pressing the F1 key anywhere except when the cursor is on a cmdlet name in either the Script Pane or the Console Pane. From the **Help** menu you can also run the Update\\-Help cmdlet, and display the Command Window which assists you in constructing commands by showing you all of the parameters for a cmdlet and enabling you to fill in the parameters in an easy\\-to\\-use form.\n\n## See Also\n[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)\n\n"
+}

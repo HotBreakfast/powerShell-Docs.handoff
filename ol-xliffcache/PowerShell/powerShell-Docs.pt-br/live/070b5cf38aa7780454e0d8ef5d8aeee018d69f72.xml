@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "content": "Object Pipeline",
+      "pos": [
+        11,
+        26
+      ]
+    },
+    {
+      "content": "Object Pipeline",
+      "pos": [
+        161,
+        176
+      ]
+    },
+    {
+      "content": "Pipelines act like a series of connected segments of pipe.",
+      "pos": [
+        177,
+        235
+      ]
+    },
+    {
+      "content": "Items moving along the pipeline pass through each segment.",
+      "pos": [
+        236,
+        294
+      ]
+    },
+    {
+      "content": "To create a pipeline in Windows PowerShell, you connect commands together with the pipe operator \"|\".",
+      "pos": [
+        295,
+        396
+      ]
+    },
+    {
+      "content": "The output of each command is used as input to the next command.",
+      "pos": [
+        397,
+        461
+      ]
+    },
+    {
+      "content": "Pipelines are arguably the most valuable concept used in command\\-line interfaces.",
+      "pos": [
+        463,
+        545
+      ]
+    },
+    {
+      "content": "Properly used, pipelines not only reduce the effort involved in entering complex commands, but also make it easier to see the flow of work in the commands.",
+      "pos": [
+        546,
+        701
+      ]
+    },
+    {
+      "content": "A related useful characteristic of pipelines is that because they operate on each item separately, you do not have to modify them based on whether you will have zero, one, or many items in the pipeline.",
+      "pos": [
+        702,
+        904
+      ]
+    },
+    {
+      "content": "Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item\\-by\\-item.",
+      "pos": [
+        905,
+        1050
+      ]
+    },
+    {
+      "content": "This usually reduces the resource demand of complex commands and allows you to begin getting the output immediately.",
+      "pos": [
+        1051,
+        1167
+      ]
+    },
+    {
+      "content": "In this chapter, we will describe how the Windows PowerShell pipeline differs from the pipelines of most popular shells, and then demonstrate some basic tools that you can use to help control pipeline output and also to see how the pipeline operates.",
+      "pos": [
+        1169,
+        1419
+      ]
+    }
+  ],
+  "content": "---\ntitle: Object Pipeline\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 523d8ae4-d743-47a4-b79a-806130ca688a\n---\n# Object Pipeline\nPipelines act like a series of connected segments of pipe. Items moving along the pipeline pass through each segment. To create a pipeline in Windows PowerShell, you connect commands together with the pipe operator \"|\". The output of each command is used as input to the next command.\n\nPipelines are arguably the most valuable concept used in command\\-line interfaces. Properly used, pipelines not only reduce the effort involved in entering complex commands, but also make it easier to see the flow of work in the commands. A related useful characteristic of pipelines is that because they operate on each item separately, you do not have to modify them based on whether you will have zero, one, or many items in the pipeline. Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item\\-by\\-item. This usually reduces the resource demand of complex commands and allows you to begin getting the output immediately.\n\nIn this chapter, we will describe how the Windows PowerShell pipeline differs from the pipelines of most popular shells, and then demonstrate some basic tools that you can use to help control pipeline output and also to see how the pipeline operates.\n\n"
+}
