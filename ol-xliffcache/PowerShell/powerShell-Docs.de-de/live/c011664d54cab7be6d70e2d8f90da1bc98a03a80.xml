@@ -1,0 +1,431 @@
+{
+  "nodes": [
+    {
+      "content": "Managing Windows PowerShell Drives",
+      "pos": [
+        11,
+        45
+      ]
+    },
+    {
+      "content": "Managing Windows PowerShell Drives",
+      "pos": [
+        180,
+        214
+      ]
+    },
+    {
+      "content": "A <bpt id=\"p1\">*</bpt>Windows PowerShell drive<ept id=\"p1\">*</ept> is a data store location that you can access like a file system drive in Windows PowerShell.",
+      "pos": [
+        215,
+        336
+      ]
+    },
+    {
+      "content": "The Windows PowerShell providers create some drives for you, such as the file system drives (including C: and D:), the registry drives (HKCU: and HKLM:), and the certificate drive (Cert:), and you can create your own Windows PowerShell drives.",
+      "pos": [
+        337,
+        580
+      ]
+    },
+    {
+      "content": "These drives are very useful, but they are available only within Windows PowerShell.",
+      "pos": [
+        581,
+        665
+      ]
+    },
+    {
+      "content": "You cannot access them by using other Windows tools, such as File Explorer or Cmd.exe.",
+      "pos": [
+        666,
+        752
+      ]
+    },
+    {
+      "content": "Windows PowerShell uses the noun, <bpt id=\"p1\">**</bpt>PSDrive<ept id=\"p1\">**</ept>, for commands that work with Windows PowerShell drives.",
+      "pos": [
+        754,
+        855
+      ]
+    },
+    {
+      "content": "For a list of the Windows PowerShell drives in your Windows PowerShell session, use the <bpt id=\"p1\">**</bpt>Get\\-PSDrive<ept id=\"p1\">**</ept> cmdlet.",
+      "pos": [
+        856,
+        968
+      ]
+    },
+    {
+      "pos": [
+        1488,
+        1648
+      ],
+      "content": "Although the drives in the display vary with the drives on your system, the listing will look similar to the output of the <bpt id=\"p1\">**</bpt>Get\\-PSDrive<ept id=\"p1\">**</ept> command shown above."
+    },
+    {
+      "content": "File system drives are a subset of the Windows PowerShell drives.",
+      "pos": [
+        1650,
+        1715
+      ]
+    },
+    {
+      "content": "You can identify the file system drives by the FileSystem entry in the Provider column.",
+      "pos": [
+        1716,
+        1803
+      ]
+    },
+    {
+      "content": "(The file system drives in Windows PowerShell are supported by the Windows PowerShell FileSystem provider.)",
+      "pos": [
+        1804,
+        1911
+      ]
+    },
+    {
+      "pos": [
+        1913,
+        2025
+      ],
+      "content": "To see the syntax of the <bpt id=\"p1\">**</bpt>Get\\-PSDrive<ept id=\"p1\">**</ept> cmdlet, type a <bpt id=\"p2\">**</bpt>Get\\-Command<ept id=\"p2\">**</ept> command with the <bpt id=\"p3\">**</bpt>Syntax<ept id=\"p3\">**</ept> parameter:"
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>PSProvider<ept id=\"p1\">**</ept> parameter lets you display only the Windows PowerShell drives that are supported by a particular provider.",
+      "pos": [
+        2281,
+        2406
+      ]
+    },
+    {
+      "content": "For example, to display only the Windows PowerShell drives that are supported by the Windows PowerShell FileSystem provider, type a <bpt id=\"p1\">**</bpt>Get\\-PSDrive<ept id=\"p1\">**</ept> command with the <bpt id=\"p2\">**</bpt>PSProvider<ept id=\"p2\">**</ept> parameter and the <bpt id=\"p3\">**</bpt>FileSystem<ept id=\"p3\">**</ept> value:",
+      "pos": [
+        2407,
+        2627
+      ]
+    },
+    {
+      "pos": [
+        2976,
+        3187
+      ],
+      "content": "To view the Windows PowerShell drives that represent registry hives, use the <bpt id=\"p1\">**</bpt>PSProvider<ept id=\"p1\">**</ept> parameter to display only the Windows PowerShell drives that are supported by the Windows PowerShell Registry provider:"
+    },
+    {
+      "content": "PS&gt; Get-PSDrive -PSProvider Registry",
+      "pos": [
+        3194,
+        3230
+      ]
+    },
+    {
+      "content": "Name       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\nHKCU       Registry      HKEY_CURRENT_USER",
+      "pos": [
+        3231,
+        3433
+      ]
+    },
+    {
+      "content": "HKLM       Registry      HKEY_LOCAL_MACHINE",
+      "pos": [
+        3434,
+        3477
+      ]
+    },
+    {
+      "content": "You can also use the standard Location cmdlets with the Windows PowerShell drives:",
+      "pos": [
+        3485,
+        3567
+      ]
+    },
+    {
+      "content": "PS&gt; Set-Location HKLM:\\SOFTWARE",
+      "pos": [
+        3574,
+        3605
+      ]
+    },
+    {
+      "content": "PS&gt; Push-Location .\\Microsoft",
+      "pos": [
+        3606,
+        3635
+      ]
+    },
+    {
+      "content": "PS&gt; Get-Location",
+      "pos": [
+        3636,
+        3652
+      ]
+    },
+    {
+      "content": "Path\n----\nHKLM:\\SOFTWARE\\Microsoft",
+      "pos": [
+        3653,
+        3687
+      ]
+    },
+    {
+      "content": "Adding New Windows PowerShell Drives (New\\-PSDrive)",
+      "pos": [
+        3699,
+        3750
+      ]
+    },
+    {
+      "content": "You can add your own Windows PowerShell drives by using the <bpt id=\"p1\">**</bpt>New\\-PSDrive<ept id=\"p1\">**</ept> command.",
+      "pos": [
+        3751,
+        3836
+      ]
+    },
+    {
+      "content": "To get the syntax for the <bpt id=\"p1\">**</bpt>New\\-PSDrive<ept id=\"p1\">**</ept> command, enter the <bpt id=\"p2\">**</bpt>Get\\-Command<ept id=\"p2\">**</ept> command with the <bpt id=\"p3\">**</bpt>Syntax<ept id=\"p3\">**</ept> parameter:",
+      "pos": [
+        3837,
+        3954
+      ]
+    },
+    {
+      "content": "To create a new Windows PowerShell drive, you must supply three parameters:",
+      "pos": [
+        4296,
+        4371
+      ]
+    },
+    {
+      "content": "A name for the drive (you can use any valid Windows PowerShell name)",
+      "pos": [
+        4377,
+        4445
+      ]
+    },
+    {
+      "content": "The PSProvider (use \"FileSystem\" for file system locations and \"Registry\" for registry locations)",
+      "pos": [
+        4451,
+        4548
+      ]
+    },
+    {
+      "content": "The root, that is, the path to the root of the new drive",
+      "pos": [
+        4554,
+        4610
+      ]
+    },
+    {
+      "content": "For example, you can create a drive named \"Office\" that is mapped to the folder that contains the Microsoft Office applications on your computer, such as <bpt id=\"p1\">**</bpt>C:\\\\Program Files\\\\Microsoft Office\\\\OFFICE11<ept id=\"p1\">**</ept>.",
+      "pos": [
+        4612,
+        4816
+      ]
+    },
+    {
+      "content": "To create the drive, type the following command:",
+      "pos": [
+        4817,
+        4865
+      ]
+    },
+    {
+      "pos": [
+        5204,
+        5256
+      ],
+      "content": "[!NOTE]\nIn general, paths are not case\\-sensitive.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "In general, paths are not case\\-sensitive.",
+          "pos": [
+            8,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        5258,
+        5389
+      ],
+      "content": "You refer to the new Windows PowerShell drive as you do all Windows PowerShell drives \\-\\- by its name followed by a colon (<bpt id=\"p1\">**</bpt>:<ept id=\"p1\">**</ept>)."
+    },
+    {
+      "content": "A Windows PowerShell drive can make many tasks much simpler.",
+      "pos": [
+        5391,
+        5451
+      ]
+    },
+    {
+      "content": "For example, some of the most important keys in the Windows registry have extremely long paths, making them cumbersome to access and difficult to remember.",
+      "pos": [
+        5452,
+        5607
+      ]
+    },
+    {
+      "content": "Critical configuration information resides under <bpt id=\"p1\">**</bpt>HKEY\\_LOCAL\\_MACHINE\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion<ept id=\"p1\">**</ept>.",
+      "pos": [
+        5608,
+        5728
+      ]
+    },
+    {
+      "content": "To view and change items in the CurrentVersion registry key, you can create a Windows PowerShell drive that is rooted in that key by typing:",
+      "pos": [
+        5729,
+        5869
+      ]
+    },
+    {
+      "content": "PS&gt; New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\\Software\\Microsoft\\W",
+      "pos": [
+        5876,
+        5956
+      ]
+    },
+    {
+      "content": "indows\\CurrentVersion",
+      "pos": [
+        5957,
+        5978
+      ]
+    },
+    {
+      "content": "Name       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\ncvkey      Registry      HKLM\\Software\\Microsoft\\Windows\\...",
+      "pos": [
+        5979,
+        6199
+      ]
+    },
+    {
+      "pos": [
+        6207,
+        6291
+      ],
+      "content": "You can then change location to the <bpt id=\"p1\">**</bpt>cvkey:<ept id=\"p1\">**</ept> drive as you would any other drive:``"
+    },
+    {
+      "content": "or:",
+      "pos": [
+        6310,
+        6313
+      ]
+    },
+    {
+      "content": "PS&gt; Set-Location cvkey: -PassThru",
+      "pos": [
+        6320,
+        6353
+      ]
+    },
+    {
+      "content": "Path\n----\ncvkey:\\",
+      "pos": [
+        6354,
+        6371
+      ]
+    },
+    {
+      "content": "The New\\-PsDrive cmdlet adds the new drive only to the current Windows PowerShell session.",
+      "pos": [
+        6379,
+        6469
+      ]
+    },
+    {
+      "content": "If you close the Windows PowerShell window, the new drive is lost.",
+      "pos": [
+        6470,
+        6536
+      ]
+    },
+    {
+      "content": "To save a Windows PowerShell drive, use the Export\\-Console cmdlet to export the current Windows PowerShell session, and then use the PowerShell.exe <bpt id=\"p1\">**</bpt>PSConsoleFile<ept id=\"p1\">**</ept> parameter to import it.",
+      "pos": [
+        6537,
+        6727
+      ]
+    },
+    {
+      "content": "Or, add the new drive to your Windows PowerShell profile.",
+      "pos": [
+        6728,
+        6785
+      ]
+    },
+    {
+      "content": "Deleting Windows PowerShell Drives (Remove\\-PSDrive)",
+      "pos": [
+        6791,
+        6843
+      ]
+    },
+    {
+      "content": "You can delete drives from Windows PowerShell by using the <bpt id=\"p1\">**</bpt>Remove\\-PSDrive<ept id=\"p1\">**</ept> cmdlet.",
+      "pos": [
+        6844,
+        6930
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Remove\\-PSDrive<ept id=\"p1\">**</ept> cmdlet is easy to use; to delete a specific Windows PowerShell drive, you just supply the Windows PowerShell drive name.",
+      "pos": [
+        6931,
+        7075
+      ]
+    },
+    {
+      "pos": [
+        7077,
+        7213
+      ],
+      "content": "For example, if you added the <bpt id=\"p1\">**</bpt>Office:<ept id=\"p1\">**</ept> Windows PowerShell drive, as shown in the <bpt id=\"p2\">**</bpt>New\\-PSDrive<ept id=\"p2\">**</ept> topic, you can delete it by typing:"
+    },
+    {
+      "pos": [
+        7256,
+        7375
+      ],
+      "content": "To delete the <bpt id=\"p1\">**</bpt>cvkey:<ept id=\"p1\">**</ept> Windows PowerShell drive, also shown in the <bpt id=\"p2\">**</bpt>New\\-PSDrive<ept id=\"p2\">**</ept> topic, use the following command:"
+    },
+    {
+      "content": "It's easy to delete a Windows PowerShell drive, but you can't delete it while you are in the drive.",
+      "pos": [
+        7417,
+        7516
+      ]
+    },
+    {
+      "content": "For example:",
+      "pos": [
+        7517,
+        7529
+      ]
+    },
+    {
+      "content": "Adding and Removing Drives Outside Windows PowerShell",
+      "pos": [
+        7722,
+        7775
+      ]
+    },
+    {
+      "pos": [
+        7776,
+        8117
+      ],
+      "content": "Windows PowerShell detects file system drives that are added or removed in Windows, including network drives that are mapped, USB drives that are attached, and drives that are deleted by using either the <bpt id=\"p1\">**</bpt>net use<ept id=\"p1\">**</ept> command or the <bpt id=\"p2\">**</bpt>WScript.NetworkMapNetworkDrive<ept id=\"p2\">**</ept> and <bpt id=\"p3\">**</bpt>RemoveNetworkDrive<ept id=\"p3\">**</ept> methods from a Windows Script Host (WSH) script."
+    }
+  ],
+  "content": "---\ntitle: Managing Windows PowerShell Drives\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: bd809e38-8de9-437a-a250-f30a667d11b4\n---\n# Managing Windows PowerShell Drives\nA *Windows PowerShell drive* is a data store location that you can access like a file system drive in Windows PowerShell. The Windows PowerShell providers create some drives for you, such as the file system drives (including C: and D:), the registry drives (HKCU: and HKLM:), and the certificate drive (Cert:), and you can create your own Windows PowerShell drives. These drives are very useful, but they are available only within Windows PowerShell. You cannot access them by using other Windows tools, such as File Explorer or Cmd.exe.\n\nWindows PowerShell uses the noun, **PSDrive**, for commands that work with Windows PowerShell drives. For a list of the Windows PowerShell drives in your Windows PowerShell session, use the **Get\\-PSDrive** cmdlet.\n\n```\nPS> Get-PSDrive\n\nName       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\nA          FileSystem    A:\\\nAlias      Alias\nC          FileSystem    C:\\                                 ...And Settings\\me\ncert       Certificate   \\\nD          FileSystem    D:\\\nEnv        Environment\nFunction   Function\nHKCU       Registry      HKEY_CURRENT_USER\nHKLM       Registry      HKEY_LOCAL_MACHINE\nVariable   Variable\n```\n\nAlthough the drives in the display vary with the drives on your system, the listing will look similar to the output of the **Get\\-PSDrive** command shown above.\n\nFile system drives are a subset of the Windows PowerShell drives. You can identify the file system drives by the FileSystem entry in the Provider column. (The file system drives in Windows PowerShell are supported by the Windows PowerShell FileSystem provider.)\n\nTo see the syntax of the **Get\\-PSDrive** cmdlet, type a **Get\\-Command** command with the **Syntax** parameter:\n\n```\nPS> Get-Command -Name Get-PSDrive -Syntax\nGet-PSDrive [[-Name] <String[]>] [-Scope <String>] [-PSProvider <String[]>] [-V\nerbose] [-Debug] [-ErrorAction <ActionPreference>] [-ErrorVariable <String>] [-\nOutVariable <String>] [-OutBuffer <Int32>]\n```\n\nThe **PSProvider** parameter lets you display only the Windows PowerShell drives that are supported by a particular provider. For example, to display only the Windows PowerShell drives that are supported by the Windows PowerShell FileSystem provider, type a **Get\\-PSDrive** command with the **PSProvider** parameter and the **FileSystem** value:\n\n```\nPS> Get-PSDrive -PSProvider FileSystem\n\nName       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\nA          FileSystem    A:\\\nC          FileSystem    C:\\                           ...nd Settings\\PowerUser\nD          FileSystem    D:\\\n```\n\nTo view the Windows PowerShell drives that represent registry hives, use the **PSProvider** parameter to display only the Windows PowerShell drives that are supported by the Windows PowerShell Registry provider:\n\n<pre>PS> Get-PSDrive -PSProvider Registry\nName       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\nHKCU       Registry      HKEY_CURRENT_USER\nHKLM       Registry      HKEY_LOCAL_MACHINE</pre>\n\nYou can also use the standard Location cmdlets with the Windows PowerShell drives:\n\n<pre>PS> Set-Location HKLM:\\SOFTWARE\nPS> Push-Location .\\Microsoft\nPS> Get-Location\nPath\n----\nHKLM:\\SOFTWARE\\Microsoft</pre>\n\n### Adding New Windows PowerShell Drives (New\\-PSDrive)\nYou can add your own Windows PowerShell drives by using the **New\\-PSDrive** command. To get the syntax for the **New\\-PSDrive** command, enter the **Get\\-Command** command with the **Syntax** parameter:\n\n```\nPS> Get-Command -Name New-PSDrive -Syntax\nNew-PSDrive [-Name] <String> [-PSProvider] <String> [-Root] <String> [-Descript\nion <String>] [-Scope <String>] [-Credential <PSCredential>] [-Verbose] [-Debug\n] [-ErrorAction <ActionPreference>] [-ErrorVariable <String>] [-OutVariable <St\nring>] [-OutBuffer <Int32>] [-WhatIf] [-Confirm]\n```\n\nTo create a new Windows PowerShell drive, you must supply three parameters:\n\n-   A name for the drive (you can use any valid Windows PowerShell name)\n\n-   The PSProvider (use \"FileSystem\" for file system locations and \"Registry\" for registry locations)\n\n-   The root, that is, the path to the root of the new drive\n\nFor example, you can create a drive named \"Office\" that is mapped to the folder that contains the Microsoft Office applications on your computer, such as **C:\\\\Program Files\\\\Microsoft Office\\\\OFFICE11**. To create the drive, type the following command:\n\n```\nPS> New-PSDrive -Name Office -PSProvider FileSystem -Root \"C:\\Program Files\\Micr\nosoft Office\\OFFICE11\"\n\nName       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\nOffice     FileSystem    C:\\Program Files\\Microsoft Offic...\n```\n\n> [!NOTE]\n> In general, paths are not case\\-sensitive.\n\nYou refer to the new Windows PowerShell drive as you do all Windows PowerShell drives \\-\\- by its name followed by a colon (**:**).\n\nA Windows PowerShell drive can make many tasks much simpler. For example, some of the most important keys in the Windows registry have extremely long paths, making them cumbersome to access and difficult to remember. Critical configuration information resides under **HKEY\\_LOCAL\\_MACHINE\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion**. To view and change items in the CurrentVersion registry key, you can create a Windows PowerShell drive that is rooted in that key by typing:\n\n<pre>PS> New-PSDrive -Name cvkey -PSProvider Registry -Root HKLM\\Software\\Microsoft\\W\nindows\\CurrentVersion\nName       Provider      Root                                   CurrentLocation\n----       --------      ----                                   ---------------\ncvkey      Registry      HKLM\\Software\\Microsoft\\Windows\\...</pre>\n\nYou can then change location to the **cvkey:** drive as you would any other drive:``\n\n`PS> cd cvkey:`\n\nor:\n\n<pre>PS> Set-Location cvkey: -PassThru\nPath\n----\ncvkey:\\</pre>\n\nThe New\\-PsDrive cmdlet adds the new drive only to the current Windows PowerShell session. If you close the Windows PowerShell window, the new drive is lost. To save a Windows PowerShell drive, use the Export\\-Console cmdlet to export the current Windows PowerShell session, and then use the PowerShell.exe **PSConsoleFile** parameter to import it. Or, add the new drive to your Windows PowerShell profile.\n\n### Deleting Windows PowerShell Drives (Remove\\-PSDrive)\nYou can delete drives from Windows PowerShell by using the **Remove\\-PSDrive** cmdlet. The **Remove\\-PSDrive** cmdlet is easy to use; to delete a specific Windows PowerShell drive, you just supply the Windows PowerShell drive name.\n\nFor example, if you added the **Office:** Windows PowerShell drive, as shown in the **New\\-PSDrive** topic, you can delete it by typing:\n\n```\nPS> Remove-PSDrive -Name Office\n```\n\nTo delete the **cvkey:** Windows PowerShell drive, also shown in the **New\\-PSDrive** topic, use the following command:\n\n```\nPS> Remove-PSDrive -Name cvkey\n```\n\nIt's easy to delete a Windows PowerShell drive, but you can't delete it while you are in the drive. For example:\n\n```\nPS> cd office:\nPS Office:\\> remove-psdrive -name office\nRemove-PSDrive : Cannot remove drive 'Office' because it is in use.\nAt line:1 char:15\n+ remove-psdrive  <<<< -name office\n```\n\n### Adding and Removing Drives Outside Windows PowerShell\nWindows PowerShell detects file system drives that are added or removed in Windows, including network drives that are mapped, USB drives that are attached, and drives that are deleted by using either the **net use** command or the **WScript.NetworkMapNetworkDrive** and **RemoveNetworkDrive** methods from a Windows Script Host (WSH) script.\n\n"
+}

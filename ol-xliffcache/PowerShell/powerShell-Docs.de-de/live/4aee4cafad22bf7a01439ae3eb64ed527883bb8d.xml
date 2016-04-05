@@ -1,0 +1,481 @@
+{
+  "nodes": [
+    {
+      "content": "Windows PowerShell System Requirements",
+      "pos": [
+        11,
+        49
+      ]
+    },
+    {
+      "content": "Windows PowerShell System Requirements",
+      "pos": [
+        184,
+        222
+      ]
+    },
+    {
+      "pos": [
+        223,
+        498
+      ],
+      "content": "This topic lists the system requirements for <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>, and for special features, such as <ph id=\"ph3\">[!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]</ph>, CIM commands, and workflows."
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[winblue_client_1](../Token/winblue_client_1_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[winblue_server_1](../Token/winblue_server_1_md.md)]</ph> include all required programs.",
+      "pos": [
+        500,
+        658
+      ]
+    },
+    {
+      "content": "This topic is designed for users of earlier releases of Windows.",
+      "pos": [
+        659,
+        723
+      ]
+    },
+    {
+      "content": "Operating System Requirements",
+      "pos": [
+        728,
+        757
+      ]
+    },
+    {
+      "pos": [
+        758,
+        850
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> runs on the following versions of Windows."
+    },
+    {
+      "pos": [
+        856,
+        939
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph>, installed by default"
+    },
+    {
+      "pos": [
+        945,
+        1028
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph>, installed by default"
+    },
+    {
+      "pos": [
+        1034,
+        1271
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)]</ph> with Service Pack 1, install <bpt id=\"p1\">[</bpt>Windows Management Framework 4.0<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=293881)</ept> to run <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        1277,
+        1514
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)]</ph> with Service Pack 1, install <bpt id=\"p1\">[</bpt>Windows Management Framework 4.0<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=293881)</ept> to run <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        1516,
+        1608
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> runs on the following versions of Windows."
+    },
+    {
+      "pos": [
+        1614,
+        1691
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph>, installed by default"
+    },
+    {
+      "pos": [
+        1697,
+        1774
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, installed by default"
+    },
+    {
+      "pos": [
+        1780,
+        2027
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)]</ph> with Service Pack 1, install <bpt id=\"p1\">[</bpt>Windows Management Framework 3.0<ept id=\"p1\">](http://www.microsoft.com/download/details.aspx?id=34595)</ept> to run <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        2033,
+        2280
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)]</ph> with Service Pack 1, install <bpt id=\"p1\">[</bpt>Windows Management Framework 3.0<ept id=\"p1\">](http://www.microsoft.com/download/details.aspx?id=34595)</ept> to run <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        2286,
+        2507
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph> with Service Pack 2, install <bpt id=\"p1\">[</bpt>Windows Management Framework 3.0<ept id=\"p1\">](http://www.microsoft.com/download/details.aspx?id=34595)</ept> to run <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>"
+    },
+    {
+      "content": "Microsoft .NET Framework Requirements",
+      "pos": [
+        2512,
+        2549
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> requires the full installation of Microsoft .NET Framework 4.5.",
+      "pos": [
+        2550,
+        2663
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph> include Microsoft .NET Framework 4.5 by default.",
+      "pos": [
+        2664,
+        2840
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> requires the full installation of Microsoft .NET Framework 4.",
+      "pos": [
+        2842,
+        2953
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph> include Microsoft .NET Framework 4.5 by default, which fulfills this requirement.",
+      "pos": [
+        2954,
+        3151
+      ]
+    },
+    {
+      "pos": [
+        3153,
+        3339
+      ],
+      "content": "To install Microsoft .NET Framework 4.5 (dotNetFx45\\_Full\\_setup.exe), see <bpt id=\"p1\">[</bpt>Microsoft .NET Framework 4.5<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept> on the Microsoft Download Center."
+    },
+    {
+      "pos": [
+        3341,
+        3564
+      ],
+      "content": "To install the full installation of Microsoft .NET Framework 4 (dotNetFx40\\_Full\\_setup.exe), see <bpt id=\"p1\">[</bpt>Microsoft .NET Framework 4 (Web Installer)<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=212931)</ept> on the Microsoft Download Center."
+    },
+    {
+      "content": "WS\\-Management 3.0",
+      "pos": [
+        3569,
+        3587
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> require WS\\-Management 3.0, which supports the WinRM service and WSMan protocol.",
+      "pos": [
+        3588,
+        3772
+      ]
+    },
+    {
+      "content": "This program is included in <ph id=\"ph1\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph>, <ph id=\"ph3\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph>, <ph id=\"ph4\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, Windows Management Framework 4.0, and <ph id=\"ph5\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>.",
+      "pos": [
+        3773,
+        4129
+      ]
+    },
+    {
+      "content": "Windows Management Instrumentation 3.0",
+      "pos": [
+        4134,
+        4172
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> require Windows Management Instrumentation 3.0 (WMI).",
+      "pos": [
+        4173,
+        4330
+      ]
+    },
+    {
+      "content": "This program is included in <ph id=\"ph1\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph>, <ph id=\"ph3\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph>, <ph id=\"ph4\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, Windows Management Framework 4.0, and <ph id=\"ph5\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>.",
+      "pos": [
+        4331,
+        4687
+      ]
+    },
+    {
+      "content": "If this program is not installed on the computer, features that require WMI, such as CIM commands, do not run.",
+      "pos": [
+        4688,
+        4798
+      ]
+    },
+    {
+      "content": "Common Language Runtime 4.0",
+      "pos": [
+        4803,
+        4830
+      ]
+    },
+    {
+      "pos": [
+        4831,
+        4990
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> are compiled against Common Language Runtime (CLR) 4.0."
+    },
+    {
+      "content": "Graphical User Interface Requirements",
+      "pos": [
+        4995,
+        5032
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> is a console\\-based application that does not require a graphical user interface.",
+      "pos": [
+        5033,
+        5154
+      ]
+    },
+    {
+      "content": "As such, is it well suited to computers that do not have screens or monitors, or a user interface, such as the Server Core installation options of <ph id=\"ph1\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph> or <ph id=\"ph2\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>.",
+      "pos": [
+        5155,
+        5423
+      ]
+    },
+    {
+      "content": "However, some items, such as the following, require a graphical user interface.",
+      "pos": [
+        5425,
+        5504
+      ]
+    },
+    {
+      "content": "For details, see the help topic for each item.",
+      "pos": [
+        5505,
+        5551
+      ]
+    },
+    {
+      "content": "Cmdlets",
+      "pos": [
+        5624,
+        5631
+      ]
+    },
+    {
+      "content": "Out-GridView",
+      "pos": [
+        5642,
+        5654
+      ]
+    },
+    {
+      "content": "Show-Command",
+      "pos": [
+        5715,
+        5727
+      ]
+    },
+    {
+      "content": "Show-ControlPanelItem",
+      "pos": [
+        5788,
+        5809
+      ]
+    },
+    {
+      "content": "Show-EventLog",
+      "pos": [
+        5870,
+        5883
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        5939,
+        5949
+      ]
+    },
+    {
+      "pos": [
+        5959,
+        6058
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>ShowWindow<ept id=\"p1\">**</ept> parameter of the <bpt id=\"p2\">[</bpt>Get-Help<ept id=\"p2\">](assetId:///1f46eeb4-49d7-4bec-bb29-395d9b42f54a)</ept> cmdlet."
+    },
+    {
+      "pos": [
+        6068,
+        6287
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>ShowSecurityDescriptorUi<ept id=\"p1\">**</ept> parameter of the <bpt id=\"p2\">[</bpt>Register-PSSessionConfiguration<ept id=\"p2\">](assetId:///e9152ae2-bd6d-4056-9bc7-dc1893aa29ea)</ept> and <bpt id=\"p3\">[</bpt>Set-PSSessionConfiguration<ept id=\"p3\">](assetId:///b21fbad3-1759-4260-b206-dcb8431cd6ea)</ept> cmdlets."
+    },
+    {
+      "content": "Windows PowerShell Engine Requirements",
+      "pos": [
+        6292,
+        6330
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> is designed to be backwards compatible with <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and <ph id=\"ph3\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>.",
+      "pos": [
+        6331,
+        6529
+      ]
+    },
+    {
+      "content": "Cmdlets, providers, snap\\-ins, modules, and scripts written for <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> run unchanged in <ph id=\"ph3\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>.",
+      "pos": [
+        6530,
+        6765
+      ]
+    },
+    {
+      "pos": [
+        6767,
+        7151
+      ],
+      "content": "However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> host programs that were written for <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in <ph id=\"ph3\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, which is compiled with CLR 4.0."
+    },
+    {
+      "content": "The <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> engine requires Microsoft .NET Framework 2.0.50727 at a minimum.",
+      "pos": [
+        7153,
+        7271
+      ]
+    },
+    {
+      "content": "This requirement is fulfilled by Microsoft .NET Framework 3.5 Service Pack 1.",
+      "pos": [
+        7272,
+        7349
+      ]
+    },
+    {
+      "content": "This requirement is not fulfilled by Microsoft .NET Framework 4 and later releases of Microsoft .NET Framework.",
+      "pos": [
+        7350,
+        7461
+      ]
+    },
+    {
+      "content": "For information about adding or installing the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> engine, and adding or installing the required versions of the Microsoft .NET Framework, see <bpt id=\"p1\">[</bpt>Installing the Windows PowerShell 2.0 Engine<ept id=\"p1\">](../Topic/Installing-the-Windows-PowerShell-2.0-Engine.md)</ept>.",
+      "pos": [
+        7463,
+        7757
+      ]
+    },
+    {
+      "content": "For information about starting the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> engine, see <bpt id=\"p1\">[</bpt>Starting the Windows PowerShell 2.0 Engine<ept id=\"p1\">](../Topic/Starting-the-Windows-PowerShell-2.0-Engine.md)</ept>.",
+      "pos": [
+        7758,
+        7956
+      ]
+    },
+    {
+      "content": "Windows Preinstallation Environment",
+      "pos": [
+        7961,
+        7996
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, and <ph id=\"ph3\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> run in the Windows Preinstallation Environment (Windows PE).",
+      "pos": [
+        7997,
+        8213
+      ]
+    },
+    {
+      "content": "However, the following cmdlets are not supported.",
+      "pos": [
+        8214,
+        8263
+      ]
+    },
+    {
+      "content": "Background Intelligent Transfer Service (BITS) Cmdlets",
+      "pos": [
+        8270,
+        8324
+      ]
+    },
+    {
+      "content": "Get-EventLog",
+      "pos": [
+        8379,
+        8391
+      ]
+    },
+    {
+      "content": "Get-WinEvent[PSITPro5_Diagnostic]",
+      "pos": [
+        8448,
+        8481
+      ]
+    },
+    {
+      "content": "Save-Help",
+      "pos": [
+        8538,
+        8547
+      ]
+    },
+    {
+      "content": "Update-Help",
+      "pos": [
+        8604,
+        8615
+      ]
+    },
+    {
+      "pos": [
+        8667,
+        8724
+      ],
+      "content": "Also, the <bpt id=\"p1\">**</bpt>WinRm<ept id=\"p1\">**</ept> service is not present on Windows PE."
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        8729,
+        8737
+      ]
+    },
+    {
+      "content": "Getting Started with Windows PowerShell",
+      "pos": [
+        8739,
+        8778
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell",
+      "pos": [
+        8834,
+        8863
+      ]
+    },
+    {
+      "content": "Starting Windows PowerShell [ps]",
+      "pos": [
+        8909,
+        8941
+      ]
+    }
+  ],
+  "content": "---\ntitle: Windows PowerShell System Requirements\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 6d1d3c75-3be4-4fc9-8805-ca9b2c454d42\n---\n# Windows PowerShell System Requirements\nThis topic lists the system requirements for [!INCLUDE[psversion3](../Token/psversion3_md.md)] and [!INCLUDE[psversion4](../Token/psversion4_md.md)], and for special features, such as [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)], CIM commands, and workflows.\n\n[!INCLUDE[winblue_client_1](../Token/winblue_client_1_md.md)] and [!INCLUDE[winblue_server_1](../Token/winblue_server_1_md.md)] include all required programs. This topic is designed for users of earlier releases of Windows.\n\n## Operating System Requirements\n[!INCLUDE[psversion4](../Token/psversion4_md.md)] runs on the following versions of Windows.\n\n-   [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)], installed by default\n\n-   [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)], installed by default\n\n-   [!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)] with Service Pack 1, install [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) to run [!INCLUDE[psversion4](../Token/psversion4_md.md)]\n\n-   [!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)] with Service Pack 1, install [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkId=293881) to run [!INCLUDE[psversion4](../Token/psversion4_md.md)]\n\n[!INCLUDE[psversion3](../Token/psversion3_md.md)] runs on the following versions of Windows.\n\n-   [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)], installed by default\n\n-   [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], installed by default\n\n-   [!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)] with Service Pack 1, install [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) to run [!INCLUDE[psversion3](../Token/psversion3_md.md)]\n\n-   [!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)] with Service Pack 1, install [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) to run [!INCLUDE[psversion3](../Token/psversion3_md.md)]\n\n-   [!INCLUDE[lserver](../Token/lserver_md.md)] with Service Pack 2, install [Windows Management Framework 3.0](http://www.microsoft.com/download/details.aspx?id=34595) to run [!INCLUDE[psversion3](../Token/psversion3_md.md)]\n\n## Microsoft .NET Framework Requirements\n[!INCLUDE[psversion4](../Token/psversion4_md.md)] requires the full installation of Microsoft .NET Framework 4.5. [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] and [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] include Microsoft .NET Framework 4.5 by default.\n\n[!INCLUDE[psversion3](../Token/psversion3_md.md)] requires the full installation of Microsoft .NET Framework 4. [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] and [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)] include Microsoft .NET Framework 4.5 by default, which fulfills this requirement.\n\nTo install Microsoft .NET Framework 4.5 (dotNetFx45\\_Full\\_setup.exe), see [Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkID=242919) on the Microsoft Download Center.\n\nTo install the full installation of Microsoft .NET Framework 4 (dotNetFx40\\_Full\\_setup.exe), see [Microsoft .NET Framework 4 (Web Installer)](http://go.microsoft.com/fwlink/?LinkID=212931) on the Microsoft Download Center.\n\n## WS\\-Management 3.0\n[!INCLUDE[psversion3](../Token/psversion3_md.md)] and [!INCLUDE[psversion4](../Token/psversion4_md.md)] require WS\\-Management 3.0, which supports the WinRM service and WSMan protocol. This program is included in [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)], [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)], [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)], [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], Windows Management Framework 4.0, and [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)].\n\n## Windows Management Instrumentation 3.0\n[!INCLUDE[psversion3](../Token/psversion3_md.md)] and [!INCLUDE[psversion4](../Token/psversion4_md.md)] require Windows Management Instrumentation 3.0 (WMI). This program is included in [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)], [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)], [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)], [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], Windows Management Framework 4.0, and [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]. If this program is not installed on the computer, features that require WMI, such as CIM commands, do not run.\n\n## Common Language Runtime 4.0\n[!INCLUDE[psversion3](../Token/psversion3_md.md)] and [!INCLUDE[psversion4](../Token/psversion4_md.md)] are compiled against Common Language Runtime (CLR) 4.0.\n\n## Graphical User Interface Requirements\n[!INCLUDE[wps_2](../Token/wps_2_md.md)] is a console\\-based application that does not require a graphical user interface. As such, is it well suited to computers that do not have screens or monitors, or a user interface, such as the Server Core installation options of [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] or [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)].\n\nHowever, some items, such as the following, require a graphical user interface. For details, see the help topic for each item.\n\n-   [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]\n\n-   Cmdlets\n\n    1.  [Out-GridView](assetId:///70915a86-d753-464e-8349-cba02316154c)\n\n    2.  [Show-Command](assetId:///65bba50b-91a8-49d5-80a2-a30fc684ba41)\n\n    3.  [Show-ControlPanelItem](assetId:///0685d42c-37cc-498f-acf6-0ecfeb0cb162)\n\n    4.  [Show-EventLog](assetId:///a3b0f5ad-0438-42c7-915b-d1b4793a431c)\n\n-   Parameters\n\n    1.  **ShowWindow** parameter of the [Get-Help](assetId:///1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet.\n\n    2.  **ShowSecurityDescriptorUi** parameter of the [Register-PSSessionConfiguration](assetId:///e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) and [Set-PSSessionConfiguration](assetId:///b21fbad3-1759-4260-b206-dcb8431cd6ea) cmdlets.\n\n## Windows PowerShell Engine Requirements\n[!INCLUDE[psversion4](../Token/psversion4_md.md)] is designed to be backwards compatible with [!INCLUDE[psversion3](../Token/psversion3_md.md)] and [!INCLUDE[psversion2](../Token/psversion2_md.md)]. Cmdlets, providers, snap\\-ins, modules, and scripts written for [!INCLUDE[psversion2](../Token/psversion2_md.md)] and [!INCLUDE[psversion3](../Token/psversion3_md.md)] run unchanged in [!INCLUDE[psversion4](../Token/psversion4_md.md)].\n\nHowever, due to a change in the runtime activation policy in Microsoft .NET Framework 4, [!INCLUDE[wps_2](../Token/wps_2_md.md)] host programs that were written for [!INCLUDE[psversion2](../Token/psversion2_md.md)] and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in [!INCLUDE[psversion3](../Token/psversion3_md.md)], which is compiled with CLR 4.0.\n\nThe [!INCLUDE[psversion2](../Token/psversion2_md.md)] engine requires Microsoft .NET Framework 2.0.50727 at a minimum. This requirement is fulfilled by Microsoft .NET Framework 3.5 Service Pack 1. This requirement is not fulfilled by Microsoft .NET Framework 4 and later releases of Microsoft .NET Framework.\n\nFor information about adding or installing the [!INCLUDE[psversion2](../Token/psversion2_md.md)] engine, and adding or installing the required versions of the Microsoft .NET Framework, see [Installing the Windows PowerShell 2.0 Engine](../Topic/Installing-the-Windows-PowerShell-2.0-Engine.md). For information about starting the [!INCLUDE[psversion2](../Token/psversion2_md.md)] engine, see [Starting the Windows PowerShell 2.0 Engine](../Topic/Starting-the-Windows-PowerShell-2.0-Engine.md).\n\n## Windows Preinstallation Environment\n[!INCLUDE[psversion2](../Token/psversion2_md.md)], [!INCLUDE[psversion3](../Token/psversion3_md.md)], and [!INCLUDE[psversion4](../Token/psversion4_md.md)] run in the Windows Preinstallation Environment (Windows PE). However, the following cmdlets are not supported.\n\n-   [Background Intelligent Transfer Service (BITS) Cmdlets](http://go.microsoft.com/fwlink/?LinkId=257514)\n\n-   [Get-EventLog](assetId:///b4985b11-82bf-487d-928d-becd96fc0419)\n\n-   [Get-WinEvent[PSITPro5_Diagnostic]](assetId:///5fe94870-ed6b-4ce2-9500-93846cc65c95)\n\n-   [Save-Help](assetId:///aed94f90-b73f-4e25-a25d-7c18d9f161fa)\n\n-   [Update-Help](assetId:///93e1d870-ace6-432b-8778-8920291d7545)\n\nAlso, the **WinRm** service is not present on Windows PE.\n\n## See Also\n[Getting Started with Windows PowerShell](../Topic/Getting-Started-with-Windows-PowerShell.md)\n[Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md)\n[Starting Windows PowerShell [ps]](assetId:///8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)\n\n"
+}

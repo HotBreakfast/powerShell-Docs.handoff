@@ -1,0 +1,475 @@
+{
+  "nodes": [
+    {
+      "content": "Learning Windows PowerShell Names",
+      "pos": [
+        11,
+        44
+      ]
+    },
+    {
+      "content": "Learning Windows PowerShell Names",
+      "pos": [
+        179,
+        212
+      ]
+    },
+    {
+      "content": "Learning names of commands and command parameters is a significant time investment with most command\\-line interfaces.",
+      "pos": [
+        213,
+        331
+      ]
+    },
+    {
+      "content": "The issue is that there are very few patterns, so the only way to learn is by memorizing each command and each parameter that you need to use on a regular basis.",
+      "pos": [
+        332,
+        493
+      ]
+    },
+    {
+      "content": "When you work with a new command or parameter, you cannot generally use what you already know; you have to find and learn a new name.",
+      "pos": [
+        495,
+        628
+      ]
+    },
+    {
+      "content": "If you look at how interfaces grow from a small set of tools with incremental additions to functionality, it is easy to see why the structure is nonstandard.",
+      "pos": [
+        629,
+        786
+      ]
+    },
+    {
+      "content": "With command names in particular, this may sound logical since each command is a separate tool, but there is a better way to handle command names.",
+      "pos": [
+        787,
+        933
+      ]
+    },
+    {
+      "content": "Most commands are built to manage elements of the operating system or applications, such as services or processes.",
+      "pos": [
+        935,
+        1049
+      ]
+    },
+    {
+      "content": "The commands have a variety of names that may or may not fit into a family.",
+      "pos": [
+        1050,
+        1125
+      ]
+    },
+    {
+      "content": "For example, on Windows systems, you can use the <bpt id=\"p1\">**</bpt>net start<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>net stop<ept id=\"p2\">**</ept> commands to start and stop a service.",
+      "pos": [
+        1126,
+        1243
+      ]
+    },
+    {
+      "content": "There is another more generalized service control tool for Windows that has a completely different name, <bpt id=\"p1\">**</bpt>sc<ept id=\"p1\">**</ept>, that does not fit into the naming pattern for the <bpt id=\"p2\">**</bpt>net<ept id=\"p2\">**</ept> service commands.",
+      "pos": [
+        1244,
+        1432
+      ]
+    },
+    {
+      "content": "For process management, Windows has the <bpt id=\"p1\">**</bpt>tasklist<ept id=\"p1\">**</ept> command to list processes and the <bpt id=\"p2\">**</bpt>taskkill<ept id=\"p2\">**</ept> command to kill processes.",
+      "pos": [
+        1433,
+        1559
+      ]
+    },
+    {
+      "content": "Commands that take parameters have irregular parameter specifications.",
+      "pos": [
+        1561,
+        1631
+      ]
+    },
+    {
+      "content": "You cannot use the <bpt id=\"p1\">**</bpt>net start<ept id=\"p1\">**</ept> command to start a service on a remote computer.",
+      "pos": [
+        1632,
+        1713
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>sc<ept id=\"p1\">**</ept> command will start a service on a remote computer, but to specify the remote computer, you must prefix its name with a double backslash.",
+      "pos": [
+        1714,
+        1861
+      ]
+    },
+    {
+      "content": "For example, to start the spooler service on a remote computer named DC01, you would type <bpt id=\"p1\">**</bpt>sc \\\\\\\\DC01 start spooler<ept id=\"p1\">**</ept>.",
+      "pos": [
+        1862,
+        1982
+      ]
+    },
+    {
+      "content": "To list tasks running on DC01, you need to use the <bpt id=\"p1\">**</bpt>\\/S<ept id=\"p1\">**</ept> (for \"system\") parameter and supply the name DC01 without backslashes, like this: <bpt id=\"p2\">**</bpt>tasklist \\/S DC01<ept id=\"p2\">**</ept>.",
+      "pos": [
+        1983,
+        2146
+      ]
+    },
+    {
+      "content": "Although there are important technical distinctions between a service and a process, they are both examples of manageable elements on a computer that have a well\\-defined life cycle.",
+      "pos": [
+        2148,
+        2330
+      ]
+    },
+    {
+      "content": "You may want to start or stop a service or process, or get a list of all currently running services or processes.",
+      "pos": [
+        2331,
+        2444
+      ]
+    },
+    {
+      "content": "In other words, although a service and a process are different things, the actions we perform on a service or a process are often conceptually the same.",
+      "pos": [
+        2445,
+        2597
+      ]
+    },
+    {
+      "content": "Furthermore, choices we may make to customize an action by specifying parameters may be conceptually similar as well.",
+      "pos": [
+        2598,
+        2715
+      ]
+    },
+    {
+      "content": "Windows PowerShell exploits these similarities to reduce the number of distinct names you need to know to understand and use cmdlets.",
+      "pos": [
+        2717,
+        2850
+      ]
+    },
+    {
+      "content": "Cmdlets Use Verb\\-Noun Names to Reduce Command Memorization",
+      "pos": [
+        2856,
+        2915
+      ]
+    },
+    {
+      "content": "Windows PowerShell uses a \"verb\\-noun\" naming system, where each cmdlet name consists of a standard verb hyphenated with a specific noun.",
+      "pos": [
+        2916,
+        3053
+      ]
+    },
+    {
+      "content": "Windows PowerShell verbs are not always English verbs, but they express specific actions in Windows PowerShell.",
+      "pos": [
+        3054,
+        3165
+      ]
+    },
+    {
+      "content": "Nouns are very much like nouns in any language, they describe specific types of objects that are important in system administration.",
+      "pos": [
+        3166,
+        3298
+      ]
+    },
+    {
+      "content": "It is easy to demonstrate how these two\\-part names reduce learning effort by looking at a few examples of verbs and nouns.",
+      "pos": [
+        3299,
+        3422
+      ]
+    },
+    {
+      "content": "Nouns are less restricted, but they should always describe what a command acts upon.",
+      "pos": [
+        3424,
+        3508
+      ]
+    },
+    {
+      "content": "Windows PowerShell has commands such as <bpt id=\"p1\">**</bpt>Get\\-Process<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>Stop\\-Process<ept id=\"p2\">**</ept>, <bpt id=\"p3\">**</bpt>Get\\-Service<ept id=\"p3\">**</ept>, and <bpt id=\"p4\">**</bpt>Stop\\-Service<ept id=\"p4\">**</ept>.",
+      "pos": [
+        3509,
+        3626
+      ]
+    },
+    {
+      "content": "In the case of two nouns and two verbs, consistency does not simplify learning that much.",
+      "pos": [
+        3628,
+        3717
+      ]
+    },
+    {
+      "content": "However, if you look at a standard set of 10 verbs and 10 nouns, you then have only 20 words to understand, but those words can be used to form 100 distinct command names.",
+      "pos": [
+        3718,
+        3889
+      ]
+    },
+    {
+      "content": "Frequently, you can recognize what a command does by reading its name, and it is usually apparent what name should be used for a new command.",
+      "pos": [
+        3891,
+        4032
+      ]
+    },
+    {
+      "content": "For example, a computer shutdown command might be <bpt id=\"p1\">**</bpt>Stop\\-Computer<ept id=\"p1\">**</ept>.",
+      "pos": [
+        4033,
+        4102
+      ]
+    },
+    {
+      "content": "A command that lists all computers on a network might be <bpt id=\"p1\">**</bpt>Get\\-Computer<ept id=\"p1\">**</ept>.",
+      "pos": [
+        4103,
+        4178
+      ]
+    },
+    {
+      "content": "The command that gets the system date is <bpt id=\"p1\">**</bpt>Get\\-Date<ept id=\"p1\">**</ept>.",
+      "pos": [
+        4179,
+        4234
+      ]
+    },
+    {
+      "content": "You can list all commands that include a particular verb with the <bpt id=\"p1\">**</bpt>\\-Verb<ept id=\"p1\">**</ept> parameter for <bpt id=\"p2\">**</bpt>Get\\-Command<ept id=\"p2\">**</ept> (We will discuss <bpt id=\"p3\">**</bpt>Get\\-Command<ept id=\"p3\">**</ept> in detail in the next section).",
+      "pos": [
+        4236,
+        4409
+      ]
+    },
+    {
+      "content": "For example, to see all cmdlets that use the verb <bpt id=\"p1\">**</bpt>Get<ept id=\"p1\">**</ept>, type:",
+      "pos": [
+        4410,
+        4474
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>\\-Noun<ept id=\"p1\">**</ept> parameter is even more useful because it allows you to see a family of commands that affect the same type of object.",
+      "pos": [
+        4953,
+        5084
+      ]
+    },
+    {
+      "content": "For example, if you want to see which commands are available for managing services, type following command:",
+      "pos": [
+        5085,
+        5192
+      ]
+    },
+    {
+      "content": "A command is not necessarily a cmdlet, just because it has a verb\\-noun naming scheme.",
+      "pos": [
+        5996,
+        6082
+      ]
+    },
+    {
+      "content": "One example of a native Windows PowerShell command that is not a cmdlet but has a verb\\-noun name, is the command for clearing a console window, Clear\\-Host.",
+      "pos": [
+        6083,
+        6240
+      ]
+    },
+    {
+      "content": "The Clear\\-Host command is actually an internal function, as you can see if you run Get\\-Command against it:",
+      "pos": [
+        6241,
+        6349
+      ]
+    },
+    {
+      "content": "Cmdlets Use Standard Parameters",
+      "pos": [
+        6596,
+        6627
+      ]
+    },
+    {
+      "content": "As noted earlier, commands used in traditional command\\-line interfaces do not generally have consistent parameter names.",
+      "pos": [
+        6628,
+        6749
+      ]
+    },
+    {
+      "content": "Sometimes parameters do not have names at all.",
+      "pos": [
+        6750,
+        6796
+      ]
+    },
+    {
+      "content": "When they do, they are often single\\-character or abbreviated words that can be typed rapidly but are not easily understood by new users.",
+      "pos": [
+        6797,
+        6934
+      ]
+    },
+    {
+      "content": "Unlike most other traditional command\\-line interfaces, Windows PowerShell processes parameters directly, and it uses this direct access to the parameters along with developer guidance to standardize parameter names.",
+      "pos": [
+        6936,
+        7152
+      ]
+    },
+    {
+      "content": "Although this does not guarantee that every cmdlet will always conform to the standards, it does encourage it.",
+      "pos": [
+        7153,
+        7263
+      ]
+    },
+    {
+      "pos": [
+        7267,
+        7535
+      ],
+      "content": "[!NOTE]\nParameter names always have a '\\-' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters. In the **Get\\-Command \\-Name Clear\\-Host** example, the parameter's name is **Name**, but it is entered as \\-**Name**.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "Parameter names always have a '\\-' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters. In the **Get\\-Command \\-Name Clear\\-Host** example, the parameter's name is **Name**, but it is entered as \\-**Name**.",
+          "pos": [
+            8,
+            266
+          ],
+          "nodes": [
+            {
+              "content": "Parameter names always have a '\\-' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters.",
+              "pos": [
+                0,
+                139
+              ]
+            },
+            {
+              "content": "In the <bpt id=\"p1\">**</bpt>Get\\-Command \\-Name Clear\\-Host<ept id=\"p1\">**</ept> example, the parameter's name is <bpt id=\"p2\">**</bpt>Name<ept id=\"p2\">**</ept>, but it is entered as \\-<bpt id=\"p3\">**</bpt>Name<ept id=\"p3\">**</ept>.",
+              "pos": [
+                140,
+                258
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Here are some of the general characteristics of the standard parameter names and usages.",
+      "pos": [
+        7537,
+        7625
+      ]
+    },
+    {
+      "content": "The Help Parameter (?)",
+      "pos": [
+        7632,
+        7654
+      ]
+    },
+    {
+      "content": "When you specify the <bpt id=\"p1\">**</bpt>\\-?<ept id=\"p1\">**</ept>",
+      "pos": [
+        7655,
+        7683
+      ]
+    },
+    {
+      "content": "parameter to any cmdlet, the cmdlet is not executed.",
+      "pos": [
+        7684,
+        7736
+      ]
+    },
+    {
+      "content": "Instead, Windows PowerShell displays help for the cmdlet.",
+      "pos": [
+        7737,
+        7794
+      ]
+    },
+    {
+      "content": "Common Parameters",
+      "pos": [
+        7801,
+        7818
+      ]
+    },
+    {
+      "content": "Windows PowerShell has several parameters known as <bpt id=\"p1\">*</bpt>common parameters<ept id=\"p1\">*</ept>.",
+      "pos": [
+        7819,
+        7890
+      ]
+    },
+    {
+      "content": "Because these parameters are controlled by the Windows PowerShell engine, whenever they are implemented by a cmdlet, they will always behave the same way.",
+      "pos": [
+        7891,
+        8045
+      ]
+    },
+    {
+      "content": "The common parameters are <bpt id=\"p1\">**</bpt>WhatIf<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>Confirm<ept id=\"p2\">**</ept>, <bpt id=\"p3\">**</bpt>Verbose<ept id=\"p3\">**</ept>, <bpt id=\"p4\">**</bpt>Debug<ept id=\"p4\">**</ept>, <bpt id=\"p5\">**</bpt>Warn<ept id=\"p5\">**</ept>, <bpt id=\"p6\">**</bpt>ErrorAction<ept id=\"p6\">**</ept>, <bpt id=\"p7\">**</bpt>ErrorVariable<ept id=\"p7\">**</ept>, <bpt id=\"p8\">**</bpt>OutVariable<ept id=\"p8\">**</ept>, and <bpt id=\"p9\">**</bpt>OutBuffer<ept id=\"p9\">**</ept>.",
+      "pos": [
+        8046,
+        8202
+      ]
+    },
+    {
+      "content": "Suggested Parameters",
+      "pos": [
+        8209,
+        8229
+      ]
+    },
+    {
+      "content": "The Windows PowerShell core cmdlets use standard names for similar parameters.",
+      "pos": [
+        8230,
+        8308
+      ]
+    },
+    {
+      "content": "Although the use of parameter names is not enforced, there is explicit guidance for usage to encourage standardization.",
+      "pos": [
+        8309,
+        8428
+      ]
+    },
+    {
+      "content": "For example, the guidance recommends naming a parameter that refers to a computer by name as <bpt id=\"p1\">**</bpt>ComputerName<ept id=\"p1\">**</ept>, rather than Server, Host, System, Node, or other common alternative words.",
+      "pos": [
+        8430,
+        8615
+      ]
+    },
+    {
+      "content": "Among the important suggested parameter names are <bpt id=\"p1\">**</bpt>Force<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>Exclude<ept id=\"p2\">**</ept>, <bpt id=\"p3\">**</bpt>Include<ept id=\"p3\">**</ept>, <bpt id=\"p4\">**</bpt>PassThru<ept id=\"p4\">**</ept>, <bpt id=\"p5\">**</bpt>Path<ept id=\"p5\">**</ept>, and <bpt id=\"p6\">**</bpt>CaseSensitive<ept id=\"p6\">**</ept>.",
+      "pos": [
+        8616,
+        8749
+      ]
+    }
+  ],
+  "content": "---\ntitle: Learning Windows PowerShell Names\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: b4d0fd22-8298-4ee6-82ae-9b6f2907c986\n---\n# Learning Windows PowerShell Names\nLearning names of commands and command parameters is a significant time investment with most command\\-line interfaces. The issue is that there are very few patterns, so the only way to learn is by memorizing each command and each parameter that you need to use on a regular basis.\n\nWhen you work with a new command or parameter, you cannot generally use what you already know; you have to find and learn a new name. If you look at how interfaces grow from a small set of tools with incremental additions to functionality, it is easy to see why the structure is nonstandard. With command names in particular, this may sound logical since each command is a separate tool, but there is a better way to handle command names.\n\nMost commands are built to manage elements of the operating system or applications, such as services or processes. The commands have a variety of names that may or may not fit into a family. For example, on Windows systems, you can use the **net start** and **net stop** commands to start and stop a service. There is another more generalized service control tool for Windows that has a completely different name, **sc**, that does not fit into the naming pattern for the **net** service commands. For process management, Windows has the **tasklist** command to list processes and the **taskkill** command to kill processes.\n\nCommands that take parameters have irregular parameter specifications. You cannot use the **net start** command to start a service on a remote computer. The **sc** command will start a service on a remote computer, but to specify the remote computer, you must prefix its name with a double backslash. For example, to start the spooler service on a remote computer named DC01, you would type **sc \\\\\\\\DC01 start spooler**. To list tasks running on DC01, you need to use the **\\/S** (for \"system\") parameter and supply the name DC01 without backslashes, like this: **tasklist \\/S DC01**.\n\nAlthough there are important technical distinctions between a service and a process, they are both examples of manageable elements on a computer that have a well\\-defined life cycle. You may want to start or stop a service or process, or get a list of all currently running services or processes. In other words, although a service and a process are different things, the actions we perform on a service or a process are often conceptually the same. Furthermore, choices we may make to customize an action by specifying parameters may be conceptually similar as well.\n\nWindows PowerShell exploits these similarities to reduce the number of distinct names you need to know to understand and use cmdlets.\n\n### Cmdlets Use Verb\\-Noun Names to Reduce Command Memorization\nWindows PowerShell uses a \"verb\\-noun\" naming system, where each cmdlet name consists of a standard verb hyphenated with a specific noun. Windows PowerShell verbs are not always English verbs, but they express specific actions in Windows PowerShell. Nouns are very much like nouns in any language, they describe specific types of objects that are important in system administration. It is easy to demonstrate how these two\\-part names reduce learning effort by looking at a few examples of verbs and nouns.\n\nNouns are less restricted, but they should always describe what a command acts upon. Windows PowerShell has commands such as **Get\\-Process**, **Stop\\-Process**, **Get\\-Service**, and **Stop\\-Service**.\n\nIn the case of two nouns and two verbs, consistency does not simplify learning that much. However, if you look at a standard set of 10 verbs and 10 nouns, you then have only 20 words to understand, but those words can be used to form 100 distinct command names.\n\nFrequently, you can recognize what a command does by reading its name, and it is usually apparent what name should be used for a new command. For example, a computer shutdown command might be **Stop\\-Computer**. A command that lists all computers on a network might be **Get\\-Computer**. The command that gets the system date is **Get\\-Date**.\n\nYou can list all commands that include a particular verb with the **\\-Verb** parameter for **Get\\-Command** (We will discuss **Get\\-Command** in detail in the next section). For example, to see all cmdlets that use the verb **Get**, type:\n\n```\nPS> Get-Command -Verb Get\nCommandType     Name                            Definition\n-----------     ----                            ----------\nCmdlet          Get-Acl                         Get-Acl [[-Path] <String[]>]...\nCmdlet          Get-Alias                       Get-Alias [[-Name] <String[]...\nCmdlet          Get-AuthenticodeSignature       Get-AuthenticodeSignature [-...\nCmdlet          Get-ChildItem                   Get-ChildItem [[-Path] <Stri...\n...\n```\n\nThe **\\-Noun** parameter is even more useful because it allows you to see a family of commands that affect the same type of object. For example, if you want to see which commands are available for managing services, type following command:\n\n```\nPS> Get-Command -Noun Service\nCommandType     Name                            Definition\n-----------     ----                            ----------\nCmdlet          Get-Service                     Get-Service [[-Name] <String...\nCmdlet          New-Service                     New-Service [-Name] <String>...\nCmdlet          Restart-Service                 Restart-Service [-Name] <Str...\nCmdlet          Resume-Service                  Resume-Service [-Name] <Stri...\nCmdlet          Set-Service                     Set-Service [-Name] <String>...\nCmdlet          Start-Service                   Start-Service [-Name] <Strin...\nCmdlet          Stop-Service                    Stop-Service [-Name] <String...\nCmdlet          Suspend-Service                 Suspend-Service [-Name] <Str... \n...\n```\n\nA command is not necessarily a cmdlet, just because it has a verb\\-noun naming scheme. One example of a native Windows PowerShell command that is not a cmdlet but has a verb\\-noun name, is the command for clearing a console window, Clear\\-Host. The Clear\\-Host command is actually an internal function, as you can see if you run Get\\-Command against it:\n\n```\nPS> Get-Command -Name Clear-Host\n\nCommandType     Name                            Definition\n-----------     ----                            ----------\nFunction        Clear-Host                      $spaceType = [System.Managem...\n```\n\n### Cmdlets Use Standard Parameters\nAs noted earlier, commands used in traditional command\\-line interfaces do not generally have consistent parameter names. Sometimes parameters do not have names at all. When they do, they are often single\\-character or abbreviated words that can be typed rapidly but are not easily understood by new users.\n\nUnlike most other traditional command\\-line interfaces, Windows PowerShell processes parameters directly, and it uses this direct access to the parameters along with developer guidance to standardize parameter names. Although this does not guarantee that every cmdlet will always conform to the standards, it does encourage it.\n\n> [!NOTE]\n> Parameter names always have a '\\-' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters. In the **Get\\-Command \\-Name Clear\\-Host** example, the parameter's name is **Name**, but it is entered as \\-**Name**.\n\nHere are some of the general characteristics of the standard parameter names and usages.\n\n#### The Help Parameter (?)\nWhen you specify the **\\-?** parameter to any cmdlet, the cmdlet is not executed. Instead, Windows PowerShell displays help for the cmdlet.\n\n#### Common Parameters\nWindows PowerShell has several parameters known as *common parameters*. Because these parameters are controlled by the Windows PowerShell engine, whenever they are implemented by a cmdlet, they will always behave the same way. The common parameters are **WhatIf**, **Confirm**, **Verbose**, **Debug**, **Warn**, **ErrorAction**, **ErrorVariable**, **OutVariable**, and **OutBuffer**.\n\n#### Suggested Parameters\nThe Windows PowerShell core cmdlets use standard names for similar parameters. Although the use of parameter names is not enforced, there is explicit guidance for usage to encourage standardization.\n\nFor example, the guidance recommends naming a parameter that refers to a computer by name as **ComputerName**, rather than Server, Host, System, Node, or other common alternative words. Among the important suggested parameter names are **Force**, **Exclude**, **Include**, **PassThru**, **Path**, and **CaseSensitive**.\n\n"
+}

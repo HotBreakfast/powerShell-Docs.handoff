@@ -1,0 +1,278 @@
+{
+  "nodes": [
+    {
+      "content": "Starting Windows PowerShell on Earlier Versions of Windows",
+      "pos": [
+        11,
+        69
+      ]
+    },
+    {
+      "content": "Starting Windows PowerShell on Earlier Versions of Windows",
+      "pos": [
+        204,
+        262
+      ]
+    },
+    {
+      "content": "This section explains how to start <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]</ph> on <ph id=\"ph3\">[!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)]</ph>, <ph id=\"ph4\">[!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)]</ph>, and <ph id=\"ph5\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph>.",
+      "pos": [
+        263,
+        597
+      ]
+    },
+    {
+      "content": "It also explains how to enable the optional feature for <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> in <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> on <ph id=\"ph3\">[!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)]</ph> and <ph id=\"ph4\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph>.",
+      "pos": [
+        598,
+        900
+      ]
+    },
+    {
+      "content": "To install <ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> on supported systems, download and install <bpt id=\"p1\">[</bpt>Windows Management Framework 4.0<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=293881)</ept>.",
+      "pos": [
+        902,
+        1088
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>Installing Windows PowerShell<ept id=\"p1\">](../Topic/Installing-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        1089,
+        1190
+      ]
+    },
+    {
+      "content": "To install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> on supported systems, download and install <bpt id=\"p1\">[</bpt>Windows Management Framework 3.0<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=240290)</ept>.",
+      "pos": [
+        1192,
+        1378
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>Installing Windows PowerShell<ept id=\"p1\">](../Topic/Installing-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        1379,
+        1480
+      ]
+    },
+    {
+      "pos": [
+        1485,
+        1574
+      ],
+      "content": "How to Start <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> on Earlier Versions of Windows"
+    },
+    {
+      "pos": [
+        1575,
+        1764
+      ],
+      "content": "Use any of the following methods to start the installed version of <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, or <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>, where applicable."
+    },
+    {
+      "content": "From the Start Menu",
+      "pos": [
+        1771,
+        1790
+      ]
+    },
+    {
+      "pos": [
+        1796,
+        1872
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>PowerShell<ept id=\"p2\">**</ept>, and then click <bpt id=\"p3\">**</bpt>Windows PowerShell<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        1878,
+        2046
+      ],
+      "content": "From the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Start<ept id=\"p2\">**</ept>, click <bpt id=\"p3\">**</bpt>All Programs<ept id=\"p3\">**</ept>, click <bpt id=\"p4\">**</bpt>Accessories<ept id=\"p4\">**</ept>, click the <bpt id=\"p5\">**</bpt>Windows PowerShell<ept id=\"p5\">**</ept> folder, and then click <bpt id=\"p6\">**</bpt>Windows PowerShell<ept id=\"p6\">**</ept>."
+    },
+    {
+      "content": "At the Command Prompt",
+      "pos": [
+        2053,
+        2074
+      ]
+    },
+    {
+      "pos": [
+        2080,
+        2236
+      ],
+      "content": "In Cmd.exe, <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, or <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> ISE, to start <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, type:"
+    },
+    {
+      "content": "You can also use the parameters of the PowerShell.exe program to customize the session.",
+      "pos": [
+        2274,
+        2361
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>PowerShell.exe Command-Line Help<ept id=\"p1\">](../Topic/PowerShell.exe-Command-Line-Help.md)</ept>.",
+      "pos": [
+        2362,
+        2469
+      ]
+    },
+    {
+      "content": "With Administrative privileges (\"Run as administrator\")",
+      "pos": [
+        2476,
+        2531
+      ]
+    },
+    {
+      "pos": [
+        2537,
+        2652
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>PowerShell<ept id=\"p2\">**</ept>, right\\-click <bpt id=\"p3\">**</bpt>Windows PowerShell<ept id=\"p3\">**</ept>, and then click <bpt id=\"p4\">**</bpt>Run as administrator<ept id=\"p4\">**</ept>."
+    },
+    {
+      "pos": [
+        2657,
+        2772
+      ],
+      "content": "How to Start <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> on Earlier Releases of Windows"
+    },
+    {
+      "pos": [
+        2773,
+        2887
+      ],
+      "content": "Use any of the following methods to start <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph>."
+    },
+    {
+      "content": "From the Start Menu",
+      "pos": [
+        2894,
+        2913
+      ]
+    },
+    {
+      "pos": [
+        2919,
+        2992
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>ISE<ept id=\"p2\">**</ept>, and then click <bpt id=\"p3\">**</bpt>Windows PowerShell ISE<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        2998,
+        3170
+      ],
+      "content": "From the <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Start<ept id=\"p2\">**</ept>, click <bpt id=\"p3\">**</bpt>All Programs<ept id=\"p3\">**</ept>, click <bpt id=\"p4\">**</bpt>Accessories<ept id=\"p4\">**</ept>, click the <bpt id=\"p5\">**</bpt>Windows PowerShell<ept id=\"p5\">**</ept> folder, and then click <bpt id=\"p6\">**</bpt>Windows PowerShell ISE<ept id=\"p6\">**</ept>."
+    },
+    {
+      "content": "At the Command Prompt",
+      "pos": [
+        3177,
+        3198
+      ]
+    },
+    {
+      "pos": [
+        3204,
+        3360
+      ],
+      "content": "In Cmd.exe, <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, or <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> ISE, to start <ph id=\"ph3\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, type:"
+    },
+    {
+      "content": "or",
+      "pos": [
+        3402,
+        3404
+      ]
+    },
+    {
+      "content": "With Administrative privileges (\"Run as administrator\")",
+      "pos": [
+        3436,
+        3491
+      ]
+    },
+    {
+      "pos": [
+        3497,
+        3609
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Start<ept id=\"p1\">**</ept>, type <bpt id=\"p2\">**</bpt>ISE<ept id=\"p2\">**</ept>, right\\-click <bpt id=\"p3\">**</bpt>Windows PowerShell ISE<ept id=\"p3\">**</ept>, and then click <bpt id=\"p4\">**</bpt>Run as administrator<ept id=\"p4\">**</ept>."
+    },
+    {
+      "pos": [
+        3614,
+        3730
+      ],
+      "content": "How to Enable <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> on Earlier Releases of Windows"
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, <ph id=\"ph3\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> is enabled by default on all versions of Windows.",
+      "pos": [
+        3731,
+        3960
+      ]
+    },
+    {
+      "content": "If it is not already enabled, Windows Management Framework 4.0 or <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph> enables it.",
+      "pos": [
+        3961,
+        4088
+      ]
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, <ph id=\"ph2\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> is enabled by default on <ph id=\"ph3\">[!INCLUDE[win7_client_secondref](../Token/win7_client_secondref_md.md)]</ph>.",
+      "pos": [
+        4090,
+        4313
+      ]
+    },
+    {
+      "content": "However, on <ph id=\"ph1\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph>, it is an optional feature.",
+      "pos": [
+        4314,
+        4473
+      ]
+    },
+    {
+      "pos": [
+        4475,
+        4761
+      ],
+      "content": "To enable <ph id=\"ph1\">[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]</ph> in <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> on <ph id=\"ph3\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph> or <ph id=\"ph4\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph>, use the following procedure."
+    },
+    {
+      "pos": [
+        4768,
+        4839
+      ],
+      "content": "To enable <ph id=\"ph1\">[!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]</ph>"
+    },
+    {
+      "content": "Start Server Manager.",
+      "pos": [
+        4845,
+        4866
+      ]
+    },
+    {
+      "pos": [
+        4872,
+        4923
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Features<ept id=\"p1\">**</ept> and then click <bpt id=\"p2\">**</bpt>Add Features<ept id=\"p2\">**</ept>."
+    },
+    {
+      "pos": [
+        4929,
+        5017
+      ],
+      "content": "In Select Features, click <ph id=\"ph1\">[!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]</ph>."
+    }
+  ],
+  "content": "---\ntitle: Starting Windows PowerShell on Earlier Versions of Windows\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 57125436-3d1e-4e7f-b5c4-8f0ecb49d642\n---\n# Starting Windows PowerShell on Earlier Versions of Windows\nThis section explains how to start [!INCLUDE[wps_2](../Token/wps_2_md.md)] and [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)] on [!INCLUDE[win7_client_firstref](../Token/win7_client_firstref_md.md)], [!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)], and [!INCLUDE[lserver](../Token/lserver_md.md)]. It also explains how to enable the optional feature for [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] in [!INCLUDE[psversion2](../Token/psversion2_md.md)] on [!INCLUDE[win7_server_firstref](../Token/win7_server_firstref_md.md)] and [!INCLUDE[lserver](../Token/lserver_md.md)].\n\nTo install [!INCLUDE[psversion4](../Token/psversion4_md.md)] on supported systems, download and install [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881). For more information, see [Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md).\n\nTo install [!INCLUDE[psversion3](../Token/psversion3_md.md)] on supported systems, download and install [Windows Management Framework 3.0](http://go.microsoft.com/fwlink/?LinkID=240290). For more information, see [Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md).\n\n## How to Start [!INCLUDE[mshshort](../Token/mshshort_md.md)] on Earlier Versions of Windows\nUse any of the following methods to start the installed version of [!INCLUDE[psversion3](../Token/psversion3_md.md)], or [!INCLUDE[psversion4](../Token/psversion4_md.md)], where applicable.\n\n#### From the Start Menu\n\n-   Click **Start**, type **PowerShell**, and then click **Windows PowerShell**.\n\n-   From the **Start** menu, click **Start**, click **All Programs**, click **Accessories**, click the **Windows PowerShell** folder, and then click **Windows PowerShell**.\n\n#### At the Command Prompt\n\n-   In Cmd.exe, [!INCLUDE[wps_2](../Token/wps_2_md.md)], or [!INCLUDE[wps_2](../Token/wps_2_md.md)] ISE, to start [!INCLUDE[wps_2](../Token/wps_2_md.md)], type:\n\n    ```\n    PowerShell\n    ```\n\n    You can also use the parameters of the PowerShell.exe program to customize the session. For more information, see [PowerShell.exe Command-Line Help](../Topic/PowerShell.exe-Command-Line-Help.md).\n\n#### With Administrative privileges (\"Run as administrator\")\n\n1.  Click **Start**, type **PowerShell**, right\\-click **Windows PowerShell**, and then click **Run as administrator**.\n\n## How to Start [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] on Earlier Releases of Windows\nUse any of the following methods to start [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)].\n\n#### From the Start Menu\n\n-   Click **Start**, type **ISE**, and then click **Windows PowerShell ISE**.\n\n-   From the **Start** menu, click **Start**, click **All Programs**, click **Accessories**, click the **Windows PowerShell** folder, and then click **Windows PowerShell ISE**.\n\n#### At the Command Prompt\n\n-   In Cmd.exe, [!INCLUDE[wps_2](../Token/wps_2_md.md)], or [!INCLUDE[wps_2](../Token/wps_2_md.md)] ISE, to start [!INCLUDE[wps_2](../Token/wps_2_md.md)], type:\n\n    ```\n    PowerShell_ISE\n    ```\n\n    or\n\n    ```\n    ISE\n    ```\n\n#### With Administrative privileges (\"Run as administrator\")\n\n1.  Click **Start**, type **ISE**, right\\-click **Windows PowerShell ISE**, and then click **Run as administrator**.\n\n## How to Enable [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] on Earlier Releases of Windows\nIn [!INCLUDE[psversion4](../Token/psversion4_md.md)] and [!INCLUDE[psversion3](../Token/psversion3_md.md)], [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] is enabled by default on all versions of Windows. If it is not already enabled, Windows Management Framework 4.0 or [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)] enables it.\n\nIn [!INCLUDE[psversion2](../Token/psversion2_md.md)], [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] is enabled by default on [!INCLUDE[win7_client_secondref](../Token/win7_client_secondref_md.md)]. However, on [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] and [!INCLUDE[lserver](../Token/lserver_md.md)], it is an optional feature.\n\nTo enable [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] in [!INCLUDE[psversion2](../Token/psversion2_md.md)] on [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] or [!INCLUDE[lserver](../Token/lserver_md.md)], use the following procedure.\n\n#### To enable [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]\n\n1.  Start Server Manager.\n\n2.  Click **Features** and then click **Add Features**.\n\n3.  In Select Features, click [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)].\n\n"
+}
