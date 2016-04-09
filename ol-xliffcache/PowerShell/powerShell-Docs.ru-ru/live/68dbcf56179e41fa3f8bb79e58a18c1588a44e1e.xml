@@ -1,0 +1,578 @@
+{
+  "nodes": [
+    {
+      "content": "PowerShell.exe Command-Line Help",
+      "pos": [
+        11,
+        43
+      ]
+    },
+    {
+      "content": "PowerShell.exe Command-Line Help",
+      "pos": [
+        178,
+        210
+      ]
+    },
+    {
+      "content": "Starts a Windows PowerShell session.",
+      "pos": [
+        211,
+        247
+      ]
+    },
+    {
+      "content": "You can use PowerShell.exe to start a Windows PowerShell session from the command line of another tool, such as Cmd.exe, or use it at the Windows PowerShell command line to start a new session.",
+      "pos": [
+        248,
+        441
+      ]
+    },
+    {
+      "content": "Use the parameters to customize the session.",
+      "pos": [
+        442,
+        486
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        491,
+        497
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        1092,
+        1102
+      ]
+    },
+    {
+      "content": "\\-EncodedCommand",
+      "pos": [
+        1108,
+        1124
+      ]
+    },
+    {
+      "content": "Accepts a base\\-64\\-encoded string version of a command.",
+      "pos": [
+        1148,
+        1204
+      ]
+    },
+    {
+      "content": "Use this parameter to submit commands to Windows PowerShell that require complex quotation marks or curly braces.",
+      "pos": [
+        1205,
+        1318
+      ]
+    },
+    {
+      "content": "\\-ExecutionPolicy",
+      "pos": [
+        1324,
+        1341
+      ]
+    },
+    {
+      "content": "Sets the default execution policy for the current session and saves it in the $env:PSExecutionPolicyPreference environment variable.",
+      "pos": [
+        1360,
+        1492
+      ]
+    },
+    {
+      "content": "This parameter does not change the Windows PowerShell execution policy that is set in the registry.",
+      "pos": [
+        1493,
+        1592
+      ]
+    },
+    {
+      "content": "For information about Windows PowerShell execution policies, including a list of valid values, see about\\_Execution\\_Policies (http:\\/\\/go.microsoft.com\\/fwlink\\/?LinkID\\=135170).",
+      "pos": [
+        1593,
+        1772
+      ]
+    },
+    {
+      "content": "\\-File",
+      "pos": [
+        1778,
+        1784
+      ]
+    },
+    {
+      "content": "\\[",
+      "pos": [
+        1796,
+        1798
+      ]
+    },
+    {
+      "content": "]",
+      "pos": [
+        1810,
+        1811
+      ]
+    },
+    {
+      "content": "Runs the specified script in the local scope (\"dot\\-sourced\"), so that the functions and variables that the script creates are available in the current session.",
+      "pos": [
+        1812,
+        1972
+      ]
+    },
+    {
+      "content": "Enter the script file path and any parameters.",
+      "pos": [
+        1973,
+        2019
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> must be the last parameter in the command, because all characters typed after the <bpt id=\"p2\">**</bpt>File<ept id=\"p2\">**</ept> parameter name are interpreted as the script file path followed by the script parameters and their values.",
+      "pos": [
+        2020,
+        2226
+      ]
+    },
+    {
+      "content": "You can include the parameters of a script, and parameter values, in the value of the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> parameter.",
+      "pos": [
+        2228,
+        2333
+      ]
+    },
+    {
+      "content": "For example: <ph id=\"ph1\">`-File .\\Get-Script.ps1 -Domain Central`</ph>",
+      "pos": [
+        2334,
+        2387
+      ]
+    },
+    {
+      "content": "Typically, the switch parameters of a script are either included or omitted.",
+      "pos": [
+        2389,
+        2465
+      ]
+    },
+    {
+      "content": "For example, the following command uses the <bpt id=\"p1\">**</bpt>All<ept id=\"p1\">**</ept> parameter of the Get\\-Script.ps1 script file: <ph id=\"ph1\">`-File .\\Get-Script.ps1 -All`</ph>",
+      "pos": [
+        2466,
+        2593
+      ]
+    },
+    {
+      "content": "In rare cases, you might need to provide a Boolean value for a switch parameter.",
+      "pos": [
+        2595,
+        2675
+      ]
+    },
+    {
+      "content": "To provide a Boolean value for a switch parameter in the value of the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> parameter, enclose the parameter name and value in curly braces, such as the following: <ph id=\"ph1\">`-File .\\Get-Script.ps1 {-All:$False}`</ph>",
+      "pos": [
+        2676,
+        2881
+      ]
+    },
+    {
+      "content": "\\-InputFormat {Text | XML}",
+      "pos": [
+        2887,
+        2913
+      ]
+    },
+    {
+      "content": "Describes the format of data sent to Windows PowerShell.",
+      "pos": [
+        2914,
+        2970
+      ]
+    },
+    {
+      "content": "Valid values are \"Text\" (text strings) or \"XML\" (serialized CLIXML format).",
+      "pos": [
+        2971,
+        3046
+      ]
+    },
+    {
+      "content": "\\-Mta",
+      "pos": [
+        3052,
+        3057
+      ]
+    },
+    {
+      "content": "Starts Windows PowerShell using a multi\\-threaded apartment.",
+      "pos": [
+        3058,
+        3118
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ps_sdk_paramintrodps3](../Token/ps_sdk_paramintrodps3_md.md)]</ph> In <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, single\\-threaded apartment (STA) is the default.",
+      "pos": [
+        3119,
+        3293
+      ]
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, multi\\-threaded apartment (MTA) is the default.",
+      "pos": [
+        3294,
+        3395
+      ]
+    },
+    {
+      "content": "\\-NoExit",
+      "pos": [
+        3401,
+        3409
+      ]
+    },
+    {
+      "content": "Does not exit after running startup commands.",
+      "pos": [
+        3410,
+        3455
+      ]
+    },
+    {
+      "content": "\\-NoLogo",
+      "pos": [
+        3461,
+        3469
+      ]
+    },
+    {
+      "content": "Hides the copyright banner at startup.",
+      "pos": [
+        3470,
+        3508
+      ]
+    },
+    {
+      "content": "\\-NonInteractive",
+      "pos": [
+        3514,
+        3530
+      ]
+    },
+    {
+      "content": "Does not present an interactive prompt to the user.",
+      "pos": [
+        3531,
+        3582
+      ]
+    },
+    {
+      "content": "\\-NoProfile",
+      "pos": [
+        3588,
+        3599
+      ]
+    },
+    {
+      "content": "Does not load the Windows PowerShell profile.",
+      "pos": [
+        3600,
+        3645
+      ]
+    },
+    {
+      "content": "\\-OutputFormat {Text | XML}",
+      "pos": [
+        3651,
+        3678
+      ]
+    },
+    {
+      "content": "Determines how output from Windows PowerShell is formatted.",
+      "pos": [
+        3679,
+        3738
+      ]
+    },
+    {
+      "content": "Valid values are \"Text\" (text strings) or \"XML\" (serialized CLIXML format).",
+      "pos": [
+        3739,
+        3814
+      ]
+    },
+    {
+      "content": "\\-PSConsoleFile",
+      "pos": [
+        3820,
+        3835
+      ]
+    },
+    {
+      "content": "Loads the specified Windows PowerShell console file.",
+      "pos": [
+        3847,
+        3899
+      ]
+    },
+    {
+      "content": "Enter the path and name of the console file.",
+      "pos": [
+        3900,
+        3944
+      ]
+    },
+    {
+      "content": "To create a console file, use the <bpt id=\"p1\">[</bpt>Export-Console<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/4bab1c02-9e61-4aaf-9957-11d1934ef4ef)</ept> cmdlet in Windows PowerShell.",
+      "pos": [
+        3945,
+        4107
+      ]
+    },
+    {
+      "content": "\\-Sta",
+      "pos": [
+        4113,
+        4118
+      ]
+    },
+    {
+      "content": "Starts Windows PowerShell using a single\\-threaded apartment.",
+      "pos": [
+        4119,
+        4180
+      ]
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, single\\-threaded apartment (STA) is the default.",
+      "pos": [
+        4181,
+        4283
+      ]
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, multi\\-threaded apartment (MTA) is the default.",
+      "pos": [
+        4284,
+        4385
+      ]
+    },
+    {
+      "content": "\\-Version",
+      "pos": [
+        4391,
+        4400
+      ]
+    },
+    {
+      "content": "Starts the specified version of Windows PowerShell.",
+      "pos": [
+        4430,
+        4481
+      ]
+    },
+    {
+      "content": "The version that you specify must be installed on the system.",
+      "pos": [
+        4482,
+        4543
+      ]
+    },
+    {
+      "content": "If <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> is installed on the computer, valid values are \"2.0\" and \"3.0\".",
+      "pos": [
+        4544,
+        4660
+      ]
+    },
+    {
+      "content": "The default value is \"3.0\".",
+      "pos": [
+        4661,
+        4688
+      ]
+    },
+    {
+      "content": "If <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> is not installed, the only valid value is \"2.0\".",
+      "pos": [
+        4690,
+        4791
+      ]
+    },
+    {
+      "content": "Other values are ignored.",
+      "pos": [
+        4792,
+        4817
+      ]
+    },
+    {
+      "pos": [
+        4819,
+        5019
+      ],
+      "content": "For more information, see \"Installing Windows PowerShell\" in the <bpt id=\"p1\">[</bpt>Getting Started with Windows PowerShell [OLD MSDN]<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)</ept>."
+    },
+    {
+      "content": "\\-WindowStyle",
+      "pos": [
+        5025,
+        5038
+      ]
+    },
+    {
+      "content": "Sets the window style for the session.",
+      "pos": [
+        5054,
+        5092
+      ]
+    },
+    {
+      "content": "Valid values are Normal, Minimized, Maximized and Hidden.",
+      "pos": [
+        5093,
+        5150
+      ]
+    },
+    {
+      "content": "\\-Command",
+      "pos": [
+        5156,
+        5165
+      ]
+    },
+    {
+      "content": "Executes the specified commands (and any parameters) as though they were typed at the Windows PowerShell command prompt, and then exits, unless the NoExit parameter is specified.",
+      "pos": [
+        5166,
+        5344
+      ]
+    },
+    {
+      "content": "The value of Command can be \"\\-\", a string.",
+      "pos": [
+        5346,
+        5389
+      ]
+    },
+    {
+      "content": "or a script block.",
+      "pos": [
+        5390,
+        5408
+      ]
+    },
+    {
+      "content": "If the value of Command is \"\\-\", the command text is read from standard input.",
+      "pos": [
+        5409,
+        5487
+      ]
+    },
+    {
+      "content": "Script blocks must be enclosed in braces ({}).",
+      "pos": [
+        5489,
+        5535
+      ]
+    },
+    {
+      "content": "You can specify a script block only when running PowerShell.exe in Windows PowerShell.",
+      "pos": [
+        5536,
+        5622
+      ]
+    },
+    {
+      "content": "The results of the script are returned to the parent shell as deserialized XML objects, not live objects.",
+      "pos": [
+        5623,
+        5728
+      ]
+    },
+    {
+      "pos": [
+        5730,
+        5911
+      ],
+      "content": "If the value of Command is a string, <bpt id=\"p1\">**</bpt>Command<ept id=\"p1\">**</ept> must be the last parameter in the command , because any characters typed after the command are interpreted as the command arguments."
+    },
+    {
+      "content": "To write a string that runs a Windows PowerShell command, use the format:",
+      "pos": [
+        5913,
+        5986
+      ]
+    },
+    {
+      "content": "where the quotation marks indicate a string and the invoke operator (&amp;) causes the command to be executed.",
+      "pos": [
+        6013,
+        6119
+      ]
+    },
+    {
+      "content": "\\-Help, \\-?, \\/?",
+      "pos": [
+        6125,
+        6141
+      ]
+    },
+    {
+      "content": "Shows this message.",
+      "pos": [
+        6142,
+        6161
+      ]
+    },
+    {
+      "content": "If you are typing a PowerShell.exe command in Windows PowerShell, prepend the command parameters with a hyphen (\\-), not a forward slash (\\/).",
+      "pos": [
+        6162,
+        6304
+      ]
+    },
+    {
+      "content": "You can use either a hyphen or forward slash in Cmd.exe.",
+      "pos": [
+        6305,
+        6361
+      ]
+    },
+    {
+      "pos": [
+        6365,
+        6521
+      ],
+      "content": "[!NOTE]\nTroubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "Troubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.",
+          "pos": [
+            8,
+            154
+          ]
+        }
+      ]
+    },
+    {
+      "content": "EXAMPLES",
+      "pos": [
+        6526,
+        6534
+      ]
+    }
+  ],
+  "content": "---\ntitle: PowerShell.exe Command-Line Help\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 1ab7b93b-6785-42c6-a1c9-35ff686a958f\n---\n# PowerShell.exe Command-Line Help\nStarts a Windows PowerShell session. You can use PowerShell.exe to start a Windows PowerShell session from the command line of another tool, such as Cmd.exe, or use it at the Windows PowerShell command line to start a new session. Use the parameters to customize the session.\n\n## Syntax\n\n```\nPowerShell[.exe]\n       [-EncodedCommand <Base64EncodedCommand>]\n       [-ExecutionPolicy <ExecutionPolicy>]\n       [-InputFormat {Text | XML}] \n       [-Mta]\n       [-NoExit]\n       [-NoLogo]\n       [-NonInteractive] \n       [-NoProfile] \n       [-OutputFormat {Text | XML}] \n       [-PSConsoleFile <FilePath> | -Version <Windows PowerShell version>]\n       [-Sta]\n       [-WindowStyle <style>]\n       [-File <FilePath> [<Args>]]\n       [-Command { - | <script-block> [-args <arg-array>]\n                     | <string> [<CommandParameters>] } ]\n\nPowerShell[.exe] -Help | -? | /?\n```\n\n## Parameters\n\n### \\-EncodedCommand <Base64EncodedCommand>\nAccepts a base\\-64\\-encoded string version of a command. Use this parameter to submit commands to Windows PowerShell that require complex quotation marks or curly braces.\n\n### \\-ExecutionPolicy <ExecutionPolicy>\nSets the default execution policy for the current session and saves it in the $env:PSExecutionPolicyPreference environment variable. This parameter does not change the Windows PowerShell execution policy that is set in the registry. For information about Windows PowerShell execution policies, including a list of valid values, see about\\_Execution\\_Policies (http:\\/\\/go.microsoft.com\\/fwlink\\/?LinkID\\=135170).\n\n### \\-File <FilePath> \\[<Parameters>]\nRuns the specified script in the local scope (\"dot\\-sourced\"), so that the functions and variables that the script creates are available in the current session. Enter the script file path and any parameters. **File** must be the last parameter in the command, because all characters typed after the **File** parameter name are interpreted as the script file path followed by the script parameters and their values.\n\nYou can include the parameters of a script, and parameter values, in the value of the **File** parameter. For example: `-File .\\Get-Script.ps1 -Domain Central`\n\nTypically, the switch parameters of a script are either included or omitted. For example, the following command uses the **All** parameter of the Get\\-Script.ps1 script file: `-File .\\Get-Script.ps1 -All`\n\nIn rare cases, you might need to provide a Boolean value for a switch parameter. To provide a Boolean value for a switch parameter in the value of the **File** parameter, enclose the parameter name and value in curly braces, such as the following: `-File .\\Get-Script.ps1 {-All:$False}`\n\n### \\-InputFormat {Text | XML}\nDescribes the format of data sent to Windows PowerShell. Valid values are \"Text\" (text strings) or \"XML\" (serialized CLIXML format).\n\n### \\-Mta\nStarts Windows PowerShell using a multi\\-threaded apartment. [!INCLUDE[ps_sdk_paramintrodps3](../Token/ps_sdk_paramintrodps3_md.md)] In [!INCLUDE[psversion3](../Token/psversion3_md.md)], single\\-threaded apartment (STA) is the default. In [!INCLUDE[psversion2](../Token/psversion2_md.md)], multi\\-threaded apartment (MTA) is the default.\n\n### \\-NoExit\nDoes not exit after running startup commands.\n\n### \\-NoLogo\nHides the copyright banner at startup.\n\n### \\-NonInteractive\nDoes not present an interactive prompt to the user.\n\n### \\-NoProfile\nDoes not load the Windows PowerShell profile.\n\n### \\-OutputFormat {Text | XML}\nDetermines how output from Windows PowerShell is formatted. Valid values are \"Text\" (text strings) or \"XML\" (serialized CLIXML format).\n\n### \\-PSConsoleFile <FilePath>\nLoads the specified Windows PowerShell console file. Enter the path and name of the console file. To create a console file, use the [Export-Console](https://technet.microsoft.com/en-us/library/4bab1c02-9e61-4aaf-9957-11d1934ef4ef) cmdlet in Windows PowerShell.\n\n### \\-Sta\nStarts Windows PowerShell using a single\\-threaded apartment. In [!INCLUDE[psversion3](../Token/psversion3_md.md)], single\\-threaded apartment (STA) is the default. In [!INCLUDE[psversion2](../Token/psversion2_md.md)], multi\\-threaded apartment (MTA) is the default.\n\n### \\-Version <Windows PowerShell Version>\nStarts the specified version of Windows PowerShell. The version that you specify must be installed on the system. If [!INCLUDE[psversion3](../Token/psversion3_md.md)] is installed on the computer, valid values are \"2.0\" and \"3.0\". The default value is \"3.0\".\n\nIf [!INCLUDE[psversion3](../Token/psversion3_md.md)] is not installed, the only valid value is \"2.0\". Other values are ignored.\n\nFor more information, see \"Installing Windows PowerShell\" in the [Getting Started with Windows PowerShell [OLD MSDN]](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd).\n\n### \\-WindowStyle <Window style>\nSets the window style for the session. Valid values are Normal, Minimized, Maximized and Hidden.\n\n### \\-Command\nExecutes the specified commands (and any parameters) as though they were typed at the Windows PowerShell command prompt, and then exits, unless the NoExit parameter is specified.\n\nThe value of Command can be \"\\-\", a string. or a script block. If the value of Command is \"\\-\", the command text is read from standard input.\n\nScript blocks must be enclosed in braces ({}). You can specify a script block only when running PowerShell.exe in Windows PowerShell. The results of the script are returned to the parent shell as deserialized XML objects, not live objects.\n\nIf the value of Command is a string, **Command** must be the last parameter in the command , because any characters typed after the command are interpreted as the command arguments.\n\nTo write a string that runs a Windows PowerShell command, use the format:\n\n```\n\"& {<command>}\"\n```\n\nwhere the quotation marks indicate a string and the invoke operator (&) causes the command to be executed.\n\n### \\-Help, \\-?, \\/?\nShows this message. If you are typing a PowerShell.exe command in Windows PowerShell, prepend the command parameters with a hyphen (\\-), not a forward slash (\\/). You can use either a hyphen or forward slash in Cmd.exe.\n\n> [!NOTE]\n> Troubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.\n\n## EXAMPLES\n\n```\nPowerShell -PSConsoleFile sqlsnapin.psc1\n\nPowerShell -Version 2.0 -NoLogo -InputFormat text -OutputFormat XML\n\nPowerShell -Command {Get-EventLog -LogName security}\n\nPowerShell -Command \"& {Get-EventLog -LogName security}\"\n\n# To use the -EncodedCommand parameter:\n$command = \"dir 'c:\\program files' \"\n$bytes = [System.Text.Encoding]::Unicode.GetBytes($command)\n$encodedCommand = [Convert]::ToBase64String($bytes)\npowershell.exe -encodedCommand $encodedCommand\n```\n\n"
+}
