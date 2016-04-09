@@ -1,0 +1,390 @@
+{
+  "nodes": [
+    {
+      "content": "Installing Windows PowerShell",
+      "pos": [
+        11,
+        40
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell",
+      "pos": [
+        175,
+        204
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[win8_client_1](../Token/win8_client_1_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[win8_server_1](../Token/win8_server_1_md.md)]</ph> include <ph id=\"ph3\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and all of its prerequisites.",
+      "pos": [
+        205,
+        408
+      ]
+    },
+    {
+      "content": "The system also includes the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> engine for backward compatibility with host programs that cannot use <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>.",
+      "pos": [
+        409,
+        607
+      ]
+    },
+    {
+      "pos": [
+        609,
+        758
+      ],
+      "content": "This topic explains how to install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> on earlier systems and install and enable the required features."
+    },
+    {
+      "content": "This topic includes the following sections:",
+      "pos": [
+        760,
+        803
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell on Windows 8 and Windows Server 2012",
+      "pos": [
+        810,
+        876
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell on Windows 7 and Windows Server 2008 R2",
+      "pos": [
+        973,
+        1042
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell on Windows Server 2008",
+      "pos": [
+        1141,
+        1193
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell on Server Core",
+      "pos": [
+        1281,
+        1325
+      ]
+    },
+    {
+      "content": "Deploying Windows PowerShell Web Access",
+      "pos": [
+        1404,
+        1443
+      ]
+    },
+    {
+      "content": "Installing the Windows PowerShell 2.0 Engine",
+      "pos": [
+        1533,
+        1577
+      ]
+    },
+    {
+      "pos": [
+        1641,
+        1767
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_InstallingOnWindows8andWindowsServer2012\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Installing Windows PowerShell on Windows 8 and Windows Server 2012"
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> arrives installed, configured, and ready to use.",
+      "pos": [
+        1768,
+        1866
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)]</ph> is installed and enabled.",
+      "pos": [
+        1867,
+        1954
+      ]
+    },
+    {
+      "content": "For information about starting <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph>, see <bpt id=\"p1\">[</bpt>Starting Windows PowerShell on Windows 8<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3)</ept> and <bpt id=\"p2\">[</bpt>Starting Windows PowerShell on Windows Server 2012<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968)</ept>.",
+      "pos": [
+        1955,
+        2301
+      ]
+    },
+    {
+      "pos": [
+        2306,
+        2437
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_InstallingOnWindows7andWindowsServer2008R2\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Installing Windows PowerShell on Windows 7 and Windows Server 2008 R2"
+    },
+    {
+      "content": "These instructions explain how to install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> on computers running <ph id=\"ph2\">[!INCLUDE[win7_client_secondref](../Token/win7_client_secondref_md.md)]</ph> with Service Pack 1 and <ph id=\"ph3\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph> with Service Pack 1.",
+      "pos": [
+        2438,
+        2739
+      ]
+    },
+    {
+      "content": "There are separate installation instructions below for computers running with the Server Core installation option of <ph id=\"ph1\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph>.",
+      "pos": [
+        2740,
+        2929
+      ]
+    },
+    {
+      "content": "Getting ready to install",
+      "pos": [
+        2936,
+        2960
+      ]
+    },
+    {
+      "pos": [
+        2966,
+        3103
+      ],
+      "content": "Before installing <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>, uninstall any previous versions of Windows Management Framework 3.0."
+    },
+    {
+      "pos": [
+        3110,
+        3170
+      ],
+      "content": "To install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        3176,
+        3399
+      ],
+      "content": "Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\\_Full\\_setup.exe) from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>."
+    },
+    {
+      "pos": [
+        3405,
+        3609
+      ],
+      "content": "Or, install Microsoft .NET Framework 4.5 (dotNetFx45\\_Full\\_setup.exe) from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>."
+    },
+    {
+      "pos": [
+        3615,
+        3806
+      ],
+      "content": "Install <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph> from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=240290<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=240290)</ept>."
+    },
+    {
+      "pos": [
+        3808,
+        4027
+      ],
+      "content": "For information about starting <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, see <bpt id=\"p1\">[</bpt>Starting Windows PowerShell on Earlier Versions of Windows<ept id=\"p1\">](../Topic/Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md)</ept>."
+    },
+    {
+      "pos": [
+        4032,
+        4118
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_InstallingOnServerCore\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Installing Windows PowerShell on Server Core"
+    },
+    {
+      "pos": [
+        4119,
+        4363
+      ],
+      "content": "These instructions explain how to install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> on computers running the Server Core installation option of <ph id=\"ph2\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph> with Service Pack 1."
+    },
+    {
+      "content": "The first steps in the procedure use Deployment Image Servicing and Management (DISM) commands to install Microsoft <ph id=\"ph1\">[!INCLUDE[dnprdnlong](../Token/dnprdnlong_md.md)]</ph> for Server Core and <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>.",
+      "pos": [
+        4365,
+        4601
+      ]
+    },
+    {
+      "content": "These programs are prerequisites for <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>, which is installed in a subsequent step.",
+      "pos": [
+        4602,
+        4730
+      ]
+    },
+    {
+      "content": "Getting ready to install",
+      "pos": [
+        4737,
+        4761
+      ]
+    },
+    {
+      "pos": [
+        4767,
+        4904
+      ],
+      "content": "Before installing <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>, uninstall any previous versions of Windows Management Framework 3.0."
+    },
+    {
+      "pos": [
+        4911,
+        4971
+      ],
+      "content": "To install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>"
+    },
+    {
+      "content": "Start Cmd.exe",
+      "pos": [
+        4977,
+        4990
+      ]
+    },
+    {
+      "content": "Run the following DISM commands.",
+      "pos": [
+        4996,
+        5028
+      ]
+    },
+    {
+      "content": "These commands install <ph id=\"ph1\">[!INCLUDE[dnprdnlong](../Token/dnprdnlong_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>.",
+      "pos": [
+        5029,
+        5156
+      ]
+    },
+    {
+      "pos": [
+        5347,
+        5588
+      ],
+      "content": "Install Microsoft <ph id=\"ph1\">[!INCLUDE[netfx40_short](../Token/netfx40_short_md.md)]</ph> full installation for Server Core from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=248450<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=248450)</ept>."
+    },
+    {
+      "pos": [
+        5594,
+        5785
+      ],
+      "content": "Install <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph> from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=240290<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=240290)</ept>."
+    },
+    {
+      "pos": [
+        5790,
+        5893
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_InstallingOnWindowsServer2008LH\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Installing Windows PowerShell on Windows Server 2008"
+    },
+    {
+      "pos": [
+        5894,
+        6071
+      ],
+      "content": "These instructions explain how to install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> on computers running <ph id=\"ph2\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph> with Service Pack 2."
+    },
+    {
+      "content": "On <ph id=\"ph1\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph> systems, Windows Management Framework (<ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, KB 968930) is a prerequisite for <ph id=\"ph3\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>.",
+      "pos": [
+        6073,
+        6293
+      ]
+    },
+    {
+      "content": "The \"Extended Protection for Authentication\" feature protects the computer from authentication forwarding attacks and allows you to use the <bpt id=\"p1\">**</bpt>UseSSL<ept id=\"p1\">**</ept> parameter when creating remote sessions.",
+      "pos": [
+        6294,
+        6485
+      ]
+    },
+    {
+      "content": "To install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> and the <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine, use the following procedure.",
+      "pos": [
+        6486,
+        6641
+      ]
+    },
+    {
+      "content": "Getting ready to install",
+      "pos": [
+        6648,
+        6672
+      ]
+    },
+    {
+      "pos": [
+        6678,
+        6815
+      ],
+      "content": "Before installing <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>, uninstall any previous versions of Windows Management Framework 3.0."
+    },
+    {
+      "pos": [
+        6822,
+        6882
+      ],
+      "content": "To install <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>"
+    },
+    {
+      "pos": [
+        6888,
+        7078
+      ],
+      "content": "Install Microsoft .NET Framework 3.5 with Service Pack 1 from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242910<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=242910)</ept>."
+    },
+    {
+      "pos": [
+        7084,
+        7317
+      ],
+      "content": "Install Windows Management Framework (<ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, KB 968930) from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkId=243035<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkId=243035)</ept>."
+    },
+    {
+      "pos": [
+        7323,
+        7546
+      ],
+      "content": "Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\\_Full\\_setup.exe) from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>."
+    },
+    {
+      "pos": [
+        7552,
+        7756
+      ],
+      "content": "Or, install Microsoft .NET Framework 4.5 (dotNetFx45\\_Full\\_setup.exe) from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>."
+    },
+    {
+      "pos": [
+        7762,
+        7923
+      ],
+      "content": "Install \"Extended Protection for Authentication\" (KB 968389) from <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=186398<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=186398)</ept>."
+    },
+    {
+      "pos": [
+        7929,
+        8120
+      ],
+      "content": "Install <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph> from the Microsoft Download Center at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=240290<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=240290)</ept>."
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        8125,
+        8133
+      ]
+    },
+    {
+      "content": "Windows PowerShell System Requirements",
+      "pos": [
+        8135,
+        8173
+      ]
+    },
+    {
+      "content": "Starting Windows PowerShell [ps]",
+      "pos": [
+        8228,
+        8260
+      ]
+    }
+  ],
+  "content": "---\ntitle: Installing Windows PowerShell\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 6fbb0409-5a54-48ec-95e6-7f8b7d8c4969\n---\n# Installing Windows PowerShell\n[!INCLUDE[win8_client_1](../Token/win8_client_1_md.md)] and [!INCLUDE[win8_server_1](../Token/win8_server_1_md.md)] include [!INCLUDE[psversion3](../Token/psversion3_md.md)] and all of its prerequisites. The system also includes the [!INCLUDE[psversion2](../Token/psversion2_md.md)] engine for backward compatibility with host programs that cannot use [!INCLUDE[psversion3](../Token/psversion3_md.md)].\n\nThis topic explains how to install [!INCLUDE[psversion3](../Token/psversion3_md.md)] on earlier systems and install and enable the required features.\n\nThis topic includes the following sections:\n\n-   [Installing Windows PowerShell on Windows 8 and Windows Server 2012](../Topic/Installing-Windows-PowerShell.md#BKMK_InstallingOnWindows8andWindowsServer2012)\n\n-   [Installing Windows PowerShell on Windows 7 and Windows Server 2008 R2](../Topic/Installing-Windows-PowerShell.md#BKMK_InstallingOnWindows7andWindowsServer2008R2)\n\n-   [Installing Windows PowerShell on Windows Server 2008](../Topic/Installing-Windows-PowerShell.md#BKMK_InstallingOnWindowsServer2008LH)\n\n-   [Installing Windows PowerShell on Server Core](../Topic/Installing-Windows-PowerShell.md#BKMK_InstallingOnServerCore)\n\n-   [Deploying Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/639d0eff-98a3-4124-b52c-26921ebd98b0)\n\n-   [Installing the Windows PowerShell 2.0 Engine](../Topic/Installing-the-Windows-PowerShell-2.0-Engine.md)\n\n## <a name=\"BKMK_InstallingOnWindows8andWindowsServer2012\"></a>Installing Windows PowerShell on Windows 8 and Windows Server 2012\n[!INCLUDE[psversion3](../Token/psversion3_md.md)] arrives installed, configured, and ready to use. [!INCLUDE[mshgraphicalhost](../Token/mshgraphicalhost_md.md)] is installed and enabled. For information about starting [!INCLUDE[mshshort](../Token/mshshort_md.md)], see [Starting Windows PowerShell on Windows 8](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3) and [Starting Windows PowerShell on Windows Server 2012](https://technet.microsoft.com/en-us/library/4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968).\n\n## <a name=\"BKMK_InstallingOnWindows7andWindowsServer2008R2\"></a>Installing Windows PowerShell on Windows 7 and Windows Server 2008 R2\nThese instructions explain how to install [!INCLUDE[psversion3](../Token/psversion3_md.md)] on computers running [!INCLUDE[win7_client_secondref](../Token/win7_client_secondref_md.md)] with Service Pack 1 and [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] with Service Pack 1. There are separate installation instructions below for computers running with the Server Core installation option of [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)].\n\n#### Getting ready to install\n\n-   Before installing [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)], uninstall any previous versions of Windows Management Framework 3.0.\n\n#### To install [!INCLUDE[psversion3](../Token/psversion3_md.md)]\n\n1.  Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\\_Full\\_setup.exe) from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547).\n\n    Or, install Microsoft .NET Framework 4.5 (dotNetFx45\\_Full\\_setup.exe) from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919).\n\n2.  Install [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)] from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=240290](http://go.microsoft.com/fwlink/?LinkID=240290).\n\nFor information about starting [!INCLUDE[psversion3](../Token/psversion3_md.md)], see [Starting Windows PowerShell on Earlier Versions of Windows](../Topic/Starting-Windows-PowerShell-on-Earlier-Versions-of-Windows.md).\n\n## <a name=\"BKMK_InstallingOnServerCore\"></a>Installing Windows PowerShell on Server Core\nThese instructions explain how to install [!INCLUDE[psversion3](../Token/psversion3_md.md)] on computers running the Server Core installation option of [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)] with Service Pack 1.\n\nThe first steps in the procedure use Deployment Image Servicing and Management (DISM) commands to install Microsoft [!INCLUDE[dnprdnlong](../Token/dnprdnlong_md.md)] for Server Core and [!INCLUDE[psversion2](../Token/psversion2_md.md)]. These programs are prerequisites for [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)], which is installed in a subsequent step.\n\n#### Getting ready to install\n\n-   Before installing [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)], uninstall any previous versions of Windows Management Framework 3.0.\n\n#### To install [!INCLUDE[psversion3](../Token/psversion3_md.md)]\n\n1.  Start Cmd.exe\n\n2.  Run the following DISM commands. These commands install [!INCLUDE[dnprdnlong](../Token/dnprdnlong_md.md)] and [!INCLUDE[psversion2](../Token/psversion2_md.md)].\n\n    ```\n    dism /online /enable-feature:NetFx2-ServerCore\n    dism /online /enable-feature:MicrosoftWindowsPowerShell\n    dism /online /enable-feature:NetFx2-ServerCore-WOW64\n    ```\n\n3.  Install Microsoft [!INCLUDE[netfx40_short](../Token/netfx40_short_md.md)] full installation for Server Core from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=248450](http://go.microsoft.com/fwlink/?LinkID=248450).\n\n4.  Install [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)] from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=240290](http://go.microsoft.com/fwlink/?LinkID=240290).\n\n## <a name=\"BKMK_InstallingOnWindowsServer2008LH\"></a>Installing Windows PowerShell on Windows Server 2008\nThese instructions explain how to install [!INCLUDE[psversion3](../Token/psversion3_md.md)] on computers running [!INCLUDE[lserver](../Token/lserver_md.md)] with Service Pack 2.\n\nOn [!INCLUDE[lserver](../Token/lserver_md.md)] systems, Windows Management Framework ([!INCLUDE[psversion2](../Token/psversion2_md.md)], KB 968930) is a prerequisite for [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]. The \"Extended Protection for Authentication\" feature protects the computer from authentication forwarding attacks and allows you to use the **UseSSL** parameter when creating remote sessions. To install [!INCLUDE[psversion3](../Token/psversion3_md.md)] and the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine, use the following procedure.\n\n#### Getting ready to install\n\n-   Before installing [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)], uninstall any previous versions of Windows Management Framework 3.0.\n\n#### To install [!INCLUDE[psversion3](../Token/psversion3_md.md)]\n\n1.  Install Microsoft .NET Framework 3.5 with Service Pack 1 from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=242910](http://go.microsoft.com/fwlink/?LinkID=242910).\n\n2.  Install Windows Management Framework ([!INCLUDE[psversion2](../Token/psversion2_md.md)], KB 968930) from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkId=243035](http://go.microsoft.com/fwlink/?LinkId=243035).\n\n3.  Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\\_Full\\_setup.exe) from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=212547](http://go.microsoft.com/fwlink/?LinkID=212547).\n\n    Or, install Microsoft .NET Framework 4.5 (dotNetFx45\\_Full\\_setup.exe) from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=242919](http://go.microsoft.com/fwlink/?LinkID=242919).\n\n4.  Install \"Extended Protection for Authentication\" (KB 968389) from [http://go.microsoft.com/fwlink/?LinkID=186398](http://go.microsoft.com/fwlink/?LinkID=186398).\n\n5.  Install [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)] from the Microsoft Download Center at [http://go.microsoft.com/fwlink/?LinkID=240290](http://go.microsoft.com/fwlink/?LinkID=240290).\n\n## See Also\n[Windows PowerShell System Requirements](../Topic/Windows-PowerShell-System-Requirements.md)\n[Starting Windows PowerShell [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)\n\n"
+}
