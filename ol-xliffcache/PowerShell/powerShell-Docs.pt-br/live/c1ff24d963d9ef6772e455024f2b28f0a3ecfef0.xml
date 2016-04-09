@@ -1,0 +1,1230 @@
+{
+  "nodes": [
+    {
+      "content": "What&amp;#39;s New in the Windows PowerShell ISE",
+      "pos": [
+        11,
+        55
+      ]
+    },
+    {
+      "content": "What&amp;#39;s New in the Windows PowerShell ISE",
+      "pos": [
+        190,
+        234
+      ]
+    },
+    {
+      "pos": [
+        235,
+        365
+      ],
+      "content": "This topic explains the new and updated features that have been introduced in versions of <ph id=\"ph1\">[!INCLUDE[ise_1](../Token/ise_1_md.md)]</ph>."
+    },
+    {
+      "pos": [
+        370,
+        412
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"overview\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Feature description"
+    },
+    {
+      "content": "The <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> is a host application that enables you to write, run, and test scripts and modules in a graphical and intuitive environment.",
+      "pos": [
+        413,
+        581
+      ]
+    },
+    {
+      "content": "Key features such as syntax\\-coloring, tab completion, visual debugging, Unicode compliance, and context\\-sensitive Help provide a rich scripting experience.",
+      "pos": [
+        582,
+        739
+      ]
+    },
+    {
+      "pos": [
+        741,
+        950
+      ],
+      "content": "For an overview of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>, see <bpt id=\"p1\">[</bpt>Windows PowerShell Integrated Scripting Environment overview<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671)</ept>."
+    },
+    {
+      "pos": [
+        955,
+        1033
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"versions\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>New and changed functionality in Windows PowerShell ISE"
+    },
+    {
+      "pos": [
+        1034,
+        1192
+      ],
+      "content": "The following table lists the new and changed features for this release of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> in <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>."
+    },
+    {
+      "content": "Feature\\/functionality",
+      "pos": [
+        1195,
+        1217
+      ]
+    },
+    {
+      "pos": [
+        1218,
+        1261
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 4.0"
+    },
+    {
+      "pos": [
+        1262,
+        1305
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0"
+    },
+    {
+      "pos": [
+        1306,
+        1349
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0"
+    },
+    {
+      "content": "Intellisense",
+      "pos": [
+        1528,
+        1540
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1564,
+        1565
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1566,
+        1567
+      ]
+    },
+    {
+      "content": "Snippets",
+      "pos": [
+        1574,
+        1582
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1602,
+        1603
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1604,
+        1605
+      ]
+    },
+    {
+      "content": "Add-on Tools",
+      "pos": [
+        1612,
+        1624
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1646,
+        1647
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1648,
+        1649
+      ]
+    },
+    {
+      "content": "Restart Manager and Auto-save",
+      "pos": [
+        1656,
+        1685
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1707,
+        1708
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1709,
+        1710
+      ]
+    },
+    {
+      "content": "Console pane",
+      "pos": [
+        1717,
+        1729
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1752,
+        1753
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1754,
+        1755
+      ]
+    },
+    {
+      "content": "Most-recently used list",
+      "pos": [
+        1762,
+        1785
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1800,
+        1801
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1802,
+        1803
+      ]
+    },
+    {
+      "content": "Command-line switches",
+      "pos": [
+        1810,
+        1831
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1854,
+        1855
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1856,
+        1857
+      ]
+    },
+    {
+      "content": "New editor features",
+      "pos": [
+        1864,
+        1883
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1912,
+        1913
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1914,
+        1915
+      ]
+    },
+    {
+      "content": "New Help viewer window",
+      "pos": [
+        1922,
+        1944
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1969,
+        1970
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        1971,
+        1972
+      ]
+    },
+    {
+      "content": "Show-Command cmdlet",
+      "pos": [
+        1979,
+        1998
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        2021,
+        2022
+      ]
+    },
+    {
+      "content": "X",
+      "pos": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "pos": [
+        2032,
+        2076
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_Intellisense\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Intellisense"
+    },
+    {
+      "content": "Added in ISE 3.0",
+      "pos": [
+        2079,
+        2095
+      ]
+    },
+    {
+      "content": "Intellisense is an automatic\\-completion assistance feature that is part of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>.",
+      "pos": [
+        2099,
+        2215
+      ]
+    },
+    {
+      "content": "Intellisense displays clickable menus of potentially matching cmdlets, parameters, parameter values, files, or folders as you type.",
+      "pos": [
+        2216,
+        2347
+      ]
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        2351,
+        2383
+      ]
+    },
+    {
+      "content": "With the addition of Intellisense, it is easier to discover cmdlets and syntax when you use <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> to create scripts.",
+      "pos": [
+        2387,
+        2537
+      ]
+    },
+    {
+      "content": "You can also use <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> to learn <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> while you create new scripts.",
+      "pos": [
+        2538,
+        2673
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        2677,
+        2700
+      ]
+    },
+    {
+      "pos": [
+        2704,
+        2888
+      ],
+      "content": "When you type cmdlets in the <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0 or later, a scrollable and clickable menu displays, allowing you to browse and select the appropriate commands."
+    },
+    {
+      "pos": [
+        2894,
+        2930
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_Snippets\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Snippets"
+    },
+    {
+      "content": "Added in ISE 3.0",
+      "pos": [
+        2933,
+        2949
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>Snippets<ept id=\"p1\">*</ept> are short sections of <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> code that you can insert into the scripts you create in <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>.",
+      "pos": [
+        2953,
+        3122
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> comes with a default set of snippets.",
+      "pos": [
+        3123,
+        3200
+      ]
+    },
+    {
+      "content": "You can add snippets by using the <bpt id=\"p1\">**</bpt>New\\-Snippet<ept id=\"p1\">**</ept> cmdlet while working in <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>.",
+      "pos": [
+        3201,
+        3316
+      ]
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        3320,
+        3352
+      ]
+    },
+    {
+      "content": "By using snippets, you can quickly assemble and create scripts to automate your environment.",
+      "pos": [
+        3356,
+        3448
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        3452,
+        3475
+      ]
+    },
+    {
+      "pos": [
+        3479,
+        3621
+      ],
+      "content": "To use snippets in <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> 3.0 or later, on the <bpt id=\"p1\">**</bpt>Edit<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Start Snippets<ept id=\"p2\">**</ept>, or press <bpt id=\"p3\">**</bpt>Ctrl\\-J<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        3627,
+        3670
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_AddOnTools\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Add\\-on tools"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        3673,
+        3696
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> now supports add\\-on tools, which are Windows Presentation Foundation (WPF) controls that are added by using the object model.",
+      "pos": [
+        3700,
+        3866
+      ]
+    },
+    {
+      "content": "Add\\-on tools can be displayed as a vertical or horizontal pane in the console.",
+      "pos": [
+        3867,
+        3946
+      ]
+    },
+    {
+      "content": "Multiple add\\-on tools in a pane are displayed as a tabbed control.",
+      "pos": [
+        3947,
+        4014
+      ]
+    },
+    {
+      "content": "You can also add or remove add\\-on tools that are produced by non\\-Microsoft parties.",
+      "pos": [
+        4015,
+        4100
+      ]
+    },
+    {
+      "content": "For more information about how to import or remove add\\-on tools, see <bpt id=\"p1\">[</bpt>Windows PowerShell ISE Operations<ept id=\"p1\">](http://technet.microsoft.com/library/cc732148.aspx)</ept>.",
+      "pos": [
+        4101,
+        4259
+      ]
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        4263,
+        4295
+      ]
+    },
+    {
+      "pos": [
+        4299,
+        4500
+      ],
+      "content": "Add\\-ons allow you to extend and customize <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> with tools that can enhance your scripting experience or add functionality to <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>."
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        4504,
+        4527
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0 and later come with the <bpt id=\"p1\">**</bpt>Commands<ept id=\"p1\">**</ept> add\\-on.",
+      "pos": [
+        4531,
+        4620
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Commands<ept id=\"p1\">**</ept> add\\-on allows you to browse cmdlets, and access help about the cmdlets side\\-by\\-side with the <bpt id=\"p2\">**</bpt>Script<ept id=\"p2\">**</ept> and <bpt id=\"p3\">**</bpt>Console<ept id=\"p3\">**</ept> panes.",
+      "pos": [
+        4621,
+        4767
+      ]
+    },
+    {
+      "pos": [
+        4769,
+        4879
+      ],
+      "content": "Additional add\\-ons can be found by using the <bpt id=\"p1\">**</bpt>Open Add\\-on Tools Website<ept id=\"p1\">**</ept> command on the <bpt id=\"p2\">**</bpt>Add\\-ons<ept id=\"p2\">**</ept> menu."
+    },
+    {
+      "pos": [
+        4885,
+        4945
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_RestartMgr\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Restart manager and auto\\-save"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        4948,
+        4971
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> now automatically saves your open scripts every two minutes, in a separate location.",
+      "pos": [
+        4975,
+        5099
+      ]
+    },
+    {
+      "content": "If <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> stops working, or if the operating system is restarted, after <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> restarts, it recovers scripts that were open in the last session, even if the scripts were not saved.",
+      "pos": [
+        5101,
+        5347
+      ]
+    },
+    {
+      "pos": [
+        5349,
+        5479
+      ],
+      "content": "To change the automatic saving interval, run the following command in the console pane: <bpt id=\"p1\">**</bpt>$psise.Options.AutoSaveMinuteInterval<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        5483,
+        5515
+      ]
+    },
+    {
+      "pos": [
+        5519,
+        5676
+      ],
+      "content": "You can now work within <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> knowing that your open scripts are automatically saved in the event of an unexpected restart."
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        5680,
+        5703
+      ]
+    },
+    {
+      "pos": [
+        5707,
+        5817
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0 does not save the scripts automatically in the event of a restart."
+    },
+    {
+      "pos": [
+        5823,
+        5870
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_MRU\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Most\\-recently used list"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        5873,
+        5896
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> now has a most\\-recently used list for files.",
+      "pos": [
+        5900,
+        5985
+      ]
+    },
+    {
+      "content": "When you open a file in <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>, the file is added to the most\\-recently used list on the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> menu.",
+      "pos": [
+        5986,
+        6122
+      ]
+    },
+    {
+      "pos": [
+        6124,
+        6270
+      ],
+      "content": "To change the default number of files in the most\\-recently used list, run the following command in the console pane: <bpt id=\"p1\">**</bpt>$psise.Options.MruCount<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        6274,
+        6306
+      ]
+    },
+    {
+      "content": "You can now use the most\\-recently used list to easily access your frequently\\-used files.",
+      "pos": [
+        6310,
+        6400
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        6404,
+        6427
+      ]
+    },
+    {
+      "pos": [
+        6431,
+        6516
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0 does not have a most\\-recently used list."
+    },
+    {
+      "pos": [
+        6522,
+        6565
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_ConsolePane\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Console pane"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        6568,
+        6591
+      ]
+    },
+    {
+      "content": "The separate command and output panes that were available in the first release of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> have been combined into a single console pane.",
+      "pos": [
+        6595,
+        6763
+      ]
+    },
+    {
+      "content": "The console pane is similar in function and appearance to a typical <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> console, but it includes the following enhancements (most are described in this topic).",
+      "pos": [
+        6764,
+        6959
+      ]
+    },
+    {
+      "content": "Syntax coloring for input text (not output text), including XML syntax",
+      "pos": [
+        6965,
+        7035
+      ]
+    },
+    {
+      "content": "Intellisense",
+      "pos": [
+        7041,
+        7053
+      ]
+    },
+    {
+      "content": "Brace matching",
+      "pos": [
+        7059,
+        7073
+      ]
+    },
+    {
+      "content": "Error indication",
+      "pos": [
+        7079,
+        7095
+      ]
+    },
+    {
+      "content": "Full Unicode support",
+      "pos": [
+        7101,
+        7121
+      ]
+    },
+    {
+      "pos": [
+        7127,
+        7157
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>F1<ept id=\"p1\">**</ept> context\\-sensitive help"
+    },
+    {
+      "pos": [
+        7163,
+        7208
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Ctrl\\+F1<ept id=\"p1\">**</ept> context\\-sensitive Show\\-Command"
+    },
+    {
+      "content": "Complex script and right\\-to\\-left support",
+      "pos": [
+        7214,
+        7256
+      ]
+    },
+    {
+      "content": "Font support",
+      "pos": [
+        7262,
+        7274
+      ]
+    },
+    {
+      "content": "Zoom",
+      "pos": [
+        7280,
+        7284
+      ]
+    },
+    {
+      "content": "Line\\-select and block\\-select modes",
+      "pos": [
+        7290,
+        7326
+      ]
+    },
+    {
+      "pos": [
+        7332,
+        7444
+      ],
+      "content": "Preservation of typed content at the command line when you press the <bpt id=\"p1\">**</bpt>Up<ept id=\"p1\">**</ept> arrow to view history in the console"
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        7448,
+        7480
+      ]
+    },
+    {
+      "content": "The addition of these console pane changes provides a scripting experience that is more consistent with the console interface.",
+      "pos": [
+        7484,
+        7610
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        7614,
+        7637
+      ]
+    },
+    {
+      "pos": [
+        7641,
+        7723
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0 has separate command and output panes."
+    },
+    {
+      "pos": [
+        7729,
+        7782
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_CommandLine\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Command\\-line switches"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        7785,
+        7808
+      ]
+    },
+    {
+      "pos": [
+        7812,
+        7977
+      ],
+      "content": "If you start <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> from the command line (by typing <bpt id=\"p1\">**</bpt>Powershell\\_ise.exe<ept id=\"p1\">**</ept>), you can add the following new command\\-line switches."
+    },
+    {
+      "pos": [
+        7983,
+        8073
+      ],
+      "content": "<bpt id=\"p1\">*</bpt>\\-NoProfile<ept id=\"p1\">*</ept>: Starts <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> without running <bpt id=\"p2\">**</bpt>$profile<ept id=\"p2\">**</ept>"
+    },
+    {
+      "pos": [
+        8079,
+        8111
+      ],
+      "content": "<bpt id=\"p1\">*</bpt>\\-Help<ept id=\"p1\">*</ept>: Displays a Help window"
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>\\-mta<ept id=\"p1\">*</ept>: Starts <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> in multithreaded apartment mode.",
+      "pos": [
+        8117,
+        8205
+      ]
+    },
+    {
+      "content": "The default operation mode for <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> is single\\-threaded apartment mode, or <bpt id=\"p1\">*</bpt>\\-sta<ept id=\"p1\">*</ept>.",
+      "pos": [
+        8206,
+        8324
+      ]
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        8328,
+        8360
+      ]
+    },
+    {
+      "pos": [
+        8364,
+        8505
+      ],
+      "content": "The addition of these command\\-line switches allows you to control the environment in which the <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> runs."
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        8509,
+        8532
+      ]
+    },
+    {
+      "pos": [
+        8536,
+        8628
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0 does not recognize these command\\-line switches."
+    },
+    {
+      "pos": [
+        8634,
+        8690
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_NewEditorFeatures\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>New editor features"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        8693,
+        8716
+      ]
+    },
+    {
+      "pos": [
+        8720,
+        8791
+      ],
+      "content": "Other <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> editing features include:"
+    },
+    {
+      "pos": [
+        8797,
+        8958
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>XML syntax coloring<ept id=\"p1\">**</ept><ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> now colors XML syntax in the same way as it colors <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> syntax."
+    },
+    {
+      "pos": [
+        8964,
+        9235
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Brace matching<ept id=\"p1\">**</ept> <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> includes brace matching and highlighting, and can be used in the following ways: (for example, using the <bpt id=\"p2\">**</bpt>Go to Match<ept id=\"p2\">**</ept> command or <bpt id=\"p3\">**</bpt>Ctrl \\+ ]<ept id=\"p3\">**</ept> locates the closing brace, if you have an opening brace selected)."
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Outline view<ept id=\"p1\">**</ept> The script pane supports outlining, which allows collapsing or expanding sections of code by clicking plus or minus signs in the left margin.",
+      "pos": [
+        9241,
+        9399
+      ]
+    },
+    {
+      "content": "You can use braces or the <bpt id=\"p1\">**</bpt>\\#region<ept id=\"p1\">**</ept> and <bpt id=\"p2\">**</bpt>\\#endregion<ept id=\"p2\">**</ept> tags to mark the beginning or end of a collapsible section.",
+      "pos": [
+        9400,
+        9518
+      ]
+    },
+    {
+      "content": "To expand or collapse all regions, press <bpt id=\"p1\">**</bpt>Ctrl \\+ M<ept id=\"p1\">**</ept>.",
+      "pos": [
+        9519,
+        9574
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Drag and drop text editing<ept id=\"p1\">**</ept><ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> now supports drag and drop text editing.",
+      "pos": [
+        9580,
+        9690
+      ]
+    },
+    {
+      "content": "You can select any block of text and drag that text to another location in the editor or the console to move the text.",
+      "pos": [
+        9691,
+        9809
+      ]
+    },
+    {
+      "content": "If you hold down the Ctrl key while you drag the selected text, when you release the mouse button the text is copied to the new location.",
+      "pos": [
+        9810,
+        9947
+      ]
+    },
+    {
+      "content": "In this version of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>, as well as the previous version of <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>, when you drag and drop files onto <ph id=\"ph3\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>, <ph id=\"ph4\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> opens the file.",
+      "pos": [
+        9948,
+        10214
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Parse error display<ept id=\"p1\">**</ept> Parse errors are indicated with red underlines.",
+      "pos": [
+        10220,
+        10291
+      ]
+    },
+    {
+      "content": "When you hover over an indicated error, tooltip text displays the problem that was found in the code.",
+      "pos": [
+        10292,
+        10393
+      ]
+    },
+    {
+      "pos": [
+        10399,
+        10639
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Zoom<ept id=\"p1\">**</ept> The zoom percentage of the console’s content can be set by using the zoom slider (in the lower right corner of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> window), or by entering the command <bpt id=\"p2\">**</bpt>$psise.options.Zoom<ept id=\"p2\">**</ept> in the console pane."
+    },
+    {
+      "pos": [
+        10645,
+        10816
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Rich text copy and paste<ept id=\"p1\">**</ept> Copying to the clipboard in <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> preserves the font, size, and color information of the original selection."
+    },
+    {
+      "pos": [
+        10822,
+        10995
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Block selection<ept id=\"p1\">**</ept> You can select a block of text by holding down the ALT key while selecting text in the script pane with your mouse, or by pressing <bpt id=\"p2\">**</bpt>Alt\\+Shift\\+Arrow<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        10999,
+        11031
+      ]
+    },
+    {
+      "content": "The additional editing features provide a more consistent and powerful editing environment.",
+      "pos": [
+        11035,
+        11126
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        11130,
+        11153
+      ]
+    },
+    {
+      "pos": [
+        11157,
+        11248
+      ],
+      "content": "These editing enhancements were not present in <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 2.0."
+    },
+    {
+      "pos": [
+        11254,
+        11309
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_NewHelpViewer\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>New Help viewer window"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        11312,
+        11335
+      ]
+    },
+    {
+      "content": "If you press <bpt id=\"p1\">**</bpt>F1<ept id=\"p1\">**</ept> when your cursor is in a cmdlet, or you have part of a cmdlet highlighted, the new Help viewer opens context\\-sensitive Help about the highlighted cmdlet.",
+      "pos": [
+        11339,
+        11513
+      ]
+    },
+    {
+      "content": "To display <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> About help, type  <bpt id=\"p1\">**</bpt>operators<ept id=\"p1\">**</ept> in the console pane, and then press <bpt id=\"p2\">**</bpt>F1<ept id=\"p2\">**</ept>.",
+      "pos": [
+        11514,
+        11640
+      ]
+    },
+    {
+      "content": "Before you use this feature, download the most current version of <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> Help topics from the Microsoft website.",
+      "pos": [
+        11642,
+        11787
+      ]
+    },
+    {
+      "content": "The simplest method for downloading the Help topics is to run the <bpt id=\"p1\">**</bpt>Update\\-Help<ept id=\"p1\">**</ept> cmdlet in the console pane when running <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> as administrator.",
+      "pos": [
+        11788,
+        11968
+      ]
+    },
+    {
+      "content": "You can alter where the <bpt id=\"p1\">**</bpt>F1<ept id=\"p1\">**</ept> key looks for Help.",
+      "pos": [
+        11970,
+        12020
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Tools<ept id=\"p1\">**</ept>\\/<bpt id=\"p2\">**</bpt>Options<ept id=\"p2\">**</ept> menu, on the <bpt id=\"p3\">**</bpt>General Settings<ept id=\"p3\">**</ept> tab, under <bpt id=\"p4\">**</bpt>Other Settings<ept id=\"p4\">**</ept>, you can set or clear the checkbox <bpt id=\"p5\">**</bpt>Use local help content instead of online content<ept id=\"p5\">**</ept>.",
+      "pos": [
+        12021,
+        12203
+      ]
+    },
+    {
+      "content": "If checked, then the client looks for the cmdlet Help in the downloaded Help found in the modules folder.",
+      "pos": [
+        12204,
+        12309
+      ]
+    },
+    {
+      "content": "If the checkbox is cleared, then the client looks on the TechNet library for the cmdlet help.",
+      "pos": [
+        12311,
+        12404
+      ]
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        12408,
+        12440
+      ]
+    },
+    {
+      "content": "Context\\-sensitive Help without leaving your current cmdlet or script provides a seamless learning experience.",
+      "pos": [
+        12444,
+        12554
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        12558,
+        12581
+      ]
+    },
+    {
+      "content": "Pressing F1 in previous versions of <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> opened the help file on the local computer.",
+      "pos": [
+        12585,
+        12704
+      ]
+    },
+    {
+      "content": "In <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0 and later, a window opens that contains the help for the cmdlet that is searchable and configurable.",
+      "pos": [
+        12705,
+        12852
+      ]
+    },
+    {
+      "content": "This Help experience is new for <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0, and Updatable Help is new for <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> 3.0.",
+      "pos": [
+        12853,
+        13004
+      ]
+    },
+    {
+      "pos": [
+        13010,
+        13061
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_ShowCommand\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>Show\\-Command cmdlet"
+    },
+    {
+      "content": "Added in PowerShell 3.0",
+      "pos": [
+        13064,
+        13087
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Show\\-Command<ept id=\"p1\">**</ept> cmdlet enables you to compose or run a cmdlet or function by filling in a graphical form.",
+      "pos": [
+        13091,
+        13202
+      ]
+    },
+    {
+      "content": "The form lets users work with <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> in a graphical environment.",
+      "pos": [
+        13203,
+        13300
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Show\\-Command<ept id=\"p1\">**</ept> also enables advanced scripters to create a quick <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>\\-based GUI.",
+      "pos": [
+        13301,
+        13420
+      ]
+    },
+    {
+      "content": "What value does this change add?",
+      "pos": [
+        13424,
+        13456
+      ]
+    },
+    {
+      "content": "By using <bpt id=\"p1\">**</bpt>Show\\-Command<ept id=\"p1\">**</ept> in your <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> scripts, you can provide your users with the graphical environment with which they are familiar.",
+      "pos": [
+        13460,
+        13631
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Show\\-Command<ept id=\"p1\">**</ept> can also help introductory users learn <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>.",
+      "pos": [
+        13632,
+        13729
+      ]
+    },
+    {
+      "content": "What works differently?",
+      "pos": [
+        13733,
+        13756
+      ]
+    },
+    {
+      "pos": [
+        13760,
+        13825
+      ],
+      "content": "Show\\-Command is new <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> 3.0."
+    },
+    {
+      "pos": [
+        13830,
+        13863
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"BKMK_LINKS\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>See also"
+    },
+    {
+      "pos": [
+        13864,
+        14005
+      ],
+      "content": "For more information about using <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> in <ph id=\"ph2\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph>, see the following links."
+    },
+    {
+      "content": "Using the Windows PowerShell Integrated Scripting Environment",
+      "pos": [
+        14012,
+        14073
+      ]
+    },
+    {
+      "content": "ISE on the TechNet Wiki",
+      "pos": [
+        14163,
+        14186
+      ]
+    },
+    {
+      "content": "Script Center",
+      "pos": [
+        14268,
+        14281
+      ]
+    }
+  ],
+  "content": "---\ntitle: What&#39;s New in the Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 38648d47-7c27-4b37-a40e-ad29948519c2\n---\n# What&#39;s New in the Windows PowerShell ISE\nThis topic explains the new and updated features that have been introduced in versions of [!INCLUDE[ise_1](../Token/ise_1_md.md)].\n\n## <a name=\"overview\"></a>Feature description\nThe [!INCLUDE[ise_2](../Token/ise_2_md.md)] is a host application that enables you to write, run, and test scripts and modules in a graphical and intuitive environment. Key features such as syntax\\-coloring, tab completion, visual debugging, Unicode compliance, and context\\-sensitive Help provide a rich scripting experience.\n\nFor an overview of [!INCLUDE[ise_2](../Token/ise_2_md.md)], see [Windows PowerShell Integrated Scripting Environment overview](https://technet.microsoft.com/en-us/library/3c1892c2-bf84-4cb6-af26-1f453be9e671).\n\n## <a name=\"versions\"></a>New and changed functionality in Windows PowerShell ISE\nThe following table lists the new and changed features for this release of [!INCLUDE[ise_2](../Token/ise_2_md.md)] in [!INCLUDE[wps_2](../Token/wps_2_md.md)].\n\n|Feature\\/functionality|[!INCLUDE[ise_2](../Token/ise_2_md.md)] 4.0|[!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0|[!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0|\n|--------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|\n|**[Intellisense](#BKMK_Intellisense)**|X|X||\n|**[Snippets](#bkmk_snippets)**|X|X||\n|**[Add-on Tools](#BKMK_AddOnTools)**|X|X||\n|**[Restart Manager and Auto-save](#BKMK_RestartMgr)**|X|X||\n|**[Console pane](#BKMK_ConsolePane)**|X|X||\n|**[Most-recently used list](#BKMK_MRU)**|X|X||\n|**[Command-line switches](#BKMK_CommandLine)**|X|X||\n|**[New editor features](#BKMK_NewEditorFeatures)**|X|X||\n|**[New Help viewer window](#BKMK_NewHelpViewer)**|X|X||\n|**[Show-Command cmdlet](#BKMK_ShowCommand)**|X|X||\n\n### <a name=\"BKMK_Intellisense\"></a>Intellisense\n**Added in ISE 3.0**\n\nIntellisense is an automatic\\-completion assistance feature that is part of [!INCLUDE[ise_2](../Token/ise_2_md.md)]. Intellisense displays clickable menus of potentially matching cmdlets, parameters, parameter values, files, or folders as you type.\n\n**What value does this change add?**\n\nWith the addition of Intellisense, it is easier to discover cmdlets and syntax when you use [!INCLUDE[ise_2](../Token/ise_2_md.md)] to create scripts. You can also use [!INCLUDE[ise_2](../Token/ise_2_md.md)] to learn [!INCLUDE[wps_2](../Token/wps_2_md.md)] while you create new scripts.\n\n**What works differently?**\n\nWhen you type cmdlets in the [!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0 or later, a scrollable and clickable menu displays, allowing you to browse and select the appropriate commands.\n\n### <a name=\"BKMK_Snippets\"></a>Snippets\n**Added in ISE 3.0**\n\n*Snippets* are short sections of [!INCLUDE[wps_2](../Token/wps_2_md.md)] code that you can insert into the scripts you create in [!INCLUDE[ise_2](../Token/ise_2_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] comes with a default set of snippets. You can add snippets by using the **New\\-Snippet** cmdlet while working in [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n**What value does this change add?**\n\nBy using snippets, you can quickly assemble and create scripts to automate your environment.\n\n**What works differently?**\n\nTo use snippets in [!INCLUDE[wps_2](../Token/wps_2_md.md)] 3.0 or later, on the **Edit** menu, click **Start Snippets**, or press **Ctrl\\-J**.\n\n### <a name=\"BKMK_AddOnTools\"></a>Add\\-on tools\n**Added in PowerShell 3.0**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] now supports add\\-on tools, which are Windows Presentation Foundation (WPF) controls that are added by using the object model. Add\\-on tools can be displayed as a vertical or horizontal pane in the console. Multiple add\\-on tools in a pane are displayed as a tabbed control. You can also add or remove add\\-on tools that are produced by non\\-Microsoft parties. For more information about how to import or remove add\\-on tools, see [Windows PowerShell ISE Operations](http://technet.microsoft.com/library/cc732148.aspx).\n\n**What value does this change add?**\n\nAdd\\-ons allow you to extend and customize [!INCLUDE[ise_2](../Token/ise_2_md.md)] with tools that can enhance your scripting experience or add functionality to [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n**What works differently?**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0 and later come with the **Commands** add\\-on. The **Commands** add\\-on allows you to browse cmdlets, and access help about the cmdlets side\\-by\\-side with the **Script** and **Console** panes.\n\nAdditional add\\-ons can be found by using the **Open Add\\-on Tools Website** command on the **Add\\-ons** menu.\n\n### <a name=\"BKMK_RestartMgr\"></a>Restart manager and auto\\-save\n**Added in PowerShell 3.0**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] now automatically saves your open scripts every two minutes, in a separate location.  If [!INCLUDE[ise_2](../Token/ise_2_md.md)] stops working, or if the operating system is restarted, after [!INCLUDE[ise_2](../Token/ise_2_md.md)] restarts, it recovers scripts that were open in the last session, even if the scripts were not saved.\n\nTo change the automatic saving interval, run the following command in the console pane: **$psise.Options.AutoSaveMinuteInterval**.\n\n**What value does this change add?**\n\nYou can now work within [!INCLUDE[ise_2](../Token/ise_2_md.md)] knowing that your open scripts are automatically saved in the event of an unexpected restart.\n\n**What works differently?**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0 does not save the scripts automatically in the event of a restart.\n\n### <a name=\"BKMK_MRU\"></a>Most\\-recently used list\n**Added in PowerShell 3.0**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] now has a most\\-recently used list for files. When you open a file in [!INCLUDE[ise_2](../Token/ise_2_md.md)], the file is added to the most\\-recently used list on the **File** menu.\n\nTo change the default number of files in the most\\-recently used list, run the following command in the console pane: **$psise.Options.MruCount**.\n\n**What value does this change add?**\n\nYou can now use the most\\-recently used list to easily access your frequently\\-used files.\n\n**What works differently?**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0 does not have a most\\-recently used list.\n\n### <a name=\"BKMK_ConsolePane\"></a>Console pane\n**Added in PowerShell 3.0**\n\nThe separate command and output panes that were available in the first release of [!INCLUDE[ise_2](../Token/ise_2_md.md)] have been combined into a single console pane. The console pane is similar in function and appearance to a typical [!INCLUDE[wps_2](../Token/wps_2_md.md)] console, but it includes the following enhancements (most are described in this topic).\n\n-   Syntax coloring for input text (not output text), including XML syntax\n\n-   Intellisense\n\n-   Brace matching\n\n-   Error indication\n\n-   Full Unicode support\n\n-   **F1** context\\-sensitive help\n\n-   **Ctrl\\+F1** context\\-sensitive Show\\-Command\n\n-   Complex script and right\\-to\\-left support\n\n-   Font support\n\n-   Zoom\n\n-   Line\\-select and block\\-select modes\n\n-   Preservation of typed content at the command line when you press the **Up** arrow to view history in the console\n\n**What value does this change add?**\n\nThe addition of these console pane changes provides a scripting experience that is more consistent with the console interface.\n\n**What works differently?**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0 has separate command and output panes.\n\n### <a name=\"BKMK_CommandLine\"></a>Command\\-line switches\n**Added in PowerShell 3.0**\n\nIf you start [!INCLUDE[ise_2](../Token/ise_2_md.md)] from the command line (by typing **Powershell\\_ise.exe**), you can add the following new command\\-line switches.\n\n-   *\\-NoProfile*: Starts [!INCLUDE[ise_2](../Token/ise_2_md.md)] without running **$profile**\n\n-   *\\-Help*: Displays a Help window\n\n-   *\\-mta*: Starts [!INCLUDE[ise_2](../Token/ise_2_md.md)] in multithreaded apartment mode. The default operation mode for [!INCLUDE[ise_2](../Token/ise_2_md.md)] is single\\-threaded apartment mode, or *\\-sta*.\n\n**What value does this change add?**\n\nThe addition of these command\\-line switches allows you to control the environment in which the [!INCLUDE[ise_2](../Token/ise_2_md.md)] runs.\n\n**What works differently?**\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0 does not recognize these command\\-line switches.\n\n### <a name=\"BKMK_NewEditorFeatures\"></a>New editor features\n**Added in PowerShell 3.0**\n\nOther [!INCLUDE[ise_2](../Token/ise_2_md.md)] editing features include:\n\n-   **XML syntax coloring**[!INCLUDE[ise_2](../Token/ise_2_md.md)] now colors XML syntax in the same way as it colors [!INCLUDE[wps_2](../Token/wps_2_md.md)] syntax.\n\n-   **Brace matching** [!INCLUDE[ise_2](../Token/ise_2_md.md)] includes brace matching and highlighting, and can be used in the following ways: (for example, using the **Go to Match** command or **Ctrl \\+ ]** locates the closing brace, if you have an opening brace selected).\n\n-   **Outline view** The script pane supports outlining, which allows collapsing or expanding sections of code by clicking plus or minus signs in the left margin. You can use braces or the **\\#region** and **\\#endregion** tags to mark the beginning or end of a collapsible section. To expand or collapse all regions, press **Ctrl \\+ M**.\n\n-   **Drag and drop text editing**[!INCLUDE[ise_2](../Token/ise_2_md.md)] now supports drag and drop text editing. You can select any block of text and drag that text to another location in the editor or the console to move the text. If you hold down the Ctrl key while you drag the selected text, when you release the mouse button the text is copied to the new location. In this version of [!INCLUDE[ise_2](../Token/ise_2_md.md)], as well as the previous version of [!INCLUDE[ise_2](../Token/ise_2_md.md)], when you drag and drop files onto [!INCLUDE[ise_2](../Token/ise_2_md.md)], [!INCLUDE[ise_2](../Token/ise_2_md.md)] opens the file.\n\n-   **Parse error display** Parse errors are indicated with red underlines. When you hover over an indicated error, tooltip text displays the problem that was found in the code.\n\n-   **Zoom** The zoom percentage of the console’s content can be set by using the zoom slider (in the lower right corner of [!INCLUDE[ise_2](../Token/ise_2_md.md)] window), or by entering the command **$psise.options.Zoom** in the console pane.\n\n-   **Rich text copy and paste** Copying to the clipboard in [!INCLUDE[ise_2](../Token/ise_2_md.md)] preserves the font, size, and color information of the original selection.\n\n-   **Block selection** You can select a block of text by holding down the ALT key while selecting text in the script pane with your mouse, or by pressing **Alt\\+Shift\\+Arrow**.\n\n**What value does this change add?**\n\nThe additional editing features provide a more consistent and powerful editing environment.\n\n**What works differently?**\n\nThese editing enhancements were not present in [!INCLUDE[ise_2](../Token/ise_2_md.md)] 2.0.\n\n### <a name=\"BKMK_NewHelpViewer\"></a>New Help viewer window\n**Added in PowerShell 3.0**\n\nIf you press **F1** when your cursor is in a cmdlet, or you have part of a cmdlet highlighted, the new Help viewer opens context\\-sensitive Help about the highlighted cmdlet. To display [!INCLUDE[wps_2](../Token/wps_2_md.md)] About help, type  **operators** in the console pane, and then press **F1**.\n\nBefore you use this feature, download the most current version of [!INCLUDE[wps_2](../Token/wps_2_md.md)] Help topics from the Microsoft website. The simplest method for downloading the Help topics is to run the **Update\\-Help** cmdlet in the console pane when running [!INCLUDE[ise_2](../Token/ise_2_md.md)] as administrator.\n\nYou can alter where the **F1** key looks for Help. In the **Tools**\\/**Options** menu, on the **General Settings** tab, under **Other Settings**, you can set or clear the checkbox **Use local help content instead of online content**. If checked, then the client looks for the cmdlet Help in the downloaded Help found in the modules folder.  If the checkbox is cleared, then the client looks on the TechNet library for the cmdlet help.\n\n**What value does this change add?**\n\nContext\\-sensitive Help without leaving your current cmdlet or script provides a seamless learning experience.\n\n**What works differently?**\n\nPressing F1 in previous versions of [!INCLUDE[ise_2](../Token/ise_2_md.md)] opened the help file on the local computer. In [!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0 and later, a window opens that contains the help for the cmdlet that is searchable and configurable. This Help experience is new for [!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0, and Updatable Help is new for [!INCLUDE[wps_2](../Token/wps_2_md.md)] 3.0.\n\n### <a name=\"BKMK_ShowCommand\"></a>Show\\-Command cmdlet\n**Added in PowerShell 3.0**\n\nThe **Show\\-Command** cmdlet enables you to compose or run a cmdlet or function by filling in a graphical form. The form lets users work with [!INCLUDE[wps_2](../Token/wps_2_md.md)] in a graphical environment. **Show\\-Command** also enables advanced scripters to create a quick [!INCLUDE[wps_2](../Token/wps_2_md.md)]\\-based GUI.\n\n**What value does this change add?**\n\nBy using **Show\\-Command** in your [!INCLUDE[wps_2](../Token/wps_2_md.md)] scripts, you can provide your users with the graphical environment with which they are familiar. **Show\\-Command** can also help introductory users learn [!INCLUDE[wps_2](../Token/wps_2_md.md)].\n\n**What works differently?**\n\nShow\\-Command is new [!INCLUDE[ise_2](../Token/ise_2_md.md)] 3.0.\n\n## <a name=\"BKMK_LINKS\"></a>See also\nFor more information about using [!INCLUDE[ise_2](../Token/ise_2_md.md)] in [!INCLUDE[wps_2](../Token/wps_2_md.md)], see the following links.\n\n-   [Using the Windows PowerShell Integrated Scripting Environment](https://technet.microsoft.com/en-us/library/777ea82b-dd73-4269-b61a-69a17e6ff16f)\n\n-   [ISE on the TechNet Wiki](http://social.technet.microsoft.com/wiki/search/searchresults.aspx?q=ISE)\n\n-   [Script Center](http://technet.microsoft.com/scriptcenter/default)\n\n"
+}

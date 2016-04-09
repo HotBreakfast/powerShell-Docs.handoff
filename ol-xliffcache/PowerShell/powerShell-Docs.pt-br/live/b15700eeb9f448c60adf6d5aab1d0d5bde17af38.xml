@@ -1,0 +1,285 @@
+{
+  "nodes": [
+    {
+      "content": "Starting the Windows PowerShell 2.0 Engine",
+      "pos": [
+        11,
+        53
+      ]
+    },
+    {
+      "content": "Starting the Windows PowerShell 2.0 Engine",
+      "pos": [
+        188,
+        230
+      ]
+    },
+    {
+      "pos": [
+        231,
+        850
+      ],
+      "content": "This section explains how to start the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine on <ph id=\"ph2\">[!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)]</ph>, <ph id=\"ph3\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph>, <ph id=\"ph4\">[!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)]</ph>, and <ph id=\"ph5\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, which include the <ph id=\"ph6\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine, and on other systems on which <ph id=\"ph7\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, <ph id=\"ph8\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, and <ph id=\"ph9\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> are installed."
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> are designed to be backwards compatible with <ph id=\"ph3\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>.",
+      "pos": [
+        852,
+        1051
+      ]
+    },
+    {
+      "content": "Cmdlets, providers, snap\\-ins, modules, and scripts written for <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> run unchanged in <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> and <ph id=\"ph3\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>.",
+      "pos": [
+        1052,
+        1287
+      ]
+    },
+    {
+      "content": "However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> host programs that were written for <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in <ph id=\"ph3\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> or <ph id=\"ph4\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>, which are compiled with CLR 4.0.",
+      "pos": [
+        1288,
+        1726
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine is intended to be used only when an existing script or host program cannot run because it is incompatible with <ph id=\"ph2\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph>, <ph id=\"ph3\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph>, or Microsoft .NET Framework 4.",
+      "pos": [
+        1727,
+        2031
+      ]
+    },
+    {
+      "content": "Such cases are expected to be rare.",
+      "pos": [
+        2032,
+        2067
+      ]
+    },
+    {
+      "content": "Many programs that require the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine start it automatically.",
+      "pos": [
+        2069,
+        2180
+      ]
+    },
+    {
+      "content": "These instructions are included for the rare situations in which you need to start the engine manually.",
+      "pos": [
+        2181,
+        2284
+      ]
+    },
+    {
+      "content": "Installing and Enabling Required Programs",
+      "pos": [
+        2289,
+        2330
+      ]
+    },
+    {
+      "content": "Before starting the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine, enable the <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine and Microsoft .NET Framework 3.5 with Service Pack 1.",
+      "pos": [
+        2331,
+        2530
+      ]
+    },
+    {
+      "content": "For instructions, see <bpt id=\"p1\">[</bpt>Installing Windows PowerShell<ept id=\"p1\">](../Topic/Installing-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        2531,
+        2628
+      ]
+    },
+    {
+      "content": "Systems on which <bpt id=\"p1\">[</bpt>Windows Management Framework 4.0<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=293881)</ept> or <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph> are installed have all of the required components.",
+      "pos": [
+        2630,
+        2832
+      ]
+    },
+    {
+      "content": "No further configuration is necessary.",
+      "pos": [
+        2833,
+        2871
+      ]
+    },
+    {
+      "content": "For information about installing <bpt id=\"p1\">[</bpt>Windows Management Framework 4.0<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=293881)</ept> or <ph id=\"ph1\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>, see <bpt id=\"p2\">[</bpt>Installing Windows PowerShell<ept id=\"p2\">](../Topic/Installing-Windows-PowerShell.md)</ept>.",
+      "pos": [
+        2872,
+        3120
+      ]
+    },
+    {
+      "pos": [
+        3125,
+        3198
+      ],
+      "content": "How to start the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine"
+    },
+    {
+      "content": "When you start <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> the newest version starts by default.",
+      "pos": [
+        3199,
+        3297
+      ]
+    },
+    {
+      "content": "To start <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> with the <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine, use the Version parameter of PowerShell.exe.",
+      "pos": [
+        3298,
+        3464
+      ]
+    },
+    {
+      "content": "You can run the command at any command prompt, including Windows PowerShell and Cmd.exe.",
+      "pos": [
+        3465,
+        3553
+      ]
+    },
+    {
+      "pos": [
+        3593,
+        3688
+      ],
+      "content": "How to start a remote session with the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine"
+    },
+    {
+      "content": "To run the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine in a remote session, create a session configuration (also known as an \"endpoint\") on the remote computer that loads the <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine.",
+      "pos": [
+        3689,
+        3934
+      ]
+    },
+    {
+      "content": "The session configuration is saved on the remote computer and can be used by any authorized user to create  sessions that use the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine.",
+      "pos": [
+        3935,
+        4122
+      ]
+    },
+    {
+      "content": "This is an advanced task that is typically performed by a system administrator.",
+      "pos": [
+        4124,
+        4203
+      ]
+    },
+    {
+      "content": "The following procedure uses the <bpt id=\"p1\">**</bpt>PSVersion<ept id=\"p1\">**</ept> parameter of the <bpt id=\"p2\">[</bpt>Register-PSSessionConfiguration<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea)</ept> cmdlet to create a session configuration that uses the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine.",
+      "pos": [
+        4205,
+        4497
+      ]
+    },
+    {
+      "content": "You can also use the <bpt id=\"p1\">**</bpt>PowerShellVersion<ept id=\"p1\">**</ept> parameter of the <bpt id=\"p2\">[</bpt>New-PSSessionConfigurationFile<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/5f3e3633-6e90-479c-aea9-ba45a1954866)</ept> cmdlet to create a session configuration file for a session that loads the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine and you can use the <bpt id=\"p3\">**</bpt>PSVersion<ept id=\"p3\">**</ept> parameter of the <bpt id=\"p4\">[</bpt>Set-PSSessionConfiguration<ept id=\"p4\">](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea)</ept> parameter to change a session configuration to use the <ph id=\"ph2\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine.",
+      "pos": [
+        4498,
+        5079
+      ]
+    },
+    {
+      "pos": [
+        5081,
+        5457
+      ],
+      "content": "For more information about session configuration files, see <bpt id=\"p1\">[</bpt>about_Session_Configuration_Files<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/c7217447-1ebf-477b-a8ef-4dbe9a1473b8)</ept>.For information about session configurations, including setup and security, see <bpt id=\"p2\">[</bpt>about_Session_Configurations [v4]<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/a2fbe12a-350c-4d04-be50-24102824e3ab)</ept>."
+    },
+    {
+      "pos": [
+        5464,
+        5539
+      ],
+      "content": "To start a remote <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> session"
+    },
+    {
+      "content": "To create a session configuration that requires the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine, use the <bpt id=\"p1\">**</bpt>PSVersion<ept id=\"p1\">**</ept> parameter of the <bpt id=\"p2\">[</bpt>Register-PSSessionConfiguration<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea)</ept> cmdlet with a value of \"2.0\".",
+      "pos": [
+        5545,
+        5839
+      ]
+    },
+    {
+      "content": "Run this command on the computer at the \"server side\" or receiving end of the connection.",
+      "pos": [
+        5840,
+        5929
+      ]
+    },
+    {
+      "content": "The following sample command creates the PS2 session configuration on the Server01 computer.",
+      "pos": [
+        5935,
+        6027
+      ]
+    },
+    {
+      "content": "To run this command, start <ph id=\"ph1\">[!INCLUDE[psversion4](../Token/psversion4_md.md)]</ph> or <ph id=\"ph2\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> with the <bpt id=\"p1\">**</bpt>Run as administrator<ept id=\"p1\">**</ept> option.",
+      "pos": [
+        6028,
+        6199
+      ]
+    },
+    {
+      "pos": [
+        6283,
+        6567
+      ],
+      "content": "To create a session on the Server01 computer that uses the PS2 session configuration, use the <bpt id=\"p1\">**</bpt>ConfigurationName<ept id=\"p1\">**</ept> parameter of cmdlets that create a remote session, such as the <bpt id=\"p2\">[</bpt>New-PSSession<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/76f6628c-054c-4eda-ba7a-a6f28daaa26f)</ept> cmdlet."
+    },
+    {
+      "pos": [
+        6573,
+        6734
+      ],
+      "content": "When a session that uses the session configuration starts, the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine is automatically loaded into the session."
+    },
+    {
+      "content": "The following command starts a session on the Server01 computer that uses the PS2 session configuration.",
+      "pos": [
+        6740,
+        6844
+      ]
+    },
+    {
+      "content": "The command saves the session in the $s variable.",
+      "pos": [
+        6845,
+        6894
+      ]
+    },
+    {
+      "pos": [
+        6985,
+        7080
+      ],
+      "content": "How to start a background job with the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine"
+    },
+    {
+      "pos": [
+        7081,
+        7314
+      ],
+      "content": "To start a background job with the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine, use the <bpt id=\"p1\">**</bpt>PSVersion<ept id=\"p1\">**</ept> parameter of the <bpt id=\"p2\">[</bpt>Start-Job<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/2bc04935-0deb-4ec0-b856-d7290cca6442)</ept> cmdlet."
+    },
+    {
+      "pos": [
+        7316,
+        7427
+      ],
+      "content": "The following command starts a background job with the <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph> Engine"
+    },
+    {
+      "pos": [
+        7477,
+        7625
+      ],
+      "content": "For more information about background jobs, see <bpt id=\"p1\">[</bpt>about_Jobs [v4]<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/7362512a-8a4e-4575-b2ea-a740e5c4f002)</ept>."
+    }
+  ],
+  "content": "---\ntitle: Starting the Windows PowerShell 2.0 Engine\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: edafc2fa-7576-49c2-bbba-9336f4bcfc28\n---\n# Starting the Windows PowerShell 2.0 Engine\nThis section explains how to start the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine on [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)], [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)], [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)], and [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], which include the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine, and on other systems on which [!INCLUDE[psversion2](../Token/psversion2_md.md)], [!INCLUDE[psversion3](../Token/psversion3_md.md)], and [!INCLUDE[psversion4](../Token/psversion4_md.md)] are installed.\n\n[!INCLUDE[psversion4](../Token/psversion4_md.md)] and [!INCLUDE[psversion3](../Token/psversion3_md.md)] are designed to be backwards compatible with [!INCLUDE[psversion2](../Token/psversion2_md.md)]. Cmdlets, providers, snap\\-ins, modules, and scripts written for [!INCLUDE[psversion2](../Token/psversion2_md.md)] run unchanged in [!INCLUDE[psversion4](../Token/psversion4_md.md)] and [!INCLUDE[psversion3](../Token/psversion3_md.md)]. However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, [!INCLUDE[wps_2](../Token/wps_2_md.md)] host programs that were written for [!INCLUDE[psversion2](../Token/psversion2_md.md)] and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in [!INCLUDE[psversion3](../Token/psversion3_md.md)] or [!INCLUDE[psversion4](../Token/psversion4_md.md)], which are compiled with CLR 4.0. The [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine is intended to be used only when an existing script or host program cannot run because it is incompatible with [!INCLUDE[psversion4](../Token/psversion4_md.md)], [!INCLUDE[psversion3](../Token/psversion3_md.md)], or Microsoft .NET Framework 4. Such cases are expected to be rare.\n\nMany programs that require the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine start it automatically. These instructions are included for the rare situations in which you need to start the engine manually.\n\n## Installing and Enabling Required Programs\nBefore starting the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine, enable the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine and Microsoft .NET Framework 3.5 with Service Pack 1. For instructions, see [Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md).\n\nSystems on which [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881) or [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)] are installed have all of the required components. No further configuration is necessary. For information about installing [Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881) or [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)], see [Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md).\n\n## How to start the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine\nWhen you start [!INCLUDE[mshshort](../Token/mshshort_md.md)] the newest version starts by default. To start [!INCLUDE[mshshort](../Token/mshshort_md.md)] with the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine, use the Version parameter of PowerShell.exe. You can run the command at any command prompt, including Windows PowerShell and Cmd.exe.\n\n```\nPowerShell.exe -Version 2\n```\n\n## How to start a remote session with the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine\nTo run the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine in a remote session, create a session configuration (also known as an \"endpoint\") on the remote computer that loads the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine. The session configuration is saved on the remote computer and can be used by any authorized user to create  sessions that use the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine.\n\nThis is an advanced task that is typically performed by a system administrator.\n\nThe following procedure uses the **PSVersion** parameter of the [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) cmdlet to create a session configuration that uses the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine. You can also use the **PowerShellVersion** parameter of the [New-PSSessionConfigurationFile](https://technet.microsoft.com/en-us/library/5f3e3633-6e90-479c-aea9-ba45a1954866) cmdlet to create a session configuration file for a session that loads the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine and you can use the **PSVersion** parameter of the [Set-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/b21fbad3-1759-4260-b206-dcb8431cd6ea) parameter to change a session configuration to use the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine.\n\nFor more information about session configuration files, see [about_Session_Configuration_Files](https://technet.microsoft.com/en-us/library/c7217447-1ebf-477b-a8ef-4dbe9a1473b8).For information about session configurations, including setup and security, see [about_Session_Configurations [v4]](https://technet.microsoft.com/en-us/library/a2fbe12a-350c-4d04-be50-24102824e3ab).\n\n#### To start a remote [!INCLUDE[psversion2](../Token/psversion2_md.md)] session\n\n1.  To create a session configuration that requires the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine, use the **PSVersion** parameter of the [Register-PSSessionConfiguration](https://technet.microsoft.com/en-us/library/e9152ae2-bd6d-4056-9bc7-dc1893aa29ea) cmdlet with a value of \"2.0\". Run this command on the computer at the \"server side\" or receiving end of the connection.\n\n    The following sample command creates the PS2 session configuration on the Server01 computer. To run this command, start [!INCLUDE[psversion4](../Token/psversion4_md.md)] or [!INCLUDE[psversion3](../Token/psversion3_md.md)] with the **Run as administrator** option.\n\n    ```\n    Register-PSSessionConfiguration -Name PS2 -PSVersion 2.0\n    ```\n\n2.  To create a session on the Server01 computer that uses the PS2 session configuration, use the **ConfigurationName** parameter of cmdlets that create a remote session, such as the [New-PSSession](https://technet.microsoft.com/en-us/library/76f6628c-054c-4eda-ba7a-a6f28daaa26f) cmdlet.\n\n    When a session that uses the session configuration starts, the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine is automatically loaded into the session.\n\n    The following command starts a session on the Server01 computer that uses the PS2 session configuration. The command saves the session in the $s variable.\n\n    ```\n    $s = New-PSSession -ComputerName Server01 -ConfigurationName PS2\n    ```\n\n## How to start a background job with the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine\nTo start a background job with the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine, use the **PSVersion** parameter of the [Start-Job](https://technet.microsoft.com/en-us/library/2bc04935-0deb-4ec0-b856-d7290cca6442) cmdlet.\n\nThe following command starts a background job with the [!INCLUDE[psversion2](../Token/psversion2_md.md)] Engine\n\n```\nStart-Job {Get-Process} -PSVersion 2.0\n```\n\nFor more information about background jobs, see [about_Jobs [v4]](https://technet.microsoft.com/en-us/library/7362512a-8a4e-4575-b2ea-a740e5c4f002).\n\n"
+}
