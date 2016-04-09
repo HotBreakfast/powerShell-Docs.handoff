@@ -1,0 +1,699 @@
+{
+  "nodes": [
+    {
+      "content": "How to Write and Run Scripts in the Windows PowerShell ISE",
+      "pos": [
+        11,
+        69
+      ]
+    },
+    {
+      "content": "How to Write and Run Scripts in the Windows PowerShell ISE",
+      "pos": [
+        204,
+        262
+      ]
+    },
+    {
+      "content": "This topic describes how to create, edit, run, and save scripts in the Script Pane.",
+      "pos": [
+        263,
+        346
+      ]
+    },
+    {
+      "content": "How to create and run scripts",
+      "pos": [
+        353,
+        382
+      ]
+    },
+    {
+      "content": "How to write and edit text in the Script Pane",
+      "pos": [
+        399,
+        444
+      ]
+    },
+    {
+      "content": "How to save a script",
+      "pos": [
+        461,
+        481
+      ]
+    },
+    {
+      "pos": [
+        496,
+        546
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"bkmk_1\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>How to create and run scripts"
+    },
+    {
+      "content": "You can open and edit <ph id=\"ph1\">[!INCLUDE[wps_1](../Token/wps_1_md.md)]</ph> files in the Script Pane.",
+      "pos": [
+        547,
+        634
+      ]
+    },
+    {
+      "content": "Specific file types of interest in <ph id=\"ph1\">[!INCLUDE[wps_1](../Token/wps_1_md.md)]</ph> are script files (.ps1), script data files (.psd1), and script module files (.psm1).",
+      "pos": [
+        635,
+        794
+      ]
+    },
+    {
+      "content": "These file types are syntax colored in the Script Pane editor.",
+      "pos": [
+        795,
+        857
+      ]
+    },
+    {
+      "content": "Other common file types you may open in the Script Pane are configuration files (.ps1xml), XML files, and text files.",
+      "pos": [
+        858,
+        975
+      ]
+    },
+    {
+      "pos": [
+        979,
+        1563
+      ],
+      "content": "[!NOTE]\nThe [!INCLUDE[wps_2](../Token/wps_2_md.md)] execution policy determines whether you can run scripts and load Windows PowerShell profiles and configuration files. The default execution policy, Restricted, prevents all scripts from running, and prevents loading profiles. To change the execution policy to allow profiles to load and be used, see [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) and [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).",
+      "leadings": [
+        "",
+        "> "
+      ],
+      "nodes": [
+        {
+          "content": "The [!INCLUDE[wps_2](../Token/wps_2_md.md)] execution policy determines whether you can run scripts and load Windows PowerShell profiles and configuration files. The default execution policy, Restricted, prevents all scripts from running, and prevents loading profiles. To change the execution policy to allow profiles to load and be used, see [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) and [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).",
+          "pos": [
+            8,
+            582
+          ],
+          "nodes": [
+            {
+              "content": "The <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> execution policy determines whether you can run scripts and load Windows PowerShell profiles and configuration files.",
+              "pos": [
+                0,
+                161
+              ]
+            },
+            {
+              "content": "The default execution policy, Restricted, prevents all scripts from running, and prevents loading profiles.",
+              "pos": [
+                162,
+                269
+              ]
+            },
+            {
+              "content": "To change the execution policy to allow profiles to load and be used, see <bpt id=\"p1\">[</bpt>Set-ExecutionPolicy[PSITPro5_Security]<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab)</ept> and <bpt id=\"p2\">[</bpt>about_Signing [v4]<ept id=\"p2\">](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d)</ept>.",
+              "pos": [
+                270,
+                574
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "To create a new script file",
+      "pos": [
+        1569,
+        1596
+      ]
+    },
+    {
+      "content": "On the toolbar, click <bpt id=\"p1\">**</bpt>New<ept id=\"p1\">**</ept> , or on the <bpt id=\"p2\">**</bpt>File<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>New<ept id=\"p3\">**</ept>.",
+      "pos": [
+        1597,
+        1668
+      ]
+    },
+    {
+      "content": "The created file appears in a new file tab under the current PowerShell tab.",
+      "pos": [
+        1669,
+        1745
+      ]
+    },
+    {
+      "content": "Remember that the PowerShell tabs are only visible when there are more than one.",
+      "pos": [
+        1746,
+        1826
+      ]
+    },
+    {
+      "content": "By default a file of type script (.ps1) is created, but it can be saved with a new name and extension.",
+      "pos": [
+        1827,
+        1929
+      ]
+    },
+    {
+      "content": "Multiple script files can be created in the same PowerShell tab.",
+      "pos": [
+        1930,
+        1994
+      ]
+    },
+    {
+      "content": "To open an existing script",
+      "pos": [
+        2000,
+        2026
+      ]
+    },
+    {
+      "content": "On the toolbar, click <bpt id=\"p1\">**</bpt>Open…<ept id=\"p1\">**</ept>, or on the <bpt id=\"p2\">**</bpt>File<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Open<ept id=\"p3\">**</ept>.",
+      "pos": [
+        2027,
+        2100
+      ]
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Open<ept id=\"p1\">**</ept> dialog box, select the file you want to open.",
+      "pos": [
+        2101,
+        2162
+      ]
+    },
+    {
+      "content": "The opened file appears in a new tab.",
+      "pos": [
+        2163,
+        2200
+      ]
+    },
+    {
+      "content": "To close a script tab",
+      "pos": [
+        2206,
+        2227
+      ]
+    },
+    {
+      "content": "Click the script tab of the script you want to close, then do one of the following:",
+      "pos": [
+        2228,
+        2311
+      ]
+    },
+    {
+      "pos": [
+        2317,
+        2364
+      ],
+      "content": "Click the <bpt id=\"p1\">**</bpt>Close<ept id=\"p1\">**</ept> icon (X) on the script tab."
+    },
+    {
+      "pos": [
+        2370,
+        2408
+      ],
+      "content": "On the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Close<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "If the file has been altered since it was last saved, you are prompted to save or discard it.",
+      "pos": [
+        2410,
+        2503
+      ]
+    },
+    {
+      "content": "To display the file path",
+      "pos": [
+        2509,
+        2533
+      ]
+    },
+    {
+      "content": "On the file tab, point to the file name.",
+      "pos": [
+        2534,
+        2574
+      ]
+    },
+    {
+      "content": "The fully qualified path to the script file appears in a tooltip.",
+      "pos": [
+        2575,
+        2640
+      ]
+    },
+    {
+      "content": "To run a script",
+      "pos": [
+        2646,
+        2661
+      ]
+    },
+    {
+      "pos": [
+        2662,
+        2739
+      ],
+      "content": "On the toolbar, click <bpt id=\"p1\">**</bpt>Run Script<ept id=\"p1\">**</ept>, or on the <bpt id=\"p2\">**</bpt>File<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Run<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "To run a portion of a script",
+      "pos": [
+        2745,
+        2773
+      ]
+    },
+    {
+      "content": "In the Script Pane, select a portion of a script.",
+      "pos": [
+        2779,
+        2828
+      ]
+    },
+    {
+      "pos": [
+        2834,
+        2924
+      ],
+      "content": "On the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Run Selection<ept id=\"p2\">**</ept>, or on the toolbar, click <bpt id=\"p3\">**</bpt>Run Selection<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "To stop a running script",
+      "pos": [
+        2930,
+        2954
+      ]
+    },
+    {
+      "content": "On the toolbar, click <bpt id=\"p1\">**</bpt>Stop Operation<ept id=\"p1\">**</ept>, press CTRL\\+BREAK, or on the <bpt id=\"p2\">**</bpt>File<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Stop Operation<ept id=\"p3\">**</ept>.",
+      "pos": [
+        2955,
+        3066
+      ]
+    },
+    {
+      "content": "Pressing <bpt id=\"p1\">**</bpt>CTRL\\+C<ept id=\"p1\">**</ept> also works unless some text is currently selected, in which case <bpt id=\"p2\">**</bpt>CTRL\\+C<ept id=\"p2\">**</ept> maps to the copy function for the selected text.",
+      "pos": [
+        3067,
+        3213
+      ]
+    },
+    {
+      "pos": [
+        3218,
+        3284
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"bkmk_2\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>How to write and edit text in the Script Pane"
+    },
+    {
+      "content": "Use the following steps to edit text in the Script Pane.",
+      "pos": [
+        3285,
+        3341
+      ]
+    },
+    {
+      "content": "You can copy, cut, paste, find, and replace text.",
+      "pos": [
+        3342,
+        3391
+      ]
+    },
+    {
+      "content": "You can also undo and redo the last action you just performed.",
+      "pos": [
+        3392,
+        3454
+      ]
+    },
+    {
+      "content": "The keyboard shortcuts for performing these actions are the same as those used for all Windows applications.",
+      "pos": [
+        3455,
+        3563
+      ]
+    },
+    {
+      "content": "To enter text in the Script Pane",
+      "pos": [
+        3569,
+        3601
+      ]
+    },
+    {
+      "pos": [
+        3607,
+        3741
+      ],
+      "content": "Move the cursor to the Script Pane by clicking anywhere in the Script Pane, or by clicking <bpt id=\"p1\">**</bpt>Go to Script Pane<ept id=\"p1\">**</ept> in the <bpt id=\"p2\">**</bpt>View<ept id=\"p2\">**</ept> menu."
+    },
+    {
+      "content": "Create a script.",
+      "pos": [
+        3747,
+        3763
+      ]
+    },
+    {
+      "content": "Syntax coloring and tab completion make this a richer experience in <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>.",
+      "pos": [
+        3764,
+        3872
+      ]
+    },
+    {
+      "pos": [
+        3878,
+        4090
+      ],
+      "content": "See <bpt id=\"p1\">[</bpt>How to Use Tab Completion in the Script Pane and Console Pane<ept id=\"p1\">](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md)</ept> for details about using the tab completion feature to help in typing."
+    },
+    {
+      "content": "To find text in the Script Pane",
+      "pos": [
+        4096,
+        4127
+      ]
+    },
+    {
+      "pos": [
+        4133,
+        4225
+      ],
+      "content": "To find text anywhere, press <bpt id=\"p1\">**</bpt>CTRL\\+F<ept id=\"p1\">**</ept> or, on the <bpt id=\"p2\">**</bpt>Edit<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Find in Script<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        4231,
+        4331
+      ],
+      "content": "To find text after the cursor, press <bpt id=\"p1\">**</bpt>F3<ept id=\"p1\">**</ept> or, on the <bpt id=\"p2\">**</bpt>Edit<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Find Next in Script<ept id=\"p3\">**</ept>."
+    },
+    {
+      "pos": [
+        4337,
+        4449
+      ],
+      "content": "To find text before the cursor, press <bpt id=\"p1\">**</bpt>SHIFT\\+F3<ept id=\"p1\">**</ept> or, on the <bpt id=\"p2\">**</bpt>Edit<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Find Previous in Script<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "To find and replace text in the Script Pane",
+      "pos": [
+        4455,
+        4498
+      ]
+    },
+    {
+      "content": "Press <bpt id=\"p1\">**</bpt>CRTL\\+H<ept id=\"p1\">**</ept> or, on the <bpt id=\"p2\">**</bpt>Edit<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Replace in Script<ept id=\"p3\">**</ept>.",
+      "pos": [
+        4499,
+        4571
+      ]
+    },
+    {
+      "content": "Enter both the text you want to find and the text with which you want to replace it, and then press <bpt id=\"p1\">**</bpt>ENTER<ept id=\"p1\">**</ept>.",
+      "pos": [
+        4572,
+        4682
+      ]
+    },
+    {
+      "content": "To go to a particular line of text in the Script Pane",
+      "pos": [
+        4688,
+        4741
+      ]
+    },
+    {
+      "pos": [
+        4747,
+        4832
+      ],
+      "content": "In the Script Pane, press <bpt id=\"p1\">**</bpt>CTRL\\+G<ept id=\"p1\">**</ept> or, on the <bpt id=\"p2\">**</bpt>Edit<ept id=\"p2\">**</ept> menu, click <bpt id=\"p3\">**</bpt>Go to Line<ept id=\"p3\">**</ept>."
+    },
+    {
+      "content": "Enter a line number.",
+      "pos": [
+        4838,
+        4858
+      ]
+    },
+    {
+      "content": "To copy text in the Script Pane",
+      "pos": [
+        4864,
+        4895
+      ]
+    },
+    {
+      "content": "In the Script Pane, select the text that you want to copy.",
+      "pos": [
+        4901,
+        4959
+      ]
+    },
+    {
+      "pos": [
+        4965,
+        5068
+      ],
+      "content": "Press <bpt id=\"p1\">**</bpt>CTRL\\+C<ept id=\"p1\">**</ept> or, on the toolbar, click the <bpt id=\"p2\">**</bpt>Copy<ept id=\"p2\">**</ept> icon, or on the <bpt id=\"p3\">**</bpt>Edit<ept id=\"p3\">**</ept> menu, click <bpt id=\"p4\">**</bpt>Copy<ept id=\"p4\">**</ept>."
+    },
+    {
+      "content": "To cut text in the Script Pane",
+      "pos": [
+        5074,
+        5104
+      ]
+    },
+    {
+      "content": "In the Script Pane, select the text that you want to cut.",
+      "pos": [
+        5110,
+        5167
+      ]
+    },
+    {
+      "pos": [
+        5173,
+        5274
+      ],
+      "content": "Press <bpt id=\"p1\">**</bpt>CTRL\\+X<ept id=\"p1\">**</ept> or, on the toolbar, click the <bpt id=\"p2\">**</bpt>Cut<ept id=\"p2\">**</ept> icon, or on the <bpt id=\"p3\">**</bpt>Edit<ept id=\"p3\">**</ept> menu, click <bpt id=\"p4\">**</bpt>Cut<ept id=\"p4\">**</ept>."
+    },
+    {
+      "content": "To paste text into the Script Pane",
+      "pos": [
+        5280,
+        5314
+      ]
+    },
+    {
+      "pos": [
+        5315,
+        5420
+      ],
+      "content": "Press <bpt id=\"p1\">**</bpt>CTRL\\+V<ept id=\"p1\">**</ept> or, on the toolbar, click the <bpt id=\"p2\">**</bpt>Paste<ept id=\"p2\">**</ept> icon, or on the <bpt id=\"p3\">**</bpt>Edit<ept id=\"p3\">**</ept> menu, click <bpt id=\"p4\">**</bpt>Paste<ept id=\"p4\">**</ept>."
+    },
+    {
+      "content": "To undo an action in the Script Pane",
+      "pos": [
+        5426,
+        5462
+      ]
+    },
+    {
+      "pos": [
+        5463,
+        5566
+      ],
+      "content": "Press <bpt id=\"p1\">**</bpt>CTRL\\+Z<ept id=\"p1\">**</ept> or, on the toolbar, click the <bpt id=\"p2\">**</bpt>Undo<ept id=\"p2\">**</ept> icon, or on the <bpt id=\"p3\">**</bpt>Edit<ept id=\"p3\">**</ept> menu, click <bpt id=\"p4\">**</bpt>Undo<ept id=\"p4\">**</ept>."
+    },
+    {
+      "content": "To redo an action in the Script Pane",
+      "pos": [
+        5572,
+        5608
+      ]
+    },
+    {
+      "pos": [
+        5609,
+        5712
+      ],
+      "content": "Press <bpt id=\"p1\">**</bpt>CTRL\\+Y<ept id=\"p1\">**</ept> or, on the toolbar, click the <bpt id=\"p2\">**</bpt>Redo<ept id=\"p2\">**</ept> icon, or on the <bpt id=\"p3\">**</bpt>Edit<ept id=\"p3\">**</ept> menu, click <bpt id=\"p4\">**</bpt>Redo<ept id=\"p4\">**</ept>."
+    },
+    {
+      "pos": [
+        5717,
+        5758
+      ],
+      "content": "<ph id=\"ph1\">&lt;a name=\"bkmk_3\"&gt;</ph><ph id=\"ph2\">&lt;/a&gt;</ph>How to save a script"
+    },
+    {
+      "content": "Use the following steps to save and name a script.",
+      "pos": [
+        5759,
+        5809
+      ]
+    },
+    {
+      "content": "An asterisk appears next to the script name to mark a file that has not been saved since it was altered.",
+      "pos": [
+        5810,
+        5914
+      ]
+    },
+    {
+      "content": "The asterisk disappears when the file is saved.",
+      "pos": [
+        5915,
+        5962
+      ]
+    },
+    {
+      "content": "To save a script",
+      "pos": [
+        5968,
+        5984
+      ]
+    },
+    {
+      "pos": [
+        5985,
+        6088
+      ],
+      "content": "Press <bpt id=\"p1\">**</bpt>CTRL\\+S<ept id=\"p1\">**</ept> or, on the toolbar, click the <bpt id=\"p2\">**</bpt>Save<ept id=\"p2\">**</ept> icon, or on the <bpt id=\"p3\">**</bpt>File<ept id=\"p3\">**</ept> menu, click <bpt id=\"p4\">**</bpt>Save<ept id=\"p4\">**</ept>."
+    },
+    {
+      "content": "To save and name a script",
+      "pos": [
+        6094,
+        6119
+      ]
+    },
+    {
+      "content": "On the <bpt id=\"p1\">**</bpt>File<ept id=\"p1\">**</ept> menu, click <bpt id=\"p2\">**</bpt>Save As<ept id=\"p2\">**</ept>.",
+      "pos": [
+        6125,
+        6165
+      ]
+    },
+    {
+      "content": "The <bpt id=\"p1\">**</bpt>Save As<ept id=\"p1\">**</ept> dialog box will appear.",
+      "pos": [
+        6166,
+        6205
+      ]
+    },
+    {
+      "pos": [
+        6211,
+        6263
+      ],
+      "content": "In the <bpt id=\"p1\">**</bpt>File name<ept id=\"p1\">**</ept> box, enter a name for the file."
+    },
+    {
+      "content": "In the <bpt id=\"p1\">**</bpt>Save as type<ept id=\"p1\">**</ept> box, select a file type.",
+      "pos": [
+        6269,
+        6317
+      ]
+    },
+    {
+      "content": "For example, in the <bpt id=\"p1\">**</bpt>Save as type<ept id=\"p1\">**</ept> box, select “PowerShell Scripts (\\* .ps1)”.",
+      "pos": [
+        6318,
+        6398
+      ]
+    },
+    {
+      "pos": [
+        6404,
+        6419
+      ],
+      "content": "Click <bpt id=\"p1\">**</bpt>Save<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "To save a script in ASCII encoding",
+      "pos": [
+        6425,
+        6459
+      ]
+    },
+    {
+      "content": "By default, <ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> saves new script files (.ps1), script data files (.psd1), and script module files (.psm1) as Unicode (BigEndianUnicode) by default.",
+      "pos": [
+        6460,
+        6643
+      ]
+    },
+    {
+      "content": "To save a script in another encoding, such as ASCII (ANSI), use the <bpt id=\"p1\">**</bpt>Save<ept id=\"p1\">**</ept> or <bpt id=\"p2\">**</bpt>SaveAs<ept id=\"p2\">**</ept> methods on the <bpt id=\"p3\">[</bpt>$psISE.CurrentFile<ept id=\"p3\">](https://technet.microsoft.com/en-us/library/bc3300e4-9c17-4f00-a621-c8867126e3b3#CurrentFile)</ept> object.",
+      "pos": [
+        6644,
+        6872
+      ]
+    },
+    {
+      "content": "The following command saves a new script as MyScript.ps1 with ASCII encoding.",
+      "pos": [
+        6874,
+        6951
+      ]
+    },
+    {
+      "content": "The following command replaces the current script file with a file with the same name, but with ASCII encoding.",
+      "pos": [
+        7035,
+        7146
+      ]
+    },
+    {
+      "content": "The following command gets the encoding of the current file.",
+      "pos": [
+        7212,
+        7272
+      ]
+    },
+    {
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> supports the following encoding options: ASCII, BigEndianUnicode, Unicode, UTF32, UTF7, UTF8 and Default.",
+      "pos": [
+        7311,
+        7456
+      ]
+    },
+    {
+      "content": "The value of the Default option varies with the system.",
+      "pos": [
+        7457,
+        7512
+      ]
+    },
+    {
+      "pos": [
+        7514,
+        7723
+      ],
+      "content": "<ph id=\"ph1\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> does not change the encoding of scripts that were created by in other editors, even when you use the Save or Save As commands in <ph id=\"ph2\">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph>."
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        7728,
+        7736
+      ]
+    },
+    {
+      "content": "Using the Windows PowerShell ISE",
+      "pos": [
+        7738,
+        7770
+      ]
+    }
+  ],
+  "content": "---\ntitle: How to Write and Run Scripts in the Windows PowerShell ISE\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 62f916d9-b3a1-484a-bdfb-41f57112c22b\n---\n# How to Write and Run Scripts in the Windows PowerShell ISE\nThis topic describes how to create, edit, run, and save scripts in the Script Pane.\n\n-   [How to create and run scripts](#bkmk_1)\n\n-   [How to write and edit text in the Script Pane](#bkmk_2)\n\n-   [How to save a script](#bkmk_3)\n\n## <a name=\"bkmk_1\"></a>How to create and run scripts\nYou can open and edit [!INCLUDE[wps_1](../Token/wps_1_md.md)] files in the Script Pane. Specific file types of interest in [!INCLUDE[wps_1](../Token/wps_1_md.md)] are script files (.ps1), script data files (.psd1), and script module files (.psm1). These file types are syntax colored in the Script Pane editor. Other common file types you may open in the Script Pane are configuration files (.ps1xml), XML files, and text files.\n\n> [!NOTE]\n> The [!INCLUDE[wps_2](../Token/wps_2_md.md)] execution policy determines whether you can run scripts and load Windows PowerShell profiles and configuration files. The default execution policy, Restricted, prevents all scripts from running, and prevents loading profiles. To change the execution policy to allow profiles to load and be used, see [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) and [about_Signing [v4]](https://technet.microsoft.com/en-us/library/fcbdd3b9-0b9f-4734-b5c7-e0dcc304fa1d).\n\n### To create a new script file\nOn the toolbar, click **New** , or on the **File** menu, click **New**. The created file appears in a new file tab under the current PowerShell tab. Remember that the PowerShell tabs are only visible when there are more than one. By default a file of type script (.ps1) is created, but it can be saved with a new name and extension. Multiple script files can be created in the same PowerShell tab.\n\n### To open an existing script\nOn the toolbar, click **Open…**, or on the **File** menu, click **Open**. In the **Open** dialog box, select the file you want to open. The opened file appears in a new tab.\n\n### To close a script tab\nClick the script tab of the script you want to close, then do one of the following:\n\n1.  Click the **Close** icon (X) on the script tab.\n\n2.  On the **File** menu, click **Close**.\n\nIf the file has been altered since it was last saved, you are prompted to save or discard it.\n\n### To display the file path\nOn the file tab, point to the file name. The fully qualified path to the script file appears in a tooltip.\n\n### To run a script\nOn the toolbar, click **Run Script**, or on the **File** menu, click **Run**.\n\n### To run a portion of a script\n\n1.  In the Script Pane, select a portion of a script.\n\n2.  On the **File** menu, click **Run Selection**, or on the toolbar, click **Run Selection**.\n\n### To stop a running script\nOn the toolbar, click **Stop Operation**, press CTRL\\+BREAK, or on the **File** menu, click **Stop Operation**. Pressing **CTRL\\+C** also works unless some text is currently selected, in which case **CTRL\\+C** maps to the copy function for the selected text.\n\n## <a name=\"bkmk_2\"></a>How to write and edit text in the Script Pane\nUse the following steps to edit text in the Script Pane. You can copy, cut, paste, find, and replace text. You can also undo and redo the last action you just performed. The keyboard shortcuts for performing these actions are the same as those used for all Windows applications.\n\n### To enter text in the Script Pane\n\n1.  Move the cursor to the Script Pane by clicking anywhere in the Script Pane, or by clicking **Go to Script Pane** in the **View** menu.\n\n2.  Create a script. Syntax coloring and tab completion make this a richer experience in [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n3.  See [How to Use Tab Completion in the Script Pane and Console Pane](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for details about using the tab completion feature to help in typing.\n\n### To find text in the Script Pane\n\n1.  To find text anywhere, press **CTRL\\+F** or, on the **Edit** menu, click **Find in Script**.\n\n2.  To find text after the cursor, press **F3** or, on the **Edit** menu, click **Find Next in Script**.\n\n3.  To find text before the cursor, press **SHIFT\\+F3** or, on the **Edit** menu, click **Find Previous in Script**.\n\n### To find and replace text in the Script Pane\nPress **CRTL\\+H** or, on the **Edit** menu, click **Replace in Script**. Enter both the text you want to find and the text with which you want to replace it, and then press **ENTER**.\n\n### To go to a particular line of text in the Script Pane\n\n1.  In the Script Pane, press **CTRL\\+G** or, on the **Edit** menu, click **Go to Line**.\n\n2.  Enter a line number.\n\n### To copy text in the Script Pane\n\n1.  In the Script Pane, select the text that you want to copy.\n\n2.  Press **CTRL\\+C** or, on the toolbar, click the **Copy** icon, or on the **Edit** menu, click **Copy**.\n\n### To cut text in the Script Pane\n\n1.  In the Script Pane, select the text that you want to cut.\n\n2.  Press **CTRL\\+X** or, on the toolbar, click the **Cut** icon, or on the **Edit** menu, click **Cut**.\n\n### To paste text into the Script Pane\nPress **CTRL\\+V** or, on the toolbar, click the **Paste** icon, or on the **Edit** menu, click **Paste**.\n\n### To undo an action in the Script Pane\nPress **CTRL\\+Z** or, on the toolbar, click the **Undo** icon, or on the **Edit** menu, click **Undo**.\n\n### To redo an action in the Script Pane\nPress **CTRL\\+Y** or, on the toolbar, click the **Redo** icon, or on the **Edit** menu, click **Redo**.\n\n## <a name=\"bkmk_3\"></a>How to save a script\nUse the following steps to save and name a script. An asterisk appears next to the script name to mark a file that has not been saved since it was altered. The asterisk disappears when the file is saved.\n\n### To save a script\nPress **CTRL\\+S** or, on the toolbar, click the **Save** icon, or on the **File** menu, click **Save**.\n\n### To save and name a script\n\n1.  On the **File** menu, click **Save As**. The **Save As** dialog box will appear.\n\n2.  In the **File name** box, enter a name for the file.\n\n3.  In the **Save as type** box, select a file type. For example, in the **Save as type** box, select “PowerShell Scripts (\\* .ps1)”.\n\n4.  Click **Save**.\n\n### To save a script in ASCII encoding\nBy default, [!INCLUDE[ise_2](../Token/ise_2_md.md)] saves new script files (.ps1), script data files (.psd1), and script module files (.psm1) as Unicode (BigEndianUnicode) by default. To save a script in another encoding, such as ASCII (ANSI), use the **Save** or **SaveAs** methods on the [$psISE.CurrentFile](https://technet.microsoft.com/en-us/library/bc3300e4-9c17-4f00-a621-c8867126e3b3#CurrentFile) object.\n\nThe following command saves a new script as MyScript.ps1 with ASCII encoding.\n\n```\n$psise.CurrentFile.SaveAs(\"MyScript.ps1\", [System.Text.Encoding]::ASCII)\n```\n\nThe following command replaces the current script file with a file with the same name, but with ASCII encoding.\n\n```\n$psise.CurrentFile.Save([System.Text.Encoding]::ASCII)\n```\n\nThe following command gets the encoding of the current file.\n\n```\n$psise.CurrentFile.encoding\n```\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] supports the following encoding options: ASCII, BigEndianUnicode, Unicode, UTF32, UTF7, UTF8 and Default. The value of the Default option varies with the system.\n\n[!INCLUDE[ise_2](../Token/ise_2_md.md)] does not change the encoding of scripts that were created by in other editors, even when you use the Save or Save As commands in [!INCLUDE[ise_2](../Token/ise_2_md.md)].\n\n## See Also\n[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)\n\n"
+}
