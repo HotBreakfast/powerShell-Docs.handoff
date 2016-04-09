@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "content": "Getting Ready to Use Windows PowerShell",
+      "pos": [
+        11,
+        50
+      ]
+    },
+    {
+      "content": "Getting Ready to Use Windows PowerShell",
+      "pos": [
+        185,
+        224
+      ]
+    },
+    {
+      "content": "When <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> is installed and started, consider the following setup options.",
+      "pos": [
+        225,
+        333
+      ]
+    },
+    {
+      "content": "You can perform these tasks at any time.",
+      "pos": [
+        334,
+        374
+      ]
+    },
+    {
+      "content": "Install help files.",
+      "pos": [
+        382,
+        401
+      ]
+    },
+    {
+      "content": "The cmdlets that are included in <ph id=\"ph1\">[!INCLUDE[psversion3](../Token/psversion3_md.md)]</ph> do not come with help files.",
+      "pos": [
+        404,
+        515
+      ]
+    },
+    {
+      "content": "However, you can use the <bpt id=\"p1\">[</bpt>Update-Help<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545)</ept> cmdlet to download and install the newest help files on your computer.",
+      "pos": [
+        516,
+        707
+      ]
+    },
+    {
+      "content": "When the files are installed, you can use the <bpt id=\"p1\">[</bpt>Get-Help<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a)</ept> cmdlet to display them right at the command line.",
+      "pos": [
+        708,
+        896
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>about_Updatable_Help<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)</ept>.",
+      "pos": [
+        897,
+        1028
+      ]
+    },
+    {
+      "content": "If you decide not to install the help files, you can still read the help topics online.",
+      "pos": [
+        1034,
+        1121
+      ]
+    },
+    {
+      "content": "To find the online version of any cmdlet help topic, type: <ph id=\"ph1\">`Get-Help &lt;CmdletName&gt; -Online`</ph>.",
+      "pos": [
+        1122,
+        1213
+      ]
+    },
+    {
+      "content": "To browse the <ph id=\"ph1\">[!INCLUDE[wps_2](../Token/wps_2_md.md)]</ph> help topics in the TechNet Library, start at <bpt id=\"p1\">[</bpt>http://go.microsoft.com/fwlink/?LinkID=107116<ept id=\"p1\">](http://go.microsoft.com/fwlink/?LinkID=107116)</ept>.",
+      "pos": [
+        1214,
+        1408
+      ]
+    },
+    {
+      "content": "Run scripts.",
+      "pos": [
+        1416,
+        1428
+      ]
+    },
+    {
+      "content": "To keep <ph id=\"ph1\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> secure, the default execution policy on <ph id=\"ph2\">[!INCLUDE[mshshort](../Token/mshshort_md.md)]</ph> is <bpt id=\"p1\">**</bpt>Restricted<ept id=\"p1\">**</ept>.",
+      "pos": [
+        1431,
+        1589
+      ]
+    },
+    {
+      "content": "This policy allows you to run cmdlets, but not scripts.",
+      "pos": [
+        1590,
+        1645
+      ]
+    },
+    {
+      "content": "To run scripts, use the <bpt id=\"p1\">[</bpt>Set-ExecutionPolicy[PSITPro5_Security]<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab)</ept> cmdlet to change the execution policy to <bpt id=\"p2\">**</bpt>AllSigned<ept id=\"p2\">**</ept> or <bpt id=\"p3\">**</bpt>RemoteSigned<ept id=\"p3\">**</ept>.",
+      "pos": [
+        1646,
+        1868
+      ]
+    },
+    {
+      "content": "Only members of the Administrators group on the computer can run this cmdlet.",
+      "pos": [
+        1869,
+        1946
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>about_Execution_Policies [v4]<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept>.",
+      "pos": [
+        1947,
+        2087
+      ]
+    },
+    {
+      "content": "Enable remoting.",
+      "pos": [
+        2095,
+        2111
+      ]
+    },
+    {
+      "content": "The system is already configured for you to run remote commands on other computers.",
+      "pos": [
+        2114,
+        2197
+      ]
+    },
+    {
+      "content": "On <ph id=\"ph1\">[!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)]</ph> and <ph id=\"ph2\">[!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)]</ph>, the system is also configured to receive remote commands, that is, to allow other computers to run remote commands on the local computer.",
+      "pos": [
+        2198,
+        2461
+      ]
+    },
+    {
+      "content": "To enable computers running other versions of Windows to receive remote commands, run the <bpt id=\"p1\">[</bpt>Enable-PSRemoting<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/19437c28-33b8-4ac1-9113-8439cc8beffb)</ept> cmdlet on the computer that you want to manage remotely.",
+      "pos": [
+        2462,
+        2710
+      ]
+    },
+    {
+      "content": "Only members of the Administrators group on the computer can run this cmdlet.",
+      "pos": [
+        2711,
+        2788
+      ]
+    },
+    {
+      "content": "For more information, see <bpt id=\"p1\">[</bpt>about_Remote<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)</ept>.",
+      "pos": [
+        2789,
+        2912
+      ]
+    },
+    {
+      "content": "NOTE: If remoting is enabled on a computer that is running <ph id=\"ph1\">[!INCLUDE[psversion2](../Token/psversion2_md.md)]</ph>, remoting is still enabled after you install <ph id=\"ph2\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>.",
+      "pos": [
+        2918,
+        3122
+      ]
+    },
+    {
+      "content": "However, on <ph id=\"ph1\">[!INCLUDE[lserver](../Token/lserver_md.md)]</ph> (not <ph id=\"ph2\">[!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]</ph>), you must re\\-enable remoting after installing <ph id=\"ph3\">[!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]</ph>.",
+      "pos": [
+        3123,
+        3354
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        3359,
+        3367
+      ]
+    },
+    {
+      "content": "Installing Windows PowerShell",
+      "pos": [
+        3369,
+        3398
+      ]
+    },
+    {
+      "content": "Starting Windows PowerShell [ps]",
+      "pos": [
+        3444,
+        3476
+      ]
+    }
+  ],
+  "content": "---\ntitle: Getting Ready to Use Windows PowerShell\nms.custom: na\nms.reviewer: na\nms.suite: na\nms.tgt_pltfrm: na\nms.topic: article\nms.assetid: 6dc7052d-cc5a-4220-950f-98f963a2b587\n---\n# Getting Ready to Use Windows PowerShell\nWhen [!INCLUDE[wps_2](../Token/wps_2_md.md)] is installed and started, consider the following setup options. You can perform these tasks at any time.\n\n-   **Install help files.** The cmdlets that are included in [!INCLUDE[psversion3](../Token/psversion3_md.md)] do not come with help files. However, you can use the [Update-Help](https://technet.microsoft.com/en-us/library/93e1d870-ace6-432b-8778-8920291d7545) cmdlet to download and install the newest help files on your computer. When the files are installed, you can use the [Get-Help](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a) cmdlet to display them right at the command line. For more information, see [about_Updatable_Help](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe).\n\n    If you decide not to install the help files, you can still read the help topics online. To find the online version of any cmdlet help topic, type: `Get-Help <CmdletName> -Online`. To browse the [!INCLUDE[wps_2](../Token/wps_2_md.md)] help topics in the TechNet Library, start at [http://go.microsoft.com/fwlink/?LinkID=107116](http://go.microsoft.com/fwlink/?LinkID=107116).\n\n-   **Run scripts.** To keep [!INCLUDE[mshshort](../Token/mshshort_md.md)] secure, the default execution policy on [!INCLUDE[mshshort](../Token/mshshort_md.md)] is **Restricted**. This policy allows you to run cmdlets, but not scripts. To run scripts, use the [Set-ExecutionPolicy[PSITPro5_Security]](https://technet.microsoft.com/en-us/library/5690a0e1-495b-4e63-8280-65ead7bf01ab) cmdlet to change the execution policy to **AllSigned** or **RemoteSigned**. Only members of the Administrators group on the computer can run this cmdlet. For more information, see [about_Execution_Policies [v4]](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6).\n\n-   **Enable remoting.** The system is already configured for you to run remote commands on other computers. On [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] and [!INCLUDE[win8_server_2](../Token/win8_server_2_md.md)], the system is also configured to receive remote commands, that is, to allow other computers to run remote commands on the local computer. To enable computers running other versions of Windows to receive remote commands, run the [Enable-PSRemoting](https://technet.microsoft.com/en-us/library/19437c28-33b8-4ac1-9113-8439cc8beffb) cmdlet on the computer that you want to manage remotely. Only members of the Administrators group on the computer can run this cmdlet. For more information, see [about_Remote](https://technet.microsoft.com/en-us/library/9b4a5c87-9162-4adf-bdfe-fbc80b9b8970).\n\n    NOTE: If remoting is enabled on a computer that is running [!INCLUDE[psversion2](../Token/psversion2_md.md)], remoting is still enabled after you install [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)]. However, on [!INCLUDE[lserver](../Token/lserver_md.md)] (not [!INCLUDE[win7_server_secondref](../Token/win7_server_secondref_md.md)]), you must re\\-enable remoting after installing [!INCLUDE[ps_wmf_3.0](../Token/ps_wmf_3.0_md.md)].\n\n## See Also\n[Installing Windows PowerShell](../Topic/Installing-Windows-PowerShell.md)\n[Starting Windows PowerShell [ps]](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)\n\n"
+}
