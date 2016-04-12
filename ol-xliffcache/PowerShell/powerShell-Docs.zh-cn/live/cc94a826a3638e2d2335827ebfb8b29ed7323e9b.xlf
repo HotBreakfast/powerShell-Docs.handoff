@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="md" source-language="en-US" target-language="zh-cn">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc94a826a3638e2d2335827ebfb8b29ed7323e9b</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-708c90d" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Retrieve the Configuration Agent output relating to a specific job.</source>
+          <target state="new">Retrieve the Configuration Agent output relating to a specific job.</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Gets the Configuration Agent output associated with a specific job.</source>
+          <target state="new">Gets the Configuration Agent output associated with a specific job.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Syntax</source>
+          <target state="new">Syntax</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Parameters</source>
+          <target state="new">Parameters</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>jobId<ept id="p1">*</ept> \[in\]</source>
+          <target state="new"><bpt id="p1">*</bpt>jobId<ept id="p1">*</ept> \[in\]</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>The ID of the job for which to get output data.</source>
+          <target state="new">The ID of the job for which to get output data.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>resumeOutputBookmark<ept id="p1">*</ept> \[in\]</source>
+          <target state="new"><bpt id="p1">*</bpt>resumeOutputBookmark<ept id="p1">*</ept> \[in\]</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Specifies that the output should be a continuation from a previous bookmark.</source>
+          <target state="new">Specifies that the output should be a continuation from a previous bookmark.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">*</bpt>output<ept id="p1">*</ept> \[out\]</source>
+          <target state="new"><bpt id="p1">*</bpt>output<ept id="p1">*</ept> \[out\]</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The output for the specified job.</source>
+          <target state="new">The output for the specified job.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Return value</source>
+          <target state="new">Return value</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Returns zero on success; otherwise returns an error code.</source>
+          <target state="new">Returns zero on success; otherwise returns an error code.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Remarks</source>
+          <target state="new">Remarks</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>This is a static method.</source>
+          <target state="new">This is a static method.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Requirements</source>
+          <target state="new">Requirements</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>MOF:<ept id="p1">**</ept> DscCore.mof</source>
+          <target state="new"><bpt id="p1">**</bpt>MOF:<ept id="p1">**</ept> DscCore.mof</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Namespace<ept id="p1">**</ept>: Root\Microsoft\Windows\DesiredStateConfiguration</source>
+          <target state="new"><bpt id="p1">**</bpt>Namespace<ept id="p1">**</ept>: Root\Microsoft\Windows\DesiredStateConfiguration</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>See also</source>
+          <target state="new">See also</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>MSFT_DSCLocalConfigurationManager</source>
+          <target state="new">MSFT_DSCLocalConfigurationManager</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

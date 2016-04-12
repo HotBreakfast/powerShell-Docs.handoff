@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "content": "Execute Test on a provider directly.",
+      "pos": [
+        61,
+        97
+      ]
+    },
+    {
+      "content": "ResourceTest method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        209,
+        275
+      ]
+    },
+    {
+      "content": "ResourceTest method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        284,
+        350
+      ]
+    },
+    {
+      "pos": [
+        352,
+        405
+      ],
+      "content": "Directly calls the <bpt id=\"p1\">**</bpt>Test<ept id=\"p1\">**</ept> method of a DSC resource."
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        407,
+        413
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        583,
+        593
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ResourceType<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        606,
+        627
+      ]
+    },
+    {
+      "content": "The name of the resource to call.",
+      "pos": [
+        630,
+        663
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ModuleName<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        665,
+        684
+      ]
+    },
+    {
+      "content": "The name of the module that contains the resource to call.",
+      "pos": [
+        687,
+        745
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>resourceProperty<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        747,
+        772
+      ]
+    },
+    {
+      "content": "Specifies the resource property name and its value in a hash table as key and value, respectively.",
+      "pos": [
+        775,
+        873
+      ]
+    },
+    {
+      "content": "Use the",
+      "pos": [
+        874,
+        881
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Get-DscResource<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept> cmdlet to discover resource properties and their types.",
+      "pos": [
+        882,
+        1014
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>InDesiredState<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        1016,
+        1040
+      ]
+    },
+    {
+      "content": "On return, this property is set to <bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> if the target node is in the desired state.",
+      "pos": [
+        1043,
+        1130
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        1135,
+        1147
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        1162,
+        1219
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1224,
+        1231
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1233,
+        1257
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1262,
+        1274
+      ]
+    },
+    {
+      "pos": [
+        1289,
+        1309
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1312,
+        1375
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1381,
+        1389
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1395,
+        1428
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Execute Test on a provider directly.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_resourcetest'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'ResourceTest method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# ResourceTest method of the MSFT_DSCLocalConfigurationManager class\n\nDirectly calls the **Test** method of a DSC resource.\n\nSyntax\n------\n\n```mof\nuint32 ResourceTest(\n  [in]  string  ResourceType,\n  [in]  string  ModuleName,\n  [in]  uint8   resourceProperty[],\n  [out] boolean InDesiredState\n);\n```\n\nParameters\n----------\n\n*ResourceType* \\[in\\]  \nThe name of the resource to call.\n\n*ModuleName* \\[in\\]  \nThe name of the module that contains the resource to call.\n\n*resourceProperty* \\[in\\]  \nSpecifies the resource property name and its value in a hash table as key and value, respectively. Use the\n[Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet to discover resource properties and their types.\n\n*InDesiredState* \\[out\\]  \nOn return, this property is set to **true** if the target node is in the desired state.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
