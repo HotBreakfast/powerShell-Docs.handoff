@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "content": "Get the configuration status history.",
+      "pos": [
+        61,
+        98
+      ]
+    },
+    {
+      "content": "GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        220,
+        296
+      ]
+    },
+    {
+      "content": "GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        305,
+        381
+      ]
+    },
+    {
+      "content": "Get the configuration status history.",
+      "pos": [
+        383,
+        420
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        422,
+        428
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        582,
+        592
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>All<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        605,
+        617
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> if this method should return information about all the configuration runs on the machine, including",
+      "pos": [
+        620,
+        728
+      ]
+    },
+    {
+      "content": "the configuration application and the consistency check.",
+      "pos": [
+        729,
+        785
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>configurationStatus<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        787,
+        816
+      ]
+    },
+    {
+      "content": "On return, contains an embedded instance of the <bpt id=\"p1\">**</bpt>MSFT_DSCConfigurationStatus<ept id=\"p1\">**</ept> class that defines the settings.",
+      "pos": [
+        819,
+        931
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        936,
+        948
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        963,
+        1020
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1025,
+        1032
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1034,
+        1058
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1063,
+        1075
+      ]
+    },
+    {
+      "pos": [
+        1090,
+        1110
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1113,
+        1176
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1182,
+        1190
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1196,
+        1229
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Get the configuration status history.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_getconfigurationstatus'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class\n\nGet the configuration status history.\n\nSyntax\n------\n\n```mof\nuint32 GetConfigurationStatus(\n  [in]  boolean                     All,\n  [out] MSFT_DSCConfigurationStatus configurationStatus[]\n);\n```\n\nParameters\n----------\n\n*All* \\[in\\]  \n**true** if this method should return information about all the configuration runs on the machine, including\nthe configuration application and the consistency check.\n\n*configurationStatus* \\[out\\]  \nOn return, contains an embedded instance of the **MSFT_DSCConfigurationStatus** class that defines the settings.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}

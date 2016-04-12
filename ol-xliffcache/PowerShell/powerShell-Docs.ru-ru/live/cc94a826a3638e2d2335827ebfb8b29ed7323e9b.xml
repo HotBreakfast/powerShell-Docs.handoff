@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "content": "Retrieve the Configuration Agent output relating to a specific job.",
+      "pos": [
+        61,
+        128
+      ]
+    },
+    {
+      "content": "GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        256,
+        338
+      ]
+    },
+    {
+      "content": "GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        347,
+        429
+      ]
+    },
+    {
+      "content": "Gets the Configuration Agent output associated with a specific job.",
+      "pos": [
+        431,
+        498
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        500,
+        506
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        715,
+        725
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>jobId<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        738,
+        752
+      ]
+    },
+    {
+      "content": "The ID of the job for which to get output data.",
+      "pos": [
+        755,
+        802
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>resumeOutputBookmark<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        804,
+        833
+      ]
+    },
+    {
+      "content": "Specifies that the output should be a continuation from a previous bookmark.",
+      "pos": [
+        836,
+        912
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>output<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        914,
+        930
+      ]
+    },
+    {
+      "content": "The output for the specified job.",
+      "pos": [
+        933,
+        966
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        971,
+        983
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        998,
+        1055
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1060,
+        1067
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1069,
+        1093
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1098,
+        1110
+      ]
+    },
+    {
+      "pos": [
+        1125,
+        1145
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1148,
+        1211
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1217,
+        1225
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1231,
+        1264
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Retrieve the Configuration Agent output relating to a specific job.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_getconfigurationresultoutput'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class\n\nGets the Configuration Agent output associated with a specific job.\n\nSyntax\n------\n\n```mof\nuint32 GetConfigurationResultOutput(\n  [in]  string                      jobId,\n  [in]  uint8                       resumeOutputBookmark[],\n  [out] MSFT_DSCConfigurationOutput output[]\n);\n```\n\nParameters\n----------\n\n*jobId* \\[in\\]  \nThe ID of the job for which to get output data.\n\n*resumeOutputBookmark* \\[in\\]  \nSpecifies that the output should be a continuation from a previous bookmark.\n\n*output* \\[out\\]  \nThe output for the specified job.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n \n\n \n\n\n\n"
+}
