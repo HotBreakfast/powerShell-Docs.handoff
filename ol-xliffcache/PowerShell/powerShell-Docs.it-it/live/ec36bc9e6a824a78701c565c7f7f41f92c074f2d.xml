@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "content": "Send the configuration document to the managed node and use Configuration Agent to apply the configuration using the Get method.",
+      "pos": [
+        61,
+        189
+      ]
+    },
+    {
+      "content": "GetConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        305,
+        375
+      ]
+    },
+    {
+      "content": "GetConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        384,
+        454
+      ]
+    },
+    {
+      "pos": [
+        456,
+        591
+      ],
+      "content": "Sends the configuration document to the managed node and uses the <bpt id=\"p1\">**</bpt>Get<ept id=\"p1\">**</ept> method of the Configuration Agent to apply the configuration."
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        593,
+        599
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        736,
+        746
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>configurationData<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        759,
+        785
+      ]
+    },
+    {
+      "content": "Specifies the configuration data to send.",
+      "pos": [
+        788,
+        829
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>configurations<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        831,
+        855
+      ]
+    },
+    {
+      "content": "On return, contains an embedded instance of the configurations.",
+      "pos": [
+        858,
+        921
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        926,
+        938
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        953,
+        1010
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1015,
+        1022
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1024,
+        1048
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1053,
+        1065
+      ]
+    },
+    {
+      "pos": [
+        1080,
+        1100
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1103,
+        1166
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1172,
+        1180
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1186,
+        1219
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Send the configuration document to the managed node and use Configuration Agent to apply the configuration using the Get method.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_getconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'GetConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# GetConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nSends the configuration document to the managed node and uses the **Get** method of the Configuration Agent to apply the configuration.\n\nSyntax\n------\n\n```mof\nuint32 GetConfiguration(\n  [in]  uint8            configurationData[],\n  [out] OMI_BaseResource configurations[]\n);\n```\n\nParameters\n----------\n\n*configurationData* \\[in\\]  \nSpecifies the configuration data to send.\n\n*configurations* \\[out\\]  \nOn return, contains an embedded instance of the configurations.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n \n\n \n\n\n\n"
+}

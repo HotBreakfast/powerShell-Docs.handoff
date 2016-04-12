@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "content": "ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3,
+        75
+      ]
+    },
+    {
+      "content": "Uses the Configuration Agent to apply the configuration that is pending.",
+      "pos": [
+        77,
+        149
+      ]
+    },
+    {
+      "content": "If there is no configuration pending, this method reapplies the current configuration.",
+      "pos": [
+        152,
+        238
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        244,
+        250
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        325,
+        335
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>force<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        348,
+        362
+      ]
+    },
+    {
+      "content": "If this is <bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept>, the current configuration is reapplied, even if there is a configuration pending.",
+      "pos": [
+        365,
+        467
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        472,
+        484
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        499,
+        556
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        561,
+        568
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        570,
+        594
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        599,
+        611
+      ]
+    },
+    {
+      "pos": [
+        626,
+        646
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        649,
+        712
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        718,
+        726
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        732,
+        765
+      ]
+    }
+  ],
+  "content": "\n# ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nUses the Configuration Agent to apply the configuration that is pending. \n\nIf there is no configuration pending, this method reapplies the current configuration.\n\n\n## Syntax\n------\n\n```mof\nuint32 ApplyConfiguration(\n  [in] boolean force\n);\n```\n\n## Parameters\n----------\n\n*force* \\[in\\]  \nIf this is **true**, the current configuration is reapplied, even if there is a configuration pending.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n \n\n \n\n\n\n"
+}

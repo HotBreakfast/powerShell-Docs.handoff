@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "content": "Removing the configuration files.",
+      "pos": [
+        61,
+        94
+      ]
+    },
+    {
+      "content": "RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        213,
+        286
+      ]
+    },
+    {
+      "content": "RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        295,
+        368
+      ]
+    },
+    {
+      "content": "Removes the configuration files.",
+      "pos": [
+        370,
+        402
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        404,
+        410
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        505,
+        515
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>Stage<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        528,
+        542
+      ]
+    },
+    {
+      "content": "Specifies which configuration document to remove.",
+      "pos": [
+        545,
+        594
+      ]
+    },
+    {
+      "content": "The following values are valid:",
+      "pos": [
+        595,
+        626
+      ]
+    },
+    {
+      "content": "Value",
+      "pos": [
+        629,
+        634
+      ]
+    },
+    {
+      "content": "Description",
+      "pos": [
+        636,
+        647
+      ]
+    },
+    {
+      "content": "1",
+      "pos": [
+        666,
+        667
+      ]
+    },
+    {
+      "pos": [
+        672,
+        725
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>Current<ept id=\"p1\">**</ept> configuration document (current.mof)."
+    },
+    {
+      "content": "2",
+      "pos": [
+        731,
+        732
+      ]
+    },
+    {
+      "pos": [
+        737,
+        790
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>Pending<ept id=\"p1\">**</ept> configuration document (pending.mof)."
+    },
+    {
+      "content": "4",
+      "pos": [
+        797,
+        798
+      ]
+    },
+    {
+      "pos": [
+        803,
+        858
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>Previous<ept id=\"p1\">**</ept> configuration document (previous.mof)."
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>Force<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        862,
+        876
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> to force the removal of the configuration.",
+      "pos": [
+        879,
+        930
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        935,
+        947
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        962,
+        1019
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1024,
+        1031
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1033,
+        1057
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1062,
+        1074
+      ]
+    },
+    {
+      "pos": [
+        1089,
+        1109
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1112,
+        1175
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1181,
+        1189
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1195,
+        1228
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Removing the configuration files.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_removeconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nRemoves the configuration files.\n\nSyntax\n------\n\n```mof\nuint32 RemoveConfiguration(\n  [in] uint32  Stage,\n  [in] boolean Force\n);\n```\n\nParameters\n----------\n\n*Stage* \\[in\\]  \nSpecifies which configuration document to remove. The following values are valid:\n\n|Value |Description |\n|:--- |:---|\n|**1** | The **Current** configuration document (current.mof). |\n|**2** | The **Pending** configuration document (pending.mof).  |\n|**4** | The **Previous** configuration document (previous.mof). |\n\n*Force* \\[in\\]  \n**true** to force the removal of the configuration.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
