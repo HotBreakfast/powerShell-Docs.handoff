@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "content": "Known Product Incompatibilites",
+      "pos": [
+        2,
+        32
+      ]
+    },
+    {
+      "content": "Systems that are running the following server applications should not run Windows Management Framework 5.0 at this time:",
+      "pos": [
+        36,
+        156
+      ]
+    },
+    {
+      "content": "Microsoft Exchange Server 2013",
+      "pos": [
+        162,
+        192
+      ]
+    },
+    {
+      "content": "Microsoft Exchange Server 2010 SP3",
+      "pos": [
+        195,
+        229
+      ]
+    },
+    {
+      "content": "Microsoft SharePoint Server 2013",
+      "pos": [
+        232,
+        264
+      ]
+    },
+    {
+      "content": "Microsoft SharePoint Server 2010",
+      "pos": [
+        267,
+        299
+      ]
+    },
+    {
+      "content": "System Center 2012 Virtual Machine Manager",
+      "pos": [
+        302,
+        344
+      ]
+    },
+    {
+      "content": "System Center 2012 R2 Service Management Automation",
+      "pos": [
+        347,
+        398
+      ]
+    },
+    {
+      "content": "Servers that are running the following applications can now run WMF 5.0:",
+      "pos": [
+        402,
+        474
+      ]
+    },
+    {
+      "content": "System Center 2012 Configuration Manager",
+      "pos": [
+        480,
+        520
+      ]
+    }
+  ],
+  "content": "# Known Product Incompatibilites\n\n**Systems that are running the following server applications should not run Windows Management Framework 5.0 at this time:**\n\n- Microsoft Exchange Server 2013\n- Microsoft Exchange Server 2010 SP3\n- Microsoft SharePoint Server 2013\n- Microsoft SharePoint Server 2010\n- System Center 2012 Virtual Machine Manager\n- System Center 2012 R2 Service Management Automation\n\n**Servers that are running the following applications can now run WMF 5.0:**\n\n- System Center 2012 Configuration Manager\n"
+}
