@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "content": "Execute Get on a provider directly.",
+      "pos": [
+        61,
+        96
+      ]
+    },
+    {
+      "content": "ResourceGet method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        207,
+        272
+      ]
+    },
+    {
+      "content": "ResourceGet method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        281,
+        346
+      ]
+    },
+    {
+      "pos": [
+        348,
+        400
+      ],
+      "content": "Directly calls the <bpt id=\"p1\">**</bpt>Get<ept id=\"p1\">**</ept> method of a DSC resource."
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        402,
+        408
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        613,
+        623
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ResourceType<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        636,
+        657
+      ]
+    },
+    {
+      "content": "The name of the resource to call.",
+      "pos": [
+        660,
+        693
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ModuleName<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        695,
+        714
+      ]
+    },
+    {
+      "content": "The name of the module that contains the resource to call.",
+      "pos": [
+        717,
+        775
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>resourceProperty<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        777,
+        802
+      ]
+    },
+    {
+      "content": "Specifies the resource property name and its value in a hash table as key and value, respectively.",
+      "pos": [
+        805,
+        903
+      ]
+    },
+    {
+      "content": "Use the",
+      "pos": [
+        904,
+        911
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Get-DscResource<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept> cmdlet to discover resource properties and their types.",
+      "pos": [
+        912,
+        1044
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>configurations<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        1046,
+        1070
+      ]
+    },
+    {
+      "content": "On return, contains an embedded instance of the configurations.",
+      "pos": [
+        1073,
+        1136
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        1141,
+        1153
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        1168,
+        1225
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1230,
+        1237
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1239,
+        1263
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1268,
+        1280
+      ]
+    },
+    {
+      "pos": [
+        1295,
+        1315
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1318,
+        1381
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1387,
+        1395
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1401,
+        1434
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Execute Get on a provider directly.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_resourceget'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'ResourceGet method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# ResourceGet method of the MSFT_DSCLocalConfigurationManager class\n\nDirectly calls the **Get** method of a DSC resource.\n\nSyntax\n------\n\n```mof\nuint32 ResourceGet(\n  [in]  string           ResourceType,\n  [in]  string           ModuleName,\n  [in]  uint8            resourceProperty[],\n  [out] OMI_BaseResource configurations\n);\n```\n\nParameters\n----------\n\n*ResourceType* \\[in\\]  \nThe name of the resource to call.\n\n*ModuleName* \\[in\\]  \nThe name of the module that contains the resource to call.\n\n*resourceProperty* \\[in\\]  \nSpecifies the resource property name and its value in a hash table as key and value, respectively. Use the\n[Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet to discover resource properties and their types.\n\n*configurations* \\[out\\]  \nOn return, contains an embedded instance of the configurations.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
