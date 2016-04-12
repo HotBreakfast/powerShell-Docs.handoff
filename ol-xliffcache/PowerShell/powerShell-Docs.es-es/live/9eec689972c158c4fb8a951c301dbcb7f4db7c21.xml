@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "content": "Send the configuration document to the managed node and save it as pending.",
+      "pos": [
+        61,
+        136
+      ]
+    },
+    {
+      "content": "SendConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        253,
+        324
+      ]
+    },
+    {
+      "content": "SendConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        333,
+        404
+      ]
+    },
+    {
+      "content": "Sends the configuration document to the managed node and saves it as a pending change.",
+      "pos": [
+        406,
+        492
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        494,
+        500
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        607,
+        617
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ConfigurationData<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        630,
+        656
+      ]
+    },
+    {
+      "content": "The environment data for the configuration.",
+      "pos": [
+        659,
+        702
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>force<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        704,
+        718
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> to force the configuration to stop.",
+      "pos": [
+        721,
+        765
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        770,
+        782
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        797,
+        854
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        859,
+        866
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        868,
+        892
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        897,
+        909
+      ]
+    },
+    {
+      "pos": [
+        924,
+        944
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        947,
+        1010
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1016,
+        1024
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1030,
+        1063
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Send the configuration document to the managed node and save it as pending.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_sendconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'SendConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# SendConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nSends the configuration document to the managed node and saves it as a pending change.\n\nSyntax\n------\n\n```mof\nuint32 SendConfiguration(\n  [in] uint8   ConfigurationData[],\n  [in] boolean force\n);\n```\n\nParameters\n----------\n\n*ConfigurationData* \\[in\\]  \nThe environment data for the configuration.\n\n*force* \\[in\\]  \n**true** to force the configuration to stop.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}

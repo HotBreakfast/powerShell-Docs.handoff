@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "content": "Send the configuration document to the managed node and test it against the current configuration.",
+      "pos": [
+        61,
+        159
+      ]
+    },
+    {
+      "content": "TestConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        276,
+        347
+      ]
+    },
+    {
+      "content": "TestConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        356,
+        427
+      ]
+    },
+    {
+      "content": "Sends the configuration document to the managed node and verifies the current configuration against the document.",
+      "pos": [
+        429,
+        542
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        544,
+        550
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        849,
+        859
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>configurationData<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        872,
+        898
+      ]
+    },
+    {
+      "content": "Environment data for the confuguration.",
+      "pos": [
+        901,
+        940
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>InDesiredState<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        942,
+        966
+      ]
+    },
+    {
+      "content": "On return, specifies whether the managed node is in the state specified by the configuration document.",
+      "pos": [
+        969,
+        1071
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ResourcesInDesiredState<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        1073,
+        1106
+      ]
+    },
+    {
+      "content": "On return, contains an embedded instance of the <bpt id=\"p1\">**</bpt>MSFT_ResourceInDesiredState<ept id=\"p1\">**</ept> class that specifies resources that are in the desired state.",
+      "pos": [
+        1109,
+        1250
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ResourcesNotInDesiredState<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        1252,
+        1288
+      ]
+    },
+    {
+      "content": "On return, contains an embedded instance of the <bpt id=\"p1\">**</bpt>MSFT_ResourceNotInDesiredState<ept id=\"p1\">**</ept> class that specifies resources that are not in the desired state.",
+      "pos": [
+        1291,
+        1439
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        1444,
+        1456
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        1471,
+        1528
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1533,
+        1540
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1542,
+        1566
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1571,
+        1583
+      ]
+    },
+    {
+      "pos": [
+        1598,
+        1618
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1621,
+        1684
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1690,
+        1698
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1704,
+        1737
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Send the configuration document to the managed node and test it against the current configuration.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_testconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'TestConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# TestConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nSends the configuration document to the managed node and verifies the current configuration against the document.\n\nSyntax\n------\n\n```mof\nuint32 TestConfiguration(\n  [in]  uint8                          configurationData[],\n  [out] boolean                        InDesiredState,\n  [out] MSFT_ResourceInDesiredState    ResourcesInDesiredState[],\n  [out] MSFT_ResourceNotInDesiredState ResourcesNotInDesiredState[]\n);\n```\n\nParameters\n----------\n\n*configurationData* \\[in\\]  \nEnvironment data for the confuguration.\n\n*InDesiredState* \\[out\\]  \nOn return, specifies whether the managed node is in the state specified by the configuration document.\n\n*ResourcesInDesiredState* \\[out\\]  \nOn return, contains an embedded instance of the **MSFT_ResourceInDesiredState** class that specifies resources that are in the desired state.\n\n*ResourcesNotInDesiredState* \\[out\\]  \nOn return, contains an embedded instance of the **MSFT_ResourceNotInDesiredState** class that specifies resources that are not in the desired state.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}

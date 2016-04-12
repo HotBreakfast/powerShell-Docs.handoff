@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "content": "Set Local Configuration Manager settings that are used to control Configuration Agent.",
+      "pos": [
+        61,
+        147
+      ]
+    },
+    {
+      "content": "SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        273,
+        353
+      ]
+    },
+    {
+      "content": "SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        362,
+        442
+      ]
+    },
+    {
+      "content": "Sets the Local Configuration Manager settings that are used to control the Configuration Agent.",
+      "pos": [
+        444,
+        539
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        541,
+        547
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        663,
+        673
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ConfigurationData<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        686,
+        712
+      ]
+    },
+    {
+      "content": "The environment data for the configuration.",
+      "pos": [
+        715,
+        758
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>force<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        760,
+        774
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> to force the configuration to stop.",
+      "pos": [
+        777,
+        821
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        826,
+        838
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        853,
+        910
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        915,
+        922
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        924,
+        948
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        953,
+        965
+      ]
+    },
+    {
+      "pos": [
+        980,
+        1000
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1003,
+        1066
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1072,
+        1080
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1086,
+        1119
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Set Local Configuration Manager settings that are used to control Configuration Agent.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_sendmetaconfigurationapply'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class\n\nSets the Local Configuration Manager settings that are used to control the Configuration Agent.\n\nSyntax\n------\n\n```mof\nuint32 SendMetaConfigurationApply(\n  [in] uint8   ConfigurationData[],\n  [in] boolean force\n);\n```\n\nParameters\n----------\n\n*ConfigurationData* \\[in\\]  \nThe environment data for the configuration.\n\n*force* \\[in\\]  \n**true** to force the configuration to stop.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
