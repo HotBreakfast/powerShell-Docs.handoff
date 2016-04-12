@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "content": "Starts the consistency check.",
+      "pos": [
+        61,
+        90
+      ]
+    },
+    {
+      "content": "PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        224,
+        312
+      ]
+    },
+    {
+      "content": "PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        321,
+        409
+      ]
+    },
+    {
+      "content": "Starts a consistency check by using the Task Scheduler.",
+      "pos": [
+        411,
+        466
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        468,
+        474
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        561,
+        571
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>Flags<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        584,
+        598
+      ]
+    },
+    {
+      "content": "A bitmask that specifies the type of consistency check to run.",
+      "pos": [
+        601,
+        663
+      ]
+    },
+    {
+      "content": "The following values are valid, and can be combined by using a bitwise <bpt id=\"p1\">**</bpt>OR<ept id=\"p1\">**</ept> operation:",
+      "pos": [
+        664,
+        752
+      ]
+    },
+    {
+      "content": "Value",
+      "pos": [
+        755,
+        760
+      ]
+    },
+    {
+      "content": "Description",
+      "pos": [
+        762,
+        773
+      ]
+    },
+    {
+      "content": "1",
+      "pos": [
+        792,
+        793
+      ]
+    },
+    {
+      "content": "A normal consistency check.",
+      "pos": [
+        798,
+        825
+      ]
+    },
+    {
+      "content": "2",
+      "pos": [
+        831,
+        832
+      ]
+    },
+    {
+      "content": "A continuation of a consistency check after a reboot.",
+      "pos": [
+        837,
+        890
+      ]
+    },
+    {
+      "content": "This value should not be combined with other values.",
+      "pos": [
+        891,
+        943
+      ]
+    },
+    {
+      "content": "4",
+      "pos": [
+        949,
+        950
+      ]
+    },
+    {
+      "content": "The configuration should be pulled from the pull server specified in the metaconfiguration for the node.",
+      "pos": [
+        955,
+        1059
+      ]
+    },
+    {
+      "content": "This value should always be combined with <bpt id=\"p1\">**</bpt>1<ept id=\"p1\">**</ept>, for a value of <bpt id=\"p2\">**</bpt>5<ept id=\"p2\">**</ept>.",
+      "pos": [
+        1060,
+        1130
+      ]
+    },
+    {
+      "content": "8",
+      "pos": [
+        1136,
+        1137
+      ]
+    },
+    {
+      "content": "Send status to the report server.",
+      "pos": [
+        1142,
+        1175
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        1182,
+        1194
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        1209,
+        1266
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1271,
+        1278
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1280,
+        1304
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1309,
+        1321
+      ]
+    },
+    {
+      "pos": [
+        1336,
+        1356
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1359,
+        1422
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1428,
+        1436
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1442,
+        1475
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Starts the consistency check.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_performrequiredconfigurationchecks'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class\n\nStarts a consistency check by using the Task Scheduler.\n\nSyntax\n------\n\n```mof\nuint32 PerformRequiredConfigurationChecks(\n  [in] uint32 Flags\n);\n```\n\nParameters\n----------\n\n*Flags* \\[in\\]  \nA bitmask that specifies the type of consistency check to run. The following values are valid, and can be combined by using a bitwise **OR** operation:\n\n|Value |Description |\n|:--- |:---|\n|**1** | A normal consistency check. |\n|**2** | A continuation of a consistency check after a reboot. This value should not be combined with other values. |\n|**4** | The configuration should be pulled from the pull server specified in the metaconfiguration for the node. This value should always be combined with **1**, for a value of **5**. |\n|**8** | Send status to the report server. |\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}

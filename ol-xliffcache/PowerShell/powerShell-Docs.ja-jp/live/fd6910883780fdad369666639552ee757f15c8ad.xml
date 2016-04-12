@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "content": "Get Local Configuration Manager settings that are used to control Configuration Agent.",
+      "pos": [
+        61,
+        147
+      ]
+    },
+    {
+      "content": "GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        267,
+        341
+      ]
+    },
+    {
+      "content": "GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        350,
+        424
+      ]
+    },
+    {
+      "content": "Gets the local Configuration Manager settings that are used to control the Configuration Agent.",
+      "pos": [
+        426,
+        521
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        523,
+        529
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        634,
+        644
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>MetaConfiguration<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        657,
+        684
+      ]
+    },
+    {
+      "content": "On return, contains an embedded instance of the <bpt id=\"p1\">**</bpt>MSFT_DSCMetaConfiguration<ept id=\"p1\">**</ept> class that defines the settings.",
+      "pos": [
+        687,
+        797
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        802,
+        814
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        829,
+        886
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        891,
+        898
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        900,
+        924
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        929,
+        941
+      ]
+    },
+    {
+      "pos": [
+        956,
+        976
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        979,
+        1042
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1048,
+        1056
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1062,
+        1095
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Get Local Configuration Manager settings that are used to control Configuration Agent.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_getmetaconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nGets the local Configuration Manager settings that are used to control the Configuration Agent.\n\nSyntax\n------\n\n```mof\nuint32 GetMetaConfiguration(\n  [out] MSFT_DSCMetaConfiguration MetaConfiguration\n);\n```\n\nParameters\n----------\n\n*MetaConfiguration* \\[out\\]  \nOn return, contains an embedded instance of the **MSFT_DSCMetaConfiguration** class that defines the settings.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
