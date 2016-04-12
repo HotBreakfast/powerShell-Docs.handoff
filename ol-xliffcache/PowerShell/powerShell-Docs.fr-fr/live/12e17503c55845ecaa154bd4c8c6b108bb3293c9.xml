@@ -1,0 +1,376 @@
+{
+  "nodes": [
+    {
+      "content": "MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4,
+        43
+      ]
+    },
+    {
+      "content": "The Local Configuration Manager (LCM) that controls the states of configuration files and uses Configuration Agent to apply the configurations.",
+      "pos": [
+        45,
+        188
+      ]
+    },
+    {
+      "content": "The following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.",
+      "pos": [
+        190,
+        308
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        313,
+        319
+      ]
+    },
+    {
+      "content": "Members",
+      "pos": [
+        457,
+        464
+      ]
+    },
+    {
+      "pos": [
+        474,
+        547
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>MSFT_DSCLocalConfigurationManager<ept id=\"p1\">**</ept> class has the follwing members:"
+    },
+    {
+      "content": "[Methods][]",
+      "pos": [
+        553,
+        564
+      ]
+    },
+    {
+      "content": "Methods",
+      "pos": [
+        570,
+        577
+      ]
+    },
+    {
+      "pos": [
+        579,
+        645
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>MSFT_DSCLocalConfigurationManager<ept id=\"p1\">**</ept> class has these methods."
+    },
+    {
+      "content": "Method",
+      "pos": [
+        648,
+        654
+      ]
+    },
+    {
+      "content": "Description",
+      "pos": [
+        656,
+        667
+      ]
+    },
+    {
+      "content": "ApplyConfiguration",
+      "pos": [
+        686,
+        704
+      ]
+    },
+    {
+      "content": "Uses the Configuration Agent to apply the configuration that is pending.",
+      "pos": [
+        764,
+        836
+      ]
+    },
+    {
+      "content": "DisableDebugConfiguration",
+      "pos": [
+        842,
+        867
+      ]
+    },
+    {
+      "content": "Disables DSC resource debugging.",
+      "pos": [
+        934,
+        966
+      ]
+    },
+    {
+      "content": "EnableDebugConfiguration",
+      "pos": [
+        972,
+        996
+      ]
+    },
+    {
+      "content": "Enables DSC resource debugging.",
+      "pos": [
+        1062,
+        1093
+      ]
+    },
+    {
+      "content": "GetConfiguration",
+      "pos": [
+        1099,
+        1115
+      ]
+    },
+    {
+      "pos": [
+        1173,
+        1308
+      ],
+      "content": "Sends the configuration document to the managed node and uses the <bpt id=\"p1\">**</bpt>Get<ept id=\"p1\">**</ept> method of the Configuration Agent to apply the configuration."
+    },
+    {
+      "content": "GetConfigurationResultOutput",
+      "pos": [
+        1314,
+        1342
+      ]
+    },
+    {
+      "content": "Gets the Configuration Agent output relating to a specific job.",
+      "pos": [
+        1412,
+        1475
+      ]
+    },
+    {
+      "content": "GetConfigurationStatus",
+      "pos": [
+        1481,
+        1503
+      ]
+    },
+    {
+      "content": "Get the configuration status history.",
+      "pos": [
+        1567,
+        1604
+      ]
+    },
+    {
+      "content": "GetMetaConfiguration",
+      "pos": [
+        1610,
+        1630
+      ]
+    },
+    {
+      "content": "Gets the LCM settings that are used to control Configuration Agent.",
+      "pos": [
+        1692,
+        1759
+      ]
+    },
+    {
+      "content": "PerformRequiredConfigurationChecks",
+      "pos": [
+        1765,
+        1799
+      ]
+    },
+    {
+      "content": "Starts the consistency check.",
+      "pos": [
+        1875,
+        1904
+      ]
+    },
+    {
+      "content": "RemoveConfiguration",
+      "pos": [
+        1910,
+        1929
+      ]
+    },
+    {
+      "content": "Removes the configuration files.",
+      "pos": [
+        1990,
+        2022
+      ]
+    },
+    {
+      "content": "ResourceGet",
+      "pos": [
+        2028,
+        2039
+      ]
+    },
+    {
+      "pos": [
+        2092,
+        2144
+      ],
+      "content": "Directly calls the <bpt id=\"p1\">**</bpt>Get<ept id=\"p1\">**</ept> method of a DSC resource."
+    },
+    {
+      "content": "ResourceSet",
+      "pos": [
+        2150,
+        2161
+      ]
+    },
+    {
+      "pos": [
+        2214,
+        2266
+      ],
+      "content": "Directly calls the <bpt id=\"p1\">**</bpt>Set<ept id=\"p1\">**</ept> method of a DSC resource."
+    },
+    {
+      "content": "ResourceTest",
+      "pos": [
+        2272,
+        2284
+      ]
+    },
+    {
+      "pos": [
+        2338,
+        2391
+      ],
+      "content": "Directly calls the <bpt id=\"p1\">**</bpt>Test<ept id=\"p1\">**</ept> method of a DSC resource."
+    },
+    {
+      "content": "RollBack",
+      "pos": [
+        2397,
+        2405
+      ]
+    },
+    {
+      "content": "Rolls back to a previous configuration.",
+      "pos": [
+        2455,
+        2494
+      ]
+    },
+    {
+      "content": "SendConfiguration",
+      "pos": [
+        2500,
+        2517
+      ]
+    },
+    {
+      "content": "Send the configuration document to the managed node and save it as pendingSends the configuration document to the managed node and saves it as a pending change.",
+      "pos": [
+        2576,
+        2736
+      ]
+    },
+    {
+      "content": "SendConfigurationApply",
+      "pos": [
+        2742,
+        2764
+      ]
+    },
+    {
+      "content": "Sends the configuration document to the managed node and uses the Configuration Agent to apply the configuration.",
+      "pos": [
+        2828,
+        2941
+      ]
+    },
+    {
+      "content": "SendConfigurationApplyAsync",
+      "pos": [
+        2947,
+        2974
+      ]
+    },
+    {
+      "content": "Send the configuration document to the managed node and start using the Configuration Agent to apply the configuration.",
+      "pos": [
+        3043,
+        3162
+      ]
+    },
+    {
+      "content": "Use GetConfigurationResultOutput to retrieve result output.",
+      "pos": [
+        3163,
+        3222
+      ]
+    },
+    {
+      "content": "SendMetaConfigurationApply",
+      "pos": [
+        3228,
+        3254
+      ]
+    },
+    {
+      "content": "Sets the LCM settings that are used to control the Configuration Agent.",
+      "pos": [
+        3322,
+        3393
+      ]
+    },
+    {
+      "content": "StopConfiguration",
+      "pos": [
+        3399,
+        3416
+      ]
+    },
+    {
+      "content": "Stops the configuration that is in progress.",
+      "pos": [
+        3475,
+        3519
+      ]
+    },
+    {
+      "content": "TestConfiguration",
+      "pos": [
+        3525,
+        3542
+      ]
+    },
+    {
+      "content": "Sends the configuration document to the managed node and verifies the current configuration against the document.",
+      "pos": [
+        3601,
+        3714
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        3726,
+        3738
+      ]
+    },
+    {
+      "pos": [
+        3753,
+        3773
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        3776,
+        3839
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    }
+  ],
+  "content": "\n\n# MSFT_DSCLocalConfigurationManager class\n\nThe Local Configuration Manager (LCM) that controls the states of configuration files and uses Configuration Agent to apply the configurations.\n\nThe following syntax is simplified from Managed Object Format (MOF) code and includes all of the inherited properties.\n\n## Syntax\n------\n\n``` syntax\n[ClassVersion(\"1.0.0\"), dynamic, provider(\"dsccore\"), AMENDMENT]\nclass MSFT_DSCLocalConfigurationManager\n{\n};\n```\n\n## Members\n-------\n\nThe **MSFT_DSCLocalConfigurationManager** class has the follwing members:\n\n-   [Methods][]\n\n### Methods\n\nThe **MSFT_DSCLocalConfigurationManager** class has these methods.\n\n|Method |Description |\n|:--- |:---|\n| [ApplyConfiguration](msft-dsclocalconfigurationmanager-applyconfiguration.md)| Uses the Configuration Agent to apply the configuration that is pending.| \n| [DisableDebugConfiguration](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)| Disables DSC resource debugging.| \n| [EnableDebugConfiguration](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)| Enables DSC resource debugging.| \n| [GetConfiguration](msft-dsclocalconfigurationmanager-getconfiguration.md)| Sends the configuration document to the managed node and uses the **Get** method of the Configuration Agent to apply the configuration.| \n| [GetConfigurationResultOutput](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)| Gets the Configuration Agent output relating to a specific job.| \n| [GetConfigurationStatus](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)| Get the configuration status history.| \n| [GetMetaConfiguration](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)| Gets the LCM settings that are used to control Configuration Agent.| \n| [PerformRequiredConfigurationChecks](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)| Starts the consistency check.| \n| [RemoveConfiguration](msft-dsclocalconfigurationmanager-removeconfiguration.md)| Removes the configuration files.| \n| [ResourceGet](msft-dsclocalconfigurationmanager-resourceget.md)| Directly calls the **Get** method of a DSC resource.| \n| [ResourceSet](msft-dsclocalconfigurationmanager-resourceset.md)| Directly calls the **Set** method of a DSC resource.| \n| [ResourceTest](msft-dsclocalconfigurationmanager-resourcetest.md)| Directly calls the **Test** method of a DSC resource.| \n| [RollBack](msft-dsclocalconfigurationmanager-rollback.md)| Rolls back to a previous configuration.| \n| [SendConfiguration](msft-dsclocalconfigurationmanager-sendconfiguration.md)| Send the configuration document to the managed node and save it as pendingSends the configuration document to the managed node and saves it as a pending change.| \n| [SendConfigurationApply](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)| Sends the configuration document to the managed node and uses the Configuration Agent to apply the configuration.| \n| [SendConfigurationApplyAsync](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)| Send the configuration document to the managed node and start using the Configuration Agent to apply the configuration. Use GetConfigurationResultOutput to retrieve result output.| \n| [SendMetaConfigurationApply](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)| Sets the LCM settings that are used to control the Configuration Agent.| \n| [StopConfiguration](msft-dsclocalconfigurationmanager-stopconfiguration.md)| Stops the configuration that is in progress.| \n| [TestConfiguration](msft-dsclocalconfigurationmanager-testconfiguration.md)| Sends the configuration document to the managed node and verifies the current configuration against the document.| \n\n\n\n \n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n\n \n\n \n\n\n\n"
+}

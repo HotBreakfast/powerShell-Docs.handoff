@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "content": "Send the configuration document to the managed node and start using the Configuration Agent to apply the configuration.",
+      "pos": [
+        61,
+        180
+      ]
+    },
+    {
+      "content": "Use GetConfigurationResultOutput to retrieve result output.",
+      "pos": [
+        181,
+        240
+      ]
+    },
+    {
+      "content": "SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        367,
+        448
+      ]
+    },
+    {
+      "content": "SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        457,
+        538
+      ]
+    },
+    {
+      "content": "Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.",
+      "pos": [
+        540,
+        668
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        670,
+        676
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        815,
+        825
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ConfigurationData<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        838,
+        864
+      ]
+    },
+    {
+      "content": "The environment data for the configuration.",
+      "pos": [
+        867,
+        910
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>force<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        912,
+        926
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> to force the configuration to stop.",
+      "pos": [
+        929,
+        973
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>jobId<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        975,
+        989
+      ]
+    },
+    {
+      "content": "The ID of the job for which to send the configuration.",
+      "pos": [
+        992,
+        1046
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        1051,
+        1063
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        1078,
+        1135
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1140,
+        1147
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1149,
+        1173
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1178,
+        1190
+      ]
+    },
+    {
+      "pos": [
+        1205,
+        1225
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1228,
+        1291
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1297,
+        1305
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1311,
+        1344
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Send the configuration document to the managed node and start using the Configuration Agent to apply the configuration. Use GetConfigurationResultOutput to retrieve result output.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_sendconfigurationapplyasync'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class\n\nSends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.\n\nSyntax\n------\n\n```mof\nuint32 SendConfigurationApplyAsync(\n  [in] uint8   ConfigurationData[],\n  [in] boolean force,\n  [in] string  jobId\n);\n```\n\nParameters\n----------\n\n*ConfigurationData* \\[in\\]  \nThe environment data for the configuration.\n\n*force* \\[in\\]  \n**true** to force the configuration to stop.\n\n*jobId* \\[in\\]  \nThe ID of the job for which to send the configuration.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
