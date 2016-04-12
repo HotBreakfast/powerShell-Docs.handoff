@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "content": "Enable Debug DSC Configuration.",
+      "pos": [
+        61,
+        92
+      ]
+    },
+    {
+      "content": "EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        217,
+        295
+      ]
+    },
+    {
+      "content": "EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        304,
+        382
+      ]
+    },
+    {
+      "content": "Enables DSC resource debugging.",
+      "pos": [
+        384,
+        415
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        417,
+        423
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        504,
+        514
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>BreakAll<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        527,
+        544
+      ]
+    },
+    {
+      "content": "Sets a breakpoint at every line in the resource script.",
+      "pos": [
+        547,
+        602
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        607,
+        619
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        634,
+        691
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        696,
+        703
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        705,
+        729
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        734,
+        746
+      ]
+    },
+    {
+      "pos": [
+        761,
+        781
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        784,
+        847
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        853,
+        861
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        867,
+        900
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Enable Debug DSC Configuration.'\nMS-HAID: 'cimwin32a.msft\\_dsclocalconfigurationmanager\\_enabledebugconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nEnables DSC resource debugging.\n\nSyntax\n------\n\n```mof\nuint32 EnableDebugConfiguration(\n  [in] boolean BreakAll\n);\n```\n\nParameters\n----------\n\n*BreakAll* \\[in\\]  \nSets a breakpoint at every line in the resource script.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n \n\n \n\n\n\n"
+}

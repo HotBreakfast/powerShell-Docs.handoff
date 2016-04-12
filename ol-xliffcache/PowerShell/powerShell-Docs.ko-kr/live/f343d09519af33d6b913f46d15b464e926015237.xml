@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "content": "Disable Debug DSC Configuration.",
+      "pos": [
+        61,
+        93
+      ]
+    },
+    {
+      "content": "DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        218,
+        297
+      ]
+    },
+    {
+      "content": "DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        306,
+        385
+      ]
+    },
+    {
+      "content": "Disables DSC resource debugging.",
+      "pos": [
+        387,
+        419
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        421,
+        427
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        484,
+        494
+      ]
+    },
+    {
+      "content": "This method has no parameters.",
+      "pos": [
+        507,
+        537
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        542,
+        554
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        569,
+        626
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        631,
+        638
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        640,
+        664
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        669,
+        681
+      ]
+    },
+    {
+      "pos": [
+        696,
+        716
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        719,
+        782
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        788,
+        796
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        802,
+        835
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Disable Debug DSC Configuration.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_disabledebugconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nDisables DSC resource debugging.\n\nSyntax\n------\n\n```mof\nuint32 DisableDebugConfiguration();\n```\n\nParameters\n----------\n\nThis method has no parameters.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n \n\n \n\n\n\n"
+}

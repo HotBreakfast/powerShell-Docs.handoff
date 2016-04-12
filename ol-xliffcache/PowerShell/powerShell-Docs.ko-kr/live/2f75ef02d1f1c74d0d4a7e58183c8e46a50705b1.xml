@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "content": "Execute Set on a provider directly.",
+      "pos": [
+        61,
+        96
+      ]
+    },
+    {
+      "content": "ResourceSet method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        207,
+        272
+      ]
+    },
+    {
+      "content": "ResourceSet method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        281,
+        346
+      ]
+    },
+    {
+      "pos": [
+        348,
+        400
+      ],
+      "content": "Directly calls the <bpt id=\"p1\">**</bpt>Set<ept id=\"p1\">**</ept> method of a DSC resource."
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        402,
+        408
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        577,
+        587
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ResourceType<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        600,
+        621
+      ]
+    },
+    {
+      "content": "The name of the resource to call.",
+      "pos": [
+        624,
+        657
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>ModuleName<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        659,
+        678
+      ]
+    },
+    {
+      "content": "The name of the module that contains the resource to call.",
+      "pos": [
+        681,
+        739
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>resourceProperty<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        741,
+        766
+      ]
+    },
+    {
+      "content": "Specifies the resource property name and its value in a hash table as key and value, respectively.",
+      "pos": [
+        769,
+        867
+      ]
+    },
+    {
+      "content": "Use the",
+      "pos": [
+        868,
+        875
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Get-DscResource<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dn521625.aspx)</ept> cmdlet to discover resource properties and their types.",
+      "pos": [
+        876,
+        1008
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>RebootRequired<ept id=\"p1\">*</ept> \\[out\\]",
+      "pos": [
+        1010,
+        1034
+      ]
+    },
+    {
+      "content": "On return, this property is set to <bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> if the target node needs to be rebooted.",
+      "pos": [
+        1037,
+        1121
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        1126,
+        1138
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        1153,
+        1210
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        1215,
+        1222
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        1224,
+        1248
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        1253,
+        1265
+      ]
+    },
+    {
+      "pos": [
+        1280,
+        1300
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        1303,
+        1366
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        1372,
+        1380
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        1386,
+        1419
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Execute Set on a provider directly.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_resourceset'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'ResourceSet method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# ResourceSet method of the MSFT_DSCLocalConfigurationManager class\n\nDirectly calls the **Set** method of a DSC resource.\n\nSyntax\n------\n\n```mof\nuint32 ResourceSet(\n  [in]  string  ResourceType,\n  [in]  string  ModuleName,\n  [in]  uint8   resourceProperty[],\n  [out] boolean RebootRequired\n);\n```\n\nParameters\n----------\n\n*ResourceType* \\[in\\]  \nThe name of the resource to call.\n\n*ModuleName* \\[in\\]  \nThe name of the module that contains the resource to call.\n\n*resourceProperty* \\[in\\]  \nSpecifies the resource property name and its value in a hash table as key and value, respectively. Use the\n[Get-DscResource](https://technet.microsoft.com/en-us/library/dn521625.aspx) cmdlet to discover resource properties and their types.\n\n*RebootRequired* \\[out\\]  \nOn return, this property is set to **true** if the target node needs to be rebooted.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n \n\n \n\n\n\n"
+}
