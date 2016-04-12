@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "content": "Rollback to previous configuration.",
+      "pos": [
+        61,
+        96
+      ]
+    },
+    {
+      "content": "RollBack method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        204,
+        266
+      ]
+    },
+    {
+      "content": "RollBack method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        275,
+        337
+      ]
+    },
+    {
+      "content": "Rolls back the configuration to a previous version.",
+      "pos": [
+        339,
+        390
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        392,
+        398
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        472,
+        482
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>configurationNumber<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        495,
+        523
+      ]
+    },
+    {
+      "content": "Specifies the requested configuration.",
+      "pos": [
+        526,
+        564
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        570,
+        582
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        597,
+        654
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        659,
+        666
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        668,
+        692
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        697,
+        709
+      ]
+    },
+    {
+      "pos": [
+        724,
+        744
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        747,
+        810
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        816,
+        824
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        830,
+        863
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Rollback to previous configuration.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_rollback'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'RollBack method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# RollBack method of the MSFT_DSCLocalConfigurationManager class\n\nRolls back the configuration to a previous version.\n\nSyntax\n------\n\n```mof\nuint32 RollBack(\n  [in] uint8 configurationNumber\n);\n```\n\nParameters\n----------\n\n*configurationNumber* \\[in\\]  \nSpecifies the requested configuration. \n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}

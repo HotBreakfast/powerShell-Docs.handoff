@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "content": "Stopping the configuration in progress.",
+      "pos": [
+        61,
+        100
+      ]
+    },
+    {
+      "content": "StopConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        217,
+        288
+      ]
+    },
+    {
+      "content": "StopConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        297,
+        368
+      ]
+    },
+    {
+      "content": "Stops the configuration change that is in progress.",
+      "pos": [
+        370,
+        421
+      ]
+    },
+    {
+      "content": "Syntax",
+      "pos": [
+        423,
+        429
+      ]
+    },
+    {
+      "content": "Parameters",
+      "pos": [
+        500,
+        510
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">*</bpt>force<ept id=\"p1\">*</ept> \\[in\\]",
+      "pos": [
+        523,
+        537
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>true<ept id=\"p1\">**</ept> to force the configuration to stop.",
+      "pos": [
+        540,
+        584
+      ]
+    },
+    {
+      "content": "Return value",
+      "pos": [
+        589,
+        601
+      ]
+    },
+    {
+      "content": "Returns zero on success; otherwise returns an error code.",
+      "pos": [
+        616,
+        673
+      ]
+    },
+    {
+      "content": "Remarks",
+      "pos": [
+        678,
+        685
+      ]
+    },
+    {
+      "content": "This is a static method.",
+      "pos": [
+        687,
+        711
+      ]
+    },
+    {
+      "content": "Requirements",
+      "pos": [
+        716,
+        728
+      ]
+    },
+    {
+      "pos": [
+        743,
+        763
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>MOF:<ept id=\"p1\">**</ept> DscCore.mof"
+    },
+    {
+      "pos": [
+        766,
+        829
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Namespace<ept id=\"p1\">**</ept>: Root\\Microsoft\\Windows\\DesiredStateConfiguration"
+    },
+    {
+      "content": "See also",
+      "pos": [
+        835,
+        843
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager",
+      "pos": [
+        849,
+        882
+      ]
+    }
+  ],
+  "content": "---\nDCS.appliesToProduct: 'WindowsServer\\_Dev'\nDescription: 'Stopping the configuration in progress.'\nMS-HAID: 'cimwin32a.MSFT_DSCLocalConfigurationManager\\_stopconfiguration'\nMSHAttr: 'PreferredLib:/library'\ntitle: 'StopConfiguration method of the MSFT_DSCLocalConfigurationManager class'\n---\n\n# StopConfiguration method of the MSFT_DSCLocalConfigurationManager class\n\nStops the configuration change that is in progress.\n\nSyntax\n------\n\n```mof\nuint32 StopConfiguration(\n  [in] boolean force\n);\n```\n\nParameters\n----------\n\n*force* \\[in\\]  \n**true** to force the configuration to stop.\n\n## Return value\n------------\n\nReturns zero on success; otherwise returns an error code.\n\n## Remarks\n\nThis is a static method.\n\n## Requirements\n------------\n>**MOF:** DscCore.mof\n\n>**Namespace**: Root\\Microsoft\\Windows\\DesiredStateConfiguration\n\n\n## See also\n\n\n[**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)\n\n\n \n\n \n\n\n\n"
+}
