@@ -1,0 +1,913 @@
+{
+  "nodes": [
+    {
+      "content": "Securing the MOF File",
+      "pos": [
+        2,
+        23
+      ]
+    },
+    {
+      "content": "Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0",
+      "pos": [
+        26,
+        84
+      ]
+    },
+    {
+      "content": "DSC tells the target nodes what configuration they should have by sending a MOF file with that information to each node, where the Local Configuration Manager (LCM) implements the desired",
+      "pos": [
+        86,
+        273
+      ]
+    },
+    {
+      "content": "configuration.",
+      "pos": [
+        275,
+        289
+      ]
+    },
+    {
+      "content": "Because this file contains the details of the configuration, it’s important to keep it secure.",
+      "pos": [
+        290,
+        384
+      ]
+    },
+    {
+      "content": "To do this, you can set the LCM to check the credentials of",
+      "pos": [
+        385,
+        444
+      ]
+    },
+    {
+      "content": "a user.",
+      "pos": [
+        446,
+        453
+      ]
+    },
+    {
+      "content": "This topic describes how to transmit those credentials securely to the target node by encrypting them with certificates.",
+      "pos": [
+        454,
+        574
+      ]
+    },
+    {
+      "pos": [
+        577,
+        979
+      ],
+      "content": "**Note:** This topic discusses certificates used for encryption. For encryption, a self-signed certificate is sufficient, because the private key is always kept secret and encryption does not imply trust of the document. Self-signed certificates\nshould *not* be used for authentication purposes. You should use a certificate from a trusted Certification Authority (CA) for any authentication purposes.",
+      "leadings": [
+        "",
+        ">"
+      ],
+      "nodes": [
+        {
+          "content": "**Note:** This topic discusses certificates used for encryption. For encryption, a self-signed certificate is sufficient, because the private key is always kept secret and encryption does not imply trust of the document. Self-signed certificates",
+          "pos": [
+            0,
+            245
+          ],
+          "nodes": [
+            {
+              "content": "<bpt id=\"p1\">**</bpt>Note:<ept id=\"p1\">**</ept> This topic discusses certificates used for encryption.",
+              "pos": [
+                0,
+                64
+              ]
+            },
+            {
+              "content": "For encryption, a self-signed certificate is sufficient, because the private key is always kept secret and encryption does not imply trust of the document.",
+              "pos": [
+                65,
+                220
+              ]
+            },
+            {
+              "content": "Self-signed certificates",
+              "pos": [
+                221,
+                245
+              ]
+            }
+          ]
+        },
+        {
+          "content": "should *not* be used for authentication purposes. You should use a certificate from a trusted Certification Authority (CA) for any authentication purposes.",
+          "pos": [
+            246,
+            401
+          ],
+          "nodes": [
+            {
+              "content": "should <bpt id=\"p1\">*</bpt>not<ept id=\"p1\">*</ept> be used for authentication purposes.",
+              "pos": [
+                0,
+                49
+              ]
+            },
+            {
+              "content": "You should use a certificate from a trusted Certification Authority (CA) for any authentication purposes.",
+              "pos": [
+                50,
+                155
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Prerequisites",
+      "pos": [
+        984,
+        997
+      ]
+    },
+    {
+      "content": "To successfully encrypt the credentials used to secure a DSC configuration, make sure you have the following:",
+      "pos": [
+        999,
+        1108
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Some means of issuing and distributing certificates<ept id=\"p1\">**</ept>.",
+      "pos": [
+        1112,
+        1168
+      ]
+    },
+    {
+      "content": "This topic and its examples assume you are using Active Directory Certification Authority.",
+      "pos": [
+        1169,
+        1259
+      ]
+    },
+    {
+      "content": "For more background information on",
+      "pos": [
+        1260,
+        1294
+      ]
+    },
+    {
+      "content": "Active Directory Certificate Services, see <bpt id=\"p1\">[</bpt>Active Directory Certificate Services Overview<ept id=\"p1\">](https://technet.microsoft.com/library/hh831740.aspx)</ept> and",
+      "pos": [
+        1296,
+        1444
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Active Directory Certificate Services in Windows Server 2008<ept id=\"p1\">](https://technet.microsoft.com/windowsserver/dd448615.aspx)</ept>.",
+      "pos": [
+        1446,
+        1568
+      ]
+    },
+    {
+      "pos": [
+        1571,
+        1625
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Administrative access to the target node or nodes<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Each target node has an encryption-capable certificate saved its Personal Store<ept id=\"p1\">**</ept>.",
+      "pos": [
+        1628,
+        1712
+      ]
+    },
+    {
+      "content": "In Windows PowerShell, the path to the store is Cert:\\LocalMachine\\My.",
+      "pos": [
+        1713,
+        1783
+      ]
+    },
+    {
+      "content": "The examples in this topic use the",
+      "pos": [
+        1784,
+        1818
+      ]
+    },
+    {
+      "content": "“workstation authentication” template, which you can find (along with other certificate templates) at <bpt id=\"p1\">[</bpt>Default Certificate Templates<ept id=\"p1\">](https://technet.microsoft.com/library/cc740061(v=WS.10).aspx)</ept>.",
+      "pos": [
+        1820,
+        2016
+      ]
+    },
+    {
+      "content": "If you will be running this configuration on a computer other than the target node, <bpt id=\"p1\">**</bpt>export the public key of the certificate<ept id=\"p1\">**</ept>, and then import it to the computer you will run the",
+      "pos": [
+        2019,
+        2200
+      ]
+    },
+    {
+      "content": "configuration from.",
+      "pos": [
+        2202,
+        2221
+      ]
+    },
+    {
+      "content": "Make sure that you export only the <bpt id=\"p1\">**</bpt>public<ept id=\"p1\">**</ept> key; keep the private key secure.",
+      "pos": [
+        2222,
+        2301
+      ]
+    },
+    {
+      "content": "Overall process",
+      "pos": [
+        2306,
+        2321
+      ]
+    },
+    {
+      "content": "Set up the certificates, keys, and thumbprints, making sure that each target node has copies of the certificate and the configuration computer has the public key and thumbprint.",
+      "pos": [
+        2327,
+        2504
+      ]
+    },
+    {
+      "content": "Create a configuration data block that contains the path and thumbprint of the public key.",
+      "pos": [
+        2509,
+        2599
+      ]
+    },
+    {
+      "content": "Create a configuration script that defines your desired configuration for the target node and sets up decryption on the target nodes by commanding the Local Configuration manager to decrypt the configuration data using the certificate and its thumbprint.",
+      "pos": [
+        2604,
+        2858
+      ]
+    },
+    {
+      "content": "Run the configuration, which will set the Local Configuration Manager settings and start the DSC configuration.",
+      "pos": [
+        2863,
+        2974
+      ]
+    },
+    {
+      "content": "Diagram1",
+      "pos": [
+        2978,
+        2986
+      ]
+    },
+    {
+      "content": "Certificate Requirements",
+      "pos": [
+        3033,
+        3057
+      ]
+    },
+    {
+      "content": "To enact credential encryption, a public key certificate must be available on the <bpt id=\"p1\">_</bpt>Target Node<ept id=\"p1\">_</ept> that is <bpt id=\"p2\">**</bpt>trusted<ept id=\"p2\">**</ept> by the computer being used to author the DSC configuration.",
+      "pos": [
+        3059,
+        3234
+      ]
+    },
+    {
+      "content": "This public key certificate has specific requirements for it to be used for DSC credential encryption:",
+      "pos": [
+        3235,
+        3337
+      ]
+    },
+    {
+      "pos": [
+        3342,
+        3356
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Key Usage<ept id=\"p1\">**</ept>:"
+    },
+    {
+      "content": "Must contain: 'KeyEncipherment' and 'DataEncipherment'.",
+      "pos": [
+        3362,
+        3417
+      ]
+    },
+    {
+      "pos": [
+        3423,
+        3465
+      ],
+      "content": "Should <bpt id=\"p1\">_</bpt>not<ept id=\"p1\">_</ept> contain: 'Digital Signature'."
+    },
+    {
+      "pos": [
+        3470,
+        3493
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>Enhanced Key Usage<ept id=\"p1\">**</ept>:"
+    },
+    {
+      "content": "Must contain: Document Encryption (1.3.6.1.4.1.311.80.1).",
+      "pos": [
+        3499,
+        3556
+      ]
+    },
+    {
+      "pos": [
+        3562,
+        3672
+      ],
+      "content": "Should <bpt id=\"p1\">_</bpt>not<ept id=\"p1\">_</ept> contain: Client Authentication (1.3.6.1.5.5.7.3.2) and Server Authentication (1.3.6.1.5.5.7.3.1)."
+    },
+    {
+      "content": "The Private Key for the certificate is available on the *Target Node_.",
+      "pos": [
+        3677,
+        3747
+      ]
+    },
+    {
+      "pos": [
+        3752,
+        3845
+      ],
+      "content": "The <bpt id=\"p1\">**</bpt>Provider<ept id=\"p1\">**</ept> for the certificate must be \"Microsoft RSA SChannel Cryptographic Provider\"."
+    },
+    {
+      "pos": [
+        3849,
+        4239
+      ],
+      "content": "**Recommended Best Practice:** Although you can use a certificate with containing a Key Usage of 'Digital Signature' or one of the Authentication EKU's, this will enable the encryption key \nto be more easily misused and vulnerable to attack. So it is best practice to use a certificate created specifically for the purpose of securing DSC credentials that omits these Key Usage and \nEKUs.",
+      "leadings": [
+        "",
+        ">",
+        ">"
+      ],
+      "nodes": [
+        {
+          "content": "<bpt id=\"p1\">**</bpt>Recommended Best Practice:<ept id=\"p1\">**</ept> Although you can use a certificate with containing a Key Usage of 'Digital Signature' or one of the Authentication EKU's, this will enable the encryption key",
+          "pos": [
+            0,
+            188
+          ]
+        },
+        {
+          "content": "to be more easily misused and vulnerable to attack. So it is best practice to use a certificate created specifically for the purpose of securing DSC credentials that omits these Key Usage and",
+          "pos": [
+            190,
+            381
+          ],
+          "nodes": [
+            {
+              "content": "to be more easily misused and vulnerable to attack.",
+              "pos": [
+                0,
+                51
+              ]
+            },
+            {
+              "content": "So it is best practice to use a certificate created specifically for the purpose of securing DSC credentials that omits these Key Usage and",
+              "pos": [
+                52,
+                191
+              ]
+            }
+          ]
+        },
+        {
+          "content": "EKUs.",
+          "pos": [
+            383,
+            388
+          ]
+        }
+      ]
+    },
+    {
+      "pos": [
+        4243,
+        4353
+      ],
+      "content": "Any existing certificate on the <bpt id=\"p1\">_</bpt>Target Node<ept id=\"p1\">_</ept> that meets these criteria can be used to secure DSC credentials."
+    },
+    {
+      "content": "Certificate creation",
+      "pos": [
+        4358,
+        4378
+      ]
+    },
+    {
+      "content": "There are two approaches you can take to create and use the required Encryption Certificate (public-private key pair).",
+      "pos": [
+        4380,
+        4498
+      ]
+    },
+    {
+      "pos": [
+        4503,
+        4592
+      ],
+      "content": "Create it on the <bpt id=\"p1\">**</bpt>Target Node<ept id=\"p1\">**</ept> and export just the public key to the <bpt id=\"p2\">**</bpt>Authoring Node<ept id=\"p2\">**</ept>"
+    },
+    {
+      "pos": [
+        4596,
+        4685
+      ],
+      "content": "Create it on the <bpt id=\"p1\">**</bpt>Authoring Node<ept id=\"p1\">**</ept> and export the entire key pair to the <bpt id=\"p2\">**</bpt>Target Node<ept id=\"p2\">**</ept>"
+    },
+    {
+      "content": "Method 1 is recommended because the private key used to decrypt credentials in the MOF stays on the Target Node at all times.",
+      "pos": [
+        4687,
+        4812
+      ]
+    },
+    {
+      "content": "Creating the Certificate on the Target Node",
+      "pos": [
+        4819,
+        4862
+      ]
+    },
+    {
+      "content": "The private key must be kept secret, because is used to decrypt the MOF on the <bpt id=\"p1\">**</bpt>Target Node<ept id=\"p1\">**</ept>",
+      "pos": [
+        4864,
+        4958
+      ]
+    },
+    {
+      "content": "The easiest way to do that is to create the private key certificate on the <bpt id=\"p1\">**</bpt>Target Node<ept id=\"p1\">**</ept>, and copy the <bpt id=\"p2\">**</bpt>public key certificate<ept id=\"p2\">**</ept> to the computer being used to author the DSC configuration into a MOF file.",
+      "pos": [
+        4959,
+        5166
+      ]
+    },
+    {
+      "content": "The following example:",
+      "pos": [
+        5167,
+        5189
+      ]
+    },
+    {
+      "pos": [
+        5194,
+        5238
+      ],
+      "content": "creates a certificate on the <bpt id=\"p1\">**</bpt>Target node<ept id=\"p1\">**</ept>"
+    },
+    {
+      "pos": [
+        5243,
+        5301
+      ],
+      "content": "exports the public key certificate on the <bpt id=\"p1\">**</bpt>Target node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        5306,
+        5401
+      ],
+      "content": "imports the public key certificate into the <bpt id=\"p1\">**</bpt>my<ept id=\"p1\">**</ept> certificate store on the <bpt id=\"p2\">**</bpt>Authoring node<ept id=\"p2\">**</ept>."
+    },
+    {
+      "content": "On the Target Node: create and export the certificate",
+      "pos": [
+        5408,
+        5461
+      ]
+    },
+    {
+      "content": "Authoring Node: Windows Server 2016 and Windows 10",
+      "pos": [
+        5463,
+        5513
+      ]
+    },
+    {
+      "pos": [
+        5845,
+        5937
+      ],
+      "content": "Once exported, the <ph id=\"ph1\">```DscPublicKey.cer```</ph> would need to be copied to the <bpt id=\"p1\">**</bpt>Authoring Node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Authoring Node: Windows Server 2012 R2/Windows 8.1 and earlier",
+      "pos": [
+        5940,
+        6002
+      ]
+    },
+    {
+      "content": "Because the New-SelfSignedCertificate cmdlet on Windows Operating Systems prior to Windows 10 and Windows Server 2016 do not support the <bpt id=\"p1\">**</bpt>Type<ept id=\"p1\">**</ept> parameter, an alternate method of creating this certificate is required on these operating systems.",
+      "pos": [
+        6004,
+        6249
+      ]
+    },
+    {
+      "content": "In this case you can use <ph id=\"ph1\">```makecert.exe```</ph> or <ph id=\"ph2\">```certutil.exe```</ph> to create the certificate.",
+      "pos": [
+        6250,
+        6342
+      ]
+    },
+    {
+      "pos": [
+        6344,
+        6583
+      ],
+      "content": "An alternate method is to <bpt id=\"p1\">[</bpt>download the New-SelfSignedCertificateEx.ps1 script from Microsoft Script Center<ept id=\"p1\">](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6)</ept> and use it to create the certificate instead:"
+    },
+    {
+      "pos": [
+        7702,
+        7794
+      ],
+      "content": "Once exported, the <ph id=\"ph1\">```DscPublicKey.cer```</ph> would need to be copied to the <bpt id=\"p1\">**</bpt>Authoring Node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "On the Authoring Node: import the cert’s public key",
+      "pos": [
+        7801,
+        7852
+      ]
+    },
+    {
+      "content": "Creating the Certificate on the Authoring Node",
+      "pos": [
+        8000,
+        8046
+      ]
+    },
+    {
+      "content": "Alternately, the encryption certificate can be created on the <bpt id=\"p1\">**</bpt>Authoring Node<ept id=\"p1\">**</ept>, exported with the <bpt id=\"p2\">**</bpt>private key<ept id=\"p2\">**</ept> as a PFX file and then imported on the <bpt id=\"p3\">**</bpt>Target Node<ept id=\"p3\">**</ept>.",
+      "pos": [
+        8047,
+        8218
+      ]
+    },
+    {
+      "content": "This is the current method for implementing DSC credential encryption on <bpt id=\"p1\">_</bpt>Nano Server<ept id=\"p1\">_</ept>.",
+      "pos": [
+        8219,
+        8306
+      ]
+    },
+    {
+      "content": "Although the PFX is secured with a password it should be kept secure during transit.",
+      "pos": [
+        8307,
+        8391
+      ]
+    },
+    {
+      "content": "The following example:",
+      "pos": [
+        8392,
+        8414
+      ]
+    },
+    {
+      "pos": [
+        8419,
+        8467
+      ],
+      "content": "creates a certificate on the <bpt id=\"p1\">**</bpt>Authoring node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        8472,
+        8548
+      ],
+      "content": "exports the certificate including the private key on the <bpt id=\"p1\">**</bpt>Authoring node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        8553,
+        8663
+      ],
+      "content": "removes the private key from the <bpt id=\"p1\">**</bpt>Authoring node<ept id=\"p1\">**</ept>, but keeps the public key certificate in the <bpt id=\"p2\">**</bpt>my<ept id=\"p2\">**</ept> store."
+    },
+    {
+      "pos": [
+        8668,
+        8759
+      ],
+      "content": "imports the private key certificate into the root certificate store on the <bpt id=\"p1\">**</bpt>Target node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "pos": [
+        8765,
+        8850
+      ],
+      "content": "it must be added to the root store so that it will be trusted by the <bpt id=\"p1\">**</bpt>Target node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "On the Authoring Node: create and export the certificate",
+      "pos": [
+        8857,
+        8913
+      ]
+    },
+    {
+      "content": "Target Node: Windows Server 2016 and Windows 10",
+      "pos": [
+        8915,
+        8962
+      ]
+    },
+    {
+      "pos": [
+        9680,
+        9770
+      ],
+      "content": "Once exported, the <ph id=\"ph1\">```DscPrivateKey.cer```</ph> would need to be copied to the <bpt id=\"p1\">**</bpt>Target Node<ept id=\"p1\">**</ept>."
+    },
+    {
+      "content": "Target Node: Windows Server 2012 R2/Windows 8.1 and earlier",
+      "pos": [
+        9773,
+        9832
+      ]
+    },
+    {
+      "content": "Because the New-SelfSignedCertificate cmdlet on Windows Operating Systems prior to Windows 10 and Windows Server 2016 do not support the <bpt id=\"p1\">**</bpt>Type<ept id=\"p1\">**</ept> parameter, an alternate method of creating this certificate is required on these operating systems.",
+      "pos": [
+        9834,
+        10079
+      ]
+    },
+    {
+      "content": "In this case you can use <ph id=\"ph1\">```makecert.exe```</ph> or <ph id=\"ph2\">```certutil.exe```</ph> to create the certificate.",
+      "pos": [
+        10080,
+        10172
+      ]
+    },
+    {
+      "pos": [
+        10174,
+        10413
+      ],
+      "content": "An alternate method is to <bpt id=\"p1\">[</bpt>download the New-SelfSignedCertificateEx.ps1 script from Microsoft Script Center<ept id=\"p1\">](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6)</ept> and use it to create the certificate instead:"
+    },
+    {
+      "content": "On the Target Node: import the cert’s private key as a trusted root",
+      "pos": [
+        11923,
+        11990
+      ]
+    },
+    {
+      "pos": [
+        12267,
+        12457
+      ],
+      "content": "Note: If your target node is a <bpt id=\"p1\">_</bpt>Nano Server<ept id=\"p1\">_</ept>, you should use the CertOC.exe application to import the private key certificate because the <ph id=\"ph1\">```Import-PfxCertificate```</ph> cmdlet is not available."
+    },
+    {
+      "content": "Configuration data",
+      "pos": [
+        12601,
+        12619
+      ]
+    },
+    {
+      "content": "The configuration data block defines which target nodes to operate on, whether or not to encrypt the credentials, the means of encryption, and other information.",
+      "pos": [
+        12621,
+        12782
+      ]
+    },
+    {
+      "content": "For more information on the configuration data block, see <bpt id=\"p1\">[</bpt>Separating Configuration and Environment Data<ept id=\"p1\">](configData.md)</ept>.",
+      "pos": [
+        12783,
+        12904
+      ]
+    },
+    {
+      "content": "The elements that can be configured for each node that are related to credential encryption are:",
+      "pos": [
+        12906,
+        13002
+      ]
+    },
+    {
+      "pos": [
+        13005,
+        13103
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>NodeName<ept id=\"p1\">**</ept> - the name of the target node that the credential encryption is being configured for."
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>PsDscAllowPlainTextPassword<ept id=\"p1\">**</ept> - whether unencrypted credentials will be allowed to be passed to this node.",
+      "pos": [
+        13106,
+        13214
+      ]
+    },
+    {
+      "content": "This is <bpt id=\"p1\">**</bpt>not recommended<ept id=\"p1\">**</ept>.",
+      "pos": [
+        13215,
+        13243
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>Thumbprint<ept id=\"p1\">**</ept> - the thumbprint of the certificate that will be used to decrypt the credentials in the DSC Configuration on the <bpt id=\"p2\">_</bpt>Target Node<ept id=\"p2\">_</ept>.",
+      "pos": [
+        13246,
+        13388
+      ]
+    },
+    {
+      "content": "This certificate must exist in the Local Machine certificate store on the Target Node.",
+      "pos": [
+        13391,
+        13477
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>CertificateFile<ept id=\"p1\">**</ept> - the certificate file (containing the public key only) that should be used to encrypt the credentials for the <bpt id=\"p2\">_</bpt>Target Node<ept id=\"p2\">_</ept>.",
+      "pos": [
+        13482,
+        13627
+      ]
+    },
+    {
+      "content": "This must be either a DER encoded binary X.509 or Base-64 encoded X.509 format certificate file.",
+      "pos": [
+        13628,
+        13724
+      ]
+    },
+    {
+      "content": "This example shows a configuration data block that specifies a target node to act on named targetNode, the path to the public key certificate file (named targetNode.cer), and the thumbprint for the public key.",
+      "pos": [
+        13726,
+        13935
+      ]
+    },
+    {
+      "content": "Configuration script",
+      "pos": [
+        14614,
+        14634
+      ]
+    },
+    {
+      "content": "In the configuration script itself, use the <ph id=\"ph1\">`PsCredential`</ph> parameter to ensure that credentials are stored for the shortest possible time.",
+      "pos": [
+        14636,
+        14774
+      ]
+    },
+    {
+      "content": "When you run the supplied example, DSC will prompt you for credentials and then encrypt the MOF file using the CertificateFile that is associated with the target node in the configuration data block.",
+      "pos": [
+        14775,
+        14974
+      ]
+    },
+    {
+      "content": "This code example copies a file from a share that is secured to a user.",
+      "pos": [
+        14975,
+        15046
+      ]
+    },
+    {
+      "content": "Setting up decryption",
+      "pos": [
+        15485,
+        15506
+      ]
+    },
+    {
+      "content": "Before <bpt id=\"p1\">[</bpt><ph id=\"ph1\">`Start-DscConfiguration`</ph><ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> can work, you have to tell the Local Configuration Manager on each target node which certificate to use to decrypt the credentials, using the CertificateID resource to verify the certificate’s thumbprint.",
+      "pos": [
+        15508,
+        15805
+      ]
+    },
+    {
+      "content": "This example function will find the appropriate local certificate (you might have to customize it so it will find the exact certificate you want to use):",
+      "pos": [
+        15806,
+        15959
+      ]
+    },
+    {
+      "content": "With the certificate identified by its thumbprint, the configuration script can be updated to use the value:",
+      "pos": [
+        16313,
+        16421
+      ]
+    },
+    {
+      "content": "Running the configuration",
+      "pos": [
+        16983,
+        17008
+      ]
+    },
+    {
+      "content": "At this point, you can run the configuration, which will output two files:",
+      "pos": [
+        17010,
+        17084
+      ]
+    },
+    {
+      "content": "A *.meta.mof file that configures the Local Configuration Manager to decrypt the credentials using the certificate that is stored on the local machine store and identified by its thumbprint.",
+      "pos": [
+        17089,
+        17279
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt><ph id=\"ph1\">`Set-DscLocalConfigurationManager`</ph><ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dn521621.aspx)</ept> applies the *.meta.mof file.",
+      "pos": [
+        17280,
+        17404
+      ]
+    },
+    {
+      "content": "A MOF file that actually applies the configuration.",
+      "pos": [
+        17408,
+        17459
+      ]
+    },
+    {
+      "content": "Start-DscConfiguration applies the configuration.",
+      "pos": [
+        17460,
+        17509
+      ]
+    },
+    {
+      "content": "These commands will accomplish those steps:",
+      "pos": [
+        17511,
+        17554
+      ]
+    },
+    {
+      "content": "This example would push the DSC configuration to the target node.",
+      "pos": [
+        17956,
+        18021
+      ]
+    },
+    {
+      "content": "The DSC configuration can also be applied using a DSC Pull Server if one is available.",
+      "pos": [
+        18022,
+        18108
+      ]
+    },
+    {
+      "pos": [
+        18110,
+        18236
+      ],
+      "content": "See <bpt id=\"p1\">[</bpt>Setting up a DSC pull client<ept id=\"p1\">](pullClient.md)</ept> for more information on applying DSC configurations using a DSC Pull Server."
+    },
+    {
+      "content": "Credential Encryption Module Example",
+      "pos": [
+        18241,
+        18277
+      ]
+    },
+    {
+      "content": "Here is a full example that incorporates all of these steps, plus a helper cmdlet that exports and copies the public keys:",
+      "pos": [
+        18279,
+        18401
+      ]
+    }
+  ],
+  "content": "# Securing the MOF File\n\n>Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0\n\nDSC tells the target nodes what configuration they should have by sending a MOF file with that information to each node, where the Local Configuration Manager (LCM) implements the desired \nconfiguration. Because this file contains the details of the configuration, it’s important to keep it secure. To do this, you can set the LCM to check the credentials of \na user. This topic describes how to transmit those credentials securely to the target node by encrypting them with certificates.\n\n>**Note:** This topic discusses certificates used for encryption. For encryption, a self-signed certificate is sufficient, because the private key is always kept secret and encryption does not imply trust of the document. Self-signed certificates\n>should *not* be used for authentication purposes. You should use a certificate from a trusted Certification Authority (CA) for any authentication purposes.\n\n## Prerequisites\n\nTo successfully encrypt the credentials used to secure a DSC configuration, make sure you have the following:\n\n* **Some means of issuing and distributing certificates**. This topic and its examples assume you are using Active Directory Certification Authority. For more background information on \nActive Directory Certificate Services, see [Active Directory Certificate Services Overview](https://technet.microsoft.com/library/hh831740.aspx) and \n[Active Directory Certificate Services in Windows Server 2008](https://technet.microsoft.com/windowsserver/dd448615.aspx).\n* **Administrative access to the target node or nodes**.\n* **Each target node has an encryption-capable certificate saved its Personal Store**. In Windows PowerShell, the path to the store is Cert:\\LocalMachine\\My. The examples in this topic use the \n“workstation authentication” template, which you can find (along with other certificate templates) at [Default Certificate Templates](https://technet.microsoft.com/library/cc740061(v=WS.10).aspx).\n* If you will be running this configuration on a computer other than the target node, **export the public key of the certificate**, and then import it to the computer you will run the \nconfiguration from. Make sure that you export only the **public** key; keep the private key secure.\n\n## Overall process\n\n 1. Set up the certificates, keys, and thumbprints, making sure that each target node has copies of the certificate and the configuration computer has the public key and thumbprint.\n 2. Create a configuration data block that contains the path and thumbprint of the public key.\n 3. Create a configuration script that defines your desired configuration for the target node and sets up decryption on the target nodes by commanding the Local Configuration manager to decrypt the configuration data using the certificate and its thumbprint.\n 4. Run the configuration, which will set the Local Configuration Manager settings and start the DSC configuration.\n\n![Diagram1](images/CredentialEncryptionDiagram1.png)\n\n## Certificate Requirements\n\nTo enact credential encryption, a public key certificate must be available on the _Target Node_ that is **trusted** by the computer being used to author the DSC configuration.\nThis public key certificate has specific requirements for it to be used for DSC credential encryption:\n 1. **Key Usage**:\n   - Must contain: 'KeyEncipherment' and 'DataEncipherment'.\n   - Should _not_ contain: 'Digital Signature'.\n 2. **Enhanced Key Usage**:\n   - Must contain: Document Encryption (1.3.6.1.4.1.311.80.1).\n   - Should _not_ contain: Client Authentication (1.3.6.1.5.5.7.3.2) and Server Authentication (1.3.6.1.5.5.7.3.1).\n 3. The Private Key for the certificate is available on the *Target Node_.\n 4. The **Provider** for the certificate must be \"Microsoft RSA SChannel Cryptographic Provider\".\n \n>**Recommended Best Practice:** Although you can use a certificate with containing a Key Usage of 'Digital Signature' or one of the Authentication EKU's, this will enable the encryption key \n>to be more easily misused and vulnerable to attack. So it is best practice to use a certificate created specifically for the purpose of securing DSC credentials that omits these Key Usage and \n>EKUs.\n  \nAny existing certificate on the _Target Node_ that meets these criteria can be used to secure DSC credentials.\n\n## Certificate creation\n\nThere are two approaches you can take to create and use the required Encryption Certificate (public-private key pair).\n\n1. Create it on the **Target Node** and export just the public key to the **Authoring Node**\n2. Create it on the **Authoring Node** and export the entire key pair to the **Target Node**\n\nMethod 1 is recommended because the private key used to decrypt credentials in the MOF stays on the Target Node at all times.\n\n\n### Creating the Certificate on the Target Node\n\nThe private key must be kept secret, because is used to decrypt the MOF on the **Target Node**\nThe easiest way to do that is to create the private key certificate on the **Target Node**, and copy the **public key certificate** to the computer being used to author the DSC configuration into a MOF file.\nThe following example:\n 1. creates a certificate on the **Target node**\n 2. exports the public key certificate on the **Target node**.\n 3. imports the public key certificate into the **my** certificate store on the **Authoring node**.\n\n#### On the Target Node: create and export the certificate\n>Authoring Node: Windows Server 2016 and Windows 10\n\n```powershell\n# note: These steps need to be performed in an Administrator PowerShell session\n$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' -HashAlgorithm SHA256\n# export the public key certificate\n$cert | Export-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -Force\n```\nOnce exported, the ```DscPublicKey.cer``` would need to be copied to the **Authoring Node**.\n\n>Authoring Node: Windows Server 2012 R2/Windows 8.1 and earlier\n\nBecause the New-SelfSignedCertificate cmdlet on Windows Operating Systems prior to Windows 10 and Windows Server 2016 do not support the **Type** parameter, an alternate method of creating this certificate is required on these operating systems.\nIn this case you can use ```makecert.exe``` or ```certutil.exe``` to create the certificate.\n\nAn alternate method is to [download the New-SelfSignedCertificateEx.ps1 script from Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6) and use it to create the certificate instead:\n```powershell\n# note: These steps need to be performed in an Administrator PowerShell session\n# and in the folder that contains New-SelfSignedCertificateEx.ps1\n. .\\New-SelfSignedCertificateEx.ps1\nNew-SelfsignedCertificateEx `\n    -Subject \"CN=${ENV:ComputerName}\" `\n    -EKU 'Document Encryption','Server Authentication','Client Authentication' `\n    -KeyUsage 'DigitalSignature, KeyEncipherment, DataEncipherment' `\n    -SAN ${ENV:ComputerName} `\n    -FriendlyName 'DSC Credential Encryption certificate' `\n    -Exportable `\n    -StoreLocation 'LocalMachine' `\n    -StoreName 'My' `\n    -KeyLength 2048 `\n    -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `\n    -AlgorithmName 'RSA' `\n    -SignatureAlgorithm 'SHA256'\n# Locate the newly created certificate\n$Cert = Get-ChildItem -Path cert:\\LocalMachine\\My `\n    | Where-Object {\n        ($_.FriendlyName -eq 'DSC Credential Encryption certificate') `\n        -and ($_.Subject -eq \"CN=${ENV:ComputerName}\")\n    } | Select-Object -First 1\n# export the public key certificate\n$cert | Export-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -Force\n```\nOnce exported, the ```DscPublicKey.cer``` would need to be copied to the **Authoring Node**.\n\n#### On the Authoring Node: import the cert’s public key\n```powershell\n# Import to the my store\nImport-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -CertStoreLocation Cert:\\LocalMachine\\My\n```\n\n### Creating the Certificate on the Authoring Node\nAlternately, the encryption certificate can be created on the **Authoring Node**, exported with the **private key** as a PFX file and then imported on the **Target Node**.\nThis is the current method for implementing DSC credential encryption on _Nano Server_.\nAlthough the PFX is secured with a password it should be kept secure during transit.\nThe following example:\n 1. creates a certificate on the **Authoring node**.\n 2. exports the certificate including the private key on the **Authoring node**.\n 3. removes the private key from the **Authoring node**, but keeps the public key certificate in the **my** store.\n 4. imports the private key certificate into the root certificate store on the **Target node**.\n   - it must be added to the root store so that it will be trusted by the **Target node**.\n\n#### On the Authoring Node: create and export the certificate\n>Target Node: Windows Server 2016 and Windows 10\n\n```powershell\n# note: These steps need to be performed in an Administrator PowerShell session\n$cert = New-SelfSignedCertificate -Type DocumentEncryptionCertLegacyCsp -DnsName 'DscEncryptionCert' -HashAlgorithm SHA256\n# export the private key certificate\n$mypwd = ConvertTo-SecureString -String \"YOUR_PFX_PASSWD\" -Force -AsPlainText\n$cert | Export-PfxCertificate -FilePath \"$env:temp\\DscPrivateKey.pfx\" -Password $mypwd -Force\n# remove the private key certificate from the node but keep the public key certificate\n$cert | Export-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -Force\n$cert | Remove-Item -Force\nImport-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -CertStoreLocation Cert:\\LocalMachine\\My\n```\nOnce exported, the ```DscPrivateKey.cer``` would need to be copied to the **Target Node**.\n\n>Target Node: Windows Server 2012 R2/Windows 8.1 and earlier\n\nBecause the New-SelfSignedCertificate cmdlet on Windows Operating Systems prior to Windows 10 and Windows Server 2016 do not support the **Type** parameter, an alternate method of creating this certificate is required on these operating systems.\nIn this case you can use ```makecert.exe``` or ```certutil.exe``` to create the certificate.\n\nAn alternate method is to [download the New-SelfSignedCertificateEx.ps1 script from Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/Self-signed-certificate-5920a7c6) and use it to create the certificate instead:\n```powershell\n# note: These steps need to be performed in an Administrator PowerShell session\n# and in the folder that contains New-SelfSignedCertificateEx.ps1\n. .\\New-SelfSignedCertificateEx.ps1\nNew-SelfsignedCertificateEx `\n    -Subject \"CN=${ENV:ComputerName}\" `\n    -EKU 'Document Encryption','Server Authentication','Client Authentication' `\n    -KeyUsage 'DigitalSignature, KeyEncipherment, DataEncipherment' `\n    -SAN ${ENV:ComputerName} `\n    -FriendlyName 'DSC Credential Encryption certificate' `\n    -Exportable `\n    -StoreLocation 'LocalMachine' `\n    -StoreName 'My' `\n    -KeyLength 2048 `\n    -ProviderName 'Microsoft Enhanced Cryptographic Provider v1.0' `\n    -AlgorithmName 'RSA' `\n    -SignatureAlgorithm 'SHA256'\n# Locate the newly created certificate\n$Cert = Get-ChildItem -Path cert:\\LocalMachine\\My `\n    | Where-Object {\n        ($_.FriendlyName -eq 'DSC Credential Encryption certificate') `\n        -and ($_.Subject -eq \"CN=${ENV:ComputerName}\")\n    } | Select-Object -First 1\n# export the public key certificate\n$mypwd = ConvertTo-SecureString -String \"YOUR_PFX_PASSWD\" -Force -AsPlainText\n$cert | Export-PfxCertificate -FilePath \"$env:temp\\DscPrivateKey.pfx\" -Password $mypwd -Force\n# remove the private key certificate from the node but keep the public key certificate\n$cert | Export-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -Force\n$cert | Remove-Item -Force\nImport-Certificate -FilePath \"$env:temp\\DscPublicKey.cer\" -CertStoreLocation Cert:\\LocalMachine\\My\n```\n\n#### On the Target Node: import the cert’s private key as a trusted root\n```powershell\n# Import to the root store so that it is trusted\n$mypwd = ConvertTo-SecureString -String \"YOUR_PFX_PASSWD\" -Force -AsPlainText\nImport-PfxCertificate -FilePath \"$env:temp\\DscPrivateKey.pfx\" -CertStoreLocation Cert:\\LocalMachine\\Root -Password $mypwd > $null\n```\n\nNote: If your target node is a _Nano Server_, you should use the CertOC.exe application to import the private key certificate because the ```Import-PfxCertificate``` cmdlet is not available.\n```powershell\n# Import to the root store so that it is trusted\ncertoc.exe -ImportPFX -p YOUR_PFX_PASSWD Root c:\\temp\\DscPrivateKey.pfx\n```\n\n## Configuration data\n\nThe configuration data block defines which target nodes to operate on, whether or not to encrypt the credentials, the means of encryption, and other information. For more information on the configuration data block, see [Separating Configuration and Environment Data](configData.md).\n\nThe elements that can be configured for each node that are related to credential encryption are:\n* **NodeName** - the name of the target node that the credential encryption is being configured for.\n* **PsDscAllowPlainTextPassword** - whether unencrypted credentials will be allowed to be passed to this node. This is **not recommended**.\n* **Thumbprint** - the thumbprint of the certificate that will be used to decrypt the credentials in the DSC Configuration on the _Target Node_. **This certificate must exist in the Local Machine certificate store on the Target Node.**\n* **CertificateFile** - the certificate file (containing the public key only) that should be used to encrypt the credentials for the _Target Node_. This must be either a DER encoded binary X.509 or Base-64 encoded X.509 format certificate file.\n\nThis example shows a configuration data block that specifies a target node to act on named targetNode, the path to the public key certificate file (named targetNode.cer), and the thumbprint for the public key.\n\n```powershell\n$ConfigData= @{ \n    AllNodes = @(     \n            @{  \n                # The name of the node we are describing \n                NodeName = \"targetNode\" \n\n                # The path to the .cer file containing the \n                # public key of the Encryption Certificate \n                # used to encrypt credentials for this node \n                CertificateFile = \"C:\\publicKeys\\targetNode.cer\" \n\n         \n                # The thumbprint of the Encryption Certificate \n                # used to decrypt the credentials on target node \n                Thumbprint = \"AC23EA3A9E291A75757A556D0B71CBBF8C4F6FD8\" \n            }; \n        );    \n    }\n```\n\n## Configuration script\n\nIn the configuration script itself, use the `PsCredential` parameter to ensure that credentials are stored for the shortest possible time. When you run the supplied example, DSC will prompt you for credentials and then encrypt the MOF file using the CertificateFile that is associated with the target node in the configuration data block. This code example copies a file from a share that is secured to a user.\n\n```\nconfiguration CredentialEncryptionExample \n{ \n    param( \n        [Parameter(Mandatory=$true)] \n        [ValidateNotNullorEmpty()] \n        [PsCredential] $credential \n        ) \n    \n\n    Node $AllNodes.NodeName \n    { \n        File exampleFile \n        { \n            SourcePath = \"\\\\Server\\share\\path\\file.ext\" \n            DestinationPath = \"C:\\destinationPath\" \n            Credential = $credential \n        } \n    } \n}\n```\n\n## Setting up decryption\n\nBefore [`Start-DscConfiguration`](https://technet.microsoft.com/en-us/library/dn521623.aspx) can work, you have to tell the Local Configuration Manager on each target node which certificate to use to decrypt the credentials, using the CertificateID resource to verify the certificate’s thumbprint. This example function will find the appropriate local certificate (you might have to customize it so it will find the exact certificate you want to use):\n\n```powershell\n# Get the certificate that works for encryption \nfunction Get-LocalEncryptionCertificateThumbprint \n{ \n    (dir Cert:\\LocalMachine\\my) | %{\n        # Verify the certificate is for Encryption and valid \n        if ($_.PrivateKey.KeyExchangeAlgorithm -and $_.Verify()) \n        { \n            return $_.Thumbprint \n        } \n    } \n}\n```\n\nWith the certificate identified by its thumbprint, the configuration script can be updated to use the value:\n\n```powershell\nconfiguration CredentialEncryptionExample \n{ \n    param( \n        [Parameter(Mandatory=$true)] \n        [ValidateNotNullorEmpty()] \n        [PsCredential] $credential \n        ) \n    \n\n    Node $AllNodes.NodeName \n    { \n        File exampleFile \n        { \n            SourcePath = \"\\\\Server\\share\\path\\file.ext\" \n            DestinationPath = \"C:\\destinationPath\" \n            Credential = $credential \n        } \n        \n        LocalConfigurationManager \n        { \n             CertificateId = $node.Thumbprint \n        } \n    } \n}\n```\n\n## Running the configuration\n\nAt this point, you can run the configuration, which will output two files:\n\n * A *.meta.mof file that configures the Local Configuration Manager to decrypt the credentials using the certificate that is stored on the local machine store and identified by its thumbprint. [`Set-DscLocalConfigurationManager`](https://technet.microsoft.com/en-us/library/dn521621.aspx) applies the *.meta.mof file.\n * A MOF file that actually applies the configuration. Start-DscConfiguration applies the configuration.\n\nThese commands will accomplish those steps:\n\n```powershell\nWrite-Host \"Generate DSC Configuration...\"\nCredentialEncryptionExample -ConfigurationData $ConfigData -OutputPath .\\CredentialEncryptionExample\n\nWrite-Host \"Setting up LCM to decrypt credentials...\"\nSet-DscLocalConfigurationManager .\\CredentialEncryptionExample -Verbose \n \nWrite-Host \"Starting Configuration...\"\nStart-DscConfiguration .\\CredentialEncryptionExample -wait -Verbose\n```\n\nThis example would push the DSC configuration to the target node.\nThe DSC configuration can also be applied using a DSC Pull Server if one is available.\n\nSee [Setting up a DSC pull client](pullClient.md) for more information on applying DSC configurations using a DSC Pull Server.\n\n## Credential Encryption Module Example\n\nHere is a full example that incorporates all of these steps, plus a helper cmdlet that exports and copies the public keys:\n\n```powershell\n# A simple example of using credentials\nconfiguration CredentialEncryptionExample\n{\n    param(\n        [Parameter(Mandatory=$true)]\n        [ValidateNotNullorEmpty()]\n        [PsCredential] $credential\n        )\n    \n\n    Node $AllNodes.NodeName\n    {\n        File exampleFile\n        {\n            SourcePath = \"\\\\server\\share\\file.txt\"\n            DestinationPath = \"C:\\Users\\user\"\n            Credential = $credential\n        }\n        \n        LocalConfigurationManager\n        {\n            CertificateId = $node.Thumbprint\n        }\n    }\n}\n\n# A Helper to invoke the configuration, with the correct public key \n# To encrypt the configuration credentials\nfunction Start-CredentialEncryptionExample\n{\n    [CmdletBinding()]\n    param ($computerName)\n\n\n    [string] $thumbprint = Get-EncryptionCertificate -computerName $computerName -Verbose\n    Write-Verbose \"using cert: $thumbprint\"\n\n    $certificatePath = join-path -Path \"$env:SystemDrive\\$script:publicKeyFolder\" -childPath \"$computername.EncryptionCertificate.cer\"         \n\n    $ConfigData=    @{\n        AllNodes = @(     \n                        @{  \n                            # The name of the node we are describing\n                            NodeName = \"$computerName\"\n\n                            # The path to the .cer file containing the\n                            # public key of the Encryption Certificate\n                            CertificateFile = \"$certificatePath\"\n\n                            # The thumbprint of the Encryption Certificate\n                            # used to decrypt the credentials\n                            Thumbprint = $thumbprint\n                        };\n                    );    \n    }\n\n    Write-Verbose \"Generate DSC Configuration...\"\n    CredentialEncryptionExample -ConfigurationData $ConfigData -OutputPath .\\CredentialEncryptionExample `\n        -credential (Get-Credential -UserName \"$env:USERDOMAIN\\$env:USERNAME\" -Message \"Enter credentials for configuration\") \n\n    Write-Verbose \"Setting up LCM to decrypt credentials...\"\n    Set-DscLocalConfigurationManager .\\CredentialEncryptionExample -Verbose \n\n    Write-Verbose \"Starting Configuration...\"\n    Start-DscConfiguration .\\CredentialEncryptionExample -wait -Verbose\n\n}\n\n\n#region HelperFunctions\n\n# The folder name for the exported public keys\n$script:publicKeyFolder = \"publicKeys\"\n\n# Get the certificate that works for encryptions\nfunction Get-EncryptionCertificate\n{\n    [CmdletBinding()]\n    param ($computerName)\n    $returnValue= Invoke-Command -ComputerName $computerName -ScriptBlock {\n            $certificates = dir Cert:\\LocalMachine\\my\n\n            $certificates | %{\n                    # Verify the certificate is for Encryption and valid\n                    if ($_.PrivateKey.KeyExchangeAlgorithm -and $_.Verify())\n                    {\n                        # Create the folder to hold the exported public key\n                        $folder= Join-Path -Path $env:SystemDrive\\ -ChildPath $using:publicKeyFolder\n                        if (! (Test-Path $folder))\n                        {\n                            md $folder | Out-Null\n                        }\n\n                        # Export the public key to a well known location\n                        $certPath = Export-Certificate -Cert $_ -FilePath (Join-Path -path $folder -childPath \"EncryptionCertificate.cer\") \n\n                        # Return the thumbprint, and exported certificate path\n                        return @($_.Thumbprint,$certPath);\n                    }\n                  }\n        }\n    Write-Verbose \"Identified and exported cert...\"\n    # Copy the exported certificate locally\n    $destinationPath = join-path -Path \"$env:SystemDrive\\$script:publicKeyFolder\" -childPath \"$computername.EncryptionCertificate.cer\"\n    Copy-Item -Path (join-path -path \\\\$computername -childPath $returnValue[1].FullName.Replace(\":\",\"$\"))  $destinationPath | Out-Null\n\n    # Return the thumbprint\n    return $returnValue[0]\n}\n\nStart-CredentialEncryptionExample\n```\n"
+}
