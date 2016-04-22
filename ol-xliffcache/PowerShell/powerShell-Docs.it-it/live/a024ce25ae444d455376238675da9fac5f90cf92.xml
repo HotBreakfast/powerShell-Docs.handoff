@@ -1,0 +1,558 @@
+{
+  "nodes": [
+    {
+      "content": "Overview",
+      "pos": [
+        3,
+        11
+      ]
+    },
+    {
+      "content": "Configurations",
+      "pos": [
+        30,
+        44
+      ]
+    },
+    {
+      "content": "Enacting configurations",
+      "pos": [
+        69,
+        92
+      ]
+    },
+    {
+      "content": "Using resources with multiple versions",
+      "pos": [
+        125,
+        163
+      ]
+    },
+    {
+      "content": "Specifying cross-node dependencies",
+      "pos": [
+        185,
+        219
+      ]
+    },
+    {
+      "content": "Configuration data",
+      "pos": [
+        251,
+        269
+      ]
+    },
+    {
+      "content": "Credential options in configuration data",
+      "pos": [
+        291,
+        331
+      ]
+    },
+    {
+      "content": "Running DSC with user credentials",
+      "pos": [
+        364,
+        397
+      ]
+    },
+    {
+      "content": "Securing the configuration MOF file",
+      "pos": [
+        417,
+        452
+      ]
+    },
+    {
+      "content": "Partial Configurations",
+      "pos": [
+        472,
+        494
+      ]
+    },
+    {
+      "content": "Resources",
+      "pos": [
+        519,
+        528
+      ]
+    },
+    {
+      "content": "Built-in resources",
+      "pos": [
+        548,
+        566
+      ]
+    },
+    {
+      "content": "Archive Resource",
+      "pos": [
+        593,
+        609
+      ]
+    },
+    {
+      "content": "Environment Resource",
+      "pos": [
+        636,
+        656
+      ]
+    },
+    {
+      "content": "File Resource",
+      "pos": [
+        687,
+        700
+      ]
+    },
+    {
+      "content": "Group Resource",
+      "pos": [
+        724,
+        738
+      ]
+    },
+    {
+      "content": "Log Resource",
+      "pos": [
+        763,
+        775
+      ]
+    },
+    {
+      "content": "Package Resource",
+      "pos": [
+        798,
+        814
+      ]
+    },
+    {
+      "content": "Registry Resource",
+      "pos": [
+        841,
+        858
+      ]
+    },
+    {
+      "content": "Script Resource",
+      "pos": [
+        886,
+        901
+      ]
+    },
+    {
+      "content": "Service Resource",
+      "pos": [
+        927,
+        943
+      ]
+    },
+    {
+      "content": "User Resource",
+      "pos": [
+        970,
+        983
+      ]
+    },
+    {
+      "content": "WindowsFeature Resource",
+      "pos": [
+        1007,
+        1030
+      ]
+    },
+    {
+      "content": "WindowsProcess Resource",
+      "pos": [
+        1064,
+        1087
+      ]
+    },
+    {
+      "content": "Authoring custom resources",
+      "pos": [
+        1120,
+        1146
+      ]
+    },
+    {
+      "content": "MOF-based custom resources",
+      "pos": [
+        1176,
+        1202
+      ]
+    },
+    {
+      "content": "MOF-based resource in C",
+      "pos": [
+        1235,
+        1258
+      ]
+    },
+    {
+      "content": "Class-based custom resouces",
+      "pos": [
+        1293,
+        1320
+      ]
+    },
+    {
+      "content": "Composite resources",
+      "pos": [
+        1354,
+        1373
+      ]
+    },
+    {
+      "content": "Debugging DSC resources",
+      "pos": [
+        1411,
+        1434
+      ]
+    },
+    {
+      "content": "Calling DSC resource methods directly",
+      "pos": [
+        1459,
+        1496
+      ]
+    },
+    {
+      "content": "Writing a single-instance DSC resource (best practice)",
+      "pos": [
+        1526,
+        1580
+      ]
+    },
+    {
+      "content": "Resource authoring checklist",
+      "pos": [
+        1606,
+        1634
+      ]
+    },
+    {
+      "content": "Configuring the Local Configuration Manager (LCM)",
+      "pos": [
+        1671,
+        1720
+      ]
+    },
+    {
+      "content": "Configuring the LCM in PowerShell 4.0",
+      "pos": [
+        1741,
+        1778
+      ]
+    },
+    {
+      "content": "The DSC pull model",
+      "pos": [
+        1799,
+        1817
+      ]
+    },
+    {
+      "content": "Setting up a web pull server",
+      "pos": [
+        1822,
+        1850
+      ]
+    },
+    {
+      "content": "Setting up a DSC SMB pull server",
+      "pos": [
+        1871,
+        1903
+      ]
+    },
+    {
+      "content": "Setting up a pull client",
+      "pos": [
+        1927,
+        1951
+      ]
+    },
+    {
+      "content": "Setting up a pull client using configuration names",
+      "pos": [
+        1973,
+        2023
+      ]
+    },
+    {
+      "content": "Setting up a pull client using configuration ID",
+      "pos": [
+        2056,
+        2103
+      ]
+    },
+    {
+      "content": "Using a DSC report server",
+      "pos": [
+        2132,
+        2157
+      ]
+    },
+    {
+      "content": "Pull server best practices",
+      "pos": [
+        2180,
+        2206
+      ]
+    },
+    {
+      "content": "Troubleshooting DSC",
+      "pos": [
+        2229,
+        2248
+      ]
+    },
+    {
+      "content": "DSC on Linux",
+      "pos": [
+        2273,
+        2285
+      ]
+    },
+    {
+      "content": "Getting started with DSC for Linux",
+      "pos": [
+        2290,
+        2324
+      ]
+    },
+    {
+      "content": "Built-in resorces for Linux",
+      "pos": [
+        2352,
+        2379
+      ]
+    },
+    {
+      "content": "nxArchive Resource",
+      "pos": [
+        2410,
+        2428
+      ]
+    },
+    {
+      "content": "nxEnvironment Resource",
+      "pos": [
+        2458,
+        2480
+      ]
+    },
+    {
+      "content": "nxFile Resource",
+      "pos": [
+        2514,
+        2529
+      ]
+    },
+    {
+      "content": "nxFileLine Resource",
+      "pos": [
+        2556,
+        2575
+      ]
+    },
+    {
+      "content": "nxGroup Resource",
+      "pos": [
+        2606,
+        2622
+      ]
+    },
+    {
+      "content": "nxPackage Resource",
+      "pos": [
+        2650,
+        2668
+      ]
+    },
+    {
+      "content": "nxService Resource",
+      "pos": [
+        2698,
+        2716
+      ]
+    },
+    {
+      "content": "nxSshAuthorizedKeys Resource",
+      "pos": [
+        2746,
+        2774
+      ]
+    },
+    {
+      "content": "nxUser Resource",
+      "pos": [
+        2814,
+        2829
+      ]
+    },
+    {
+      "content": "DSC MOF Reference",
+      "pos": [
+        2854,
+        2871
+      ]
+    },
+    {
+      "content": "MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        2876,
+        2915
+      ]
+    },
+    {
+      "content": "ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        2960,
+        3032
+      ]
+    },
+    {
+      "content": "DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3096,
+        3175
+      ]
+    },
+    {
+      "content": "EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3246,
+        3324
+      ]
+    },
+    {
+      "content": "GetConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3394,
+        3464
+      ]
+    },
+    {
+      "content": "GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3526,
+        3608
+      ]
+    },
+    {
+      "content": "GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3682,
+        3758
+      ]
+    },
+    {
+      "content": "GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3826,
+        3900
+      ]
+    },
+    {
+      "content": "PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        3966,
+        4054
+      ]
+    },
+    {
+      "content": "RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4134,
+        4207
+      ]
+    },
+    {
+      "content": "ResourceGet method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4272,
+        4337
+      ]
+    },
+    {
+      "content": "ResourceSet method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4394,
+        4459
+      ]
+    },
+    {
+      "content": "ResourceTest method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4516,
+        4582
+      ]
+    },
+    {
+      "content": "RollBack method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4640,
+        4702
+      ]
+    },
+    {
+      "content": "SendConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4756,
+        4827
+      ]
+    },
+    {
+      "content": "SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        4890,
+        4966
+      ]
+    },
+    {
+      "content": "SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        5034,
+        5115
+      ]
+    },
+    {
+      "content": "SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        5188,
+        5268
+      ]
+    },
+    {
+      "content": "StopConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        5340,
+        5411
+      ]
+    },
+    {
+      "content": "TestConfiguration method of the MSFT_DSCLocalConfigurationManager class",
+      "pos": [
+        5474,
+        5545
+      ]
+    },
+    {
+      "content": "More Resources",
+      "pos": [
+        5606,
+        5620
+      ]
+    },
+    {
+      "content": "Whitepapers",
+      "pos": [
+        5625,
+        5636
+      ]
+    }
+  ],
+  "content": "# [Overview](overview.md)\n\n# [Configurations](configurations.md)\n## [Enacting configurations](enactingConfigurations.md)\n## [Using resources with multiple versions](sxsResource.md)\n## [Specifying cross-node dependencies](crossNodeDependencies.md)\n## [Configuration data](configData.md)\n### [Credential options in configuration data](configDataCredentials.md)\n### [Running DSC with user credentials](runAsUser.md)\n## [Securing the configuration MOF file](secureMOF.md)\n## [Partial Configurations](partialConfigs.md)\n\n# [Resources](resources.md)\n## [Built-in resources](builtInResource.md)\n### [Archive Resource](archiveResource.md)\n### [Environment Resource](environmentResource.md)\n### [File Resource](fileResource.md)\n### [Group Resource](groupResource.md)\n### [Log Resource](logResource.md)\n### [Package Resource](packageResource.md)\n### [Registry Resource](registryResource.md)\n### [Script Resource](scriptResource.md)\n### [Service Resource](serviceResource.md)\n### [User Resource](userResource.md)\n### [WindowsFeature Resource](windowsfeatureResource.md)\n### [WindowsProcess Resource](windowsProcessResource.md)\n## [Authoring custom resources](authoringResource.md) \n### [MOF-based custom resources](authoringResourceMOF.md)\n#### [MOF-based resource in C#](authoringResourceMofCS.md)\n### [Class-based custom resouces](authoringResourceClass.md)\n### [Composite resources](authoringResourceComposite.md)\n### [Debugging DSC resources](debugResource.md)\n### [Calling DSC resource methods directly](directCallResource.md)\n### [Writing a single-instance DSC resource (best practice)](singleInstance.md)\n### [Resource authoring checklist](resourceAuthoringChecklist.md)\n\n# [Configuring the Local Configuration Manager (LCM)](metaConfig.md)\n## [Configuring the LCM in PowerShell 4.0](metaConfig4.md)\n\n# The DSC pull model\n## [Setting up a web pull server](pullServer.md)\n## [Setting up a DSC SMB pull server](pullServerSMB.md)\n## [Setting up a pull client](pullClient.md)\n### [Setting up a pull client using configuration names](pullClientConfigNames.md)\n### [Setting up a pull client using configuration ID](pullClientConfigID.md)\n## [Using a DSC report server](reportServer.md)\n## [Pull server best practices](secureServer.md)\n\n# [Troubleshooting DSC](troubleshooting.md)\n\n# DSC on Linux\n## [Getting started with DSC for Linux](lnxGettingStarted.md)\n## [Built-in resorces for Linux](lnxBuiltInResources.md)\n### [nxArchive Resource](lnxArchiveResource.md)\n### [nxEnvironment Resource](lnxEnvironmentResource.md)\n### [nxFile Resource](lnxFileResource.md)\n### [nxFileLine Resource](lnxFileLineResource.md)\n### [nxGroup Resource](lnxGroupResource.md)\n### [nxPackage Resource](lnxPackageResource.md)\n### [nxService Resource](lnxServiceResource.md)\n### [nxSshAuthorizedKeys Resource](lnxSshAuthorizedKeysResource.md)\n### [nxUser Resource](lnxUserResource.md)\n\n# DSC MOF Reference\n## [MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager.md)\n### [ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-applyconfiguration.md)\n### [DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-disabledebugconfiguration.md)\n### [EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-enabledebugconfiguration.md)\n### [GetConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-getconfiguration.md)\n### [GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-getconfigurationresultoutput.md)\n### [GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-getconfigurationstatus.md)\n### [GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-getmetaconfiguration.md)\n### [PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-performrequiredconfigurationchecks.md)\n### [RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-removeconfiguration.md)\n### [ResourceGet method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-resourceget.md)\n### [ResourceSet method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-resourceset.md)\n### [ResourceTest method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-resourcetest.md)\n### [RollBack method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-rollback.md)\n### [SendConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-sendconfiguration.md)\n### [SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-sendconfigurationapply.md)\n### [SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-sendconfigurationapplyasync.md)\n### [SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-sendmetaconfigurationapply.md)\n### [StopConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-stopconfiguration.md)\n### [TestConfiguration method of the MSFT_DSCLocalConfigurationManager class](msft-dsclocalconfigurationmanager-testconfiguration.md)\n\n# More Resources\n## [Whitepapers](whitepapers.md)\n"
+}
