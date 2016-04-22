@@ -1,0 +1,713 @@
+{
+  "nodes": [
+    {
+      "content": "PowerShell Remoting Security Considerations",
+      "pos": [
+        2,
+        45
+      ]
+    },
+    {
+      "content": "PowerShell Remoting is the recommended way to manage Windows systems.",
+      "pos": [
+        47,
+        116
+      ]
+    },
+    {
+      "content": "PowerShell Remoting is enabled by default in Windows Server 2012 R2.",
+      "pos": [
+        117,
+        185
+      ]
+    },
+    {
+      "content": "This document covers security concerns,",
+      "pos": [
+        186,
+        225
+      ]
+    },
+    {
+      "content": "recommendations, and best practices when using PowerShell Remoting.",
+      "pos": [
+        227,
+        294
+      ]
+    },
+    {
+      "content": "What is PowerShell Remoting?",
+      "pos": [
+        299,
+        327
+      ]
+    },
+    {
+      "content": "PowerShell Remoting uses <bpt id=\"p1\">[</bpt>Windows Remote Management (WinRM)<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)</ept>, which is the Microsoft implementation of the",
+      "pos": [
+        329,
+        507
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Web Services for Managment (WS-Managment)<ept id=\"p1\">](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)</ept> protocol, to allow users to run PowerShell commands on remote",
+      "pos": [
+        508,
+        692
+      ]
+    },
+    {
+      "content": "computers.",
+      "pos": [
+        693,
+        703
+      ]
+    },
+    {
+      "content": "You can find more information about using PowerShell Remoting at <bpt id=\"p1\">[</bpt>Running Remote Commands<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/dd819505.aspx)</ept>.",
+      "pos": [
+        704,
+        854
+      ]
+    },
+    {
+      "content": "PowerShell Remoting is not the same as using the <bpt id=\"p1\">**</bpt>ComputerName<ept id=\"p1\">**</ept> parameter of a cmdlet to run it on a remote computer, which uses Remote Procedure Call (RPC)",
+      "pos": [
+        856,
+        1014
+      ]
+    },
+    {
+      "content": "as its underlying protocol.",
+      "pos": [
+        1015,
+        1042
+      ]
+    },
+    {
+      "content": "PowerShell Remoting default settings",
+      "pos": [
+        1048,
+        1084
+      ]
+    },
+    {
+      "content": "PowerShell Remoting (and WinRM) listen on the following ports:",
+      "pos": [
+        1086,
+        1148
+      ]
+    },
+    {
+      "content": "HTTP: 5985",
+      "pos": [
+        1152,
+        1162
+      ]
+    },
+    {
+      "content": "HTTPS: 5986",
+      "pos": [
+        1165,
+        1176
+      ]
+    },
+    {
+      "content": "By default, PowerShell Remoting only allows connections from members of the Administrator's group.",
+      "pos": [
+        1178,
+        1276
+      ]
+    },
+    {
+      "content": "Sessions are launched under the user's context, so all operating",
+      "pos": [
+        1277,
+        1341
+      ]
+    },
+    {
+      "content": "system access controls applied to individual users and groups continue to apply to them while connected over PowerShell Remoting.",
+      "pos": [
+        1342,
+        1471
+      ]
+    },
+    {
+      "content": "On private networks, the default Windows Firewall rule for PowerShell Remoting accepts all connections.",
+      "pos": [
+        1473,
+        1576
+      ]
+    },
+    {
+      "content": "On public networks, the default Windows Firewall rule allows PowerShell",
+      "pos": [
+        1577,
+        1648
+      ]
+    },
+    {
+      "content": "Remoting connections only from within the same subnet.",
+      "pos": [
+        1649,
+        1703
+      ]
+    },
+    {
+      "content": "You have to explicitly change that rule to open PowerShell Remoting to all connections on a public network.",
+      "pos": [
+        1704,
+        1811
+      ]
+    },
+    {
+      "pos": [
+        1814,
+        1993
+      ],
+      "content": "**Warning:** The firewall rule for public networks is meant to protect the computer from potentially malicious external connection attempts. Use caution when removing \nthis rule.",
+      "leadings": [
+        "",
+        ">"
+      ],
+      "nodes": [
+        {
+          "content": "**Warning:** The firewall rule for public networks is meant to protect the computer from potentially malicious external connection attempts. Use caution when removing",
+          "pos": [
+            0,
+            166
+          ],
+          "nodes": [
+            {
+              "content": "<bpt id=\"p1\">**</bpt>Warning:<ept id=\"p1\">**</ept> The firewall rule for public networks is meant to protect the computer from potentially malicious external connection attempts.",
+              "pos": [
+                0,
+                140
+              ]
+            },
+            {
+              "content": "Use caution when removing",
+              "pos": [
+                141,
+                166
+              ]
+            }
+          ]
+        },
+        {
+          "content": "this rule.",
+          "pos": [
+            168,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "content": "Process isolation",
+      "pos": [
+        1998,
+        2015
+      ]
+    },
+    {
+      "content": "PowerShell Remoting uses <bpt id=\"p1\">[</bpt>Windows Remote Management (WinRM)<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426)</ept>.aspx) for communication between computers.",
+      "pos": [
+        2017,
+        2187
+      ]
+    },
+    {
+      "content": "WinRM runs as a service under the Network Service account, and spawns isolated processes running as user accounts to host PowerShell instances.",
+      "pos": [
+        2189,
+        2332
+      ]
+    },
+    {
+      "content": "An instance of PowerShell running as one",
+      "pos": [
+        2333,
+        2373
+      ]
+    },
+    {
+      "content": "user has no access to a process running an instance of PowerShell as another user.",
+      "pos": [
+        2374,
+        2456
+      ]
+    },
+    {
+      "content": "Event logs generated by Powershell Remoting",
+      "pos": [
+        2461,
+        2504
+      ]
+    },
+    {
+      "content": "FireEye has provided a good summary of the event logs and other security evidence generated by PowerShell Remoting sessions, available at",
+      "pos": [
+        2506,
+        2643
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Investigating PowerShell Attacks<ept id=\"p1\">](https://www.fireeye.com/content/dam/fireeye-www/global/en/solutions/pdfs/wp-lazanciyan-investigating-powershell-attacks.pdf)</ept>.",
+      "pos": [
+        2646,
+        2806
+      ]
+    },
+    {
+      "content": "Encryption and transport protocols",
+      "pos": [
+        2811,
+        2845
+      ]
+    },
+    {
+      "content": "It is helpful to consider the security of a PowerShell Remoting connection security from two perspectives: initial authentication, and ongoing communication.",
+      "pos": [
+        2847,
+        3004
+      ]
+    },
+    {
+      "content": "Regardless of the transport protocol used (HTTP or HTTPS), PowerShell Remoting always encrypts all communication after initial authentication with a per-session AES-256 symmetric key.",
+      "pos": [
+        3007,
+        3190
+      ]
+    },
+    {
+      "content": "Initial authentication",
+      "pos": [
+        3200,
+        3222
+      ]
+    },
+    {
+      "content": "Authentication confirms the identity of the client to the server - and ideally - the server to the client.",
+      "pos": [
+        3224,
+        3330
+      ]
+    },
+    {
+      "content": "When a client connects to a domain server using its computer name (i.e.: server01, or server01.contoso.com), the default authentication protocol is",
+      "pos": [
+        3336,
+        3483
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Kerberos<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378747.aspx)</ept>.",
+      "pos": [
+        3485,
+        3568
+      ]
+    },
+    {
+      "content": "Kerberos guarantees both the user identity and server identity without sending any sort of reusable credential.",
+      "pos": [
+        3569,
+        3680
+      ]
+    },
+    {
+      "content": "When a client connects to a domain server using its IP address, or connects to a workgroup server, Kerberos authentication is not possible.",
+      "pos": [
+        3682,
+        3821
+      ]
+    },
+    {
+      "content": "In that case, PowerShell",
+      "pos": [
+        3822,
+        3846
+      ]
+    },
+    {
+      "content": "remoting relies on the <bpt id=\"p1\">[</bpt>NTLM authentication protocol<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749.aspx)</ept>.",
+      "pos": [
+        3847,
+        3973
+      ]
+    },
+    {
+      "content": "The NTLM authentication",
+      "pos": [
+        3974,
+        3997
+      ]
+    },
+    {
+      "content": "protocol guarantees the user identity without sending any sort of delegable credential.",
+      "pos": [
+        3998,
+        4085
+      ]
+    },
+    {
+      "content": "To prove user identity, the NTLM protocol requires that both the client",
+      "pos": [
+        4086,
+        4157
+      ]
+    },
+    {
+      "content": "and server compute a session key from the user's password without ever exchanging the password itself.",
+      "pos": [
+        4158,
+        4260
+      ]
+    },
+    {
+      "content": "The server typically does not know the user's password, so it communicates with",
+      "pos": [
+        4261,
+        4340
+      ]
+    },
+    {
+      "content": "the domain controller, which does know the user's password and calculates the session key for the server.",
+      "pos": [
+        4342,
+        4447
+      ]
+    },
+    {
+      "content": "The NTLM protocol does not, however, guarantee server identity.",
+      "pos": [
+        4456,
+        4519
+      ]
+    },
+    {
+      "content": "As with all protocols that use NTLM for authentication, an attacker with access to a domain-joined computer's machine",
+      "pos": [
+        4520,
+        4637
+      ]
+    },
+    {
+      "content": "account could invoke the domain controller to compute an NTLM session-key and thereby impersonate the server.",
+      "pos": [
+        4638,
+        4747
+      ]
+    },
+    {
+      "content": "NTLM-based authentication is disabled by default, but may be permitted by either configuring SSL on the target server, or by configuring the WinRM TrustedHosts setting.",
+      "pos": [
+        4749,
+        4917
+      ]
+    },
+    {
+      "content": "Using SSL certificates to validate server identity during NTLM-based connections",
+      "pos": [
+        4928,
+        5008
+      ]
+    },
+    {
+      "content": "Since the NTLM authentication protocol cannot ensure the identity of the target server (only that it already knows your password), you can configure target servers",
+      "pos": [
+        5010,
+        5173
+      ]
+    },
+    {
+      "content": "to use SSL for PowerShell Remoting.",
+      "pos": [
+        5174,
+        5209
+      ]
+    },
+    {
+      "content": "Assigning a SSL certificate to the target server (if issued by a Certificate Authority that the client also trusts) enables",
+      "pos": [
+        5210,
+        5333
+      ]
+    },
+    {
+      "content": "NTLM-based authentication that guarantees both the user identity and server identity.",
+      "pos": [
+        5334,
+        5419
+      ]
+    },
+    {
+      "content": "Ignoring NTLM-based server identity errors",
+      "pos": [
+        5430,
+        5472
+      ]
+    },
+    {
+      "content": "If deploying a SSL certificate to a server for NTLM connections is infeasible, you may suppress the resulting identity errors by adding the server to the WinRM",
+      "pos": [
+        5480,
+        5639
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>TrustedHosts<ept id=\"p1\">**</ept> list.",
+      "pos": [
+        5640,
+        5662
+      ]
+    },
+    {
+      "content": "Please note that adding a server name to the TrustedHosts list should not be considered as any form of statement of the trustworthiness of",
+      "pos": [
+        5663,
+        5801
+      ]
+    },
+    {
+      "content": "the hosts themselves - as the NTLM authentication protocol cannot guarantee that you are in fact connecting to the host you are intending to connect to.",
+      "pos": [
+        5802,
+        5954
+      ]
+    },
+    {
+      "content": "Instead, you should consider the TrustedHosts setting to be the list of hosts for which you wish to suppress the error generated by being unable to verify the server's identity.",
+      "pos": [
+        5955,
+        6132
+      ]
+    },
+    {
+      "content": "Ongoing Communication",
+      "pos": [
+        6147,
+        6168
+      ]
+    },
+    {
+      "content": "Once initial authentication is complete, the <bpt id=\"p1\">[</bpt>PowerShell Remoting Protocol<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/dd357801.aspx)</ept> encrypts all ongoing communication",
+      "pos": [
+        6170,
+        6336
+      ]
+    },
+    {
+      "content": "with a per-session AES-256 symmetric key.",
+      "pos": [
+        6337,
+        6378
+      ]
+    },
+    {
+      "content": "Making the second hop",
+      "pos": [
+        6386,
+        6407
+      ]
+    },
+    {
+      "content": "By default, PowerShell Remoting uses Kerberos (if available) or NTLM for authentication.",
+      "pos": [
+        6409,
+        6497
+      ]
+    },
+    {
+      "content": "Both of these protocols authenticate to the remote machine without sending credentials to it.",
+      "pos": [
+        6498,
+        6591
+      ]
+    },
+    {
+      "content": "This is the most secure way to authenticate, but because the remote machine does not have the user's credentials, it cannot access other computers and services on the user's behalf.",
+      "pos": [
+        6592,
+        6773
+      ]
+    },
+    {
+      "content": "This is known as the \"Double-Hop\" problem.",
+      "pos": [
+        6775,
+        6817
+      ]
+    },
+    {
+      "content": "There are several ways to avoid this problem:",
+      "pos": [
+        6819,
+        6864
+      ]
+    },
+    {
+      "content": "Kerberos Constrained Delegation",
+      "pos": [
+        6870,
+        6901
+      ]
+    },
+    {
+      "content": "For highly trusted servers, you can enable <bpt id=\"p1\">[</bpt>Kerberos Constrained Delegation<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/cc995228.aspx)</ept>.",
+      "pos": [
+        6903,
+        7039
+      ]
+    },
+    {
+      "content": "This allows the remote server to impersonate the",
+      "pos": [
+        7040,
+        7088
+      ]
+    },
+    {
+      "content": "authenticated user to a specified list of computers and services.",
+      "pos": [
+        7089,
+        7154
+      ]
+    },
+    {
+      "content": "Trust between remote computers",
+      "pos": [
+        7160,
+        7190
+      ]
+    },
+    {
+      "pos": [
+        7192,
+        7331
+      ],
+      "content": "If you trust users connected remotely to <bpt id=\"p1\">*</bpt>Server1<ept id=\"p1\">*</ept> to resources on <bpt id=\"p2\">*</bpt>Server2<ept id=\"p2\">*</ept>, you can explicitly grant <bpt id=\"p3\">*</bpt>Server1<ept id=\"p3\">*</ept> access to those resources."
+    },
+    {
+      "content": "Use explicit credentials when accessing remote resources",
+      "pos": [
+        7337,
+        7393
+      ]
+    },
+    {
+      "content": "You can explicitly pass your credentials to a remote resource by using the <bpt id=\"p1\">**</bpt>Credential<ept id=\"p1\">**</ept> parameter of a cmdlet.",
+      "pos": [
+        7395,
+        7507
+      ]
+    },
+    {
+      "content": "For example:",
+      "pos": [
+        7508,
+        7520
+      ]
+    },
+    {
+      "content": "CredSSP",
+      "pos": [
+        7650,
+        7657
+      ]
+    },
+    {
+      "content": "You can use the <bpt id=\"p1\">[</bpt>Credential Security Support Provicer (CredSSP)<ept id=\"p1\">](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352.aspx)</ept> for authentication (by specifying \"CredSSP\" as the",
+      "pos": [
+        7659,
+        7846
+      ]
+    },
+    {
+      "content": "value of the <ph id=\"ph1\">`Authentication`</ph> parameter of a call to the <bpt id=\"p1\">[</bpt>New-PSSession<ept id=\"p1\">](https://technet.microsoft.com/en-us/library/hh849717.aspx)</ept> cmdlet.",
+      "pos": [
+        7848,
+        7987
+      ]
+    },
+    {
+      "content": "CredSSP passes credentials in plain text to the server,",
+      "pos": [
+        7988,
+        8043
+      ]
+    },
+    {
+      "content": "so using it opens you up to credential theft attacks.",
+      "pos": [
+        8044,
+        8097
+      ]
+    },
+    {
+      "content": "If the remote computer is compromised, the attacker has access to the user's credentials.",
+      "pos": [
+        8098,
+        8187
+      ]
+    },
+    {
+      "content": "CredSSP is disabled by default on both client and",
+      "pos": [
+        8188,
+        8237
+      ]
+    },
+    {
+      "content": "server computers.",
+      "pos": [
+        8239,
+        8256
+      ]
+    },
+    {
+      "content": "You should enable CredSSP only in the most trusted environments.",
+      "pos": [
+        8257,
+        8321
+      ]
+    },
+    {
+      "content": "For example, a domain administrator connecting to a domain controller because the domain controller is",
+      "pos": [
+        8322,
+        8424
+      ]
+    },
+    {
+      "content": "highly trusted.",
+      "pos": [
+        8426,
+        8441
+      ]
+    },
+    {
+      "content": "For more information about security concerns when using CredSSP for PowerShell Remoting, see",
+      "pos": [
+        8443,
+        8535
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">[</bpt>Accidental Sabotage: Beware of CredSSP<ept id=\"p1\">](http://www.powershellmagazine.com/2014/03/06/accidental-sabotage-beware-of-credssp)</ept>.",
+      "pos": [
+        8537,
+        8662
+      ]
+    },
+    {
+      "pos": [
+        8664,
+        8853
+      ],
+      "content": "For more information about credential theft attacks, see <bpt id=\"p1\">[</bpt>Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft<ept id=\"p1\">](https://www.microsoft.com/en-us/download/details.aspx?id=36036)</ept>."
+    }
+  ],
+  "content": "# PowerShell Remoting Security Considerations\n\nPowerShell Remoting is the recommended way to manage Windows systems. PowerShell Remoting is enabled by default in Windows Server 2012 R2. This document covers security concerns, \nrecommendations, and best practices when using PowerShell Remoting.\n\n## What is PowerShell Remoting?\n\nPowerShell Remoting uses [Windows Remote Management (WinRM)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx), which is the Microsoft implementation of the\n[Web Services for Managment (WS-Managment)](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf) protocol, to allow users to run PowerShell commands on remote\ncomputers. You can find more information about using PowerShell Remoting at [Running Remote Commands](https://technet.microsoft.com/en-us/library/dd819505.aspx).\n\nPowerShell Remoting is not the same as using the **ComputerName** parameter of a cmdlet to run it on a remote computer, which uses Remote Procedure Call (RPC)\nas its underlying protocol.\n\n##  PowerShell Remoting default settings\n\nPowerShell Remoting (and WinRM) listen on the following ports:\n\n- HTTP: 5985\n- HTTPS: 5986\n\nBy default, PowerShell Remoting only allows connections from members of the Administrator's group. Sessions are launched under the user's context, so all operating\nsystem access controls applied to individual users and groups continue to apply to them while connected over PowerShell Remoting.\n\nOn private networks, the default Windows Firewall rule for PowerShell Remoting accepts all connections. On public networks, the default Windows Firewall rule allows PowerShell\nRemoting connections only from within the same subnet. You have to explicitly change that rule to open PowerShell Remoting to all connections on a public network.\n\n>**Warning:** The firewall rule for public networks is meant to protect the computer from potentially malicious external connection attempts. Use caution when removing \n>this rule.\n\n## Process isolation\n\nPowerShell Remoting uses [Windows Remote Management (WinRM)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426).aspx) for communication between computers. \nWinRM runs as a service under the Network Service account, and spawns isolated processes running as user accounts to host PowerShell instances. An instance of PowerShell running as one\nuser has no access to a process running an instance of PowerShell as another user.\n\n## Event logs generated by Powershell Remoting\n\nFireEye has provided a good summary of the event logs and other security evidence generated by PowerShell Remoting sessions, available at  \n[Investigating PowerShell Attacks](https://www.fireeye.com/content/dam/fireeye-www/global/en/solutions/pdfs/wp-lazanciyan-investigating-powershell-attacks.pdf).\n\n## Encryption and transport protocols\n\nIt is helpful to consider the security of a PowerShell Remoting connection security from two perspectives: initial authentication, and ongoing communication. \n\nRegardless of the transport protocol used (HTTP or HTTPS), PowerShell Remoting always encrypts all communication after initial authentication with a per-session AES-256 symmetric key.\n    \n### Initial authentication\n\nAuthentication confirms the identity of the client to the server - and ideally - the server to the client.\n    \nWhen a client connects to a domain server using its computer name (i.e.: server01, or server01.contoso.com), the default authentication protocol is \n[Kerberos](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378747.aspx).\nKerberos guarantees both the user identity and server identity without sending any sort of reusable credential.\n\nWhen a client connects to a domain server using its IP address, or connects to a workgroup server, Kerberos authentication is not possible. In that case, PowerShell\nremoting relies on the [NTLM authentication protocol](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749.aspx). The NTLM authentication\nprotocol guarantees the user identity without sending any sort of delegable credential. To prove user identity, the NTLM protocol requires that both the client\nand server compute a session key from the user's password without ever exchanging the password itself. The server typically does not know the user's password, so it communicates with \nthe domain controller, which does know the user's password and calculates the session key for the server. \n      \nThe NTLM protocol does not, however, guarantee server identity. As with all protocols that use NTLM for authentication, an attacker with access to a domain-joined computer's machine\naccount could invoke the domain controller to compute an NTLM session-key and thereby impersonate the server.\n\nNTLM-based authentication is disabled by default, but may be permitted by either configuring SSL on the target server, or by configuring the WinRM TrustedHosts setting.\n    \n#### Using SSL certificates to validate server identity during NTLM-based connections\n\nSince the NTLM authentication protocol cannot ensure the identity of the target server (only that it already knows your password), you can configure target servers\nto use SSL for PowerShell Remoting. Assigning a SSL certificate to the target server (if issued by a Certificate Authority that the client also trusts) enables\nNTLM-based authentication that guarantees both the user identity and server identity.\n    \n#### Ignoring NTLM-based server identity errors\n      \nIf deploying a SSL certificate to a server for NTLM connections is infeasible, you may suppress the resulting identity errors by adding the server to the WinRM\n**TrustedHosts** list. Please note that adding a server name to the TrustedHosts list should not be considered as any form of statement of the trustworthiness of\nthe hosts themselves - as the NTLM authentication protocol cannot guarantee that you are in fact connecting to the host you are intending to connect to.\nInstead, you should consider the TrustedHosts setting to be the list of hosts for which you wish to suppress the error generated by being unable to verify the server's identity.\n    \n    \n### Ongoing Communication\n\nOnce initial authentication is complete, the [PowerShell Remoting Protocol](https://msdn.microsoft.com/en-us/library/dd357801.aspx) encrypts all ongoing communication\nwith a per-session AES-256 symmetric key.  \n\n\n## Making the second hop\n\nBy default, PowerShell Remoting uses Kerberos (if available) or NTLM for authentication. Both of these protocols authenticate to the remote machine without sending credentials to it.\nThis is the most secure way to authenticate, but because the remote machine does not have the user's credentials, it cannot access other computers and services on the user's behalf. \nThis is known as the \"Double-Hop\" problem.\n\nThere are several ways to avoid this problem:\n\n### Kerberos Constrained Delegation\n\nFor highly trusted servers, you can enable [Kerberos Constrained Delegation](https://technet.microsoft.com/en-us/library/cc995228.aspx). This allows the remote server to impersonate the\nauthenticated user to a specified list of computers and services.\n\n### Trust between remote computers\n\nIf you trust users connected remotely to *Server1* to resources on *Server2*, you can explicitly grant *Server1* access to those resources.\n\n### Use explicit credentials when accessing remote resources\n\nYou can explicitly pass your credentials to a remote resource by using the **Credential** parameter of a cmdlet. For example:\n\n```powershell\n$myCredential = Get-Credential\nNew-PSDrive -Name Tools \\\\Server2\\Shared\\Tools -Credential $myCredential \n```\n\n### CredSSP\n\nYou can use the [Credential Security Support Provicer (CredSSP)](https://msdn.microsoft.com/en-us/library/windows/desktop/bb931352.aspx) for authentication (by specifying \"CredSSP\" as the \nvalue of the `Authentication` parameter of a call to the [New-PSSession](https://technet.microsoft.com/en-us/library/hh849717.aspx) cmdlet. CredSSP passes credentials in plain text to the server,\nso using it opens you up to credential theft attacks. If the remote computer is compromised, the attacker has access to the user's credentials. CredSSP is disabled by default on both client and \nserver computers. You should enable CredSSP only in the most trusted environments. For example, a domain administrator connecting to a domain controller because the domain controller is \nhighly trusted.\n\nFor more information about security concerns when using CredSSP for PowerShell Remoting, see \n[Accidental Sabotage: Beware of CredSSP](http://www.powershellmagazine.com/2014/03/06/accidental-sabotage-beware-of-credssp).\n\nFor more information about credential theft attacks, see [Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft](https://www.microsoft.com/en-us/download/details.aspx?id=36036).\n\n\n\n\n\n\n\n\n"
+}
