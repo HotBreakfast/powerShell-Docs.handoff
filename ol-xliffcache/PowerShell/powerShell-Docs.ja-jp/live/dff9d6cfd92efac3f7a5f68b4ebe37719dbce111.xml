@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "content": "Direct access to DSC resource methods",
+      "pos": [
+        2,
+        39
+      ]
+    },
+    {
+      "content": "The <ph id=\"ph1\">`Invoke-DscResource`</ph> cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test).",
+      "pos": [
+        42,
+        166
+      ]
+    },
+    {
+      "content": "It can be used by third-parties that want to take advantage of DSC resources.",
+      "pos": [
+        167,
+        244
+      ]
+    },
+    {
+      "content": "This cmdlet is typically used in combination with <ph id=\"ph1\">`refreshMode = ‘Disabled’`</ph> but can be used no matter what refreshMode is set to.",
+      "pos": [
+        245,
+        375
+      ]
+    },
+    {
+      "content": "Below are some examples of how to use the new cmdlet:",
+      "pos": [
+        376,
+        429
+      ]
+    },
+    {
+      "content": "Ensure a file is present",
+      "pos": [
+        434,
+        458
+      ]
+    },
+    {
+      "content": "Test that a file is present",
+      "pos": [
+        737,
+        764
+      ]
+    },
+    {
+      "content": "Get the contents of file",
+      "pos": [
+        1040,
+        1064
+      ]
+    }
+  ],
+  "content": "# Direct access to DSC resource methods\n\n\nThe `Invoke-DscResource` cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test). It can be used by third-parties that want to take advantage of DSC resources. This cmdlet is typically used in combination with `refreshMode = ‘Disabled’` but can be used no matter what refreshMode is set to. Below are some examples of how to use the new cmdlet:\n\n## Ensure a file is present\n\n```powershell\n$result = Invoke-DscResource -Name File -Method Set -Property @{\n                            DestinationPath = \"$env:SystemDrive\\\\DirectAccess.txt\";\n                            Contents = 'This file is create by Invoke-DscResource'} -Verbose\n$result | fl\n```\n\n## Test that a file is present\n\n```powershell\n$result = Invoke-DscResource -Name File -Method Test -Property @{\n                            DestinationPath=\"$env:SystemDrive\\\\DirectAccess.txt\";\n                            Contents='This file is create by Invoke-DscResource'} -Verbose\n$result | fl\n```\n\n## Get the contents of file\n\n```powershell\n$result = Invoke-DscResource -Name File -Method Get -Property @{\n                            DestinationPath=\"$env:SystemDrive\\\\DirectAccess.txt\";\n                            Contents='This file is create by Invoke-DscResource'} -Verbose\n$result.ItemValue | fl\n```\n"
+}
