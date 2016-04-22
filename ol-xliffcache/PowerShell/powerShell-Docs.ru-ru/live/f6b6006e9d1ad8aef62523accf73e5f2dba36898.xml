@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "content": "Specifying cross-node dependencies",
+      "pos": [
+        2,
+        36
+      ]
+    },
+    {
+      "content": "Applies To: Windows PowerShell 5.0",
+      "pos": [
+        40,
+        74
+      ]
+    },
+    {
+      "content": "DSC provides special resources, <bpt id=\"p1\">**</bpt>WaitForAll<ept id=\"p1\">**</ept>, <bpt id=\"p2\">**</bpt>WaitForAny<ept id=\"p2\">**</ept>, and <bpt id=\"p3\">**</bpt>WaitForSome<ept id=\"p3\">**</ept> that can be used in configurations to specify dependencies on configurations on other nodes.",
+      "pos": [
+        76,
+        252
+      ]
+    },
+    {
+      "content": "The",
+      "pos": [
+        253,
+        256
+      ]
+    },
+    {
+      "content": "behavior of these resources is as follows:",
+      "pos": [
+        257,
+        299
+      ]
+    },
+    {
+      "pos": [
+        303,
+        435
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>WaitForAll<ept id=\"p1\">**</ept>: Succeeds if the specified resource is in the desired state on all target nodes defined in the <bpt id=\"p2\">**</bpt>NodeName<ept id=\"p2\">**</ept> property."
+    },
+    {
+      "pos": [
+        438,
+        586
+      ],
+      "content": "<bpt id=\"p1\">**</bpt>WaitForAny<ept id=\"p1\">**</ept>: Succeeds if the specified resource is in the desired state on at least one of the target nodes defined in the <bpt id=\"p2\">**</bpt>NodeName<ept id=\"p2\">**</ept> property."
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>WaitForSome<ept id=\"p1\">**</ept>: Specifies a <bpt id=\"p2\">**</bpt>NodeCount<ept id=\"p2\">**</ept> property in addition to a <bpt id=\"p3\">**</bpt>NodeName<ept id=\"p3\">**</ept> property.",
+      "pos": [
+        589,
+        680
+      ]
+    },
+    {
+      "content": "The resource succeeds if the resource is in the desired state on a minimum number of nodes",
+      "pos": [
+        681,
+        771
+      ]
+    },
+    {
+      "content": "(specified by <bpt id=\"p1\">**</bpt>NodeCount<ept id=\"p1\">**</ept>) defined by the <bpt id=\"p2\">**</bpt>NodeName<ept id=\"p2\">**</ept> property.",
+      "pos": [
+        773,
+        839
+      ]
+    },
+    {
+      "content": "Using WaitForXXXX resources",
+      "pos": [
+        845,
+        872
+      ]
+    },
+    {
+      "content": "To use the <bpt id=\"p1\">**</bpt>WaitForXXXX<ept id=\"p1\">**</ept> resources, you create a resource block of that resource type that specifies the DSC resource and node(s) to wait for.",
+      "pos": [
+        874,
+        1018
+      ]
+    },
+    {
+      "content": "You then use the <bpt id=\"p1\">**</bpt>DependsOn<ept id=\"p1\">**</ept> property",
+      "pos": [
+        1019,
+        1058
+      ]
+    },
+    {
+      "content": "in any other resource blocks in your configuration to wait for the conditions specified in the <bpt id=\"p1\">**</bpt>WaitForXXXX<ept id=\"p1\">**</ept> node to succeed.",
+      "pos": [
+        1059,
+        1186
+      ]
+    },
+    {
+      "content": "For example, in the following configuration, the target node is waiting for the <bpt id=\"p1\">**</bpt>xADDomain<ept id=\"p1\">**</ept> resource to finish on the <bpt id=\"p2\">**</bpt>MyDC<ept id=\"p2\">**</ept> node with 30, at 15-second intervals, before the target node",
+      "pos": [
+        1188,
+        1377
+      ]
+    },
+    {
+      "content": "can join the domain.",
+      "pos": [
+        1379,
+        1399
+      ]
+    },
+    {
+      "content": "<bpt id=\"p1\">**</bpt>NOte:<ept id=\"p1\">**</ept> By default the WaitForXXX resources try one time and then fail.",
+      "pos": [
+        1980,
+        2053
+      ]
+    },
+    {
+      "content": "Although it is not required, you will typically want to specify a retry interval and count.",
+      "pos": [
+        2054,
+        2145
+      ]
+    },
+    {
+      "content": "See Also",
+      "pos": [
+        2150,
+        2158
+      ]
+    },
+    {
+      "content": "DSC Configurations",
+      "pos": [
+        2162,
+        2180
+      ]
+    },
+    {
+      "content": "DSC Resources",
+      "pos": [
+        2204,
+        2217
+      ]
+    },
+    {
+      "content": "Configuring The Local Configuration Manager",
+      "pos": [
+        2236,
+        2279
+      ]
+    }
+  ],
+  "content": "# Specifying cross-node dependencies\n\n> Applies To: Windows PowerShell 5.0\n\nDSC provides special resources, **WaitForAll**, **WaitForAny**, and **WaitForSome** that can be used in configurations to specify dependencies on configurations on other nodes. The\nbehavior of these resources is as follows:\n\n* **WaitForAll**: Succeeds if the specified resource is in the desired state on all target nodes defined in the **NodeName** property.\n* **WaitForAny**: Succeeds if the specified resource is in the desired state on at least one of the target nodes defined in the **NodeName** property.\n* **WaitForSome**: Specifies a **NodeCount** property in addition to a **NodeName** property. The resource succeeds if the resource is in the desired state on a minimum number of nodes \n(specified by **NodeCount**) defined by the **NodeName** property. \n\n## Using WaitForXXXX resources\n\nTo use the **WaitForXXXX** resources, you create a resource block of that resource type that specifies the DSC resource and node(s) to wait for. You then use the **DependsOn** property\nin any other resource blocks in your configuration to wait for the conditions specified in the **WaitForXXXX** node to succeed.\n\nFor example, in the following configuration, the target node is waiting for the **xADDomain** resource to finish on the **MyDC** node with 30, at 15-second intervals, before the target node \ncan join the domain.\n\n```PowerShell\nConfiguration JoinDomain\n\n{\n    Import-DscResource -Module xComputerManagement\n\n    Node myDomainJoinedServer\n    {\n\n        WaitForAll DC\n        {\n            ResourceName      = '[xADDomain]NewDomain'\n            NodeName          = 'MyDC'\n            RetryIntervalSec  = 15\n            RetryCount        = 30\n        }\n\n        xComputer JoinDomain\n        {\n            Name             = 'MyPC'\n            DomainName       = 'Contoso.com'\n            Credential       = (get-credential)\n            DependsOn        ='[WaitForAll]DC'\n        }\n    }\n}\n```\n\n>**NOte:** By default the WaitForXXX resources try one time and then fail. Although it is not required, you will typically want to specify a retry interval and count.\n\n## See Also\n* [DSC Configurations](configurations.md)\n* [DSC Resources](resources.md)\n* [Configuring The Local Configuration Manager](metaConfig.md)"
+}
