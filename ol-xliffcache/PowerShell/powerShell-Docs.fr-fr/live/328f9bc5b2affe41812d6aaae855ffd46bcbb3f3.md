@@ -1,5 +1,5 @@
 ---
-title: Keyboard Shortcuts for the Windows PowerShell ISE
+title: Raccourcis clavier pour Windows PowerShell ISE
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,107 +7,112 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
 ---
-# Keyboard Shortcuts for the Windows PowerShell ISE
-Use the following keyboard shortcuts to perform actions in [!INCLUDE[ise_1](../Token/ise_1_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the [Windows Management Framework 4.0 download package](http://go.microsoft.com/fwlink/?LinkID=293881).
+# Raccourcis clavier pour Windows PowerShell ISE
+Pour effectuer des actions dans [!INCLUDE[ise_1](../Token/ise_1_md.md)], utilisez les raccourcis clavier suivants. [!INCLUDE[ise_2](../Token/ise_2_md.md)] est intégré dans les systèmes d’exploitation Windows Server et Windows Client, mais peut également être installé sur certains systèmes d’exploitation Windows plus anciens, en tant que composant du [package de téléchargement de Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881).
 
-## Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## Raccourcis clavier pour l’édition de texte
+Lorsque vous éditez un texte, vous pouvez utiliser les raccourcis clavier suivants.
 
-|Action|Keyboard Shortcuts|Use in|
+|Action|Raccourcis clavier|Utiliser dans|
 |----------|----------------------|----------|
-|**Help**|F1|Script Pane **Important:** You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update\-Help). To select, click **Tools**, **Options**, then on the **General Settings**tab, set or clear **Use local help content instead of online content.**|
-|**Copy**|CTRL\+C|Script Pane, Command Pane, Output Pane|
-|**Cut**|CTRL\+X|Script Pane, Command Pane|
-|**Expand or Collapse Outlining**|CTRL\+M|Script Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Find Matching Brace**|CTRL\+]|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Command Pane|
-|**Redo**|CTRL\+Y|Script Pane, Command Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Command Pane, Output Pane|
-|**Show Snippets**|CTRL\+J|Script Pane, Command Pane|
-|**Undo**|CTRL\+Z|Script Pane, Command Pane|
+|**Aide**|F1|Volet Script **Important :** vous pouvez spécifier que la touche F1 provient de la Bibliothèque TechNet sur le web ou de l’aide téléchargée (voir Update-Help). Pour opérer votre choix, cliquez sur **Outils**, **Options**, sur l’onglet **Paramètres généraux**, puis activez ou désactivez l’option **Utiliser le contenu de l’aide locale au lieu du contenu en ligne.**|
+|**Copier**|Ctrl+C|Volets Script, Commande et Sortie|
+|**Couper**|Ctrl+X|Volets Script et Commande|
+|**Développer ou réduire le plan**|Ctrl+M|Volet Script|
+|**Rechercher dans le script**|Ctrl+F|Volet Script|
+|**Rechercher suivant dans le script**|F3|Volet Script|
+|**Rechercher précédent dans le script**|Maj+F3|Volet Script|
+|**Rechercher l’accolade correspondante**|Ctrl+]|Volet Script|
+|**Coller**|Ctrl+V|Volets Script et Commande|
+|**Rétablir**|Ctrl+Y|Volets Script et Commande|
+|**Remplacer dans le script**|Ctrl+H|Volet Script|
+|**Enregistrer**|Ctrl+S|Volet Script|
+|**Sélectionner tout**|Ctrl+A|Volets Script, Commande et Sortie|
+|**Afficher les extraits de code**|Ctrl+J|Volets Script et Commande|
+|**Annuler**|Ctrl+Z|Volets Script et Commande|
 
-## Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## Raccourcis clavier pour exécuter les scripts
+Lorsque vous exécutez des scripts dans le volet Script, vous pouvez utiliser les raccourcis clavier suivants.
 
-|Action|Keyboard Shortcut|
+|Action|Raccourci clavier|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane.|
+|**Nouveau**|Ctrl+N|
+|**Ouvrir**|Ctrl+O|
+|**Exécuter**|F5|
+|**Exécuter la sélection**|F8|
+|**Arrêter l’exécution**|Ctrl+Pause. Vous pouvez utiliser Ctrl+C quand le contexte est sans ambiguïté (quand aucun texte n’est sélectionné).|
+|**Tab** (pour accéder au script suivant)|Ctrl+Tab **Remarque :** L’usage de la touche Tab pour accéder au script suivant fonctionne uniquement quand un seul onglet Windows PowerShell est ouvert ou, si plusieurs onglets Windows PowerShell sont ouverts, quand le focus est dans le volet Script.|
+|**Tab** (pour accéder au script précédent)|Ctrl+Maj+Tab **Remarque :** L’usage de la touche Tab pour accéder au script précédent fonctionne uniquement quand un seul onglet Windows PowerShell est ouvert ou, si plusieurs onglets Windows PowerShell sont ouverts, quand le focus est dans le volet Script.|
 
-## Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]. They are accessible from all the panes in the application.
+## Raccourcis clavier pour la personnalisation de l’affichage
+Pour personnaliser l’affichage dans [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)], vous pouvez utiliser les raccourcis clavier suivants. Ils sont accessibles à partir de tous les volets de l’application.
 
-|Action|Keyboard Shortcut|
+|Action|Raccourci clavier|
 |----------|---------------------|
-|**Go to Command (v2) or Console (v3 and later) Pane**|CTRL\+D|
-|**Go to Output Pane (v2 only)**|CTRL\+SHIFT\+O|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**Accédez au volet Commande (v2) ou Console (v3 et versions ultérieures)**|Ctrl+D|
+|**Accéder au volet Sortie (v2 uniquement)**|Ctrl+Maj+O|
+|**Accéder au volet Script**|Ctrl+I|
+|**Afficher le volet Script**|Ctrl+R|
+|**Masquer le volet Script**|Ctrl+R|
+|**Déplacer le volet Script vers le haut**|Ctrl+1|
+|**Déplacer le volet Script vers la droite**|Ctrl+2|
+|**Maximiser le volet Script**|Ctrl+3|
+|**Zoom avant**|Ctrl+Signe plus|
+|**Zoom arrière**|Ctrl+Signe moins|
 
-## Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## Raccourcis clavier pour le débogage des scripts
+Lors du débogage de scripts, vous pouvez utiliser les raccourcis clavier suivants.
 
-|Action|Keyboard Shortcut|Use in|
+|Action|Raccourci clavier|Utiliser dans|
 |----------|---------------------|----------|
-|**Run\/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**Exécuter/Continuer**|F5|Volet Script, lors du débogage d’un script|
+|**Pas à pas détaillé**|F11|Volet Script, lors du débogage d’un script|
+|**Pas à pas principal**|F10|Volet Script, lors du débogage d’un script|
+|**Pas à pas sortant**|Maj+F11|Volet Script, lors du débogage d’un script|
+|**Afficher la pile des appels**|Ctrl+Maj+D|Volet Script, lors du débogage d’un script|
+|**Afficher la liste des points d’arrêt**|Ctrl+Maj+L|Volet Script, lors du débogage d’un script|
+|**Basculer le point d’arrêt**|F9|Volet Script, lors du débogage d’un script|
+|**Supprimer tous les points d’arrêt**|Ctrl+Maj+F9|Volet Script, lors du débogage d’un script|
+|**Arrêter le débogueur**|Maj+F5|Volet Script, lors du débogage d’un script|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.
+> Lors du débogage de scripts dans Windows PowerShell ISE, vous pouvez également utiliser les raccourcis clavier conçus pour la console Windows PowerShell. Pour utiliser ces raccourcis, vous devez les taper dans le volet Commande, puis appuyer sur Entrée.
 
-|Action|Keyboard Shortcut|Use in|
+|Action|Raccourci clavier|Utiliser dans|
 |----------|---------------------|----------|
-|**Continue**|C|Console Pane, when debugging a script|
-|**Step Into**|S|Console Pane, when debugging a script|
-|**Step Over**|V|Console Pane, when debugging a script|
-|**Step Out**|O|Console Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
-|**Display Call Stack**|K|Console Pane, when debugging a script|
-|**Stop Debugging**|Q|Console Pane, when debugging a script|
-|**List the Script**|L|Console Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
+|**Continuer**|C|Volet Console, lors du débogage d’un script|
+|**Pas à pas détaillé**|S|Volet Console, lors du débogage d’un script|
+|**Pas à pas principal**|V|Volet Console, lors du débogage d’un script|
+|**Pas à pas sortant**|O|Volet Console, lors du débogage d’un script|
+|**Répéter la dernière commande** (pour un pas à pas détaillé ou un pas à pas principal)|ENTRÉE|Volet Console, lors du débogage d’un script|
+|**Afficher la pile des appels**|K|Volet Console, lors du débogage d’un script|
+|**Arrêter le débogage**|Q|Volet Console, lors du débogage d’un script|
+|**Afficher le script**|L|Volet Console, lors du débogage d’un script|
+|**Afficher les commandes de débogage de la console**|H ou ?|Volet Console, lors du débogage d’un script|
 
-## Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## Raccourcis clavier pour les onglets Windows PowerShell
+Lorsque vous utilisez les onglets Windows PowerShell, vous pouvez utiliser les raccourcis clavier suivants.
 
-|Action|Keyboard Shortcut|
+|Action|Raccourci clavier|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
+|**Fermer l’onglet PowerShell**|Ctrl+W|
+|**Nouvel onglet PowerShell**|Ctrl+T|
+|**Onglet PowerShell précédent**|Ctrl+Maj+Tab. Ce raccourci ne fonctionne que si aucun fichier n’est ouvert sous aucun onglet Windows PowerShell.|
+|**Onglet Windows PowerShell suivant**|Ctrl+Tab. Ce raccourci ne fonctionne que si aucun fichier n’est ouvert sous aucun onglet Windows PowerShell.|
 
-## Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit [!INCLUDE[ise_2](../Token/ise_2_md.md)].
+## Raccourcis clavier pour le démarrage et la fermeture
+Pour démarrer la console Windows PowerShell (PowerShell.exe) ou pour quitter [!INCLUDE[ise_2](../Token/ise_2_md.md)], vous pouvez utiliser les raccourcis clavier suivants.
 
-|Action|Keyboard Shortcut|
+|Action|Raccourci clavier|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL\+SHIFT\+P|
+|**Quitter**|ALT+F4|
+|**Démarrer PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|Ctrl+Maj+P|
 
-## See Also
-[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+## Voir aussi
+[PowerShell Magazine : Liste complète des raccourcis clavier pour Windows PowerShell ISE](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 

@@ -1,5 +1,5 @@
 ---
-title: Appendix 1 - Compatibility Aliases
+title: Annexe 1 - Alias de compatibilité
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,10 +7,10 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 96ad921e-1a57-463e-8e60-424faf8b6ef8
 ---
-# Appendix 1 - Compatibility Aliases
-Windows PowerShell has several transition aliases that allow UNIX and Cmd users to use familiar command names in Windows PowerShell. The most common aliases are shown in the table below, along with the Windows PowerShell command behind the alias and the standard Windows PowerShell alias if one exists.
+# Annexe 1 - Alias de compatibilité
+Windows PowerShell dispose de plusieurs alias de transition qui permettent aux utilisateurs d’UNIX et de Cmd d’utiliser des noms de commande familiers dans Windows PowerShell. Les alias courants sont répertoriés dans le tableau ci-dessous, ainsi que la commande Windows PowerShell sous-jacente, et l’alias Windows PowerShell standard, s’il en existe.
 
-You can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get\-Alias cmdlet. For example, type **get\-alias cls**.
+Pour trouver la commande Windows PowerShell vers laquelle pointe un alias, dans Windows PowerShell utilisez l’applet de commande Get-Alias. Par exemple, tapez **get-alias cls**.
 
 ```
 CommandType     Name                            Definition
@@ -18,17 +18,22 @@ CommandType     Name                            Definition
 Alias           cls                             Clear-Host
 ```
 
-|CMD Command|UNIX Command|PS Command|PS Alias|
+|Commande CMD|Commande UNIX|Commande PS|Alias PS|
 |---------------|----------------|--------------|------------|
-|**dir**|**ls**|**Get\-ChildItem**|**gci**|
-|**cls**|**clear**|**Clear\-Host** (function)|N\/A|
-|**del, erase, rmdir**|**rm**|**Remove\-Item**|**ri**|
-|**copy**|**cp**|**Copy\-Item**|**ci**|
-|**move**|**mv**|**Move\-Item**|**mi**|
-|**rename**|**mv**|**Rename\-Item**|**rni**|
-|**type**|**cat**|**Get\-Content**|**gc**|
-|**cd**|**cd**|**Set\-Location**|**sl**|
-|**md**|**mkdir**|**New\-Item**|**ni**|
-|N\/A|**pushd**|**Push\-Location**|N\/A|
-|N\/A|**popd**|**Pop\-Location**|N\/A|
+|**dir**|**ls**|**Get-ChildItem**|**gci**|
+|**cls**|**clear**|**Clear-Host** (fonction)|N/A|
+|**del, erase, rmdir**|**rm**|**Remove-Item**|**ri**|
+|**copy**|**cp**|**Copy-Item**|**ci**|
+|**move**|**mv**|**Move-Item**|**mi**|
+|**rename**|**mv**|**Rename-Item**|**rni**|
+|**type**|**cat**|**Get-Content**|**gc**|
+|**cd**|**cd**|**Set-Location**|**sl**|
+|**md**|**mkdir**|**New-Item**|**ni**|
+|N/A|**pushd**|**Push-Location**|N/A|
+|N/A|**popd**|**Pop-Location**|N/A|
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
