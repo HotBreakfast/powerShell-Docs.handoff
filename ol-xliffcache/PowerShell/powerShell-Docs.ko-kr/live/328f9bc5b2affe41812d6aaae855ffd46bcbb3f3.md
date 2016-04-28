@@ -1,5 +1,5 @@
 ---
-title: Keyboard Shortcuts for the Windows PowerShell ISE
+title: Windows PowerShell ISE 바로 가기 키
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,107 +7,112 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
 ---
-# Keyboard Shortcuts for the Windows PowerShell ISE
-Use the following keyboard shortcuts to perform actions in [!INCLUDE[ise_1](../Token/ise_1_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the [Windows Management Framework 4.0 download package](http://go.microsoft.com/fwlink/?LinkID=293881).
+# Windows PowerShell ISE 바로 가기 키
+다음 바로 가기 키를 사용하여 [!INCLUDE[ise_1](../Token/ise_1_md.md)]에서 작업을 수행할 수 있습니다. [!INCLUDE[ise_2](../Token/ise_2_md.md)]는 Windows Server 및 Windows 클라이언트 운영 체제의 일부로 사용할 수 있지만, [Windows Management Framework 4.0 다운로드 패키지](http://go.microsoft.com/fwlink/?LinkID=293881)의 일부로 이전 Windows 운영 체제에 설치되어 있을 수도 있습니다.
 
-## Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## 텍스트 편집 바로 가기 키
+텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcuts|Use in|
+|작업|바로 가기 키|사용 위치|
 |----------|----------------------|----------|
-|**Help**|F1|Script Pane **Important:** You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update\-Help). To select, click **Tools**, **Options**, then on the **General Settings**tab, set or clear **Use local help content instead of online content.**|
-|**Copy**|CTRL\+C|Script Pane, Command Pane, Output Pane|
-|**Cut**|CTRL\+X|Script Pane, Command Pane|
-|**Expand or Collapse Outlining**|CTRL\+M|Script Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Find Matching Brace**|CTRL\+]|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Command Pane|
-|**Redo**|CTRL\+Y|Script Pane, Command Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Command Pane, Output Pane|
-|**Show Snippets**|CTRL\+J|Script Pane, Command Pane|
-|**Undo**|CTRL\+Z|Script Pane, Command Pane|
+|**도움말**|F1|스크립트 창 **중요:** F1 도움말을 웹의 TechNet 라이브러리 또는 다운로드한 도움말에서 가져오도록 지정할 수 있습니다(Update\-Help 참조). 선택하려면 **도구**, **옵션**을 차례로 클릭하고 **일반 설정** 탭에서 **온라인 콘텐츠 대신 로컬 도움말 콘텐츠 사용**을 설정하거나 선택 취소합니다.|
+|**복사**|Ctrl\+C|스크립트 창, 명령 창, 출력 창|
+|**잘라내기**|Ctrl\+X|스크립트 창, 명령 창|
+|**개요 확장 또는 축소**|Ctrl\+M|스크립트 창|
+|**스크립트에서 찾기**|Ctrl\+F|스크립트 창|
+|**스크립트에서 다음 찾기**|F3|스크립트 창|
+|**스크립트에서 이전 찾기**|Shift\+F3|스크립트 창|
+|**일치하는 중괄호 찾기**|Ctrl\+]|스크립트 창|
+|**붙여넣기**|Ctrl\+V|스크립트 창, 명령 창|
+|**다시 실행**|Ctrl\+Y|스크립트 창, 명령 창|
+|**스크립트에서 바꾸기**|Ctrl\+H|스크립트 창|
+|**저장**|Ctrl\+S|스크립트 창|
+|**모두 선택**|Ctrl\+A|스크립트 창, 명령 창, 출력 창|
+|**코드 조각 표시**|Ctrl\+J|스크립트 창, 명령 창|
+|**실행 취소**|Ctrl\+Z|스크립트 창, 명령 창|
 
-## Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## 스크립트 실행 바로 가기 키
+스크립트 창에서 스크립트를 실행할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane.|
+|**새로 만들기**|Ctrl\+N|
+|**열기**|Ctrl\+O|
+|**실행**|F5|
+|**선택 항목 실행**|F8|
+|**실행 중지**|Ctrl\+Break. 컨텍스트가 명확한 경우(선택한 텍스트가 없는 경우) Ctrl\+C를 사용할 수 있습니다.|
+|**Tab** 키를 눌러 다음 스크립트로 이동|Ctrl\+Tab **참고:** Tab 키를 눌러 다음 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있지만 스크립트 창에 포커스가 있는 경우에 작동합니다.|
+|**Tab** 키를 눌러 이전 스크립트로 이동|Ctrl\+Shift\+Tab **참고:** Tab 키를 눌러 이전 스크립트로 이동은 하나의 Windows PowerShell 탭만 열려 있는 경우 또는 둘 이상의 Windows PowerShell 탭이 열려 있고 스크립트 창에 포커스가 있는 경우에 작동합니다.|
 
-## Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]. They are accessible from all the panes in the application.
+## 보기 사용자 지정 바로 가기 키
+[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]에서 보기를 사용자 지정할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다. 응용 프로그램의 모든 창에서 액세스할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**Go to Command (v2) or Console (v3 and later) Pane**|CTRL\+D|
-|**Go to Output Pane (v2 only)**|CTRL\+SHIFT\+O|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**명령 창(v2) 또는 콘솔 창(v3 이상)으로 이동**|Ctrl\+D|
+|**출력 창(v2에만 해당)으로 이동**|Ctrl\+Shift\+O|
+|**스크립트 창으로 이동**|Ctrl\+I|
+|**스크립트 창 표시**|Ctrl\+R|
+|**스크립트 창 숨기기**|Ctrl\+R|
+|**스크립트 창 위로 이동**|Ctrl\+1|
+|**스크립트 창 오른쪽으로 이동**|Ctrl\+2|
+|**스크립트 창 최대화**|Ctrl\+3|
+|**확대**|Ctrl\+더하기 기호|
+|**축소**|Ctrl\+빼기 기호|
 
-## Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## 스크립트 디버그 바로 가기 키
+스크립트를 디버그할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcut|Use in|
+|작업|바로 가기 키|사용 위치|
 |----------|---------------------|----------|
-|**Run\/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**실행\/계속**|F5|스크립트 창, 스크립트를 디버그할 때|
+|**한 단계씩 코드 실행**|F11|스크립트 창, 스크립트를 디버그할 때|
+|**프로시저 단위 실행**|F10|스크립트 창, 스크립트를 디버그할 때|
+|**프로시저 나가기**|Shift\+F11|스크립트 창, 스크립트를 디버그할 때|
+|**호출 스택 표시**|Ctrl\+Shift\+D|스크립트 창, 스크립트를 디버그할 때|
+|**중단점 표시**|Ctrl\+Shift\+L|스크립트 창, 스크립트를 디버그할 때|
+|**중단점 설정/해제**|F9|스크립트 창, 스크립트를 디버그할 때|
+|**모든 중단점 제거**|Ctrl\+Shift\+F9|스크립트 창, 스크립트를 디버그할 때|
+|**디버거 중지**|Shift\+F5|스크립트 창, 스크립트를 디버그할 때|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.
+> Windows PowerShell ISE에서 스크립트를 디버그할 때 Windows PowerShell 콘솔용으로 설계된 바로 가기 키를 사용할 수도 있습니다. 이러한 바로 가기를 사용하려면 명령 창에서 바로 가기를 입력하고 Enter 키를 눌러야 합니다.
 
-|Action|Keyboard Shortcut|Use in|
+|작업|바로 가기 키|사용 위치|
 |----------|---------------------|----------|
-|**Continue**|C|Console Pane, when debugging a script|
-|**Step Into**|S|Console Pane, when debugging a script|
-|**Step Over**|V|Console Pane, when debugging a script|
-|**Step Out**|O|Console Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
-|**Display Call Stack**|K|Console Pane, when debugging a script|
-|**Stop Debugging**|Q|Console Pane, when debugging a script|
-|**List the Script**|L|Console Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
+|**계속**|C|콘솔 창, 스크립트를 디버그할 때|
+|**한 단계씩 코드 실행**|S|콘솔 창, 스크립트를 디버그할 때|
+|**프로시저 단위 실행**|V|콘솔 창, 스크립트를 디버그할 때|
+|**프로시저 나가기**|O|콘솔 창, 스크립트를 디버그할 때|
+|**마지막 명령 반복**(한 단계씩 코드 실행 또는 프로시저 단위 실행)|Enter 키|콘솔 창, 스크립트를 디버그할 때|
+|**호출 스택 표시**|K|콘솔 창, 스크립트를 디버그할 때|
+|**디버깅 중지**|Q|콘솔 창, 스크립트를 디버그할 때|
+|**스크립트 표시**|L|콘솔 창, 스크립트를 디버그할 때|
+|**콘솔 디버깅 명령 표시**|H 또는 ?|콘솔 창, 스크립트를 디버그할 때|
 
-## Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## Windows PowerShell 탭 바로 가기 키
+Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
+|**PowerShell 탭 닫기**|Ctrl\+W|
+|**새 PowerShell 탭**|Ctrl\+T|
+|**이전 PowerShell 탭**|Ctrl\+Shift\+Tab. 이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
+|**다음 Windows PowerShell 탭**|Ctrl\+Tab. 이 바로 가기는 Windows PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
 
-## Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit [!INCLUDE[ise_2](../Token/ise_2_md.md)].
+## 시작 및 종료 바로 가기 키
+다음과 같은 바로 가기 키를 사용하여 Windows PowerShell 콘솔(PowerShell.exe)을 시작하거나 [!INCLUDE[ise_2](../Token/ise_2_md.md)]을 종료할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL\+SHIFT\+P|
+|**종료**|Alt\+F4|
+|**PowerShell.exe**([!INCLUDE[psconsole](../Token/psconsole_md.md)]) 시작|Ctrl\+Shift\+P|
 
-## See Also
-[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+## 참고 항목
+[PowerShell Magazine: Windows PowerShell ISE 바로 가기 키의 전체 목록](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
