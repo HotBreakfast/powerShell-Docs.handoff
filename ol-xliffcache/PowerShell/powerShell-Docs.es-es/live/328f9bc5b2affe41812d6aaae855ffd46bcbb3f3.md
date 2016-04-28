@@ -1,5 +1,5 @@
 ---
-title: Keyboard Shortcuts for the Windows PowerShell ISE
+title: Métodos abreviados de teclado para Windows PowerShell ISE
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,107 +7,112 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
 ---
-# Keyboard Shortcuts for the Windows PowerShell ISE
-Use the following keyboard shortcuts to perform actions in [!INCLUDE[ise_1](../Token/ise_1_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the [Windows Management Framework 4.0 download package](http://go.microsoft.com/fwlink/?LinkID=293881).
+# Métodos abreviados de teclado para Windows PowerShell ISE
+Use los siguientes métodos abreviados de teclado para realizar acciones en [!INCLUDE[ise_1](../Token/ise_1_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] está disponible como parte de los sistemas operativos Windows Server y cliente de Windows, pero también se puede instalar en algunos sistemas operativos anteriores de Windows como parte del [paquete de descarga de Windows Management Framework 4.0](http://go.microsoft.com/fwlink/?LinkID=293881).
 
-## Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## Métodos abreviados de teclado para la edición de texto
+Puede usar los siguientes métodos abreviados de teclado cuando edite texto.
 
-|Action|Keyboard Shortcuts|Use in|
+|Acción|Métodos abreviados de teclado|Usar en|
 |----------|----------------------|----------|
-|**Help**|F1|Script Pane **Important:** You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update\-Help). To select, click **Tools**, **Options**, then on the **General Settings**tab, set or clear **Use local help content instead of online content.**|
-|**Copy**|CTRL\+C|Script Pane, Command Pane, Output Pane|
-|**Cut**|CTRL\+X|Script Pane, Command Pane|
-|**Expand or Collapse Outlining**|CTRL\+M|Script Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Find Matching Brace**|CTRL\+]|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Command Pane|
-|**Redo**|CTRL\+Y|Script Pane, Command Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Command Pane, Output Pane|
-|**Show Snippets**|CTRL\+J|Script Pane, Command Pane|
-|**Undo**|CTRL\+Z|Script Pane, Command Pane|
+|**Ayuda**|F1|Panel de scripts **Importante:** Puede especificar que la ayuda de F1 proceda de la biblioteca de TechNet en la ayuda descargada o web (Update-Help). Para realizar la selección, haga clic en **Herramientas**, **Opciones** y, a continuación, en la pestaña **Configuración General**, active o desactive **Usar Ayuda local en lugar de contenido en línea.**|
+|**Copiar**|CTRL+C|Panel de scripts, Panel de comandos y Panel de salida|
+|**Cortar**|CTRL+X|Panel de scripts, Panel de comandos|
+|**Expandir o contraer la esquematización**|CTRL+M|Panel de scripts|
+|**Buscar en el script**|CTRL+F|Panel de scripts|
+|**Buscar siguiente en el script**|F3|Panel de scripts|
+|**Buscar anterior en el script**|MAYÚS+F3|Panel de scripts|
+|**Buscar llave que coincida**|CTRL+]|Panel de scripts|
+|**Pegar**|CTRL+V|Panel de scripts, Panel de comandos|
+|**Rehacer**|CTRL+Y|Panel de scripts, Panel de comandos|
+|**Reemplazar en el script**|CTRL+H|Panel de scripts|
+|**Guardar**|CTRL+S|Panel de scripts|
+|**Seleccionar todo**|CTRL+A|Panel de scripts, Panel de comandos y Panel de salida|
+|**Mostrar fragmentos de código**|CTRL+J|Panel de scripts, Panel de comandos|
+|**Deshacer**|CTRL+Z|Panel de scripts, Panel de comandos|
 
-## Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## Métodos abreviados de teclado para ejecutar scripts
+Puede usar los siguientes métodos abreviados de teclado cuando ejecute scripts en el panel de scripts.
 
-|Action|Keyboard Shortcut|
+|Acción|Método abreviado de teclado|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane.|
+|**New**|CTRL+N|
+|**Abrir**|CTRL+O|
+|**Ejecutar**|F5|
+|**Ejecutar selección**|F8|
+|**Detener la ejecución**|CTRL+INTERRUMPIR CTRL+C se puede usar cuando el contexto no es ambiguo (cuando no hay ningún texto seleccionado).|
+|**Pestaña** (para el siguiente script)|CTRL+TAB **Nota:** La pestaña para el siguiente script solo funciona si tiene una sola pestaña de Windows PowerShell abierta, o bien si tiene más de una abierta pero el foco está en el panel de scripts.|
+|**Pestaña** (para el script anterior)|CTRL+MAYÚS+TAB **Nota:** La pestaña para el script anterior solo funciona si tiene una sola pestaña de Windows PowerShell abierta, o bien si tiene más de una abierta pero el foco está en el panel de scripts.|
 
-## Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]. They are accessible from all the panes in the application.
+## Métodos abreviados de teclado para personalizar la vista
+Puede usar los siguientes métodos abreviados de teclado cuando personalice la vista en [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]. Son accesibles desde todos los paneles de la aplicación.
 
-|Action|Keyboard Shortcut|
+|Acción|Método abreviado de teclado|
 |----------|---------------------|
-|**Go to Command (v2) or Console (v3 and later) Pane**|CTRL\+D|
-|**Go to Output Pane (v2 only)**|CTRL\+SHIFT\+O|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**Ir al panel de comandos (v2) o el panel de consola (v3 y versiones posteriores)**|CTRL+D|
+|**Ir al panel de salida (solo v2)**|CTRL+MAYÚS+O|
+|**Ir al panel de scripts**|CTRL+I|
+|**Ir al panel de scripts**|CTRL+R|
+|**Ocultar el panel de scripts**|CTRL+R|
+|**Subir el panel de scripts**|CTRL+1|
+|**Mover el panel de scripts a la derecha**|CTRL+2|
+|**Maximizar el panel de scripts**|CTRL+3|
+|**Acercar**|CTRL+SIGNO MÁS|
+|**Alejar**|CTRL+SIGNO MENOS|
 
-## Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## Métodos abreviados de teclado para depurar scripts
+Puede usar los siguientes métodos abreviados de teclado cuando depure scripts.
 
-|Action|Keyboard Shortcut|Use in|
+|Acción|Método abreviado de teclado|Usar en|
 |----------|---------------------|----------|
-|**Run\/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**Ejecutar o continuar**|F5|Panel de scripts, al depurar un script|
+|**Depurar paso a paso por instrucciones**|F11|Panel de scripts, al depurar un script|
+|**Depurar paso a paso por procedimientos**|F10|Panel de scripts, al depurar un script|
+|**Depurar paso a paso para salir**|MAYÚS+F11|Panel de scripts, al depurar un script|
+|**Mostrar pila de llamadas**|CTRL+MAYÚS+D|Panel de scripts, al depurar un script|
+|**Mostrar puntos de interrupción**|CTRL+MAYÚS+L|Panel de scripts, al depurar un script|
+|**Alternar punto de interrupción**|F9|Panel de scripts, al depurar un script|
+|**Quitar todos los puntos de interrupción**|CTRL+MAYÚS+F9|Panel de scripts, al depurar un script|
+|**Detener el depurador**|MAYÚS+F5|Panel de scripts, al depurar un script|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.
+> También puede usar los métodos abreviados de teclado diseñados para la consola de Windows PowerShell cuando depure scripts en Windows PowerShell ISE. Para usar estos métodos abreviados, debe escribir el método abreviado en el panel de comandos y presionar ENTRAR.
 
-|Action|Keyboard Shortcut|Use in|
+|Acción|Método abreviado de teclado|Usar en|
 |----------|---------------------|----------|
-|**Continue**|C|Console Pane, when debugging a script|
-|**Step Into**|S|Console Pane, when debugging a script|
-|**Step Over**|V|Console Pane, when debugging a script|
-|**Step Out**|O|Console Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
-|**Display Call Stack**|K|Console Pane, when debugging a script|
-|**Stop Debugging**|Q|Console Pane, when debugging a script|
-|**List the Script**|L|Console Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
+|**Continuar**|C|Panel de consola, al depurar un script|
+|**Depurar paso a paso por instrucciones**|S|Panel de consola, al depurar un script|
+|**Depurar paso a paso por procedimientos**|V|Panel de consola, al depurar un script|
+|**Depurar paso a paso para salir**|O|Panel de consola, al depurar un script|
+|**Repetir el último comando** (para depurar paso a paso por instrucciones o por procedimientos)|ENTRAR|Panel de consola, al depurar un script|
+|**Mostrar pila de llamadas**|K|Panel de consola, al depurar un script|
+|**Detener la depuración**|Q|Panel de consola, al depurar un script|
+|**Enumerar el script**|L|Panel de consola, al depurar un script|
+|**Mostrar los comandos de depuración de la consola**|H o ?|Panel de consola, al depurar un script|
 
-## Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## Métodos abreviados de teclado para las pestañas de Windows PowerShell
+Puede usar los siguientes métodos abreviados de teclado cuando use las pestañas de Windows PowerShell.
 
-|Action|Keyboard Shortcut|
+|Acción|Método abreviado de teclado|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
+|**Cerrar la pestaña de PowerShell**|CTRL+W|
+|**Nueva pestaña de PowerShell**|CTRL+T|
+|**Pestaña de PowerShell anterior**|CTRL+MAYÚS+TAB Este método abreviado solo funciona si no hay archivos abiertos en ninguna pestaña de Windows PowerShell.|
+|**Pestaña de Windows PowerShell siguiente**|CTRL+TAB Este método abreviado solo funciona si no hay archivos abiertos en ninguna pestaña de Windows PowerShell.|
 
-## Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit [!INCLUDE[ise_2](../Token/ise_2_md.md)].
+## Métodos abreviados de teclado para iniciar y salir
+Puede usar los siguientes métodos abreviados de teclado para iniciar la consola de Windows PowerShell (PowerShell.exe) o para salir de [!INCLUDE[ise_2](../Token/ise_2_md.md)].
 
-|Action|Keyboard Shortcut|
+|Acción|Método abreviado de teclado|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL\+SHIFT\+P|
+|**Salir**|ALT+F4|
+|**Iniciar PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL+MAYÚS+P|
 
-## See Also
-[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+## Consulte también
+[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts (Lista completa de métodos abreviados de teclado de Windows PowerShell ISE)](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
