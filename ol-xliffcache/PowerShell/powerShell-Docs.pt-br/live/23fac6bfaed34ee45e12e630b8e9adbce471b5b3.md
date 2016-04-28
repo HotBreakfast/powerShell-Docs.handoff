@@ -1,5 +1,5 @@
 ---
-title: Working with Registry Keys
+title: Trabalhando com chaves do Registro
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,11 +7,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 91bfaecd-8684-48b4-ad86-065dfe6dc90a
 ---
-# Working with Registry Keys
-Because registry keys are items on Windows PowerShell drives, working with them is very similar to working with files and folders. One critical difference is that every item on a registry\-based Windows PowerShell drive is a container, just like a folder on a file system drive. However, registry entries and their associated values are properties of the items, not distinct items.
+# Trabalhando com chaves do Registro
+Como as chaves do Registro são itens em unidades do Windows PowerShell, trabalhar com elas é muito semelhante a trabalhar com arquivos e pastas. Uma diferença fundamental é que cada item em uma unidade do Windows PowerShell com base no Registro é um contêiner, assim como uma pasta em uma unidade de sistema de arquivos. No entanto, as entradas do Registro e seus valores associados são propriedades de itens, não itens distintos.
 
-### Listing All Subkeys of a Registry Key
-You can show all items directly within a registry key by using **Get\-ChildItem**. Add the optional **Force** parameter to display hidden or system items. For example, this command displays the items directly within Windows PowerShell drive HKCU:, which corresponds to the HKEY\_CURRENT\_USER registry hive:
+### Listar todas as subchaves de uma chave do Registro
+Você pode mostrar todos os itens dentro de uma chave do Registro usando **Get-ChildItem**. Adicione o parâmetro opcional **Force** para exibir itens ocultos ou do sistema. Por exemplo, este comando exibe os itens diretamente na unidade do Windows PowerShell HKCU:, que corresponde ao hive do Registro HKEY_CURRENT_USER:
 
 ```
 PS> Get-ChildItem -Path hkcu:\
@@ -29,9 +29,9 @@ SKC  VC Name                           Property
 ...
 ```
 
-These are the top\-level keys visible under HKEY\_CURRENT\_USER in the Registry Editor (Regedit.exe).
+Essas são as chaves de nível superior em HKEY_CURRENT_USER no Editor do Registro (Regedit.exe).
 
-You can also specify this registry path by specifying the registry provider's name, followed by "**::**". The registry provider's full name is **Microsoft.PowerShell.Core\\Registry**, but this can be shortened to just **Registry**. Any of the following commands will list the contents directly under HKCU:
+Você também pode especificar esse caminho de Registro definindo o nome do provedor de Registro, seguido por "**::**". O nome completo do provedor de Registro é **Microsoft.PowerShell.Core\Registry**, mas isso pode ser reduzido para apenas **Registry**. Qualquer um dos comandos a seguir lista o conteúdo diretamente sob o HKCU:
 
 ```
 Get-ChildItem -Path Registry::HKEY_CURRENT_USER
@@ -41,56 +41,56 @@ Get-ChildItem -Path Microsoft.PowerShell.Core\Registry::HKCU
 Get-ChildItem HKCU:
 ```
 
-These commands list only the directly contained items, much like using Cmd.exe's **DIR** command or **ls** in a UNIX shell. To show contained items, you need to specify the **Recurse** parameter. To list all registry keys in HKCU, use the following command (This operation can take an extremely long time.):
+Esses comandos listam apenas os itens contidos diretamente, similar ao uso do comando **DIR** do Cmd.exe ou do **ls** em um shell do UNIX. Para mostrar os itens contidos, você precisa especificar o parâmetro **Recurse**. Para listar todas as chaves de Registro no HKCU, use o comando a seguir (esta operação pode demorar um muitíssimo tempo):
 
 ```
 Get-ChildItem -Path hkcu:\ -Recurse
 ```
 
-**Get\-ChildItem** can perform complex filtering capabilities through its **Path**, **Filter**, **Include**, and **Exclude** parameters, but those parameters are typically based only on name. You can perform complex filtering based on other properties of items by using the **Where\-Object**cmdlet. The following command finds all keys within HKCU:\\Software that have no more than one subkey and also have exactly four values:
+**Get-ChildItem** pode executar os recursos de filtragem complexos por meio de seus parâmetros **Path**, **Filter**, **Include** e **Exclude**, mas esses parâmetros normalmente são baseados apenas no nome. Você pode executar a filtragem complexa com base em outras propriedades de itens usando o cmdlet **Where-Object**. O comando a seguir localiza todas as chaves no HKCU:\Software que têm no máximo uma subchave e que também têm exatamente quatro valores:
 
 ```
 Get-ChildItem -Path HKCU:\Software -Recurse | Where-Object -FilterScript {($_.SubKeyCount -le 1) -and ($_.ValueCount -eq 4) }
 ```
 
-### Copying Keys
-Copying is done with **Copy\-Item**. The following command copies HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion and all of its properties to HKCU:\\, creating a new key named "CurrentVersion":
+### Copiar chaves
+A cópia é feita com **Copy-Item**. O comando a seguir copia HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion e todas as suas propriedades HKCU:\, criando uma nova chave chamada "CurrentVersion":
 
 ```
 Copy-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion' -Destination hkcu:
 ```
 
-If you examine this new key in the registry editor or by using **Get\-ChildItem**, you will notice that you do not have copies of the contained subkeys in the new location. In order to copy all of the contents of a container, you need to specify the **Recurse** parameter. To make the preceding copy command recursive, you would use this command:
+Se você examinar essa nova chave no editor do Registro ou usando **Get-ChildItem**, observará que não há cópias das subchaves contidas no novo local. Para copiar todo o conteúdo de um contêiner, você precisa especificar o parâmetro **Recurse**. Para tornar o comando de cópia anterior recursivo, você usaria este comando:
 
 ```
 Copy-Item -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion' -Destination hkcu: -Recurse
 ```
 
-You can still use other tools you already have available to perform filesystem copies. Any registry editing tools—including reg.exe, regini.exe, and regedit.exe—and COM objects that support registry editing (such as WScript.Shell and WMI's StdRegProv class) can be used from within Windows PowerShell.
+Você ainda pode usar outras ferramentas que já estão disponíveis para executar cópias do sistema de arquivos. Quaisquer ferramentas de edição de Registro, incluindo reg.exe, regini.exe e regedit.exe, e objetos COM que dão suporte à edição do Registro (como o WScript.Shell e a classe StdRegProv do WMI) podem ser usados de dentro do Windows PowerShell.
 
-### Creating Keys
-Creating new keys in the registry is simpler than creating a new item in a file system. Because all registry keys are containers, you do not need to specify the item type; you simply supply an explicit path, such as:
+### Criar chaves
+Criar novas chaves no Registro é mais simples do que criar um novo item em um sistema de arquivos. Como todas as chaves do Registro são contêineres, você não precisa especificar o tipo de item; basta fornecer um caminho explícito, como:
 
 ```
 New-Item -Path hkcu:\software\_DeleteMe
 ```
 
-You can also use a provider\-based path to specify a key:
+Você também pode usar um caminho de provedor para especificar uma chave:
 
 ```
 New-Item -Path Registry::HKCU\_DeleteMe
 ```
 
-### Deleting Keys
-Deleting items is essentially the same for all providers. The following commands will silently remove items:
+### Excluir chaves
+Excluir itens é essencialmente o mesmo para todos os provedores. Os comandos a seguir removerão itens silenciosamente:
 
 ```
 Remove-Item -Path hkcu:\Software\_DeleteMe
 Remove-Item -Path 'hkcu:\key with spaces in the name'
 ```
 
-### Removing All Keys Under a Specific Key
-You can remove contained items by using **Remove\-Item**, but you will be prompted to confirm the removal if the item contains anything else. For example, if we attempt to delete the HKCU:\\CurrentVersion subkey we created, we see this:
+### Remover todas as chaves sob uma chave específica
+Você pode remover os itens contidos usando **Remove-Item**, mas será solicitado confirmar a remoção se o item contiver qualquer outra coisa. Por exemplo, se tentarmos excluir a subchave HKCU:\\CurrentVersion que criamos, veremos isso:
 
 ```
 Remove-Item -Path hkcu:\CurrentVersion
@@ -103,15 +103,20 @@ parameter was not specified. If you continue, all children will be removed with
 (default is "Y"):
 ```
 
-To delete contained items without prompting, specify the **\-Recurse** parameter:
+Para excluir os itens contidos sem nenhum prompt, especifique o parâmetro **-Recurse**:
 
 ```
 Remove-Item -Path HKCU:\CurrentVersion -Recurse
 ```
 
-If you wanted to remove all items within HKCU:\\CurrentVersion but not HKCU:\\CurrentVersion itself, you could instead use:
+Se desejar remover todos os itens dentro de HKCU:\\CurrentVersion, mas não o HKCU:\\CurrentVersion em si, você poderá usar:
 
 ```
 Remove-Item -Path HKCU:\CurrentVersion\* -Recurse
 ```
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 

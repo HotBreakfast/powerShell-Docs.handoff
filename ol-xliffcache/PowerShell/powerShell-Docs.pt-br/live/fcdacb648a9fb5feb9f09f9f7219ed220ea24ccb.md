@@ -1,5 +1,5 @@
 ---
-title: Working With Files, Folders and Registry Keys
+title: Trabalhando com arquivos, pastas e chaves do Registro
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,13 +7,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e6cf87aa-b5f8-48d5-a75a-7cb7ecb482dc
 ---
-# Working With Files, Folders and Registry Keys
-Windows PowerShell uses the noun **Item** to refer to items found on a Windows PowerShell drive. When dealing with the Windows PowerShell FileSystem provider, an **Item** might be a file, a folder, or the Windows PowerShell drive. Listing and working with these items is a critical basic task in most administrative settings, so we want to discuss these tasks in detail.
+# Trabalhando com arquivos, pastas e chaves do Registro
+O Windows PowerShell usa o substantivo **Item** para se referir a itens encontrados em uma unidade do Windows PowerShell. Ao lidar com o provedor do Sistema de arquivos do Windows PowerShell, um **Item** pode ser um arquivo, uma pasta ou uma unidade do Windows PowerShell. Listar e trabalhar com esses itens são tarefas críticas básicas na maioria das configurações administrativas, por isso abordaremos essas tarefas com mais detalhes.
 
-### Enumerating Files, Folders, and Registry Keys (Get\-ChildItem)
-Since getting a collection of items from a particular location is such a common task, the **Get\-ChildItem** cmdlet is designed specifically to return all items found within a container such as a folder.
+### Enumerando arquivos, pastas e chaves do Registro (Get-ChildItem)
+Como obter uma coleção de itens de uma localização específica é uma tarefa comum, o cmdlet **Get-ChildItem** foi desenvolvido especificamente para retornar todos os itens encontrados em um contêiner, como uma pasta.
 
-If you want to return all files and folders that are contained directly within the folder C:\\Windows, type:
+Se você quiser retornar todos os arquivos e pastas contidos diretamente na pasta C:\Windows, digite:
 
 ```
 PS> Get-ChildItem -Path C:\Windows
@@ -26,18 +26,18 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-The listing looks similar to what you would see when you enter the **dir** command in **Cmd.exe**, or the **ls** command in a UNIX command shell.
+A listagem é semelhante ao que será exibido ao inserir o comando **dir** no **Cmd.exe**, ou o comando **ls** em um shell de comando do UNIX.
 
-You can perform very complex listings by using parameters of the **Get\-ChildItem** cmdlet. We will look at a few scenarios next. You can see the syntax the **Get\-ChildItem** cmdlet by typing:
+Você pode executar listagens muito complexas usando parâmetros do cmdlet **Get-ChildItem**. Examinaremos alguns cenários em seguida. Você pode ver a sintaxe do cmdlet **Get-ChildItem** digitando:
 
 ```
 PS> Get-Command -Name Get-ChildItem -Syntax
 ```
 
-These parameters can be mixed and matched to get highly customized output.
+Esses parâmetros podem ser misturados e combinados para obter uma saída altamente personalizável.
 
-#### Listing all Contained Items (\-Recurse)
-To see both the items inside a Windows folder and any items that are contained within the subfolders, use the **Recurse** parameter of **Get\-ChildItem**. The listing displays everything within the Windows folder and the items in its subfolders. For example:
+#### Listando todos os itens contidos (-Recurse)
+Para ver tanto os itens em uma pasta do Windows quanto quaisquer itens contidos em subpastas, use o parâmetro **Recurse** do **Get-ChildItem**. A lista exibe tudo dentro da pasta do Windows, bem como os itens em suas subpastas. Por exemplo:
 
 ```
 PS> Get-ChildItem -Path C:\WINDOWS -Recurse
@@ -50,8 +50,8 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-#### Filtering Items by Name (\-Name)
-To display only the names of items, use the **Name** parameter of **Get\-Childitem**:
+#### Filtrando itens por nome (-Name)
+Para exibir somente os nomes dos itens, use o parâmetro **Name** do **Get-Childitem**:
 
 ```
 PS> Get-ChildItem -Path C:\WINDOWS -Name
@@ -61,29 +61,29 @@ assembly
 ...
 ```
 
-#### Forcibly Listing Hidden Items (\-Force)
-Items that are normally invisible in File Explorer or Cmd.exe are not displayed in the output of a **Get\-ChildItem** command. To display hidden items, use the **Force** parameter of **Get\-ChildItem**. For example:
+#### Forçar a listagem de itens ocultos (-Force)
+Itens que são normalmente invisíveis no Explorador de Arquivos ou Cmd.exe não são exibidos na saída de um comando **Get-ChildItem**. Para exibir itens ocultos, use o parâmetro **Force** do **Get-ChildItem**. Por exemplo:
 
 ```
 Get-ChildItem -Path C:\Windows -Force
 ```
 
-This parameter is named Force because you can forcibly override the normal behavior of the **Get\-ChildItem** command. Force is a widely used parameter that forces an action that a cmdlet would not normally perform, although it will not perform any action that compromises the security of the system.
+Esse parâmetro é chamado Force porque com ele você pode forçar a substituição do comportamento normal do comando **Get-ChildItem**. O Force é um parâmetro amplamente usado que força uma ação que um cmdlet normalmente não executa, embora ele não executará qualquer ação que comprometa a segurança do sistema.
 
-#### Matching Item Names with Wildcards
-**The Get\-ChildItem** command accepts wildcards in the path of the items to list.
+#### Correspondendo nomes de itens com curingas
+O comando **Get-ChildItem** aceita curingas no caminho dos itens para listar.
 
-Because wildcard matching is handled by the Windows PowerShell engine, all cmdlets that accepts wildcards use the same notation and have the same matching behavior. The Windows PowerShell wildcard notation includes:
+Como a correspondência de curingas é identificada pelo mecanismo do Windows PowerShell, todos os cmdlets que aceitam curingas usam a mesma notação e têm o mesmo comportamento de correspondência. A notação de curinga do Windows PowerShell inclui:
 
--   Asterisk (\*)matches zero or more occurrences of any character.
+-   O asterisco (*) corresponde a zero ou mais ocorrências de qualquer caractere.
 
--   Question mark (?) matches exactly one character.
+-   O ponto de interrogação (?) corresponde exatamente a um caractere.
 
--   Left bracket (\[) character and right bracket (]) character surround a set of characters to be matched.
+-   O colchete esquerdo ([) e colchete direito (]) envolvem um conjunto de caracteres a ser correspondido.
 
-Here are some examples of how wildcard specification works.
+Aqui estão alguns exemplos de como a especificação de curinga funciona.
 
-To find all files in the Windows directory with the suffix **.log** and exactly five characters in the base name, enter the following command:
+Para localizar todos os arquivos no diretório do Windows com o sufixo **.log** e exatamente cinco caracteres no nome de base, digite o seguinte comando:
 
 ```
 PS> Get-ChildItem -Path C:\Windows\?????.log
@@ -99,27 +99,27 @@ Mode                LastWriteTime     Length Name
 ...
 ```
 
-To find all files that begin with the letter **x** in the Windows directory, type:
+Para localizar todos os arquivos que começam com a letra **x** no diretório do Windows, digite:
 
 ```
 Get-ChildItem -Path C:\Windows\x*
 ```
 
-To find all files whose names begin with **x** or **z**, type:
+Para localizar todos os arquivos cujos nomes começam com **x** ou **z**, digite:
 
 ```
 Get-ChildItem -Path C:\Windows\[xz]*
 ```
 
-#### Excluding Items (\-Exclude)
-You can exclude specific items by using the **Exclude** parameter of Get\-ChildItem. This lets you perform complex filtering in a single statement.
+#### Excluindo itens (-Exclude)
+Você pode excluir itens específicos usando o parâmetro **Exclude** do Get-ChildItem. Isso permite executar filtragem complexa em uma única instrução.
 
-For example, suppose you are trying to find the Windows Time Service DLL in the System32 folder, and all you can remember about the DLL name is that it begins with "W" and has "32" in it.
+Por exemplo, suponha que você está tentando localizar a DLL de Serviço de Tempo do Windows na pasta System32, e tudo o que você lembra do nome da DLL é que começa com "W" e possui "32".
 
-An expression like **w\&#42;32\&#42;.dll** will find all DLLs that satisfy the conditions, but it may also return the Windows 95 and 16\-bit Windows compatibility DLLs that include "95" or "16" in their names. You can omit files that have any of these numbers in their names by using the **Exclude** parameter with the pattern **\&#42;\[9516]\&#42;**:
+Uma expressão como **w*32*.dll** encontrará todas as DLLs que atendem às condições, mas também pode retornar as DLLs de compatibilidade com o Windows 95 e Windows de 16 bits que incluem "95" ou "16" em seus nomes. Você pode omitir os arquivos que têm algum desses números em seus nomes usando o parâmetro **Exclude** com o padrão ***[9516]***:
 
 <pre>PS> Get-ChildItem -Path C:\WINDOWS\System32\w*32*.dll -Exclude *[9516]*
-Directory: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32
+Diretório: Microsoft.PowerShell.Core\FileSystem::C:\WINDOWS\System32
 Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
 -a---        2004-08-04   8:00 AM     174592 w32time.dll
@@ -132,18 +132,18 @@ Mode                LastWriteTime     Length Name
 -a---        2004-08-04   8:00 AM      22528 wsock32.dll
 -a---        2004-08-04   8:00 AM      18432 wtsapi32.dll</pre>
 
-#### Mixing Get\-ChildItem Parameters
-You can use several of the parameters of the **Get\-ChildItem** cmdlet in the same command. Before you mix parameters, be sure that you understand wildcard matching. For example, the following command returns no results:
+#### Mesclando parâmetros do Get-ChildItem
+Você pode usar vários parâmetros do cmdlet **Get-ChildItem** no mesmo comando. Antes de mesclar parâmetros, certifique-se de que você compreende a correspondência de curingas. Por exemplo, o comando a seguir não retorna nenhum resultado:
 
 ```
 PS> Get-ChildItem -Path C:\Windows\*.dll -Recurse -Exclude [a-y]*.dll
 ```
 
-There are no results, even though there are two DLLs that begin with the letter "z" in the Windows folder.
+Não haverá nenhum resultado, mesmo que haja duas DLLs que comecem com a letra "z" na pasta Windows.
 
-No results were returned because we specified the wildcard as part of the path. Even though the command was recursive, the **Get\-ChildItem** cmdlet restricted the items to those that are in the Windows folder with names ending with ".dll".
+Nenhum resultado foi retornado, pois especificamos o curinga como parte do caminho. Mesmo que o comando seja recursivo, o cmdlet **Get-ChildItem** restringiu os itens àqueles que estão na pasta do Windows com nomes que terminam com ".dll".
 
-To specify a recursive search for files whose names match a special pattern, use the **\-Include** parameter.
+Para especificar uma pesquisa recursiva para arquivos cujos nomes correspondem a um padrão especial, use o parâmetro **-Include**.
 
 ```
 PS> Get-ChildItem -Path C:\Windows -Include *.dll -Recurse -Exclude [a-y]*.dll
@@ -160,4 +160,9 @@ Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
 -a---        2004-08-04   8:00 AM     337920 zipfldr.dll
 ```
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
