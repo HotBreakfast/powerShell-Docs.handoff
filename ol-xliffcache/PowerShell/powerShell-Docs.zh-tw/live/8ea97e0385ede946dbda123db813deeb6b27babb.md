@@ -1,5 +1,5 @@
 ---
-title: Windows PowerShell Tips
+title: Windows PowerShell 秘訣
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,18 +7,23 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a6658f04-8d45-43c5-9153-d82950931b39
 ---
-# Windows PowerShell Tips
-Tips in this section are supported by [!INCLUDE[psversion3](../Token/psversion3_md.md)] and later releases of Windows PowerShell. Topics in this section have been updated from archived [Windows PowerShell Tips](http://technet.microsoft.com/library/hh848797.aspx) that are supported by Windows PowerShell 1.0, and in some cases, 2.0.
+# Windows PowerShell 秘訣
+[!INCLUDE[psversion3](../Token/psversion3_md.md)] 和最新版本的 Windows PowerShell 支援本節中的秘訣。 本節中的主題是從封存的 [Windows PowerShell 秘訣](http://technet.microsoft.com/library/hh848797.aspx) (受 Windows PowerShell 1.0 與 2.0 (在特定狀況下) 支援 ) 更新。
 
-Special thanks to Windows PowerShell MVP [Dave Wyatt](http://mvp.microsoft.com/mvp/Dave%20Wyatt-5000730) for his work to provide updated code samples for these tips.
+特別感謝 Windows PowerShell MVP [Dave Wyatt](http://mvp.microsoft.com/mvp/Dave%20Wyatt-5000730) 為這些秘訣提供更新的程式碼範例。
 
-## Windows PowerShell 3.0 and Windows PowerShell 4.0 Tips
+## Windows PowerShell 3.0 與 Windows PowerShell 4.0 秘訣
 
--   [Creating a Custom Input Box](../Topic/Creating-a-Custom-Input-Box.md)
+-   [建立自訂輸入方塊](../Topic/Creating-a-Custom-Input-Box.md)
 
--   [Selecting Items from a List Box](../Topic/Selecting-Items-from-a-List-Box.md)
+-   [從清單方塊選取項目](../Topic/Selecting-Items-from-a-List-Box.md)
 
--   [Creating a Graphical Date Picker](../Topic/Creating-a-Graphical-Date-Picker.md)
+-   [建立圖形化日期選擇器](../Topic/Creating-a-Graphical-Date-Picker.md)
 
--   [Multiple-selection List Boxes](../Topic/Multiple-selection-List-Boxes.md)
+-   [多重選擇清單方塊](../Topic/Multiple-selection-List-Boxes.md)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
