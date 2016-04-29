@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="pt-br">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">51e7169b4b8a80bc5df81e4336171eb9cb2ab8e4</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-46be25e" tool-company="Microsoft" />
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -12,45 +18,18 @@
           <target state="new"><bpt id="p1">**</bpt>Get-Clipboard<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Set-Clipboard<ept id="p2">**</ept> make it easier for you to transfer content to and from a Windows PowerShell session.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>The following example uses File Explorer to copy three files:</source>
-          <target state="new">The following example uses File Explorer to copy three files:</target>
+          <source>For example, if you use Windows Explorer to copy three files</source>
+          <target state="new">For example, if you use Windows Explorer to copy three files</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>Now, you can easily access the contents of the clipboard as a list of files:</source>
-          <target state="new">Now, you can easily access the contents of the clipboard as a list of files:</target>
+          <source>to the clipboard (by selecting them and pressing <ph id="ph1">`ctrl-c`</ph>, for example), you can then easily access the contents of the clipboard as a list of files:</source>
+          <target state="new">to the clipboard (by selecting them and pressing <ph id="ph1">`ctrl-c`</ph>, for example), you can then easily access the contents of the clipboard as a list of files:</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>PS C:\\&amp;gt; Get-Clipboard -Format FileDropList</source>
-          <target state="new">PS C:\\&amp;gt; Get-Clipboard -Format FileDropList</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>Directory: C:\\Users\\slee\\Downloads\\Example</source>
-          <target state="new">Directory: C:\\Users\\slee\\Downloads\\Example</target>
-        </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Mode LastWriteTime Length Name</source>
-          <target state="new">Mode LastWriteTime Length Name</target>
-        </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>-a---- 4/14/2015 1:19 PM 0 File2.txt</source>
-          <target state="new">-a---- 4/14/2015 1:19 PM 0 File2.txt</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>-a---- 4/14/2015 1:19 PM 0 File3.txt</source>
-          <target state="new">-a---- 4/14/2015 1:19 PM 0 File3.txt</target>
-        </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>-a---- 4/14/2015 1:19 PM 0 File1.txt</source>
-          <target state="new">-a---- 4/14/2015 1:19 PM 0 File1.txt</target>
-        </trans-unit>
-        <trans-unit id="111" translate="yes" xml:space="preserve">
           <source>The Clipboard cmdlets support images, audio files, file lists, and text.</source>
           <target state="new">The Clipboard cmdlets support images, audio files, file lists, and text.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7cb6326481113a0f526ce8f19551ee31a2fade62</xliffext:olfilehash>
-  </header>
 </xliff>
