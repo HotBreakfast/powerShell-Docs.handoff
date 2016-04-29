@@ -4,7 +4,7 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">adda311ae522a0b165380a2f277c30a03a06a03e</xliffext:olfilehash>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f617844fdfc22c15e23687a911cfe75876abc43e</xliffext:olfilehash>
       <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-04046aa" tool-company="Microsoft" />
     </header>
     <body>
@@ -106,22 +106,14 @@
           <target state="new">Here is the old resource script:</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>Here is the updated script.</source>
-          <target state="new">Here is the updated script.</target>
-        </trans-unit>
-        <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source>Notice that a <bpt id="p1">**</bpt>IsSingleInstance<ept id="p1">**</ept> mandatory parameter has been added to each function.</source>
-          <target state="new">Notice that a <bpt id="p1">**</bpt>IsSingleInstance<ept id="p1">**</ept> mandatory parameter has been added to each function.</target>
-        </trans-unit>
-        <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>Notice that the <bpt id="p1">**</bpt>TimeZone<ept id="p1">**</ept> property is no longer a key.</source>
           <target state="new">Notice that the <bpt id="p1">**</bpt>TimeZone<ept id="p1">**</ept> property is no longer a key.</target>
         </trans-unit>
-        <trans-unit id="128" translate="yes" xml:space="preserve">
+        <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>Now, if a configuration attempts to set the time zone twice (by using two different <bpt id="p1">**</bpt>xTimeZone<ept id="p1">**</ept> blocks with different <bpt id="p2">**</bpt>TimeZone<ept id="p2">**</ept></source>
           <target state="new">Now, if a configuration attempts to set the time zone twice (by using two different <bpt id="p1">**</bpt>xTimeZone<ept id="p1">**</ept> blocks with different <bpt id="p2">**</bpt>TimeZone<ept id="p2">**</ept></target>
         </trans-unit>
-        <trans-unit id="129" translate="yes" xml:space="preserve">
+        <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>values), attempting to compile the configuration will cause an error:</source>
           <target state="new">values), attempting to compile the configuration will cause an error:</target>
         </trans-unit>
