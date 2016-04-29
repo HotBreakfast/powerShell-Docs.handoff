@@ -1,8 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="ja-jp">
+  <file datatype="xml" original="md" source-language="en-US" target-language="ja-jp">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4a1909ab56b9f8d3a97086696e344e91c5dd5fe7</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-04046aa" tool-company="Microsoft" />
+    </header>
     <body>
-      <group id="main" extype="content">
+      <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
           <source>DSC Script Resource</source>
           <target state="new">DSC Script Resource</target>
@@ -16,117 +22,182 @@
           <target state="new">The <bpt id="p1">**</bpt>Script<ept id="p1">**</ept> resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to run Windows PowerShell script blocks on target nodes.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`Script`</ph> resource has <ph id="ph2">`GetScript`</ph>, <ph id="ph3">`SetScript`</ph>, and <ph id="ph4">`TestScript`</ph> properties.</source>
+          <target state="new">The <ph id="ph1">`Script`</ph> resource has <ph id="ph2">`GetScript`</ph>, <ph id="ph3">`SetScript`</ph>, and <ph id="ph4">`TestScript`</ph> properties.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>These properties should be set to script blocks that will run on each target node.</source>
+          <target state="new">These properties should be set to script blocks that will run on each target node.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`GetScript`</ph> script block should return a hashtable representing the state of the current node.</source>
+          <target state="new">The <ph id="ph1">`GetScript`</ph> script block should return a hashtable representing the state of the current node.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>It is not required to return anything.</source>
+          <target state="new">It is not required to return anything.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>DSC doesn't do anything with the output of this script block.</source>
+          <target state="new">DSC doesn't do anything with the output of this script block.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TestScript`</ph> script block should determine if the current node needs to be modified.</source>
+          <target state="new">The <ph id="ph1">`TestScript`</ph> script block should determine if the current node needs to be modified.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>It should return <ph id="ph1">`$true`</ph> if the node is up-to-date.</source>
+          <target state="new">It should return <ph id="ph1">`$true`</ph> if the node is up-to-date.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>It should return <ph id="ph1">`$false`</ph> if the node's configuration is out-of-date and should be updated by the <ph id="ph2">`SetScript`</ph> script block.</source>
+          <target state="new">It should return <ph id="ph1">`$false`</ph> if the node's configuration is out-of-date and should be updated by the <ph id="ph2">`SetScript`</ph> script block.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`TestScript`</ph> script block is called by DSC.</source>
+          <target state="new">The <ph id="ph1">`TestScript`</ph> script block is called by DSC.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>The <ph id="ph1">`SetScript`</ph> script block should modify the node.</source>
+          <target state="new">The <ph id="ph1">`SetScript`</ph> script block should modify the node.</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>It is called by DSC if the <ph id="ph1">`TestScript`</ph> block return <ph id="ph2">`$false`</ph>.</source>
+          <target state="new">It is called by DSC if the <ph id="ph1">`TestScript`</ph> block return <ph id="ph2">`$false`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>If you need to use variables from your configuration script in the <ph id="ph1">`GetScript`</ph>, <ph id="ph2">`TestScript`</ph>, or <ph id="ph3">`SetScript`</ph> script blocks, use the <ph id="ph4">`$using:`</ph> scope (see below for an example).</source>
+          <target state="new">If you need to use variables from your configuration script in the <ph id="ph1">`GetScript`</ph>, <ph id="ph2">`TestScript`</ph>, or <ph id="ph3">`SetScript`</ph> script blocks, use the <ph id="ph4">`$using:`</ph> scope (see below for an example).</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
           <source>Syntax</source>
           <target state="new">Syntax</target>
         </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
+        <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>Properties</source>
           <target state="new">Properties</target>
         </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
+        <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>Property</source>
           <target state="new">Property</target>
         </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
+        <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>Description</source>
           <target state="new">Description</target>
         </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
+        <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>GetScript</source>
           <target state="new">GetScript</target>
         </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>Provides a block of Windows PowerShell script that runs when you invoke the <bpt id="p2">[</bpt>Get-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/dn407379.aspx)</ept> cmdlet.</source>
-          <target state="new">Provides a block of Windows PowerShell script that runs when you invoke the <bpt id="p2">[</bpt>Get-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/dn407379.aspx)</ept> cmdlet.</target>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Provides a block of Windows PowerShell script that runs when you invoke the <bpt id="p1">[</bpt>Get-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn407379.aspx)</ept> cmdlet.</source>
+          <target state="new">Provides a block of Windows PowerShell script that runs when you invoke the <bpt id="p1">[</bpt>Get-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn407379.aspx)</ept> cmdlet.</target>
         </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
+        <trans-unit id="122" translate="yes" xml:space="preserve">
           <source>This block must return a hash table.</source>
           <target state="new">This block must return a hash table.</target>
         </trans-unit>
-        <trans-unit id="111" translate="yes" xml:space="preserve">
+        <trans-unit id="123" translate="yes" xml:space="preserve">
           <source>SetScript</source>
           <target state="new">SetScript</target>
         </trans-unit>
-        <trans-unit id="112" translate="yes" xml:space="preserve">
+        <trans-unit id="124" translate="yes" xml:space="preserve">
           <source>Provides a block of Windows PowerShell script.</source>
           <target state="new">Provides a block of Windows PowerShell script.</target>
         </trans-unit>
-        <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>When you invoke the <bpt id="p3">[</bpt>Start-DscConfiguration<ept id="p3">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, the <bpt id="p4">**</bpt>TestScript<ept id="p4">**</ept> block runs first.</source>
-          <target state="new">When you invoke the <bpt id="p3">[</bpt>Start-DscConfiguration<ept id="p3">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, the <bpt id="p4">**</bpt>TestScript<ept id="p4">**</ept> block runs first.</target>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>When you invoke the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, the <bpt id="p2">**</bpt>TestScript<ept id="p2">**</ept> block runs first.</source>
+          <target state="new">When you invoke the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, the <bpt id="p2">**</bpt>TestScript<ept id="p2">**</ept> block runs first.</target>
         </trans-unit>
-        <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>If the <bpt id="p5">**</bpt>TestScript<ept id="p5">**</ept> block returns <bpt id="p6">**</bpt>$false<ept id="p6">**</ept>, the <bpt id="p7">**</bpt>SetScript<ept id="p7">**</ept> block will run.</source>
-          <target state="new">If the <bpt id="p5">**</bpt>TestScript<ept id="p5">**</ept> block returns <bpt id="p6">**</bpt>$false<ept id="p6">**</ept>, the <bpt id="p7">**</bpt>SetScript<ept id="p7">**</ept> block will run.</target>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block returns <bpt id="p2">**</bpt>$false<ept id="p2">**</ept>, the <bpt id="p3">**</bpt>SetScript<ept id="p3">**</ept> block will run.</source>
+          <target state="new">If the <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block returns <bpt id="p2">**</bpt>$false<ept id="p2">**</ept>, the <bpt id="p3">**</bpt>SetScript<ept id="p3">**</ept> block will run.</target>
         </trans-unit>
-        <trans-unit id="115" translate="yes" xml:space="preserve">
-          <source>If the <bpt id="p8">**</bpt>TestScript<ept id="p8">**</ept> block returns <bpt id="p9">**</bpt>$true<ept id="p9">**</ept>, the <bpt id="p10">**</bpt>SetScript<ept id="p10">**</ept> block will not run.</source>
-          <target state="new">If the <bpt id="p8">**</bpt>TestScript<ept id="p8">**</ept> block returns <bpt id="p9">**</bpt>$true<ept id="p9">**</ept>, the <bpt id="p10">**</bpt>SetScript<ept id="p10">**</ept> block will not run.</target>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>If the <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block returns <bpt id="p2">**</bpt>$true<ept id="p2">**</ept>, the <bpt id="p3">**</bpt>SetScript<ept id="p3">**</ept> block will not run.</source>
+          <target state="new">If the <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block returns <bpt id="p2">**</bpt>$true<ept id="p2">**</ept>, the <bpt id="p3">**</bpt>SetScript<ept id="p3">**</ept> block will not run.</target>
         </trans-unit>
-        <trans-unit id="116" translate="yes" xml:space="preserve">
+        <trans-unit id="128" translate="yes" xml:space="preserve">
           <source>TestScript</source>
           <target state="new">TestScript</target>
         </trans-unit>
-        <trans-unit id="117" translate="yes" xml:space="preserve">
+        <trans-unit id="129" translate="yes" xml:space="preserve">
           <source>Provides a block of Windows PowerShell script.</source>
           <target state="new">Provides a block of Windows PowerShell script.</target>
         </trans-unit>
-        <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>When you invoke the <bpt id="p11">[</bpt>Start-DscConfiguration<ept id="p11">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, this block runs.</source>
-          <target state="new">When you invoke the <bpt id="p11">[</bpt>Start-DscConfiguration<ept id="p11">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, this block runs.</target>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>When you invoke the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, this block runs.</source>
+          <target state="new">When you invoke the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet, this block runs.</target>
         </trans-unit>
-        <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>If it returns <bpt id="p12">**</bpt>$false<ept id="p12">**</ept>, the SetScript block will run.</source>
-          <target state="new">If it returns <bpt id="p12">**</bpt>$false<ept id="p12">**</ept>, the SetScript block will run.</target>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>If it returns <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, the SetScript block will run.</source>
+          <target state="new">If it returns <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, the SetScript block will run.</target>
         </trans-unit>
-        <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>If it returns <bpt id="p13">**</bpt>$true<ept id="p13">**</ept>, the SetScript block will not run.</source>
-          <target state="new">If it returns <bpt id="p13">**</bpt>$true<ept id="p13">**</ept>, the SetScript block will not run.</target>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>If it returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>, the SetScript block will not run.</source>
+          <target state="new">If it returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>, the SetScript block will not run.</target>
         </trans-unit>
-        <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p14">**</bpt>TestScript<ept id="p14">**</ept> block also runs when you invoke the <bpt id="p15">[</bpt>Test-DscConfiguration<ept id="p15">](https://technet.microsoft.com/en-us/library/dn407382.aspx)</ept> cmdlet.</source>
-          <target state="new">The <bpt id="p14">**</bpt>TestScript<ept id="p14">**</ept> block also runs when you invoke the <bpt id="p15">[</bpt>Test-DscConfiguration<ept id="p15">](https://technet.microsoft.com/en-us/library/dn407382.aspx)</ept> cmdlet.</target>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block also runs when you invoke the <bpt id="p2">[</bpt>Test-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/dn407382.aspx)</ept> cmdlet.</source>
+          <target state="new">The <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block also runs when you invoke the <bpt id="p2">[</bpt>Test-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/dn407382.aspx)</ept> cmdlet.</target>
         </trans-unit>
-        <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>However, in this case, the <bpt id="p16">**</bpt>SetScript<ept id="p16">**</ept> block will not run, no matter what value the TestScript block returns.</source>
-          <target state="new">However, in this case, the <bpt id="p16">**</bpt>SetScript<ept id="p16">**</ept> block will not run, no matter what value the TestScript block returns.</target>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>However, in this case, the <bpt id="p1">**</bpt>SetScript<ept id="p1">**</ept> block will not run, no matter what value the TestScript block returns.</source>
+          <target state="new">However, in this case, the <bpt id="p1">**</bpt>SetScript<ept id="p1">**</ept> block will not run, no matter what value the TestScript block returns.</target>
         </trans-unit>
-        <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p17">**</bpt>TestScript<ept id="p17">**</ept> block must return True if the actual configuration matches the current desired state configuration, and False if it does not match.</source>
-          <target state="new">The <bpt id="p17">**</bpt>TestScript<ept id="p17">**</ept> block must return True if the actual configuration matches the current desired state configuration, and False if it does not match.</target>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block must return True if the actual configuration matches the current desired state configuration, and False if it does not match.</source>
+          <target state="new">The <bpt id="p1">**</bpt>TestScript<ept id="p1">**</ept> block must return True if the actual configuration matches the current desired state configuration, and False if it does not match.</target>
         </trans-unit>
-        <trans-unit id="124" translate="yes" xml:space="preserve">
+        <trans-unit id="136" translate="yes" xml:space="preserve">
           <source>(The current desired state configuration is the last configuration enacted on the node that is using DSC.)</source>
           <target state="new">(The current desired state configuration is the last configuration enacted on the node that is using DSC.)</target>
         </trans-unit>
-        <trans-unit id="125" translate="yes" xml:space="preserve">
+        <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>Credential</source>
           <target state="new">Credential</target>
         </trans-unit>
-        <trans-unit id="126" translate="yes" xml:space="preserve">
+        <trans-unit id="138" translate="yes" xml:space="preserve">
           <source>Indicates the credentials to use for running this script, if credentials are required.</source>
           <target state="new">Indicates the credentials to use for running this script, if credentials are required.</target>
         </trans-unit>
-        <trans-unit id="127" translate="yes" xml:space="preserve">
+        <trans-unit id="139" translate="yes" xml:space="preserve">
           <source>DependsOn</source>
           <target state="new">DependsOn</target>
         </trans-unit>
-        <trans-unit id="128" translate="yes" xml:space="preserve">
+        <trans-unit id="140" translate="yes" xml:space="preserve">
           <source>Indicates that the configuration of another resource must run before this resource is configured.</source>
           <target state="new">Indicates that the configuration of another resource must run before this resource is configured.</target>
         </trans-unit>
-        <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>For example, if the ID of the resource configuration script block that you want to run first is <bpt id="p18">**</bpt>ResourceName<ept id="p18">**</ept> and its type is <bpt id="p19">**</bpt>ResourceType<ept id="p19">**</ept>, the syntax for using this property is <ph id="ph1">`DependsOn = "[ResourceType]ResourceName"`</ph>.</source>
-          <target state="new">For example, if the ID of the resource configuration script block that you want to run first is <bpt id="p18">**</bpt>ResourceName<ept id="p18">**</ept> and its type is <bpt id="p19">**</bpt>ResourceType<ept id="p19">**</ept>, the syntax for using this property is <ph id="ph1">`DependsOn = "[ResourceType]ResourceName"`</ph>.</target>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>For example, if the ID of the resource configuration script block that you want to run first is <bpt id="p1">**</bpt>ResourceName<ept id="p1">**</ept> and its type is <bpt id="p2">**</bpt>ResourceType<ept id="p2">**</ept>, the syntax for using this property is <ph id="ph1">`DependsOn = "[ResourceType]ResourceName"`</ph>.</source>
+          <target state="new">For example, if the ID of the resource configuration script block that you want to run first is <bpt id="p1">**</bpt>ResourceName<ept id="p1">**</ept> and its type is <bpt id="p2">**</bpt>ResourceType<ept id="p2">**</ept>, the syntax for using this property is <ph id="ph1">`DependsOn = "[ResourceType]ResourceName"`</ph>.</target>
         </trans-unit>
-        <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>Example</source>
-          <target state="new">Example</target>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Example 1</source>
+          <target state="new">Example 1</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Example 2</source>
+          <target state="new">Example 2</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>This resource is writing the configuration's version to a text file.</source>
+          <target state="new">This resource is writing the configuration's version to a text file.</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>This version is available on the client computer, but isn't on any of the nodes, so it has to be passed to each of the <ph id="ph1">`Script`</ph> resource's script blocks with PowerShell's <ph id="ph2">`using`</ph> scope.</source>
+          <target state="new">This version is available on the client computer, but isn't on any of the nodes, so it has to be passed to each of the <ph id="ph1">`Script`</ph> resource's script blocks with PowerShell's <ph id="ph2">`using`</ph> scope.</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>When generating the node's MOF file, the value of the <ph id="ph1">`$version`</ph> variable is read from a text file on the client computer.</source>
+          <target state="new">When generating the node's MOF file, the value of the <ph id="ph1">`$version`</ph> variable is read from a text file on the client computer.</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>DSC replaces the <ph id="ph1">`$using:version`</ph> variables in each script block with the value of the <ph id="ph2">`$version`</ph> variable.</source>
+          <target state="new">DSC replaces the <ph id="ph1">`$using:version`</ph> variables in each script block with the value of the <ph id="ph2">`$version`</ph> variable.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b081337b68091f95498d23fecbc64701866b2cec</xliffext:olfilehash>
-  </header>
 </xliff>

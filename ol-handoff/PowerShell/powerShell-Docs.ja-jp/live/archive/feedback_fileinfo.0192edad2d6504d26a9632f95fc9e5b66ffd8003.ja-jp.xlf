@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="ja-jp">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">aa0991efc9ca39cc0aae39516d4b6cac03c4501a</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-46be25e" tool-company="Microsoft" />
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -12,37 +18,18 @@
           <target state="new">File version information can be misleading, particularly in cases where the file was patched.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>This release of WMF Production Preview adds new <bpt id="p1">**</bpt>FileVersionRaw<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ProductVersionRaw<ept id="p2">**</ept> script properties to FileInfo objects.</source>
-          <target state="new">This release of WMF Production Preview adds new <bpt id="p1">**</bpt>FileVersionRaw<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ProductVersionRaw<ept id="p2">**</ept> script properties to FileInfo objects.</target>
+          <source>This release of WMF 5.0 adds new <bpt id="p1">**</bpt>FileVersionRaw<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ProductVersionRaw<ept id="p2">**</ept></source>
+          <target state="new">This release of WMF 5.0 adds new <bpt id="p1">**</bpt>FileVersionRaw<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ProductVersionRaw<ept id="p2">**</ept></target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>Here are the properties as displayed for powershell.exe:</source>
-          <target state="new">Here are the properties as displayed for powershell.exe:</target>
+          <source>script properties to FileInfo objects.</source>
+          <target state="new">script properties to FileInfo objects.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>PS C:\\&amp;gt; Get-Process -Id $pid -FileVersionInfo | fl \*version\* -Force</source>
-          <target state="new">PS C:\\&amp;gt; Get-Process -Id $pid -FileVersionInfo | fl \*version\* -Force</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>FileVersionRaw : 10.0.10055.0</source>
-          <target state="new">FileVersionRaw : 10.0.10055.0</target>
-        </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>ProductVersionRaw : 10.0.10055.0</source>
-          <target state="new">ProductVersionRaw : 10.0.10055.0</target>
-        </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>FileVersion : 10.0.10055.0 (fbl\_srv2.150402-1826)</source>
-          <target state="new">FileVersion : 10.0.10055.0 (fbl\_srv2.150402-1826)</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>ProductVersion : 10.0.10055.0</source>
-          <target state="new">ProductVersion : 10.0.10055.0</target>
+          <source>Here are the properties as displayed for powershell.exe (assuming $pid is the ID of the PowerShell process):</source>
+          <target state="new">Here are the properties as displayed for powershell.exe (assuming $pid is the ID of the PowerShell process):</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ca8e183188cfb3e5dcbc6fc1bec884ebde00942c</xliffext:olfilehash>
-  </header>
 </xliff>
