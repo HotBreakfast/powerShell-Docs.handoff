@@ -4,7 +4,7 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ff31562ab62b39dfdd59aac7fe0bc610b7c898ed</xliffext:olfilehash>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1ced53ee566c0ef82ea7fa246b464e7a7c464077</xliffext:olfilehash>
       <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-04046aa" tool-company="Microsoft" />
     </header>
     <body>
@@ -22,8 +22,8 @@
           <target state="new">This topic explains how to use Profiles in <ph id="ph1">[!INCLUDE[ise_1](../Token/ise_1_md.md)]</ph>.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>We recommend that before performing the tasks in this section, you review <bpt id="p1">[</bpt>about_Profiles [v4]<ept id="p1">](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054)</ept>, or in the Console Pane, type, “get\-help about\_profiles” and press <bpt id="p2">**</bpt>ENTER<ept id="p2">**</ept>.</source>
-          <target state="new">We recommend that before performing the tasks in this section, you review <bpt id="p1">[</bpt>about_Profiles [v4]<ept id="p1">](assetId:///e1d9e30a-70cc-4f36-949f-fc7cd96b4054)</ept>, or in the Console Pane, type, “get\-help about\_profiles” and press <bpt id="p2">**</bpt>ENTER<ept id="p2">**</ept>.</target>
+          <source>We recommend that before performing the tasks in this section, you review <bpt id="p1">[</bpt>about_Profiles [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054)</ept>, or in the Console Pane, type, “get\-help about\_profiles” and press <bpt id="p2">**</bpt>ENTER<ept id="p2">**</ept>.</source>
+          <target state="new">We recommend that before performing the tasks in this section, you review <bpt id="p1">[</bpt>about_Profiles [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/e1d9e30a-70cc-4f36-949f-fc7cd96b4054)</ept>, or in the Console Pane, type, “get\-help about\_profiles” and press <bpt id="p2">**</bpt>ENTER<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
           <source>A profile is a <ph id="ph1">[!INCLUDE[ise_2](../Token/ise_2_md.md)]</ph> script that runs automatically when you start a new session.</source>
@@ -50,8 +50,8 @@
           <target state="new">If you use the “Restricted” policy, the profile cannot load.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>For more information about execution policy, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](assetId:///347708dc-1515-4d74-978b-8334603472e6)</ept>.</source>
-          <target state="new">For more information about execution policy, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](assetId:///347708dc-1515-4d74-978b-8334603472e6)</ept>.</target>
+          <source>For more information about execution policy, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept>.</source>
+          <target state="new">For more information about execution policy, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept>.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>Selecting a profile to use in the Windows PowerShell ISE</source>
@@ -170,8 +170,8 @@
           <target state="new">To change the default background color of the Console Pane to blue, in the profile file type: <ph id="ph1">`$psISE.Options.OutputPaneBackground = 'blue'`</ph> .</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source>For more information about the $psISE variable, see <bpt id="p1">[</bpt>Windows PowerShell ISE Object Model Reference<ept id="p1">](assetId:///e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)</ept>.</source>
-          <target state="new">For more information about the $psISE variable, see <bpt id="p1">[</bpt>Windows PowerShell ISE Object Model Reference<ept id="p1">](assetId:///e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)</ept>.</target>
+          <source>For more information about the $psISE variable, see <bpt id="p1">[</bpt>Windows PowerShell ISE Object Model Reference<ept id="p1">](https://technet.microsoft.com/en-us/library/e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)</ept>.</source>
+          <target state="new">For more information about the $psISE variable, see <bpt id="p1">[</bpt>Windows PowerShell ISE Object Model Reference<ept id="p1">](https://technet.microsoft.com/en-us/library/e1a9e7d1-0fd5-47de-8d9b-f1be1ed13b0c)</ept>.</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
           <source>To change font size to 20, in the profile file type: <ph id="ph1">`$psISE.Options.FontSize =20`</ph></source>
