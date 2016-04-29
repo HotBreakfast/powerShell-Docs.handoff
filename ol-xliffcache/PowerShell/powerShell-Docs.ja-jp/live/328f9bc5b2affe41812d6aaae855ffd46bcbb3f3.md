@@ -1,5 +1,5 @@
 ---
-title: Keyboard Shortcuts for the Windows PowerShell ISE
+title: Windows PowerShell ISE のキーボード ショートカット
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,107 +7,112 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8328b946-0f02-4ef4-ac28-2743a1b4043b
 ---
-# Keyboard Shortcuts for the Windows PowerShell ISE
-Use the following keyboard shortcuts to perform actions in [!INCLUDE[ise_1](../Token/ise_1_md.md)]. [!INCLUDE[ise_2](../Token/ise_2_md.md)] is available as part of the Windows Server and Windows client operating systems, but can also be installed on some older Windows operating systems as part of the [Windows Management Framework 4.0 download package](http://go.microsoft.com/fwlink/?LinkID=293881).
+# Windows PowerShell ISE のキーボード ショートカット
+次のキーボード ショートカットを使用して、[!INCLUDE[ise_1](../Token/ise_1_md.md)] でアクションを実行します。 [!INCLUDE[ise_2](../Token/ise_2_md.md)] は、Windows Server および Windows クライアント オペレーティング システムの一部として提供されていますが、[Windows Management Framework 4.0 のダウンロード パッケージ](http://go.microsoft.com/fwlink/?LinkID=293881)の一部として、前の Windows オペレーティング システムにもインストールできます。
 
-## Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## テキストを編集するためのキーボード ショートカット
+テキストを編集するときに、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcuts|Use in|
+|操作|キーボード ショートカット|使用する場所|
 |----------|----------------------|----------|
-|**Help**|F1|Script Pane **Important:** You can specify that F1 help comes from the TechNet Library on the web or downloaded Help (see Update\-Help). To select, click **Tools**, **Options**, then on the **General Settings**tab, set or clear **Use local help content instead of online content.**|
-|**Copy**|CTRL\+C|Script Pane, Command Pane, Output Pane|
-|**Cut**|CTRL\+X|Script Pane, Command Pane|
-|**Expand or Collapse Outlining**|CTRL\+M|Script Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Find Matching Brace**|CTRL\+]|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Command Pane|
-|**Redo**|CTRL\+Y|Script Pane, Command Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Command Pane, Output Pane|
-|**Show Snippets**|CTRL\+J|Script Pane, Command Pane|
-|**Undo**|CTRL\+Z|Script Pane, Command Pane|
+|**ヘルプ**|F1|スクリプト ウィンドウ **重要:** Web 上の TechNet ライブラリとダウンロードしたヘルプのどちらを F1 ヘルプとして表示するかを指定できます (Update-Help を参照)。 選ぶには、**[ツール]**、**[オプション]** を順にクリックして、**[全般設定]** タブで **[オンライン コンテンツの代わりにローカル ヘルプ コンテンツを使用する]** をオンまたはオフにします。|
+|**コピー**|CTRL+C|スクリプト ウィンドウ、コマンド ウィンドウ、出力ウィンドウ|
+|**［切り取り］**|CTRL+X|スクリプト ウィンドウ、コマンド ウィンドウ|
+|**アウトラインの展開または折りたたみ**|CTRL+M|スクリプト ウィンドウ|
+|**スクリプト内を検索**|CTRL+F|スクリプト ウィンドウ|
+|**スクリプト内で次を検索**|F3|スクリプト ウィンドウ|
+|**スクリプト内で前を検索**|SHIFT+F3|スクリプト ウィンドウ|
+|**対応するかっこの検索**|CTRL+]|スクリプト ウィンドウ|
+|**貼り付け**|CTRL+V|スクリプト ウィンドウ、コマンド ウィンドウ|
+|**やり直す**|CTRL+Y|スクリプト ウィンドウ、コマンド ウィンドウ|
+|**スクリプト内で置換**|CTRL+H|スクリプト ウィンドウ|
+|**上書き保存**|CTRL+S|スクリプト ウィンドウ|
+|**［すべて選択］**|CTRL+A|スクリプト ウィンドウ、コマンド ウィンドウ、出力ウィンドウ|
+|**スニペットの表示**|CTRL+J|スクリプト ウィンドウ、コマンド ウィンドウ|
+|**元に戻す**|CTRL+Z|スクリプト ウィンドウ、コマンド ウィンドウ|
 
-## Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## スクリプトを実行するためのキーボード ショートカット
+スクリプト ウィンドウでスクリプトを実行する場合、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single Windows PowerShell tab open, or when you have more than one Windows PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one Windows PowerShell tab open, or if you have more than one Windows PowerShell tab open, and the focus is in the Script Pane.|
+|**新規**|CTRL+N|
+|**［開く］**|CTRL+O|
+|**実行**|F5|
+|**選択範囲の実行**|F8|
+|**実行を中止**|CTRL+BREAK。 コンテキストが明確な場合 (選ばれているテキストがない場合)、Ctrl+C を使用できます。|
+|**タブ移動** (次のスクリプトへ)|CTRL+TAB **注意事項:** 次のスクリプトへのタブ移動は、1 つの Windows PowerShell タブが開いている場合、またはスクリプト ウィンドウにフォーカスがあるときに複数の Windows PowerShell タブが開いている場合にだけ有効です。|
+|**タブ移動** (前のスクリプトへ)|CTRL+SHIFT+TAB **メモ:** 前のスクリプトへのタブ移動は、1 つの Windows PowerShell タブが開いている場合、またはスクリプト ウィンドウにフォーカスがあるときに複数の Windows PowerShell タブが開いている場合にだけ有効です。|
 
-## Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in [!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)]. They are accessible from all the panes in the application.
+## ビューをカスタマイズするためのキーボード ショートカット
+次のキーボード ショートカットを使用して、[!INCLUDE[mshgraphicalhostshort](../Token/mshgraphicalhostshort_md.md)] のビューをカスタマイズできます。 アプリケーションのすべてのウィンドウから利用可能です。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**Go to Command (v2) or Console (v3 and later) Pane**|CTRL\+D|
-|**Go to Output Pane (v2 only)**|CTRL\+SHIFT\+O|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**コマンド ウィンドウ (v2) またはコンソール ウィンドウ (v3 以降) に移動**|CTRL+D|
+|**出力ウィンドウに移動 (v2 のみ)**|CTRL+SHIFT+O|
+|**スクリプト ウィンドウに移動**|CTRL+I|
+|**スクリプト ウィンドウを表示**|CTRL+R|
+|**スクリプト ウィンドウを隠す**|CTRL+R|
+|**スクリプト ウィンドウを上に移動**|CTRL+1|
+|**スクリプト ウィンドウを右に移動**|CTRL+2|
+|**スクリプト ウィンドウを最大表示**|CTRL+3|
+|**拡大**|Ctrl++ (プラス記号)|
+|**縮小**|Ctrl+- (マイナス記号)|
 
-## Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## スクリプト デバッグ用のキーボード ショートカット
+スクリプトをデバッグするときに、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcut|Use in|
+|操作|キーボード ショートカット|使用する場所|
 |----------|---------------------|----------|
-|**Run\/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**実行/続行**|F5|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ステップ イン**|F11|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ステップ オーバー**|F10|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ステップ アウト**|SHIFT+F11|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**呼び出し履歴の表示**|CTRL+SHIFT+D|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ブレークポイントの一覧表示**|CTRL+SHIFT+L|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ブレークポイントの設定/解除**|F9|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**すべてのブレークポイントを削除**|CTRL+SHIFT+F9|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**デバッガーの停止**|SHIFT+F5|スクリプト ウィンドウ、スクリプトのデバッグ時|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.
+> Windows PowerShell ISE でスクリプトをデバッグする場合は、Windows PowerShell コンソール用に設計されたキーボード ショートカットも使用できます。 それらのショートカットを使用するには、コマンド ウィンドウでショートカットを入力してから Enter キーを押します。
 
-|Action|Keyboard Shortcut|Use in|
+|操作|キーボード ショートカット|使用する場所|
 |----------|---------------------|----------|
-|**Continue**|C|Console Pane, when debugging a script|
-|**Step Into**|S|Console Pane, when debugging a script|
-|**Step Over**|V|Console Pane, when debugging a script|
-|**Step Out**|O|Console Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
-|**Display Call Stack**|K|Console Pane, when debugging a script|
-|**Stop Debugging**|Q|Console Pane, when debugging a script|
-|**List the Script**|L|Console Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
+|**続行**|C|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**ステップ イン**|S|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**ステップ オーバー**|V|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**ステップ アウト**|O|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**最後のコマンドを繰り返す** (ステップ インまたはステップ オーバーで使用)|Enter|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**呼び出し履歴の表示**|K|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**デバッグの停止**|Q|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**スクリプトの一覧を表示**|L|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**コンソールのデバッグ コマンドの表示**|H または ?|コンソール ウィンドウ、スクリプトのデバッグ時|
 
-## Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## Windows PowerShell のタブのキーボード ショートカット
+Windows PowerShell のタブを使用するときに、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any Windows PowerShell tab.|
+|**PowerShell タブを閉じる**|CTRL+W|
+|**PowerShell タブの新規作成**|CTRL+T|
+|**前の PowerShell タブ**|CTRL+SHIFT+TAB このショートカットは、Windows PowerShell タブでファイルが開かれていない場合にのみ有効です。|
+|**次の Windows PowerShell タブ**|CTRL+TAB このショートカットは、Windows PowerShell タブでファイルが開かれていない場合にのみ有効です。|
 
-## Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit [!INCLUDE[ise_2](../Token/ise_2_md.md)].
+## 開始および終了のキーボード ショートカット
+次のキーボード ショートカットを使用して、Windows PowerShell コンソール (PowerShell.exe) を起動したり、[!INCLUDE[ise_2](../Token/ise_2_md.md)] を終了したりできます。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL\+SHIFT\+P|
+|**終了**|ALT+F4|
+|**PowerShell.exe を起動** ([!INCLUDE[psconsole](../Token/psconsole_md.md)])|CTRL+SHIFT+P|
 
-## See Also
-[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+## 参照
+[PowerShell Magazine: The Complete List of Windows PowerShell ISE Keyboard Shortcuts (PowerShell マガジン: Windows PowerShell ISE のキーボード ショートカットの完全な一覧)](http://www.powershellmagazine.com/2013/01/29/the-complete-list-of-powershell-ise-3-0-keyboard-shortcuts/)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
