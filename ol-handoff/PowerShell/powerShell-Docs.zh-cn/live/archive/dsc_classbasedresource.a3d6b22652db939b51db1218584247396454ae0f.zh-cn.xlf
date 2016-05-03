@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="zh-cn">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e25c8195c153a2fda21fac320c2750d51678b6a</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-2072b6e" tool-company="Microsoft" />
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -36,8 +42,8 @@
           <target state="new">The following is an example of a class-based DSC resource that extends the other class DSC resource in the same file.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>This is saved as a module, <bpt id="p1">**</bpt>MyDSCResource.psm1<ept id="p1">**</ept>.</source>
-          <target state="new">This is saved as a module, <bpt id="p1">**</bpt>MyDSCResource.psm1<ept id="p1">**</ept>.</target>
+          <source>This is saved as a module, <bpt id="p1">**</bpt>MyDSCResource.psm1<ept id="p1">**</ept></source>
+          <target state="new">This is saved as a module, <bpt id="p1">**</bpt>MyDSCResource.psm1<ept id="p1">**</ept></target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>Note that you must always include at least one key property and Get, Set, Test method in a class-defined DSC resource or its base classes.</source>
@@ -48,12 +54,12 @@
           <target state="new">After creating the class-defined DSC resource provider, and saving it as a module, create a module manifest for the module.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>In this example, the following module manifest is saved as <bpt id="p1">**</bpt>MyDscResource.psd1<ept id="p1">**</ept>.</source>
-          <target state="new">In this example, the following module manifest is saved as <bpt id="p1">**</bpt>MyDscResource.psd1<ept id="p1">**</ept>.</target>
+          <source>In this example, the following module manifest is saved as <bpt id="p1">**</bpt>MyDscResource.psd1<ept id="p1">**</ept></source>
+          <target state="new">In this example, the following module manifest is saved as <bpt id="p1">**</bpt>MyDscResource.psd1<ept id="p1">**</ept></target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>Deploy the new DSC resource provider by creating a <bpt id="p1">**</bpt>MyDscResource<ept id="p1">**</ept> folder for it under <ph id="ph1">`$env:SystemDrive\Program Files\WindowsPowerShell\Modules`</ph>.</source>
-          <target state="new">Deploy the new DSC resource provider by creating a <bpt id="p1">**</bpt>MyDscResource<ept id="p1">**</ept> folder for it under <ph id="ph1">`$env:SystemDrive\Program Files\WindowsPowerShell\Modules`</ph>.</target>
+          <source>Deploy the new DSC resource provider by creating a <bpt id="p1">**</bpt>MyDscResource<ept id="p1">**</ept> folder for it under</source>
+          <target state="new">Deploy the new DSC resource provider by creating a <bpt id="p1">**</bpt>MyDscResource<ept id="p1">**</ept> folder for it under</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
           <source>You do not need to create a DSCResource subfolder.</source>
@@ -72,8 +78,8 @@
           <target state="new">The following is a configuration that references the MyDSCResource module.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>Save this as a script, <bpt id="p1">**</bpt>MyResource.ps1<ept id="p1">**</ept>.</source>
-          <target state="new">Save this as a script, <bpt id="p1">**</bpt>MyResource.ps1<ept id="p1">**</ept>.</target>
+          <source>Save this as a script, <bpt id="p1">**</bpt>MyResource.ps1<ept id="p1">**</ept></source>
+          <target state="new">Save this as a script, <bpt id="p1">**</bpt>MyResource.ps1<ept id="p1">**</ept></target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>Run this as you would any DSC configuration script.</source>
@@ -106,7 +112,4 @@
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">af92e9b7eb75d6b25d2194b9c738b9d6ae2c157f</xliffext:olfilehash>
-  </header>
 </xliff>
