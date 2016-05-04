@@ -1,5 +1,5 @@
 ---
-title: How to Use the Console Pane in the Windows PowerShell ISE
+title: Verwenden des Konsolenbereichs in der Windows PowerShell ISE
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,21 +7,26 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
 ---
-# How to Use the Console Pane in the Windows PowerShell ISE
-The Console pane in the [!INCLUDE[ise_1](../Token/ise_1_md.md)] operates exactly like the stand\-alone [!INCLUDE[ise_2](../Token/ise_2_md.md)] console window.
+# Verwenden des Konsolenbereichs in der Windows PowerShell ISE
+Der Konsolenbereich in der [!INCLUDE[ise_1](../Token/ise_1_md.md)] funktioniert exakt so wie das eigenständige [!INCLUDE[ise_2](../Token/ise_2_md.md)]-Konsolenfenster.
 
-To run a command in the Console Pane, type a command, and then press ENTER. To enter multiple commands that you want to execute in sequence, type SHIFT\+ENTER between commands. See [How to Use Tab Completion in the Script Pane and Console Pane](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for help in typing commands.
+Um einen Befehl im Konsolenbereich ausführen, geben Sie einen Befehl ein, und drücken Sie dann die EINGABETASTE. Um mehrere Befehle einzugeben, die nacheinander ausgeführt werden sollen, drücken Sie UMSCHALT+EINGABETASTE zwischen den Befehlen. Hilfe zum Eingeben von Befehlen finden Sie unter [Verwenden von Vervollständigung mit der TAB-TASTE im Skriptbereich und Konsolenbereich](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md).
 
-To stop a command, on the toolbar, click **Stop Operation**, or press CTRL\+BREAK. You can also use CTRL\+C to stop a command if the context is unambiguous. For example, if some text has been selected in the current Pane, then CTRL\+C maps to the copy operation.
+Um einen Befehl zu beenden, klicken Sie auf der Symbolleiste auf **Vorgang beenden**, oder drücken Sie STRG+UNTBR. Sie können auch STRG+C verwenden, um einen Befehl zu beenden, sofern der Kontext eindeutig ist. Wenn im aktuellen Bereich beispielsweise Text ausgewählt ist,wird STRG+C dem Kopiervorgang zugeordnet.
 
-Beginning in [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, the Output pane was combined with the Console pane. This has the benefit of behaving like the stand\-alone [!INCLUDE[wps_2](../Token/wps_2_md.md)] console and eliminates the differences in procedures that were needed when they were separate. You can:
+Seit [!INCLUDE[wps_2](../Token/wps_2_md.md)] Version 3 ist der Ausgabebereich mit dem Konsolenbereich kombiniert. Dies hat den Vorteil, dass sich das System wie die eigenständige [!INCLUDE[wps_2](../Token/wps_2_md.md)]-Konsole verhält, und beseitigt die Unterschiede in den Vorgehensweisen, die erforderlich waren, als die Bereiche getrennt waren. Sie haben folgende Möglichkeiten:
 
--   Select and copy text from the Console pane to the Clipboard for pasting in any other window. To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture. You can also use the cursor arrow keys while holding **SHIFT** to select text. Then press CTRL\+C or click the **Copy** icon in the toolbar.
+-   Markieren von Text im Konsolenbereich und Kopieren des markierten Texts in die Zwischenablage, um ihn in einem anderen Fenster einzufügen. Um Text zu markieren, ziehen Sie mit der Maus bei gedrückter linker Maustaste über den Text, den Sie erfassen möchten. Sie können Text auch markieren, indem Sie bei gedrückter **UMSCHALTTASTE** die Cursortasten verwenden. Drücken Sie dann STRG+C, oder klicken Sie auf der Symbolleiste auf das **Kopieren**-Symbol.
 
--   Paste the selected text at a current cursor position. Click the **Paste** icon on the toolbar.
+-   Einfügen des markierten Texts an der aktuellen Cursorposition. Klicken Sie auf der Symbolleiste auf das **Einfügen**-Symbol.
 
--   Clear all the text in the Console pane. To clear the Console pane, you can click the **Clear Console Pane** icon on the toolbar, or run the command **Clear\-Host** or its alias, **cls**.
+-   Löschen des gesamten Texts im Konsolenbereich. Um den Text im Konsolenbereich zu löschen, können Sie auf der Symbolleiste auf das **Konsolenbereich löschen**-Symbol klicken, oder führen Sie den Befehl **Clear-Host** oder dessen Alias **cls** aus.
 
-## See Also
-[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)
+## Weitere Informationen
+[Verwenden der Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
