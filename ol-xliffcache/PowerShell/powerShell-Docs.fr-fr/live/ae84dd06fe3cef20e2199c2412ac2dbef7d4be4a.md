@@ -1,5 +1,5 @@
 ---
-title: How to Use the Console Pane in the Windows PowerShell ISE
+title: Comment utiliser le volet Console dans Windows PowerShell ISE
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,21 +7,26 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
 ---
-# How to Use the Console Pane in the Windows PowerShell ISE
-The Console pane in the [!INCLUDE[ise_1](../Token/ise_1_md.md)] operates exactly like the stand\-alone [!INCLUDE[ise_2](../Token/ise_2_md.md)] console window.
+# Comment utiliser le volet Console dans Windows PowerShell ISE
+Le volet Console dans [!INCLUDE[ise_1](../Token/ise_1_md.md)] fonctionne exactement comme la fenêtre de console [!INCLUDE[ise_2](../Token/ise_2_md.md)] autonome.
 
-To run a command in the Console Pane, type a command, and then press ENTER. To enter multiple commands that you want to execute in sequence, type SHIFT\+ENTER between commands. See [How to Use Tab Completion in the Script Pane and Console Pane](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for help in typing commands.
+Pour exécuter une commande dans le volet Console, tapez la commande, puis appuyez sur Entrée. Pour entrer plusieurs commandes à exécuter de façon séquentielle, tapez Maj+Entrée entre les commandes. Pour obtenir de l’aide sur la saisie des commandes, voir [Comment utiliser la saisie semi-automatique via la touche Tab dans le volet Script et le volet Console](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md).
 
-To stop a command, on the toolbar, click **Stop Operation**, or press CTRL\+BREAK. You can also use CTRL\+C to stop a command if the context is unambiguous. For example, if some text has been selected in the current Pane, then CTRL\+C maps to the copy operation.
+Pour arrêter une commande, dans la barre d’outils, cliquez sur **Arrêter l’opération**, ou appuyez sur Ctrl+Pause. Vous pouvez également appuyer sur Ctrl+C pour arrêter une commande si le contexte est sans ambiguïté. Par exemple, si du texte a été sélectionné dans le volet actif, la combinaison de touches Ctrl+C correspond à l’opération de copie.
 
-Beginning in [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, the Output pane was combined with the Console pane. This has the benefit of behaving like the stand\-alone [!INCLUDE[wps_2](../Token/wps_2_md.md)] console and eliminates the differences in procedures that were needed when they were separate. You can:
+Depuis [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, le volet Sortie est combiné avec le volet Console. Cela présente l’avantage que le comportement est identique à celui de la console [!INCLUDE[wps_2](../Token/wps_2_md.md)] autonome, et élimine les différences de procédures en vigueur lorsque les volets étaient distincts. Vous pouvez :
 
--   Select and copy text from the Console pane to the Clipboard for pasting in any other window. To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture. You can also use the cursor arrow keys while holding **SHIFT** to select text. Then press CTRL\+C or click the **Copy** icon in the toolbar.
+-   sélectionner et copier du texte du volet Console dans le Presse-papiers pour le coller dans toute autre fenêtre. Pour sélectionner du texte, cliquez et maintenez enfoncé le bouton de la souris dans le volet Sortie tout en faisant glisser le curseur sur le texte à capturer. Vous pouvez également utiliser les touches de direction tout en maintenant la touche **Maj** enfoncée pour sélectionner le texte. Appuyez sur Ctrl+C ou cliquez sur l’icône **Copie** dans la barre d’outils.
 
--   Paste the selected text at a current cursor position. Click the **Paste** icon on the toolbar.
+-   Collez le texte sélectionné à l’emplacement du curseur. Cliquez sur l’icône **Coller** dans la barre d’outils.
 
--   Clear all the text in the Console pane. To clear the Console pane, you can click the **Clear Console Pane** icon on the toolbar, or run the command **Clear\-Host** or its alias, **cls**.
+-   Effacer tout le texte dans le volet Console. Pour effacer le volet Console, vous pouvez cliquer sur l’icône **Effacer le volet Console** dans la barre d’outils, ou exécutez la commande **Clear-Host** ou son alias, **cls**.
 
-## See Also
-[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)
+## Voir aussi
+[Utilisation de Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
