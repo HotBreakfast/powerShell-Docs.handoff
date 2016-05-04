@@ -1,5 +1,5 @@
 ---
-title: How to Use the Console Pane in the Windows PowerShell ISE
+title: Como usar o Painel de Console com o ISE do Windows PowerShell
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,21 +7,26 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
 ---
-# How to Use the Console Pane in the Windows PowerShell ISE
-The Console pane in the [!INCLUDE[ise_1](../Token/ise_1_md.md)] operates exactly like the stand\-alone [!INCLUDE[ise_2](../Token/ise_2_md.md)] console window.
+# Como usar o Painel de Console com o ISE do Windows PowerShell
+O Painel de console do [!INCLUDE[ise_1](../Token/ise_1_md.md)] opera exatamente como a janela de console autônoma do [!INCLUDE[ise_2](../Token/ise_2_md.md)].
 
-To run a command in the Console Pane, type a command, and then press ENTER. To enter multiple commands that you want to execute in sequence, type SHIFT\+ENTER between commands. See [How to Use Tab Completion in the Script Pane and Console Pane](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for help in typing commands.
+Para executar um comando no Painel de Console, digite um comando e pressione ENTER. Para inserir vários comandos que você deseja executar em sequência, digite SHIFT+ENTER entre os comandos. Consulte [Como usar o preenchimento com Tab no Painel de Script e no Painel de Console](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) para ver a ajuda para digitar os comandos.
 
-To stop a command, on the toolbar, click **Stop Operation**, or press CTRL\+BREAK. You can also use CTRL\+C to stop a command if the context is unambiguous. For example, if some text has been selected in the current Pane, then CTRL\+C maps to the copy operation.
+Para interromper um comando, na barra de ferramentas, clique em **Parar Operação** ou pressione CTRL+BREAK. Você também poderá usar CTRL+C para interromper um comando se o contexto não for ambíguo. Por exemplo, se algum texto foi selecionado no painel atual, CTRL+C é mapeado para a operação de cópia.
 
-Beginning in [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, the Output pane was combined with the Console pane. This has the benefit of behaving like the stand\-alone [!INCLUDE[wps_2](../Token/wps_2_md.md)] console and eliminates the differences in procedures that were needed when they were separate. You can:
+Começando do [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, o Painel de saída foi combinado com o Painel de Console. Isso traz o benefício de se comportar como console autônomo do [!INCLUDE[wps_2](../Token/wps_2_md.md)] e elimina as diferenças nos procedimentos que eram necessários quando eles existiam separados. Você pode:
 
--   Select and copy text from the Console pane to the Clipboard for pasting in any other window. To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture. You can also use the cursor arrow keys while holding **SHIFT** to select text. Then press CTRL\+C or click the **Copy** icon in the toolbar.
+-   Selecione e copie o texto do Painel de console para a Área de transferência para colá-lo em qualquer outra janela. Para selecionar o texto, clique e mantenha o mouse pressionado no painel de saída enquanto arrasta o mouse sobre o texto que você deseja capturar. Você também pode usar as teclas de seta enquanto mantém **SHIFT** pressionado para selecionar o texto. Pressione CTRL+C ou clique no ícone **Copiar** na barra de ferramentas.
 
--   Paste the selected text at a current cursor position. Click the **Paste** icon on the toolbar.
+-   Cole o texto selecionado na posição atual do cursor. Clique no ícone **Colar** na barra de ferramentas.
 
--   Clear all the text in the Console pane. To clear the Console pane, you can click the **Clear Console Pane** icon on the toolbar, or run the command **Clear\-Host** or its alias, **cls**.
+-   Limpe todo o texto no Painel de console. Para limpar o Painel de console, você pode clicar no ícone **Limpar o Painel de Console** na barra de ferramentas ou executar o comando **Clear-Host** ou seu alias, **cls**.
 
-## See Also
-[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)
+## Consulte Também
+[Usando o ISE do Windows PowerShell](../Topic/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
