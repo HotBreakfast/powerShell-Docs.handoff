@@ -1,5 +1,5 @@
 ---
-title: How to Use the Console Pane in the Windows PowerShell ISE
+title: Использование области консоли в интегрированной среде сценариев Windows PowerShell
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,21 +7,26 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 44d67705-87c7-4a69-a53e-6471fdebb757
 ---
-# How to Use the Console Pane in the Windows PowerShell ISE
-The Console pane in the [!INCLUDE[ise_1](../Token/ise_1_md.md)] operates exactly like the stand\-alone [!INCLUDE[ise_2](../Token/ise_2_md.md)] console window.
+# Использование области консоли в интегрированной среде сценариев Windows PowerShell
+Область консоли в [!INCLUDE[ise_1](../Token/ise_1_md.md)] работает точно так же, как и окно отдельной консоли [!INCLUDE[ise_2](../Token/ise_2_md.md)].
 
-To run a command in the Console Pane, type a command, and then press ENTER. To enter multiple commands that you want to execute in sequence, type SHIFT\+ENTER between commands. See [How to Use Tab Completion in the Script Pane and Console Pane](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md) for help in typing commands.
+Для выполнения команды в области консоли введите команду и нажмите клавишу ВВОД. Чтобы ввести несколько команд, которые необходимо выполнить последовательно, нажимайте между ними клавиши SHIFT+ВВОД. Сведения о вводе команд см. в статье [Использование заполнения нажатием клавиши TAB в области сценариев и области консоли](../Topic/How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md).
 
-To stop a command, on the toolbar, click **Stop Operation**, or press CTRL\+BREAK. You can also use CTRL\+C to stop a command if the context is unambiguous. For example, if some text has been selected in the current Pane, then CTRL\+C maps to the copy operation.
+Чтобы остановить команду, нажмите кнопку **Остановить операцию** на панели инструментов или нажмите клавиши CTRL+BREAK. В случае однозначного контекста для остановки команды также можно использовать сочетание клавиш CTRL+C. Например, если в текущей области выбран какой-либо текст, сочетание CTRL+C закреплено за операцией копирования.
 
-Beginning in [!INCLUDE[wps_2](../Token/wps_2_md.md)] v3, the Output pane was combined with the Console pane. This has the benefit of behaving like the stand\-alone [!INCLUDE[wps_2](../Token/wps_2_md.md)] console and eliminates the differences in procedures that were needed when they were separate. You can:
+Начиная с [!INCLUDE[wps_2](../Token/wps_2_md.md)] версии 3, область вывода была объединена с областью консоли. Это удобно тем, что работа осуществляется аналогично отдельной консоли [!INCLUDE[wps_2](../Token/wps_2_md.md)] и устраняются различия в процедурах, которые были необходимы при раздельном использовании областей. Можно сделать следующее.
 
--   Select and copy text from the Console pane to the Clipboard for pasting in any other window. To select text, click and hold the mouse in the output pane while dragging the mouse over the text you want to capture. You can also use the cursor arrow keys while holding **SHIFT** to select text. Then press CTRL\+C or click the **Copy** icon in the toolbar.
+-   Выделите и скопируйте текст из области консоли в буфер обмена для вставки в любое другое окно. Чтобы выделить текст, нажмите и удерживайте кнопку мыши в области вывода при перетаскивании указателя над требуемым текстом. Для выбора текста также можно использовать клавиши со стрелками, удерживая при этом клавишу **SHIFT**. После этого нажмите клавиши CTRL+C или щелкните значок **Копировать** на панели инструментов.
 
--   Paste the selected text at a current cursor position. Click the **Paste** icon on the toolbar.
+-   Вставьте выбранный текст в текущей позиции курсора. Щелкните значок **Вставить** на панели инструментов.
 
--   Clear all the text in the Console pane. To clear the Console pane, you can click the **Clear Console Pane** icon on the toolbar, or run the command **Clear\-Host** or its alias, **cls**.
+-   Очистите весь текст в области консоли. Чтобы очистить область консоли, щелкните значок **Очистить область консоли** на панели инструментов или выполните команду **Clear-Host** или ее псевдоним **cls**.
 
-## See Also
-[Using the Windows PowerShell ISE](../Topic/Using-the-Windows-PowerShell-ISE.md)
+## См. также
+[Использование интегрированной среды сценариев Windows PowerShell](../Topic/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+<!--HONumber=Apr16_HO1-->
+
 
