@@ -1,12 +1,12 @@
-# Writing help for DSC configurations
+# 撰寫 DSC 設定的說明
 
->Applies To: Windows Windows PowerShell 5.0
+>適用於：Windows PowerShell Windows 5.0
 
-You can use comment-based help in DSC configurations. Users can access the help by calling the configuration function with `-?`, or by using the 
-[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. For more information about PowerShell comment-based help, see 
+您可以在 DSC 設定中，以註解方式呈現說明。 使用者可以呼叫設定函數加上 `-?`，或使用 
+[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) Cmdlet 來存取說明。 如需如何在 PowerShell 中，以註解方式呈現說明的詳細資訊，請參閱 
 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
 
-The following example shows a script that contains two configurations and comment-based help for each configuration:
+下列範例顯示的指令碼包含兩種設定，每種設定都以註解方式呈現說明︰
 
 ```powershell
 <#
@@ -41,19 +41,19 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$computername,[string]$filePath)
-    File f
-    {
-		Contents="Hello World"
-        DestinationPath = "c:\Destination.txt"
-    }
+    param([string]$computername,[string]$filePath)
+    File f
+    {
+        Contents="Hello World"
+        DestinationPath = "c:\Destination.txt"
+    }
 }
 ```
 
-## Viewing configuration help
+## 檢視設定說明
 
-To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`. The following is the output
-of the previous function when passed to **Get-Help**:
+若要檢視設定的說明，請使用 **Get-help** Cmdlet 加上函數名稱，或輸入函數名稱加上 `-?`。 以下是將前一個函數傳遞給 
+**Get-help** 後的輸出：
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -82,5 +82,9 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## See Also
-* [DSC Configurations](configurations.md)
+## 另請參閱
+* [DSC 設定](configurations.md)
+
+<!--HONumber=Apr16_HO5-->
+
+
