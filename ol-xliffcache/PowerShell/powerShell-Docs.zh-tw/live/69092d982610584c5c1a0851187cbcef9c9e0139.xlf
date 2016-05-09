@@ -1,0 +1,743 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">69092d982610584c5c1a0851187cbcef9c9e0139</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Scripting with Windows PowerShell</source>
+          <target state="new">Scripting with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Scripting with Windows PowerShell</source>
+          <target state="new">Scripting with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>wps_1</source>
+          <target state="new">wps_1</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>is a task-based command-line shell and scripting language designed especially for system administration.</source>
+          <target state="new">is a task-based command-line shell and scripting language designed especially for system administration.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Built on the .NET Framework,</source>
+          <target state="new">Built on the .NET Framework,</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>helps IT professionals and power users control and automate the administration of the Windows operating system and applications that run on Windows.</source>
+          <target state="new">helps IT professionals and power users control and automate the administration of the Windows operating system and applications that run on Windows.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>commands, called</source>
+          <target state="new">commands, called</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>cmdlets</source>
+          <target state="new">cmdlets</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>, let you manage the computers from the command line.</source>
+          <target state="new">, let you manage the computers from the command line.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>providers</source>
+          <target state="new">providers</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>let you access data stores, such as the registry and certificate store, as easily as you access the file system.</source>
+          <target state="new">let you access data stores, such as the registry and certificate store, as easily as you access the file system.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>In addition,</source>
+          <target state="new">In addition,</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>has a rich expression parser and a fully developed scripting language.</source>
+          <target state="new">has a rich expression parser and a fully developed scripting language.</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>includes the following features:</source>
+          <target state="new">includes the following features:</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Cmdlets for performing common system administration tasks, such as managing the registry, services, processes, and event logs, and using Windows Management Instrumentation (WMI).</source>
+          <target state="new">Cmdlets for performing common system administration tasks, such as managing the registry, services, processes, and event logs, and using Windows Management Instrumentation (WMI).</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>A task-based scripting language and support for existing scripts and command-line tools.</source>
+          <target state="new">A task-based scripting language and support for existing scripts and command-line tools.</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Consistent design.</source>
+          <target state="new">Consistent design.</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Because cmdlets and system data stores use common syntax and naming conventions, data can be shared easily and the output from one cmdlet can be used as the input to another cmdlet without reformatting or manipulation.</source>
+          <target state="new">Because cmdlets and system data stores use common syntax and naming conventions, data can be shared easily and the output from one cmdlet can be used as the input to another cmdlet without reformatting or manipulation.</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Simplified, command-based navigation of the operating system, which lets users navigate the registry and other data stores by using the same techniques that they use to navigate the file system.</source>
+          <target state="new">Simplified, command-based navigation of the operating system, which lets users navigate the registry and other data stores by using the same techniques that they use to navigate the file system.</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Powerful object manipulation capabilities.</source>
+          <target state="new">Powerful object manipulation capabilities.</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Objects can be directly manipulated or sent to other tools or databases.</source>
+          <target state="new">Objects can be directly manipulated or sent to other tools or databases.</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Extensible interface.</source>
+          <target state="new">Extensible interface.</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Independent software vendors and enterprise developers can build custom tools and utilities to administer their software.</source>
+          <target state="new">Independent software vendors and enterprise developers can build custom tools and utilities to administer their software.</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Content in this section</source>
+          <target state="new">Content in this section</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>The following content is available in Scripting with Windows PowerShell.</source>
+          <target state="new">The following content is available in Scripting with Windows PowerShell.</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Using Windows PowerShell</source>
+          <target state="new">Using Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Learn how to get started scripting and automating Windows environments by using</source>
+          <target state="new">Learn how to get started scripting and automating Windows environments by using</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>This section includes a user’s guide, information about features that are included with</source>
+          <target state="new">This section includes a user’s guide, information about features that are included with</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>(such as</source>
+          <target state="new">(such as</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Desired State Configuration), information about</source>
+          <target state="new">Desired State Configuration), information about</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>prerequisites and installation, and information about how to use</source>
+          <target state="new">prerequisites and installation, and information about how to use</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Integrated Scripting Environment (ISE), a graphical editor for</source>
+          <target state="new">Integrated Scripting Environment (ISE), a graphical editor for</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Core Module Reference</source>
+          <target state="new">Windows PowerShell Core Module Reference</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/library/hh847741(v=wps.640).aspx</source>
+          <target state="new">http://technet.microsoft.com/library/hh847741(v=wps.640).aspx</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>This section includes reference Help topics for all cmdlets in the core modules that are included as part of</source>
+          <target state="new">This section includes reference Help topics for all cmdlets in the core modules that are included as part of</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>The section also includes About topics that illustrate</source>
+          <target state="new">The section also includes About topics that illustrate</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>concepts and examples in greater detail.</source>
+          <target state="new">concepts and examples in greater detail.</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Windows and Windows Server Automation with Windows PowerShell</source>
+          <target state="new">Windows and Windows Server Automation with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>https://technet.microsoft.com/en-us/library/mt156917.aspx</source>
+          <target state="new">https://technet.microsoft.com/en-us/library/mt156917.aspx</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>This section includes reference Help topics for all</source>
+          <target state="new">This section includes reference Help topics for all</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>cmdlets that are available as part of Windows and Windows Server roles, role services, and features.</source>
+          <target state="new">cmdlets that are available as part of Windows and Windows Server roles, role services, and features.</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>System Center Automation with Windows PowerShell</source>
+          <target state="new">System Center Automation with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/library/dn507037.aspx</source>
+          <target state="new">http://technet.microsoft.com/library/dn507037.aspx</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>This section includes reference Help topics for all System Center cmdlets that are available when you install System Center in your environment.</source>
+          <target state="new">This section includes reference Help topics for all System Center cmdlets that are available when you install System Center in your environment.</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Microsoft Azure Pack for Windows Server Automation with Windows PowerShell</source>
+          <target state="new">Microsoft Azure Pack for Windows Server Automation with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/library/dn521028.aspx</source>
+          <target state="new">http://technet.microsoft.com/library/dn521028.aspx</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>This section includes reference Help topics for the cmdlets that are available when you install the Windows Azure Pack for Windows Server.</source>
+          <target state="new">This section includes reference Help topics for the cmdlets that are available when you install the Windows Azure Pack for Windows Server.</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Previous Versions of Windows PowerShell Module Help</source>
+          <target state="new">Previous Versions of Windows PowerShell Module Help</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>https://technet.microsoft.com/en-us/library/mt156946.aspx</source>
+          <target state="new">https://technet.microsoft.com/en-us/library/mt156946.aspx</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>This section includes cmdlet reference and About Help topics for</source>
+          <target state="new">This section includes cmdlet reference and About Help topics for</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>3.0 and earlier releases of</source>
+          <target state="new">3.0 and earlier releases of</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Identity and Access Automation with Windows PowerShell</source>
+          <target state="new">Identity and Access Automation with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>This section includes cmdlet reference topics for cmdlets included with Microsoft Identity Manager 2016 for Privileged Access Management (PAM).</source>
+          <target state="new">This section includes cmdlet reference topics for cmdlets included with Microsoft Identity Manager 2016 for Privileged Access Management (PAM).</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Microsoft Identity Manager 2016</source>
+          <target state="new">Microsoft Identity Manager 2016</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>This section includes cmdlet reference topics for Microsoft Identity Manager 2016.</source>
+          <target state="new">This section includes cmdlet reference topics for Microsoft Identity Manager 2016.</target>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Microsoft Desktop Optimization Pack Automation with Windows PowerShell</source>
+          <target state="new">Microsoft Desktop Optimization Pack Automation with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>https://technet.microsoft.com/en-us/library/dn520245.aspx</source>
+          <target state="new">https://technet.microsoft.com/en-us/library/dn520245.aspx</target>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>This section includes cmdlet reference topics for Microsoft Desktop Optimization Pack (MDOP).</source>
+          <target state="new">This section includes cmdlet reference topics for Microsoft Desktop Optimization Pack (MDOP).</target>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>SQL Server with Windows Powershell</source>
+          <target state="new">SQL Server with Windows Powershell</target>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This section includes cmdlet reference topics for</source>
+          <target state="new">This section includes cmdlet reference topics for</target>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>pn_MS_SQL_Server</source>
+          <target state="new">pn_MS_SQL_Server</target>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>with</source>
+          <target state="new">with</target>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Related Resources</source>
+          <target state="new">Related Resources</target>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>Resources for Windows PowerShell users</source>
+          <target state="new">Resources for Windows PowerShell users</target>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>In addition to the Help available at the command line, the following resources provide more information for users who want to run</source>
+          <target state="new">In addition to the Help available at the command line, the following resources provide more information for users who want to run</target>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Team Blog</source>
+          <target state="new">Windows PowerShell Team Blog</target>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>http://blogs.msdn.com/b/powershell/</source>
+          <target state="new">http://blogs.msdn.com/b/powershell/</target>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>The best resource for learning directly from the</source>
+          <target state="new">The best resource for learning directly from the</target>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>product team.</source>
+          <target state="new">product team.</target>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Customer Connection</source>
+          <target state="new">Windows PowerShell Customer Connection</target>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>http://Connect.Microsoft.com/PowerShell</source>
+          <target state="new">http://Connect.Microsoft.com/PowerShell</target>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>Make a suggestion, send feedback, or file a bug for the</source>
+          <target state="new">Make a suggestion, send feedback, or file a bug for the</target>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>team.</source>
+          <target state="new">team.</target>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>You can file a code bug, a documentation bug, or a localization (language translation) bug.</source>
+          <target state="new">You can file a code bug, a documentation bug, or a localization (language translation) bug.</target>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The Hey, Scripting Guy!</source>
+          <target state="new">The Hey, Scripting Guy!</target>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Blog</source>
+          <target state="new">Blog</target>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>http://www.scriptingguys.com/blog</source>
+          <target state="new">http://www.scriptingguys.com/blog</target>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>publishes new content seven days a week, and is consistently ranked in the top five of all Microsoft blogs.</source>
+          <target state="new">publishes new content seven days a week, and is consistently ranked in the top five of all Microsoft blogs.</target>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The articles are scenario-driven, and written in an engaging and lively manner.</source>
+          <target state="new">The articles are scenario-driven, and written in an engaging and lively manner.</target>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The Learn PowerShell page</source>
+          <target state="new">The Learn PowerShell page</target>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>http://www.scriptingguys.com/learnpowershell</source>
+          <target state="new">http://www.scriptingguys.com/learnpowershell</target>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>is the</source>
+          <target state="new">is the</target>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>hub on the TechNet Script Center.</source>
+          <target state="new">hub on the TechNet Script Center.</target>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>This page hosts a series of beginner video sessions conducted by the Microsoft Scripting Guy Ed Wilson.</source>
+          <target state="new">This page hosts a series of beginner video sessions conducted by the Microsoft Scripting Guy Ed Wilson.</target>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>It also contains</source>
+          <target state="new">It also contains</target>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>quizzes, links to community content, and more.</source>
+          <target state="new">quizzes, links to community content, and more.</target>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Have questions about using</source>
+          <target state="new">Have questions about using</target>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>?</source>
+          <target state="new">?</target>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Connect with hundreds of other people who have similar interests on the</source>
+          <target state="new">Connect with hundreds of other people who have similar interests on the</target>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Official Scripting Guys forum</source>
+          <target state="new">Official Scripting Guys forum</target>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>http://social.technet.microsoft.com/Forums/ITCG/threads/</source>
+          <target state="new">http://social.technet.microsoft.com/Forums/ITCG/threads/</target>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>The Microsoft Script Center</source>
+          <target state="new">The Microsoft Script Center</target>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/ScriptCenter</source>
+          <target state="new">http://technet.microsoft.com/ScriptCenter</target>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source>A portal to many useful</source>
+          <target state="new">A portal to many useful</target>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>resources, including the</source>
+          <target state="new">resources, including the</target>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source>Script Center Repository</source>
+          <target state="new">Script Center Repository</target>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source>http://gallery.technet.microsoft.com/ScriptCenter/</source>
+          <target state="new">http://gallery.technet.microsoft.com/ScriptCenter/</target>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>One of the best ways to learn scripting is to see examples in action.</source>
+          <target state="new">One of the best ways to learn scripting is to see examples in action.</target>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Search through thousands of</source>
+          <target state="new">Search through thousands of</target>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>scripts, all ready for you to evaluate and adapt to meet your needs.</source>
+          <target state="new">scripts, all ready for you to evaluate and adapt to meet your needs.</target>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>Get involved in the</source>
+          <target state="new">Get involved in the</target>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>user community.</source>
+          <target state="new">user community.</target>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>See the</source>
+          <target state="new">See the</target>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>Script Center Community page</source>
+          <target state="new">Script Center Community page</target>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/scriptcenter/hh182567.aspx</source>
+          <target state="new">http://technet.microsoft.com/scriptcenter/hh182567.aspx</target>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>for locations of dozens of</source>
+          <target state="new">for locations of dozens of</target>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>user groups – there is probably one near you.</source>
+          <target state="new">user groups – there is probably one near you.</target>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>Also keep current with the community activities of the Microsoft Scripting Guy.</source>
+          <target state="new">Also keep current with the community activities of the Microsoft Scripting Guy.</target>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>Other Windows PowerShell documentation for Microsoft technologies</source>
+          <target state="new">Other Windows PowerShell documentation for Microsoft technologies</target>
+        </trans-unit>
+        <trans-unit id="253" translate="yes" xml:space="preserve">
+          <source>The following links can help you find Windows PowerShell documentation that is not available as part of this section.</source>
+          <target state="new">The following links can help you find Windows PowerShell documentation that is not available as part of this section.</target>
+        </trans-unit>
+        <trans-unit id="254" translate="yes" xml:space="preserve">
+          <source>Find help about the Windows PowerShell cmdlets for Microsoft Dynamics CRM in the</source>
+          <target state="new">Find help about the Windows PowerShell cmdlets for Microsoft Dynamics CRM in the</target>
+        </trans-unit>
+        <trans-unit id="255" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics CRM PowerShell Reference</source>
+          <target state="new">Microsoft Dynamics CRM PowerShell Reference</target>
+        </trans-unit>
+        <trans-unit id="256" translate="yes" xml:space="preserve">
+          <source>http://go.microsoft.com/fwlink/?LinkId=403369</source>
+          <target state="new">http://go.microsoft.com/fwlink/?LinkId=403369</target>
+        </trans-unit>
+        <trans-unit id="257" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="258" translate="yes" xml:space="preserve">
+          <source>For more information about Microsoft Dynamics CRM, see</source>
+          <target state="new">For more information about Microsoft Dynamics CRM, see</target>
+        </trans-unit>
+        <trans-unit id="259" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics CRM IT Pro Center</source>
+          <target state="new">Microsoft Dynamics CRM IT Pro Center</target>
+        </trans-unit>
+        <trans-unit id="260" translate="yes" xml:space="preserve">
+          <source>http://go.microsoft.com/fwlink/?LinkID=270870</source>
+          <target state="new">http://go.microsoft.com/fwlink/?LinkID=270870</target>
+        </trans-unit>
+        <trans-unit id="261" translate="yes" xml:space="preserve">
+          <source>For information about how to use the Windows PowerShell-based Exchange Management Shell to manage Microsoft Exchange Server 2013, see</source>
+          <target state="new">For information about how to use the Windows PowerShell-based Exchange Management Shell to manage Microsoft Exchange Server 2013, see</target>
+        </trans-unit>
+        <trans-unit id="262" translate="yes" xml:space="preserve">
+          <source>Exchange Management Shell</source>
+          <target state="new">Exchange Management Shell</target>
+        </trans-unit>
+        <trans-unit id="263" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/library/bb123778(v=exchg.150).aspx</source>
+          <target state="new">http://technet.microsoft.com/library/bb123778(v=exchg.150).aspx</target>
+        </trans-unit>
+        <trans-unit id="264" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="265" translate="yes" xml:space="preserve">
+          <source>For more information about managing Exchange Server 2013, see</source>
+          <target state="new">For more information about managing Exchange Server 2013, see</target>
+        </trans-unit>
+        <trans-unit id="266" translate="yes" xml:space="preserve">
+          <source>Exchange Server 2013</source>
+          <target state="new">Exchange Server 2013</target>
+        </trans-unit>
+        <trans-unit id="267" translate="yes" xml:space="preserve">
+          <source>http://technet.microsoft.com/library/bb124558(v=exchg.150).aspx</source>
+          <target state="new">http://technet.microsoft.com/library/bb124558(v=exchg.150).aspx</target>
+        </trans-unit>
+        <trans-unit id="268" translate="yes" xml:space="preserve">
+          <source>Resources for Windows PowerShell Developers</source>
+          <target state="new">Resources for Windows PowerShell Developers</target>
+        </trans-unit>
+        <trans-unit id="269" translate="yes" xml:space="preserve">
+          <source>The following resources provide resources to help developers create their own</source>
+          <target state="new">The following resources provide resources to help developers create their own</target>
+        </trans-unit>
+        <trans-unit id="270" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="271" translate="yes" xml:space="preserve">
+          <source>modules, functions, cmdlets, providers, and hosting applications.</source>
+          <target state="new">modules, functions, cmdlets, providers, and hosting applications.</target>
+        </trans-unit>
+        <trans-unit id="272" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell SDK</source>
+          <target state="new">Windows PowerShell SDK</target>
+        </trans-unit>
+        <trans-unit id="273" translate="yes" xml:space="preserve">
+          <source>http://go.microsoft.com/fwlink/p/?LinkID=89595</source>
+          <target state="new">http://go.microsoft.com/fwlink/p/?LinkID=89595</target>
+        </trans-unit>
+        <trans-unit id="274" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="275" translate="yes" xml:space="preserve">
+          <source>Provides reference content.</source>
+          <target state="new">Provides reference content.</target>
+        </trans-unit>
+        <trans-unit id="276" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Programmer's Guide</source>
+          <target state="new">Windows PowerShell Programmer's Guide</target>
+        </trans-unit>
+        <trans-unit id="277" translate="yes" xml:space="preserve">
+          <source>http://go.microsoft.com/fwlink/p/?LinkID=89596</source>
+          <target state="new">http://go.microsoft.com/fwlink/p/?LinkID=89596</target>
+        </trans-unit>
+        <trans-unit id="278" translate="yes" xml:space="preserve">
+          <source>.</source>
+          <target state="new">.</target>
+        </trans-unit>
+        <trans-unit id="279" translate="yes" xml:space="preserve">
+          <source>Provides tutorials.</source>
+          <target state="new">Provides tutorials.</target>
+        </trans-unit>
+        <trans-unit id="280" translate="yes" xml:space="preserve">
+          <source>Also contains information about fundamental</source>
+          <target state="new">Also contains information about fundamental</target>
+        </trans-unit>
+        <trans-unit id="281" translate="yes" xml:space="preserve">
+          <source>wps_2</source>
+          <target state="new">wps_2</target>
+        </trans-unit>
+        <trans-unit id="282" translate="yes" xml:space="preserve">
+          <source>concepts.</source>
+          <target state="new">concepts.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
