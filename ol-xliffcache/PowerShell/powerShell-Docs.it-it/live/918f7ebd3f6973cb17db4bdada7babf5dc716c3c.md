@@ -1,12 +1,12 @@
-# Writing help for DSC configurations
+# Guida alla scrittura per le configurazioni DSC
 
->Applies To: Windows Windows PowerShell 5.0
+>Si applica a: Windows PowerShell 5.0
 
-You can use comment-based help in DSC configurations. Users can access the help by calling the configuration function with `-?`, or by using the 
-[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. For more information about PowerShell comment-based help, see 
+È possibile usare la Guida basata sui commenti nelle configurazioni DSC. Gli utenti possono accedere alla Guida chiamando la funzione di configurazione con `-?` oppure usando il 
+cmdlet [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx). Per altre informazioni sulla Guida basata sui commenti di PowerShell, vedere 
 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
 
-The following example shows a script that contains two configurations and comment-based help for each configuration:
+L'esempio seguente mostra uno script che contiene due configurazioni e la Guida basata sui commenti per ogni configurazione:
 
 ```powershell
 <#
@@ -41,19 +41,19 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$computername,[string]$filePath)
-    File f
-    {
-		Contents="Hello World"
-        DestinationPath = "c:\Destination.txt"
-    }
+    param([string]$computername,[string]$filePath)
+    File f
+    {
+        Contents="Hello World"
+        DestinationPath = "c:\Destination.txt"
+    }
 }
 ```
 
-## Viewing configuration help
+## Visualizzazione della Guida di configurazione
 
-To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`. The following is the output
-of the previous function when passed to **Get-Help**:
+Per visualizzare la Guida per una configurazione, usare il cmdlet **Get-Help** con il nome della funzione oppure digitare il nome della funzione seguito da `-?`. Di seguito è riportato l'output
+della funzione precedente quando viene passato a **Get-Help**:
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -82,5 +82,9 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## See Also
-* [DSC Configurations](configurations.md)
+## Vedere anche
+* [Configurazioni DSC](configurations.md)
+
+<!--HONumber=Apr16_HO5-->
+
+
