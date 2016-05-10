@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="pt-br">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">df17a2af726925e59275f2ecabf702c105b0cdc8</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-1457980" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4327f7428aa839fd7bb1788b203d72c838814aa9</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f8f5666" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -74,8 +74,8 @@
           <target state="new"><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: <bpt id="p2">**</bpt>Install-Module<ept id="p2">**</ept> is included in the <bpt id="p3">**</bpt>PowerShellGet<ept id="p3">**</ept> module, which is included in PowerShell 5.0.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>You can download the <bpt id="p1">**</bpt>PowerShellGet<ept id="p1">**</ept> module for PowerShell 3.0 and 4.0 at <bpt id="p2">[</bpt>PackageManagement PowerShell Modules Preview<ept id="p2">](https://www.microsoft.com/en-us/download/details.aspx?id=49186)</ept>.</source>
-          <target state="new">You can download the <bpt id="p1">**</bpt>PowerShellGet<ept id="p1">**</ept> module for PowerShell 3.0 and 4.0 at <bpt id="p2">[</bpt>PackageManagement PowerShell Modules Preview<ept id="p2">](https://www.microsoft.com/en-us/download/details.aspx?id=49186)</ept>.</target>
+          <source>You can download the <bpt id="p1">**</bpt>PowerShellGet<ept id="p1">**</ept> module for PowerShell 3.0 and 4.0 at <bpt id="p2">[</bpt>PackageManagement PowerShell Modules Preview<ept id="p2">](https://www.microsoft.com/en-us/download/details.aspx?id=49186)</ept></source>
+          <target state="new">You can download the <bpt id="p1">**</bpt>PowerShellGet<ept id="p1">**</ept> module for PowerShell 3.0 and 4.0 at <bpt id="p2">[</bpt>PackageManagement PowerShell Modules Preview<ept id="p2">](https://www.microsoft.com/en-us/download/details.aspx?id=49186)</ept></target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>Get an SSL certificate for the DSC Pull server from a trusted Certificate Authority, either within your orgnaization or a public authority.</source>
@@ -166,8 +166,8 @@
           <target state="new">The lack of the <bpt id="p1">**</bpt>ConfigurationID<ept id="p1">**</ept> property in the metaconfiguration file implicitly means that pull server is supporting the V2 version of the pull server protocol so an initial registration is required.</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source>Conversely, the presents of a <bpt id="p1">**</bpt>ConfigurationID<ept id="p1">**</ept> means that the V1 version of the pull server protocol is used and there is no registration processing.</source>
-          <target state="new">Conversely, the presents of a <bpt id="p1">**</bpt>ConfigurationID<ept id="p1">**</ept> means that the V1 version of the pull server protocol is used and there is no registration processing.</target>
+          <source>Conversely, the presence of a <bpt id="p1">**</bpt>ConfigurationID<ept id="p1">**</ept> means that the V1 version of the pull server protocol is used and there is no registration processing.</source>
+          <target state="new">Conversely, the presence of a <bpt id="p1">**</bpt>ConfigurationID<ept id="p1">**</ept> means that the V1 version of the pull server protocol is used and there is no registration processing.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: In a PUSH scenario, a bug exists in the current relase that makes it necessary to define a ConfigurationID property in the metaconfiguration file for nodes that have never registered with a pull server.</source>
@@ -282,8 +282,8 @@
           <target state="new">A script that validates the Pull Server is configured correctly.</target>
         </trans-unit>
         <trans-unit id="169" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">[</bpt>PullServerSetupTests.ps1<ept id="p1">](https://github.com/PowerShell/xPSDesiredStateConfiguration/blob/dev/Examples/PullServerDeploymentVerificationTest/PullServerSetupTests.ps1)</ept>.</source>
-          <target state="new"><bpt id="p1">[</bpt>PullServerSetupTests.ps1<ept id="p1">](https://github.com/PowerShell/xPSDesiredStateConfiguration/blob/dev/Examples/PullServerDeploymentVerificationTest/PullServerSetupTests.ps1)</ept>.</target>
+          <source>PullServerSetupTests.ps1</source>
+          <target state="new">PullServerSetupTests.ps1</target>
         </trans-unit>
         <trans-unit id="170" translate="yes" xml:space="preserve">
           <source>Pull client configuration</source>
