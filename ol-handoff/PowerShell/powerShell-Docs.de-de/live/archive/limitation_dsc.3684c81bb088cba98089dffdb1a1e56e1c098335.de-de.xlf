@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="de-de">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fe1c40cbfd2c76f45d170b82d8a099e860b15db8</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -28,8 +34,8 @@
           <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Re-create the certificate with Data Encipherment or Key Encipherment Key usage, and Document Encryption Enhanced Key usage (1.3.6.1.4.1.311.80.1).</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Technet article <bpt id="p1">&lt;</bpt><ept id="p1">https://technet.microsoft.com/en-us/library/dn807171.aspx&gt;</ept> has more information.</source>
-          <target state="new">Technet article <bpt id="p1">&lt;</bpt><ept id="p1">https://technet.microsoft.com/en-us/library/dn807171.aspx&gt;</ept> has more information.</target>
+          <source>Technet article <bpt id="p1">&lt;</bpt>https://technet.microsoft.com/en-us/library/dn807171.aspx<ept id="p1">&gt;</ept> has more information.</source>
+          <target state="new">Technet article <bpt id="p1">&lt;</bpt>https://technet.microsoft.com/en-us/library/dn807171.aspx<ept id="p1">&gt;</ept> has more information.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>DSC cmdlets may fail after installing WMF 5.0 RTM</source>
@@ -260,25 +266,18 @@
           <target state="new">This resource requires the DISM module, and DISM cmdlets that are available starting in Windows 8 and newer releases of the Windows operating system.</target>
         </trans-unit>
         <trans-unit id="165" translate="yes" xml:space="preserve">
-          <source>Running Set-DscLocalConfigurationManager to set Meta Configuration against WMF 4.0 or WMF 5.0 Production Preview builds will not work</source>
-          <target state="new">Running Set-DscLocalConfigurationManager to set Meta Configuration against WMF 4.0 or WMF 5.0 Production Preview builds will not work</target>
+          <source>For Class-based DSC resources, Import-DscResource -ModuleVersion may not work as expected</source>
+          <target state="new">For Class-based DSC resources, Import-DscResource -ModuleVersion may not work as expected</target>
         </trans-unit>
         <trans-unit id="166" translate="yes" xml:space="preserve">
-          <source>There is a backward compatibility issue when running Set-DscLocalConfiguration against previous WMFs.</source>
-          <target state="new">There is a backward compatibility issue when running Set-DscLocalConfiguration against previous WMFs.</target>
+          <source>If the compilation node has multiple version of a class-based DSC resource module, <ph id="ph1">`Import-DscResource -ModuleVersion`</ph> does not pick the specified version and results in following compilation error.</source>
+          <target state="new">If the compilation node has multiple version of a class-based DSC resource module, <ph id="ph1">`Import-DscResource -ModuleVersion`</ph> does not pick the specified version and results in following compilation error.</target>
         </trans-unit>
         <trans-unit id="167" translate="yes" xml:space="preserve">
-          <source>You will see this error complaining about newly added -Force parameter not being available on the target machine.</source>
-          <target state="new">You will see this error complaining about newly added -Force parameter not being available on the target machine.</target>
-        </trans-unit>
-        <trans-unit id="168" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Follow these steps to use Invoke-CimMethod to call underlying CIM method directly to set meta configuration.</source>
-          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Follow these steps to use Invoke-CimMethod to call underlying CIM method directly to set meta configuration.</target>
+          <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Import the required version by defining the <bpt id="p2">*</bpt>ModuleSpecification<ept id="p2">*</ept> object to the <ph id="ph1">`-ModuleName`</ph> with <ph id="ph2">`RequiredVersion`</ph> key specified as follows:</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Import the required version by defining the <bpt id="p2">*</bpt>ModuleSpecification<ept id="p2">*</ept> object to the <ph id="ph1">`-ModuleName`</ph> with <ph id="ph2">`RequiredVersion`</ph> key specified as follows:</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c87ec977d6b2cc74aae51a81ae1f9b790157ded9</xliffext:olfilehash>
-  </header>
 </xliff>
