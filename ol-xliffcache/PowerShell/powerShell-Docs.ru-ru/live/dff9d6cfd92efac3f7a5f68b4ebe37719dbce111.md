@@ -1,31 +1,36 @@
-# Direct access to DSC resource methods
+# Прямой доступ к методам ресурсов DSC
 
 
-The `Invoke-DscResource` cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test). It can be used by third-parties that want to take advantage of DSC resources. This cmdlet is typically used in combination with `refreshMode = ‘Disabled’` but can be used no matter what refreshMode is set to. Below are some examples of how to use the new cmdlet:
+Добавлен командлет `Invoke-DscResource` для прямого доступа к ресурсам DSC и их методам (Get, Set или Test). Он может использоваться третьими сторонами, желающими воспользоваться преимуществами ресурсов DSC. Этот командлет обычно используется в сочетании с `refreshMode = ‘Disabled’`, однако доступен независимо от значения refreshMode. Ниже приведено несколько примеров использования нового командлета:
 
-## Ensure a file is present
+## Проверка наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Set -Property @{
-							DestinationPath = "$env:SystemDrive\\DirectAccess.txt";
-							Contents = 'This file is create by Invoke-DscResource'} -Verbose
+                            DestinationPath = "$env:SystemDrive\\DirectAccess.txt";
+                            Contents = 'This file is create by Invoke-DscResource'} -Verbose
 $result | fl
 ```
 
-## Test that a file is present
+## Тестирование наличия файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Test -Property @{
-							DestinationPath="$env:SystemDrive\\DirectAccess.txt";
-							Contents='This file is create by Invoke-DscResource'} -Verbose
+                            DestinationPath="$env:SystemDrive\\DirectAccess.txt";
+                            Contents='This file is create by Invoke-DscResource'} -Verbose
 $result | fl
 ```
 
-## Get the contents of file
+## Получение содержимого файла
 
 ```powershell
 $result = Invoke-DscResource -Name File -Method Get -Property @{
-							DestinationPath="$env:SystemDrive\\DirectAccess.txt";
-							Contents='This file is create by Invoke-DscResource'} -Verbose
+                            DestinationPath="$env:SystemDrive\\DirectAccess.txt";
+                            Contents='This file is create by Invoke-DscResource'} -Verbose
 $result.ItemValue | fl
 ```
+
+
+<!--HONumber=Apr16_HO4-->
+
+
