@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\TOC.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2ec3eca1fb7ce214b2b860ad763da69210f4ca37</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Overview</source>
+          <target state="new">Overview</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Configurations</source>
+          <target state="new">Configurations</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Enacting configurations</source>
+          <target state="new">Enacting configurations</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Using resources with multiple versions</source>
+          <target state="new">Using resources with multiple versions</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Running DSC with user credentials</source>
+          <target state="new">Running DSC with user credentials</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Specifying cross-node dependencies</source>
+          <target state="new">Specifying cross-node dependencies</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Configuration data</source>
+          <target state="new">Configuration data</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Credential options in configuration data</source>
+          <target state="new">Credential options in configuration data</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Securing the configuration MOF file</source>
+          <target state="new">Securing the configuration MOF file</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Partial Configurations</source>
+          <target state="new">Partial Configurations</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Writing help for DSC configurations</source>
+          <target state="new">Writing help for DSC configurations</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Resources</source>
+          <target state="new">Resources</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Built-in resources</source>
+          <target state="new">Built-in resources</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Archive Resource</source>
+          <target state="new">Archive Resource</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Environment Resource</source>
+          <target state="new">Environment Resource</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>File Resource</source>
+          <target state="new">File Resource</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Group Resource</source>
+          <target state="new">Group Resource</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Log Resource</source>
+          <target state="new">Log Resource</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Package Resource</source>
+          <target state="new">Package Resource</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Registry Resource</source>
+          <target state="new">Registry Resource</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Script Resource</source>
+          <target state="new">Script Resource</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Service Resource</source>
+          <target state="new">Service Resource</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>User Resource</source>
+          <target state="new">User Resource</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>WindowsFeature Resource</source>
+          <target state="new">WindowsFeature Resource</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>WindowsProcess Resource</source>
+          <target state="new">WindowsProcess Resource</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Authoring custom resources</source>
+          <target state="new">Authoring custom resources</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>MOF-based custom resources</source>
+          <target state="new">MOF-based custom resources</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>MOF-based resource in C</source>
+          <target state="new">MOF-based resource in C</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Class-based custom resouces</source>
+          <target state="new">Class-based custom resouces</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Composite resources</source>
+          <target state="new">Composite resources</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Debugging DSC resources</source>
+          <target state="new">Debugging DSC resources</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Calling DSC resource methods directly</source>
+          <target state="new">Calling DSC resource methods directly</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Writing a single-instance DSC resource (best practice)</source>
+          <target state="new">Writing a single-instance DSC resource (best practice)</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Resource authoring checklist</source>
+          <target state="new">Resource authoring checklist</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Configuring the Local Configuration Manager (LCM)</source>
+          <target state="new">Configuring the Local Configuration Manager (LCM)</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Configuring the LCM in PowerShell 4.0</source>
+          <target state="new">Configuring the LCM in PowerShell 4.0</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>The DSC pull model</source>
+          <target state="new">The DSC pull model</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Setting up a web pull server</source>
+          <target state="new">Setting up a web pull server</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Setting up a DSC SMB pull server</source>
+          <target state="new">Setting up a DSC SMB pull server</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Setting up a pull client</source>
+          <target state="new">Setting up a pull client</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Setting up a pull client using configuration names</source>
+          <target state="new">Setting up a pull client using configuration names</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Setting up a pull client using configuration ID</source>
+          <target state="new">Setting up a pull client using configuration ID</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Using a DSC report server</source>
+          <target state="new">Using a DSC report server</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Pull server best practices</source>
+          <target state="new">Pull server best practices</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Troubleshooting DSC</source>
+          <target state="new">Troubleshooting DSC</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Using DSC on Nano Server</source>
+          <target state="new">Using DSC on Nano Server</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>DSC on Linux</source>
+          <target state="new">DSC on Linux</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Getting started with DSC for Linux</source>
+          <target state="new">Getting started with DSC for Linux</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Built-in resorces for Linux</source>
+          <target state="new">Built-in resorces for Linux</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>nxArchive Resource</source>
+          <target state="new">nxArchive Resource</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>nxEnvironment Resource</source>
+          <target state="new">nxEnvironment Resource</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>nxFile Resource</source>
+          <target state="new">nxFile Resource</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>nxFileLine Resource</source>
+          <target state="new">nxFileLine Resource</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>nxGroup Resource</source>
+          <target state="new">nxGroup Resource</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>nxPackage Resource</source>
+          <target state="new">nxPackage Resource</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>nxService Resource</source>
+          <target state="new">nxService Resource</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>nxSshAuthorizedKeys Resource</source>
+          <target state="new">nxSshAuthorizedKeys Resource</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>nxUser Resource</source>
+          <target state="new">nxUser Resource</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>DSC MOF Reference</source>
+          <target state="new">DSC MOF Reference</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">ApplyConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">DisableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>GetConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">GetConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">GetConfigurationStatus method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">GetMetaConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">PerformRequiredConfigurationChecks method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">RemoveConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>ResourceGet method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">ResourceGet method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>ResourceSet method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">ResourceSet method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>ResourceTest method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">ResourceTest method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>RollBack method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">RollBack method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>SendConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">SendConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">SendConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">SendMetaConfigurationApply method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>StopConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">StopConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>TestConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
+          <target state="new">TestConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>More Resources</source>
+          <target state="new">More Resources</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Whitepapers</source>
+          <target state="new">Whitepapers</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
