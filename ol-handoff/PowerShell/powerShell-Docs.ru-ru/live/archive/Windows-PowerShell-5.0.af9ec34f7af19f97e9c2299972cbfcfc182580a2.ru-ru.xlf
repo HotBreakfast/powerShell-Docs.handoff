@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cea337708917af9ef1b8d8fdb58be3d9712939b4</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\core-modules\Windows-PowerShell-5.0.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8adf724740b2f09bff6d5cafb822566f4747780c</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -42,8 +43,8 @@
           <target state="new">See <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](http://technet.microsoft.com/library/hh847735.aspx)</ept> for more information.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>For information about older versions of Windows PowerShell, see <bpt id="p1">[</bpt>http://technet.microsoft.com/library/hh847741(v=wps.620).aspx<ept id="p1">](http://technet.microsoft.com/library/hh847741(v=wps.620).aspx)</ept> in the TechNet Library.</source>
-          <target state="new">For information about older versions of Windows PowerShell, see <bpt id="p1">[</bpt>http://technet.microsoft.com/library/hh847741(v=wps.620).aspx<ept id="p1">](http://technet.microsoft.com/library/hh847741(v=wps.620).aspx)</ept> in the TechNet Library.</target>
+          <source><ph id="ph1">[!NOTE]</ph> For information about older versions of Windows PowerShell, see <bpt id="p1">[</bpt>http://technet.microsoft.com/library/hh847741(v=wps.620).aspx<ept id="p1">](http://technet.microsoft.com/library/hh847741(v=wps.620).aspx)</ept> in the TechNet Library.</source>
+          <target state="new"><ph id="ph1">[!NOTE]</ph> For information about older versions of Windows PowerShell, see <bpt id="p1">[</bpt>http://technet.microsoft.com/library/hh847741(v=wps.620).aspx<ept id="p1">](http://technet.microsoft.com/library/hh847741(v=wps.620).aspx)</ept> in the TechNet Library.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>Windows PowerShell Core modules</source>

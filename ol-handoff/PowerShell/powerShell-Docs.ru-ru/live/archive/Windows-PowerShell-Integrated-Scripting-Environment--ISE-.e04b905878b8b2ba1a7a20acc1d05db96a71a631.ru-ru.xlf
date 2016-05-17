@@ -4,14 +4,15 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fd325f8f4bc0ad8bf7616a536b836b0a4b375e05</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Windows-PowerShell-Integrated-Scripting-Environment--ISE-.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fcb516c5d7bdc14c2e23bdb9d96e8e19c383eda5</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Integrated Scripting Environment (ISE)</source>
-          <target state="new">Windows PowerShell Integrated Scripting Environment (ISE)</target>
+          <source>Windows PowerShell Integrated Scripting Environment  ISE</source>
+          <target state="new">Windows PowerShell Integrated Scripting Environment  ISE</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
           <source>Windows PowerShell Integrated Scripting Environment (ISE)</source>
@@ -202,8 +203,8 @@
           <target state="new"><bpt id="p1">**</bpt>Block selection<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>You can select a block\-shaped chunk of text by holding down the ALT key while selecting text in the script pane with your mouse, or by pressing <bpt id="p1">**</bpt>Alt\+Shift\+Arrow<ept id="p1">**</ept></source>
-          <target state="new">You can select a block\-shaped chunk of text by holding down the ALT key while selecting text in the script pane with your mouse, or by pressing <bpt id="p1">**</bpt>Alt\+Shift\+Arrow<ept id="p1">**</ept></target>
+          <source>You can select a block\-shaped chunk of text by holding down the ALT key while selecting text in the script pane with your mouse, or by pressing <bpt id="p1">**</bpt>Alt\+Shift\+Arrow<ept id="p1">**</ept>.</source>
+          <target state="new">You can select a block\-shaped chunk of text by holding down the ALT key while selecting text in the script pane with your mouse, or by pressing <bpt id="p1">**</bpt>Alt\+Shift\+Arrow<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
           <source>Added in PowerShell 2.0 (Windows Server 2008 R2, Windows 7</source>
@@ -234,8 +235,8 @@
           <target state="new">Note that any entries labelled "Preview" are pre\-release code and are not feature complete.</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
-          <source>Because Windows PowerShell ISE requires a graphical user interface, you can’t run it on the Server Core option of Windows Server.</source>
-          <target state="new">Because Windows PowerShell ISE requires a graphical user interface, you can’t run it on the Server Core option of Windows Server.</target>
+          <source><ph id="ph1">[!NOTE]</ph> Because Windows PowerShell ISE requires a graphical user interface, you can’t run it on the Server Core option of Windows Server.</source>
+          <target state="new"><ph id="ph1">[!NOTE]</ph> Because Windows PowerShell ISE requires a graphical user interface, you can’t run it on the Server Core option of Windows Server.</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
           <source>See also</source>

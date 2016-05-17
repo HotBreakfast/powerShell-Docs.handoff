@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1ccebcfb7d9f632b078ca2284aa3c1a8a173325a</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\workflows\PSWorkflow-Module.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9de4d91359cf3c52d804749027f8d05cbffce743</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -82,24 +83,16 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>Getting Started with Windows PowerShell Workflow</source>
-          <target state="new">Getting Started with Windows PowerShell Workflow</target>
-        </trans-unit>
-        <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>Writing a Windows PowerShell Workflow</source>
-          <target state="new">Writing a Windows PowerShell Workflow</target>
-        </trans-unit>
-        <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 5.0</source>
-          <target state="new">Windows PowerShell 5.0</target>
-        </trans-unit>
-        <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Core About Topics</source>
-          <target state="new">Windows PowerShell Core About Topics</target>
-        </trans-unit>
-        <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>Scripting with Windows PowerShell</source>
-          <target state="new">Scripting with Windows PowerShell</target>
+          <source><bpt id="p1">[</bpt>Getting Started with Windows PowerShell Workflow<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=252592)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Writing a Windows PowerShell Workflow<ept id="p2">](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell 5.0<ept id="p3">](../core-modules/Windows-PowerShell-5.0.md)</ept><ph id="ph3">
+</ph><bpt id="p4">[</bpt>Windows PowerShell Core About Topics<ept id="p4">](../core-modules/Windows-PowerShell-Core-About-Topics.md)</ept><ph id="ph4">
+</ph><bpt id="p5">[</bpt>Scripting with Windows PowerShell<ept id="p5">](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Getting Started with Windows PowerShell Workflow<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=252592)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Writing a Windows PowerShell Workflow<ept id="p2">](https://technet.microsoft.com/en-us/library/2551ceed-836f-4275-9fc0-ea68446d6a35)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell 5.0<ept id="p3">](../core-modules/Windows-PowerShell-5.0.md)</ept><ph id="ph3">
+</ph><bpt id="p4">[</bpt>Windows PowerShell Core About Topics<ept id="p4">](../core-modules/Windows-PowerShell-Core-About-Topics.md)</ept><ph id="ph4">
+</ph><bpt id="p5">[</bpt>Scripting with Windows PowerShell<ept id="p5">](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)</ept></target>
         </trans-unit>
       </group>
     </body>
