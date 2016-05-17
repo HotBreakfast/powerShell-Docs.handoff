@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1644d635776b84c5059bb6ea10be9afaa45e0030</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Exploring-the-Windows-PowerShell-ISE.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">642bc1ba2e6d63de2ef692a1e2c547fb3f1a5946</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -26,8 +27,8 @@
           <target state="new">The Windows PowerShell ISE consists of the menu bar, Windows PowerShell tabs, the toolbar, script tabs, a Script Pane, a Console Pane, a status bar, a text\-size slider and context\-sensitive Help.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Beginning with Windows PowerShell ISE 3.0 the Command and Output Panes were combined into a single Console Pane.</source>
-          <target state="new">Beginning with Windows PowerShell ISE 3.0 the Command and Output Panes were combined into a single Console Pane.</target>
+          <source><ph id="ph1">[!NOTE]</ph> Beginning with Windows PowerShell ISE 3.0 the Command and Output Panes were combined into a single Console Pane.</source>
+          <target state="new"><ph id="ph1">[!NOTE]</ph> Beginning with Windows PowerShell ISE 3.0 the Command and Output Panes were combined into a single Console Pane.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
           <source>Menu Bar</source>
@@ -42,12 +43,12 @@
           <target state="new">The buttons on the menus allow you to perform tasks related to writing and running scripts and running commands in the Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>Additionally, an <bpt id="p1">[</bpt>add-on tool<ept id="p1">](../../core-powershell/ise/The-ISEAddOnTool-Object.md)</ept> may be placed on the menu bar by running scripts that use the <bpt id="p2">[</bpt>Windows PowerShell ISE Scripting Object Model<ept id="p2">](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept></source>
-          <target state="new">Additionally, an <bpt id="p1">[</bpt>add-on tool<ept id="p1">](../../core-powershell/ise/The-ISEAddOnTool-Object.md)</ept> may be placed on the menu bar by running scripts that use the <bpt id="p2">[</bpt>Windows PowerShell ISE Scripting Object Model<ept id="p2">](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept></target>
+          <source>Additionally, an <bpt id="p1">[</bpt>add-on tool<ept id="p1">](../../core-powershell/ise/The-ISEAddOnTool-Object.md)</ept> may be placed on the menu bar by running scripts that use the <bpt id="p2">[</bpt>Windows PowerShell ISE Scripting Object Model<ept id="p2">](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept>.</source>
+          <target state="new">Additionally, an <bpt id="p1">[</bpt>add-on tool<ept id="p1">](../../core-powershell/ise/The-ISEAddOnTool-Object.md)</ept> may be placed on the menu bar by running scripts that use the <bpt id="p2">[</bpt>Windows PowerShell ISE Scripting Object Model<ept id="p2">](../../core-powershell/ise/The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept>.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>In Windows PowerShell ISE 2.0, The <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Add\-ons<ept id="p2">**</ept> menus were not present.</source>
-          <target state="new">In Windows PowerShell ISE 2.0, The <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Add\-ons<ept id="p2">**</ept> menus were not present.</target>
+          <source><ph id="ph1">[!NOTE]</ph> In Windows PowerShell ISE 2.0, The <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Add\-ons<ept id="p2">**</ept> menus were not present.</source>
+          <target state="new"><ph id="ph1">[!NOTE]</ph> In Windows PowerShell ISE 2.0, The <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Add\-ons<ept id="p2">**</ept> menus were not present.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
           <source>Windows PowerShell Tabs</source>
