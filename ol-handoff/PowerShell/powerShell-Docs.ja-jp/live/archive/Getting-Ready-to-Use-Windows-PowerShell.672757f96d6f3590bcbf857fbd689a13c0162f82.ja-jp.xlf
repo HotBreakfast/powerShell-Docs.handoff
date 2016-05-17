@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">712f569902888ec0d9ab7e5645ab374dcda0651d</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\Getting-Ready-to-Use-Windows-PowerShell.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fdf7b47e2222ec94783fc17aba839dcc3e78ab53</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -42,8 +43,8 @@
           <target state="new">When the files are installed, you can use the <bpt id="p1">[</bpt>Get-Help<ept id="p1">](https://technet.microsoft.com/en-us/library/1f46eeb4-49d7-4bec-bb29-395d9b42f54a)</ept> cmdlet to display them right at the command line.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>For more information, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)</ept></source>
-          <target state="new">For more information, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)</ept></target>
+          <source>For more information, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](https://technet.microsoft.com/en-us/library/10bba75c-f4ac-4ca1-bbf3-8f34dd521ffe)</ept>.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>If you decide not to install the help files, you can still read the help topics online.</source>
@@ -54,8 +55,8 @@
           <target state="new">To find the online version of any cmdlet help topic, type: <ph id="ph1">`Get-Help &lt;CmdletName&gt; -Online`</ph>.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>To browse the Windows PowerShell help topics in the TechNet Library, start at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=107116<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=107116)</ept></source>
-          <target state="new">To browse the Windows PowerShell help topics in the TechNet Library, start at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=107116<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=107116)</ept></target>
+          <source>To browse the Windows PowerShell help topics in the TechNet Library, start at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=107116<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=107116)</ept>.</source>
+          <target state="new">To browse the Windows PowerShell help topics in the TechNet Library, start at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=107116<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=107116)</ept>.</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
           <source>Run scripts.</source>
@@ -78,8 +79,8 @@
           <target state="new">Only members of the Administrators group on the computer can run this cmdlet.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>For more information, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept></source>
-          <target state="new">For more information, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept></target>
+          <source>For more information, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>about_Execution_Policies [v4]<ept id="p1">](https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6)</ept>.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>Enable remoting.</source>
@@ -102,8 +103,8 @@
           <target state="new">Only members of the Administrators group on the computer can run this cmdlet.</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>For more information, see <bpt id="p1">[</bpt>about_Remote<ept id="p1">](https://technet.microsoft.com/en-us/library/9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)</ept></source>
-          <target state="new">For more information, see <bpt id="p1">[</bpt>about_Remote<ept id="p1">](https://technet.microsoft.com/en-us/library/9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)</ept></target>
+          <source>For more information, see <bpt id="p1">[</bpt>about_Remote<ept id="p1">](https://technet.microsoft.com/en-us/library/9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>about_Remote<ept id="p1">](https://technet.microsoft.com/en-us/library/9b4a5c87-9162-4adf-bdfe-fbc80b9b8970)</ept>.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>NOTE: If remoting is enabled on a computer that is running Windows PowerShell 2.0, remoting is still enabled after you install Windows Management Framework 3.0.</source>
@@ -118,12 +119,10 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>Installing Windows PowerShell</source>
-          <target state="new">Installing Windows PowerShell</target>
-        </trans-unit>
-        <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>Starting Windows PowerShell [ps]</source>
-          <target state="new">Starting Windows PowerShell [ps]</target>
+          <source><bpt id="p1">[</bpt>Installing Windows PowerShell<ept id="p1">](../setup/Installing-Windows-PowerShell.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Starting Windows PowerShell [ps]<ept id="p2">](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Installing Windows PowerShell<ept id="p1">](../setup/Installing-Windows-PowerShell.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Starting Windows PowerShell [ps]<ept id="p2">](https://technet.microsoft.com/en-us/library/8ec8c2d7-8e7c-4722-a3d2-498fe5739a8e)</ept></target>
         </trans-unit>
       </group>
     </body>
