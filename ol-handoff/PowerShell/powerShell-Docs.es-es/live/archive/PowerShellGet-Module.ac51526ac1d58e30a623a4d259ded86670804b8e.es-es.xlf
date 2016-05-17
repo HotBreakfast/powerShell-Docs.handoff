@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a5e32b92c19d63275211a9af03c7a33305187f4c</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\PowerShellGet-Module.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3093c4c307ff61151946c417d18cde8fe56278bc</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -38,16 +39,12 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 5.0</source>
-          <target state="new">Windows PowerShell 5.0</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Core</source>
-          <target state="new">Windows PowerShell Core</target>
-        </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>Scripting with Windows PowerShell</source>
-          <target state="new">Scripting with Windows PowerShell</target>
+          <source><bpt id="p1">[</bpt>Windows PowerShell 5.0<ept id="p1">](../../core-powershell/core-modules/Windows-PowerShell-5.0.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Windows PowerShell Core<ept id="p2">](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Scripting with Windows PowerShell<ept id="p3">](../fundamental/Scripting-with-Windows-PowerShell.md)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Windows PowerShell 5.0<ept id="p1">](../../core-powershell/core-modules/Windows-PowerShell-5.0.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Windows PowerShell Core<ept id="p2">](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Scripting with Windows PowerShell<ept id="p3">](../fundamental/Scripting-with-Windows-PowerShell.md)</ept></target>
         </trans-unit>
       </group>
     </body>
