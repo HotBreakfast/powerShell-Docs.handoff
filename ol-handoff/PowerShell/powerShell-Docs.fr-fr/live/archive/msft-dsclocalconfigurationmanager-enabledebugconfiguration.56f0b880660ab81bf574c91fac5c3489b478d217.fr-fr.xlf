@@ -1,21 +1,22 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="fr-fr">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ddc78784632f3453b5f229b4169d9512acb6afdd</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-708c90d" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\msft-dsclocalconfigurationmanager-enabledebugconfiguration.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2ccfde4fd3ef3baf5d74b36c32d208ad85e6f3fc</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
-          <source>Enable Debug DSC Configuration.</source>
-          <target state="new">Enable Debug DSC Configuration.</target>
+          <source>DCS.appliesToProduct: 'WindowsServer<ph id="ph1">\_</ph>Dev' Description: 'Enable Debug DSC Configuration.'</source>
+          <target state="new">DCS.appliesToProduct: 'WindowsServer<ph id="ph1">\_</ph>Dev' Description: 'Enable Debug DSC Configuration.'</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
-          <source>EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
-          <target state="new">EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</target>
+          <source>MS-HAID: 'cimwin32a.msft<ph id="ph1">\_</ph>dsclocalconfigurationmanager<ph id="ph2">\_</ph>enabledebugconfiguration' MSHAttr: 'PreferredLib:/library' title: 'EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class'</source>
+          <target state="new">MS-HAID: 'cimwin32a.msft<ph id="ph1">\_</ph>dsclocalconfigurationmanager<ph id="ph2">\_</ph>enabledebugconfiguration' MSHAttr: 'PreferredLib:/library' title: 'EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class'</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
           <source>EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class</source>
@@ -34,8 +35,8 @@
           <target state="new">Parameters</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">*</bpt>BreakAll<ept id="p1">*</ept> \[in\]</source>
-          <target state="new"><bpt id="p1">*</bpt>BreakAll<ept id="p1">*</ept> \[in\]</target>
+          <source><bpt id="p1">*</bpt>BreakAll<ept id="p1">*</ept> <ph id="ph1">\[</ph>in</source>
+          <target state="new"><bpt id="p1">*</bpt>BreakAll<ept id="p1">*</ept> <ph id="ph1">\[</ph>in</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Sets a breakpoint at every line in the resource script.</source>
