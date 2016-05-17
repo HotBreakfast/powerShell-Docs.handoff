@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d71c7f9cc4b8675f263761726a1df0bcedeaebdd</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\ISE-Module.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">750253273ca2b97085fef1de695d6011057d6846</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -38,28 +39,18 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>about_Windows_PowerShell_ISE [v3]</source>
-          <target state="new">about_Windows_PowerShell_ISE [v3]</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 3.0 Integrated Scripting Environment</source>
-          <target state="new">Windows PowerShell 3.0 Integrated Scripting Environment</target>
-        </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 2.0 Integrated Scripting Environment</source>
-          <target state="new">Windows PowerShell 2.0 Integrated Scripting Environment</target>
-        </trans-unit>
-        <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 5.0</source>
-          <target state="new">Windows PowerShell 5.0</target>
-        </trans-unit>
-        <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Core</source>
-          <target state="new">Windows PowerShell Core</target>
-        </trans-unit>
-        <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>Scripting with Windows PowerShell</source>
-          <target state="new">Scripting with Windows PowerShell</target>
+          <source><bpt id="p1">[</bpt>about_Windows_PowerShell_ISE [v3]<ept id="p1">](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Windows PowerShell 3.0 Integrated Scripting Environment<ept id="p2">](http://go.microsoft.com/fwlink/?LinkId=254681)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell 2.0 Integrated Scripting Environment<ept id="p3">](http://go.microsoft.com/fwlink/?LinkID=238569)</ept><ph id="ph3">
+</ph><bpt id="p4">[</bpt>Windows PowerShell 5.0<ept id="p4">](../core-modules/Windows-PowerShell-5.0.md)</ept><ph id="ph4">
+</ph><bpt id="p5">[</bpt>Windows PowerShell Core<ept id="p5">](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)</ept><ph id="ph5">
+</ph><bpt id="p6">[</bpt>Scripting with Windows PowerShell<ept id="p6">](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>about_Windows_PowerShell_ISE [v3]<ept id="p1">](https://technet.microsoft.com/en-us/library/dfa54d47-60c6-4fff-8197-c747e8d411bb)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Windows PowerShell 3.0 Integrated Scripting Environment<ept id="p2">](http://go.microsoft.com/fwlink/?LinkId=254681)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell 2.0 Integrated Scripting Environment<ept id="p3">](http://go.microsoft.com/fwlink/?LinkID=238569)</ept><ph id="ph3">
+</ph><bpt id="p4">[</bpt>Windows PowerShell 5.0<ept id="p4">](../core-modules/Windows-PowerShell-5.0.md)</ept><ph id="ph4">
+</ph><bpt id="p5">[</bpt>Windows PowerShell Core<ept id="p5">](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)</ept><ph id="ph5">
+</ph><bpt id="p6">[</bpt>Scripting with Windows PowerShell<ept id="p6">](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)</ept></target>
         </trans-unit>
       </group>
     </body>
