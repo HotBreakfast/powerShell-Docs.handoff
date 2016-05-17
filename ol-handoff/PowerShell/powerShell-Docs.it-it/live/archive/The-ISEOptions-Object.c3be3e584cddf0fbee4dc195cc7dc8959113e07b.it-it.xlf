@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">63934e7c215939d55afddabfb993a48494df045c</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEOptions-Object.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">272749d487a59ccf5eb30352dc902591228746f3</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -270,8 +271,8 @@
           <target state="new">Restores the default values of the token colors for XML elements that are displayed in Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="166" translate="yes" xml:space="preserve">
-          <source>Also see <bpt id="p1">[</bpt>XmlTokenColors<ept id="p1">](#xtc)</ept></source>
-          <target state="new">Also see <bpt id="p1">[</bpt>XmlTokenColors<ept id="p1">](#xtc)</ept></target>
+          <source>Also see <bpt id="p1">[</bpt>XmlTokenColors<ept id="p1">](#xtc)</ept>.</source>
+          <target state="new">Also see <bpt id="p1">[</bpt>XmlTokenColors<ept id="p1">](#xtc)</ept>.</target>
         </trans-unit>
         <trans-unit id="167" translate="yes" xml:space="preserve">
           <source>Properties</source>
@@ -306,8 +307,8 @@
           <target state="new">This feature is present in Windows PowerShell ISE 2.0, but was removed or renamed in later versions of the ISE.</target>
         </trans-unit>
         <trans-unit id="175" translate="yes" xml:space="preserve">
-          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept></source>
-          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept></target>
+          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept>.</source>
+          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept>.</target>
         </trans-unit>
         <trans-unit id="176" translate="yes" xml:space="preserve">
           <source>Specifies the background color for the Command pane.</source>
@@ -558,8 +559,8 @@
           <target state="new">This feature is present in Windows PowerShell ISE 2.0, but was removed or renamed in later versions of the ISE.</target>
         </trans-unit>
         <trans-unit id="238" translate="yes" xml:space="preserve">
-          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept></source>
-          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept></target>
+          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept>.</source>
+          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept>.</target>
         </trans-unit>
         <trans-unit id="239" translate="yes" xml:space="preserve">
           <source>The read\/write property that gets or sets the background color for the Output pane itself.</source>
@@ -578,8 +579,8 @@
           <target state="new">This feature is present in Windows PowerShell ISE 2.0, but was removed or renamed in later versions of the ISE.</target>
         </trans-unit>
         <trans-unit id="243" translate="yes" xml:space="preserve">
-          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneForegroundColor<ept id="p1">](#conpfc)</ept></source>
-          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneForegroundColor<ept id="p1">](#conpfc)</ept></target>
+          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneForegroundColor<ept id="p1">](#conpfc)</ept>.</source>
+          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneForegroundColor<ept id="p1">](#conpfc)</ept>.</target>
         </trans-unit>
         <trans-unit id="244" translate="yes" xml:space="preserve">
           <source>The read\/write property that changes the foreground color of the text in the Output pane in Windows PowerShell ISE 2.0.</source>
@@ -594,8 +595,8 @@
           <target state="new">This feature is present in Windows PowerShell ISE 2.0, but was removed or renamed in later versions of the ISE.</target>
         </trans-unit>
         <trans-unit id="247" translate="yes" xml:space="preserve">
-          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneTextBackgroundColor<ept id="p1">](#conptbc)</ept></source>
-          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneTextBackgroundColor<ept id="p1">](#conptbc)</ept></target>
+          <source>For later versions, see <bpt id="p1">[</bpt>ConsolePaneTextBackgroundColor<ept id="p1">](#conptbc)</ept>.</source>
+          <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneTextBackgroundColor<ept id="p1">](#conptbc)</ept>.</target>
         </trans-unit>
         <trans-unit id="248" translate="yes" xml:space="preserve">
           <source>The read\/write property that changes the background color of the text in the Output pane.</source>
@@ -666,8 +667,8 @@
           <target state="new">When set to <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, only user\-defined snippets appear in the <bpt id="p2">**</bpt>CTRL\+J<ept id="p2">**</ept> list.</target>
         </trans-unit>
         <trans-unit id="265" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="266" translate="yes" xml:space="preserve">
           <source>ShowIntellisenseInConsolePane</source>
@@ -682,8 +683,8 @@
           <target state="new">Specifies whether IntelliSense offers syntax, parameter, and value suggestions in the Console pane.</target>
         </trans-unit>
         <trans-unit id="269" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="270" translate="yes" xml:space="preserve">
           <source>ShowIntellisenseInScriptPane</source>
@@ -698,8 +699,8 @@
           <target state="new">Specifies whether IntelliSense offers syntax, parameter, and value suggestions in the Script pane.</target>
         </trans-unit>
         <trans-unit id="273" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="274" translate="yes" xml:space="preserve">
           <source>ShowLineNumbers</source>
@@ -714,8 +715,8 @@
           <target state="new">Specifies whether the Script pane displays line numbers in the left margin.</target>
         </trans-unit>
         <trans-unit id="277" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="278" translate="yes" xml:space="preserve">
           <source>ShowOutlining</source>
@@ -734,8 +735,8 @@
           <target state="new">When they are displayed, you can click the minus \(\-\) icons next to a block of text to collapse it or click the plus \(\+\) icon to expand a block of text.</target>
         </trans-unit>
         <trans-unit id="282" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="283" translate="yes" xml:space="preserve">
           <source>ShowToolBar</source>
@@ -750,8 +751,8 @@
           <target state="new">Specifies whether the ISE toolbar appears at the top of the Windows PowerShell ISE window.</target>
         </trans-unit>
         <trans-unit id="286" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="287" translate="yes" xml:space="preserve">
           <source>ShowWarningBeforeSavingOnRun</source>
@@ -766,8 +767,8 @@
           <target state="new">Specifies whether a warning message appears when a script is saved automatically before it is run.</target>
         </trans-unit>
         <trans-unit id="290" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="291" translate="yes" xml:space="preserve">
           <source>ShowWarningForDuplicateFiles</source>
@@ -790,8 +791,8 @@
           <target state="new">Changes made to this file will affect all open copies."</target>
         </trans-unit>
         <trans-unit id="296" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="297" translate="yes" xml:space="preserve">
           <source>TokenColors</source>
@@ -834,8 +835,8 @@
           <target state="new">Specifies whether you can use the Enter key to select an IntelliSense provided option in the Console pane.</target>
         </trans-unit>
         <trans-unit id="307" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="308" translate="yes" xml:space="preserve">
           <source>UseEnterToSelectInScriptPaneIntellisense</source>
@@ -850,8 +851,8 @@
           <target state="new">Specifies whether you can use the Enter key to select an IntelliSense\-provided option in the Script pane.</target>
         </trans-unit>
         <trans-unit id="311" translate="yes" xml:space="preserve">
-          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></source>
-          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept></target>
+          <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
+          <target state="new">The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="312" translate="yes" xml:space="preserve">
           <source>UseLocalHelp</source>
@@ -958,8 +959,8 @@
           <target state="new">Token colors can be set for the following: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.</target>
         </trans-unit>
         <trans-unit id="338" translate="yes" xml:space="preserve">
-          <source>Also see <bpt id="p1">[</bpt>RestoreDefaultXmlTokenColors()<ept id="p1">](#rdxtc)</ept></source>
-          <target state="new">Also see <bpt id="p1">[</bpt>RestoreDefaultXmlTokenColors()<ept id="p1">](#rdxtc)</ept></target>
+          <source>Also see <bpt id="p1">[</bpt>RestoreDefaultXmlTokenColors()<ept id="p1">](#rdxtc)</ept>.</source>
+          <target state="new">Also see <bpt id="p1">[</bpt>RestoreDefaultXmlTokenColors()<ept id="p1">](#rdxtc)</ept>.</target>
         </trans-unit>
         <trans-unit id="339" translate="yes" xml:space="preserve">
           <source>Zoom</source>
@@ -990,12 +991,10 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="346" translate="yes" xml:space="preserve">
-          <source>The Windows PowerShell ISE Scripting Object Model</source>
-          <target state="new">The Windows PowerShell ISE Scripting Object Model</target>
-        </trans-unit>
-        <trans-unit id="347" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell ISE Object Model Reference</source>
-          <target state="new">Windows PowerShell ISE Object Model Reference</target>
+          <source><bpt id="p1">[</bpt>The Windows PowerShell ISE Scripting Object Model<ept id="p1">](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept><ph id="ph1">
+</ph><bpt id="p2"> [</bpt>Windows PowerShell ISE Object Model Reference<ept id="p2">](Windows-PowerShell-ISE-Object-Model-Reference.md)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>The Windows PowerShell ISE Scripting Object Model<ept id="p1">](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept><ph id="ph1">
+</ph><bpt id="p2"> [</bpt>Windows PowerShell ISE Object Model Reference<ept id="p2">](Windows-PowerShell-ISE-Object-Model-Reference.md)</ept></target>
         </trans-unit>
       </group>
     </body>

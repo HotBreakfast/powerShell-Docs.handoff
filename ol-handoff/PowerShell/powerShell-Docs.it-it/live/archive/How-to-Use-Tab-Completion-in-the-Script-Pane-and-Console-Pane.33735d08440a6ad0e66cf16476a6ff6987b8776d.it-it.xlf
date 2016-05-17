@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fa466633669f314c9c28b391d29ff5ea9ca58e55</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\How-to-Use-Tab-Completion-in-the-Script-Pane-and-Console-Pane.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">07f7fb6b4e5d94de31551566ca8faff263817383</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -66,12 +67,10 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
-          <source>Using Windows PowerShell ISE</source>
-          <target state="new">Using Windows PowerShell ISE</target>
-        </trans-unit>
-        <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>How to Create a PowerShell Tab</source>
-          <target state="new">How to Create a PowerShell Tab</target>
+          <source><bpt id="p1">[</bpt>Using Windows PowerShell ISE<ept id="p1">](using-the-windows-powershell-ise.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>How to Create a PowerShell Tab<ept id="p2">](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Using Windows PowerShell ISE<ept id="p1">](using-the-windows-powershell-ise.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>How to Create a PowerShell Tab<ept id="p2">](How-to-Create-a-PowerShell-Tab-in-Windows-PowerShell-ISE.md)</ept></target>
         </trans-unit>
       </group>
     </body>

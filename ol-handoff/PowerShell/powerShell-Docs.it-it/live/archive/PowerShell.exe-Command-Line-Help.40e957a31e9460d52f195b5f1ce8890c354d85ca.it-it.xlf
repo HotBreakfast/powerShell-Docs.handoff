@@ -4,14 +4,15 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a7e4230252572a1eedad96492c087cb75250259c</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\console\PowerShell.exe-Command-Line-Help.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a53a9457712973b4ff43c226b247214d24406592</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
-          <source>PowerShell.exe Command-Line Help</source>
-          <target state="new">PowerShell.exe Command-Line Help</target>
+          <source>PowerShell.exe Command Line Help</source>
+          <target state="new">PowerShell.exe Command Line Help</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
           <source>PowerShell.exe Command-Line Help</source>
@@ -250,8 +251,8 @@
           <target state="new">Other values are ignored.</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
-          <source>For more information, see "Installing Windows PowerShell" in the <bpt id="p1">[</bpt>Getting Started with Windows PowerShell [OLD MSDN]<ept id="p1">](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)</ept></source>
-          <target state="new">For more information, see "Installing Windows PowerShell" in the <bpt id="p1">[</bpt>Getting Started with Windows PowerShell [OLD MSDN]<ept id="p1">](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)</ept></target>
+          <source>For more information, see "Installing Windows PowerShell" in the <bpt id="p1">[</bpt>Getting Started with Windows PowerShell [OLD MSDN]<ept id="p1">](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)</ept>.</source>
+          <target state="new">For more information, see "Installing Windows PowerShell" in the <bpt id="p1">[</bpt>Getting Started with Windows PowerShell [OLD MSDN]<ept id="p1">](https://technet.microsoft.com/en-us/library/69555d95-b481-43e1-86e7-b46d68b3e2dd)</ept>.</target>
         </trans-unit>
         <trans-unit id="162" translate="yes" xml:space="preserve">
           <source>\-WindowStyle</source>
@@ -326,8 +327,8 @@
           <target state="new">You can use either a hyphen or forward slash in Cmd.exe.</target>
         </trans-unit>
         <trans-unit id="180" translate="yes" xml:space="preserve">
-          <source>Troubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.</source>
-          <target state="new">Troubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.</target>
+          <source><ph id="ph1">[!NOTE]</ph> Troubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.</source>
+          <target state="new"><ph id="ph1">[!NOTE]</ph> Troubleshooting Note: In Windows PowerShell 2.0, starting some programs in the Windows PowerShell console fails with a LastExitCode of 0xc0000142.</target>
         </trans-unit>
         <trans-unit id="181" translate="yes" xml:space="preserve">
           <source>EXAMPLES</source>
