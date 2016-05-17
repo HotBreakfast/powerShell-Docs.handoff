@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c68258884f29b4fa5014e8b912e2df8cc517d174</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\Purpose-of-the-Windows-PowerShell-ISE-Scripting-Object-Model.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">41c508e7aebc3501f29be7246ca817f95180ef2f</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -186,16 +187,12 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="145" translate="yes" xml:space="preserve">
-          <source>The ISE Object Model Hierarchy</source>
-          <target state="new">The ISE Object Model Hierarchy</target>
-        </trans-unit>
-        <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell ISE Object Model Reference</source>
-          <target state="new">Windows PowerShell ISE Object Model Reference</target>
-        </trans-unit>
-        <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source>The Windows PowerShell ISE Scripting Object Model</source>
-          <target state="new">The Windows PowerShell ISE Scripting Object Model</target>
+          <source><bpt id="p1">[</bpt>The ISE Object Model Hierarchy<ept id="p1">](The-ISE-Object-Model-Hierarchy.md)</ept><ph id="ph1"> 
+</ph><bpt id="p2"> [</bpt>Windows PowerShell ISE Object Model Reference<ept id="p2">](Windows-PowerShell-ISE-Object-Model-Reference.md)</ept><ph id="ph2"> 
+</ph><bpt id="p3"> [</bpt>The Windows PowerShell ISE Scripting Object Model<ept id="p3">](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>The ISE Object Model Hierarchy<ept id="p1">](The-ISE-Object-Model-Hierarchy.md)</ept><ph id="ph1"> 
+</ph><bpt id="p2"> [</bpt>Windows PowerShell ISE Object Model Reference<ept id="p2">](Windows-PowerShell-ISE-Object-Model-Reference.md)</ept><ph id="ph2"> 
+</ph><bpt id="p3"> [</bpt>The Windows PowerShell ISE Scripting Object Model<ept id="p3">](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)</ept></target>
         </trans-unit>
       </group>
     </body>

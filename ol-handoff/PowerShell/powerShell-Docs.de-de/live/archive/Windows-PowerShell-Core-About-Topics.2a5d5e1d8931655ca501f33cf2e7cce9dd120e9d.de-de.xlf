@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1bdf2709c27c727e944be999c4eaa62f7bdd4454</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\core-modules\Windows-PowerShell-Core-About-Topics.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc44c1deb8c3162b0d2188c2af313bf064290267</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -954,32 +955,20 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="337" translate="yes" xml:space="preserve">
-          <source>Scripting with Windows PowerShell</source>
-          <target state="new">Scripting with Windows PowerShell</target>
-        </trans-unit>
-        <trans-unit id="338" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Core</source>
-          <target state="new">Windows PowerShell Core</target>
-        </trans-unit>
-        <trans-unit id="339" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 5.0</source>
-          <target state="new">Windows PowerShell 5.0</target>
-        </trans-unit>
-        <trans-unit id="340" translate="yes" xml:space="preserve">
-          <source>about_Scheduled_Jobs</source>
-          <target state="new">about_Scheduled_Jobs</target>
-        </trans-unit>
-        <trans-unit id="341" translate="yes" xml:space="preserve">
-          <source>about_WMI_Cmdlets [v3]</source>
-          <target state="new">about_WMI_Cmdlets [v3]</target>
-        </trans-unit>
-        <trans-unit id="342" translate="yes" xml:space="preserve">
-          <source>about_WS-Management_Cmdlets</source>
-          <target state="new">about_WS-Management_Cmdlets</target>
-        </trans-unit>
-        <trans-unit id="343" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell SDK</source>
-          <target state="new">Windows PowerShell SDK</target>
+          <source><bpt id="p1">[</bpt>Scripting with Windows PowerShell<ept id="p1">](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Windows PowerShell Core<ept id="p2">](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell 5.0<ept id="p3">](Windows-PowerShell-5.0.md)</ept><ph id="ph3">
+</ph><bpt id="p4">[</bpt>about_Scheduled_Jobs<ept id="p4">](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)</ept><ph id="ph4">
+</ph><bpt id="p5">[</bpt>about_WMI_Cmdlets [v3]<ept id="p5">](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)</ept><ph id="ph5">
+</ph><bpt id="p6">[</bpt>about_WS-Management_Cmdlets<ept id="p6">](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)</ept><ph id="ph6">
+</ph><bpt id="p7">[</bpt>Windows PowerShell SDK<ept id="p7">](http://go.microsoft.com/fwlink/?LinkID=107032)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Scripting with Windows PowerShell<ept id="p1">](../../getting-started/fundamental/Scripting-with-Windows-PowerShell.md)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>Windows PowerShell Core<ept id="p2">](https://technet.microsoft.com/en-us/library/4b75f1e4-f327-48f3-92ab-bf5435094d41)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell 5.0<ept id="p3">](Windows-PowerShell-5.0.md)</ept><ph id="ph3">
+</ph><bpt id="p4">[</bpt>about_Scheduled_Jobs<ept id="p4">](https://technet.microsoft.com/en-us/library/3b546629-703c-4939-b44f-52dd567bce92)</ept><ph id="ph4">
+</ph><bpt id="p5">[</bpt>about_WMI_Cmdlets [v3]<ept id="p5">](https://technet.microsoft.com/en-us/library/9c56b172-3b25-47b2-b6e0-86db649b1c45)</ept><ph id="ph5">
+</ph><bpt id="p6">[</bpt>about_WS-Management_Cmdlets<ept id="p6">](https://technet.microsoft.com/en-us/library/6ed3370a-ea10-45a5-9493-696aeace27ed)</ept><ph id="ph6">
+</ph><bpt id="p7">[</bpt>Windows PowerShell SDK<ept id="p7">](http://go.microsoft.com/fwlink/?LinkID=107032)</ept></target>
         </trans-unit>
       </group>
     </body>

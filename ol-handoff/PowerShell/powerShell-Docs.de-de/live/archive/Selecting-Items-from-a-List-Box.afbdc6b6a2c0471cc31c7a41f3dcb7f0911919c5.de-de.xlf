@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">daeb4385e0ff4a3491e1c36e256ea3a0d4bd3064</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Selecting-Items-from-a-List-Box.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7e8fd05cfedd500c51f2d7e4f6adbb7d1f27cb00</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -134,8 +135,8 @@
           <target state="new">To create a list box control that allows multiple selections, specify a value for the <bpt id="p1">**</bpt>SelectionMode<ept id="p1">**</ept> property, similarly to the following:  <ph id="ph1">`$listBox.SelectionMode = "MultiExtended"`</ph>.</target>
         </trans-unit>
         <trans-unit id="132" translate="yes" xml:space="preserve">
-          <source>For more information, see <bpt id="p1">[</bpt>Multiple-selection List Boxes<ept id="p1">](Multiple-selection-List-Boxes.md)</ept></source>
-          <target state="new">For more information, see <bpt id="p1">[</bpt>Multiple-selection List Boxes<ept id="p1">](Multiple-selection-List-Boxes.md)</ept></target>
+          <source>For more information, see <bpt id="p1">[</bpt>Multiple-selection List Boxes<ept id="p1">](Multiple-selection-List-Boxes.md)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Multiple-selection List Boxes<ept id="p1">](Multiple-selection-List-Boxes.md)</ept>.</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
           <source>Add the list box control to your form, and instruct Windows to open the form atop other windows and dialog boxes when it’s opened.</source>
@@ -154,16 +155,12 @@
           <target state="new">See Also</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
-          <source>Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?</source>
-          <target state="new">Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?</target>
-        </trans-unit>
-        <trans-unit id="138" translate="yes" xml:space="preserve">
-          <source>GitHub: Dave Wyatt's WinFormsExampleUpdates</source>
-          <target state="new">GitHub: Dave Wyatt's WinFormsExampleUpdates</target>
-        </trans-unit>
-        <trans-unit id="139" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Tip of the Week:  Selecting Items from a List Box</source>
-          <target state="new">Windows PowerShell Tip of the Week:  Selecting Items from a List Box</target>
+          <source><bpt id="p1">[</bpt>Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=506644)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>GitHub: Dave Wyatt's WinFormsExampleUpdates<ept id="p2">](https://github.com/dlwyatt/WinFormsExampleUpdates)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell Tip of the Week:  Selecting Items from a List Box<ept id="p3">](http://technet.microsoft.com/library/ff730949.aspx)</ept></source>
+          <target state="new"><bpt id="p1">[</bpt>Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=506644)</ept><ph id="ph1">
+</ph><bpt id="p2">[</bpt>GitHub: Dave Wyatt's WinFormsExampleUpdates<ept id="p2">](https://github.com/dlwyatt/WinFormsExampleUpdates)</ept><ph id="ph2">
+</ph><bpt id="p3">[</bpt>Windows PowerShell Tip of the Week:  Selecting Items from a List Box<ept id="p3">](http://technet.microsoft.com/library/ff730949.aspx)</ept></target>
         </trans-unit>
       </group>
     </body>
