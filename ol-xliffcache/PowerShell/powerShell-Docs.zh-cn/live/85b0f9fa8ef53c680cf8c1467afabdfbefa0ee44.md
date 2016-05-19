@@ -1,14 +1,14 @@
-#  Troubleshooting Access Problems in Windows PowerShell Web Access
+#  Windows PowerShell Web 访问中的访问问题疑难解答
 
-Updated: June 24, 2013
+更新时间： 2013年 6 月 24日
 
-Applies To: Windows Server 2012 R2, Windows Server 2012
+适用于：Windows Server 2012 R2、Windows Server 2012
 
 <a href="" id="BKMK_trouble"></a>
 
 ------------------------------------------------------------------------
 
-The following table identifies some common problems that users might experience when they are attempting to connect to a remote computer by using Windows PowerShell Web Access, and includes suggestions for resolving the problems.
+下表识别了一些用户使用 Windows PowerShell Web 访问尝试连接到远程计算机时可能遇到的常见问题，其中包括解决这些问题的建议。
 
 <table>
 <colgroup>
@@ -17,56 +17,56 @@ The following table identifies some common problems that users might experience 
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Problem</p></th>
-<th><p>Possible cause and solution</p></th>
+<th><p>问题</p></th>
+<th><p>可能原因和解决方案</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Sign-in failure</p></td>
-<td><p>Failure could occur because of any of the following.</p>
+<td><p>登录失败</p></td>
+<td><p>失败可能是由于下列某个原因所至：</p>
 <ul>
-<li><p>An authorization rule that allows the user access to the computer, or a specific session configuration on the remote computer, does not exist. Windows PowerShell Web Access security is restrictive; users must be granted explicit access to remote computers by using authorization rules. For more information about creating authorization rules, see <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Authorization Rules and Security Features of Windows PowerShell Web Access</a> in this guide.</p></li>
-<li><p>The user does not have authorized access to the destination computer. This is determined by access control lists (ACLs). For more information, see “Signing in to Windows PowerShell Web Access” in <a href="https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx">Use the Web-based Windows PowerShell Console</a>, or the <a href="https://msdn.microsoft.com/library/windows/desktop/ee706585.aspx">Windows PowerShell Team Blog</a>.</p>
+<li><p>允许用户访问计算机的授权规则或远程计算机上的特定会话配置并不存在。 Windows PowerShell Web 访问安全是严谨的；必须使用授权规则明确赋予用户访问远程计算机的权限。 有关创建授权规则的详细信息，请参阅本指南中的 <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Windows PowerShell Web 访问的授权规则和安全功能</a>。</p></li>
+<li><p>用户未获得访问目标计算机的权限。 这是由访问控制列表 (ACL) 来确定的。 有关详细信息，请参阅<a href="https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx">使用基于 Web 的 Windows PowerShell 控制台</a>或 <a href="https://msdn.microsoft.com/library/windows/desktop/ee706585.aspx">Windows PowerShell 团队博客中的“登录到 Windows PowerShell Web 访问”</a>.</p>
 <ul>
-<li><p>Windows PowerShell remote management might not be enabled on the destination computer. Verify that it is enabled on the computer to which the user is trying to connect. For more information, see “How to Configure Your Computer for Remoting” in <a href="https://technet.microsoft.com/library/dd315349.aspx">about_Remote_Requirements</a> in the Windows PowerShell About Help Topics.</p></li>
+<li><p>可能无法在目标计算机上启用 Windows PowerShell 远程管理。 验证它是否已在用户尝试连接的计算机上启用。 有关详细信息，请参阅 Windows PowerShell 相关帮助主题中 <a href="https://technet.microsoft.com/library/dd315349.aspx">about_Remote_Requirements</a> 的“如何为进行远程处理而配置计算机”。</p></li>
 </ul></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>When users try to sign in to Windows PowerShell Web Access in an Internet Explorer window, they are shown an <strong>Internal Server Error</strong> page, or Internet Explorer stops responding. This issue is specific to Internet Explorer.</p></td>
-<td><p>This can occur for users who have signed in with a domain name that contains Chinese characters, or if one or more Chinese characters are part of the gateway server name. To work around this issue, the user should <a href="http://ie.microsoft.com/testdrive/info/downloads/Default.html">install and run Internet Explorer 10</a>, and then perform the following steps.</p>
+<td><p>当用户尝试在 Internet Explorer 窗口中登录到 Windows PowerShell Web 访问时，会向他们显示“内部服务器错误”<strong></strong>页面或 Internet Explorer 停止响应。 此问题特定于 Internet Explorer。</p></td>
+<td><p>对于已使用包含中文字符的域名登录的用户或网关服务器名称中包含一个或多个中文字符时会出现此问题。 若要解决此问题，用户应<a href="http://ie.microsoft.com/testdrive/info/downloads/Default.html">安装并运行 Internet Explorer 10</a>，然后执行以下步骤。</p>
 <ol>
-<li><p>Change the Internet Explorer <strong>Document Mode</strong> setting to <strong>IE10 standards</strong>.</p>
+<li><p>将 Internet Explorer“文档模式”<strong></strong>设置更改为“IE10 标准” <strong></strong>.</p>
 <ol>
-<li><p>Press <strong>F12</strong> to open the Developer Tools console.</p></li>
-<li><p>In Internet Explorer 10, click <strong>Browser Mode</strong>, and then select <strong>Internet Explorer 10</strong>.</p></li>
-<li><p>Click <strong>Document Mode</strong>, and then click <strong>IE10 standards</strong>.</p></li>
-<li><p>Press <strong>F12</strong> again to close the Developer Tools console.</p></li>
+<li><p>按 <strong>F12</strong> 可打开“开发人员工具”控制台。</p></li>
+<li><p>在 Internet Explorer 10 中，单击“浏览器模式”<strong></strong>，然后选择“Internet Explorer 10”<strong></strong>.</p></li>
+<li><p>单击“文档模式”<strong></strong>，然后单击“IE10 标准”<strong></strong>.</p></li>
+<li><p>再次按 <strong>F12</strong> 可关闭“开发人员工具”控制台。</p></li>
 </ol></li>
-<li><p>Disable automatic proxy configuration.</p>
+<li><p>禁用自动代理配置。</p>
 <ol>
-<li><p>In Internet Explorer 10, click <strong>Tools</strong>, and then click <strong>Internet Options</strong>.</p></li>
-<li><p>In the <strong>Internet Options</strong> dialog box, on the <strong>Connections</strong> tab, click <strong>LAN settings</strong>.</p></li>
-<li><p>Clear the <strong>Automatically detect settings</strong> check box. Click <strong>OK</strong>, and then click <strong>OK</strong> again to close the <strong>Internet Options</strong> dialog box.</p></li>
+<li><p>在 Internet Explorer 10 中，单击“工具”<strong></strong>，然后单击“Internet 选项”<strong></strong>.</p></li>
+<li><p>在“Internet 选项”<strong></strong>对话框中的“连接”<strong></strong>选项卡上，单击“LAN 设置”<strong></strong>.</p></li>
+<li><p>清除“自动检测设置”<strong></strong>复选框。 单击“确定”<strong></strong>，然后再次单击“确定”<strong></strong>可关闭“Internet 选项”<strong></strong>对话框。</p></li>
 </ol></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><p>Cannot connect to a remote workgroup computer</p></td>
-<td><p>If the destination computer is a member of a workgroup, use the following syntax to provide your user name and sign in to the computer: &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt;</p></td>
+<td><p>无法连接到远程工作组计算机</p></td>
+<td><p>如果目标计算机在工作组中，则使用以下语法，提供你的用户名，并且登录到计算机：&lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>Cannot find Web Server (IIS) management tools, even though the role was installed</p></td>
-<td><p>If you installed Windows PowerShell Web Access by using the <span class="code">Install-WindowsFeature</span> cmdlet, management tools are not installed unless the <span class="code">IncludeManagementTools</span> parameter is added to the cmdlet. For an example, see “To install Windows PowerShell Web Access by using Windows PowerShell cmdlets” in <a href="https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx">Install and Use Windows PowerShell Web Access</a>. You can add the IIS Manager console and other IIS management tools that you need by selecting the tools in an Add Roles and Features Wizard session that is targeted at the gateway server. The Add Roles and Features Wizard is opened from within Server Manager.</p></td>
+<td><p>找不到 Web 服务器 (IIS) 管理工具，即使已安装了角色</p></td>
+<td><p>如果你通过使用 <span class="code">Install-WindowsFeature</span> cmdlet 安装了 Windows PowerShell Web 访问，则不会安装管理工具，除非将 <span class="code">IncludeManagementTools</span> 参数添加到该 cmdlet。 例如，参阅<a href="https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx">安装和使用 Windows PowerShell Web 访问</a>中的“使用 Windows PowerShell cmdlet 安装 Windows PowerShell Web 访问”。 你可选择在以网关服务器为目标的“添加角色和功能向导”会话中的工具，添加 IIS 管理器控制台及其他你需要的 IIS 管理工具。 “添加角色和功能向导”可从服务器管理器中打开。</p></td>
 </tr>
 <tr class="odd">
-<td><p>The Windows PowerShell Web Access website is not accessible</p></td>
-<td><p>If Enhanced Security Configuration is enabled in Internet Explorer (IE ESC), you can add the Windows PowerShell Web Access website to the list of trusted sites, or disable IE ESC. You can disable IE ESC in the <strong>Properties</strong> tile on the <strong>Local Server</strong> page in Server Manager.</p></td>
+<td><p>无法访问 Windows PowerShell Web 访问网站</p></td>
+<td><p>如果已在 Internet Explorer 中启用了增强的安全配置 (IE ESC)，你可以将 Windows PowerShell Web 访问网站添加到受信任的站点列表，或禁用 IE ESC。 你可以在服务器管理器中的“本地服务器”<strong></strong>页面上的“属性”<strong></strong>磁贴中禁用 IE ESC。</p></td>
 </tr>
 <tr class="even">
-<td><p>The following error message is displayed while trying to connect when the gateway server is the destination computer, and is also in a workgroup: <strong>An authorization failure occurred. Verify that you are authorized to connect to the destination computer.</strong></p></td>
-<td><p>When the gateway server is also the destination server, and it is in a workgroup, specify the user name, computer name, and user group name as shown in the following table. Do not use a dot (.) by itself to represent the computer name.</p>
+<td><p>尝试当网关服务器为目标计算机且又位于工作组中时连接，会显示以下错误消息：“出现授权失败。”<strong> 请验证你是否被授权连接到目标计算机。</strong></p></td>
+<td><p>当网关服务器也是目标服务器且位于工作组中时，指定下表所示的用户名、计算机名称以及用户组名。 不要使用点 (.) 自行表示计算机名称。</p>
 <div>
 <table>
 <colgroup>
@@ -78,32 +78,32 @@ The following table identifies some common problems that users might experience 
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Scenario</p></th>
-<th><p>UserName Parameter</p></th>
-<th><p>UserGroup Parameter</p></th>
-<th><p>ComputerName Parameter</p></th>
-<th><p>ComputerGroup Parameter</p></th>
+<th><p>方案</p></th>
+<th><p>UserName 参数</p></th>
+<th><p>UserGroup 参数</p></th>
+<th><p>ComputerName 参数</p></th>
+<th><p>ComputerGroup 参数</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Gateway server is in a domain</p></td>
-<td><p><em>Server_name</em>\<em>user_name</em>, Localhost\<em>user_name</em>, or .\<em>user_name</em></p></td>
-<td><p><em>Server_name</em>\<em>user_group</em>, Localhost\<em>user_group</em>, or .\<em>user_group</em></p></td>
-<td><p>Fully qualified name of gateway server, or Localhost</p></td>
-<td><p><em>Server_name</em>\<em>computer_group</em>, Localhost\<em>computer_group</em>, or .\<em>computer_group</em></p></td>
+<td><p>网关服务器位于域中</p></td>
+<td><p><em>Server_name</em>\<em>user_name</em>、Localhost\<em>user_name</em> 或 .\<em>user_name</em></p></td>
+<td><p><em>Server_name</em>\<em>user_group</em>、Localhost\<em>user_group</em> 或 .\<em>user_group</em></p></td>
+<td><p>网关服务器的完全限定名称或 Localhost</p></td>
+<td><p><em>Server_name</em>\<em>computer_group</em>、Localhost\<em>computer_group</em> 或 .\<em>computer_group</em></p></td>
 </tr>
 <tr class="even">
-<td><p>Gateway server is in a workgroup</p></td>
-<td><p><em>Server_name</em>\<em>user_name</em>, Localhost\<em>user_name</em>, or .\<em>user_name</em></p></td>
-<td><p><em>Server_name</em>\<em>user_group</em>, Localhost\<em>user_group</em> or .\<em>user_group</em></p></td>
-<td><p>Server name</p></td>
-<td><p><em>Server_name</em>\<em>computer_group</em>, Localhost\<em>computer_group</em> or .\<em>computer_group</em></p></td>
+<td><p>网关服务器位于工作组中</p></td>
+<td><p><em>Server_name</em>\<em>user_name</em>、Localhost\<em>user_name</em> 或 .\<em>user_name</em></p></td>
+<td><p><em>Server_name</em>\<em>user_group</em>、Localhost\<em>user_group</em> 或 .\<em>user_group</em></p></td>
+<td><p>服务器名称</p></td>
+<td><p><em>Server_name</em>\<em>computer_group</em>、Localhost\<em>computer_group</em> 或 .\<em>computer_group</em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Sign in to a gateway server as target computer by using credentials formatted as one of the following.</p>
+<p>以目标计算机身份登录到网关服务器，方法是使用以下格式之一的凭据。</p>
 <ul>
 <li><p><em>Server_name</em>\<em>user_name</em></p></li>
 <li><p>Localhost\<em>user_name</em></p></li>
@@ -111,74 +111,79 @@ The following table identifies some common problems that users might experience 
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>A security identifier (SID) is displayed in an authorization rule instead of the syntax <em>user_name</em>/<em>computer_name</em> </p></td>
-<td><p>Either the rule is no longer valid, or the Active Directory Domain Services query failed. An authorization rule is usually not valid in scenarios where the gateway server was at one time in a workgroup, but was later joined to a domain.</p></td>
+<td><p>在授权规则中显示安全标识符 (SID) 而不是语法 <em>user_name</em>/<em>computer_name</em> </p></td>
+<td><p>规则不再有效或 Active Directory 域服务查询失败。 如果网关服务器曾一时位于工作组中，但后来加入域中，则这种情形下通常授权规则无效。</p></td>
 </tr>
 <tr class="even">
-<td><p>Cannot sign in to a target computer that has been specified in authorization rules as an IPv6 address with a domain.</p></td>
-<td><p>Authorization rules do not support an IPv6 address in form of a domain name. To specify a destination computer by using an IPv6 address, use the original IPv6 address (that contains colons) in the authorization rule. Both domain and numerical (with colons) IPv6 addresses are supported as the target computer name on the Windows PowerShell Web Access sign-in page, but not in authorization rules. For more information about IPv6 addresses, see <a href="https://technet.microsoft.com/library/cc781672.aspx">How IPv6 Works</a>.</p></td>
+<td><p>无法登录到已在授权规则中指定为带有域的 IPv6 地址的目标计算机。</p></td>
+<td><p>授权规则不支持域名形式的 IPv6 地址。 若要使用 IPv6 地址指定目标计算机，请在授权规则中使用原始 IPv6 地址（包含冒号）。 支持域和数值（带有冒号）IPv6 地址作为 Windows PowerShell Web 访问登录页面而非授权规则中的目标计算机名称。 有关 IPv6 地址的详细信息，请参阅 <a href="https://technet.microsoft.com/library/cc781672.aspx">IPv6 的工作原理</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">See Also</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">另请参阅</span></a>
 <a href="/en-us/library/dn282395(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
 
 ------------------------------------------------------------------------
 
-[Authorization Rules and Security Features of Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)
-[Use the Web-based Windows PowerShell Console](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
+[Windows PowerShell Web 访问的授权规则和安全功能](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)
+[使用基于 Web 的 Windows PowerShell 控制台](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
 [about\_Remote\_Requirements](https://technet.microsoft.com/library/dd315349.aspx)
 
-<span>Show:</span> Inherited Protected
+<span>显示：</span>继承内容受保护
 
-<span class="stdr-votetitle">Was this page helpful?</span>
-Yes
-No
+<span class="stdr-votetitle">此页面是否有所帮助？</span>
+是
+否
 
-Additional feedback?
+更多反馈？
 
-<span class="stdr-count"><span class="stdr-charcnt">1500</span> characters remaining</span>
-Submit
-Skip this
+<span class="stdr-count"><span class="stdr-charcnt">剩余 1500</span> 个字符</span>
+提交
+跳过此部分
 
-<span class="stdr-thankyou">Thank you!</span> <span class="stdr-appreciate">We appreciate your feedback.</span>
+<span class="stdr-thankyou">感谢您参与！</span> <span class="stdr-appreciate">我们非常感谢您的反馈意见。</span>
 
-[Manage Your Profile](https://social.technet.microsoft.com/profile)
+[管理你的个人资料](https://social.technet.microsoft.com/profile)
 
 |
 
-<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Site Feedback</a>
-Site Feedback
+<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> 站点反馈</a>
+站点反馈
 
 <a href="javascript:void(0)" id="SiteFeedbackLinkCloser">x</a>
 
-Tell us about your experience...
+告诉我们你的体验...
 
-Did the page load quickly?
+页面加载速度快吗？
 
-<span> Yes<span> </span></span> <span> No<span> </span></span>
+<span> 是<span> </span></span> <span> 否<span> </span></span>
 
-Do you like the page design?
+你喜欢此页面设计吗？
 
-<span> Yes<span> </span></span> <span> No<span> </span></span>
+<span> 是<span> </span></span> <span> 否<span> </span></span>
 
-Tell us more
+告诉我们详细信息
 
--   [Flash Newsletter](https://technet.microsoft.com/cc543196.aspx)
+-   [快讯](https://technet.microsoft.com/cc543196.aspx)
 -   |
--   [Contact Us](https://technet.microsoft.com/cc512759.aspx)
+-   [联系我们](https://technet.microsoft.com/cc512759.aspx)
 -   |
--   [Privacy Statement](https://privacy.microsoft.com/privacystatement)
+-   [隐私声明](https://privacy.microsoft.com/privacystatement)
 -   |
--   [Terms of Use](https://technet.microsoft.com/cc300389.aspx)
+-   [使用条款](https://technet.microsoft.com/cc300389.aspx)
 -   |
--   [Trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/)
+-   [商标](https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/)
 -   |
 
 © 2016 Microsoft
 
 © 2016 Microsoft
 
-Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft. See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.
+链接到此网站或从中引用的第三方脚本和代码由拥有此类代码的第三方（而非 Microsoft）授权给你。 请参阅 ASP.NET Ajax CDN 使用条款 – http://www.asp.net/ajaxlibrary/CDN.ashx。
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
+
+
+<!--HONumber=May16_HO2-->
+
+
