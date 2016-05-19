@@ -1,5 +1,5 @@
 ---
-title: Accessibility in Windows PowerShell ISE
+title: Специальные возможности в интегрированной среде сценариев Windows PowerShell
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,144 +7,149 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
 ---
-# Accessibility in Windows PowerShell ISE
-This topic describes the accessibility features of Windows PowerShellÂ® Integrated Scripting Environment (ISE) that you might find helpful.
+# Специальные возможности в интегрированной среде сценариев Windows PowerShell
+В этом разделе описываются специальные возможности интегрированной среды сценариев Windows PowerShell® (ISE), которые могут помочь вам в работе.
 
-* [How to change the size and location of the Console and Script Panes](#bkmk_1)
-* [Keyboard shortcuts for editing text](#bkmk_2)
-* [Keyboard shortcuts for running scripts](#bkmk_3)
-* [Keyboard shortcuts for customizing the view](#bkmk_4)
-* [Keyboard shortcuts for debugging scripts](#bkmk_5)
-* [Keyboard shortcuts for Windows PowerShell tabs](#bkmk_6)
-* [Keyboard shortcuts for starting and exiting](#bkmk_7)
+* [Изменение размера и расположения областей консоли и сценариев](#bkmk_1)
+* [Сочетания клавиш для редактирования текста](#bkmk_2)
+* [Сочетания клавиш для выполнения сценариев](#bkmk_3)
+* [Сочетания клавиш для настройки представления](#bkmk_4)
+* [Сочетания клавиш для отладки сценариев](#bkmk_5)
+* [Сочетания клавиш для вкладок сценариев Windows PowerShell](#bkmk_6)
+* [Сочетания клавиш для запуска и выхода](#bkmk_7)
 
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Windows PowerShell ISE more accessible for people with disabilities.
+Корпорация Майкрософт стремится стремится сделать использование своих продуктов и услуг простым для всех пользователей. В следующих разделах представлена информация о компонентах, продуктах и службах, повышающих доступность интегрированной среды сценариев Windows PowerShell для пользователей с ограниченными возможностями.
 
-Windows PowerShell ISE supports high contrast mode. For the visually impaired, breakpoint information is available through the cmdlets for managing breakpoints, such as [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) and [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). For more information please see “How to manage breakpoints” in [How to Debug Scripts in the Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). In addition to accessibility features and utilities in Microsoft Windows, the following features make Windows PowerShell ISE more accessible for people with disabilities:
+Интегрированная среда сценариев Windows PowerShell поддерживает режим высокой контрастности. Для пользователей с ослабленным зрением сведения о точках останова доступны через командлеты для управления точками останова, например [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) и [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). Дополнительные сведения см. в разделе "Управление точками останова" статьи [Отладка сценариев в интегрированной среде сценариев Windows PowerShell](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). Помимо специальных возможностей и служебных программ в составе Microsoft Windows, следующие функции обеспечивают легкий доступ к интегрированной среде сценариев Windows PowerShell для пользователей с физическими ограничениями:
 
--   Keyboard Shortcuts
+-   Сочетания клавиш
 
--   Syntax Coloring Table and the ability to modify several other color settings using the [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) scripting object.
+-   Таблица цветовой подсветки синтаксиса и возможность изменять некоторые другие параметры цветов с помощью объекта сценария [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb).
 
--   Text Size Change
+-   Изменение размера текста
 
-## <a name="bkmk_1"></a>How to change the size and location of the Console and Script Panes
-You can use the following steps to change the size and location of the Console Pane and the Script Pane. When you open the Windows PowerShell ISE again, the size and location changes you made will be retained.
+## <a name="bkmk_1"></a>Изменение размера и расположения областей консоли и сценариев
+Следующие шаги можно использовать для изменения размера и расположения областей консоли и сценариев. При повторном открытии интегрированной среды сценариев Windows PowerShell изменения в размере и расположении сохранятся.
 
-### To resize the Script Pane and Console Pane
+### Изменение размера областей консоли и сценариев
 
-1.  Pause the pointer on the split line between the Script Pane and Console Pane.
+1.  Наведите указатель мыши на линию, разделяющую области консоли и сценариев.
 
-2.  When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.
+2.  Когда указатель примет вид двусторонней стрелки, перетащите границу, чтобы изменить размер области.
 
-### To move the Script Pane and Console Pane
-Do one of the following:
+### Перемещение областей консоли и сценариев
+Выполните одно из указанных ниже действий.
 
--   To move the Script Pane above the Command and Output Panes, press **CTRL\+1** or, on the toolbar, click the **Show Script Pane Top** icon, or in the **View** menu, click **Show Script Pane Top**.
+-   Чтобы поместить область сценариев над областями команд и вывода, нажмите клавиши **CTRL+1**, щелкните значок **Показать область сценариев сверху** в меню **Вид** или выберите **Показать область сценариев сверху**..
 
--   To move the Script Pane to the right of the Console Pane, press **CTRL\+2** or, on the toolbar, click the **Show Script Pane Right** icon, or in the **View** menu, click **Show Script Pane Right**.
+-   Чтобы поместить область сценариев справа от области консоли, нажмите клавиши **CTRL+2**, щелкните значок **Показать область сценариев справа** в меню **Вид** или выберите **Показать область сценариев справа**..
 
--   To maximize the Script Pane, press **CTRL\+3** or, on the toolbar, click the **Show Script Pane Maximized** icon, or in the **View** menu, click **Show Script Pane Maximized**.
+-   Чтобы развернуть область сценариев, нажмите клавиши **CTRL+3**, щелкните значок **Развернуть область сценариев** в меню **Вид** или выберите **Развернуть область сценариев**..
 
--   To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the **Hide Script Pane** icon, in the **View** menu, click to deselect the **Show Script Pane** menu option.
+-   Чтобы развернуть область консоли и скрыть область сценариев, с правого края строки вкладок щелкните значок **Скрыть область сценариев** или отмените выбор параметра **Показать область сценариев** в меню **Вид**.
 
--   To display the Script Pane when the Console Pane is maximized, on the far right edge of the row of tabs, click the **Show Script Pane** icon, or in the **View** menu, click to select the **Show Script Pane** menu option.
+-   Чтобы показать область сценариев при развернутой области консоли, с правого края строки вкладок щелкните значок **Показать область сценариев** или отмените выбор параметра **Показать область сценариев** в меню **Вид**.
 
-## <a name="bkmk_2"></a>Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## <a name="bkmk_2"></a>Сочетания клавиш для редактирования текста
+При редактировании текста можно использовать приведенные ниже сочетания клавиш.
 
-|Action|Keyboard Shortcuts|Use in|
+|Действие|Сочетания клавиш|Область использования|
 |----------|----------------------|----------|
-|**Copy**|CTRL\+C|Script Pane, Command Pane, Output Pane|
-|**Cut**|CTRL\+X|Script Pane, Command Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Command Pane|
-|**Redo**|CTRL\+Y|Script Pane, Command Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Command Pane, Output Pane|
-|**Undo**|CTRL\+Z|Script Pane, Command Pane|
+|**Копировать**|CTRL+C|Область сценариев, область команд, область вывода|
+|**Вырезать**|CTRL+X|Область сценариев, область команд|
+|**Поиск в сценарии**|CTRL+F|Область сценариев|
+|**Поиск следующего элемента в сценарии**|F3|Область сценариев|
+|**Поиск предыдущего элемента в сценарии**|SHIFT+F3|Область сценариев|
+|**Вставить**|CTRL+V|Область сценариев, область команд|
+|**Повтор**|CTRL+Y|Область сценариев, область команд|
+|**Замена в сценарии**|CTRL+H|Область сценариев|
+|**Сохранить**|CTRL+S|Область сценариев|
+|**Выбрать все**|CTRL+A|Область сценариев, область команд, область вывода|
+|**Отменить**|CTRL+Z|Область сценариев, область команд|
 
-## <a name="bkmk_3"></a>Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## <a name="bkmk_3"></a>Сочетания клавиш для выполнения сценариев
+При запуске сценариев в области сценариев можно использовать приведенные ниже сочетания клавиш.
 
-|Action|Keyboard Shortcut|
+|Действие|Сочетание клавиш|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.|
+|**Создать**|CTRL+N|
+|**Открыть**|CTRL+O|
+|**Запуск**|F5|
+|**Запуск выбранного**|F8|
+|**Остановка выполнения**|CTRL+BREAK CTRL+C можно использовать при однозначном контексте (при отсутствии выбранного текста).|
+|**Переход** (к следующему сценарию)|CTRL+TAB. **Примечание.** Переход к следующему сценарию работает только в том случае, если открыта всего одна вкладка PowerShell либо открыто несколько вкладок PowerShell и фокус находится на области сценариев.|
+|**Переход** (к предыдущему сценарию)|CTRL+SHIFT+TAB. **Примечание.** Переход к предыдущему сценарию работает только в том случае, если открыта всего одна вкладка PowerShell либо открыто несколько вкладок PowerShell и фокус находится на области сценариев.|
 
-## <a name="bkmk_4"></a>Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE. They are accessible from all the panes in the application.
+## <a name="bkmk_4"></a>Сочетания клавиш для настройки представления
+Для настройки представления в интегрированной среде сценариев Windows PowerShell можно использовать приведенные ниже сочетания клавиш. Они доступны во всех областях приложения.
 
-|Action|Keyboard Shortcut|
+|Действие|Сочетание клавиш|
 |----------|---------------------|
-|**Go to Command Pane**|CTRL\+D|
-|**Go to Output Pane**|CTRL\+SHIFT\+O|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
+|**Переход в область команд**|CTRL+D|
+|**Переход в область вывода**|CTRL+SHIFT+O|
+|**Переход в область сценариев**|CTRL+I|
+|**Отображение области сценариев**|CTRL+R|
+|**Скрытие области сценариев**|CTRL+R|
 ||
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**Перемещение области сценариев вверх**|CTRL+1|
+|**Перемещение области сценариев вправо**|CTRL+2|
+|**Развертывание области сценариев**|CTRL+3|
+|**Увеличение**|CTRL+ЗНАК ПЛЮС|
+|**Уменьшение**|CTRL+ЗНАК МИНУС|
 
-## <a name="bkmk_5"></a>Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## <a name="bkmk_5"></a>Сочетания клавиш для отладки сценариев
+При отладке сценариев можно использовать приведенные ниже сочетания клавиш.
 
-|Action|Keyboard Shortcut|Use in|
+|Действие|Сочетание клавиш|Область использования|
 |----------|---------------------|----------|
-|**Run\/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**Запуск/продолжение**|F5|Область сценариев при отладке сценария|
+|**Шаг с заходом**|F11|Область сценариев при отладке сценария|
+|**Шаг с обходом**|F10|Область сценариев при отладке сценария|
+|**Шаг с выходом**|SHIFT+F11|Область сценариев при отладке сценария|
+|**Отображение стека вызовов**|CTRL+SHIFT+D|Область сценариев при отладке сценария|
+|**Список точек останова**|CTRL+SHIFT+L|Область сценариев при отладке сценария|
+|**Переключение точки останова**|F9|Область сценариев при отладке сценария|
+|**Удаление всех точек останова**|CTRL+SHIFT+F9|Область сценариев при отладке сценария|
+|**Остановка отладчика**|SHIFT+F5|Область сценариев при отладке сценария|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.
+> При отладке сценариев в интегрированной среде сценариев Windows PowerShell также можно использовать сочетания клавиш, предназначенные для консоли Windows PowerShell. Для этого необходимо ввести ярлык в области команд и нажать клавишу ВВОД.
 
-|Action|Keyboard Shortcut|Use in|
+|Действие|Сочетание клавиш|Область использования|
 |----------|---------------------|----------|
-|**Continue**|C|Command Pane, when debugging a script|
-|**Step Into**|S|Command Pane, when debugging a script|
-|**Step Over**|V|Command Pane, when debugging a script|
-|**Step Out**|O|Command Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Command Pane, when debugging a script|
-|**Display Call Stack**|K|Command Pane, when debugging a script|
-|**Stop Debugging**|Q|Command Pane, when debugging a script|
-|**List the Script**|L|Command Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Command Pane, when debugging a script|
+|**Продолжение**|C|Область сценариев при отладке сценария|
+|**Шаг с заходом**|S|Область сценариев при отладке сценария|
+|**Шаг с обходом**|V|Область сценариев при отладке сценария|
+|**Шаг с выходом**|O|Область команд при отладке сценария|
+|**Повтор последней команды** (для шага с заходом или шага с обходом)|ВВОД|Область команд при отладке сценария|
+|**Отображение стека вызовов**|K|Область команд при отладке сценария|
+|**Остановка отладки**|Q|Область команд при отладке сценария|
+|**Вывод сценария**|L|Область команд при отладке сценария|
+|**Отображение команд отладки для консоли**|H или ?|Область команд при отладке сценария|
 
-## <a name="bkmk_6"></a>Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## <a name="bkmk_6"></a>Сочетания клавиш для вкладок сценариев Windows PowerShell
+При работе с вкладками Windows PowerShell можно использовать приведенные ниже сочетания клавиш.
 
-|Action|Keyboard Shortcut|
+|Действие|Сочетание клавиш|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
+|**Закрытие вкладки PowerShell**|CTRL+W|
+|**Новая вкладка PowerShell**|CTRL+T|
+|**Предыдущая вкладка PowerShell**|CTRL+SHIFT+TAB. Это сочетание клавиш работает только в том случае, если на вкладках PowerShell нет открытых файлов.|
+|**Следующая вкладка Windows PowerShell**|CTRL+TAB. Это сочетание клавиш работает только в том случае, если на вкладках PowerShell нет открытых файлов.|
 
-## <a name="bkmk_7"></a>Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.
+## <a name="bkmk_7"></a>Сочетания клавиш для запуска и выхода
+Для запуска консоли PowerShell (PowerShell.exe) или выхода из интегрированной среды сценариев Windows PowerShell можно использовать приведенные ниже сочетания клавиш.
 
-|Action|Keyboard Shortcut|
+|Действие|Сочетание клавиш|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** (Windows PowerShell console)|CTRL\+SHIFT\+P|
+|**Выход**|ALT+F4|
+|**Запуск PowerShell.exe** (консоль Windows PowerShell)|CTRL+SHIFT+P|
 
-## See Also
-[Using the Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+## См. также
+[Использование интегрированной среды сценариев Windows PowerShell](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+<!--HONumber=May16_HO2-->
+
 
