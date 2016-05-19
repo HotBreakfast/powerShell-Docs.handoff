@@ -1,5 +1,5 @@
 ---
-title: Accessibility in Windows PowerShell ISE
+title: Windows PowerShell ISE의 접근성
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,144 +7,149 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
 ---
-# Accessibility in Windows PowerShell ISE
-This topic describes the accessibility features of Windows PowerShellÂ® Integrated Scripting Environment (ISE) that you might find helpful.
+# Windows PowerShell ISE의 접근성
+이 항목에서는 유용한 Windows PowerShellÂ® ISE(통합 스크립팅 환경)의 접근성 기능에 대해 설명합니다.
 
-* [How to change the size and location of the Console and Script Panes](#bkmk_1)
-* [Keyboard shortcuts for editing text](#bkmk_2)
-* [Keyboard shortcuts for running scripts](#bkmk_3)
-* [Keyboard shortcuts for customizing the view](#bkmk_4)
-* [Keyboard shortcuts for debugging scripts](#bkmk_5)
-* [Keyboard shortcuts for Windows PowerShell tabs](#bkmk_6)
-* [Keyboard shortcuts for starting and exiting](#bkmk_7)
+* [콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법](#bkmk_1)
+* [텍스트 편집 바로 가기 키](#bkmk_2)
+* [스크립트 실행 바로 가기 키](#bkmk_3)
+* [보기 사용자 지정 바로 가기 키](#bkmk_4)
+* [스크립트 디버그 바로 가기 키](#bkmk_5)
+* [Windows PowerShell 탭 바로 가기 키](#bkmk_6)
+* [시작 및 종료 바로 가기 키](#bkmk_7)
 
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Windows PowerShell ISE more accessible for people with disabilities.
+Microsoft는 모든 사용자가 제품 및 서비스를 더욱 쉽게 사용할 수 있도록 최선을 다하고 있습니다. 다음 항목에서는 장애가 있는 사용자도 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있는 기능, 제품, 서비스에 대한 정보를 제공합니다.
 
-Windows PowerShell ISE supports high contrast mode. For the visually impaired, breakpoint information is available through the cmdlets for managing breakpoints, such as [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) and [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). For more information please see “How to manage breakpoints” in [How to Debug Scripts in the Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). In addition to accessibility features and utilities in Microsoft Windows, the following features make Windows PowerShell ISE more accessible for people with disabilities:
+Windows PowerShell ISE에서는 고대비 모드를 지원합니다. 시각 장애가 있는 사용자의 경우 중단점 관리 cmdlet(예: [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) 및 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420))을 통해 중단점 정보를 사용할 수 있습니다. 자세한 내용은 [Windows PowerShell ISE에서 스크립트를 디버그하는 방법](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1)에서 "중단점을 관리하는 방법"을 참조하세요. Microsoft Windows의 접근성 기능 및 유틸리티 외에, 다음과 같은 기능을 통해 장애가 있는 사용자가 Windows PowerShell ISE를 더욱 쉽게 이용할 수 있습니다.
 
--   Keyboard Shortcuts
+-   바로 가기 키
 
--   Syntax Coloring Table and the ability to modify several other color settings using the [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) scripting object.
+-   구문 색 지정 테이블 및 [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) 스크립팅 개체를 사용하여 다른 여러 색 설정을 수정하는 기능입니다.
 
--   Text Size Change
+-   텍스트 크기 변경
 
-## <a name="bkmk_1"></a>How to change the size and location of the Console and Script Panes
-You can use the following steps to change the size and location of the Console Pane and the Script Pane. When you open the Windows PowerShell ISE again, the size and location changes you made will be retained.
+## <a name="bkmk_1"></a>콘솔 창과 스크립트 창의 크기 및 위치를 변경하는 방법
+다음 단계를 사용하여 콘솔 창과 스크립트 창의 크기 및 위치를 변경할 수 있습니다. Windows PowerShell ISE를 다시 열 때 크기 및 위치 변경 내용은 유지됩니다.
 
-### To resize the Script Pane and Console Pane
+### 스크립트 창과 콘솔 창의 크기를 조정하려면
 
-1.  Pause the pointer on the split line between the Script Pane and Console Pane.
+1.  스크립트 창과 콘솔 창을 구분하는 선 위에 포인터를 놓습니다.
 
-2.  When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.
+2.  마우스 포인터가 양쪽 화살표로 바뀌면 테두리를 끌어 창의 크기를 변경합니다.
 
-### To move the Script Pane and Console Pane
-Do one of the following:
+### 스크립트 창과 콘솔 창을 이동하려면
+다음 중 하나를 수행합니다.
 
--   To move the Script Pane above the Command and Output Panes, press **CTRL\+1** or, on the toolbar, click the **Show Script Pane Top** icon, or in the **View** menu, click **Show Script Pane Top**.
+-   스크립트 창을 명령 창과 출력 창 위로 이동하려면 **Ctrl\+1**을 누르거나, 도구 모음에서 **위쪽에 스크립트 창 표시** 아이콘을 클릭하거나, **보기** 메뉴에서 **위쪽에 스크립트 창 표시**를 클릭합니다..
 
--   To move the Script Pane to the right of the Console Pane, press **CTRL\+2** or, on the toolbar, click the **Show Script Pane Right** icon, or in the **View** menu, click **Show Script Pane Right**.
+-   스크립트 창을 콘솔 창 오른쪽으로 이동하려면 **Ctrl\+2**를 누르거나, 도구 모음에서 **오른쪽에 스크립트 창 표시** 아이콘을 클릭하거나, **보기** 메뉴에서 **오른쪽에 스크립트 창 표시**를 클릭합니다..
 
--   To maximize the Script Pane, press **CTRL\+3** or, on the toolbar, click the **Show Script Pane Maximized** icon, or in the **View** menu, click **Show Script Pane Maximized**.
+-   스크립트 창을 최대화하려면 **Ctrl\+3**을 누르거나, 도구 모음에서 **스크립트 창 최대 표시** 아이콘을 클릭하거나, **보기** 메뉴에서 **스크립트 창 최대 표시**를 클릭합니다..
 
--   To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the **Hide Script Pane** icon, in the **View** menu, click to deselect the **Show Script Pane** menu option.
+-   콘솔 창을 최대화하고 스크립트 창을 숨기려면 탭 행의 맨 오른쪽 가장자리에 있는 **스크립트 창 숨기기** 아이콘을 클릭하고 **보기** 메뉴에서 **스크립트 창 표시** 메뉴 옵션을 클릭하여 선택 취소합니다.
 
--   To display the Script Pane when the Console Pane is maximized, on the far right edge of the row of tabs, click the **Show Script Pane** icon, or in the **View** menu, click to select the **Show Script Pane** menu option.
+-   콘솔 창이 최대화되었을 때 스크립트 창을 표시하려면 탭 행의 맨 오른쪽 가장자리에 있는 **스크립트 창 표시** 아이콘을 클릭하거나 **보기** 메뉴에서 **스크립트 창 표시** 메뉴 옵션을 클릭하여 선택합니다.
 
-## <a name="bkmk_2"></a>Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## <a name="bkmk_2"></a>텍스트 편집 바로 가기 키
+텍스트를 편집할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcuts|Use in|
+|작업|바로 가기 키|사용 위치|
 |----------|----------------------|----------|
-|**Copy**|CTRL\+C|Script Pane, Command Pane, Output Pane|
-|**Cut**|CTRL\+X|Script Pane, Command Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Command Pane|
-|**Redo**|CTRL\+Y|Script Pane, Command Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Command Pane, Output Pane|
-|**Undo**|CTRL\+Z|Script Pane, Command Pane|
+|**복사**|Ctrl\+C|스크립트 창, 명령 창, 출력 창|
+|**잘라내기**|Ctrl\+X|스크립트 창, 명령 창|
+|**스크립트에서 찾기**|Ctrl\+F|스크립트 창|
+|**스크립트에서 다음 찾기**|F3|스크립트 창|
+|**스크립트에서 이전 찾기**|Shift\+F3|스크립트 창|
+|**붙여넣기**|Ctrl\+V|스크립트 창, 명령 창|
+|**다시 실행**|Ctrl\+Y|스크립트 창, 명령 창|
+|**스크립트에서 바꾸기**|Ctrl\+H|스크립트 창|
+|**저장**|Ctrl\+S|스크립트 창|
+|**모두 선택**|Ctrl\+A|스크립트 창, 명령 창, 출력 창|
+|**실행 취소**|Ctrl\+Z|스크립트 창, 명령 창|
 
-## <a name="bkmk_3"></a>Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## <a name="bkmk_3"></a>스크립트 실행 바로 가기 키
+스크립트 창에서 스크립트를 실행할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.|
+|**새로 만들기**|Ctrl\+N|
+|**열기**|Ctrl\+O|
+|**실행**|F5|
+|**선택 항목 실행**|F8|
+|**실행 중지**|Ctrl\+Break. 컨텍스트가 명확한 경우(선택한 텍스트가 없는 경우) Ctrl\+C를 사용할 수 있습니다.|
+|**Tab** 키를 눌러 다음 스크립트로 이동|Ctrl\+Tab **참고:** Tab 키를 눌러 다음 스크립트로 이동은 하나의 PowerShell 탭만 열려 있는 경우 또는 둘 이상의 PowerShell 탭이 열려 있지만 스크립트 창에 포커스가 있는 경우에 작동합니다.|
+|**Tab** 키를 눌러 이전 스크립트로 이동|Ctrl\+Shift\+Tab **참고:** Tab 키를 눌러 이전 스크립트로 이동은 하나의 PowerShell 탭만 열려 있는 경우 또는 둘 이상의 PowerShell 탭이 열려 있고 스크립트 창에 포커스가 있는 경우에 작동합니다.|
 
-## <a name="bkmk_4"></a>Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE. They are accessible from all the panes in the application.
+## <a name="bkmk_4"></a>보기 사용자 지정 바로 가기 키
+Windows PowerShell ISE에서 보기를 사용자 지정할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다. 응용 프로그램의 모든 창에서 액세스할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**Go to Command Pane**|CTRL\+D|
-|**Go to Output Pane**|CTRL\+SHIFT\+O|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
+|**명령 창으로 이동**|Ctrl\+D|
+|**출력 창으로 이동**|Ctrl\+Shift\+O|
+|**스크립트 창으로 이동**|Ctrl\+I|
+|**스크립트 창 표시**|Ctrl\+R|
+|**스크립트 창 숨기기**|Ctrl\+R|
 ||
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**스크립트 창 위로 이동**|Ctrl\+1|
+|**스크립트 창 오른쪽으로 이동**|Ctrl\+2|
+|**스크립트 창 최대화**|Ctrl\+3|
+|**확대**|Ctrl\+더하기 기호|
+|**축소**|Ctrl\+빼기 기호|
 
-## <a name="bkmk_5"></a>Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## <a name="bkmk_5"></a>스크립트 디버그 바로 가기 키
+스크립트를 디버그할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcut|Use in|
+|작업|바로 가기 키|사용 위치|
 |----------|---------------------|----------|
-|**Run\/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**실행\/계속**|F5|스크립트 창, 스크립트를 디버그할 때|
+|**한 단계씩 코드 실행**|F11|스크립트 창, 스크립트를 디버그할 때|
+|**프로시저 단위 실행**|F10|스크립트 창, 스크립트를 디버그할 때|
+|**프로시저 나가기**|Shift\+F11|스크립트 창, 스크립트를 디버그할 때|
+|**호출 스택 표시**|Ctrl\+Shift\+D|스크립트 창, 스크립트를 디버그할 때|
+|**중단점 표시**|Ctrl\+Shift\+L|스크립트 창, 스크립트를 디버그할 때|
+|**중단점 설정/해제**|F9|스크립트 창, 스크립트를 디버그할 때|
+|**모든 중단점 제거**|Ctrl\+Shift\+F9|스크립트 창, 스크립트를 디버그할 때|
+|**디버거 중지**|Shift\+F5|스크립트 창, 스크립트를 디버그할 때|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Command Pane and press ENTER.
+> Windows PowerShell ISE에서 스크립트를 디버그할 때 Windows PowerShell 콘솔용으로 설계된 바로 가기 키를 사용할 수도 있습니다. 이러한 바로 가기를 사용하려면 명령 창에서 바로 가기를 입력하고 Enter 키를 눌러야 합니다.
 
-|Action|Keyboard Shortcut|Use in|
+|작업|바로 가기 키|사용 위치|
 |----------|---------------------|----------|
-|**Continue**|C|Command Pane, when debugging a script|
-|**Step Into**|S|Command Pane, when debugging a script|
-|**Step Over**|V|Command Pane, when debugging a script|
-|**Step Out**|O|Command Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Command Pane, when debugging a script|
-|**Display Call Stack**|K|Command Pane, when debugging a script|
-|**Stop Debugging**|Q|Command Pane, when debugging a script|
-|**List the Script**|L|Command Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Command Pane, when debugging a script|
+|**계속**|C|명령 창, 스크립트를 디버그할 때|
+|**한 단계씩 코드 실행**|S|명령 창, 스크립트를 디버그할 때|
+|**프로시저 단위 실행**|V|명령 창, 스크립트를 디버그할 때|
+|**프로시저 나가기**|O|명령 창, 스크립트를 디버그할 때|
+|**마지막 명령 반복**(한 단계씩 코드 실행 또는 프로시저 단위 실행)|Enter 키|명령 창, 스크립트를 디버그할 때|
+|**호출 스택 표시**|K|명령 창, 스크립트를 디버그할 때|
+|**디버깅 중지**|Q|명령 창, 스크립트를 디버그할 때|
+|**스크립트 표시**|L|명령 창, 스크립트를 디버그할 때|
+|**콘솔 디버깅 명령 표시**|H 또는 ?|명령 창, 스크립트를 디버그할 때|
 
-## <a name="bkmk_6"></a>Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## <a name="bkmk_6"></a>Windows PowerShell 탭 바로 가기 키
+Windows PowerShell 탭을 사용할 때 다음과 같은 바로 가기 키를 사용할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
+|**PowerShell 탭 닫기**|Ctrl\+W|
+|**새 PowerShell 탭**|Ctrl\+T|
+|**이전 PowerShell 탭**|Ctrl\+Shift\+Tab. 이 바로 가기는 PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
+|**다음 Windows PowerShell 탭**|Ctrl\+Tab. 이 바로 가기는 PowerShell 탭에 열려 있는 파일이 없는 경우에만 작동합니다.|
 
-## <a name="bkmk_7"></a>Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.
+## <a name="bkmk_7"></a>시작 및 종료 바로 가기 키
+다음과 같은 바로 가기 키를 사용하여 Windows PowerShell 콘솔(PowerShell.exe)을 시작하거나 Windows PowerShell ISE를 종료할 수 있습니다.
 
-|Action|Keyboard Shortcut|
+|작업|바로 가기 키|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** (Windows PowerShell console)|CTRL\+SHIFT\+P|
+|**종료**|Alt\+F4|
+|**PowerShell.exe 시작** (Windows PowerShell 콘솔)|Ctrl\+Shift\+P|
 
-## See Also
-[Using the Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+## 참고 항목
+[Windows PowerShell ISE 사용](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+<!--HONumber=May16_HO2-->
+
 
