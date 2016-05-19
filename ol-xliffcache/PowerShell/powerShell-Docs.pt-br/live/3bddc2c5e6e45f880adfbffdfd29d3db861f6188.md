@@ -1,5 +1,5 @@
 ---
-title: The ISEAddOnTool Object
+title: O objeto ISEAddOnTool
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,22 +7,22 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
 ---
-# The ISEAddOnTool Object
-  An **ISEAddonTool** object represents an installed add\-on tool that provides additional functionality toWindows PowerShell ISE. An example is the **Commands** tool that you can display by clicking **View**, then **Show Command Add\-on**. This tool is then accessible to you by manipulating the various available **ISEAddOnTool** objects.
+# O objeto ISEAddOnTool
+  Um objeto **ISEAddonTool** representa uma ferramenta complementar instalada que fornece funcionalidade adicional ao ISE do Windows PowerShell. Um exemplo é a ferramenta **Comandos** que você pode exibir clicando **Exibir**, em seguida, em **Mostrar Complemento de Comando**. Esta ferramenta fica, então, acessível a você, manipulando os vários objetos disponíveis **ISEAddOnTool**.
 
- Each add\-on tool can be associated with either the vertical pane or the horizontal pane. The vertical pane is docked to the right edge of Windows PowerShell ISE. The horizontal pane is docked to the bottom edge.
+ Cada ferramenta complementar pode ser associada com o painel vertical ou com o painel horizontal. O painel vertical é encaixado na borda direita do ISE do Windows PowerShell. O painel horizontal está encaixado na borda inferior.
 
- Each PowerShell tab in Windows PowerShell ISE can have its own set of add\-on tools installed. See [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) and [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md) to access the collection of tools available to the currently selected tab or the same properties on any of the **PowerShellTab** objects in the [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) collection object.
+ Cada guia PowerShell no ISE do Windows PowerShell pode ter seu próprio conjunto de ferramentas complementares instaladas. Consulte [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) e [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md) para acessar a coleção de ferramentas disponíveis para a guia selecionada no momento ou as mesmas propriedades em qualquer um dos objetos **PowerShellTab** no objeto do conjunto [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md).
 
-## Methods
- There are no Windows PowerShell ISE\-specific methods available for objects of this class.
+## Métodos
+ Não há métodos específicos de ISE do Windows PowerShell disponíveis para objetos desta classe.
 
-## Properties
+## Propriedades
 
 ###  <a name="Control"></a> Control
-  Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.
+  Com suporte no Windows PowerShell ISE 3.0 e posterior, não está presente em versões anteriores.
 
- The **Control** property provides read access to many of the details of the Commands add\-on tool.
+ A propriedade **Controle** fornece acesso de leitura para muitos dos detalhes da ferramenta complementar Comandos.
 
 ```
 # View the properties of the Commands add-on tool.
@@ -136,9 +136,9 @@ Dispatcher                  : System.Windows.Threading.Dispatcher
 ```
 
 ###  <a name="IsVisible"></a> IsVisible
-  Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.
+  Com suporte no Windows PowerShell ISE 3.0 e posterior, não está presente em versões anteriores.
 
- The Boolean property that indicates whether the add\-on tool is currently visible in its assigned pane. If it is visible, you can set the **IsVisible** property to **$false** to hide the tool, or set the **IsVisible** property to **$true** to make an add\-on tool visible on its PowerShell tab. Note that after an add\-on tool is hidden, it is no longer accessible through the **CurrentVisibleHorizontalTool** or **CurrentVisibleVerticalTool** objects, and therefore cannot be made visible by using this property on that object.
+ A propriedade booliana que indica se a ferramenta complementar está atualmente visível no seu painel atribuído. Se estiver visível, você poderá definir a propriedade **IsVisible** como **$false** para ocultar a ferramenta ou definir a propriedade **IsVisible** como **$true** para tornar uma ferramenta complementar visível em sua guia PowerShell. Observe que depois que uma ferramenta complementar é oculta, ela não é mais acessível pelos objetos **CurrentVisibleHorizontalTool** ou **CurrentVisibleVerticalTool** e, portanto, não pode ser tornada visível usando esta propriedade no objeto.
 
 ```
 # Hide the current tool in the vertical tool pane
@@ -148,10 +148,10 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
 
 ```
 
-###  <a name="name"></a> Name
-  Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.
+###  <a name="name"></a> Nome
+  Com suporte no Windows PowerShell ISE 3.0 e posterior, não está presente em versões anteriores.
 
- The read\-only property that gets the name of the add\-on tool.
+ A propriedade somente leitura que recebe o nome da ferramenta complementar.
 
 ```
 # Gets the name of the visible vertical pane add-on tool.
@@ -160,8 +160,13 @@ Commands
 
 ```
 
-## See Also
- [The ISEAddOnToolCollection Object](The-ISEAddOnToolCollection-Object.md)
- [The Windows PowerShell ISE Scripting Object Model](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
- [Windows PowerShell ISE Object Model Reference](Windows-PowerShell-ISE-Object-Model-Reference.md)
- [The ISE Object Model Hierarchy](The-ISE-Object-Model-Hierarchy.md)
+## Consulte Também
+ [O objeto ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
+ [O modelo de objeto de script do ISE do Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+ [Referência de modelo de objeto do ISE do Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
+ [A hierarquia de modelo do objeto do ISE](The-ISE-Object-Model-Hierarchy.md)
+
+
+<!--HONumber=May16_HO2-->
+
+
