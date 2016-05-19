@@ -1,5 +1,5 @@
 ---
-title: The ISEAddOnTool Object
+title: El objeto ISEAddOnTool
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -7,22 +7,22 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ce84d8bc-07ba-41f6-bdde-d6f3fddcd1e3
 ---
-# The ISEAddOnTool Object
-  An **ISEAddonTool** object represents an installed add\-on tool that provides additional functionality toWindows PowerShell ISE. An example is the **Commands** tool that you can display by clicking **View**, then **Show Command Add\-on**. This tool is then accessible to you by manipulating the various available **ISEAddOnTool** objects.
+# El objeto ISEAddOnTool
+  Un objeto **ISEAddonTool** representa una herramienta de complemento instalada que proporciona funcionalidad adicional a Windows PowerShell ISE. Un ejemplo es la herramienta **Comandos** que se puede mostrar haciendo clic en **Ver** y, después, en **Show Command Add-on** (Mostrar complemento Comandos). Esta herramienta es accesible mediante la manipulación de los distintos objetos **ISEAddOnTool** disponibles.
 
- Each add\-on tool can be associated with either the vertical pane or the horizontal pane. The vertical pane is docked to the right edge of Windows PowerShell ISE. The horizontal pane is docked to the bottom edge.
+ Cada herramienta de complemento se puede asociar al panel vertical o al panel horizontal. El panel vertical está acoplado al borde derecho de Windows PowerShell ISE. El panel horizontal está acoplado al borde inferior.
 
- Each PowerShell tab in Windows PowerShell ISE can have its own set of add\-on tools installed. See [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) and [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md) to access the collection of tools available to the currently selected tab or the same properties on any of the **PowerShellTab** objects in the [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md) collection object.
+ Cada pestaña de PowerShell en Windows PowerShell ISE puede tener instalado su propio conjunto de herramientas de complemento. Consulte [$psISE.CurrentPowerShellTab.HorizontalAddOnTools](The-ISEAddOnToolCollection-Object.md) y [$psISE.CurrentPowerShellTab.VerticalAddOnTools](The-ISEAddOnToolCollection-Object.md) para tener acceso a la colección de herramientas disponibles en la pestaña seleccionada actualmente o las mismas propiedades en cualquiera de los objetos **PowerShellTab** del objeto de la colección [$psISE.PowerShellTabs](The-PowerShellTabCollection-Object.md).
 
-## Methods
- There are no Windows PowerShell ISE\-specific methods available for objects of this class.
+## Métodos
+ No hay disponible ningún método específico de Windows PowerShell ISE para los objetos de esta clase.
 
-## Properties
+## Propiedades
 
 ###  <a name="Control"></a> Control
-  Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.
+  Se admite en Windows PowerShell ISE 3.0 y versiones posteriores y no está presente en las versiones anteriores.
 
- The **Control** property provides read access to many of the details of the Commands add\-on tool.
+ La propiedad **Control** proporciona acceso de lectura a muchos de los detalles de la herramienta de complemento Comandos.
 
 ```
 # View the properties of the Commands add-on tool.
@@ -136,9 +136,9 @@ Dispatcher                  : System.Windows.Threading.Dispatcher
 ```
 
 ###  <a name="IsVisible"></a> IsVisible
-  Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.
+  Se admite en Windows PowerShell ISE 3.0 y versiones posteriores y no está presente en las versiones anteriores.
 
- The Boolean property that indicates whether the add\-on tool is currently visible in its assigned pane. If it is visible, you can set the **IsVisible** property to **$false** to hide the tool, or set the **IsVisible** property to **$true** to make an add\-on tool visible on its PowerShell tab. Note that after an add\-on tool is hidden, it is no longer accessible through the **CurrentVisibleHorizontalTool** or **CurrentVisibleVerticalTool** objects, and therefore cannot be made visible by using this property on that object.
+ Propiedad Boolean que indica si la herramienta de complemento está visible actualmente en el panel asignado. Si está visible, puede establecer la propiedad **IsVisible** en **$false** para ocultar la herramienta o establecer la propiedad **IsVisible** en **$true** para hacer que una herramienta de complemento esté visible en su pestaña de PowerShell. Tenga en cuenta que al ocultar una herramienta de complemento, esta deja de ser accesible a través de los objetos **CurrentVisibleHorizontalTool** o **CurrentVisibleVerticalTool** y, por lo tanto, no puede hacerse visible usando esta propiedad en ese objeto.
 
 ```
 # Hide the current tool in the vertical tool pane
@@ -148,10 +148,10 @@ $psISE.CurrentPowerShellTab.VerticalAddOnTools[0].IsVisible=$true
 
 ```
 
-###  <a name="name"></a> Name
-  Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.
+###  <a name="name"></a> Nombre
+  Se admite en Windows PowerShell ISE 3.0 y versiones posteriores y no está presente en las versiones anteriores.
 
- The read\-only property that gets the name of the add\-on tool.
+ Propiedad de solo lectura que obtiene el nombre de la herramienta de complemento.
 
 ```
 # Gets the name of the visible vertical pane add-on tool.
@@ -160,8 +160,13 @@ Commands
 
 ```
 
-## See Also
- [The ISEAddOnToolCollection Object](The-ISEAddOnToolCollection-Object.md)
- [The Windows PowerShell ISE Scripting Object Model](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
- [Windows PowerShell ISE Object Model Reference](Windows-PowerShell-ISE-Object-Model-Reference.md)
- [The ISE Object Model Hierarchy](The-ISE-Object-Model-Hierarchy.md)
+## Consulte también
+ [El objeto ISEAddOnToolCollection](The-ISEAddOnToolCollection-Object.md)
+ [El modelo de objetos de scripting de ISE de Windows PowerShell](The-Windows-PowerShell-ISE-Scripting-Object-Model.md)
+ [Referencia del modelo de objetos de ISE de Windows PowerShell](Windows-PowerShell-ISE-Object-Model-Reference.md)
+ [La jerarquía del modelo de objetos de ISE](The-ISE-Object-Model-Hierarchy.md)
+
+
+<!--HONumber=May16_HO2-->
+
+
