@@ -1,14 +1,14 @@
-#  Troubleshooting Access Problems in Windows PowerShell Web Access
+#  Risoluzione dei problemi di accesso in Accesso Web Windows PowerShell
 
-Updated: June 24, 2013
+Ultimo aggiornamento: 24 giugno 2013
 
-Applies To: Windows Server 2012 R2, Windows Server 2012
+Si applica a: Windows Server 2012 R2, Windows Server 2012
 
 <a href="" id="BKMK_trouble"></a>
 
 ------------------------------------------------------------------------
 
-The following table identifies some common problems that users might experience when they are attempting to connect to a remote computer by using Windows PowerShell Web Access, and includes suggestions for resolving the problems.
+La tabella seguente illustra alcuni problemi comuni che possono verificarsi quando gli utenti provano a connettersi a un computer remoto con Accesso Web Windows PowerShell e include alcuni suggerimenti per la risoluzione di tali problemi.
 
 <table>
 <colgroup>
@@ -17,56 +17,56 @@ The following table identifies some common problems that users might experience 
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Problem</p></th>
-<th><p>Possible cause and solution</p></th>
+<th><p>Problema</p></th>
+<th><p>Possibile causa e soluzione</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Sign-in failure</p></td>
-<td><p>Failure could occur because of any of the following.</p>
+<td><p>Errore di accesso</p></td>
+<td><p>Il problema può essere dovuto a uno dei motivi seguenti.</p>
 <ul>
-<li><p>An authorization rule that allows the user access to the computer, or a specific session configuration on the remote computer, does not exist. Windows PowerShell Web Access security is restrictive; users must be granted explicit access to remote computers by using authorization rules. For more information about creating authorization rules, see <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Authorization Rules and Security Features of Windows PowerShell Web Access</a> in this guide.</p></li>
-<li><p>The user does not have authorized access to the destination computer. This is determined by access control lists (ACLs). For more information, see “Signing in to Windows PowerShell Web Access” in <a href="https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx">Use the Web-based Windows PowerShell Console</a>, or the <a href="https://msdn.microsoft.com/library/windows/desktop/ee706585.aspx">Windows PowerShell Team Blog</a>.</p>
+<li><p>Non esiste una regola di autorizzazione che consenta all'utente di accedere al computer o a una configurazione di sessione specifica sul computer remoto. La sicurezza di Accesso Web Windows PowerShell è restrittiva, quindi è necessario consentire esplicitamente agli utenti l'accesso ai computer remoti, usando le regole di autorizzazione. Per altre informazioni sulla creazione delle regole di autorizzazione, vedere la sezione <a href="https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx">Regole di autorizzazione e funzionalità di sicurezza di Accesso Web Windows PowerShell</a> in questo argomento.</p></li>
+<li><p>L'utente non è autorizzato ad accedere al computer di destinazione. Tale autorizzazione è determinata dagli elenchi di controllo di accesso (ACL). Per altre informazioni, vedere la sezione "Connessione ad Accesso Web Windows PowerShell" dell'articolo <a href="https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx">Usare la console di Windows PowerShell basata sul Web</a> o consultare il <a href="https://msdn.microsoft.com/library/windows/desktop/ee706585.aspx">blog del team di Windows PowerShell.</a>.</p>
 <ul>
-<li><p>Windows PowerShell remote management might not be enabled on the destination computer. Verify that it is enabled on the computer to which the user is trying to connect. For more information, see “How to Configure Your Computer for Remoting” in <a href="https://technet.microsoft.com/library/dd315349.aspx">about_Remote_Requirements</a> in the Windows PowerShell About Help Topics.</p></li>
+<li><p>La gestione remota di Windows PowerShell potrebbe non essere abilitata nel computer di destinazione. Verificare che tale funzione sia abilitata nel computer a cui l'utente sta tentando di connettersi. Per altre informazioni, vedere la sezione "Modalità di configurazione del computer per la comunicazione remota" dell'argomento <a href="https://technet.microsoft.com/library/dd315349.aspx">about_Remote_Requirements</a> negli argomenti della Guida di Windows PowerShell.</p></li>
 </ul></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>When users try to sign in to Windows PowerShell Web Access in an Internet Explorer window, they are shown an <strong>Internal Server Error</strong> page, or Internet Explorer stops responding. This issue is specific to Internet Explorer.</p></td>
-<td><p>This can occur for users who have signed in with a domain name that contains Chinese characters, or if one or more Chinese characters are part of the gateway server name. To work around this issue, the user should <a href="http://ie.microsoft.com/testdrive/info/downloads/Default.html">install and run Internet Explorer 10</a>, and then perform the following steps.</p>
+<td><p>Quando gli utenti provano a connettersi a Accesso Web Windows PowerShell da una finestra di Internet Explorer, viene visualizzata una pagina di <strong>Errore interno del server</strong> oppure Internet Explorer smette di rispondere. Si tratta di un problema specifico di Internet Explorer.</p></td>
+<td><p>Questo problema può verificarsi per gli utenti che effettuano l'accesso con un nome di dominio contenente caratteri cinesi, oppure se il nome del server gateway contiene uno o più caratteri cinesi. Per risolvere il problema, l'utente deve <a href="http://ie.microsoft.com/testdrive/info/downloads/Default.html">installare ed eseguire Internet Explorer 10</a>, quindi effettuare la procedura seguente.</p>
 <ol>
-<li><p>Change the Internet Explorer <strong>Document Mode</strong> setting to <strong>IE10 standards</strong>.</p>
+<li><p>Impostare la <strong>Modalità documento</strong> di Internet Explorer su <strong>Standard di IE10.</strong>.</p>
 <ol>
-<li><p>Press <strong>F12</strong> to open the Developer Tools console.</p></li>
-<li><p>In Internet Explorer 10, click <strong>Browser Mode</strong>, and then select <strong>Internet Explorer 10</strong>.</p></li>
-<li><p>Click <strong>Document Mode</strong>, and then click <strong>IE10 standards</strong>.</p></li>
-<li><p>Press <strong>F12</strong> again to close the Developer Tools console.</p></li>
+<li><p>Premere <strong>F12</strong> per aprire la console degli strumenti di sviluppo.</p></li>
+<li><p>In Internet Explorer 10 fare clic su <strong>Modalità browser</strong> e selezionare <strong>Internet Explorer 10.</strong>.</p></li>
+<li><p>Fare clic su <strong>Modalità documento</strong>, quindi fare clic su <strong>Standard di IE10.</strong>.</p></li>
+<li><p>Premere di nuovo <strong>F12</strong> per chiudere la console degli strumenti di sviluppo.</p></li>
 </ol></li>
-<li><p>Disable automatic proxy configuration.</p>
+<li><p>Disabilitare la configurazione automatica del proxy.</p>
 <ol>
-<li><p>In Internet Explorer 10, click <strong>Tools</strong>, and then click <strong>Internet Options</strong>.</p></li>
-<li><p>In the <strong>Internet Options</strong> dialog box, on the <strong>Connections</strong> tab, click <strong>LAN settings</strong>.</p></li>
-<li><p>Clear the <strong>Automatically detect settings</strong> check box. Click <strong>OK</strong>, and then click <strong>OK</strong> again to close the <strong>Internet Options</strong> dialog box.</p></li>
+<li><p>In Internet Explorer 10 fare clic su <strong>Strumenti</strong> e quindi su <strong>Opzioni Internet.</strong>.</p></li>
+<li><p>Nella finestra di dialogo <strong>Opzioni Internet</strong> passare alla scheda <strong>Connessioni</strong> e fare clic su <strong>Impostazioni LAN.</strong>.</p></li>
+<li><p>Deselezionare la casella di controllo <strong>Rileva automaticamente impostazioni</strong>. Fare clic su <strong>OK</strong>, quindi fare di nuovo clic su <strong>OK</strong> per chiudere la finestra di dialogo <strong>Opzioni Internet</strong>.</p></li>
 </ol></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><p>Cannot connect to a remote workgroup computer</p></td>
-<td><p>If the destination computer is a member of a workgroup, use the following syntax to provide your user name and sign in to the computer: &lt;<em>workgroup_name</em>&gt;\&lt;<em>user_name</em>&gt;</p></td>
+<td><p>Non è possibile connettersi a un computer remoto del gruppo di lavoro</p></td>
+<td><p>Se il computer di destinazione è membro di un gruppo di lavoro, usare la sintassi seguente per fornire il nome utente e accedere al computer: &lt;<em>nome_gruppo_di_lavoro</em>&gt;\&lt;<em>nome_utente.</em>&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>Cannot find Web Server (IIS) management tools, even though the role was installed</p></td>
-<td><p>If you installed Windows PowerShell Web Access by using the <span class="code">Install-WindowsFeature</span> cmdlet, management tools are not installed unless the <span class="code">IncludeManagementTools</span> parameter is added to the cmdlet. For an example, see “To install Windows PowerShell Web Access by using Windows PowerShell cmdlets” in <a href="https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx">Install and Use Windows PowerShell Web Access</a>. You can add the IIS Manager console and other IIS management tools that you need by selecting the tools in an Add Roles and Features Wizard session that is targeted at the gateway server. The Add Roles and Features Wizard is opened from within Server Manager.</p></td>
+<td><p>Non è possibile trovare gli strumenti di gestione del server Web (IIS) anche se il ruolo corrispondente è stato installato</p></td>
+<td><p>Se Accesso Web Windows PowerShell viene installato con il cmdlet <span class="code">Install-WindowsFeature</span>, gli strumenti di gestione non vengono installati, a meno che non si aggiunga il parametro <span class="code">IncludeManagementTools</span> al cmdlet. Per un esempio, vedere la sezione relativa all'installazione di Accesso Web Windows PowerShell con i cmdlet di Windows PowerShell in <a href="https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx">Installare e usare Accesso Web Windows PowerShell</a>. Per aggiungere la console Gestione IIS e altri strumenti di gestione di IIS necessari, selezionarli in una sessione di Aggiunta guidata ruoli e funzionalità aperta con il server gateway. L'Aggiunta guidata ruoli e funzionalità viene aperta in Server Manager.</p></td>
 </tr>
 <tr class="odd">
-<td><p>The Windows PowerShell Web Access website is not accessible</p></td>
-<td><p>If Enhanced Security Configuration is enabled in Internet Explorer (IE ESC), you can add the Windows PowerShell Web Access website to the list of trusted sites, or disable IE ESC. You can disable IE ESC in the <strong>Properties</strong> tile on the <strong>Local Server</strong> page in Server Manager.</p></td>
+<td><p>Il sito Web di Accesso Web Windows PowerShell non è accessibile</p></td>
+<td><p>Se in Internet Explorer è abilitata la funzione Configurazione sicurezza avanzata, è possibile aggiungere il sito Web di Accesso Web Windows PowerShell all'elenco dei siti attendibili o disabilitare la funzione. È possibile disabilitare Sicurezza avanzata di Internet Explorer nel riquadro <strong>Proprietà</strong> della pagina <strong>Server locale</strong> in Server Manager.</p></td>
 </tr>
 <tr class="even">
-<td><p>The following error message is displayed while trying to connect when the gateway server is the destination computer, and is also in a workgroup: <strong>An authorization failure occurred. Verify that you are authorized to connect to the destination computer.</strong></p></td>
-<td><p>When the gateway server is also the destination server, and it is in a workgroup, specify the user name, computer name, and user group name as shown in the following table. Do not use a dot (.) by itself to represent the computer name.</p>
+<td><p>Il messaggio di errore seguente viene visualizzato quando si prova a stabilire una connessione e il computer di destinazione è il server gateway ed è anche incluso in un gruppo di lavoro: <strong>Errore di autorizzazione. Verificare di essere autorizzati a connettersi al computer di destinazione.</strong></p></td>
+<td><p>Se il server di destinazione è costituito dal server gateway e quest'ultimo è incluso in un gruppo di lavoro, specificare il nome dell'utente, il nome del computer e il nome del gruppo di utenti come mostrato nella tabella seguente, evitando di usare solo un punto (.) per rappresentare il nome del computer.</p>
 <div>
 <table>
 <colgroup>
@@ -79,106 +79,111 @@ The following table identifies some common problems that users might experience 
 <thead>
 <tr class="header">
 <th><p>Scenario</p></th>
-<th><p>UserName Parameter</p></th>
-<th><p>UserGroup Parameter</p></th>
-<th><p>ComputerName Parameter</p></th>
-<th><p>ComputerGroup Parameter</p></th>
+<th><p>Parametro UserName</p></th>
+<th><p>Parametro UserGroup</p></th>
+<th><p>Parametro ComputerName</p></th>
+<th><p>Parametro ComputerGroup</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Gateway server is in a domain</p></td>
-<td><p><em>Server_name</em>\<em>user_name</em>, Localhost\<em>user_name</em>, or .\<em>user_name</em></p></td>
-<td><p><em>Server_name</em>\<em>user_group</em>, Localhost\<em>user_group</em>, or .\<em>user_group</em></p></td>
-<td><p>Fully qualified name of gateway server, or Localhost</p></td>
-<td><p><em>Server_name</em>\<em>computer_group</em>, Localhost\<em>computer_group</em>, or .\<em>computer_group</em></p></td>
+<td><p>Il server gateway è in un dominio</p></td>
+<td><p><em>Nome_server</em>\<em>nome_utente</em>, Localhost\<em>nome_utente</em> o .\<em>nome_utente</em></p></td>
+<td><p><em>Nome_server</em>\<em>gruppo_utenti</em>, Localhost\<em>gruppo_utenti</em> o .\<em>gruppo_utenti</em></p></td>
+<td><p>Nome completo del server gateway o Localhost</p></td>
+<td><p><em>Nome_server</em>\<em>gruppo_computer</em>, Localhost<em>\gruppo_computer</em> o .\<em>gruppo_computer</em></p></td>
 </tr>
 <tr class="even">
-<td><p>Gateway server is in a workgroup</p></td>
-<td><p><em>Server_name</em>\<em>user_name</em>, Localhost\<em>user_name</em>, or .\<em>user_name</em></p></td>
-<td><p><em>Server_name</em>\<em>user_group</em>, Localhost\<em>user_group</em> or .\<em>user_group</em></p></td>
-<td><p>Server name</p></td>
-<td><p><em>Server_name</em>\<em>computer_group</em>, Localhost\<em>computer_group</em> or .\<em>computer_group</em></p></td>
+<td><p>Il server gateway è in un gruppo di lavoro</p></td>
+<td><p><em>Nome_server</em>\<em>nome_utente</em>, Localhost\<em>nome_utente</em> o .\<em>nome_utente</em></p></td>
+<td><p><em>Nome_server</em>\<em>gruppo_utenti</em>, Localhost\<em>gruppo_utenti</em> o .\<em>gruppo_utenti</em></p></td>
+<td><p>Nome server</p></td>
+<td><p><em>Nome_server</em>\<em>gruppo_computer</em>, Localhost<em>\gruppo_computer</em> o .\<em>gruppo_computer</em></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Sign in to a gateway server as target computer by using credentials formatted as one of the following.</p>
+<p>Effettuare l'accesso specificando il server gateway come computer di destinazione e utilizzando credenziali formattate in uno dei modi seguenti.</p>
 <ul>
-<li><p><em>Server_name</em>\<em>user_name</em></p></li>
-<li><p>Localhost\<em>user_name</em></p></li>
-<li><p>.\<em>user_name</em></p></li>
+<li><p><em>Nome_server</em>\<em>nome_utente</em></p></li>
+<li><p>Localhost\<em>nome_utente</em></p></li>
+<li><p>.\<em>nome_utente</em></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>A security identifier (SID) is displayed in an authorization rule instead of the syntax <em>user_name</em>/<em>computer_name</em> </p></td>
-<td><p>Either the rule is no longer valid, or the Active Directory Domain Services query failed. An authorization rule is usually not valid in scenarios where the gateway server was at one time in a workgroup, but was later joined to a domain.</p></td>
+<td><p>In una regola di autorizzazione, al posto della sintassi <em>nome_utente</em>/<em>nome_computer viene visualizzato un ID di sicurezza (SID)</em> </p></td>
+<td><p>La regola non è più valida o la query in Servizi di dominio Active Directory non è riuscita. In genere, una regola di autorizzazione non risulta valida nel caso in cui un server gateway che in precedenza apparteneva a un gruppo di lavoro venga aggiunto a un dominio.</p></td>
 </tr>
 <tr class="even">
-<td><p>Cannot sign in to a target computer that has been specified in authorization rules as an IPv6 address with a domain.</p></td>
-<td><p>Authorization rules do not support an IPv6 address in form of a domain name. To specify a destination computer by using an IPv6 address, use the original IPv6 address (that contains colons) in the authorization rule. Both domain and numerical (with colons) IPv6 addresses are supported as the target computer name on the Windows PowerShell Web Access sign-in page, but not in authorization rules. For more information about IPv6 addresses, see <a href="https://technet.microsoft.com/library/cc781672.aspx">How IPv6 Works</a>.</p></td>
+<td><p>Non è possibile accedere a un computer di destinazione che nelle regole di autorizzazione è stato specificato sotto forma di indirizzo IPv6 di dominio</p></td>
+<td><p>Le regole di autorizzazione non supportano gli indirizzi IPv6 nel formato dei nomi di dominio. Per specificare un computer di destinazione tramite un indirizzo IPv6, nella regola di autorizzazione utilizzare l'indirizzo IPv6 originale, che contiene due punti (:). Sia i nomi di dominio che gli indirizzi IPv6 in formato numerico, ovvero con i due punti (:) sono supportati come nome del computer di destinazione nella pagina di accesso di Accesso Web Windows PowerShell, ma non nelle regole di autorizzazione. Per altre informazioni sugli indirizzi IPv6, vedere l'articolo relativo al <a href="https://technet.microsoft.com/library/cc781672.aspx">funzionamento di IPv6</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
-<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">See Also</span></a>
+<a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Collapse"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Vedere anche</span></a>
 <a href="/en-us/library/dn282395(v=ws.11).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Right-click to copy and share the link for this section"></a>
 
 ------------------------------------------------------------------------
 
-[Authorization Rules and Security Features of Windows PowerShell Web Access](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)
-[Use the Web-based Windows PowerShell Console](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
-[about\_Remote\_Requirements](https://technet.microsoft.com/library/dd315349.aspx)
+[Regole di autorizzazione e funzionalità di sicurezza di Accesso Web Windows PowerShell](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)
+[Usare la console di Windows PowerShell basata sul Web](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)
+[about_Remote_Requirements](https://technet.microsoft.com/library/dd315349.aspx)
 
 <span>Show:</span> Inherited Protected
 
-<span class="stdr-votetitle">Was this page helpful?</span>
-Yes
+<span class="stdr-votetitle">Questa pagina è stata utile?</span>
+Sì
 No
 
-Additional feedback?
+Altri suggerimenti?
 
-<span class="stdr-count"><span class="stdr-charcnt">1500</span> characters remaining</span>
-Submit
-Skip this
+<span class="stdr-count"><span class="stdr-charcnt">1500</span> caratteri rimanenti</span>
+Invia
+Ignora
 
-<span class="stdr-thankyou">Thank you!</span> <span class="stdr-appreciate">We appreciate your feedback.</span>
+<span class="stdr-thankyou">Grazie.</span> <span class="stdr-appreciate">I suggerimenti degli utenti sono importanti.</span>
 
-[Manage Your Profile](https://social.technet.microsoft.com/profile)
+[Gestisci il tuo profilo](https://social.technet.microsoft.com/profile)
 
 |
 
-<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Site Feedback</a>
-Site Feedback
+<a href="javascript:void(0)" id="SiteFeedbackLinkOpener"><span id="FeedbackButton" class="FeedbackButton clip20x21"> <img src="https://i-technet.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635975720914499532" alt="Site Feedback" id="feedBackImg" class="cl_footer_feedback_icon" /> </span> Commenti e suggerimenti sul sito</a>
+Commenti e suggerimenti sul sito
 
 <a href="javascript:void(0)" id="SiteFeedbackLinkCloser">x</a>
 
-Tell us about your experience...
+Raccontaci la tua esperienza
 
-Did the page load quickly?
+La pagina è stata caricata rapidamente?
 
-<span> Yes<span> </span></span> <span> No<span> </span></span>
+<span> Sì<span> </span></span> <span> No<span> </span></span>
 
-Do you like the page design?
+Ti piace la grafica?
 
-<span> Yes<span> </span></span> <span> No<span> </span></span>
+<span> Sì<span> </span></span> <span> No<span> </span></span>
 
-Tell us more
+Parla con noi
 
--   [Flash Newsletter](https://technet.microsoft.com/cc543196.aspx)
+-   [Newsletter Flash](https://technet.microsoft.com/cc543196.aspx)
 -   |
--   [Contact Us](https://technet.microsoft.com/cc512759.aspx)
+-   [Contattaci](https://technet.microsoft.com/cc512759.aspx)
 -   |
--   [Privacy Statement](https://privacy.microsoft.com/privacystatement)
+-   [Informativa sulla privacy](https://privacy.microsoft.com/privacystatement)
 -   |
--   [Terms of Use](https://technet.microsoft.com/cc300389.aspx)
+-   [Condizioni per l'utilizzo](https://technet.microsoft.com/cc300389.aspx)
 -   |
--   [Trademarks](https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/)
+-   [Marchi](https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/)
 -   |
 
 © 2016 Microsoft
 
 © 2016 Microsoft
 
-Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft. See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.
+Il codice e gli script di terze parti, collegati al presente sito o a cui il sito Web fa riferimento, vengono ceduti in licenza all'utente dalle terze parti proprietarie di tale codice, non da Microsoft. Vedere le Condizioni per l'utilizzo di Ajax CDN di ASP.NET – http://www.asp.net/ajaxlibrary/CDN.ashx.
 <img src="https://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" alt="DCSIMG" id="Img1" width="1" height="1" />
+
+
+<!--HONumber=May16_HO2-->
+
+
