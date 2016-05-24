@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\metaConfig.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b699b737e0be2bc485a36644c40b4087dac28414</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1ecef855e4bfc0ee0e5109fd0ecfb9ca395854d5</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4f63239" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -63,8 +63,8 @@
           <target state="new"><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: This topic applies to the LCM introduced in Windows PowerShell 5.0.</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>For information about configuring the LCM in Windows PowerShell 4.0, see Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager.</source>
-          <target state="new">For information about configuring the LCM in Windows PowerShell 4.0, see Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager.</target>
+          <source>For information about configuring the LCM in Windows PowerShell 4.0, see <bpt id="p1">[</bpt>Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager<ept id="p1">](metaconfig4.md)</ept>.</source>
+          <target state="new">For information about configuring the LCM in Windows PowerShell 4.0, see <bpt id="p1">[</bpt>Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager<ept id="p1">](metaconfig4.md)</ept>.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>Writing and enacting an LCM configuration</source>
@@ -83,16 +83,16 @@
           <target state="new">The following shows a simple configuration that sets the LCM to push mode.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see Get Started with Windows PowerShell Desired State Configuration).</source>
-          <target state="new">You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see Get Started with Windows PowerShell Desired State Configuration).</target>
+          <source>You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see <bpt id="p1">[</bpt>Compiling the configuration<ept id="p1">](configurations#compiling-the-configuration)</ept>).</source>
+          <target state="new">You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see <bpt id="p1">[</bpt>Compiling the configuration<ept id="p1">](configurations#compiling-the-configuration)</ept>).</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>Unlike normal configurations, you do not enact an LCM configuration by calling the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet.</source>
           <target state="new">Unlike normal configurations, you do not enact an LCM configuration by calling the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet.</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>Instead, you call the Set-DscLocalConfigurationManager cmdlet, supplying the path to the configuration MOF as a parameter.</source>
-          <target state="new">Instead, you call the Set-DscLocalConfigurationManager cmdlet, supplying the path to the configuration MOF as a parameter.</target>
+          <source>Instead, you call the <bpt id="p1">[</bpt>Set-DscLocalConfigurationManager<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521621.aspx)</ept> cmdlet, supplying the path to the configuration MOF as a parameter.</source>
+          <target state="new">Instead, you call the <bpt id="p1">[</bpt>Set-DscLocalConfigurationManager<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521621.aspx)</ept> cmdlet, supplying the path to the configuration MOF as a parameter.</target>
         </trans-unit>
         <trans-unit id="122" translate="yes" xml:space="preserve">
           <source>After you enact the configuration, you can see the properties of the LCM by calling the <bpt id="p1">[</bpt>Get-DscLocalConfigurationManager<ept id="p1">](https://technet.microsoft.com/en-us/library/dn407378.aspx)</ept> cmdlet.</source>
@@ -1023,20 +1023,28 @@
           <target state="new">Concepts</target>
         </trans-unit>
         <trans-unit id="354" translate="yes" xml:space="preserve">
-          <source>Get Started with Windows PowerShell Desired State Configuration <bpt id="p1">[</bpt>Setting up a DSC pull server<ept id="p1">](pullServer.md)</ept><ph id="ph1"> 
-</ph><bpt id="p2">[</bpt>Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager<ept id="p2">](metaConfig4.md)</ept></source>
-          <target state="new">Get Started with Windows PowerShell Desired State Configuration <bpt id="p1">[</bpt>Setting up a DSC pull server<ept id="p1">](pullServer.md)</ept><ph id="ph1"> 
-</ph><bpt id="p2">[</bpt>Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager<ept id="p2">](metaConfig4.md)</ept></target>
+          <source>Windows PowerShell Desired State Configuration Overview</source>
+          <target state="new">Windows PowerShell Desired State Configuration Overview</target>
         </trans-unit>
         <trans-unit id="355" translate="yes" xml:space="preserve">
+          <source>Setting up a DSC pull server</source>
+          <target state="new">Setting up a DSC pull server</target>
+        </trans-unit>
+        <trans-unit id="356" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager</source>
+          <target state="new">Windows PowerShell 4.0 Desired State Configuration Local Configuration Manager</target>
+        </trans-unit>
+        <trans-unit id="357" translate="yes" xml:space="preserve">
           <source>Other Resources</source>
           <target state="new">Other Resources</target>
         </trans-unit>
-        <trans-unit id="356" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">[</bpt>Set-DscLocalConfigurationManager<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521621.aspx)</ept><ph id="ph1"> 
-</ph><bpt id="p2">[</bpt>Setting up a pull client with configuration names<ept id="p2">](pullClientConfigNames.md)</ept></source>
-          <target state="new"><bpt id="p1">[</bpt>Set-DscLocalConfigurationManager<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521621.aspx)</ept><ph id="ph1"> 
-</ph><bpt id="p2">[</bpt>Setting up a pull client with configuration names<ept id="p2">](pullClientConfigNames.md)</ept></target>
+        <trans-unit id="358" translate="yes" xml:space="preserve">
+          <source>Set-DscLocalConfigurationManager</source>
+          <target state="new">Set-DscLocalConfigurationManager</target>
+        </trans-unit>
+        <trans-unit id="359" translate="yes" xml:space="preserve">
+          <source>Setting up a pull client with configuration names</source>
+          <target state="new">Setting up a pull client with configuration names</target>
         </trans-unit>
       </group>
     </body>

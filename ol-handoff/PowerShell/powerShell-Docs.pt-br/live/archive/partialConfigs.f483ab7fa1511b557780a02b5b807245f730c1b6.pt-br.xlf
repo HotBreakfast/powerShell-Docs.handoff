@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\partialConfigs.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">77448cde004f357cfd64dd84337205197d904615</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">85d81ef4f82ef10c0f838601a9adb79d2fba65e7</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-3d52e17" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -215,18 +215,26 @@
           <target state="new">Note that the <bpt id="p1">**</bpt>RefreshMode<ept id="p1">**</ept> specified in the Settings block is "Pull", but the <bpt id="p2">**</bpt>RefreshMode<ept id="p2">**</ept> for the OSInstall partial configuration is "Push".</target>
         </trans-unit>
         <trans-unit id="152" translate="yes" xml:space="preserve">
-          <source>You would name and locate the configuration documents as described above for their respective refresh modes.</source>
-          <target state="new">You would name and locate the configuration documents as described above for their respective refresh modes.</target>
+          <source>Name and locate the configuration MOF files as described above for their respective refresh modes.</source>
+          <target state="new">Name and locate the configuration MOF files as described above for their respective refresh modes.</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
-          <source>You would call <bpt id="p1">**</bpt>Publish-DSCConfiguration<ept id="p1">**</ept> to publish the SharePointInstall partial configuration, and either wait for the OSInstall configuration to be pulled from the pull server, or force a refresh by calling <bpt id="p2">[</bpt>Update-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)</ept>.</source>
-          <target state="new">You would call <bpt id="p1">**</bpt>Publish-DSCConfiguration<ept id="p1">**</ept> to publish the SharePointInstall partial configuration, and either wait for the OSInstall configuration to be pulled from the pull server, or force a refresh by calling <bpt id="p2">[</bpt>Update-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)</ept>.</target>
+          <source>Call <bpt id="p1">**</bpt>Publish-DSCConfiguration<ept id="p1">**</ept> to publish the <ph id="ph1">`SharePointInstall`</ph> partial configuration, and either wait for the <ph id="ph2">`OSInstall`</ph> configuration to be pulled from the pull server, or force a refresh by calling <bpt id="p2">[</bpt>Update-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)</ept>.</source>
+          <target state="new">Call <bpt id="p1">**</bpt>Publish-DSCConfiguration<ept id="p1">**</ept> to publish the <ph id="ph1">`SharePointInstall`</ph> partial configuration, and either wait for the <ph id="ph2">`OSInstall`</ph> configuration to be pulled from the pull server, or force a refresh by calling <bpt id="p2">[</bpt>Update-DscConfiguration<ept id="p2">](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx)</ept>.</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Example OSInstall Partial Configuration</source>
+          <target state="new">Example OSInstall Partial Configuration</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Example SharePointConfig Partial Configuration</source>
+          <target state="new">Example SharePointConfig Partial Configuration</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
           <source>See Also</source>
           <target state="new">See Also</target>
         </trans-unit>
-        <trans-unit id="155" translate="yes" xml:space="preserve">
+        <trans-unit id="157" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Concepts<ept id="p1">**</ept><ph id="ph1">
 </ph><bpt id="p2">[</bpt>Windows PowerShell Desired State Configuration Pull Servers<ept id="p2">](pullServer.md)</ept><ph id="ph2"> 
 </ph><bpt id="p3">[</bpt>Windows Configuring the Local Configuration Manager<ept id="p3">](https://technet.microsoft.com/en-us/library/mt421188.aspx)</ept></source>
