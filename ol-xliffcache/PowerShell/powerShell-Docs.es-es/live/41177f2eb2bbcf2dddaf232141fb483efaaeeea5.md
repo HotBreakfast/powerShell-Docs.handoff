@@ -1,5 +1,5 @@
 ---
-title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+title:  Método SendConfigurationApplyAsync de la clase MSFT_DSCLocalConfigurationManager
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -10,58 +10,63 @@ ms.prod:  powershell
 ---
 
 
-# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+# Método SendConfigurationApplyAsync de la clase MSFT_DSCLocalConfigurationManager
 
-Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
+Envía el documento de configuración de forma asincrónica al nodo administrado y usa el agente de configuración para aplicar la configuración.
 
-Syntax
+Sintaxis
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-Parameters
+Parámetros
 ----------
 
 *ConfigurationData* \[in\]  
-The environment data for the configuration.
+Datos del entorno para la configuración.
 
 *force* \[in\]  
-**true** to force the configuration to stop.
+**true** para forzar la configuración que se detendrá.
 
 *jobId* \[in\]  
-The ID of the job for which to send the configuration.
+Identificador del trabajo al que se enviará la configuración.
 
-## Return value
+## Valor devuelto
 ------------
 
-Returns zero on success; otherwise returns an error code.
+Devuelve cero si se ejecuta correctamente; de lo contrario, devuelve un código de error.
 
-## Remarks
+## Observaciones
 
-This is a static method.
+Se trata de un método estático.
 
-## Requirements
+## Requisitos
 ------------
 >**MOF:** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Espacio de nombres**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## Vea también
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+<!--HONumber=May16_HO3-->
 
 

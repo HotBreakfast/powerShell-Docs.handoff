@@ -10,55 +10,57 @@ ms.prod:  powershell
 ---
 
 ---
-DCS.appliesToProduct: 'WindowsServer\_Dev'
-Description: 'Enable Debug DSC Configuration.'
-MS-HAID: 'cimwin32a.msft\_dsclocalconfigurationmanager\_enabledebugconfiguration'
-MSHAttr: 'PreferredLib:/library'
-title: 'EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class'
+DCS.appliesToProduct: 'WindowsServer\_Dev' Descripción: "Habilita la depuración de la configuración de DSC".
+MS-HAID: 'cimwin32a.msft\_dsclocalconfigurationmanager\_enabledebugconfiguration' MSHAttr: 'PreferredLib:/library' title: 'Método EnableDebugConfiguration de la clase MSFT_DSCLocalConfigurationManager'
 ---
 
-# EnableDebugConfiguration method of the MSFT_DSCLocalConfigurationManager class
+# Método EnableDebugConfiguration de la clase MSFT_DSCLocalConfigurationManager
 
-Enables DSC resource debugging.
+Habilita la depuración de recursos de DSC.
 
-Syntax
+Sintaxis
 ------
 
 ```mof
 uint32 EnableDebugConfiguration(
-  [in] boolean BreakAll
+  [in] boolean BreakAll
 );
 ```
 
-Parameters
+Parámetros
 ----------
 
 *BreakAll* \[in\]  
-Sets a breakpoint at every line in the resource script.
+Establece un punto de interrupción en cada línea del script de recursos.
 
-## Return value
+## Valor devuelto
 ------------
 
-Returns zero on success; otherwise returns an error code.
+Devuelve cero si se ejecuta correctamente; de lo contrario, devuelve un código de error.
 
-## Remarks
+## Observaciones
 
-This is a static method.
+Se trata de un método estático.
 
-## Requirements
+## Requisitos
 ------------
 >**MOF:** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Espacio de nombres**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## Vea también
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
- 
+ 
 
- 
+ 
 
+
+
+
+
+<!--HONumber=May16_HO3-->
 
 
