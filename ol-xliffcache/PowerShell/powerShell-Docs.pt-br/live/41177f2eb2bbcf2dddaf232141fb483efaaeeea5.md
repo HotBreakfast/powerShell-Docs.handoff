@@ -1,5 +1,5 @@
 ---
-title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+title:  Método SendConfigurationApplyAsync da classe MSFT_DSCLocalConfigurationManager
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -10,58 +10,63 @@ ms.prod:  powershell
 ---
 
 
-# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+# Método SendConfigurationApplyAsync da classe MSFT_DSCLocalConfigurationManager
 
-Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
+Envia o documento de configuração de maneira assíncrona para o nó gerenciado e usa o Agente de Configuração para aplicar a configuração.
 
-Syntax
+Sintaxe
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-Parameters
+Parâmetros
 ----------
 
 *ConfigurationData* \[in\]  
-The environment data for the configuration.
+Dados do ambiente para a configuração.
 
 *force* \[in\]  
-**true** to force the configuration to stop.
+**true** para forçar a configuração a parar.
 
 *jobId* \[in\]  
-The ID of the job for which to send the configuration.
+A ID do trabalho para a qual enviar a configuração.
 
-## Return value
+## Retornar valor
 ------------
 
-Returns zero on success; otherwise returns an error code.
+Retorna zero em caso de êxito; caso contrário, retorna um código de erro.
 
-## Remarks
+## Comentários
 
-This is a static method.
+Esse é um método estático.
 
-## Requirements
+## Requisitos
 ------------
 >**MOF:** DscCore.mof
 
 >**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## Consulte também
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+<!--HONumber=May16_HO3-->
 
 
