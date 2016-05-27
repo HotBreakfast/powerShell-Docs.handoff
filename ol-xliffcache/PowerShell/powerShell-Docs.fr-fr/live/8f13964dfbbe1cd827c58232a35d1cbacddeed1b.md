@@ -1,5 +1,5 @@
 ---
-title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
+title:  Méthode GetConfigurationResultOutput de la classe MSFT_DSCLocalConfigurationManager
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,57 +9,62 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
+# Méthode GetConfigurationResultOutput de la classe MSFT_DSCLocalConfigurationManager
 
-Gets the Configuration Agent output associated with a specific job.
+Obtient la sortie de l’agent de configuration associée à un travail spécifique.
 
-Syntax
+Syntaxe
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-Parameters
+Paramètres
 ----------
 
 *jobId* \[in\]  
-The ID of the job for which to get output data.
+ID du travail pour lequel obtenir les données de sortie.
 
 *resumeOutputBookmark* \[in\]  
-Specifies that the output should be a continuation from a previous bookmark.
+Spécifie que la sortie doit être une continuation à partir d’un signet précédent.
 
 *output* \[out\]  
-The output for the specified job.
+Sortie pour le travail spécifié.
 
-## Return value
+## Valeur renvoyée
 ------------
 
-Returns zero on success; otherwise returns an error code.
+Retourne zéro en cas de réussite ; sinon, retourne un code d’erreur.
 
-## Remarks
+## Remarques
 
-This is a static method.
+Il s’agit d’une méthode statique.
 
-## Requirements
+## Spécifications
 ------------
->**MOF:** DscCore.mof
+>**MOF :** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Espace de noms** : Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## Voir aussi
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+<!--HONumber=May16_HO3-->
 
 
