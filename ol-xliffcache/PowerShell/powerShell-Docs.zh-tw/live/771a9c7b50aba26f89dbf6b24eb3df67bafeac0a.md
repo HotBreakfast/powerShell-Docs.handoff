@@ -1,5 +1,5 @@
 ---
-title: RollBack method of the MSFT_DSCLocalConfigurationManager class 
+title: MSFT_DSCLocalConfigurationManager 類別的 RollBack 方法 
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -10,50 +10,55 @@ ms.prod:  powershell
 ---
 
 
-# RollBack method of the MSFT_DSCLocalConfigurationManager class
+# MSFT_DSCLocalConfigurationManager 類別的 RollBack 方法
 
-Rolls back the configuration to a previous version.
+將設定復原回先前的版本。
 
-Syntax
+語法
 ------
 
 ```mof
 uint32 RollBack(
-  [in] uint8 configurationNumber
+  [in] uint8 configurationNumber
 );
 ```
 
-Parameters
+參數
 ----------
 
 *configurationNumber* \[in\]  
-Specifies the requested configuration. 
+指定要求的設定。 
 
-## Return value
+## 傳回值
 ------------
 
-Returns zero on success; otherwise returns an error code.
+若成功即傳回零；否則傳回錯誤碼。
 
-## Remarks
+## 備註
 
-This is a static method.
+此為靜態方法。
 
-## Requirements
+## 需求
 ------------
->**MOF:** DscCore.mof
+>**MOF：**DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**：Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## 另請參閱
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+<!--HONumber=May16_HO3-->
 
 
