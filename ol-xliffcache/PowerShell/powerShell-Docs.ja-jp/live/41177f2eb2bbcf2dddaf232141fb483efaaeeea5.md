@@ -1,5 +1,5 @@
 ---
-title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+title:  MSFT_DSCLocalConfigurationManager クラスの SendConfigurationApplyAsync メソッド
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -10,58 +10,63 @@ ms.prod:  powershell
 ---
 
 
-# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+# MSFT_DSCLocalConfigurationManager クラスの SendConfigurationApplyAsync メソッド
 
-Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
+構成ドキュメントを管理ノードに非同期的に送信し、構成エージェントを使用して構成を適用します。
 
-Syntax
+構文
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-Parameters
+パラメーター
 ----------
 
 *ConfigurationData* \[in\]  
-The environment data for the configuration.
+構成用の環境データ。
 
 *force* \[in\]  
-**true** to force the configuration to stop.
+**true** の場合、構成を強制的に中止します。
 
 *jobId* \[in\]  
-The ID of the job for which to send the configuration.
+構成を送信するジョブの ID です。
 
-## Return value
+## 戻り値
 ------------
 
-Returns zero on success; otherwise returns an error code.
+成功した場合は 0 を返します。それ以外の場合はエラー コードを返します。
 
-## Remarks
+## コメント
 
-This is a static method.
+これは静的メソッドです。
 
-## Requirements
+## 要件
 ------------
 >**MOF:** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**名前空間**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## 関連項目
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+<!--HONumber=May16_HO3-->
 
 
