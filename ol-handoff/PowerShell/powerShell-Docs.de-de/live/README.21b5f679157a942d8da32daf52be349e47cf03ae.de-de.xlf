@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\README.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5599e35b31b57d68c81e6ba1499486bc5561b4f4</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-1b2f027" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Just Enough Administration</source>
+          <target state="new">Just Enough Administration</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Just Enough Administration (JEA) is security technology that enables delegated administration for anything that can be managed with PowerShell.</source>
+          <target state="new">Just Enough Administration (JEA) is security technology that enables delegated administration for anything that can be managed with PowerShell.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>With JEA, you can:</source>
+          <target state="new">With JEA, you can:</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Reduce the number of administrators on your machines<ept id="p1">**</ept> by leveraging virtual accounts that perform privileged actions on behalf of regular users.</source>
+          <target state="new"><bpt id="p1">**</bpt>Reduce the number of administrators on your machines<ept id="p1">**</ept> by leveraging virtual accounts that perform privileged actions on behalf of regular users.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Limit what users can do<ept id="p1">**</ept> by specifying which cmdlets, functions, and external commands they can run.</source>
+          <target state="new"><bpt id="p1">**</bpt>Limit what users can do<ept id="p1">**</ept> by specifying which cmdlets, functions, and external commands they can run.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Better understand what your users are doing<ept id="p1">**</ept> with "over the shoulder" transcriptions that show you exactly what commands a user executed during a session.</source>
+          <target state="new"><bpt id="p1">**</bpt>Better understand what your users are doing<ept id="p1">**</ept> with "over the shoulder" transcriptions that show you exactly what commands a user executed during a session.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Why is this important?</source>
+          <target state="new">Why is this important?</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Consider the commmon scenario where your DNS servers are co-located with your Active Directory Domain Controllers.</source>
+          <target state="new">Consider the commmon scenario where your DNS servers are co-located with your Active Directory Domain Controllers.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Your DNS administrators need to have local administrator privileges to fix issues with the DNS server, but in order to do so you have to make them members of the highly privileged "Domain Admins" security group.</source>
+          <target state="new">Your DNS administrators need to have local administrator privileges to fix issues with the DNS server, but in order to do so you have to make them members of the highly privileged "Domain Admins" security group.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>This effectively gives them control over your whole domain and access to all resources on that machine.</source>
+          <target state="new">This effectively gives them control over your whole domain and access to all resources on that machine.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>With JEA in place, you can configure a role for your DNS admins that gives them access to all the commands they need to get their job done, but nothing more.</source>
+          <target state="new">With JEA in place, you can configure a role for your DNS admins that gives them access to all the commands they need to get their job done, but nothing more.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>This means they can easily repair a poisoned DNS cache without having rights to Active Directory, browse the file system, or run potentially dangerous scripts.</source>
+          <target state="new">This means they can easily repair a poisoned DNS cache without having rights to Active Directory, browse the file system, or run potentially dangerous scripts.</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Better yet, when the JEA session is configured to use one-time privileged virtual accounts, your DNS admins can connect to the server using <bpt id="p1">*</bpt>unprivileged<ept id="p1">*</ept> credentials and still be able to run privileged commands.</source>
+          <target state="new">Better yet, when the JEA session is configured to use one-time privileged virtual accounts, your DNS admins can connect to the server using <bpt id="p1">*</bpt>unprivileged<ept id="p1">*</ept> credentials and still be able to run privileged commands.</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Getting Started</source>
+          <target state="new">Getting Started</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Installation</source>
+          <target state="new">Installation</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>JEA is being developed alongside the upcoming Windows Server 2016 release, and is available on older versions of Windows through Windows Management Framework updates.</source>
+          <target state="new">JEA is being developed alongside the upcoming Windows Server 2016 release, and is available on older versions of Windows through Windows Management Framework updates.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>The current release of JEA is available on the following platforms:</source>
+          <target state="new">The current release of JEA is available on the following platforms:</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Windows Server</source>
+          <target state="new">Windows Server</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Windows Server 2016 Technical Preview 4 and higher</source>
+          <target state="new">Windows Server 2016 Technical Preview 4 and higher</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Windows Server 2012 R2, 2012, and 2008 R2<ph id="ph1">\*</ph> with <bpt id="p1">[</bpt>Windows Management Framework 5.0<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=50395)</ept> installed</source>
+          <target state="new">Windows Server 2012 R2, 2012, and 2008 R2<ph id="ph1">\*</ph> with <bpt id="p1">[</bpt>Windows Management Framework 5.0<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=50395)</ept> installed</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Windows Client</source>
+          <target state="new">Windows Client</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Windows 10 with the November Update (1511) installed</source>
+          <target state="new">Windows 10 with the November Update (1511) installed</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Windows 8.1, 8, and 7<ph id="ph1">\*</ph> with <bpt id="p1">[</bpt>Windows Management Framework 5.0<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=50395)</ept> installed</source>
+          <target state="new">Windows 8.1, 8, and 7<ph id="ph1">\*</ph> with <bpt id="p1">[</bpt>Windows Management Framework 5.0<ept id="p1">](https://www.microsoft.com/en-us/download/details.aspx?id=50395)</ept> installed</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Support for virtual accounts in JEA sessions is currently not available on Windows Server 2008 R2 or Windows 7.</source>
+          <target state="new">Support for virtual accounts in JEA sessions is currently not available on Windows Server 2008 R2 or Windows 7.</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Core concepts</source>
+          <target state="new">Core concepts</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>What exactly is JEA?</source>
+          <target state="new">What exactly is JEA?</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>JEA is an extension of PowerShell <bpt id="p1">[</bpt>constrained endpoints<ept id="p1">](http://blogs.technet.com/b/heyscriptingguy/archive/2014/03/31/introduction-to-powershell-endpoints.aspx)</ept> that adds in role definitions, virtual accounts, and several other improvements to make it even easier to lock down your management endpoints.</source>
+          <target state="new">JEA is an extension of PowerShell <bpt id="p1">[</bpt>constrained endpoints<ept id="p1">](http://blogs.technet.com/b/heyscriptingguy/archive/2014/03/31/introduction-to-powershell-endpoints.aspx)</ept> that adds in role definitions, virtual accounts, and several other improvements to make it even easier to lock down your management endpoints.</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>A JEA endpoint consists of a PowerShell Session Configuration file and one or more Role Capability files.</source>
+          <target state="new">A JEA endpoint consists of a PowerShell Session Configuration file and one or more Role Capability files.</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>What are Session Configuration and Role Capability files?</source>
+          <target state="new">What are Session Configuration and Role Capability files?</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>PowerShell Session Configuration files (.pssc) define <bpt id="p1">*</bpt>who<ept id="p1">*</ept> can connect to a PowerShell endpoint and <bpt id="p2">*</bpt>how<ept id="p2">*</ept> it is configured.</source>
+          <target state="new">PowerShell Session Configuration files (.pssc) define <bpt id="p1">*</bpt>who<ept id="p1">*</ept> can connect to a PowerShell endpoint and <bpt id="p2">*</bpt>how<ept id="p2">*</ept> it is configured.</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This is where you would map users and security groups to specific management roles and configure global settings like virtual accounts and transcription policies.</source>
+          <target state="new">This is where you would map users and security groups to specific management roles and configure global settings like virtual accounts and transcription policies.</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Session configuration files are specific to each machine, which allows you to control access on a per-machine basis if desired.</source>
+          <target state="new">Session configuration files are specific to each machine, which allows you to control access on a per-machine basis if desired.</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>PowerShell Role Capability files (.psrc) define <bpt id="p1">*</bpt>what<ept id="p1">*</ept> users belonging to a role are able to do on the system.</source>
+          <target state="new">PowerShell Role Capability files (.psrc) define <bpt id="p1">*</bpt>what<ept id="p1">*</ept> users belonging to a role are able to do on the system.</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Here, you can restrict which cmdlets, functions, providers, and external programs a user may use in their JEA session.</source>
+          <target state="new">Here, you can restrict which cmdlets, functions, providers, and external programs a user may use in their JEA session.</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Role Capability files are often generic for the role being served (DNS admin, level 1 helpdesk, read-only inventory auditing, etc.) and belong to PowerShell modules, making it easy to share them across your environment and with others.</source>
+          <target state="new">Role Capability files are often generic for the role being served (DNS admin, level 1 helpdesk, read-only inventory auditing, etc.) and belong to PowerShell modules, making it easy to share them across your environment and with others.</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>How does JEA leverage virtual accounts?</source>
+          <target state="new">How does JEA leverage virtual accounts?</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>In the PowerShell Session Configuration file, you can configure JEA sessions to use virtual "run as" accounts.</source>
+          <target state="new">In the PowerShell Session Configuration file, you can configure JEA sessions to use virtual "run as" accounts.</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Virtual accounts are one-time privileged accounts spun up for the specific connecting user in that specific session under which context the user's commands are executed.</source>
+          <target state="new">Virtual accounts are one-time privileged accounts spun up for the specific connecting user in that specific session under which context the user's commands are executed.</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Virtual accounts belong to the local "Administrators" security group by default, but can optionally be configured to only belong to security groups you specify.</source>
+          <target state="new">Virtual accounts belong to the local "Administrators" security group by default, but can optionally be configured to only belong to security groups you specify.</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Explore the experience guide</source>
+          <target state="new">Explore the experience guide</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Ready to create your first JEA endpoint?</source>
+          <target state="new">Ready to create your first JEA endpoint?</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Check out the <bpt id="p1">[</bpt>JEA Experience Guide<ept id="p1">](./JEA Guide.md)</ept> to learn how to author, deploy, and use your own JEA endpoint.</source>
+          <target state="new">Check out the <bpt id="p1">[</bpt>JEA Experience Guide<ept id="p1">](./JEA Guide.md)</ept> to learn how to author, deploy, and use your own JEA endpoint.</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>The guide gets you started quickly with a pre-built JEA endpoint to get an idea of how the end-user experience feels, then walks you through recreating the endpoint from scratch to help explain session configurations and Role Capabilities.</source>
+          <target state="new">The guide gets you started quickly with a pre-built JEA endpoint to get an idea of how the end-user experience feels, then walks you through recreating the endpoint from scratch to help explain session configurations and Role Capabilities.</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Start authoring your own JEA endpoints</source>
+          <target state="new">Start authoring your own JEA endpoints</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>It's easy to author a JEA endpoint -- all you need is a JEA-enabled system and a text editor (like PowerShell ISE).</source>
+          <target state="new">It's easy to author a JEA endpoint -- all you need is a JEA-enabled system and a text editor (like PowerShell ISE).</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>One helpful tip to get started is to create skeleton files using <ph id="ph1">`New-PSRoleCapabilityFile -Path &lt;path&gt;`</ph> and <ph id="ph2">`New-PSSessionCapabilityFile -Path &lt;Path&gt;`</ph> without any other arguments.</source>
+          <target state="new">One helpful tip to get started is to create skeleton files using <ph id="ph1">`New-PSRoleCapabilityFile -Path &lt;path&gt;`</ph> and <ph id="ph2">`New-PSSessionCapabilityFile -Path &lt;Path&gt;`</ph> without any other arguments.</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>These skeleton files contain all of the applicable configuration fields along with helpful comments to explain what each field can be used for.</source>
+          <target state="new">These skeleton files contain all of the applicable configuration fields along with helpful comments to explain what each field can be used for.</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>To make authoring JEA endpoints even easier, check out the <bpt id="p1">[</bpt>JEA Toolkit Helper<ept id="p1">](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx)</ept> which provides a GUI with which you can author Session Configuration and Role Capability files.</source>
+          <target state="new">To make authoring JEA endpoints even easier, check out the <bpt id="p1">[</bpt>JEA Toolkit Helper<ept id="p1">](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx)</ept> which provides a GUI with which you can author Session Configuration and Role Capability files.</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>It even supports generating Role Capabilities based on PowerShell logs to start you off with the commands your users regularly run to get their jobs done.</source>
+          <target state="new">It even supports generating Role Capabilities based on PowerShell logs to start you off with the commands your users regularly run to get their jobs done.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
