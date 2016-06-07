@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\metaConfig.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1ecef855e4bfc0ee0e5109fd0ecfb9ca395854d5</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4f63239" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a451e4b8c4483d9099fa69a553162bd0632ef59a</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-1b2f027" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -83,8 +83,8 @@
           <target state="new">The following shows a simple configuration that sets the LCM to push mode.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see <bpt id="p1">[</bpt>Compiling the configuration<ept id="p1">](configurations#compiling-the-configuration)</ept>).</source>
-          <target state="new">You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see <bpt id="p1">[</bpt>Compiling the configuration<ept id="p1">](configurations#compiling-the-configuration)</ept>).</target>
+          <source>You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see <bpt id="p1">[</bpt>Compiling the configuration<ept id="p1">](configurations.md#compiling-the-configuration)</ept>).</source>
+          <target state="new">You call and run the configuration to create the configuration MOF, just as you would a normal configuration (for information on creating the configuration MOF, see <bpt id="p1">[</bpt>Compiling the configuration<ept id="p1">](configurations.md#compiling-the-configuration)</ept>).</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>Unlike normal configurations, you do not enact an LCM configuration by calling the <bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](https://technet.microsoft.com/en-us/library/dn521623.aspx)</ept> cmdlet.</source>
