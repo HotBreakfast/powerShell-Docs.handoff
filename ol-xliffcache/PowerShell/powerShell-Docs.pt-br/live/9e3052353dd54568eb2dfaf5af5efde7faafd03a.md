@@ -1,5 +1,5 @@
 ---
-title:   PowerShell Desired State Configuration partial configurations
+title:   Configurações parciais da Configuração de Estado Desejado do PowerShell
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,19 +9,19 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# PowerShell Desired State Configuration partial configurations
+# Configurações parciais da Configuração de Estado Desejado do PowerShell
 
->Applies To: Windows PowerShell 5.0
+>Aplica-se a: Windows PowerShell 5.0
 
-In PowerShell 5.0, Desired State Configuration (DSC) allows configurations to be delivered in fragments and from multiple sources. The Local Configuration Manager (LCM) on the target node puts the fragments together before applying them as a single configuration. This capability allows sharing control of configuration between teams or individuals. For example, if two or more teams of developers are collaborating on a service, they might each want to create configurations to manage their part of the service. Each of these configurations could be pulled from different pull servers, and they could be added at different stages of development. Partial configurations also allow different individuals or teams to control different aspects of configuring nodes without having to coordinate the editing of a single configuration document. For example, one team might be responsible for deploying a VM and operating system, while another team might deploy other applications and services on that VM. With partial configurations, each team can create its own configuration, without either of them being unnecessarily complicated.
+No PowerShell 5.0, a Configuração de Estado Desejado (DSC) permite que as configurações sejam entregues em fragmentos e de várias fontes. O Gerenciador de Configurações Local (LCM) no nó de destino reúne os fragmentos antes de aplicá-los como uma única configuração. Essa capacidade permite compartilhar o controle de configuração entre equipes ou pessoas. Por exemplo, se duas ou mais equipes de desenvolvedores estiverem colaborando em um serviço, cada uma poderá querer criar configurações para gerenciar sua parte do serviço. Cada uma dessas configurações pode ser extraída de servidores de pull diferentes e adicionada em diferentes estágios do desenvolvimento. Configurações parciais também permitem que diferentes pessoas ou equipes controlem diferentes aspectos da configuração de nós sem a necessidade de coordenar a edição de um documento único de configuração. Por exemplo, uma equipe pode ser responsável por implantar uma VM e o sistema operacional, enquanto outra equipe pode implantar outros aplicativos e serviços em tal VM. Com configurações parciais, cada equipe pode criar sua própria configuração, sem complicações desnecessárias.
 
-You can use partial configurations in push mode, pull mode, or a combination of the two.
+É possível usar configurações parciais no modo de push, no modo de pull ou em uma combinação de ambos.
 
-## Partial configurations in push mode
-To use partial configurations in push mode, you configure the LCM on the target node to receive the partial configurations. Each partial configuration must be pushed to the target by using the Publish-DSCConfiguration cmdlet. The target node then combines the partial configuration into a single configuration, and you can apply the configuration by calling the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet.
+## Configurações parciais no modo de push
+Para usar configurações parciais no modo de push, o LCM é configurado no nó de destino para receber as configurações parciais. Cada configuração parcial deve ser enviada por push para o destino usando o cmdlet Publish-DSCConfiguration. Em seguida, o nó de destino combina a configuração parcial em uma única configuração; pode-se aplicar a configuração chamando o cmdlet [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx).
 
-### Configuring the LCM for push-mode partial configurations
-To configure the LCM for partial configurations in push mode, you create a **DSCLocalConfigurationManager** configuration with one **PartialConfiguration** block for each partial configuration. For more information about configuring the LCM, see [Windows Configuring the Local Configuration Manager](https://technet.microsoft.com/en-us/library/mt421188.aspx). The following example shows an LCM configuration that expects two partial configurations—one that deploys the OS, and one that deploys and configures SharePoint.
+### Configurando o LCM para configurações parciais no modo de push
+Para configurar o LCM para configurações parciais no modo de push, é criada uma configuração **DSCLocalConfigurationManager** com um bloco **PartialConfiguration** para cada configuração parcial. Para obter mais informações sobre como configurar o LCM, consulte [Configurando o Gerenciador de Configurações Local com o Windows](https://technet.microsoft.com/en-us/library/mt421188.aspx). O exemplo a seguir mostra uma configuração do LCM que espera duas configurações parciais—uma que implanta o sistema operacional e outra que implanta e configura o SharePoint.
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -45,31 +45,24 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-The **RefreshMode** for each partial configuration is set to "Push". The names of the **PartialConfiguration** blocks (in this case, "OSInstall" and "SharePointConfig") must match 
-exactly the names of the configurations that are pushed to the target node.
+O **RefreshMode** para cada configuração parcial é definido como "Push". Os nomes dos blocos **PartialConfiguration** (nesse caso, "OSInstall" e "SharePointConfig") devem corresponder exatamente aos nomes das configurações que são enviados por push para o nó de destino.
 
-### Publishing and starting push-mode partial configurations
-![PartialConfig folder structure](./images/PartialConfig1.jpg)
+### Publicando e iniciando configurações parciais no modo de push
+![Estrutura da pasta PartialConfig](./images/PartialConfig1.jpg)
 
-You then call **Publish-DSCConfiguration** for each configuration, passing the folders that contain the configuration documents as the Path parameters. After publishing both configurations, 
-you can call `Start-DSCConfiguration –UseExisting` on the target node.
+A seguir, chame **Publish-DSCConfiguration** para cada configuração, passando as pastas que contêm os documentos de configuração como os parâmetros Path. Depois de publicar as duas configurações, é possível chamar `Start-DSCConfiguration –UseExisting` no nó de destino.
 
-## Partial configurations in pull mode
+## Configurações parciais no modo de pull
 
-Partial configurations can be pulled from one or more pull servers (for more information about pull servers, see [Windows PowerShell Desired State Configuration Pull Servers](pullServer.md). 
-To do this, you have to configure the LCM on the target node to pull the partial configurations, and name and locate the configuration documents properly on the pull servers.
+Configurações parciais podem ser extraídas por push de um ou mais servidores de pull (para obter mais informações sobre servidores de pull, consulte [Servidores de Pull de Configuração de Estado Desejado do Windows PowerShell](pullServer.md). Para fazer isso, você precisa configurar o LCM no nó de destino a fim de extrair por push as configurações parciais, bem como nomear e localizar os documentos de configuração corretamente nos servidores de pull.
 
-### Configuring the LCM for pull node configurations
+### Configurando o LCM para configurações no nó de pull
 
-To configure the LCM to pull partial configurations from a pull server, you define the pull server in either a **ConfigurationRepositoryWeb** (for an HTTP pull server) or 
-**ConfigurationRepositoryShare** (for an SMB pull server) block. You then create **PartialConfiguration** blocks that refer to the pull server by using the **ConfigurationSource** 
-property. You also need to create a **Settings** block to specify that the LCM uses pull mode, and to specify the **ConfigurationNames** or **ConfigurationID** that the pull server and 
-target node use to identify the configurations. The following meta-configuration defines an HTTP pull server named CONTOSO-PullSrv and two partial configurations that use that pull server.
+Para configurar o LCM para efetuar o pull de configurações parciais de um servidor de pull, defina o servidor de pull em um bloco **ConfigurationRepositoryWeb** (para um servidor de pull de HTTP) ou **ConfigurationRepositoryShare** (para um servidor de pull de SMB). Em seguida, crie blocos **PartialConfiguration** que se refiram ao servidor de pull, usando a propriedade **ConfigurationSource**. Também é necessário criar um bloco **Settings** para especificar que o LCM usa o modo de pull, além de especificar o **ConfigurationNames** ou o **ConfigurationID** que o servidor de pull e o nó de destino usam para identificar as configurações. A metaconfiguração a seguir define um servidor de pull de HTTP denominado CONTOSO-PullSrv e duas configurações parciais que usam um servidor de pull.
 
-For more information about configuring the LCM using **ConfigurationNames**, see [Setting up a pull client using configuration names](pullClientConfigNames.md). For information about
-configuring the LCM using **ConfigurationID**, see [Setting up a pull client using configuration ID](pullClientConfigID.md).
+Para obter mais informações sobre como configurar um LCM usando **ConfigurationNames**, consulte [Configurando um cliente de pull usando nomes de configuração](pullClientConfigNames.md). Para obter mais informações sobre como configurar um LCM usando **ConfigurationID**, consulte [Configurando um cliente de pull usando a ID de configuração](pullClientConfigID.md).
 
-#### Configuring the LCM for pull mode configurations using configuration names
+#### Configurando o LCM para configurações de modo de pull usando os nomes de configuração
 
 ```powershell
 [DscLocalConfigurationManager()]
@@ -107,7 +100,7 @@ Configuration PartialConfigDemoConfigNames
 }
 ``` 
 
-#### Configuring the LCM for pull mode configurations using ConfigurationID
+#### Configurando o LCM para configurações de modo de pull usando ConfigurationID
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -146,18 +139,13 @@ configuration PartialConfigDemoConfigID
 PartialConfigDemo 
 ```
 
-You can pull partial configurations from more than one pull server—you would just need to define each pull server, and then refer to the appropriate pull server in each PartialConfiguration 
-block.
+Você pode extrair configurações parciais de mais de um servidor de pull—precisaria apenas definir cada servidor de pull e referir-se ao servidor de pull apropriado em cada bloco PartialConfiguration.
 
-After creating the meta-configuration, you must run it to create a configuration document (a MOF file), and then call 
-[Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621(v=wps.630).aspx) to configure the LCM.
+Depois de criar a metaconfiguração, deve executá-la para criar um documento de configuração (um arquivo MOF) e, em seguida, chamar [Set-DscLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621(v=wps.630).aspx) para configurar o LCM.
 
-### Naming and placing the configuration documents on the pull server (ConfigurationNames)
+### Nomeando e colocando os documentos de configuração no servidor de pull (ConfigurationNames)
 
-The partial configuration documents must be placed in the folder specified as the **ConfigurationPath** in the `web.config` file for the pull server 
-(typically `C:\Program Files\WindowsPowerShell\DscService\Configuration`). The configuration documents must be named as follows: `ConfigurationName.mof`, 
-where _ConfigurationName_ is the name of the partial configuration. For our example, the configuration 
-documents should be named as follows:
+Os documentos de configuração parcial devem ser colocados na pasta especificada como o **ConfigurationPath** no arquivo `web.config` para o servidor de pull (geralmente `C:\Program Files\WindowsPowerShell\DscService\Configuration`). Os documentos de configuração devem ser nomeados da seguinte maneira: `ConfigurationName.mof`, em que _ConfigurationName_ é o nome da configuração parcial. Para nosso exemplo, os documentos de configuração devem ser nomeados da seguinte maneira:
 
 ```
 OSInstall.mof
@@ -166,12 +154,9 @@ SharePointConfig.mof
 SharePointConfig.mof.checksum
 ```
 
-### Naming and placing the configuration documents on the pull server (ConfigurationID)
+### Nomeando e colocando os documentos de configuração no servidor de pull (ConfigurationID)
 
-The partial configuration documents must be placed in the folder specified as the **ConfigurationPath** in the `web.config` file for the pull server 
-(typically `C:\Program Files\WindowsPowerShell\DscService\Configuration`). The configuration documents must be named as follows: _ConfigurationName_. _ConfigurationID_`.mof`, 
-where _ConfigurationName_ is the name of the partial configuration and _ConfigurationID_ is the configuration ID defined in the LCM on the target node. For our example, the configuration 
-documents should be named as follows:
+Os documentos de configuração parcial devem ser colocados na pasta especificada como o **ConfigurationPath** no arquivo `web.config` para o servidor de pull (geralmente `C:\Program Files\WindowsPowerShell\DscService\Configuration`). Os documentos de configuração devem ser nomeados da seguinte maneira: _ConfigurationName_. _ConfigurationID_`.mof`, em que _ConfigurationName_ é o nome da configuração parcial e _ConfigurationID_ é a ID de configuração definida no LCM no nó de destino. Para nosso exemplo, os documentos de configuração devem ser nomeados da seguinte maneira:
 
 ```
 OSInstall.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof
@@ -181,19 +166,16 @@ SharePointConfig.1d545e3b-60c3-47a0-bf65-5afc05182fd0.mof.checksum
 ```
 
 
-### Running partial configurations from a pull server
+### Executando configurações parciais de um servidor de pull
 
-After the LCM on the target node has been configured, and the configuration documents have been created and properly named on the pull server, the target node will pull the partial 
-configurations, combine them, and apply the resulting configuration at regular intervals as specified by the **RefreshFrequencyMins** property of the LCM. If you want to force a refresh, 
-you can call the [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541.aspx) cmdlet, to pull the configurations, and then `Start-DSCConfiguration –UseExisting` 
-to apply them.
+Depois que o LCM no nó de destino tiver sido configurado e os documentos de configuração tiverem sido criados e chamados corretamente no servidor de pull, o nó de destino vai efetuar o pull das configurações parciais, combiná-las e aplicar a configuração resultante em intervalos regulares, conforme especificado pela propriedade **RefreshFrequencyMins** do LCM. Se você quiser forçar uma atualização, poderá chamar o cmdlet [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541.aspx) para efetuar o pull das configurações e, em seguida, `Start-DSCConfiguration –UseExisting` para aplicá-las.
 
 
-## Partial configurations in mixed push and pull modes
+## Configurações parciais nos modos de push e pull combinados
 
-You can also mix push and pull modes for partial configurations. That is, you could have one partial configuration that is pulled from a pull server, while another partial configuration is pushed. Treat each partial configuration as you would, depending on its refresh mode as described in the previous sections. For example, the following meta-configuration describes the same example, with the operating system partial configuration in pull mode and the SharePoint partial configuration in push mode.
+Também é possível combinar os modos de push e pull para configurações parciais. Ou seja, você pode ter uma configuração parcial que é extraída por pull de um servidor de pull, enquanto outra configuração parcial é enviada por push. Trate cada configuração parcial como quiser, dependendo do modo de atualização, conforme descrito nas seções anteriores. Por exemplo, a metaconfiguração a seguir descreve o mesmo exemplo, com a configuração parcial do sistema operacional no modo de pull e a configuração parcial do SharePoint no modo de push.
 
-### Mixed push and pull modes using ConfigurationNames
+### Modos de pull e push mistos usando ConfigurationNames
 
 ```powershell
 [DscLocalConfigurationManager()]
@@ -232,7 +214,7 @@ Configuration PartialConfigDemoConfigNames
 }
 ``` 
 
-### Mixed push and pull modes using ConfigurationID
+### Modos de pull e push mistos usando ConfigurationID
 
 ```powershell
 [DSCLocalConfigurationManager()]
@@ -270,11 +252,11 @@ configuration PartialConfigDemo
 PartialConfigDemo 
 ```
 
-Note that the **RefreshMode** specified in the Settings block is "Pull", but the **RefreshMode** for the OSInstall partial configuration is "Push".
+Observe que o **RefreshMode** especificado no bloco Settings é "Pull", mas o **RefreshMode** para a configuração parcial OSInstall é "Push".
 
-Name and locate the configuration MOF files as described above for their respective refresh modes. Call **Publish-DSCConfiguration** to publish the `SharePointInstall` partial configuration, and either wait for the `OSInstall` configuration to be pulled from the pull server, or force a refresh by calling [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx).
+É necessário nomear e localizar os documentos do MOF de configuração, conforme descrito acima, para os respectivos modos de atualização. Chame o **Publish-DSCConfiguration** para publicar a configuração parcial do `SharePointInstall` e aguardar até a configuração do `OSInstall` ser extraída por pull do servidor de pull ou forçar uma atualização chamando [Update-DscConfiguration](https://technet.microsoft.com/en-us/library/mt143541(v=wps.630).aspx).
 
-## Example OSInstall Partial Configuration
+## Exemplo de configuração parcial do OSInstall 
 
 ```powershell
 Configuration OSInstall
@@ -311,7 +293,7 @@ Configuration OSInstall
 OSInstall
 
 ```
-## Example SharePointConfig Partial Configuration
+## Exemplo de configuração parcial do SharePointConfig
 ```powershell
 Configuration SharePointConfig
 {
@@ -335,9 +317,14 @@ Configuration SharePointConfig
 }
 SharePointConfig
 ```
-##See Also 
+##Consulte Também 
 
-**Concepts**
-[Windows PowerShell Desired State Configuration Pull Servers](pullServer.md) 
-[Windows Configuring the Local Configuration Manager](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+**Conceitos**
+[Servidores de pull da Configuração do Estado Desejado do Windows PowerShell](pullServer.md) 
+[Configurando o Gerenciador de Configurações local](https://technet.microsoft.com/en-us/library/mt421188.aspx) 
+
+
+
+<!--HONumber=May16_HO4-->
+
 
