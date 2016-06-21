@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\sxsResource.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e8d591c59eb1052184fd8e828780612d6ca32d93</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">716ecd9b14976dd70b69a740850ab53670387956</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4c0f30d" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -83,8 +83,8 @@
           <target state="new">In PowerShell 4.0, you can specify a module version by passing a module specification object to the ModuleName parameter of Import-DscResource.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>A module specification object is a hashtable that contains ModuleName and RequiredVersion  keys.</source>
-          <target state="new">A module specification object is a hashtable that contains ModuleName and RequiredVersion  keys.</target>
+          <source>A module specification object is a hash table that contains ModuleName and RequiredVersion  keys.</source>
+          <target state="new">A module specification object is a hash table that contains ModuleName and RequiredVersion  keys.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>For example:</source>
