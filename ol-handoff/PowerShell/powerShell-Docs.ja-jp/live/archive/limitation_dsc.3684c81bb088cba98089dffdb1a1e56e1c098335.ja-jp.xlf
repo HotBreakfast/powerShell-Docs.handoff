@@ -4,8 +4,9 @@
     <header>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fe1c40cbfd2c76f45d170b82d8a099e860b15db8</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-ac20adc" tool-company="Microsoft" />
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\limitation_dsc.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ad262a8f38b79f748757c1503a5e7173a1010923</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4c0f30d" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -276,6 +277,18 @@
         <trans-unit id="167" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Import the required version by defining the <bpt id="p2">*</bpt>ModuleSpecification<ept id="p2">*</ept> object to the <ph id="ph1">`-ModuleName`</ph> with <ph id="ph2">`RequiredVersion`</ph> key specified as follows:</source>
           <target state="new"><bpt id="p1">**</bpt>Resolution:<ept id="p1">**</ept> Import the required version by defining the <bpt id="p2">*</bpt>ModuleSpecification<ept id="p2">*</ept> object to the <ph id="ph1">`-ModuleName`</ph> with <ph id="ph2">`RequiredVersion`</ph> key specified as follows:</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Some DSC resources like registry resource may start to take a long time to process the request.</source>
+          <target state="new">Some DSC resources like registry resource may start to take a long time to process the request.</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution1:<ept id="p1">**</ept> Create a schedule task that cleans up the following folder periodically.</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution1:<ept id="p1">**</ept> Create a schedule task that cleans up the following folder periodically.</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Resolution2:<ept id="p1">**</ept> Change the DSC configuration to clean up the <bpt id="p2">*</bpt>CommandAnalysis<ept id="p2">*</ept> folder at the end of the configuration.</source>
+          <target state="new"><bpt id="p1">**</bpt>Resolution2:<ept id="p1">**</ept> Change the DSC configuration to clean up the <bpt id="p2">*</bpt>CommandAnalysis<ept id="p2">*</ept> folder at the end of the configuration.</target>
         </trans-unit>
       </group>
     </body>

@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\msft-dsclocalconfigurationmanager.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7fe92c1266593dd98ab6933fb408558effda5ccb</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4f63239" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b9cb89bb120151df69e3cb26b50c3a0d15c23711</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4c0f30d" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -35,8 +35,8 @@
           <target state="new">Members</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p1">**</bpt>MSFT_DSCLocalConfigurationManager<ept id="p1">**</ept> class has the follwing members:</source>
-          <target state="new">The <bpt id="p1">**</bpt>MSFT_DSCLocalConfigurationManager<ept id="p1">**</ept> class has the follwing members:</target>
+          <source>The <bpt id="p1">**</bpt>MSFT_DSCLocalConfigurationManager<ept id="p1">**</ept> class has the following members:</source>
+          <target state="new">The <bpt id="p1">**</bpt>MSFT_DSCLocalConfigurationManager<ept id="p1">**</ept> class has the following members:</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>[Methods][]</source>
@@ -167,8 +167,8 @@
           <target state="new">SendConfiguration</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source>Send the configuration document to the managed node and save it as pendingSends the configuration document to the managed node and saves it as a pending change.</source>
-          <target state="new">Send the configuration document to the managed node and save it as pendingSends the configuration document to the managed node and saves it as a pending change.</target>
+          <source>Sends the configuration document to the managed node and saves it as a pending change.</source>
+          <target state="new">Sends the configuration document to the managed node and saves it as a pending change.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
           <source>SendConfigurationApply</source>
