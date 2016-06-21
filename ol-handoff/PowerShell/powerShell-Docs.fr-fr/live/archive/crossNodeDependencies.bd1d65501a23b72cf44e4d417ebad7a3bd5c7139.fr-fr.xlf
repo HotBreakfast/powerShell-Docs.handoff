@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\crossNodeDependencies.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">12ec3c770e592b1c1f43a9150eaaa1964f427363</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f4c64d3603fd01f29a63f8b180057714bf3d1197</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4c0f30d" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -59,12 +59,12 @@
           <target state="new">You then use the <bpt id="p1">**</bpt>DependsOn<ept id="p1">**</ept> property in any other resource blocks in your configuration to wait for the conditions specified in the <bpt id="p2">**</bpt>WaitForXXXX<ept id="p2">**</ept> node to succeed.</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>For example, in the following configuration, the target node is waiting for the <bpt id="p1">**</bpt>xADDomain<ept id="p1">**</ept> resource to finish on the <bpt id="p2">**</bpt>MyDC<ept id="p2">**</ept> node with 30, at 15-second intervals, before the target node can join the domain.</source>
-          <target state="new">For example, in the following configuration, the target node is waiting for the <bpt id="p1">**</bpt>xADDomain<ept id="p1">**</ept> resource to finish on the <bpt id="p2">**</bpt>MyDC<ept id="p2">**</ept> node with 30, at 15-second intervals, before the target node can join the domain.</target>
+          <source>For example, in the following configuration, the target node is waiting for the <bpt id="p1">**</bpt>xADDomain<ept id="p1">**</ept> resource to finish on the <bpt id="p2">**</bpt>MyDC<ept id="p2">**</ept> node with maximum number of 30 retries, at 15-second intervals, before the target node can join the domain.</source>
+          <target state="new">For example, in the following configuration, the target node is waiting for the <bpt id="p1">**</bpt>xADDomain<ept id="p1">**</ept> resource to finish on the <bpt id="p2">**</bpt>MyDC<ept id="p2">**</ept> node with maximum number of 30 retries, at 15-second intervals, before the target node can join the domain.</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>NOte:<ept id="p1">**</ept> By default the WaitForXXX resources try one time and then fail.</source>
-          <target state="new"><bpt id="p1">**</bpt>NOte:<ept id="p1">**</ept> By default the WaitForXXX resources try one time and then fail.</target>
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> By default the WaitForXXX resources try one time and then fail.</source>
+          <target state="new"><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> By default the WaitForXXX resources try one time and then fail.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>Although it is not required, you will typically want to specify a retry interval and count.</source>

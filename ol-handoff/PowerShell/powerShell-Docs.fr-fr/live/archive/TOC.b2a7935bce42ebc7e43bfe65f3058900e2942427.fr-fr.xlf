@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\TOC.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2ec3eca1fb7ce214b2b860ad763da69210f4ca37</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">924d5878a6d93e846adbd9cb4c69bea79e104bcd</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4c0f30d" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -131,20 +131,20 @@
           <target state="new">Composite resources</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
-          <source>Debugging DSC resources</source>
-          <target state="new">Debugging DSC resources</target>
-        </trans-unit>
-        <trans-unit id="132" translate="yes" xml:space="preserve">
-          <source>Calling DSC resource methods directly</source>
-          <target state="new">Calling DSC resource methods directly</target>
-        </trans-unit>
-        <trans-unit id="133" translate="yes" xml:space="preserve">
           <source>Writing a single-instance DSC resource (best practice)</source>
           <target state="new">Writing a single-instance DSC resource (best practice)</target>
         </trans-unit>
-        <trans-unit id="134" translate="yes" xml:space="preserve">
+        <trans-unit id="132" translate="yes" xml:space="preserve">
           <source>Resource authoring checklist</source>
           <target state="new">Resource authoring checklist</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Debugging DSC resources</source>
+          <target state="new">Debugging DSC resources</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Calling DSC resource methods directly</source>
+          <target state="new">Calling DSC resource methods directly</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
           <source>Configuring the Local Configuration Manager (LCM)</source>

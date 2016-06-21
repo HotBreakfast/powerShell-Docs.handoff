@@ -5,8 +5,8 @@
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Installing-Windows-PowerShell.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce32a9cfd2f0b80ae9697ad4f75695a4aacfabee</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">415e68b372c831ed8dd4535c2968e5a36b5cb65d</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-4c0f30d" tool-company="Microsoft" />
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +19,8 @@
           <target state="new">Installing Windows PowerShell</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>WindowsÂ® 8 and Windows ServerÂ® 2012 include Windows PowerShell 3.0 and all of its prerequisites.</source>
-          <target state="new">WindowsÂ® 8 and Windows ServerÂ® 2012 include Windows PowerShell 3.0 and all of its prerequisites.</target>
+          <source>Windows® 8 and Windows Server® 2012 include Windows PowerShell 3.0 and all of its prerequisites.</source>
+          <target state="new">Windows® 8 and Windows Server® 2012 include Windows PowerShell 3.0 and all of its prerequisites.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>The system also includes the Windows PowerShell 2.0 engine for backward compatibility with host programs that cannot use Windows PowerShell 3.0.</source>
@@ -71,8 +71,8 @@
           <target state="new">Windows PowerShell Integrated Scripting Environment (ISE) is installed and enabled.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>For information about starting Windows PowerShell, see <bpt id="p1">[</bpt>Starting Windows PowerShell on Windows 8<ept id="p1">](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3)</ept> and <bpt id="p2">[</bpt>Starting Windows PowerShell on Windows Server 2012<ept id="p2">](https://technet.microsoft.com/en-us/library/4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968)</ept>.</source>
-          <target state="new">For information about starting Windows PowerShell, see <bpt id="p1">[</bpt>Starting Windows PowerShell on Windows 8<ept id="p1">](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3)</ept> and <bpt id="p2">[</bpt>Starting Windows PowerShell on Windows Server 2012<ept id="p2">](https://technet.microsoft.com/en-us/library/4fc0110a-cc0c-42a4-bbb5-3cc89a0fc968)</ept>.</target>
+          <source>For information about starting Windows PowerShell, see <bpt id="p1">[</bpt>Starting Windows PowerShell on Windows 8<ept id="p1">](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3)</ept> and <bpt id="p2">[</bpt>Starting Windows PowerShell on Windows Server 2012<ept id="p2">](https://technet.microsoft.com/library/hh831491.aspx#BKMK_powershell)</ept>.</source>
+          <target state="new">For information about starting Windows PowerShell, see <bpt id="p1">[</bpt>Starting Windows PowerShell on Windows 8<ept id="p1">](https://technet.microsoft.com/en-us/library/d7be1668-8617-4890-ad90-dd9765fbd2c3)</ept> and <bpt id="p2">[</bpt>Starting Windows PowerShell on Windows Server 2012<ept id="p2">](https://technet.microsoft.com/library/hh831491.aspx#BKMK_powershell)</ept>.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>Installing Windows PowerShell on Windows 7 and Windows Server 2008 R2</source>
@@ -99,12 +99,12 @@
           <target state="new">To install Windows PowerShell 3.0</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</source>
-          <target state="new">Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</target>
+          <source>Install the full installation of Microsoft .NET Framework 4 (dotNetFx40<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</source>
+          <target state="new">Install the full installation of Microsoft .NET Framework 4 (dotNetFx40<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>Or, install Microsoft .NET Framework 4.5 (dotNetFx45\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</source>
-          <target state="new">Or, install Microsoft .NET Framework 4.5 (dotNetFx45\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</target>
+          <source>Or, install Microsoft .NET Framework 4.5 (dotNetFx45<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</source>
+          <target state="new">Or, install Microsoft .NET Framework 4.5 (dotNetFx45<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>Install Windows Management Framework 3.0 from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=240290<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=240290)</ept>.</source>
@@ -203,12 +203,12 @@
           <target state="new">Install Windows Management Framework (Windows PowerShell 2.0, KB 968930) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkId=243035<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=243035)</ept>.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</source>
-          <target state="new">Install the full installation of Microsoft .NET Framework 4 (dotNetFx40\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</target>
+          <source>Install the full installation of Microsoft .NET Framework 4 (dotNetFx40<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</source>
+          <target state="new">Install the full installation of Microsoft .NET Framework 4 (dotNetFx40<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=212547<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=212547)</ept>.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source>Or, install Microsoft .NET Framework 4.5 (dotNetFx45\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</source>
-          <target state="new">Or, install Microsoft .NET Framework 4.5 (dotNetFx45\_Full\_setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</target>
+          <source>Or, install Microsoft .NET Framework 4.5 (dotNetFx45<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</source>
+          <target state="new">Or, install Microsoft .NET Framework 4.5 (dotNetFx45<ph id="ph1">\_</ph>Full<ph id="ph2">\_</ph>setup.exe) from the Microsoft Download Center at <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=242919<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=242919)</ept>.</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
           <source>Install "Extended Protection for Authentication" (KB 968389) from <bpt id="p1">[</bpt>http://go.microsoft.com/fwlink/?LinkID=186398<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=186398)</ept>.</source>
