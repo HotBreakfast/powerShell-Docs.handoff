@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\TOC.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c3d86239550566a7704405930f72c598d140cdb8</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-48076a9" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>PowerShell Scripting</source>
+          <target state="new">PowerShell Scripting</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>What's new with PowerShell</source>
+          <target state="new">What's new with PowerShell</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>PowerShell v5.0</source>
+          <target state="new">PowerShell v5.0</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>PowerShell 5.0 ISE</source>
+          <target state="new">PowerShell 5.0 ISE</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Setup</source>
+          <target state="new">Setup</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>PowerShell System Requirements</source>
+          <target state="new">PowerShell System Requirements</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Installing  PowerShell</source>
+          <target state="new">Installing  PowerShell</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Starting PowerShell</source>
+          <target state="new">Starting PowerShell</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Starting the 32-Bit Version of PowerShell</source>
+          <target state="new">Starting the 32-Bit Version of PowerShell</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Starting PowerShell on Earlier Versions of Windows</source>
+          <target state="new">Starting PowerShell on Earlier Versions of Windows</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Installing the Windows PowerShell 2.0 Engine</source>
+          <target state="new">Installing the Windows PowerShell 2.0 Engine</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Starting the Windows PowerShell 2.0 Engine</source>
+          <target state="new">Starting the Windows PowerShell 2.0 Engine</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Installing the Windows PowerShell SDK</source>
+          <target state="new">Installing the Windows PowerShell SDK</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Security</source>
+          <target state="new">Security</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>PowerShell Remoting Security Considerations</source>
+          <target state="new">PowerShell Remoting Security Considerations</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Accessibility</source>
+          <target state="new">Accessibility</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Getting Started</source>
+          <target state="new">Getting Started</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Basic setup for learning PowerShell</source>
+          <target state="new">Basic setup for learning PowerShell</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Fundamental Concepts</source>
+          <target state="new">Fundamental Concepts</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>PowerShell Basics</source>
+          <target state="new">PowerShell Basics</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Getting Detailed Help Information</source>
+          <target state="new">Getting Detailed Help Information</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Exploring the Windows PowerShell ISE</source>
+          <target state="new">Exploring the Windows PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Getting Information About Commands</source>
+          <target state="new">Getting Information About Commands</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Learning  PowerShell Names</source>
+          <target state="new">Learning  PowerShell Names</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Using Windows PowerShell for Administration</source>
+          <target state="new">Using Windows PowerShell for Administration</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Using Variables to Store Objects</source>
+          <target state="new">Using Variables to Store Objects</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>About Windows PowerShell</source>
+          <target state="new">About Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Integrated Scripting Environment -ISE-</source>
+          <target state="new">Windows PowerShell Integrated Scripting Environment -ISE-</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Understanding Important Windows PowerShell Concepts -ISE-</source>
+          <target state="new">Understanding Important Windows PowerShell Concepts -ISE-</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Understanding the  PowerShell Pipeline</source>
+          <target state="new">Understanding the  PowerShell Pipeline</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Using Familiar Command Names</source>
+          <target state="new">Using Familiar Command Names</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Object Pipeline</source>
+          <target state="new">Object Pipeline</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Scripting with Windows PowerShell</source>
+          <target state="new">Scripting with Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Using Windows PowerShell</source>
+          <target state="new">Using Windows PowerShell</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Basic Cookbooks</source>
+          <target state="new">Basic Cookbooks</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Changing Computer State</source>
+          <target state="new">Changing Computer State</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Collecting Information About Computers</source>
+          <target state="new">Collecting Information About Computers</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Compatibility Aliases</source>
+          <target state="new">Compatibility Aliases</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>Creating .NET and COM Objects -New-Object-</source>
+          <target state="new">Creating .NET and COM Objects -New-Object-</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Creating a Custom Input Box</source>
+          <target state="new">Creating a Custom Input Box</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Creating a Custom PowerShell Shortcut</source>
+          <target state="new">Creating a Custom PowerShell Shortcut</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Creating a Graphical Date Picker</source>
+          <target state="new">Creating a Graphical Date Picker</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Getting WMI Objects -Get-WmiObject-</source>
+          <target state="new">Getting WMI Objects -Get-WmiObject-</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Managing Processes with Process Cmdlets</source>
+          <target state="new">Managing Processes with Process Cmdlets</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Managing Services</source>
+          <target state="new">Managing Services</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Managing Windows PowerShell Drives</source>
+          <target state="new">Managing Windows PowerShell Drives</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Managing-Current-Location</source>
+          <target state="new">Managing-Current-Location</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Manipulating Items Directly</source>
+          <target state="new">Manipulating Items Directly</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Multiple selection List Boxes</source>
+          <target state="new">Multiple selection List Boxes</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Other Useful Scripting Objects</source>
+          <target state="new">Other Useful Scripting Objects</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Performing Networking Tasks</source>
+          <target state="new">Performing Networking Tasks</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>PowerShell Get Module</source>
+          <target state="new">PowerShell Get Module</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Redirecting Data with Out-* Cmdlets</source>
+          <target state="new">Redirecting Data with Out-* Cmdlets</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Removing Objects from the Pipeline -Where-Object-</source>
+          <target state="new">Removing Objects from the Pipeline -Where-Object-</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Repeating a Task for Multiple Objects -ForEach-Object-</source>
+          <target state="new">Repeating a Task for Multiple Objects -ForEach-Object-</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Selecting Items from a List Box</source>
+          <target state="new">Selecting Items from a List Box</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Selecting Parts of Objects -Select-Object-</source>
+          <target state="new">Selecting Parts of Objects -Select-Object-</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Sorting Objects</source>
+          <target state="new">Sorting Objects</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Using Format Commands to Change Output View</source>
+          <target state="new">Using Format Commands to Change Output View</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Using Static Classes and Methods</source>
+          <target state="new">Using Static Classes and Methods</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Viewing Object Structure -Get-Member-</source>
+          <target state="new">Viewing Object Structure -Get-Member-</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Working With Files Folders and Registry Keys</source>
+          <target state="new">Working With Files Folders and Registry Keys</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Working with Files and Folders</source>
+          <target state="new">Working with Files and Folders</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Working with Objects</source>
+          <target state="new">Working with Objects</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Working with Printers</source>
+          <target state="new">Working with Printers</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Working with Registry Entries</source>
+          <target state="new">Working with Registry Entries</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Working with Registry Keys</source>
+          <target state="new">Working with Registry Keys</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>Working with Software Installations</source>
+          <target state="new">Working with Software Installations</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>Where can I go for more learning?</source>
+          <target state="new">Where can I go for more learning?</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Core PowerShell</source>
+          <target state="new">Core PowerShell</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Core Modules</source>
+          <target state="new">Core Modules</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Archive Module</source>
+          <target state="new">Archive Module</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>Core Module</source>
+          <target state="new">Core Module</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>Core Modules Reference list</source>
+          <target state="new">Core Modules Reference list</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>Diagnostics Module</source>
+          <target state="new">Diagnostics Module</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>Host Module</source>
+          <target state="new">Host Module</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Local Account Module</source>
+          <target state="new">Local Account Module</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Management Module</source>
+          <target state="new">Management Module</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>OData Utils Module</source>
+          <target state="new">OData Utils Module</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Package Management Module</source>
+          <target state="new">Package Management Module</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>PowerShell Core About Topics</source>
+          <target state="new">PowerShell Core About Topics</target>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Readline Module</source>
+          <target state="new">Readline Module</target>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>Scheduled Job Module</source>
+          <target state="new">Scheduled Job Module</target>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Script Analyzer Module</source>
+          <target state="new">Script Analyzer Module</target>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Utility Module</source>
+          <target state="new">Utility Module</target>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>WSMan Protocol Management Module</source>
+          <target state="new">WSMan Protocol Management Module</target>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Windows PowerShell Core Providers</source>
+          <target state="new">Windows PowerShell Core Providers</target>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Integrated Scripting Environment -ISE-</source>
+          <target state="new">Integrated Scripting Environment -ISE-</target>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>ISE Object Model Reference</source>
+          <target state="new">ISE Object Model Reference</target>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>ISE Scripting Object Model</source>
+          <target state="new">ISE Scripting Object Model</target>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Using the Windows PowerShell ISE</source>
+          <target state="new">Using the Windows PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>The ISE File Object</source>
+          <target state="new">The ISE File Object</target>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>The ISE Options Object</source>
+          <target state="new">The ISE Options Object</target>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>The ISE Snippet Collection Object</source>
+          <target state="new">The ISE Snippet Collection Object</target>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>The ISE Snippet Object</source>
+          <target state="new">The ISE Snippet Object</target>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>The ISO Object Model Root-Object</source>
+          <target state="new">The ISO Object Model Root-Object</target>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>How to Create a PowerShell Tab in  PowerShell ISE</source>
+          <target state="new">How to Create a PowerShell Tab in  PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>How to Debug Scripts in PowerShell ISE</source>
+          <target state="new">How to Debug Scripts in PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>How to Use Profiles in  PowerShell ISE</source>
+          <target state="new">How to Use Profiles in  PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>How to Use the Console Pane in the  PowerShell ISE</source>
+          <target state="new">How to Use the Console Pane in the  PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>How to Write and Run Scripts in the Windows PowerShell ISE</source>
+          <target state="new">How to Write and Run Scripts in the Windows PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>Introducing the  PowerShell ISE</source>
+          <target state="new">Introducing the  PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>ISE Module</source>
+          <target state="new">ISE Module</target>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>Keyboard Shortcuts for the  PowerShell ISE</source>
+          <target state="new">Keyboard Shortcuts for the  PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>The PowerShell Tab Object</source>
+          <target state="new">The PowerShell Tab Object</target>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>The PowerShell Tab Collection Object</source>
+          <target state="new">The PowerShell Tab Collection Object</target>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>Purpose of the PowerShell ISE Scripting Object Model</source>
+          <target state="new">Purpose of the PowerShell ISE Scripting Object Model</target>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>The ISE Object Model Hierarchy</source>
+          <target state="new">The ISE Object Model Hierarchy</target>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>The ISE Add On Tool Object</source>
+          <target state="new">The ISE Add On Tool Object</target>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>The ISE Add On Tool Collection Object</source>
+          <target state="new">The ISE Add On Tool Collection Object</target>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>The ISE Editor Object</source>
+          <target state="new">The ISE Editor Object</target>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>The-ISE File Collection Object</source>
+          <target state="new">The-ISE File Collection Object</target>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>The ISE Menu Item Object</source>
+          <target state="new">The ISE Menu Item Object</target>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>The ISE Menu Item Collection bject</source>
+          <target state="new">The ISE Menu Item Collection bject</target>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>Console</source>
+          <target state="new">Console</target>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Console Command Line Reference</source>
+          <target state="new">Console Command Line Reference</target>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source>How to Use Tab Completion in the Script Pane and Console Pane</source>
+          <target state="new">How to Use Tab Completion in the Script Pane and Console Pane</target>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>Using Tab Expansion</source>
+          <target state="new">Using Tab Expansion</target>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>Running Remote Commands</source>
+          <target state="new">Running Remote Commands</target>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>Workflows</source>
+          <target state="new">Workflows</target>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>Workflow-Module</source>
+          <target state="new">Workflow-Module</target>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>Workflow Utility Module</source>
+          <target state="new">Workflow Utility Module</target>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source>Web Access</source>
+          <target state="new">Web Access</target>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Authorization rules and security features of windows powershell web access</source>
+          <target state="new">Authorization rules and security features of windows powershell web access</target>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source>Install and use windows powershell web access</source>
+          <target state="new">Install and use windows powershell web access</target>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>Troubleshooting access problems in windows powershell web access</source>
+          <target state="new">Troubleshooting access problems in windows powershell web access</target>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>Uninstall windows powershell web access</source>
+          <target state="new">Uninstall windows powershell web access</target>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>Use the web based windows powershell console</source>
+          <target state="new">Use the web based windows powershell console</target>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>PowerShell Glossary</source>
+          <target state="new">PowerShell Glossary</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
