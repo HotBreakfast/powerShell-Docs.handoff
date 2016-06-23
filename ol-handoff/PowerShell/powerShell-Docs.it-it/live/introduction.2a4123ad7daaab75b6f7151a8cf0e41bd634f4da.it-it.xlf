@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\introduction.md</xliffext:olfilepath>
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">46f4e5b231d09952f11387cec7c80fbfce9f9d4b</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-48076a9" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>introduction</source>
+          <target state="new">introduction</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Introduction</source>
+          <target state="new">Introduction</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Motivation</source>
+          <target state="new">Motivation</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>When you grant someone privileged access to your systems, you extend your trust boundary to that person.</source>
+          <target state="new">When you grant someone privileged access to your systems, you extend your trust boundary to that person.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>This is a risk -- administrators are an attack surface.</source>
+          <target state="new">This is a risk -- administrators are an attack surface.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Insider attacks and stolen credentials are both real and common.</source>
+          <target state="new">Insider attacks and stolen credentials are both real and common.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Not a new problem</source>
+          <target state="new">Not a new problem</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>You are probably very familiar with the principle of least privilege, and you might use some form of role based access control (RBAC) with applications that provide it.</source>
+          <target state="new">You are probably very familiar with the principle of least privilege, and you might use some form of role based access control (RBAC) with applications that provide it.</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>However, the effectiveness and manageability of these solutions are often limited by their broad scope and imprecision.</source>
+          <target state="new">However, the effectiveness and manageability of these solutions are often limited by their broad scope and imprecision.</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Furthermore, there are gaps in RBAC coverage.</source>
+          <target state="new">Furthermore, there are gaps in RBAC coverage.</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>For example, in Windows, privileged access is largely a binary switch, forcing you to give unnecessary permissions when adding users to the Administrators group.</source>
+          <target state="new">For example, in Windows, privileged access is largely a binary switch, forcing you to give unnecessary permissions when adding users to the Administrators group.</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Just Enough Administration -JEA-</source>
+          <target state="new">Just Enough Administration -JEA-</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Provides a role-based access control -RBAC- platform through PowerShell Remoting.</source>
+          <target state="new">Provides a role-based access control -RBAC- platform through PowerShell Remoting.</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>It allows specific users to perform specific administrative tasks on servers without giving them administrator rights.</source>
+          <target state="new">It allows specific users to perform specific administrative tasks on servers without giving them administrator rights.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>This allows you to fill in the gaps between your existing RBAC solutions, and simplifies management of those settings.</source>
+          <target state="new">This allows you to fill in the gaps between your existing RBAC solutions, and simplifies management of those settings.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
