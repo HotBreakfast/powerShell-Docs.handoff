@@ -1,5 +1,5 @@
 ---
-title: Método de reversão da classe MSFT_DSCLocalConfigurationManager 
+title: RollBack method of the MSFT_DSCLocalConfigurationManager class 
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -10,55 +10,50 @@ ms.prod:  powershell
 ---
 
 
-# Método de reversão da classe MSFT_DSCLocalConfigurationManager
+# RollBack method of the MSFT_DSCLocalConfigurationManager class
 
-Reverte a configuração a uma versão anterior.
+Rolls back the configuration to a previous version.
 
-Sintaxe
+Syntax
 ------
 
 ```mof
 uint32 RollBack(
-  [in] uint8 configurationNumber
+  [in] uint8 configurationNumber
 );
 ```
 
-Parâmetros
+Parameters
 ----------
 
 *configurationNumber* \[in\]  
-Especifica a configuração solicitada. 
+Specifies the requested configuration. 
 
-## Retornar valor
+## Return value
 ------------
 
-Retorna zero em caso de êxito; caso contrário, retorna um código de erro.
+Returns zero on success; otherwise returns an error code.
 
-## Comentários
+## Remarks
 
-Esse é um método estático.
+This is a static method.
 
-## Requisitos
+## Requirements
 ------------
 >**MOF:** DscCore.mof
 
 >**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## Consulte também
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-<!--HONumber=May16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title:  Método GetConfigurationResultOutput da classe MSFT_DSCLocalConfigurationManager
+title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,62 +9,57 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# Método GetConfigurationResultOutput da classe MSFT_DSCLocalConfigurationManager
+# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
 
-Obtém a saída do Agente de Configuração associada a um trabalho específico.
+Gets the Configuration Agent output associated with a specific job.
 
-Sintaxe
+Syntax
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-Parâmetros
+Parameters
 ----------
 
 *jobId* \[in\]  
-A ID do trabalho para o qual obter dados de saída.
+The ID of the job for which to get output data.
 
 *resumeOutputBookmark* \[in\]  
-Especifica que a saída deve ser uma continuação de um indicador anterior.
+Specifies that the output should be a continuation from a previous bookmark.
 
 *output* \[out\]  
-A saída para o trabalho especificado.
+The output for the specified job.
 
-## Retornar valor
+## Return value
 ------------
 
-Retorna zero em caso de êxito; caso contrário, retorna um código de erro.
+Returns zero on success; otherwise returns an error code.
 
-## Comentários
+## Remarks
 
-Esse é um método estático.
+This is a static method.
 
-## Requisitos
+## Requirements
 ------------
 >**MOF:** DscCore.mof
 
 >**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## Consulte também
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-<!--HONumber=May16_HO3-->
 
 
