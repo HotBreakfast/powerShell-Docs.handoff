@@ -1,5 +1,5 @@
 ---
-title:   编写 DSC 配置的帮助
+title:   Writing help for DSC configurations
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,13 +9,15 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# 编写 DSC 配置的帮助
+# Writing help for DSC configurations
 
->适用于：Windows PowerShell 5.0
+>Applies To: Windows Windows PowerShell 5.0
 
-可在 DSC 配置中使用基于注释的帮助。 若要访问帮助内容，用户可以使用 `-?` 调用配置函数或使用 [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet。 若要详细了解基于 PowerShell 注释的帮助内容，请参阅 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx)。
+You can use comment-based help in DSC configurations. Users can access the help by calling the configuration function with `-?`, or by using the 
+[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. For more information about PowerShell comment-based help, see 
+[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
 
-下面的示例演示了一个脚本，它包含一个配置及其各自基于注释的帮助：
+The following example shows a script that contains a configuration and comment-based help for it:
 
 ```powershell
 <#
@@ -50,18 +52,19 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$ComputerName,[string]$FilePath)
-    File f
-    {
-        Contents="Hello World"
-        DestinationPath = "c:\Destination.txt"
-    }
+    param([string]$ComputerName,[string]$FilePath)
+    File f
+    {
+		Contents="Hello World"
+        DestinationPath = "c:\Destination.txt"
+    }
 }
 ```
 
-## 查看配置帮助
+## Viewing configuration help
 
-若要查看有关配置的帮助，请使用带有函数名称的 **Get-help** cmdlet，或键入后跟 `-?` 的函数名称。 下面展示了在传递给 **Get-Help** 时上一个函数的输出：
+To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`. The following is the output
+of the previous function when passed to **Get-Help**:
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -90,11 +93,6 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## 另请参阅
-* [DSC 配置](configurations.md)
-
-
-
-<!--HONumber=Jun16_HO3-->
-
+## See Also
+* [DSC Configurations](configurations.md)
 

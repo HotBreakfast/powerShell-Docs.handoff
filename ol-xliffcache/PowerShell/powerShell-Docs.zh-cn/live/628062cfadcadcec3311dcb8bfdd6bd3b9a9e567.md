@@ -1,5 +1,5 @@
 ---
-title:  创建自定义输入框
+title:  Creating a Custom Input Box
 ms.date:  2016-05-11
 keywords:  powershell,cmdlet
 description:  
@@ -10,11 +10,11 @@ ms.prod:  powershell
 ms.assetid:  0b12e56c-299f-40ee-afbf-d30d23ed2565
 ---
 
-# 创建自定义输入框
-通过使用 Windows PowerShell 3.0 及更高版本中的 Microsoft .NET Framework 窗体构建功能来为图形自定义输入框编写脚本。
+# Creating a Custom Input Box
+Script a graphical custom input box by using Microsoft .NET Framework form\-building features in Windows PowerShell 3.0 and later releases.
 
-## 创建自定义图形输入框
-复制以下内容并将其粘贴到 Windows PowerShell ISE 中，然后将其另存为 Windows PowerShell 脚本 (.ps1)。
+## Create a custom, graphical input box
+Copy and then paste the following into Windows PowerShell ISE, and then save it as a Windows PowerShell script (.ps1).
 
 ```
 Add-Type -AssemblyName System.Windows.Forms
@@ -64,19 +64,19 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-该脚本首先加载两个 .NET Framework 类：**System.Drawing** 和 **System.Windows.Forms**。 然后，启动 .NET Framework 类 **System.Windows.Forms.Form** 的新实例；它提供一个可以开始添加控件的空白窗体或窗口。
+The script begins by loading two .NET Framework classes: **System.Drawing** and **System.Windows.Forms**. You then start a new instance of the .NET Framework class **System.Windows.Forms.Form**; that provides a blank form or window to which you can start adding controls.
 
 ```
 $form = New-Object System.Windows.Forms.Form
 ```
 
-在创建 Form 类的实例后，为此类的三个属性赋值。
+After you create an instance of the Form class, assign values to three properties of this class.
 
--   **Text。** 这将成为该窗口的标题。
+-   **Text.** This becomes the title of the window.
 
--   **Size。** 这是窗体的大小（以像素为单位）。 上述脚本创建的窗体大小为宽 300 像素、高 200 像素。
+-   **Size.** This is the size of the form, in pixels. The preceding script creates a form that’s 300 pixels wide by 200 pixels tall.
 
--   **StartingPosition。** 在上述脚本中，此可选属性将设置为 **CenterScreen**。 如果未添加此属性，Windows 将在窗体打开时选择一个位置。 通过将 **StartingPosition** 设置为 **CenterScreen**，可使窗体在每次加载时都自动显示在屏幕中间。
+-   **StartingPosition.** This optional property is set to **CenterScreen** in the preceding script. If you don’t add this property, Windows selects a location when the form is opened. By setting the **StartingPosition** to **CenterScreen**, you’re automatically displaying the form in the middle of the screen each time it loads.
 
 ```
 $form.Text = "Data Entry Form"
@@ -84,7 +84,7 @@ $form.Size = New-Object System.Drawing.Size(300,200)
 $form.StartPosition = "CenterScreen"
 ```
 
-接下来，为窗体创建“确定”按钮。   指定“确定”按钮的大小和行为。 在此示例中，按钮位置为距窗体上边缘 120 像素，距左边缘 75 像素。 按钮高度为 23 像素，按钮长度为 75 像素。 此脚本使用预定义的 Windows 窗体类型确定按钮行为。
+Next, create an **OK** button for your form. Specify the size and behavior of the **OK** button. In this example, the button position is 120 pixels from the form’s top edge, and 75 pixels from the left edge. The button height is 23 pixels, while the button length is 75 pixels. The script uses predefined Windows Forms types to determine the button behaviors.
 
 ```
 $OKButton = New-Object System.Windows.Forms.Button
@@ -96,7 +96,7 @@ $form.AcceptButton = $OKButton
 $form.Controls.Add($OKButton)
 ```
 
-采用相同方式创建“取消”按钮。 “取消”按钮距窗口上边缘 120 像素，但距左边缘 150 像素。
+Similarly, you create a **Cancel** button. The **Cancel** button is 120 pixels from the top, but 150 pixels from the left edge of the window.
 
 ```
 $CancelButton = New-Object System.Windows.Forms.Button
@@ -108,7 +108,7 @@ $form.CancelButton = $CancelButton
 $form.Controls.Add($CancelButton)
 ```
 
-接下来，在窗口上提供标签文本，用于描述你希望用户提供的信息。
+Next, provide label text on your window that describes the information you want users to provide.
 
 ```
 $label = New-Object System.Windows.Forms.Label
@@ -118,7 +118,7 @@ $label.Text = "Please enter the information in the space below:"
 $form.Controls.Add($label)
 ```
 
-添加控件（在本例中为文本框），从而让用户提供你在标签文本中描述的信息。 除了文本框，你还可以应用许多其他控件；有关更多控件，请参阅 MSDN 上的 [System.Windows.Forms 命名空间](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx)。
+Add the control (in this case, a text box) that lets users provide the information you’ve described in your label text. There are many other controls you can apply besides text boxes; for more controls, see [System.Windows.Forms Namespace](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) on MSDN.
 
 ```
 $textBox = New-Object System.Windows.Forms.TextBox 
@@ -127,41 +127,36 @@ $textBox.Size = New-Object System.Drawing.Size(260,20)
 $form.Controls.Add($textBox)
 ```
 
-将 **Topmost** 属性设置为 **$True** 以强制该窗口在其他打开的窗口和对话框之上打开。
+Set the **Topmost** property to **$True** to force the window to open atop other open windows and dialog boxes.
 
 ```
 $form.Topmost = $True
 ```
 
-接下来，添加此代码行以激活窗体，并将焦点设置到你创建的文本框。
+Next, add this line of code to activate the form, and set the focus to the text box that you created.
 
 ```
 $form.Add_Shown({$textBox.Select()})
 ```
 
-添加以下代码行以在 Windows 中显示该窗体。
+Add the following line of code to display the form in Windows.
 
 ```
 $result = $form.ShowDialog()
 ```
 
-最后，**If** 块内的代码指示在用户在文本框中提供文本，然后单击“确定”按钮或按“Enter”键后，Windows 应如何处理该窗体。
+Finally, the code inside the **If** block instructs Windows what to do with the form after users provide text in the text box, and then click the **OK** button or press the **Enter** key.
 
 ```
 if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 {
-    $x = $textBox.Text
-    $x
+    $x = $textBox.Text
+    $x
 }
 ```
 
-## 另请参阅
-[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?（Hey Scripting Guy 博客：为什么这些 PowerShell GUI 示例不起作用？）](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt's WinFormsExampleUpdates（GitHub：Dave Wyatt 的 WinFormsExampleUpdates）](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week:  Creating a Custom Input Box（Windows PowerShell 每周提示：创建自定义输入框）](http://technet.microsoft.com/library/ff730941.aspx)
-
-
-
-<!--HONumber=May16_HO2-->
-
+## See Also
+[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?](http://go.microsoft.com/fwlink/?LinkId=506644)
+[GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week:  Creating a Custom Input Box](http://technet.microsoft.com/library/ff730941.aspx)
 

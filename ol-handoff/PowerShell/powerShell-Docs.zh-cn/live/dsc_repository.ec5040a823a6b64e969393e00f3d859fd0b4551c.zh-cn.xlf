@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d9da7ea2674b0428118ec1585c705b90a886ca44</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_repository.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Separation of Configuration, Resource and Report Repositories</source>
+          <target state="new">Separation of Configuration, Resource and Report Repositories</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>In this release we allow you all of the flexibility that you need to pull and report to one or more DSC Pull Servers.</source>
+          <target state="new">In this release we allow you all of the flexibility that you need to pull and report to one or more DSC Pull Servers.</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Each endpoint can be defined separately so that you can pull configurations from one location, resources from another and report to yet another location.</source>
+          <target state="new">Each endpoint can be defined separately so that you can pull configurations from one location, resources from another and report to yet another location.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>For more information, see <bpt id="p1">[</bpt>Setting up a pull client using configuration ID<ept id="p1">](../dsc/pullClientConfigID.md)</ept> or <bpt id="p2">[</bpt>Setting up a pull client using configuration names<ept id="p2">](../dsc/pullClientConfigNames.md)</ept></source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Setting up a pull client using configuration ID<ept id="p1">](../dsc/pullClientConfigID.md)</ept> or <bpt id="p2">[</bpt>Setting up a pull client using configuration names<ept id="p2">](../dsc/pullClientConfigNames.md)</ept></target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
