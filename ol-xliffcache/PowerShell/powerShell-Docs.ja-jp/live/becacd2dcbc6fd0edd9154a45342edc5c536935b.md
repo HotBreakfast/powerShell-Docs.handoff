@@ -1,5 +1,5 @@
 ---
-title:   DSC 構成のヘルプの作成
+title:   Writing help for DSC configurations
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,13 +9,15 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# DSC 構成のヘルプの作成
+# Writing help for DSC configurations
 
->適用先: Windows PowerShell 5.0
+>Applies To: Windows Windows PowerShell 5.0
 
-DSC 構成では、コメント ベースのヘルプを使用できます。 ユーザーは、構成関数に `-?` を付けて呼び出すか、[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) コマンドレットを使用することで、ヘルプにアクセスできます。 PowerShell のコメント ベースのヘルプの詳細については、「[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx)」を参照してください。
+You can use comment-based help in DSC configurations. Users can access the help by calling the configuration function with `-?`, or by using the 
+[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. For more information about PowerShell comment-based help, see 
+[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
 
-次の例では、構成のコメント ベースのヘルプを含むスクリプトを示します。
+The following example shows a script that contains a configuration and comment-based help for it:
 
 ```powershell
 <#
@@ -50,18 +52,19 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$ComputerName,[string]$FilePath)
-    File f
-    {
-        Contents="Hello World"
-        DestinationPath = "c:\Destination.txt"
-    }
+    param([string]$ComputerName,[string]$FilePath)
+    File f
+    {
+		Contents="Hello World"
+        DestinationPath = "c:\Destination.txt"
+    }
 }
 ```
 
-## 構成のヘルプの表示
+## Viewing configuration help
 
-構成のヘルプを表示するには、**Get-Help** コマンドレットに関数名を付けて使うか、関数名の後に「`-?`」と入力します。 前の関数を **Get-Help** に渡した場合の出力を次に示します。
+To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`. The following is the output
+of the previous function when passed to **Get-Help**:
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -90,11 +93,6 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## 参照
-* [DSC 構成](configurations.md)
-
-
-
-<!--HONumber=Jun16_HO3-->
-
+## See Also
+* [DSC Configurations](configurations.md)
 

@@ -1,5 +1,5 @@
 ---
-title:   DSC WindowsProcess リソース
+title:   DSC WindowsProcess Resource
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,13 +9,13 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# DSC WindowsProcess リソース
+# DSC WindowsProcess Resource
 
-> 適用先: Windows PowerShell 4.0、Windows PowerShell 5.0
+> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Windows PowerShell Desired State Configuration (DSC) の **WindowsProcess** リソースは、ターゲット ノードにプロセスを構成するためのメカニズムを備えています。
+The **WindowsProcess** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to configure processes on a target node.
 
-## 構文
+## Syntax
 
 ```
 WindowsProcess [string] #ResourceName
@@ -32,21 +32,16 @@ WindowsProcess [string] #ResourceName
 }
 ```
 
-## プロパティ
-|  プロパティ  |  説明   | 
+## Properties
+|  Property  |  Description   | 
 |---|---| 
-| 引数| プロセスに渡す引数の文字列をそのまま示します。 複数の引数を渡す必要がある場合は、そのすべてをこの文字列内に配置します。| 
-| パス| プロセスの実行可能ファイルへのパスを示します。 このプロパティを実行可能ファイルの名前に設定すると、DSC は __Path__ 変数を参照します。 完全修飾ドメイン名を指定した場合は、DSC が __Path__ 変数を参照しないため、そのドメインにプロセスが存在する必要があります。| 
-| Credential| プロセスを開始するための資格情報を示します。| 
-| Ensure| プロセスが存在するかどうかを示します。 プロセスが存在することを保証するには、このプロパティを "Present" に設定します。 それ以外の場合は、"Absent" に設定します。 既定は "Present" です。| 
-| DependsOn | このリソースを構成する前に、他のリソースの構成を実行する必要があることを示します。 たとえば、最初に実行するリソース構成スクリプト ブロックの ID が __ResourceName__ で、そのタイプが __ResourceType__ である場合、このプロパティを使用する構文は DependsOn = "[ResourceType]ResourceName" になります。| 
-| StandardErrorPath| 標準エラーを書き込むディレクトリ パスを示します。 既存のファイルは上書きされます。| 
-| StandardInputPath| 標準入力の場所を示します。| 
-| StandardOutputPath| 標準出力の書き込み場所を示します。 既存のファイルは上書きされます。| 
-| WorkingDirectory| プロセスの現在の作業ディレクトリとして使用される場所を示します。| 
-
-
-
-<!--HONumber=May16_HO3-->
-
+| Arguments| Indicates a string of arguments to pass to the process as-is. If you need to pass several arguments, put them all in this string.| 
+| Path| Indicates the path to the process executable. If you set this property to the name of the executable, DSC will look in the __Path__ variable. If you give a fully qualified domain name, the process must exist there because DSC will not check the __Path__ variable in this case.| 
+| Credential| Indicates the credentials for starting the process.| 
+| Ensure| Indicates if the process exists. Set this property to "Present" to ensure that the process exists. Otherwise, set it to "Absent". The default is "Present".| 
+| DependsOn | Indicates that the configuration of another resource must run before this resource is configured. For example, if the ID of the resource configuration script block that you want to run first is __ResourceName__ and its type is __ResourceType__, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"`` .| 
+| StandardErrorPath| Indicates the directory path to write the standard error. Any existing file there will be overwritten.| 
+| StandardInputPath| Indicates the standard input location.| 
+| StandardOutputPath| Indicates the location to write the standard output. Any existing file there will be overwritten.| 
+| WorkingDirectory| Indicates the location that will be used as the current working directory for the process.| 
 

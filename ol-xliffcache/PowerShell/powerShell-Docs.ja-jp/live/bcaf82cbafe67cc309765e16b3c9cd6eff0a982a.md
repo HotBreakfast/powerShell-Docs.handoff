@@ -1,5 +1,5 @@
 ---
-title:   DSC Package リソース
+title:   DSC Package Resource
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,13 +9,13 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# DSC Package リソース
+# DSC Package Resource
 
-> 適用先: Windows PowerShell 4.0、Windows PowerShell 5.0
+> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Windows PowerShell Desired State Configuration (DSC) の **Package** リソースは、Windows インストーラーや setup.exe パッケージなど、ターゲット ノードでパッケージをインストールまたはアンインストールするメカニズムを備えています。
+The **Package** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to install or uninstall packages, such as Windows Installer and setup.exe packages, on a target node.
 
-## 構文
+## Syntax
 
 ```
 Package [string] #ResourceName
@@ -32,22 +32,22 @@ Package [string] #ResourceName
 }
 ```
 
-## プロパティ
-|  プロパティ  |  説明   | 
+## Properties
+|  Property  |  Description   | 
 |---|---| 
-| 名前| 特定の状態を保証するパッケージの名前を示します。| 
-| パス| パッケージが存在するパスを示します。| 
-| ProductId| パッケージを一意に識別する製品 ID を示します。| 
-| 引数| 指定されたとおりにパッケージに渡される引数の文字列を一覧表示します。| 
-| Credential| リモート ソースのパッケージへのアクセスを提供します。 このプロパティは、パッケージのインストールには使用されません。 パッケージは常に、ローカル システムにインストールされます。| 
-| Ensure| パッケージがインストールされるかどうかを示します。 このプロパティを "Absent" に設定すると、パッケージはインストールされません (またはパッケージがインストールされている場合はアンインストールされます)。 パッケージがインストールされるようにするには、"Present" に設定します (既定値)。| 
-| LogPath| プロバイダーがパッケージをインストールまたはアンインストールするためのログ ファイルを保存する場所の完全パスを示します。| 
-| DependsOn | このリソースを構成する前に、他のリソースの構成を実行する必要があることを示します。 たとえば、最初に実行するリソース構成スクリプト ブロックの ID が **ResourceName** で、そのタイプが **ResourceType** である場合、このプロパティを使用する構文は DependsOn = "[ResourceType]ResourceName" になります。| 
-| ReturnCode| 想定されるリターン コードを示します。 実際のリターン コードがここで指定される想定される値と一致しない場合、構成はエラーを返します。| 
+| Name| Indicates the name of the package for which you want to ensure a specific state.| 
+| Path| Indicates the path where the package resides.| 
+| ProductId| Indicates the product ID that uniquely identifies the package.| 
+| Arguments| Lists a string of arguments that will be passed to the package exactly as provided.| 
+| Credential| Provides access to the package on a remote source. This property is not used to install the package. The package is always installed on the local system.| 
+| Ensure| Indicates if the package is installed. Set this property to "Absent" to ensure the package is not installed (or uninstall the package if it is installed). Set it to "Present" (the default value) to ensure the package is installed.| 
+| LogPath| Indicates the full path where you want the provider to save a log file to install or uninstall the package.| 
+| DependsOn | Indicates that the configuration of another resource must run before this resource is configured. For example, if the ID of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"``.| 
+| ReturnCode| Indicates the expected return code. If the actual return code does not match the expected value provided here, the configuration will return an error.| 
 
-## 例
+## Example
 
-この例では、指定されたパスに配置され、指定された製品 ID が割り当てられている .msi インストーラーを実行します。
+This example runs the .msi installer that is located at the specified path and has the specified product ID.
 
 ```powershell
 Package PackageExample
@@ -58,9 +58,4 @@ Package PackageExample
     ProductId = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
 } 
 ```
-
-
-
-<!--HONumber=May16_HO3-->
-
 

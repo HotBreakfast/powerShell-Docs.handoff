@@ -1,5 +1,5 @@
 ---
-title:  パイプラインからオブジェクトを削除する (Where-Object) 
+title:  Removing Objects from the Pipeline  Where Object 
 ms.date:  2016-05-11
 keywords:  powershell,cmdlet
 description:  
@@ -10,32 +10,33 @@ ms.prod:  powershell
 ms.assetid:  01df8b22-2d22-4e2c-a18d-c004cd3cc284
 ---
 
-# パイプラインからオブジェクトを削除する (Where-Object)
-Windows PowerShell では、考えていた数よりも多くのオブジェクトが生成され、パイプラインに渡されることがよくあります。 **Format** コマンドレットを使用して、特定のオブジェクトのプロパティを指定し、表示することができます。しかし、これはオブジェクト全体を表示から削除するという問題には役立ちません。 パイプラインの終了前に、オブジェクトをフィルタリングすることによって、最初に生成されたオブジェクトのサブセット上でのみアクションを実行できます。
+# Removing Objects from the Pipeline (Where-Object)
+In Windows PowerShell, you often generate and pass along more objects to a pipeline than you want. You can specify the properties of particular objects to display by using the **Format** cmdlets, but this does not help with the problem of removing entire objects from the display. You may want to filter objects before the end of a pipeline, so you can perform actions on only a subset of the initially\-generated objects.
 
-Windows PowerShell には、**Where-Object** コマンドレットがあります。それを使用すると、パイプラインの各オブジェクトをテストし、特定のテスト条件を満たしている場合にのみ、オブジェクトをパイプラインに沿って渡すことが可能になります。 テストを通過しなかったオブジェクトは、パイプラインから削除されます。 テスト条件は、**Where-ObjectFilterScript** パラメーターの値として指定します。
+Windows PowerShell includes a **Where\-Object** cmdlet that allows you to test each object in the pipeline and only pass it along the pipeline if it meets a particular test condition. Objects that do not pass the test are removed from the pipeline. You supply the test condition as the value of the **Where\-ObjectFilterScript** parameter.
 
-### Where-Object を使用して単純なテストを実行する
-**FilterScript** の値は、true または false に評価される*スクリプト ブロック* (中かっこ {} で囲まれた Windows PowerShell の 1 つ以上のコマンド) です。 これらのスクリプト ブロックはごく単純にすることができますが、作成するには別の Windows PowerShell の概念である比較演算子について知っておく必要があります。 比較演算子は、演算子の両辺のアイテムを比較します。 比較演算子は、'-' 文字で始まり、名前が続きます。 基本的な比較演算子は、ほとんどの種類のオブジェクトで機能します。 より高度な比較演算子の中には、テキストまたは配列でのみ機能するものもあります。
+### Performing Simple Tests with Where\-Object
+The value of **FilterScript** is a *script block* \-  one or more Windows PowerShell commands surrounded by braces {} \- that evaluates to true or false. These script blocks can be very simple, but creating them requires knowing about another Windows PowerShell concept, comparison operators. A comparison operator compares the items that appear on each side of it. Comparison operators begin with a '\-' character and are followed by a name. Basic comparison operators work on almost any kind of object. The more advanced comparison operators might only work on text or arrays.
 
-> [!NOTE]既定では、テキストで使用する場合、Windows PowerShell の比較演算子は大文字小文字を区別しません。
+> [!NOTE]
+> By default, when working with text, Windows PowerShell comparison operators are case\-insensitive.
 
-解析の考慮事項のため、<、>、= などのシンボルは、比較演算子として使用されません。 代わりに、比較演算子は文字で構成されます。 基本的な比較演算子を次の表に挙げます。
+Due to parsing considerations, symbols such as <,>, and \= are not used as comparison operators. Instead, comparison operators are comprised of letters. The basic comparison operators are listed in the following table.
 
-|比較演算子|意味|例 (true を返す)|
+|Comparison Operator|Meaning|Example (returns true)|
 |-----------------------|-----------|--------------------------|
-|-eq|次の値と等しい|1 -eq 1|
-|-ne|次の値と等しくない|1 -ne 2|
-|-lt|次の値未満|1 -lt 2|
-|-le|次の値以下|1 -le 2|
-|-gt|次の値より大きい|2 -gt 1|
-|-ge|次の値以上|2 -ge 1|
-|-like|次の文字列と類似 (テキストのワイルドカード比較)|"file.doc" -like "f*.do?"|
-|-notlike|次の文字列と類似していない (テキストのワイルドカード比較)|"file.doc" -notlike "p*.doc"|
-|-contains|［内容］|1,2,3 -contains 1|
-|-notcontains|［次の値を含まない］|1,2,3 -notcontains 4|
+|\-eq|is equal to|1 \-eq 1|
+|\-ne|Is not equal to|1 \-ne 2|
+|\-lt|Is less than|1 \-lt 2|
+|\-le|Is less than or equal to|1 \-le 2|
+|\-gt|Is greater than|2 \-gt 1|
+|\-ge|Is greater than or equal to|2 \-ge 1|
+|\-like|Is like (wildcard comparison for text)|"file.doc" \-like "f\*.do?"|
+|\-notlike|Is not like (wildcard comparison for text)|"file.doc" \-notlike "p\*.doc"|
+|\-contains|Contains|1,2,3 \-contains 1|
+|\-notcontains|Does not contain|1,2,3 \-notcontains 4|
 
-Where-Object スクリプト ブロックは、パイプライン中の現在のオブジェクトを参照するために、特殊変数 '$_' を使用します。 次に挙げるのは、その働きを示す例です。 数値の一覧があり、3 未満の値だけを返したい場合、Where-Object を使用して、次のように入力して数値を抽出できます。
+Where\-Object script blocks use the special variable '$\_' to refer to the current object in the pipeline. Here is an example of how it works. If you have a list of numbers, and only want to return the ones that are less than 3, you can use Where\-Object to filter the numbers by typing:
 
 ```
 PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
@@ -43,16 +44,16 @@ PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
 2
 ```
 
-### オブジェクトのプロパティに基づくフィルタリング
-$_ は、現在のパイプライン オブジェクトを参照するので、テストのためにそのプロパティにアクセスできます。
+### Filtering Based on Object Properties
+Since $\_ refers to the current pipeline object, we can access its properties for our tests.
 
-例として、WMI の Win32_SystemDriver クラスを取り上げます。 特定のシステムには、何百ものシステム ドライバーが存在する可能性がありますが、関心を向けるのは、現在実行中のシステム ドライバーなど、システム ドライバーの特定のセットだけの場合があります。 Get-Member を使用して、Win32_SystemDriver メンバーを表示する場合 (**Get-WmiObject -Class Win32_SystemDriver | Get-Member -MemberType Property**)、関連するプロパティは State に、ドライバーが実行中であればその値は "Running" になります。 システム ドライバーをフィルタリングして、次のように入力して実行中のドライバーのみを選択できます。
+As an example, we can look at the Win32\_SystemDriver class in WMI. There might be hundreds of system drivers on a particular system, but you might only be interested in a particular set of the system drivers, such as those which are currently running. If you use Get\-Member to view Win32\_SystemDriver members (**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType Property**) you will see that the relevant property is State, and that it has a value of "Running" when the driver is running. You can filter the system drivers, selecting only the running ones by typing:
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"}
 ```
 
-生成されるのは、依然として長い一覧です。 StartMode 値を同様にテストして、自動的に起動されるドライバーのセットのみを選択するようフィルタリングすることにします。
+This still produces a long list. You may want to filter to only select the drivers set to start automatically by testing the StartMode value as well:
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Auto"}
@@ -70,7 +71,7 @@ Status      : OK
 Started     : True
 ```
 
-これにより、もう必要のない数多くの情報が与えられます。それらのドライバーが実行中なのはわかっています。 事実、この時点でおそらく必要とされる情報は、名前と表示名だけです。 次のコマンドには、それら 2 つのプロパティのみが含まれており、よりシンプルに結果を出力します。
+This gives us a lot of information we no longer need because we know that the drivers are running. In fact, the only information we probably need at this point are the name and the display name. The following command includes only those two properties, resulting in much simpler output:
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Manual"} | Format-Table -Property Name,DisplayName
@@ -87,23 +88,18 @@ MRxDAV                                  WebDav Client Redirector
 mssmbios                                Microsoft System Management BIOS Driver
 ```
 
-上記のコマンドには Where-Object 要素が 2 つありますが、次のように -and 論理演算子を使用して、Where-Object 要素 1 つで表現することができます。
+There are two Where\-Object elements in the above command, but they can be expressed in a single Where\-Object element by using the \-and logical operator, like this:
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State -eq "Running") -and ($_.StartMode -eq "Manual") } | Format-Table -Property Name,DisplayName
 ```
 
-標準的な論理演算子を次の表に挙げます。
+The standard logical operators are listed in the following table.
 
-|論理演算子|意味|例 (true を返す)|
+|Logical Operator|Meaning|Example (returns true)|
 |--------------------|-----------|--------------------------|
-|-and|論理積。両辺が true の場合は true|(1 -eq 1) -and (2 -eq 2)|
-|-or|論理和。どちらかの辺が true の場合は true|(1 -eq 1) -or (1 -eq 2)|
-|-not|論理否定。true と false を逆にする|-not (1 -eq 2)|
-|!|論理否定。true と false を逆にする|!(1 -eq 2)|
-
-
-
-<!--HONumber=May16_HO2-->
-
+|\-and|Logical and; true if both sides are true|(1 \-eq 1) \-and (2 \-eq 2)|
+|\-or|Logical or; true if either side is true|(1 \-eq 1) \-or (1 \-eq 2)|
+|\-not|Logical not; reverses true and false|\-not (1 \-eq 2)|
+|\!|Logical not; reverses true and false|\!(1 \-eq 2)|
 

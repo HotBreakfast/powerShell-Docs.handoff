@@ -1,5 +1,5 @@
 ---
-title:  MSFT_DSCLocalConfigurationManager クラスの GetConfigurationResultOutput メソッド
+title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,62 +9,57 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# MSFT_DSCLocalConfigurationManager クラスの GetConfigurationResultOutput メソッド
+# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
 
-特定のジョブに関連する構成エージェントの出力を取得します。
+Gets the Configuration Agent output associated with a specific job.
 
-構文
+Syntax
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-パラメーター
+Parameters
 ----------
 
 *jobId* \[in\]  
-出力データを取得するジョブの ID です。
+The ID of the job for which to get output data.
 
 *resumeOutputBookmark* \[in\]  
-出力が前のブックマークからの続きとなるように指定します。
+Specifies that the output should be a continuation from a previous bookmark.
 
 *output* \[out\]  
-指定されたジョブの出力です。
+The output for the specified job.
 
-## 戻り値
+## Return value
 ------------
 
-成功した場合は 0 を返します。それ以外の場合はエラー コードを返します。
+Returns zero on success; otherwise returns an error code.
 
-## コメント
+## Remarks
 
-これは静的メソッドです。
+This is a static method.
 
-## 要件
+## Requirements
 ------------
 >**MOF:** DscCore.mof
 
->**名前空間**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 関連項目
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-<!--HONumber=May16_HO3-->
 
 
