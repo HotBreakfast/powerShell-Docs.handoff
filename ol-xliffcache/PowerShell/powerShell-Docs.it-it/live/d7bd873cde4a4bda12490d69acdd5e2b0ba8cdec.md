@@ -1,5 +1,5 @@
 ---
-title:   Risorsa WindowsProcess DSC
+title:   DSC WindowsProcess Resource
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,13 +9,13 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# Risorsa WindowsProcess DSC
+# DSC WindowsProcess Resource
 
-> Si applica a: Windows PowerShell 4.0, Windows PowerShell 5.0
+> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-La risorsa **WindowsProcess** in Windows PowerShell DSC (Desired State Configuration) fornisce un meccanismo per configurare i processi in un nodo di destinazione.
+The **WindowsProcess** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to configure processes on a target node.
 
-## Sintassi
+## Syntax
 
 ```
 WindowsProcess [string] #ResourceName
@@ -32,21 +32,16 @@ WindowsProcess [string] #ResourceName
 }
 ```
 
-## Proprietà
-|  Proprietà  |  Descrizione   | 
+## Properties
+|  Property  |  Description   | 
 |---|---| 
-| Arguments| Indica una stringa di argomenti da passare al processo come è. Se è necessario passare più argomenti, inserirli tutti in questa stringa.| 
-| Path| Indica il percorso dell'eseguibile del processo. Se si imposta questa proprietà sul nome dell'eseguibile, DSC cercherà nella variabile __Path__. Se si fornisce un nome di dominio completo, il processo deve esistere, perché DSC in questo caso non controllerà la variabile __Path__.| 
-| Credential| Indica le credenziali per l'avvio del processo.| 
-| Ensure| Indica se il processo esiste. Impostare questa proprietà su "Present" per specificare che il processo esiste. In caso contrario, impostarla su "Absent". Il valore predefinito è "Present".| 
-| DependsOn | Indica che prima di configurare la risorsa è necessario eseguire la configurazione di un'altra risorsa. Ad esempio, se l'ID del blocco script di configurazione della risorsa che si vuole eseguire per primo è __ResourceName__ e il tipo è __ResourceType__, la sintassi per usare questa proprietà è `DependsOn = "[ResourceType]ResourceName"``.| 
-| StandardErrorPath| Indica il percorso della directory in cui scrivere l'errore standard. Qualsiasi file esistente verrà sovrascritto.| 
-| StandardInputPath| Indica il percorso di input standard.| 
-| StandardOutputPath| Indica il percorso in cui scrivere l'output standard. Qualsiasi file esistente verrà sovrascritto.| 
-| WorkingDirectory| Indica il percorso che verrà usato come directory di lavoro corrente per il processo.| 
-
-
-
-<!--HONumber=May16_HO3-->
-
+| Arguments| Indicates a string of arguments to pass to the process as-is. If you need to pass several arguments, put them all in this string.| 
+| Path| Indicates the path to the process executable. If you set this property to the name of the executable, DSC will look in the __Path__ variable. If you give a fully qualified domain name, the process must exist there because DSC will not check the __Path__ variable in this case.| 
+| Credential| Indicates the credentials for starting the process.| 
+| Ensure| Indicates if the process exists. Set this property to "Present" to ensure that the process exists. Otherwise, set it to "Absent". The default is "Present".| 
+| DependsOn | Indicates that the configuration of another resource must run before this resource is configured. For example, if the ID of the resource configuration script block that you want to run first is __ResourceName__ and its type is __ResourceType__, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"`` .| 
+| StandardErrorPath| Indicates the directory path to write the standard error. Any existing file there will be overwritten.| 
+| StandardInputPath| Indicates the standard input location.| 
+| StandardOutputPath| Indicates the location to write the standard output. Any existing file there will be overwritten.| 
+| WorkingDirectory| Indicates the location that will be used as the current working directory for the process.| 
 
