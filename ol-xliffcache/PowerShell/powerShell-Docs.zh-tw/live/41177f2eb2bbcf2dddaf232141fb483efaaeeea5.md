@@ -1,5 +1,5 @@
 ---
-title:  MSFT_DSCLocalConfigurationManager 類別的 SendConfigurationApplyAsync 方法
+title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -10,63 +10,58 @@ ms.prod:  powershell
 ---
 
 
-# MSFT_DSCLocalConfigurationManager 類別的 SendConfigurationApplyAsync 方法
+# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
 
-將設定文件非同步地傳送到受管理的節點，並使用設定代理程式套用設定。
+Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
 
-語法
+Syntax
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-參數
+Parameters
 ----------
 
 *ConfigurationData* \[in\]  
-設定的環境資料。
+The environment data for the configuration.
 
 *force* \[in\]  
-**true** 表示強制停止該設定。
+**true** to force the configuration to stop.
 
 *jobId* \[in\]  
-傳送設定之工作的識別碼。
+The ID of the job for which to send the configuration.
 
-## 傳回值
+## Return value
 ------------
 
-若成功即傳回零；否則傳回錯誤碼。
+Returns zero on success; otherwise returns an error code.
 
-## 備註
+## Remarks
 
-此為靜態方法。
+This is a static method.
 
-## 需求
+## Requirements
 ------------
->**MOF：**DscCore.mof
+>**MOF:** DscCore.mof
 
->**Namespace**：Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 另請參閱
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-<!--HONumber=May16_HO3-->
 
 
