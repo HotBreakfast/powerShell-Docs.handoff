@@ -1,5 +1,5 @@
 ---
-title:  Создание настраиваемого поля ввода
+title:  Creating a Custom Input Box
 ms.date:  2016-05-11
 keywords:  powershell,cmdlet
 description:  
@@ -10,11 +10,11 @@ ms.prod:  powershell
 ms.assetid:  0b12e56c-299f-40ee-afbf-d30d23ed2565
 ---
 
-# Создание настраиваемого поля ввода
-Создание сценария настраиваемого графического поля ввода с помощью функций создания форм Microsoft .NET Framework в Windows PowerShell 3.0 и более поздних версиях.
+# Creating a Custom Input Box
+Script a graphical custom input box by using Microsoft .NET Framework form\-building features in Windows PowerShell 3.0 and later releases.
 
-## Создание настраиваемого графического поля ввода
-Скопируйте и вставьте следующий код в интегрированную среду сценариев Windows PowerShell, а затем сохраните файл как сценарий Windows PowerShell (PS1-файл).
+## Create a custom, graphical input box
+Copy and then paste the following into Windows PowerShell ISE, and then save it as a Windows PowerShell script (.ps1).
 
 ```
 Add-Type -AssemblyName System.Windows.Forms
@@ -64,19 +64,19 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-Сценарий начинается с загрузки двух классов .NET Framework: **System.Drawing** и **System.Windows.Forms**. Затем вы запускаете новый экземпляр класса .NET Framework **System.Windows.Forms.Form**, предоставляющий пустую форму или окно, в которые можно добавить элементы управления.
+The script begins by loading two .NET Framework classes: **System.Drawing** and **System.Windows.Forms**. You then start a new instance of the .NET Framework class **System.Windows.Forms.Form**; that provides a blank form or window to which you can start adding controls.
 
 ```
 $form = New-Object System.Windows.Forms.Form
 ```
 
-После создания экземпляра класса "Форма" назначьте значения для трех свойств этого класса.
+After you create an instance of the Form class, assign values to three properties of this class.
 
--   **Текст.** Это будет заголовком окна.
+-   **Text.** This becomes the title of the window.
 
--   **Размер.** Это размер формы в пикселях. Предыдущий сценарий создает форму шириной 300 пикселей и высотой 200 пикселей.
+-   **Size.** This is the size of the form, in pixels. The preceding script creates a form that’s 300 pixels wide by 200 pixels tall.
 
--   **StartingPosition.** Для этого дополнительного свойства задается значение **CenterScreen** в предыдущем сценарии. Если это свойство не добавлено, Windows выберет расположение после открытия формы. Если для **StartingPosition** задать значение **CenterScreen**, форма будет автоматически отображаться в центре экрана при загрузке.
+-   **StartingPosition.** This optional property is set to **CenterScreen** in the preceding script. If you don’t add this property, Windows selects a location when the form is opened. By setting the **StartingPosition** to **CenterScreen**, you’re automatically displaying the form in the middle of the screen each time it loads.
 
 ```
 $form.Text = "Data Entry Form"
@@ -84,7 +84,7 @@ $form.Size = New-Object System.Drawing.Size(300,200)
 $form.StartPosition = "CenterScreen"
 ```
 
-Далее создайте кнопку **OК** для формы. Укажите размер и поведение кнопки **ОК**. В этом примере кнопка расположена на 120 пикселей ниже верхней границы формы и на 75 пикселей правее левой границы. Высота кнопки — 23 пикселя, а длина — 75 пикселей. Сценарий использует предопределенные типы Windows Forms для определения поведения кнопок.
+Next, create an **OK** button for your form. Specify the size and behavior of the **OK** button. In this example, the button position is 120 pixels from the form’s top edge, and 75 pixels from the left edge. The button height is 23 pixels, while the button length is 75 pixels. The script uses predefined Windows Forms types to determine the button behaviors.
 
 ```
 $OKButton = New-Object System.Windows.Forms.Button
@@ -96,7 +96,7 @@ $form.AcceptButton = $OKButton
 $form.Controls.Add($OKButton)
 ```
 
-Аналогичным образом создайте кнопку **Отмена**. Кнопка **Отмена** расположена на 120 пикселей ниже верхней границы и на 150 пикселей правее левой границы окна.
+Similarly, you create a **Cancel** button. The **Cancel** button is 120 pixels from the top, but 150 pixels from the left edge of the window.
 
 ```
 $CancelButton = New-Object System.Windows.Forms.Button
@@ -108,7 +108,7 @@ $form.CancelButton = $CancelButton
 $form.Controls.Add($CancelButton)
 ```
 
-Далее введите текст метки в окне, который должны получить пользователи.
+Next, provide label text on your window that describes the information you want users to provide.
 
 ```
 $label = New-Object System.Windows.Forms.Label
@@ -118,7 +118,7 @@ $label.Text = "Please enter the information in the space below:"
 $form.Controls.Add($label)
 ```
 
-Добавьте элемент управления (в данном случае текстовое поле), который позволит пользователям указать сведения, описанные в тексте метки. Помимо текстового поля существует много других элементов управления, которые можно применить. Их описание см. в статье [Пространство имен System.Windows.Forms](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) на сайте MSDN.
+Add the control (in this case, a text box) that lets users provide the information you’ve described in your label text. There are many other controls you can apply besides text boxes; for more controls, see [System.Windows.Forms Namespace](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) on MSDN.
 
 ```
 $textBox = New-Object System.Windows.Forms.TextBox 
@@ -127,41 +127,36 @@ $textBox.Size = New-Object System.Drawing.Size(260,20)
 $form.Controls.Add($textBox)
 ```
 
-Задайте для свойства **Topmost** значение **$True**, чтобы принудительно открыть окно поверх других диалоговых окон.
+Set the **Topmost** property to **$True** to force the window to open atop other open windows and dialog boxes.
 
 ```
 $form.Topmost = $True
 ```
 
-Затем добавьте следующую строку кода, чтобы активировать форму и установить фокус на текстовое поле, которое вы создали.
+Next, add this line of code to activate the form, and set the focus to the text box that you created.
 
 ```
 $form.Add_Shown({$textBox.Select()})
 ```
 
-Добавьте следующую строку кода для отображения формы в Windows.
+Add the following line of code to display the form in Windows.
 
 ```
 $result = $form.ShowDialog()
 ```
 
-Наконец, код внутри блока **If** указывает Windows, что следует делать с формой после того, как пользователь задаст текст в поле и нажмет кнопку **ОК** или клавишу **ВВОД**.
+Finally, the code inside the **If** block instructs Windows what to do with the form after users provide text in the text box, and then click the **OK** button or press the **Enter** key.
 
 ```
 if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 {
-    $x = $textBox.Text
-    $x
+    $x = $textBox.Text
+    $x
 }
 ```
 
-## См. также
-[Блог Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Почему эти примеры сценариев PowerShell GUI не работают)?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt's WinFormsExampleUpdates (WinFormsExampleUpdates от Дейва Вьятта)](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week: Creating a Custom Input Box (Совет недели для Windows PowerShell: создание настраиваемого поля ввода)](http://technet.microsoft.com/library/ff730941.aspx)
-
-
-
-<!--HONumber=May16_HO2-->
-
+## See Also
+[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?](http://go.microsoft.com/fwlink/?LinkId=506644)
+[GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week:  Creating a Custom Input Box](http://technet.microsoft.com/library/ff730941.aspx)
 

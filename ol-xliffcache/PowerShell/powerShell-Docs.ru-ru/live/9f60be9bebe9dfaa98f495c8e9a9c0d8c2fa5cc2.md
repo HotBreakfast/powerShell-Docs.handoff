@@ -1,5 +1,5 @@
 ---
-title:  Работа с программами установки программного обеспечения
+title:  Working with Software Installations
 ms.date:  2016-05-11
 keywords:  powershell,cmdlet
 description:  
@@ -10,14 +10,14 @@ ms.prod:  powershell
 ms.assetid:  51a12fe9-95f6-4ffc-81a5-4fa72a5bada9
 ---
 
-# Работа с программами установки программного обеспечения
-Доступ к приложениям, использующим установщик Windows, можно получить в классе **Win32_Product** WMI, но не все современные приложения используют установщик Windows. Так как установщик Windows предоставляет самый широкий ряд стандартных методов работы с устанавливаемыми приложениями, обратим внимание в первую очередь на эти приложения. Установщик Windows обычно не управляет приложениями, использующими другие процедуры установки. Конкретные техники работы с этими приложениями будут зависеть от программного обеспечения установщика и решений, принятых разработчиком приложения.
+# Working with Software Installations
+Applications that are designed to use Windows Installer can be accessed through WMI's **Win32\_Product** class, but not all applications in use today use the Windows Installer. Because the Windows Installer provides the widest range of standard techniques for working with installable applications, we will focus primarily on those applications. Applications that use alternate setup routines will generally not be managed by the Windows Installer. Specific techniques for working with those applications will depend on the installer software and decisions made by the application developer.
 
 > [!NOTE]
-> Приложения, которые устанавливаются путем копирования файлов приложения на компьютер, обычно не могут управляться методами, описанными здесь. Вы можете управлять этими приложениями, как файлами и папками, с помощью способов, приведенных в разделе "Работа с файлами и папками".
+> Applications that are installed by copying the application files to the computer usually cannot be managed by using techniques discussed here. You can manage these applications as files and folders by using the techniques discussed in the "Working With Files and Folders" section.
 
-### Создание списков приложений установщика Windows
-Чтобы создать список приложений, установленных с помощью установщика Windows в локальной или удаленной системе, используйте следующий простой запрос WMI:
+### Listing Windows Installer Applications
+To list the applications installed with the Windows Installer on a local or remote system, use the following simple WMI query:
 
 ```
 PS> Get-WmiObject -Class Win32_Product -ComputerName .
@@ -28,7 +28,7 @@ Version           : 2.0.50727
 Caption           : Microsoft .NET Framework 2.0
 ```
 
-Чтобы отобразить все свойства объекта Win32_Product, используйте параметр Properties командлетов форматирования, например Format-List, со значением * (все).
+To display all of the properties of the Win32\_Product object to the display, use the Properties parameter of the formatting cmdlets, such as the Format\-List cmdlet, with a value of \* (all).
 
 ```
 PS> Get-WmiObject -Class Win32_Product -ComputerName . | Where-Object -FilterScript {$_.Name -eq "Microsoft .NET Framework 2.0"} | Format-List -Property *
@@ -46,19 +46,19 @@ SKUNumber         :
 Vendor            : Microsoft Corporation
 ```
 
-Также можно использовать параметр **Get-WmiObject Filter**, чтобы выбрать только Microsoft .NET Framework 2.0. Так как фильтр, использованный в этой команде, является фильтром WMI, он использует синтаксис языка запросов WMI (WQL), а не синтаксис Windows PowerShell. Вместо этого:
+Or, you could use the **Get\-WmiObject Filter** parameter to select only Microsoft .NET Framework 2.0. Because the filter used in this command is a WMI filter, it uses WMI Query Language (WQL) syntax, not Windows PowerShell syntax. Instead,:
 
 ```
 Get-WmiObject -Class Win32_Product -ComputerName . -Filter "Name='Microsoft .NET Framework 2.0'"| Format-List -Property *
 ```
 
-Обратите внимание, что в запросах WQL часто используются символы (например, пробелы или знаки равенства), которые имеют особое значение в Windows PowerShell. По этой причине целесообразно всегда заключать значение параметра фильтра в кавычки. Кроме того, можно использовать escape-символ Windows PowerShell — обратный апостроф (`), хотя это может ухудшить удобочитаемость. Следующая команда эквивалентна предыдущей и возвращает те же результаты, но использует обратный апостроф в качестве escape-символа для специальных знаков вместо того, чтобы заключать в кавычки всю строку фильтра.
+Note that WQL queries frequently use characters, such as spaces or equal signs, that have a special meaning in Windows PowerShell. For this reason, it is prudent to always enclose the value of the Filter parameter in quotation marks. You can also use the Windows PowerShell escape character, a backtick (\`), although it may not improve readability. The following command is equivalent to the previous command and returns the same results, but uses the backtick to escape special characters, instead of quoting the entire filter string.
 
 ```
 Get-WmiObject -Class Win32_Product -ComputerName . -Filter Name`=`'Microsoft` .NET` Framework` 2.0`' | Format-List -Property *
 ```
 
-Чтобы создать список только интересующих вас свойств, используйте параметр Property командлетов форматирования.
+To list only the properties that interest you, use the Property parameter of the formatting cmdlets to list the desired properties.
 
 ```
 Get-WmiObject -Class Win32_Product -ComputerName . | Format-List -Property Name,InstallDate,InstallLocation,PackageCache,Vendor,Version,IdentifyingNumber
@@ -73,20 +73,20 @@ IdentifyingNumber : {FCE65C4E-B0E8-4FBD-AD16-EDCBE6CD591F}
 ...
 ```
 
-Наконец, чтобы найти имена только установленных приложений, упростите выходные данные с помощью оператора **Format-Wide**:
+Finally, to find only the names of installed applications, a simple **Format\-Wide** statement simplifies the output:
 
 ```
 Get-WmiObject -Class Win32_Product -ComputerName .  | Format-Wide -Column 1
 ```
 
-Несмотря на то что теперь нам известно несколько способов поиска приложений, использовавших установщик Windows, другие приложения не были рассмотрены. Так как большинство стандартных приложений регистрируют программу удаления в Windows, с ними можно работать локально, в реестре Windows.
+Although we now have several ways to look at applications that used the Windows Installer for installation, we have not considered other applications. Because most standard applications register their uninstaller with Windows, we can work with those locally by finding them in the Windows registry.
 
-### Создание списка всех удаленных приложений
-Несмотря на то что не существует гарантированного способа найти все приложения в системе, можно найти все программы со списками, отображенными в диалоговом окне "Добавление или удаление программ". В окне "Добавление или удаление программ" выполняется поиск этих приложений в следующем разделе реестра:
+### Listing All Uninstallable Applications
+Although there is no guaranteed way to find every application on a system, it is possible to find all programs with listings displayed in the Add or Remove Programs dialog box. Add or Remove Programs finds these applications in the following registry key:
 
 **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall**.
 
-В этом разделе также можно найти приложения. Чтобы упростить просмотр раздела "Удаление", можно сопоставить диск Windows PowerShell с данным расположением реестра:
+We can also examine this key to find applications. To make it easier to view the Uninstall key, we can map a Windows PowerShell drive to this registry location:
 
 ```
 PS>    
@@ -97,33 +97,33 @@ Uninstall  Registry      HKEY_LOCAL_MACHINE\SOFTWARE\Micr...
 ```
 
 > [!NOTE]
-> Диск **HKLM**: сопоставляется с корнем **HKEY_LOCAL_MACHINE**, поэтому этот диск используется в пути к разделу "Uninstall". Вместо **HKLM:** можно было указать путь к реестру с помощью **HKLM** или **HKEY_LOCAL_MACHINE**. Преимущество использования диска существующего реестра состоит в том, что теперь можно применять клавишу TAB для заполнения названий разделов, а не вводить их.
+> The **HKLM:** drive is mapped to the root of **HKEY\_LOCAL\_MACHINE**, so we used that drive in the path to the Uninstall key. Instead of **HKLM:** we could have specified the registry path by using either **HKLM** or **HKEY\_LOCAL\_MACHINE**. The advantage of using an existing registry drive is that we can use tab\-completion to fill in the keys names, so we do not need to type them.
 
-Теперь диск с именем "Удаление" можно использовать для быстрого и удобного поиска установок приложений. Количество установленных приложений можно найти, подсчитав количество разделов реестра в разделе "Uninstall" для диска Windows PowerShell:
+We now have a drive named "Uninstall" that can be used to quickly and conveniently look for application installations. We can find the number of installed applications by counting the number of registry keys in the Uninstall: Windows PowerShell drive:
 
 ```
 PS> (Get-ChildItem -Path Uninstall:).Count
 459
 ```
 
-С помощью разных методов, начиная с **Get-ChildItem**, можно дальше выполнять поиск в списке приложений. Чтобы получить список приложений и сохранить их в переменную **$UninstallableApplications**, используйте следующую команду:
+We can search this list of applications further by using a variety of techniques, beginning with **Get\-ChildItem**. To get a list of applications and save them in the **$UninstallableApplications** variable, use the following command:
 
 ```
 $UninstallableApplications = Get-ChildItem -Path Uninstall:
 ```
 
 > [!NOTE]
-> В данном случае длинное имя переменной используется для ясности. При фактическом использовании нет причин использовать длинные имена. Хотя имена переменных можно заполнять нажатием клавиши TAB, для скорости можно использовать имена из одного-двух символов. Длинные описательные имена полезны при разработке кода для повторного использования.
+> We are using a lengthy variable name here for clarity. In actual use, there is no reason to use long names. Although you can use tab\-completion for variable names, you can also use 1–2 character names for speed. Longer, descriptive names are most useful when you are developing code for reuse.
 
-Чтобы отобразить значения записей реестра в подразделах реестра раздела "Удаление", используйте метод GetValue. Значение метода является записью реестра.
+To display the values of the registry entries in the registry keys under Uninstall, use the GetValue method of the registry keys. The value of the method is the name of the registry entry.
 
-Например, чтобы найти отображаемые имена приложений в разделе "Удаление", используйте следующую команду:
+For example, to find the display names of applications in the Uninstall key, use the following command:
 
 ```
 PS> Get-ChildItem -Path Uninstall: | ForEach-Object -Process { $_.GetValue("DisplayName") }
 ```
 
-Нет никакой гарантии, что эти значения уникальны. В следующем примере два установленных элемента отображаются как Windows Media Encoder 9 Series:
+There is no guarantee that these values are unique. In the following example, two installed items appear as "Windows Media Encoder 9 Series":
 
 ```
 PS> Get-ChildItem -Path Uninstall: | Where-Object -FilterScript { $_.GetValue("DisplayName") -eq "Windows Media Encoder 9 Series"}
@@ -137,49 +137,45 @@ SKC  VC Name                           Property
   0  24 {E38C00D0-A68B-4318-A8A6-F7... {AuthorizedCDFPrefix, Comments, Conta...
 ```
 
-### Установка приложений
-Вы можете использовать класс **Win32_Product** для удаленной или локальной установки пакетов установщика Windows.
+### Installing Applications
+You can use the **Win32\_Product** class to install Windows Installer packages, remotely or locally.
 
-> [!NOTE] Чтобы установить приложение в Windows Vista, Windows Server 2008 и более поздних версиях Windows, необходимо запустить Windows PowerShell с параметром "Запустить от имени администратора".
+> [!NOTE]
+> On Windows Vista, Windows Server 2008, and later versions of Windows, to install an application, you must start Windows PowerShell with the "Run as administrator" option.
 
-При удаленной установке используйте сетевой UNC-путь, чтобы указать путь к пакету MSI, так как подсистема WMI не распознает пути Windows PowerShell. Например, чтобы установить пакет NewPackage.msi, расположенный в общей сетевой папке \\AppServ\dsp на удаленном компьютере PC01, введите следующую команду в командной строке Windows PowerShell:
+When installing remotely, use a Universal Naming Convention (UNC) network path to specify the path to the .msi package, because the WMI subsystem does not understand Windows PowerShell paths. For example, to install the NewPackage.msi package located in the network share \\\\AppServ\\dsp on the remote computer PC01, type the following command at the Windows PowerShell prompt:
 
 ```
 (Get-WMIObject -ComputerName PC01 -List | Where-Object -FilterScript {$_.Name -eq "Win32_Product"}).Install(\\AppSrv\dsp\NewPackage.msi)
 ```
 
-Приложения, которые не используют метод установщика Windows, могут включать специальные методы для автоматического развертывания конкретного приложения. Чтобы определить, существует ли метод автоматического развертывания, проверьте документацию приложения или обратитесь в службу поддержки поставщика приложения. В некоторых случаях даже в том случае, если поставщик приложения не разрабатывал способы автоматической установки в приложении, производитель программного обеспечения установщика мог включить некоторые методы автоматизации.
+Applications that do not use Windows Installer technology may have application\-specific methods available for automated deployment. To determine whether there is a method for deployment automation, check the documentation for the application or consult the application vendor's support system. In some cases, even if the application vendor did not specifically design the application for installation automation, the installer software manufacturer may have some techniques for automation.
 
-### Удаление приложений
-Удаление пакета установщика Windows с помощью Windows PowerShell работает примерно так же, как и установка пакета. Далее представлен пример, в котором пакет для удаления выбирается на основе имени. В некоторых случаях его может быть проще отфильтровать с помощью **IdentifyingNumber**:
+### Removing Applications
+Removing a Windows Installer package by using Windows PowerShell works in approximately the same way as installing a package. Here is an example that selects the package to uninstall based on its name; in some cases it may be easier to filter with the **IdentifyingNumber**:
 
 ```
 (Get-WmiObject -Class Win32_Product -Filter "Name='ILMerge'" -ComputerName . ).Uninstall()
 ```
 
-Удаление других приложений не так просто, даже если оно выполняется локально. Строки удаления командной строки для этих приложений можно найти путем извлечения свойства **UninstallString**. Этот способ работает для приложений установщика Windows и более старых программ, отображающихся в разделе "Удаление":
+Removing other applications is not quite so simple, even when done locally. We can find the command line uninstallation strings for these applications by extracting the **UninstallString** property. This method works for Windows Installer applications and for older programs appearing under the Uninstall key:
 
 ```
 Get-ChildItem -Path Uninstall: | ForEach-Object -Process { $_.GetValue("UninstallString") }
 ```
 
-Выходные данные при необходимости можно отфильтровать по отображаемому имени:
+You can filter the output by the display name, if you like:
 
 ```
 Get-ChildItem -Path Uninstall: | Where-Object -FilterScript { $_.GetValue("DisplayName") -like "Win*"} | ForEach-Object -Process { $_.GetValue("UninstallString") }
 ```
 
-Однако эти строки невозможно напрямую использовать из командной строки Windows PowerShell без внесения некоторых изменений.
+However, these strings may not be directly usable from the Windows PowerShell prompt without some modification.
 
-### Обновление приложений установщика Windows
-Чтобы обновить приложение, необходимо знать название приложения и путь к пакету обновлений приложения. Получив эти сведения, можно обновить приложение с помощью одной команды Windows PowerShell:
+### Upgrading Windows Installer Applications
+To upgrade an application, you need to know the name of the application and the path to the application upgrade package. With that information, you can upgrade an application with a single Windows PowerShell command:
 
 ```
 (Get-WmiObject -Class Win32_Product -ComputerName . -Filter "Name='OldAppName'").Upgrade(\\AppSrv\dsp\OldAppUpgrade.msi)
 ```
-
-
-
-<!--HONumber=May16_HO2-->
-
 

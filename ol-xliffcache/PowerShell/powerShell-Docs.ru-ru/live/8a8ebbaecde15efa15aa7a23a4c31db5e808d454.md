@@ -1,5 +1,5 @@
 ---
-title:  Повторение задачи для нескольких объектов с помощью ForEach-Object 
+title:  Repeating a Task for Multiple Objects  ForEach Object 
 ms.date:  2016-05-11
 keywords:  powershell,cmdlet
 description:  
@@ -10,10 +10,10 @@ ms.prod:  powershell
 ms.assetid:  6697a12d-2470-4ed6-b5bb-c35e5d525eb6
 ---
 
-# Повторение задачи для нескольких объектов (ForEach-Object)
-Командлет **ForEach-Object** использует блоки сценариев и дескриптор $_ текущего объекта конвейера, чтобы вы могли выполнить команду для каждого объекта в конвейере. Это можно использовать для выполнения некоторых сложных задач.
+# Repeating a Task for Multiple Objects (ForEach-Object)
+The **ForEach\-Object** cmdlet uses script blocks and the $\_ descriptor for the current pipeline object to let you run a command on each object in the pipeline. This can be used to perform some complicated tasks.
 
-Одним из случаев, где это может пригодиться, является обработка данных, делающая их более полезными. Например класс Win32_LogicalDisk из инструментария WMI можно использовать для возврата сведений о свободном пространстве на каждом локальном диске. Данные возвращаются в виде байтов, что затрудняет их восприятие:
+One situation where this can be useful is manipulating data to make it more useful. For example, the Win32\_LogicalDisk class from WMI can be used to return free space information for each local disk. The data is returned in terms of bytes, however, which makes it difficult to read:
 
 ```
 PS> Get-WmiObject -Class Win32_LogicalDisk
@@ -26,20 +26,20 @@ Size         : 203912880128
 VolumeName   : Local Disk
 ```
 
-Можно преобразовать FreeSpace в мегабайты, дважды разделив каждое значение на 1024. После первого деления данные представлены в килобайтах, после второго — в мегабайтах. Это можно сделать в блоке сценария ForEach-Object, введя следующее:
+We can convert the FreeSpace value to megabytes by dividing each value by 1024 twice; after the first division, the data is in kilobytes, and after the second division it is megabytes. You can do that in a ForEach\-Object script block by typing:
 
 ```
 Get-WmiObject -Class Win32_LogicalDisk | ForEach-Object -Process {($_.FreeSpace)/1024.0/1024.0}
 48318.01171875
 ```
 
-К сожалению, в результате получаются данные без соответствующей метки. Поскольку свойства инструментария WMI, такие как это, доступны только для чтения, непосредственное преобразование FreeSpace невозможно. Если ввести следующее:
+Unfortunately, the output is now data with no associated label. Because WMI properties such as this are read\-only, you cannot directly convert FreeSpace. If you type this:
 
 ```
 Get-WmiObject -Class Win32_LogicalDisk | ForEach-Object -Process {$_.FreeSpace = ($_.FreeSpace)/1024.0/1024.0}
 ```
 
-Отображается сообщение об ошибке:
+You get an error message:
 
 ```
 "FreeSpace" is a ReadOnly property.
@@ -48,10 +48,5 @@ At line:1 char:70
 eeSpace = ($_.FreeSpace)/1024.0/1024.0}
 ```
 
-Можно реорганизовать данные с помощью некоторых усовершенствованных методик, однако проще создать объект с помощью **Select-Object**.
-
-
-
-<!--HONumber=May16_HO2-->
-
+You could reorganize the data by using some advanced techniques, but a simpler approach is to create a new object, by using **Select\-Object**.
 

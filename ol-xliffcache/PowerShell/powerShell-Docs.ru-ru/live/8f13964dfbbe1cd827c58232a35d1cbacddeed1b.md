@@ -1,5 +1,5 @@
 ---
-title:  Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
+title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
 ms.date:  2016-05-16
 keywords:  powershell,DSC
 description:  
@@ -9,62 +9,57 @@ manager:  dongill
 ms.prod:  powershell
 ---
 
-# Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
+# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
 
-Получает выходные данные агента конфигурации, относящиеся к определенному заданию.
+Gets the Configuration Agent output associated with a specific job.
 
-Синтаксис
+Syntax
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-Параметры
+Parameters
 ----------
 
 *jobId* \[in\]  
-Идентификатор задания, для которого необходимо получить выходные данные.
+The ID of the job for which to get output data.
 
 *resumeOutputBookmark* \[in\]  
-Указывает, что выходные данные должны быть продолжением от предыдущей закладки.
+Specifies that the output should be a continuation from a previous bookmark.
 
 *output* \[out\]  
-Выходные данные для указанного задания.
+The output for the specified job.
 
-## Возвращаемое значение
+## Return value
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+Returns zero on success; otherwise returns an error code.
 
-## Замечания
+## Remarks
 
-Это статический метод.
+This is a static method.
 
-## Требования
+## Requirements
 ------------
->**MOF-файл:** DscCore.mof
+>**MOF:** DscCore.mof
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-<!--HONumber=May16_HO3-->
 
 
