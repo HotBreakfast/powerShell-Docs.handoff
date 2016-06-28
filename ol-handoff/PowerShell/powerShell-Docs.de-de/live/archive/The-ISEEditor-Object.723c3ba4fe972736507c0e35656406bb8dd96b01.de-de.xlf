@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4812092dea24fa61245af7e06d1c5924ec812218</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEEditor-Object.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEEditor-Object.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4812092dea24fa61245af7e06d1c5924ec812218</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -39,8 +40,8 @@
           <target state="new">Methods</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Clear\(\)</source>
-          <target state="new">Clear\(\)</target>
+          <source>Clear</source>
+          <target state="new">Clear</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -51,8 +52,8 @@
           <target state="new">Clears the text in the editor.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>EnsureVisible\(int lineNumber\)</source>
-          <target state="new">EnsureVisible\(int lineNumber\)</target>
+          <source>EnsureVisible<ph id="ph1">\(</ph>int lineNumber</source>
+          <target state="new">EnsureVisible<ph id="ph1">\(</ph>int lineNumber</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -73,8 +74,8 @@
 </ph> The number of the line that is to be made visible.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>Focus\(\)</source>
-          <target state="new">Focus\(\)</target>
+          <source>Focus</source>
+          <target state="new">Focus</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -85,8 +86,8 @@
           <target state="new">Sets the focus to the editor.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>GetLineLength\(int lineNumber \)</source>
-          <target state="new">GetLineLength\(int lineNumber \)</target>
+          <source>GetLineLength<ph id="ph1">\(</ph>int lineNumber</source>
+          <target state="new">GetLineLength<ph id="ph1">\(</ph>int lineNumber</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -109,16 +110,16 @@
 </ph> The line length for the line at the specified line number.</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>GoToMatch\(\)</source>
-          <target state="new">GoToMatch\(\)</target>
+          <source>GoToMatch</source>
+          <target state="new">GoToMatch</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</source>
           <target state="new">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source>Moves the caret to the matching character if the <bpt id="p1">**</bpt>CanGoToMatch<ept id="p1">**</ept> property of the editor object is <bpt id="p2">**</bpt>$true<ept id="p2">**</ept>, which occurs when the caret is immediately before an opening parenthesis, bracket, or brace \- \(,\[,{ \- or immediately after a closing parenthesis, bracket, or brace \- \),\],}.</source>
-          <target state="new">Moves the caret to the matching character if the <bpt id="p1">**</bpt>CanGoToMatch<ept id="p1">**</ept> property of the editor object is <bpt id="p2">**</bpt>$true<ept id="p2">**</ept>, which occurs when the caret is immediately before an opening parenthesis, bracket, or brace \- \(,\[,{ \- or immediately after a closing parenthesis, bracket, or brace \- \),\],}.</target>
+          <source>Moves the caret to the matching character if the <bpt id="p1">**</bpt>CanGoToMatch<ept id="p1">**</ept> property of the editor object is <bpt id="p2">**</bpt>$true<ept id="p2">**</ept>, which occurs when the caret is immediately before an opening parenthesis, bracket, or brace <ph id="ph1">\-</ph> <ph id="ph2">\(</ph>,<ph id="ph3">\[</ph>,{ <ph id="ph4">\-</ph> or immediately after a closing parenthesis, bracket, or brace <ph id="ph5">\-</ph> <ph id="ph6">\)</ph>,<ph id="ph7">\]</ph>,}.</source>
+          <target state="new">Moves the caret to the matching character if the <bpt id="p1">**</bpt>CanGoToMatch<ept id="p1">**</ept> property of the editor object is <bpt id="p2">**</bpt>$true<ept id="p2">**</ept>, which occurs when the caret is immediately before an opening parenthesis, bracket, or brace <ph id="ph1">\-</ph> <ph id="ph2">\(</ph>,<ph id="ph3">\[</ph>,{ <ph id="ph4">\-</ph> or immediately after a closing parenthesis, bracket, or brace <ph id="ph5">\-</ph> <ph id="ph6">\)</ph>,<ph id="ph7">\]</ph>,}.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>The caret is placed before an opening character or after a closing character.</source>
@@ -133,8 +134,8 @@
           <target state="new">See <bpt id="p1">[</bpt>CanGoToMatch<ept id="p1">](#cangotomatch)</ept>.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>InsertText\( text \)</source>
-          <target state="new">InsertText\( text \)</target>
+          <source>InsertText<ph id="ph1">\(</ph> text</source>
+          <target state="new">InsertText<ph id="ph1">\(</ph> text</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -145,16 +146,16 @@
           <target state="new">Replaces the selection with text or inserts text at the current caret position.</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>text<ept id="p1">**</ept> \- String  The text to insert.</source>
-          <target state="new"><bpt id="p1">**</bpt>text<ept id="p1">**</ept> \- String  The text to insert.</target>
+          <source><bpt id="p1">**</bpt>text<ept id="p1">**</ept> <ph id="ph1">\-</ph> String The text to insert.</source>
+          <target state="new"><bpt id="p1">**</bpt>text<ept id="p1">**</ept> <ph id="ph1">\-</ph> String The text to insert.</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
           <source>See the <bpt id="p1">[</bpt>Scripting Example<ept id="p1">](#example)</ept> later in this topic.</source>
           <target state="new">See the <bpt id="p1">[</bpt>Scripting Example<ept id="p1">](#example)</ept> later in this topic.</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
-          <source>Select\( startLine, startColumn, endLine, endColumn \)</source>
-          <target state="new">Select\( startLine, startColumn, endLine, endColumn \)</target>
+          <source>Select<ph id="ph1">\(</ph> startLine, startColumn, endLine, endColumn</source>
+          <target state="new">Select<ph id="ph1">\(</ph> startLine, startColumn, endLine, endColumn</target>
         </trans-unit>
         <trans-unit id="136" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -165,28 +166,28 @@
           <target state="new">Selects the text from the <bpt id="p1">**</bpt>startLine<ept id="p1">**</ept>, <bpt id="p2">**</bpt>startColumn<ept id="p2">**</ept>, <bpt id="p3">**</bpt>endLine<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>endColumn<ept id="p4">**</ept> parameters.</target>
         </trans-unit>
         <trans-unit id="138" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>startLine<ept id="p1">**</ept> \- Integer  The line where the selection starts.</source>
-          <target state="new"><bpt id="p1">**</bpt>startLine<ept id="p1">**</ept> \- Integer  The line where the selection starts.</target>
+          <source><bpt id="p1">**</bpt>startLine<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The line where the selection starts.</source>
+          <target state="new"><bpt id="p1">**</bpt>startLine<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The line where the selection starts.</target>
         </trans-unit>
         <trans-unit id="139" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>startColumn<ept id="p1">**</ept> \- Integer  The column within the start line where the selection starts.</source>
-          <target state="new"><bpt id="p1">**</bpt>startColumn<ept id="p1">**</ept> \- Integer  The column within the start line where the selection starts.</target>
+          <source><bpt id="p1">**</bpt>startColumn<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The column within the start line where the selection starts.</source>
+          <target state="new"><bpt id="p1">**</bpt>startColumn<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The column within the start line where the selection starts.</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>endLine<ept id="p1">**</ept> \- Integer  The line where the selection ends.</source>
-          <target state="new"><bpt id="p1">**</bpt>endLine<ept id="p1">**</ept> \- Integer  The line where the selection ends.</target>
+          <source><bpt id="p1">**</bpt>endLine<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The line where the selection ends.</source>
+          <target state="new"><bpt id="p1">**</bpt>endLine<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The line where the selection ends.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>endColumn<ept id="p1">**</ept> \- Integer  The column within the end line where the selection ends.</source>
-          <target state="new"><bpt id="p1">**</bpt>endColumn<ept id="p1">**</ept> \- Integer  The column within the end line where the selection ends.</target>
+          <source><bpt id="p1">**</bpt>endColumn<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The column within the end line where the selection ends.</source>
+          <target state="new"><bpt id="p1">**</bpt>endColumn<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The column within the end line where the selection ends.</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
           <source>See the  <bpt id="p1">[</bpt>Scripting Example<ept id="p1">](#example)</ept> later in this topic.</source>
           <target state="new">See the  <bpt id="p1">[</bpt>Scripting Example<ept id="p1">](#example)</ept> later in this topic.</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
-          <source>SelectCaretLine\(\)</source>
-          <target state="new">SelectCaretLine\(\)</target>
+          <source>SelectCaretLine</source>
+          <target state="new">SelectCaretLine</target>
         </trans-unit>
         <trans-unit id="144" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -197,8 +198,8 @@
           <target state="new">Selects the entire line of text that currently contains the caret.</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>SetCaretPosition\( lineNumber, columnNumber \)</source>
-          <target state="new">SetCaretPosition\( lineNumber, columnNumber \)</target>
+          <source>SetCaretPosition<ph id="ph1">\(</ph> lineNumber, columnNumber</source>
+          <target state="new">SetCaretPosition<ph id="ph1">\(</ph> lineNumber, columnNumber</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -213,16 +214,16 @@
           <target state="new">It throws an exception if either the caret line number  or the caret column number  are out of their respective valid ranges.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>lineNumber<ept id="p1">**</ept> \- Integer  The caret line number.</source>
-          <target state="new"><bpt id="p1">**</bpt>lineNumber<ept id="p1">**</ept> \- Integer  The caret line number.</target>
+          <source><bpt id="p1">**</bpt>lineNumber<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The caret line number.</source>
+          <target state="new"><bpt id="p1">**</bpt>lineNumber<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The caret line number.</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>columnNumber<ept id="p1">**</ept> \- Integer  The caret column number.</source>
-          <target state="new"><bpt id="p1">**</bpt>columnNumber<ept id="p1">**</ept> \- Integer  The caret column number.</target>
+          <source><bpt id="p1">**</bpt>columnNumber<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The caret column number.</source>
+          <target state="new"><bpt id="p1">**</bpt>columnNumber<ept id="p1">**</ept> <ph id="ph1">\-</ph> Integer The caret column number.</target>
         </trans-unit>
         <trans-unit id="152" translate="yes" xml:space="preserve">
-          <source>ToggleOutliningExpansion\(\)</source>
-          <target state="new">ToggleOutliningExpansion\(\)</target>
+          <source>ToggleOutliningExpansion</source>
+          <target state="new">ToggleOutliningExpansion</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</source>
@@ -245,8 +246,8 @@
           <target state="new">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
-          <source>The read\-only Boolean property to indicate whether the caret is next to a parenthesis, bracket, or brace – \(\), \[\], {}.</source>
-          <target state="new">The read\-only Boolean property to indicate whether the caret is next to a parenthesis, bracket, or brace – \(\), \[\], {}.</target>
+          <source>The read<ph id="ph1">\-</ph>only Boolean property to indicate whether the caret is next to a parenthesis, bracket, or brace – <ph id="ph2">\(\)</ph>, <ph id="ph3">\[\]</ph>, {}.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only Boolean property to indicate whether the caret is next to a parenthesis, bracket, or brace – <ph id="ph2">\(\)</ph>, <ph id="ph3">\[\]</ph>, {}.</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
           <source>If the caret is immediately before the opening character or immediately after the closing character of a pair, then this property value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
@@ -265,8 +266,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="163" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the column number that corresponds to the position of the caret.</source>
-          <target state="new">The read\-only property that gets the column number that corresponds to the position of the caret.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the column number that corresponds to the position of the caret.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the column number that corresponds to the position of the caret.</target>
         </trans-unit>
         <trans-unit id="164" translate="yes" xml:space="preserve">
           <source>CaretLine</source>
@@ -277,8 +278,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="166" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the number of the line that contains the caret.</source>
-          <target state="new">The read\-only property that gets the number of the line that contains the caret.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the number of the line that contains the caret.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the number of the line that contains the caret.</target>
         </trans-unit>
         <trans-unit id="167" translate="yes" xml:space="preserve">
           <source>CaretLineText</source>
@@ -289,8 +290,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="169" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the complete line of text that contains the caret.</source>
-          <target state="new">The read\-only property that gets the complete line of text that contains the caret.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the complete line of text that contains the caret.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the complete line of text that contains the caret.</target>
         </trans-unit>
         <trans-unit id="170" translate="yes" xml:space="preserve">
           <source>LineCount</source>
@@ -301,8 +302,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="172" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the line count from the editor.</source>
-          <target state="new">The read\-only property that gets the line count from the editor.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the line count from the editor.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the line count from the editor.</target>
         </trans-unit>
         <trans-unit id="173" translate="yes" xml:space="preserve">
           <source>SelectedText</source>
@@ -313,8 +314,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="175" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the selected text from the editor.</source>
-          <target state="new">The read\-only property that gets the selected text from the editor.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the selected text from the editor.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the selected text from the editor.</target>
         </trans-unit>
         <trans-unit id="176" translate="yes" xml:space="preserve">
           <source>See the  <bpt id="p1">[</bpt>Scripting Example<ept id="p1">](#example)</ept> later in this topic.</source>
@@ -329,8 +330,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="179" translate="yes" xml:space="preserve">
-          <source>The read\/write property that gets or sets the text in the editor.</source>
-          <target state="new">The read\/write property that gets or sets the text in the editor.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that gets or sets the text in the editor.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that gets or sets the text in the editor.</target>
         </trans-unit>
         <trans-unit id="180" translate="yes" xml:space="preserve">
           <source>See the <bpt id="p1">[</bpt>Scripting Example<ept id="p1">](#example)</ept> later in this topic.</source>

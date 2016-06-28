@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="de-de">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">81803dcb8d5f0fac392cf13883b9240da3321f53</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\feedback_formathex.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -16,8 +24,8 @@
           <target state="new">Here is an example, looking at the hexadecimal representation of a string, as well as the binary contents of a Word document.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>PS C:\\&amp;gt; "hello world" | Format-Hex</source>
-          <target state="new">PS C:\\&amp;gt; "hello world" | Format-Hex</target>
+          <source>PS C:<ph id="ph1">\\&amp;gt;</ph> "hello world" | Format-Hex</source>
+          <target state="new">PS C:<ph id="ph1">\\&amp;gt;</ph> "hello world" | Format-Hex</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
           <source>0 1 2 3 4 5 6 7 8 9 A B C D E F</source>
@@ -28,12 +36,12 @@
           <target state="new">00000000 68 65 6C 6C 6F 20 77 6F 72 6C 64 hello world</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>PS C:\\&amp;gt; Format-Hex -Path 'C:\\Users\\slee\\Downloads\\DSP1009\_1 1 1.doc'</source>
-          <target state="new">PS C:\\&amp;gt; Format-Hex -Path 'C:\\Users\\slee\\Downloads\\DSP1009\_1 1 1.doc'</target>
+          <source>PS C:<ph id="ph1">\\&amp;gt;</ph> Format-Hex -Path 'C:<ph id="ph2">\\</ph>Users<ph id="ph3">\\</ph>slee<ph id="ph4">\\</ph>Downloads<ph id="ph5">\\</ph>DSP1009<ph id="ph6">\_</ph>1 1 1.doc'</source>
+          <target state="new">PS C:<ph id="ph1">\\&amp;gt;</ph> Format-Hex -Path 'C:<ph id="ph2">\\</ph>Users<ph id="ph3">\\</ph>slee<ph id="ph4">\\</ph>Downloads<ph id="ph5">\\</ph>DSP1009<ph id="ph6">\_</ph>1 1 1.doc'</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Path: C:\\Users\\slee\\Downloads\\DSP1009\_1 1 1.doc</source>
-          <target state="new">Path: C:\\Users\\slee\\Downloads\\DSP1009\_1 1 1.doc</target>
+          <source>Path: C:<ph id="ph1">\\</ph>Users<ph id="ph2">\\</ph>slee<ph id="ph3">\\</ph>Downloads<ph id="ph4">\\</ph>DSP1009<ph id="ph5">\_</ph>1 1 1.doc</source>
+          <target state="new">Path: C:<ph id="ph1">\\</ph>Users<ph id="ph2">\\</ph>slee<ph id="ph3">\\</ph>Downloads<ph id="ph4">\\</ph>DSP1009<ph id="ph5">\_</ph>1 1 1.doc</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>0 1 2 3 4 5 6 7 8 9 A B C D E F</source>
@@ -44,8 +52,8 @@
           <target state="new">00000000 D0 CF 11 E0 A1 B1 1A E1 00 00 00 00 00 00 00 00 ÐÏ.à¡±.á........</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>00000010 00 00 00 00 00 00 00 00 3E 00 03 00 FE FF 09 00 ........&amp;gt;...þ...</source>
-          <target state="new">00000010 00 00 00 00 00 00 00 00 3E 00 03 00 FE FF 09 00 ........&amp;gt;...þ...</target>
+          <source>00000010 00 00 00 00 00 00 00 00 3E 00 03 00 FE FF 09 00 ........<ph id="ph1">&amp;gt;</ph>...þ...</source>
+          <target state="new">00000010 00 00 00 00 00 00 00 00 3E 00 03 00 FE FF 09 00 ........<ph id="ph1">&amp;gt;</ph>...þ...</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>00000020 06 00 00 00 00 00 00 00 00 00 00 00 08 00 00 00 ................</source>
@@ -70,7 +78,4 @@
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">81803dcb8d5f0fac392cf13883b9240da3321f53</xliffext:olfilehash>
-  </header>
 </xliff>

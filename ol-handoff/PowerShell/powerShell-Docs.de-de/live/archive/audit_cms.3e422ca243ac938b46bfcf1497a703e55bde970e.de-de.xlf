@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="de-de">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2160a4b932075c98df6806c61d263d30f650b9f4</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\audit_cms.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -24,8 +32,8 @@
           <target state="new">If any content is encrypted with this public key, only your private key can decrypt it.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>For more information about Public Key Cryptography, see: <bpt id="p1">&lt;</bpt><ept id="p1">http://en.wikipedia.org/wiki/Public-key_cryptography&gt;</ept>.</source>
-          <target state="new">For more information about Public Key Cryptography, see: <bpt id="p1">&lt;</bpt><ept id="p1">http://en.wikipedia.org/wiki/Public-key_cryptography&gt;</ept>.</target>
+          <source>For more information about Public Key Cryptography, see: <bpt id="p1">&lt;</bpt>http://en.wikipedia.org/wiki/Public-key_cryptography<ept id="p1">&gt;</ept>.</source>
+          <target state="new">For more information about Public Key Cryptography, see: <bpt id="p1">&lt;</bpt>http://en.wikipedia.org/wiki/Public-key_cryptography<ept id="p1">&gt;</ept>.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>To be recognized in PowerShell, encryption certificates require a unique key usage identifier (EKU) to identify them as data encryption certificates (like the identifiers for 'Code Signing', 'Encrypted Mail').</source>
@@ -74,7 +82,4 @@
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2160a4b932075c98df6806c61d263d30f650b9f4</xliffext:olfilehash>
-  </header>
 </xliff>

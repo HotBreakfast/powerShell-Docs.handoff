@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d2f78148402f06992f5f58cd40e8c4f624b5e4b5</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\install-and-use-windows-powershell-web-access.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\install-and-use-windows-powershell-web-access.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">d2f78148402f06992f5f58cd40e8c4f624b5e4b5</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -291,8 +292,8 @@
           <target state="new">Also, Windows PowerShell cmdlets are not case-sensitive.</target>
         </trans-unit>
         <trans-unit id="171" translate="yes" xml:space="preserve">
-          <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer\_name<ept id="p2">*</ept> represents a remote computer on which you want to install Windows PowerShell Web Access, if applicable.</source>
-          <target state="new">Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer\_name<ept id="p2">*</ept> represents a remote computer on which you want to install Windows PowerShell Web Access, if applicable.</target>
+          <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer<ph id="ph1">\_</ph>name<ept id="p2">*</ept> represents a remote computer on which you want to install Windows PowerShell Web Access, if applicable.</source>
+          <target state="new">Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer<ph id="ph1">\_</ph>name<ept id="p2">*</ept> represents a remote computer on which you want to install Windows PowerShell Web Access, if applicable.</target>
         </trans-unit>
         <trans-unit id="172" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">&lt;span class="code"&gt;</ph>Restart<ph id="ph2">&lt;/span&gt;</ph> parameter automatically restarts destination servers if required.</source>
@@ -351,8 +352,8 @@
           <target state="new">These setup instructions are also in the following section, <bpt id="p1">[</bpt>Step 2: Configure the gateway<ept id="p1">](#BKMK_step2)</ept>.</target>
         </trans-unit>
         <trans-unit id="186" translate="yes" xml:space="preserve">
-          <source>The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt<ph id="ph2">&lt;/span&gt;</ph>.</source>
-          <target state="new">The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt<ph id="ph2">&lt;/span&gt;</ph>.</target>
+          <source>The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:<ph id="ph2">\\</ph>Windows<ph id="ph3">\\</ph>Web<ph id="ph4">\\</ph>PowerShellWebAccess<ph id="ph5">\\</ph>wwwroot<ph id="ph6">\\</ph>README.txt<ph id="ph7">&lt;/span&gt;</ph>.</source>
+          <target state="new">The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:<ph id="ph2">\\</ph>Windows<ph id="ph3">\\</ph>Web<ph id="ph4">\\</ph>PowerShellWebAccess<ph id="ph5">\\</ph>wwwroot<ph id="ph6">\\</ph>README.txt<ph id="ph7">&lt;/span&gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="187" translate="yes" xml:space="preserve">
           <source>Step 2: Configure the gateway</source>
@@ -375,8 +376,8 @@
           <target state="new">You can complete Windows PowerShell Web Access web application configuration either by running the <ph id="ph1">&lt;span class="code"&gt;</ph>Install-PswaWebApplication<ph id="ph2">&lt;/span&gt;</ph> cmdlet or by performing GUI-based configuration steps in IIS Manager.</target>
         </trans-unit>
         <trans-unit id="192" translate="yes" xml:space="preserve">
-          <source>By default, the cmdlet installs the web application, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> (and an application pool for it, <bpt id="p2">**</bpt>pswa\_pool<ept id="p2">**</ept>), in the <bpt id="p3">**</bpt>Default Web Site<ept id="p3">**</ept> container, as shown in IIS Manager; if desired, you can instruct the cmdlet to change the default site container of the web application.</source>
-          <target state="new">By default, the cmdlet installs the web application, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> (and an application pool for it, <bpt id="p2">**</bpt>pswa\_pool<ept id="p2">**</ept>), in the <bpt id="p3">**</bpt>Default Web Site<ept id="p3">**</ept> container, as shown in IIS Manager; if desired, you can instruct the cmdlet to change the default site container of the web application.</target>
+          <source>By default, the cmdlet installs the web application, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> (and an application pool for it, <bpt id="p2">**</bpt>pswa<ph id="ph1">\_</ph>pool<ept id="p2">**</ept>), in the <bpt id="p3">**</bpt>Default Web Site<ept id="p3">**</ept> container, as shown in IIS Manager; if desired, you can instruct the cmdlet to change the default site container of the web application.</source>
+          <target state="new">By default, the cmdlet installs the web application, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> (and an application pool for it, <bpt id="p2">**</bpt>pswa<ph id="ph1">\_</ph>pool<ept id="p2">**</ept>), in the <bpt id="p3">**</bpt>Default Web Site<ept id="p3">**</ept> container, as shown in IIS Manager; if desired, you can instruct the cmdlet to change the default site container of the web application.</target>
         </trans-unit>
         <trans-unit id="193" translate="yes" xml:space="preserve">
           <source>IIS Manager offers configuration options that are available for web applications, such as changing the port number or the Secure Sockets Layer (SSL) certificate.</source>
@@ -439,8 +440,8 @@
           <target state="new">Running the cmdlet installs the Windows PowerShell Web Access web application within the IIS Default Web Site container.</target>
         </trans-unit>
         <trans-unit id="208" translate="yes" xml:space="preserve">
-          <source>The cmdlet creates the infrastructure required to run Windows PowerShell Web Access on the default website, https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa.</source>
-          <target state="new">The cmdlet creates the infrastructure required to run Windows PowerShell Web Access on the default website, https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa.</target>
+          <source>The cmdlet creates the infrastructure required to run Windows PowerShell Web Access on the default website, https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa.</source>
+          <target state="new">The cmdlet creates the infrastructure required to run Windows PowerShell Web Access on the default website, https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa.</target>
         </trans-unit>
         <trans-unit id="209" translate="yes" xml:space="preserve">
           <source>To install the web application in a different website, provide the website name by adding the <ph id="ph1">&lt;span class="code"&gt;</ph>WebSiteName<ph id="ph2">&lt;/span&gt;</ph> parameter.</source>
@@ -463,8 +464,8 @@
           <target state="new">Path: /pswa</target>
         </trans-unit>
         <trans-unit id="214" translate="yes" xml:space="preserve">
-          <source>ApplicationPool: pswa\_pool</source>
-          <target state="new">ApplicationPool: pswa\_pool</target>
+          <source>ApplicationPool: pswa<ph id="ph1">\_</ph>pool</source>
+          <target state="new">ApplicationPool: pswa<ph id="ph1">\_</ph>pool</target>
         </trans-unit>
         <trans-unit id="215" translate="yes" xml:space="preserve">
           <source>EnabledProtocols: http</source>
@@ -479,8 +480,8 @@
           <target state="new">Example:<ph id="ph1">&lt;/span&gt;</ph> <ph id="ph2">&lt;span class="code"&gt;</ph>Install-PswaWebApplication –webApplicationName myWebApp –useTestCertificate</target>
         </trans-unit>
         <trans-unit id="218" translate="yes" xml:space="preserve">
-          <source>In this example, the resulting website for Windows PowerShell Web Access is https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>server\_name<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/myWebApp.</source>
-          <target state="new">In this example, the resulting website for Windows PowerShell Web Access is https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>server\_name<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/myWebApp.</target>
+          <source>In this example, the resulting website for Windows PowerShell Web Access is https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>server<ph id="ph2">\_</ph>name<ept id="p1">*</ept><ph id="ph3">&amp;gt;</ph>/myWebApp.</source>
+          <target state="new">In this example, the resulting website for Windows PowerShell Web Access is https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>server<ph id="ph2">\_</ph>name<ept id="p1">*</ept><ph id="ph3">&amp;gt;</ph>/myWebApp.</target>
         </trans-unit>
         <trans-unit id="219" translate="yes" xml:space="preserve">
           <source>Note</source>
@@ -535,8 +536,8 @@
           <target state="new">Path: /pswa</target>
         </trans-unit>
         <trans-unit id="232" translate="yes" xml:space="preserve">
-          <source>ApplicationPool: pswa\_pool</source>
-          <target state="new">ApplicationPool: pswa\_pool</target>
+          <source>ApplicationPool: pswa<ph id="ph1">\_</ph>pool</source>
+          <target state="new">ApplicationPool: pswa<ph id="ph1">\_</ph>pool</target>
         </trans-unit>
         <trans-unit id="233" translate="yes" xml:space="preserve">
           <source>EnabledProtocols: http</source>
@@ -603,8 +604,8 @@
           <target state="new">The Windows PowerShell Web Access web application is now configured to use your signed SSL certificate.</target>
         </trans-unit>
         <trans-unit id="249" translate="yes" xml:space="preserve">
-          <source>You can access Windows PowerShell Web Access by opening https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa in a browser window.</source>
-          <target state="new">You can access Windows PowerShell Web Access by opening https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa in a browser window.</target>
+          <source>You can access Windows PowerShell Web Access by opening https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa in a browser window.</source>
+          <target state="new">You can access Windows PowerShell Web Access by opening https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa in a browser window.</target>
         </trans-unit>
         <trans-unit id="250" translate="yes" xml:space="preserve">
           <source>Note</source>
@@ -663,8 +664,8 @@
           <target state="new">Optional step for restricting user access by using session configurations:<ph id="ph1">&lt;/span&gt;</ph> Verify that session configurations that you want to use in your rules already exist.</target>
         </trans-unit>
         <trans-unit id="264" translate="yes" xml:space="preserve">
-          <source>If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
-          <target state="new">If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
+          <source>If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
+          <target state="new">If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
         </trans-unit>
         <trans-unit id="265" translate="yes" xml:space="preserve">
           <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>.</source>
@@ -679,20 +680,20 @@
           <target state="new">This authorization rule allows a specific user access to one computer on the network to which they typically have access, with access to a specific session configuration that is scoped to the user’s typical scripting and cmdlet needs.</target>
         </trans-unit>
         <trans-unit id="268" translate="yes" xml:space="preserve">
-          <source>In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso\_214<ph id="ph6">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph7">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph8">&lt;/span&gt;</ph>.</source>
-          <target state="new">In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso\_214<ph id="ph6">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph7">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph8">&lt;/span&gt;</ph>.</target>
+          <source>In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso<ph id="ph6">\_</ph>214<ph id="ph7">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph8">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph9">&lt;/span&gt;</ph>.</source>
+          <target state="new">In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso<ph id="ph6">\_</ph>214<ph id="ph7">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph8">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph9">&lt;/span&gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="269" translate="yes" xml:space="preserve">
           <source>[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_ebd5bc5e-ec5d-4955-a86a-63843e480e37'); "Copy to clipboard.")</source>
           <target state="new">[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_ebd5bc5e-ec5d-4955-a86a-63843e480e37'); "Copy to clipboard.")</target>
         </trans-unit>
         <trans-unit id="270" translate="yes" xml:space="preserve">
-          <source>Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain\\user | computer\\user<ph id="ph2">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph3">&amp;lt;</ph>computer\_name<ph id="ph4">&amp;gt;</ph>.</source>
-          <target state="new">Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain\\user | computer\\user<ph id="ph2">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph3">&amp;lt;</ph>computer\_name<ph id="ph4">&amp;gt;</ph>.</target>
+          <source>Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain<ph id="ph2">\\</ph>user | computer<ph id="ph3">\\</ph>user<ph id="ph4">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph5">&amp;lt;</ph>computer<ph id="ph6">\_</ph>name<ph id="ph7">&amp;gt;</ph>.</source>
+          <target state="new">Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain<ph id="ph2">\\</ph>user | computer<ph id="ph3">\\</ph>user<ph id="ph4">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph5">&amp;lt;</ph>computer<ph id="ph6">\_</ph>name<ph id="ph7">&amp;gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="271" translate="yes" xml:space="preserve">
-          <source>For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214<ept id="p1">**</ept>.</source>
-          <target state="new">For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214<ept id="p1">**</ept>.</target>
+          <source>For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso<ph id="ph1">\\</ph>JSmith –ComputerName Contoso<ph id="ph2">\_</ph>214<ept id="p1">**</ept>.</source>
+          <target state="new">For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso<ph id="ph1">\\</ph>JSmith –ComputerName Contoso<ph id="ph2">\_</ph>214<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="272" translate="yes" xml:space="preserve">
           <source>After you have configured an authorization rule, you are ready for authorized users to sign in to the web-based console and begin using Windows PowerShell Web Access.</source>
@@ -811,8 +812,8 @@
           <target state="new">These instructions are also included in this topic.</target>
         </trans-unit>
         <trans-unit id="301" translate="yes" xml:space="preserve">
-          <source>The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt<ph id="ph2">&lt;/span&gt;</ph>.</source>
-          <target state="new">The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt<ph id="ph2">&lt;/span&gt;</ph>.</target>
+          <source>The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:<ph id="ph2">\\</ph>Windows<ph id="ph3">\\</ph>Web<ph id="ph4">\\</ph>PowerShellWebAccess<ph id="ph5">\\</ph>wwwroot<ph id="ph6">\\</ph>README.txt<ph id="ph7">&lt;/span&gt;</ph>.</source>
+          <target state="new">The path to the readme file is <ph id="ph1">&lt;span class="computerOutputInline"&gt;</ph>C:<ph id="ph2">\\</ph>Windows<ph id="ph3">\\</ph>Web<ph id="ph4">\\</ph>PowerShellWebAccess<ph id="ph5">\\</ph>wwwroot<ph id="ph6">\\</ph>README.txt<ph id="ph7">&lt;/span&gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="302" translate="yes" xml:space="preserve">
           <source>Step 2: Configure the gateway</source>
@@ -871,8 +872,8 @@
           <target state="new">Expand the node of the gateway server in the IIS Manager tree pane, select <bpt id="p1">**</bpt>Application Pools<ept id="p1">**</ept>, and click <bpt id="p2">**</bpt>Add Application Pool<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Actions<ept id="p3">**</ept> pane.</target>
         </trans-unit>
         <trans-unit id="316" translate="yes" xml:space="preserve">
-          <source>Add a new application pool with the name <bpt id="p1">**</bpt>pswa\_pool<ept id="p1">**</ept>, or provide another name.</source>
-          <target state="new">Add a new application pool with the name <bpt id="p1">**</bpt>pswa\_pool<ept id="p1">**</ept>, or provide another name.</target>
+          <source>Add a new application pool with the name <bpt id="p1">**</bpt>pswa<ph id="ph1">\_</ph>pool<ept id="p1">**</ept>, or provide another name.</source>
+          <target state="new">Add a new application pool with the name <bpt id="p1">**</bpt>pswa<ph id="ph1">\_</ph>pool<ept id="p1">**</ept>, or provide another name.</target>
         </trans-unit>
         <trans-unit id="317" translate="yes" xml:space="preserve">
           <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
@@ -899,8 +900,8 @@
           <target state="new">The alias becomes the virtual directory name.</target>
         </trans-unit>
         <trans-unit id="323" translate="yes" xml:space="preserve">
-          <source>For example, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> in the following URL represents the alias specified in this step: https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa.</source>
-          <target state="new">For example, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> in the following URL represents the alias specified in this step: https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa.</target>
+          <source>For example, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> in the following URL represents the alias specified in this step: https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa.</source>
+          <target state="new">For example, <bpt id="p1">**</bpt>pswa<ept id="p1">**</ept> in the following URL represents the alias specified in this step: https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa.</target>
         </trans-unit>
         <trans-unit id="324" translate="yes" xml:space="preserve">
           <source>In the <bpt id="p1">**</bpt>Application pool<ept id="p1">**</ept> field, select the application pool that you created in step 3.</source>
@@ -951,8 +952,8 @@
           <target state="new">For more information about supported browsers and devices, see <bpt id="p1">[</bpt>Browser and client device support<ept id="p1">](#BKMK_browser)</ept> in this topic.</target>
         </trans-unit>
         <trans-unit id="336" translate="yes" xml:space="preserve">
-          <source>Open the new Windows PowerShell Web Access website, https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway\_server\_name<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/pswa.</source>
-          <target state="new">Open the new Windows PowerShell Web Access website, https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway\_server\_name<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>/pswa.</target>
+          <source>Open the new Windows PowerShell Web Access website, https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway<ph id="ph2">\_</ph>server<ph id="ph3">\_</ph>name<ept id="p1">*</ept><ph id="ph4">&amp;gt;</ph>/pswa.</source>
+          <target state="new">Open the new Windows PowerShell Web Access website, https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway<ph id="ph2">\_</ph>server<ph id="ph3">\_</ph>name<ept id="p1">*</ept><ph id="ph4">&amp;gt;</ph>/pswa.</target>
         </trans-unit>
         <trans-unit id="337" translate="yes" xml:space="preserve">
           <source>The browser should display the Windows PowerShell Web Access console sign-in page.</source>
@@ -967,8 +968,8 @@
           <target state="new">You cannot sign in until users have been granted access to the website by adding authorization rules.</target>
         </trans-unit>
         <trans-unit id="340" translate="yes" xml:space="preserve">
-          <source>In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application\_pool\_name<ept id="p1">*</ept> represents the name of the application pool that you created in step 3, to give the application pool access rights to the authorization file.</source>
-          <target state="new">In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application\_pool\_name<ept id="p1">*</ept> represents the name of the application pool that you created in step 3, to give the application pool access rights to the authorization file.</target>
+          <source>In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application<ph id="ph1">\_</ph>pool<ph id="ph2">\_</ph>name<ept id="p1">*</ept> represents the name of the application pool that you created in step 3, to give the application pool access rights to the authorization file.</source>
+          <target state="new">In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application<ph id="ph1">\_</ph>pool<ph id="ph2">\_</ph>name<ept id="p1">*</ept> represents the name of the application pool that you created in step 3, to give the application pool access rights to the authorization file.</target>
         </trans-unit>
         <trans-unit id="341" translate="yes" xml:space="preserve">
           <source>[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_c1a80a93-8fcf-4beb-a025-5f81bfb8bdae'); "Copy to clipboard.")</source>
@@ -1091,8 +1092,8 @@
           <target state="new">Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to close the <bpt id="p2">**</bpt>Add Website<ept id="p2">**</ept> dialog box.</target>
         </trans-unit>
         <trans-unit id="371" translate="yes" xml:space="preserve">
-          <source>In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application\_pool\_name<ept id="p1">*</ept> represents the name of the application pool that you created in step 4, to give the application pool access rights to the authorization file.</source>
-          <target state="new">In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application\_pool\_name<ept id="p1">*</ept> represents the name of the application pool that you created in step 4, to give the application pool access rights to the authorization file.</target>
+          <source>In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application<ph id="ph1">\_</ph>pool<ph id="ph2">\_</ph>name<ept id="p1">*</ept> represents the name of the application pool that you created in step 4, to give the application pool access rights to the authorization file.</source>
+          <target state="new">In a Windows PowerShell session that has been opened with elevated user rights (Run as Administrator), run the following script, in which <bpt id="p1">*</bpt>application<ph id="ph1">\_</ph>pool<ph id="ph2">\_</ph>name<ept id="p1">*</ept> represents the name of the application pool that you created in step 4, to give the application pool access rights to the authorization file.</target>
         </trans-unit>
         <trans-unit id="372" translate="yes" xml:space="preserve">
           <source>[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_35ae9944-ca44-4af7-9c96-616083b3e3db'); "Copy to clipboard.")</source>
@@ -1123,8 +1124,8 @@
           <target state="new">Open the new Windows PowerShell Web Access website.</target>
         </trans-unit>
         <trans-unit id="379" translate="yes" xml:space="preserve">
-          <source>Because the root website points to the Windows PowerShell Web Access folder, the browser should display the Windows PowerShell Web Access sign-in page when you open https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway\_server\_name<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>.</source>
-          <target state="new">Because the root website points to the Windows PowerShell Web Access folder, the browser should display the Windows PowerShell Web Access sign-in page when you open https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway\_server\_name<ept id="p1">*</ept><ph id="ph2">&amp;gt;</ph>.</target>
+          <source>Because the root website points to the Windows PowerShell Web Access folder, the browser should display the Windows PowerShell Web Access sign-in page when you open https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway<ph id="ph2">\_</ph>server<ph id="ph3">\_</ph>name<ept id="p1">*</ept><ph id="ph4">&amp;gt;</ph>.</source>
+          <target state="new">Because the root website points to the Windows PowerShell Web Access folder, the browser should display the Windows PowerShell Web Access sign-in page when you open https://<ph id="ph1">&amp;lt;</ph> <bpt id="p1">*</bpt>gateway<ph id="ph2">\_</ph>server<ph id="ph3">\_</ph>name<ept id="p1">*</ept><ph id="ph4">&amp;gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="380" translate="yes" xml:space="preserve">
           <source>You should not need to add <bpt id="p1">**</bpt>/pswa<ept id="p1">**</ept> to the URL.</source>
@@ -1183,8 +1184,8 @@
           <target state="new">Optional step for restricting user access by using session configurations:<ph id="ph1">&lt;/span&gt;</ph> Verify that session configurations that you want to use in your rules already exist.</target>
         </trans-unit>
         <trans-unit id="394" translate="yes" xml:space="preserve">
-          <source>If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
-          <target state="new">If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
+          <source>If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
+          <target state="new">If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
         </trans-unit>
         <trans-unit id="395" translate="yes" xml:space="preserve">
           <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>.</source>
@@ -1199,20 +1200,20 @@
           <target state="new">This authorization rule allows a specific user access to one computer on the network to which they typically have access, with access to a specific session configuration that is scoped to the user’s typical scripting and cmdlet needs.</target>
         </trans-unit>
         <trans-unit id="398" translate="yes" xml:space="preserve">
-          <source>In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso\_214<ph id="ph6">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph7">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph8">&lt;/span&gt;</ph>.</source>
-          <target state="new">In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso\_214<ph id="ph6">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph7">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph8">&lt;/span&gt;</ph>.</target>
+          <source>In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso<ph id="ph6">\_</ph>214<ph id="ph7">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph8">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph9">&lt;/span&gt;</ph>.</source>
+          <target state="new">In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso<ph id="ph6">\_</ph>214<ph id="ph7">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph8">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph9">&lt;/span&gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="399" translate="yes" xml:space="preserve">
           <source>[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_efc3999a-2905-453f-86cd-014b41658ffc'); "Copy to clipboard.")</source>
           <target state="new">[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_efc3999a-2905-453f-86cd-014b41658ffc'); "Copy to clipboard.")</target>
         </trans-unit>
         <trans-unit id="400" translate="yes" xml:space="preserve">
-          <source>Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain\\user | computer\\user<ph id="ph2">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph3">&amp;lt;</ph>computer\_name<ph id="ph4">&amp;gt;</ph>.</source>
-          <target state="new">Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain\\user | computer\\user<ph id="ph2">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph3">&amp;lt;</ph>computer\_name<ph id="ph4">&amp;gt;</ph>.</target>
+          <source>Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain<ph id="ph2">\\</ph>user | computer<ph id="ph3">\\</ph>user<ph id="ph4">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph5">&amp;lt;</ph>computer<ph id="ph6">\_</ph>name<ph id="ph7">&amp;gt;</ph>.</source>
+          <target state="new">Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain<ph id="ph2">\\</ph>user | computer<ph id="ph3">\\</ph>user<ph id="ph4">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph5">&amp;lt;</ph>computer<ph id="ph6">\_</ph>name<ph id="ph7">&amp;gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="401" translate="yes" xml:space="preserve">
-          <source>For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214<ept id="p1">**</ept>.</source>
-          <target state="new">For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214<ept id="p1">**</ept>.</target>
+          <source>For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso<ph id="ph1">\\</ph>JSmith –ComputerName Contoso<ph id="ph2">\_</ph>214<ept id="p1">**</ept>.</source>
+          <target state="new">For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso<ph id="ph1">\\</ph>JSmith –ComputerName Contoso<ph id="ph2">\_</ph>214<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="402" translate="yes" xml:space="preserve">
           <source>After you have configured an authorization rule, you are ready for authorized users to sign in to the web-based console and begin using Windows PowerShell Web Access.</source>

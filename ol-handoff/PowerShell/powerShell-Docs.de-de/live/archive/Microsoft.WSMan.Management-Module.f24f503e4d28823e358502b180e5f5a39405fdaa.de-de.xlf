@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">49a97d15fdef0d7fa60e94636fc200e8f70943f7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\core-modules\Microsoft.WSMan.Management-Module.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\core-modules\Microsoft.WSMan.Management-Module.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">49a97d15fdef0d7fa60e94636fc200e8f70943f7</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">Microsoft.WSMan.Management Module</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>This section contains the help topics for the <bpt id="p1">**</bpt>Microsoft.WSMan.Management<ept id="p1">**</ept> module, which contains the <bpt id="p2">[</bpt>WSMan Provider [v3]<ept id="p2">](https://technet.microsoft.com/en-us/library/4c3d8d36-4f7a-4211-996f-64110e4b2eb7)</ept> and cmdlets that manage Web Services for Management (WS\-Management) and Windows Remote Management (WinRM).</source>
-          <target state="new">This section contains the help topics for the <bpt id="p1">**</bpt>Microsoft.WSMan.Management<ept id="p1">**</ept> module, which contains the <bpt id="p2">[</bpt>WSMan Provider [v3]<ept id="p2">](https://technet.microsoft.com/en-us/library/4c3d8d36-4f7a-4211-996f-64110e4b2eb7)</ept> and cmdlets that manage Web Services for Management (WS\-Management) and Windows Remote Management (WinRM).</target>
+          <source>This section contains the help topics for the <bpt id="p1">**</bpt>Microsoft.WSMan.Management<ept id="p1">**</ept> module, which contains the <bpt id="p2">[</bpt>WSMan Provider [v3]<ept id="p2">](https://technet.microsoft.com/en-us/library/4c3d8d36-4f7a-4211-996f-64110e4b2eb7)</ept> and cmdlets that manage Web Services for Management (WS<ph id="ph1">\-</ph>Management) and Windows Remote Management (WinRM).</source>
+          <target state="new">This section contains the help topics for the <bpt id="p1">**</bpt>Microsoft.WSMan.Management<ept id="p1">**</ept> module, which contains the <bpt id="p2">[</bpt>WSMan Provider [v3]<ept id="p2">](https://technet.microsoft.com/en-us/library/4c3d8d36-4f7a-4211-996f-64110e4b2eb7)</ept> and cmdlets that manage Web Services for Management (WS<ph id="ph1">\-</ph>Management) and Windows Remote Management (WinRM).</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>The <bpt id="p1">**</bpt>Microsoft.WSMan.Management<ept id="p1">**</ept> module is installed with Windows PowerShell.</source>

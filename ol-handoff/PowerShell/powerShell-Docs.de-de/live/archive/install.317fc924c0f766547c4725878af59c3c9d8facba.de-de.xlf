@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="de-de">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">91d23a0045c6d7a1200caae6df64368dd8f3ecee</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\install.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -176,25 +184,18 @@
           <target state="new"><bpt id="p1">[</bpt>WMF 4.0<ept id="p1">](http://www.microsoft.com/en-us/download/details.aspx?id=40855)</ept> is installed</target>
         </trans-unit>
         <trans-unit id="144" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">*</bpt>WinRM Dependency:<ept id="p1">*</ept></source>
-          <target state="new"><bpt id="p1">*</bpt>WinRM Dependency:<ept id="p1">*</ept></target>
+          <source><bpt id="p1">*</bpt>WinRM Dependency:<ept id="p1">*</ept> Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</source>
+          <target state="new"><bpt id="p1">*</bpt>WinRM Dependency:<ept id="p1">*</ept> Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</target>
         </trans-unit>
         <trans-unit id="145" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</source>
-          <target state="new">Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</target>
-        </trans-unit>
-        <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7.</source>
           <target state="new">WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7.</target>
         </trans-unit>
-        <trans-unit id="147" translate="yes" xml:space="preserve">
+        <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>To enable WinRM, in a Windows PowerShell elevated session, run <bpt id="p1">**</bpt>Set-WSManQuickConfig<ept id="p1">**</ept>.</source>
           <target state="new">To enable WinRM, in a Windows PowerShell elevated session, run <bpt id="p1">**</bpt>Set-WSManQuickConfig<ept id="p1">**</ept>.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">91d23a0045c6d7a1200caae6df64368dd8f3ecee</xliffext:olfilehash>
-  </header>
 </xliff>

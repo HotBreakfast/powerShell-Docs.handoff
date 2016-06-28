@@ -2,10 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b91e3bbb40b2b5eddd1e43be568773c850a9b8e0</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\class_newtype.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b91e3bbb40b2b5eddd1e43be568773c850a9b8e0</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-2072b6e" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -138,8 +140,8 @@
           <target state="new">Static properties are initialized before the body of a static constructor, and instance properties are initialized before the body of the non-static constructor.</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
-          <source>Currently, there is no syntax for calling a constructor from another constructor (like the C\# syntax ": this()").</source>
-          <target state="new">Currently, there is no syntax for calling a constructor from another constructor (like the C\# syntax ": this()").</target>
+          <source>Currently, there is no syntax for calling a constructor from another constructor (like the C<ph id="ph1">\#</ph> syntax ": this()").</source>
+          <target state="new">Currently, there is no syntax for calling a constructor from another constructor (like the C<ph id="ph1">\#</ph> syntax ": this()").</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
           <source>The workaround is to define a common Init method.</source>
@@ -206,8 +208,8 @@
           <target state="new">All methods are public.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source>The following shows an example of defining a method named <bpt id="p1">**</bpt>DoSomething<ept id="p1">**</ept></source>
-          <target state="new">The following shows an example of defining a method named <bpt id="p1">**</bpt>DoSomething<ept id="p1">**</ept></target>
+          <source>The following shows an example of defining a method named <bpt id="p1">**</bpt>DoSomething<ept id="p1">**</ept>.</source>
+          <target state="new">The following shows an example of defining a method named <bpt id="p1">**</bpt>DoSomething<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
           <source>Method invocation:</source>

@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b67073be64bac6e993cf0f4a5f07ce7a8c6f0d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ObjectModelRoot-Object.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ObjectModelRoot-Object.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">01b67073be64bac6e993cf0f4a5f07ce7a8c6f0d</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -39,8 +40,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the file, which is associated with this host object that currently has the focus.</source>
-          <target state="new">The read\-only property that gets the file, which is associated with this host object that currently has the focus.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the file, which is associated with this host object that currently has the focus.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the file, which is associated with this host object that currently has the focus.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>CurrentPowerShellTab</source>
@@ -51,8 +52,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the PowerShell tab that has the focus.</source>
-          <target state="new">The read\-only property that gets the PowerShell tab that has the focus.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the PowerShell tab that has the focus.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the PowerShell tab that has the focus.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>CurrentVisibleHorizontalTool</source>
@@ -63,8 +64,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the currently visible Windows PowerShell ISE add\-on tool that is located in the horizontal tool pane at the bottom of the editor.</source>
-          <target state="new">The read\-only property that gets the currently visible Windows PowerShell ISE add\-on tool that is located in the horizontal tool pane at the bottom of the editor.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the currently visible Windows PowerShell ISE add<ph id="ph2">\-</ph>on tool that is located in the horizontal tool pane at the bottom of the editor.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the currently visible Windows PowerShell ISE add<ph id="ph2">\-</ph>on tool that is located in the horizontal tool pane at the bottom of the editor.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>CurrentVisibleVerticalTool</source>
@@ -75,8 +76,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the currently visible Windows PowerShell ISE add\-on tool that is located in the vertical tool pane on the right side of the editor.</source>
-          <target state="new">The read\-only property that gets the currently visible Windows PowerShell ISE add\-on tool that is located in the vertical tool pane on the right side of the editor.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the currently visible Windows PowerShell ISE add<ph id="ph2">\-</ph>on tool that is located in the vertical tool pane on the right side of the editor.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the currently visible Windows PowerShell ISE add<ph id="ph2">\-</ph>on tool that is located in the vertical tool pane on the right side of the editor.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>Options</source>
@@ -87,8 +88,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the various options that can change settings in Windows PowerShell ISE.</source>
-          <target state="new">The read\-only property that gets the various options that can change settings in Windows PowerShell ISE.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the various options that can change settings in Windows PowerShell ISE.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the various options that can change settings in Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
           <source>PowerShellTabs</source>
@@ -99,8 +100,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the collection of the PowerShell tabs, which are open in Windows PowerShell ISE.</source>
-          <target state="new">The read\-only property that gets the collection of the PowerShell tabs, which are open in Windows PowerShell ISE.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the collection of the PowerShell tabs, which are open in Windows PowerShell ISE.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the collection of the PowerShell tabs, which are open in Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
           <source>By default, this object contains one PowerShell tab.</source>
