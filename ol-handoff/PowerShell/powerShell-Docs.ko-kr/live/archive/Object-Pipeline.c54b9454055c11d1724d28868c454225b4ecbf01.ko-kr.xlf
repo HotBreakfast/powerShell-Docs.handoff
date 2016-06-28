@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">56aa32d40d8e5e61f5328d5a373ca5a1bd7ca6e3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Object-Pipeline.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Object-Pipeline.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">56aa32d40d8e5e61f5328d5a373ca5a1bd7ca6e3</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -35,8 +36,8 @@
           <target state="new">The output of each command is used as input to the next command.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Pipelines are arguably the most valuable concept used in command\-line interfaces.</source>
-          <target state="new">Pipelines are arguably the most valuable concept used in command\-line interfaces.</target>
+          <source>Pipelines are arguably the most valuable concept used in command<ph id="ph1">\-</ph>line interfaces.</source>
+          <target state="new">Pipelines are arguably the most valuable concept used in command<ph id="ph1">\-</ph>line interfaces.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Properly used, pipelines not only reduce the effort involved in entering complex commands, but also make it easier to see the flow of work in the commands.</source>
@@ -47,8 +48,8 @@
           <target state="new">A related useful characteristic of pipelines is that because they operate on each item separately, you do not have to modify them based on whether you will have zero, one, or many items in the pipeline.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item\-by\-item.</source>
-          <target state="new">Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item\-by\-item.</target>
+          <source>Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item<ph id="ph1">\-</ph>by<ph id="ph2">\-</ph>item.</source>
+          <target state="new">Furthermore, each command in a pipeline (called a pipeline element) usually passes its output to the next command in the pipeline item<ph id="ph1">\-</ph>by<ph id="ph2">\-</ph>item.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
           <source>This usually reduces the resource demand of complex commands and allows you to begin getting the output immediately.</source>

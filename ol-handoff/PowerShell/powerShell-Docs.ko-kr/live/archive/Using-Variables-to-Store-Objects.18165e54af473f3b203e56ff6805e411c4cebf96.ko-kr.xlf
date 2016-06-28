@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c3bcf9dc6f70383e971d9c1ae75ec78860111de9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Using-Variables-to-Store-Objects.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Using-Variables-to-Store-Objects.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c3bcf9dc6f70383e971d9c1ae75ec78860111de9</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -23,8 +24,8 @@
           <target state="new">Windows PowerShell works with objects.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell lets you create variables \- essentially named objects \- to preserve output to use later.</source>
-          <target state="new">Windows PowerShell lets you create variables \- essentially named objects \- to preserve output to use later.</target>
+          <source>Windows PowerShell lets you create variables <ph id="ph1">\-</ph> essentially named objects <ph id="ph2">\-</ph> to preserve output to use later.</source>
+          <target state="new">Windows PowerShell lets you create variables <ph id="ph1">\-</ph> essentially named objects <ph id="ph2">\-</ph> to preserve output to use later.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
           <source>If you are used to working with variables in other shells, remember that Windows PowerShell variables are objects, not text.</source>
@@ -71,12 +72,12 @@
           <target state="new">Typing $loc will show your current location:</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>You can use <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> to display information about the contents of variables.</source>
-          <target state="new">You can use <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> to display information about the contents of variables.</target>
+          <source>You can use <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> to display information about the contents of variables.</source>
+          <target state="new">You can use <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> to display information about the contents of variables.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>Piping $loc to Get\-Member will show you that it is a <bpt id="p1">**</bpt>PathInfo<ept id="p1">**</ept> object, just like the output from Get\-Location:</source>
-          <target state="new">Piping $loc to Get\-Member will show you that it is a <bpt id="p1">**</bpt>PathInfo<ept id="p1">**</ept> object, just like the output from Get\-Location:</target>
+          <source>Piping $loc to Get<ph id="ph1">\-</ph>Member will show you that it is a <bpt id="p1">**</bpt>PathInfo<ept id="p1">**</ept> object, just like the output from Get<ph id="ph2">\-</ph>Location:</source>
+          <target state="new">Piping $loc to Get<ph id="ph1">\-</ph>Member will show you that it is a <bpt id="p1">**</bpt>PathInfo<ept id="p1">**</ept> object, just like the output from Get<ph id="ph2">\-</ph>Location:</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>Manipulating Variables</source>
@@ -91,12 +92,12 @@
           <target state="new">You can see a complete listing in a readable form by typing:</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>In addition to the variables you create in your current Windows PowerShell session, there are several system\-defined variables.</source>
-          <target state="new">In addition to the variables you create in your current Windows PowerShell session, there are several system\-defined variables.</target>
+          <source>In addition to the variables you create in your current Windows PowerShell session, there are several system<ph id="ph1">\-</ph>defined variables.</source>
+          <target state="new">In addition to the variables you create in your current Windows PowerShell session, there are several system<ph id="ph1">\-</ph>defined variables.</target>
         </trans-unit>
         <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>You can use the <bpt id="p1">**</bpt>Remove\-Variable<ept id="p1">**</ept> cmdlet to clear out all of the variables which are not controlled by Windows PowerShell.</source>
-          <target state="new">You can use the <bpt id="p1">**</bpt>Remove\-Variable<ept id="p1">**</ept> cmdlet to clear out all of the variables which are not controlled by Windows PowerShell.</target>
+          <source>You can use the <bpt id="p1">**</bpt>Remove<ph id="ph1">\-</ph>Variable<ept id="p1">**</ept> cmdlet to clear out all of the variables which are not controlled by Windows PowerShell.</source>
+          <target state="new">You can use the <bpt id="p1">**</bpt>Remove<ph id="ph1">\-</ph>Variable<ept id="p1">**</ept> cmdlet to clear out all of the variables which are not controlled by Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
           <source>Type the following command to clear all variables:</source>
@@ -107,8 +108,8 @@
           <target state="new">This will produce the confirmation prompt you see below.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>If you then run the <bpt id="p1">**</bpt>Get\-Variable<ept id="p1">**</ept> cmdlet, you will see the remaining Windows PowerShell variables.</source>
-          <target state="new">If you then run the <bpt id="p1">**</bpt>Get\-Variable<ept id="p1">**</ept> cmdlet, you will see the remaining Windows PowerShell variables.</target>
+          <source>If you then run the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Variable<ept id="p1">**</ept> cmdlet, you will see the remaining Windows PowerShell variables.</source>
+          <target state="new">If you then run the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Variable<ept id="p1">**</ept> cmdlet, you will see the remaining Windows PowerShell variables.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>Since there is also a variable Windows PowerShell drive, you can also display all Windows PowerShell variables by typing:</source>
@@ -135,8 +136,8 @@
           <target state="new">Although the standard variable cmdlets are not designed to work with <bpt id="p1">**</bpt>env:<ept id="p1">**</ept> variables, you can still use them by specifying the <bpt id="p2">**</bpt>env:<ept id="p2">**</ept> prefix.</target>
         </trans-unit>
         <trans-unit id="132" translate="yes" xml:space="preserve">
-          <source>For example, to see the operating system root directory, you can use the command\-shell <bpt id="p1">**</bpt>%SystemRoot%<ept id="p1">**</ept> variable from within Windows PowerShell by typing:</source>
-          <target state="new">For example, to see the operating system root directory, you can use the command\-shell <bpt id="p1">**</bpt>%SystemRoot%<ept id="p1">**</ept> variable from within Windows PowerShell by typing:</target>
+          <source>For example, to see the operating system root directory, you can use the command<ph id="ph1">\-</ph>shell <bpt id="p1">**</bpt>%SystemRoot%<ept id="p1">**</ept> variable from within Windows PowerShell by typing:</source>
+          <target state="new">For example, to see the operating system root directory, you can use the command<ph id="ph1">\-</ph>shell <bpt id="p1">**</bpt>%SystemRoot%<ept id="p1">**</ept> variable from within Windows PowerShell by typing:</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
           <source>You can also create and modify environment variables from within Windows PowerShell.</source>

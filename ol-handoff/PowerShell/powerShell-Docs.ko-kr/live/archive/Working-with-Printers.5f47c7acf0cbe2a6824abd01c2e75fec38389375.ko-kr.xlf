@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">27d3d11b71b95cd79817449cf8bdb1a0a26936bd</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Working-with-Printers.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Working-with-Printers.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">27d3d11b71b95cd79817449cf8bdb1a0a26936bd</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -31,8 +32,8 @@
           <target state="new">Listing Printer Connections</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>The simplest way to list the printers installed on a computer is to use the WMI <bpt id="p1">**</bpt>Win32\_Printer<ept id="p1">**</ept> class:</source>
-          <target state="new">The simplest way to list the printers installed on a computer is to use the WMI <bpt id="p1">**</bpt>Win32\_Printer<ept id="p1">**</ept> class:</target>
+          <source>The simplest way to list the printers installed on a computer is to use the WMI <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Printer<ept id="p1">**</ept> class:</source>
+          <target state="new">The simplest way to list the printers installed on a computer is to use the WMI <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Printer<ept id="p1">**</ept> class:</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>You can also list the printers by using the <bpt id="p1">**</bpt>WScript.Network<ept id="p1">**</ept> COM object that is typically used in WSH scripts:</source>
@@ -55,8 +56,8 @@
           <target state="new">Setting a Default Printer</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>To use WMI to set the default printer, find the printer in the <bpt id="p1">**</bpt>Win32\_Printer<ept id="p1">**</ept> collection and then invoke the <bpt id="p2">**</bpt>SetDefaultPrinter<ept id="p2">**</ept> method:</source>
-          <target state="new">To use WMI to set the default printer, find the printer in the <bpt id="p1">**</bpt>Win32\_Printer<ept id="p1">**</ept> collection and then invoke the <bpt id="p2">**</bpt>SetDefaultPrinter<ept id="p2">**</ept> method:</target>
+          <source>To use WMI to set the default printer, find the printer in the <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Printer<ept id="p1">**</ept> collection and then invoke the <bpt id="p2">**</bpt>SetDefaultPrinter<ept id="p2">**</ept> method:</source>
+          <target state="new">To use WMI to set the default printer, find the printer in the <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Printer<ept id="p1">**</ept> collection and then invoke the <bpt id="p2">**</bpt>SetDefaultPrinter<ept id="p2">**</ept> method:</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>WScript.Network<ept id="p1">**</ept> is a little simpler to use, because it has a <bpt id="p2">**</bpt>SetDefaultPrinter<ept id="p2">**</ept> method that takes only the printer name as an argument:</source>

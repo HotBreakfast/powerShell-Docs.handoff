@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="ko-kr">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">f68eb0016b45ea5a08ce99572cbec04ac96fbf46</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_reporting.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -12,41 +20,10 @@
           <target state="new">Detailed information about DSC configuration status can be sent to a server running the DSC service.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>The same information that is returned by the Get-DscConfigurationStatus cmdlet is sent to the DSC Service.</source>
-          <target state="new">The same information that is returned by the Get-DscConfigurationStatus cmdlet is sent to the DSC Service.</target>
-        </trans-unit>
-        <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>By defining the report server in a meta-configuration, this status is sent to the server when an error occurs or the configuration completes successfully.</source>
-          <target state="new">By defining the report server in a meta-configuration, this status is sent to the server when an error occurs or the configuration completes successfully.</target>
-        </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>This information is sent when a node is configured in either pull or push mode.</source>
-          <target state="new">This information is sent when a node is configured in either pull or push mode.</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>Status information is stored in the DSC service database.</source>
-          <target state="new">Status information is stored in the DSC service database.</target>
-        </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Sample meta-configuration for reporting status</source>
-          <target state="new">Sample meta-configuration for reporting status</target>
-        </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>A new OData endpoint is created with the DSC service which exposes this status information.</source>
-          <target state="new">A new OData endpoint is created with the DSC service which exposes this status information.</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>By passing a configuration ID or agent ID {$guid} to the endpoint, all of the status for a node can be collected and parsed.</source>
-          <target state="new">By passing a configuration ID or agent ID {$guid} to the endpoint, all of the status for a node can be collected and parsed.</target>
-        </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>Sample web request to gather configuration status</source>
-          <target state="new">Sample web request to gather configuration status</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Using a DSC report server<ept id="p1">](../dsc/reportServer.md)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Using a DSC report server<ept id="p1">](../dsc/reportServer.md)</ept>.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">3f286a0cdcff33aa396c745a661d52d07f25817d</xliffext:olfilehash>
-  </header>
 </xliff>

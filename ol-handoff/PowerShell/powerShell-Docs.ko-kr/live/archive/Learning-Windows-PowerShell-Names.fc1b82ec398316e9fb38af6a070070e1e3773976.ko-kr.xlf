@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bc504fbde14d0ba743accf644ee5114810afb609</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Learning-Windows-PowerShell-Names.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Learning-Windows-PowerShell-Names.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bc504fbde14d0ba743accf644ee5114810afb609</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">Learning Windows PowerShell Names</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>Learning names of commands and command parameters is a significant time investment with most command\-line interfaces.</source>
-          <target state="new">Learning names of commands and command parameters is a significant time investment with most command\-line interfaces.</target>
+          <source>Learning names of commands and command parameters is a significant time investment with most command<ph id="ph1">\-</ph>line interfaces.</source>
+          <target state="new">Learning names of commands and command parameters is a significant time investment with most command<ph id="ph1">\-</ph>line interfaces.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>The issue is that there are very few patterns, so the only way to learn is by memorizing each command and each parameter that you need to use on a regular basis.</source>
@@ -71,16 +72,16 @@
           <target state="new">The <bpt id="p1">**</bpt>sc<ept id="p1">**</ept> command will start a service on a remote computer, but to specify the remote computer, you must prefix its name with a double backslash.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>For example, to start the spooler service on a remote computer named DC01, you would type <bpt id="p1">**</bpt>sc \\\\DC01 start spooler<ept id="p1">**</ept>.</source>
-          <target state="new">For example, to start the spooler service on a remote computer named DC01, you would type <bpt id="p1">**</bpt>sc \\\\DC01 start spooler<ept id="p1">**</ept>.</target>
+          <source>For example, to start the spooler service on a remote computer named DC01, you would type <bpt id="p1">**</bpt>sc <ph id="ph1">\\\\</ph>DC01 start spooler<ept id="p1">**</ept>.</source>
+          <target state="new">For example, to start the spooler service on a remote computer named DC01, you would type <bpt id="p1">**</bpt>sc <ph id="ph1">\\\\</ph>DC01 start spooler<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>To list tasks running on DC01, you need to use the <bpt id="p1">**</bpt>\/S<ept id="p1">**</ept> (for "system") parameter and supply the name DC01 without backslashes, like this: <bpt id="p2">**</bpt>tasklist \/S DC01<ept id="p2">**</ept>.</source>
-          <target state="new">To list tasks running on DC01, you need to use the <bpt id="p1">**</bpt>\/S<ept id="p1">**</ept> (for "system") parameter and supply the name DC01 without backslashes, like this: <bpt id="p2">**</bpt>tasklist \/S DC01<ept id="p2">**</ept>.</target>
+          <source>To list tasks running on DC01, you need to use the <bpt id="p1">**</bpt><ph id="ph1">\/</ph>S<ept id="p1">**</ept> (for "system") parameter and supply the name DC01 without backslashes, like this: <bpt id="p2">**</bpt>tasklist <ph id="ph2">\/</ph>S DC01<ept id="p2">**</ept>.</source>
+          <target state="new">To list tasks running on DC01, you need to use the <bpt id="p1">**</bpt><ph id="ph1">\/</ph>S<ept id="p1">**</ept> (for "system") parameter and supply the name DC01 without backslashes, like this: <bpt id="p2">**</bpt>tasklist <ph id="ph2">\/</ph>S DC01<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>Although there are important technical distinctions between a service and a process, they are both examples of manageable elements on a computer that have a well\-defined life cycle.</source>
-          <target state="new">Although there are important technical distinctions between a service and a process, they are both examples of manageable elements on a computer that have a well\-defined life cycle.</target>
+          <source>Although there are important technical distinctions between a service and a process, they are both examples of manageable elements on a computer that have a well<ph id="ph1">\-</ph>defined life cycle.</source>
+          <target state="new">Although there are important technical distinctions between a service and a process, they are both examples of manageable elements on a computer that have a well<ph id="ph1">\-</ph>defined life cycle.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>You may want to start or stop a service or process, or get a list of all currently running services or processes.</source>
@@ -99,12 +100,12 @@
           <target state="new">Windows PowerShell exploits these similarities to reduce the number of distinct names you need to know to understand and use cmdlets.</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>Cmdlets Use Verb\-Noun Names to Reduce Command Memorization</source>
-          <target state="new">Cmdlets Use Verb\-Noun Names to Reduce Command Memorization</target>
+          <source>Cmdlets Use Verb<ph id="ph1">\-</ph>Noun Names to Reduce Command Memorization</source>
+          <target state="new">Cmdlets Use Verb<ph id="ph1">\-</ph>Noun Names to Reduce Command Memorization</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell uses a "verb\-noun" naming system, where each cmdlet name consists of a standard verb hyphenated with a specific noun.</source>
-          <target state="new">Windows PowerShell uses a "verb\-noun" naming system, where each cmdlet name consists of a standard verb hyphenated with a specific noun.</target>
+          <source>Windows PowerShell uses a "verb<ph id="ph1">\-</ph>noun" naming system, where each cmdlet name consists of a standard verb hyphenated with a specific noun.</source>
+          <target state="new">Windows PowerShell uses a "verb<ph id="ph1">\-</ph>noun" naming system, where each cmdlet name consists of a standard verb hyphenated with a specific noun.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>Windows PowerShell verbs are not always English verbs, but they express specific actions in Windows PowerShell.</source>
@@ -115,16 +116,16 @@
           <target state="new">Nouns are very much like nouns in any language, they describe specific types of objects that are important in system administration.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
-          <source>It is easy to demonstrate how these two\-part names reduce learning effort by looking at a few examples of verbs and nouns.</source>
-          <target state="new">It is easy to demonstrate how these two\-part names reduce learning effort by looking at a few examples of verbs and nouns.</target>
+          <source>It is easy to demonstrate how these two<ph id="ph1">\-</ph>part names reduce learning effort by looking at a few examples of verbs and nouns.</source>
+          <target state="new">It is easy to demonstrate how these two<ph id="ph1">\-</ph>part names reduce learning effort by looking at a few examples of verbs and nouns.</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
           <source>Nouns are less restricted, but they should always describe what a command acts upon.</source>
           <target state="new">Nouns are less restricted, but they should always describe what a command acts upon.</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell has commands such as <bpt id="p1">**</bpt>Get\-Process<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Stop\-Process<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Get\-Service<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Stop\-Service<ept id="p4">**</ept>.</source>
-          <target state="new">Windows PowerShell has commands such as <bpt id="p1">**</bpt>Get\-Process<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Stop\-Process<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Get\-Service<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Stop\-Service<ept id="p4">**</ept>.</target>
+          <source>Windows PowerShell has commands such as <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Process<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Stop<ph id="ph2">\-</ph>Process<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Get<ph id="ph3">\-</ph>Service<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Stop<ph id="ph4">\-</ph>Service<ept id="p4">**</ept>.</source>
+          <target state="new">Windows PowerShell has commands such as <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Process<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Stop<ph id="ph2">\-</ph>Process<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Get<ph id="ph3">\-</ph>Service<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Stop<ph id="ph4">\-</ph>Service<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
           <source>In the case of two nouns and two verbs, consistency does not simplify learning that much.</source>
@@ -139,76 +140,76 @@
           <target state="new">Frequently, you can recognize what a command does by reading its name, and it is usually apparent what name should be used for a new command.</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
-          <source>For example, a computer shutdown command might be <bpt id="p1">**</bpt>Stop\-Computer<ept id="p1">**</ept>.</source>
-          <target state="new">For example, a computer shutdown command might be <bpt id="p1">**</bpt>Stop\-Computer<ept id="p1">**</ept>.</target>
+          <source>For example, a computer shutdown command might be <bpt id="p1">**</bpt>Stop<ph id="ph1">\-</ph>Computer<ept id="p1">**</ept>.</source>
+          <target state="new">For example, a computer shutdown command might be <bpt id="p1">**</bpt>Stop<ph id="ph1">\-</ph>Computer<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
-          <source>A command that lists all computers on a network might be <bpt id="p1">**</bpt>Get\-Computer<ept id="p1">**</ept>.</source>
-          <target state="new">A command that lists all computers on a network might be <bpt id="p1">**</bpt>Get\-Computer<ept id="p1">**</ept>.</target>
+          <source>A command that lists all computers on a network might be <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Computer<ept id="p1">**</ept>.</source>
+          <target state="new">A command that lists all computers on a network might be <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Computer<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
-          <source>The command that gets the system date is <bpt id="p1">**</bpt>Get\-Date<ept id="p1">**</ept>.</source>
-          <target state="new">The command that gets the system date is <bpt id="p1">**</bpt>Get\-Date<ept id="p1">**</ept>.</target>
+          <source>The command that gets the system date is <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Date<ept id="p1">**</ept>.</source>
+          <target state="new">The command that gets the system date is <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Date<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="136" translate="yes" xml:space="preserve">
-          <source>You can list all commands that include a particular verb with the <bpt id="p1">**</bpt>\-Verb<ept id="p1">**</ept> parameter for <bpt id="p2">**</bpt>Get\-Command<ept id="p2">**</ept> (We will discuss <bpt id="p3">**</bpt>Get\-Command<ept id="p3">**</ept> in detail in the next section).</source>
-          <target state="new">You can list all commands that include a particular verb with the <bpt id="p1">**</bpt>\-Verb<ept id="p1">**</ept> parameter for <bpt id="p2">**</bpt>Get\-Command<ept id="p2">**</ept> (We will discuss <bpt id="p3">**</bpt>Get\-Command<ept id="p3">**</ept> in detail in the next section).</target>
+          <source>You can list all commands that include a particular verb with the <bpt id="p1">**</bpt><ph id="ph1">\-</ph>Verb<ept id="p1">**</ept> parameter for <bpt id="p2">**</bpt>Get<ph id="ph2">\-</ph>Command<ept id="p2">**</ept> (We will discuss <bpt id="p3">**</bpt>Get<ph id="ph3">\-</ph>Command<ept id="p3">**</ept> in detail in the next section).</source>
+          <target state="new">You can list all commands that include a particular verb with the <bpt id="p1">**</bpt><ph id="ph1">\-</ph>Verb<ept id="p1">**</ept> parameter for <bpt id="p2">**</bpt>Get<ph id="ph2">\-</ph>Command<ept id="p2">**</ept> (We will discuss <bpt id="p3">**</bpt>Get<ph id="ph3">\-</ph>Command<ept id="p3">**</ept> in detail in the next section).</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>For example, to see all cmdlets that use the verb <bpt id="p1">**</bpt>Get<ept id="p1">**</ept>, type:</source>
           <target state="new">For example, to see all cmdlets that use the verb <bpt id="p1">**</bpt>Get<ept id="p1">**</ept>, type:</target>
         </trans-unit>
         <trans-unit id="138" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p1">**</bpt>\-Noun<ept id="p1">**</ept> parameter is even more useful because it allows you to see a family of commands that affect the same type of object.</source>
-          <target state="new">The <bpt id="p1">**</bpt>\-Noun<ept id="p1">**</ept> parameter is even more useful because it allows you to see a family of commands that affect the same type of object.</target>
+          <source>The <bpt id="p1">**</bpt><ph id="ph1">\-</ph>Noun<ept id="p1">**</ept> parameter is even more useful because it allows you to see a family of commands that affect the same type of object.</source>
+          <target state="new">The <bpt id="p1">**</bpt><ph id="ph1">\-</ph>Noun<ept id="p1">**</ept> parameter is even more useful because it allows you to see a family of commands that affect the same type of object.</target>
         </trans-unit>
         <trans-unit id="139" translate="yes" xml:space="preserve">
           <source>For example, if you want to see which commands are available for managing services, type following command:</source>
           <target state="new">For example, if you want to see which commands are available for managing services, type following command:</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source>A command is not necessarily a cmdlet, just because it has a verb\-noun naming scheme.</source>
-          <target state="new">A command is not necessarily a cmdlet, just because it has a verb\-noun naming scheme.</target>
+          <source>A command is not necessarily a cmdlet, just because it has a verb<ph id="ph1">\-</ph>noun naming scheme.</source>
+          <target state="new">A command is not necessarily a cmdlet, just because it has a verb<ph id="ph1">\-</ph>noun naming scheme.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source>One example of a native Windows PowerShell command that is not a cmdlet but has a verb\-noun name, is the command for clearing a console window, Clear\-Host.</source>
-          <target state="new">One example of a native Windows PowerShell command that is not a cmdlet but has a verb\-noun name, is the command for clearing a console window, Clear\-Host.</target>
+          <source>One example of a native Windows PowerShell command that is not a cmdlet but has a verb<ph id="ph1">\-</ph>noun name, is the command for clearing a console window, Clear<ph id="ph2">\-</ph>Host.</source>
+          <target state="new">One example of a native Windows PowerShell command that is not a cmdlet but has a verb<ph id="ph1">\-</ph>noun name, is the command for clearing a console window, Clear<ph id="ph2">\-</ph>Host.</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
-          <source>The Clear\-Host command is actually an internal function, as you can see if you run Get\-Command against it:</source>
-          <target state="new">The Clear\-Host command is actually an internal function, as you can see if you run Get\-Command against it:</target>
+          <source>The Clear<ph id="ph1">\-</ph>Host command is actually an internal function, as you can see if you run Get<ph id="ph2">\-</ph>Command against it:</source>
+          <target state="new">The Clear<ph id="ph1">\-</ph>Host command is actually an internal function, as you can see if you run Get<ph id="ph2">\-</ph>Command against it:</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>Cmdlets Use Standard Parameters</source>
           <target state="new">Cmdlets Use Standard Parameters</target>
         </trans-unit>
         <trans-unit id="144" translate="yes" xml:space="preserve">
-          <source>As noted earlier, commands used in traditional command\-line interfaces do not generally have consistent parameter names.</source>
-          <target state="new">As noted earlier, commands used in traditional command\-line interfaces do not generally have consistent parameter names.</target>
+          <source>As noted earlier, commands used in traditional command<ph id="ph1">\-</ph>line interfaces do not generally have consistent parameter names.</source>
+          <target state="new">As noted earlier, commands used in traditional command<ph id="ph1">\-</ph>line interfaces do not generally have consistent parameter names.</target>
         </trans-unit>
         <trans-unit id="145" translate="yes" xml:space="preserve">
           <source>Sometimes parameters do not have names at all.</source>
           <target state="new">Sometimes parameters do not have names at all.</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>When they do, they are often single\-character or abbreviated words that can be typed rapidly but are not easily understood by new users.</source>
-          <target state="new">When they do, they are often single\-character or abbreviated words that can be typed rapidly but are not easily understood by new users.</target>
+          <source>When they do, they are often single<ph id="ph1">\-</ph>character or abbreviated words that can be typed rapidly but are not easily understood by new users.</source>
+          <target state="new">When they do, they are often single<ph id="ph1">\-</ph>character or abbreviated words that can be typed rapidly but are not easily understood by new users.</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source>Unlike most other traditional command\-line interfaces, Windows PowerShell processes parameters directly, and it uses this direct access to the parameters along with developer guidance to standardize parameter names.</source>
-          <target state="new">Unlike most other traditional command\-line interfaces, Windows PowerShell processes parameters directly, and it uses this direct access to the parameters along with developer guidance to standardize parameter names.</target>
+          <source>Unlike most other traditional command<ph id="ph1">\-</ph>line interfaces, Windows PowerShell processes parameters directly, and it uses this direct access to the parameters along with developer guidance to standardize parameter names.</source>
+          <target state="new">Unlike most other traditional command<ph id="ph1">\-</ph>line interfaces, Windows PowerShell processes parameters directly, and it uses this direct access to the parameters along with developer guidance to standardize parameter names.</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>Although this does not guarantee that every cmdlet will always conform to the standards, it does encourage it.</source>
           <target state="new">Although this does not guarantee that every cmdlet will always conform to the standards, it does encourage it.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>Parameter names always have a '\-' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters.</source>
-          <target state="new">Parameter names always have a '\-' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters.</target>
+          <source>Parameter names always have a '<ph id="ph1">\-</ph>' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters.</source>
+          <target state="new">Parameter names always have a '<ph id="ph1">\-</ph>' prepended to them when you use them, to allow Windows PowerShell to clearly identify them as parameters.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source>In the <bpt id="p1">**</bpt>Get\-Command \-Name Clear\-Host<ept id="p1">**</ept> example, the parameter's name is <bpt id="p2">**</bpt>Name<ept id="p2">**</ept>, but it is entered as \-<bpt id="p3">**</bpt>Name<ept id="p3">**</ept>.</source>
-          <target state="new">In the <bpt id="p1">**</bpt>Get\-Command \-Name Clear\-Host<ept id="p1">**</ept> example, the parameter's name is <bpt id="p2">**</bpt>Name<ept id="p2">**</ept>, but it is entered as \-<bpt id="p3">**</bpt>Name<ept id="p3">**</ept>.</target>
+          <source>In the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Command <ph id="ph2">\-</ph>Name Clear<ph id="ph3">\-</ph>Host<ept id="p1">**</ept> example, the parameter's name is <bpt id="p2">**</bpt>Name<ept id="p2">**</ept>, but it is entered as <ph id="ph4">\-</ph><bpt id="p3">**</bpt>Name<ept id="p3">**</ept>.</source>
+          <target state="new">In the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Command <ph id="ph2">\-</ph>Name Clear<ph id="ph3">\-</ph>Host<ept id="p1">**</ept> example, the parameter's name is <bpt id="p2">**</bpt>Name<ept id="p2">**</ept>, but it is entered as <ph id="ph4">\-</ph><bpt id="p3">**</bpt>Name<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
           <source>Here are some of the general characteristics of the standard parameter names and usages.</source>
@@ -219,8 +220,8 @@
           <target state="new">The Help Parameter (?)</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
-          <source>When you specify the <bpt id="p1">**</bpt>\-?<ept id="p1">**</ept></source>
-          <target state="new">When you specify the <bpt id="p1">**</bpt>\-?<ept id="p1">**</ept></target>
+          <source>When you specify the <bpt id="p1">**</bpt><ph id="ph1">\-</ph>?<ept id="p1">**</ept></source>
+          <target state="new">When you specify the <bpt id="p1">**</bpt><ph id="ph1">\-</ph>?<ept id="p1">**</ept></target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
           <source>parameter to any cmdlet, the cmdlet is not executed.</source>
