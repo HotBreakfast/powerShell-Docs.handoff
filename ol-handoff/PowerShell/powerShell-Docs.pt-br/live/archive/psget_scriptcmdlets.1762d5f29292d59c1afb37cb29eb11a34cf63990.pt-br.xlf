@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="pt-br">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">91a4ed1e8912f77e274d64db7873ad56edbbd17b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\psget_scriptcmdlets.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -56,8 +64,8 @@
           <target state="new">Get-InstalledScripts and Uninstall-Script can only work with scripts placed on the system using Install-Script.</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>You can also use Get-Command –Name &amp;lt;InstalledScriptFileName&amp;gt; to get it.</source>
-          <target state="new">You can also use Get-Command –Name &amp;lt;InstalledScriptFileName&amp;gt; to get it.</target>
+          <source>You can also use Get-Command –Name <ph id="ph1">&amp;lt;</ph>InstalledScriptFileName<ph id="ph2">&amp;gt;</ph> to get it.</source>
+          <target state="new">You can also use Get-Command –Name <ph id="ph1">&amp;lt;</ph>InstalledScriptFileName<ph id="ph2">&amp;gt;</ph> to get it.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>Two install locations are added to the PATH environment variable on first use of a specified scope.</source>
@@ -110,7 +118,4 @@
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">91a4ed1e8912f77e274d64db7873ad56edbbd17b</xliffext:olfilehash>
-  </header>
 </xliff>

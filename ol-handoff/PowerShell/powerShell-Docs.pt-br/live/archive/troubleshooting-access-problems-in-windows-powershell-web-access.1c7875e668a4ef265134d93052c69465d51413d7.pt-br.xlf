@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6366ec9c49f721b758b6a520f68cf2b3c5ee0caf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\troubleshooting-access-problems-in-windows-powershell-web-access.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\troubleshooting-access-problems-in-windows-powershell-web-access.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">6366ec9c49f721b758b6a520f68cf2b3c5ee0caf</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -143,8 +144,8 @@
           <target state="new">Cannot connect to a remote workgroup computer</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
-          <source>If the destination computer is a member of a workgroup, use the following syntax to provide your user name and sign in to the computer: <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;lt;&lt;em&gt;</ph>user_name</source>
-          <target state="new">If the destination computer is a member of a workgroup, use the following syntax to provide your user name and sign in to the computer: <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;lt;&lt;em&gt;</ph>user_name</target>
+          <source>If the destination computer is a member of a workgroup, use the following syntax to provide your user name and sign in to the computer: <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;</ph>lt;<ph id="ph3">&lt;em&gt;</ph>user_name</source>
+          <target state="new">If the destination computer is a member of a workgroup, use the following syntax to provide your user name and sign in to the computer: <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;</ph>lt;<ph id="ph3">&lt;em&gt;</ph>user_name</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
           <source>Cannot find Web Server (IIS) management tools, even though the role was installed</source>
@@ -309,10 +310,10 @@
         <trans-unit id="175" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Authorization Rules and Security Features of Windows PowerShell Web Access<ept id="p1">](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)</ept><ph id="ph1">
 </ph><bpt id="p2">[</bpt>Use the Web-based Windows PowerShell Console<ept id="p2">](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)</ept><ph id="ph2">
-</ph><bpt id="p3">[</bpt>about\_Remote\_Requirements<ept id="p3">](https://technet.microsoft.com/library/dd315349.aspx)</ept></source>
+</ph><bpt id="p3">[</bpt>about<ph id="ph3">\_</ph>Remote<ph id="ph4">\_</ph>Requirements<ept id="p3">](https://technet.microsoft.com/library/dd315349.aspx)</ept></source>
           <target state="new"><bpt id="p1">[</bpt>Authorization Rules and Security Features of Windows PowerShell Web Access<ept id="p1">](https://technet.microsoft.com/en-us/library/dn282394(v=ws.11).aspx)</ept><ph id="ph1">
 </ph><bpt id="p2">[</bpt>Use the Web-based Windows PowerShell Console<ept id="p2">](https://technet.microsoft.com/en-us/library/hh831417(v=ws.11).aspx)</ept><ph id="ph2">
-</ph><bpt id="p3">[</bpt>about\_Remote\_Requirements<ept id="p3">](https://technet.microsoft.com/library/dd315349.aspx)</ept></target>
+</ph><bpt id="p3">[</bpt>about<ph id="ph3">\_</ph>Remote<ph id="ph4">\_</ph>Requirements<ept id="p3">](https://technet.microsoft.com/library/dd315349.aspx)</ept></target>
         </trans-unit>
         <trans-unit id="176" translate="yes" xml:space="preserve">
           <source>Show:<ph id="ph1">&lt;/span&gt;</ph> Inherited Protected</source>
