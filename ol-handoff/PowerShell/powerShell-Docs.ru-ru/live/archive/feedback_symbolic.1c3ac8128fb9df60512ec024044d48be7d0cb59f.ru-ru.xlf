@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="ru-ru">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fcafa99f4a7b9cefcb98a7e159a5adf03e7ac17f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\feedback_symbolic.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -8,8 +16,8 @@
           <target state="new">Interact with Symbolic links using improved Item cmdlets</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
-          <source>To support symbolic links, <bpt id="p1">**</bpt>\*-Item<ept id="p1">**</ept> and a few related cmdlets have been extended.</source>
-          <target state="new">To support symbolic links, <bpt id="p1">**</bpt>\*-Item<ept id="p1">**</ept> and a few related cmdlets have been extended.</target>
+          <source>To support symbolic links, <bpt id="p1">**</bpt><ph id="ph1">\*</ph>-Item<ept id="p1">**</ept> and a few related cmdlets have been extended.</source>
+          <target state="new">To support symbolic links, <bpt id="p1">**</bpt><ph id="ph1">\*</ph>-Item<ept id="p1">**</ept> and a few related cmdlets have been extended.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
           <source>Now you can create symbolic links in a single, simple line with <bpt id="p1">**</bpt>New-Item<ept id="p1">**</ept>.</source>
@@ -54,7 +62,4 @@
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">fcafa99f4a7b9cefcb98a7e159a5adf03e7ac17f</xliffext:olfilehash>
-  </header>
 </xliff>

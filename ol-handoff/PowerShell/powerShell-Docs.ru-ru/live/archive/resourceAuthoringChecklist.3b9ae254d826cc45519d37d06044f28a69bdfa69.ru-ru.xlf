@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bd6af2cbf746e71aa59f509eae14664e647a1b05</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\resourceAuthoringChecklist.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\resourceAuthoringChecklist.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bd6af2cbf746e71aa59f509eae14664e647a1b05</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-8d96cd8" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -555,58 +556,50 @@
           <target state="new"><bpt id="p1">**</bpt>Best practice: Resource folder contains resource designer script for generating schema<ept id="p1">**</ept> Each resource should contain a resource designer script which generates a mof schema of the resource.</target>
         </trans-unit>
         <trans-unit id="237" translate="yes" xml:space="preserve">
-          <source>This file should be placed in</source>
-          <target state="new">This file should be placed in</target>
+          <source>This file should be placed in <ph id="ph1">&lt;ResourceName&gt;</ph>\ResourceDesignerScripts and be named Generate<ph id="ph2">&lt;ResourceName&gt;</ph>Schema.ps1 For xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:</source>
+          <target state="new">This file should be placed in <ph id="ph1">&lt;ResourceName&gt;</ph>\ResourceDesignerScripts and be named Generate<ph id="ph2">&lt;ResourceName&gt;</ph>Schema.ps1 For xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:</target>
         </trans-unit>
         <trans-unit id="238" translate="yes" xml:space="preserve">
-          <source>\ResourceDesignerScripts and be named Generate</source>
-          <target state="new">\ResourceDesignerScripts and be named Generate</target>
-        </trans-unit>
-        <trans-unit id="239" translate="yes" xml:space="preserve">
-          <source>Schema.ps1 For xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:</source>
-          <target state="new">Schema.ps1 For xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:</target>
-        </trans-unit>
-        <trans-unit id="240" translate="yes" xml:space="preserve">
           <source>22  Best practice: Resource supports -whatif If your resource is performing “dangerous” operations, it’s a good practice to implement -whatif functionality.</source>
           <target state="new">22  Best practice: Resource supports -whatif If your resource is performing “dangerous” operations, it’s a good practice to implement -whatif functionality.</target>
         </trans-unit>
-        <trans-unit id="241" translate="yes" xml:space="preserve">
+        <trans-unit id="239" translate="yes" xml:space="preserve">
           <source>After it’s done, make sure that whatif output correctly describes operations which would happen if command was executed without whatif switch.</source>
           <target state="new">After it’s done, make sure that whatif output correctly describes operations which would happen if command was executed without whatif switch.</target>
         </trans-unit>
-        <trans-unit id="242" translate="yes" xml:space="preserve">
+        <trans-unit id="240" translate="yes" xml:space="preserve">
           <source>Also, verify that operations does not execute (no changes to the node’s state are made) when –whatif switch is present.</source>
           <target state="new">Also, verify that operations does not execute (no changes to the node’s state are made) when –whatif switch is present.</target>
         </trans-unit>
-        <trans-unit id="243" translate="yes" xml:space="preserve">
+        <trans-unit id="241" translate="yes" xml:space="preserve">
           <source>For example, let’s assume we are testing File resource.</source>
           <target state="new">For example, let’s assume we are testing File resource.</target>
         </trans-unit>
-        <trans-unit id="244" translate="yes" xml:space="preserve">
+        <trans-unit id="242" translate="yes" xml:space="preserve">
           <source>Below is simple configuration which creates file “test.txt” with contents “test”:</source>
           <target state="new">Below is simple configuration which creates file “test.txt” with contents “test”:</target>
         </trans-unit>
-        <trans-unit id="245" translate="yes" xml:space="preserve">
+        <trans-unit id="243" translate="yes" xml:space="preserve">
           <source>If we compile and then execute the configuration with the –whatif switch, the output is telling us exactly what would happen when we run the configuration.</source>
           <target state="new">If we compile and then execute the configuration with the –whatif switch, the output is telling us exactly what would happen when we run the configuration.</target>
         </trans-unit>
-        <trans-unit id="246" translate="yes" xml:space="preserve">
+        <trans-unit id="244" translate="yes" xml:space="preserve">
           <source>The configuration itself however was not executed (test.txt file was not created).</source>
           <target state="new">The configuration itself however was not executed (test.txt file was not created).</target>
         </trans-unit>
-        <trans-unit id="247" translate="yes" xml:space="preserve">
+        <trans-unit id="245" translate="yes" xml:space="preserve">
           <source>This wraps up our checklist.</source>
           <target state="new">This wraps up our checklist.</target>
         </trans-unit>
-        <trans-unit id="248" translate="yes" xml:space="preserve">
+        <trans-unit id="246" translate="yes" xml:space="preserve">
           <source>Please keep in mind that this list is not exhaustive, but it covers many important issues which we encountered while designing, developing and testing DSC resources.</source>
           <target state="new">Please keep in mind that this list is not exhaustive, but it covers many important issues which we encountered while designing, developing and testing DSC resources.</target>
         </trans-unit>
-        <trans-unit id="249" translate="yes" xml:space="preserve">
+        <trans-unit id="247" translate="yes" xml:space="preserve">
           <source>Having a checklist helps to ensure we didn’t forget about any of those aspects and in fact, we use it at Microsoft when developing DSC resources ourselves.</source>
           <target state="new">Having a checklist helps to ensure we didn’t forget about any of those aspects and in fact, we use it at Microsoft when developing DSC resources ourselves.</target>
         </trans-unit>
-        <trans-unit id="250" translate="yes" xml:space="preserve">
+        <trans-unit id="248" translate="yes" xml:space="preserve">
           <source>If you developed guidelines and best practices which you use for writing and testing DSC resources, please share them!</source>
           <target state="new">If you developed guidelines and best practices which you use for writing and testing DSC resources, please share them!</target>
         </trans-unit>

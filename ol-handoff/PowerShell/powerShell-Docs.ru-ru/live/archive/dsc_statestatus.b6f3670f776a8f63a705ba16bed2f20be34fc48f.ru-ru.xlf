@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="ru-ru">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">98a8a8f27661042bef27d0edceccf9a67c9153d1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_statestatus.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -52,8 +60,8 @@
           <target state="new">Scenario</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>LCMState\*</source>
-          <target state="new">LCMState\*</target>
+          <source>LCMState</source>
+          <target state="new">LCMState</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
           <source>Status</source>
@@ -72,8 +80,8 @@
           <target state="new">ResourcesNotInDesiredState</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>S<bpt id="p1">**</bpt>^<ept id="p1">**</ept></source>
-          <target state="new">S<bpt id="p1">**</bpt>^<ept id="p1">**</ept></target>
+          <source>S<bpt id="p1">**</bpt><ph id="ph1">^</ph><ept id="p1">**</ept></source>
+          <target state="new">S<bpt id="p1">**</bpt><ph id="ph1">^</ph><ept id="p1">**</ept></target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>Idle</source>
@@ -96,8 +104,8 @@
           <target state="new">$null</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>F<bpt id="p1">**</bpt>^<ept id="p1">**</ept></source>
-          <target state="new">F<bpt id="p1">**</bpt>^<ept id="p1">**</ept></target>
+          <source>F<bpt id="p1">**</bpt><ph id="ph1">^</ph><ept id="p1">**</ept></source>
+          <target state="new">F<bpt id="p1">**</bpt><ph id="ph1">^</ph><ept id="p1">**</ept></target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>PendingConfiguration</source>
@@ -168,8 +176,8 @@
           <target state="new">F</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
-          <source>S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F, S<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></source>
-          <target state="new">S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F, S<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></target>
+          <source>S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F, S<ph id="ph3">&lt;sub&gt;</ph>2</source>
+          <target state="new">S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F, S<ph id="ph3">&lt;sub&gt;</ph>2</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>PendingConfiguration</source>
@@ -184,16 +192,16 @@
           <target state="new">$false</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></source>
-          <target state="new">S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></target>
+          <source>S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S<ph id="ph3">&lt;sub&gt;</ph>2</source>
+          <target state="new">S<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S<ph id="ph3">&lt;sub&gt;</ph>2</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
           <source>F</source>
           <target state="new">F</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
-          <source>F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S, F<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></source>
-          <target state="new">F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S, F<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></target>
+          <source>F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S, F<ph id="ph3">&lt;sub&gt;</ph>2</source>
+          <target state="new">F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, S, F<ph id="ph3">&lt;sub&gt;</ph>2</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
           <source>PendingConfiguration</source>
@@ -212,8 +220,8 @@
           <target state="new">S</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
-          <source>F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></source>
-          <target state="new">F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F<ph id="ph3">&lt;sub&gt;</ph>2<ph id="ph4">&lt;/sub&gt;</ph></target>
+          <source>F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F<ph id="ph3">&lt;sub&gt;</ph>2</source>
+          <target state="new">F<ph id="ph1">&lt;sub&gt;</ph>1<ph id="ph2">&lt;/sub&gt;</ph>, F<ph id="ph3">&lt;sub&gt;</ph>2</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
           <source>S, r</source>
@@ -311,78 +319,67 @@
           <source>r</source>
           <target state="new">r</target>
         </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>S<ph id="ph1">&lt;sub&gt;</ph>i<ph id="ph2">&lt;/sub&gt;</ph>: A series of resources that applied successfully F<ph id="ph3">&lt;sub&gt;</ph>i<ph id="ph4">&lt;/sub&gt;</ph>: A series of resources that applied unsuccessfully r: A resource that requires reboot</source>
+          <target state="new">S<ph id="ph1">&lt;sub&gt;</ph>i<ph id="ph2">&lt;/sub&gt;</ph>: A series of resources that applied successfully F<ph id="ph3">&lt;sub&gt;</ph>i<ph id="ph4">&lt;/sub&gt;</ph>: A series of resources that applied unsuccessfully r: A resource that requires reboot</target>
+        </trans-unit>
         <trans-unit id="179" translate="yes" xml:space="preserve">
-          <source>S<ph id="ph1">&lt;sub&gt;</ph>i<ph id="ph2">&lt;/sub&gt;</ph>: A series of resources that applied successfully</source>
-          <target state="new">S<ph id="ph1">&lt;sub&gt;</ph>i<ph id="ph2">&lt;/sub&gt;</ph>: A series of resources that applied successfully</target>
-        </trans-unit>
-        <trans-unit id="180" translate="yes" xml:space="preserve">
-          <source>F<ph id="ph1">&lt;sub&gt;</ph>i<ph id="ph2">&lt;/sub&gt;</ph>: A series of resources that applied unsuccessfully</source>
-          <target state="new">F<ph id="ph1">&lt;sub&gt;</ph>i<ph id="ph2">&lt;/sub&gt;</ph>: A series of resources that applied unsuccessfully</target>
-        </trans-unit>
-        <trans-unit id="181" translate="yes" xml:space="preserve">
-          <source>r: A resource that requires reboot</source>
-          <target state="new">r: A resource that requires reboot</target>
-        </trans-unit>
-        <trans-unit id="183" translate="yes" xml:space="preserve">
           <source>Enhancement in Get-DscConfigurationStatus cmdlet</source>
           <target state="new">Enhancement in Get-DscConfigurationStatus cmdlet</target>
         </trans-unit>
-        <trans-unit id="184" translate="yes" xml:space="preserve">
+        <trans-unit id="180" translate="yes" xml:space="preserve">
           <source>A few enhancements have been made to Get-DscConfigurationStatus cmdlet in this release.</source>
           <target state="new">A few enhancements have been made to Get-DscConfigurationStatus cmdlet in this release.</target>
         </trans-unit>
-        <trans-unit id="185" translate="yes" xml:space="preserve">
+        <trans-unit id="181" translate="yes" xml:space="preserve">
           <source>Previously, the StartDate property of objects returned by the cmdlet is of String type.</source>
           <target state="new">Previously, the StartDate property of objects returned by the cmdlet is of String type.</target>
         </trans-unit>
-        <trans-unit id="186" translate="yes" xml:space="preserve">
+        <trans-unit id="182" translate="yes" xml:space="preserve">
           <source>Now, it is of Datetime type, which enables complex selecting and filtering easier based on the intrinsic properties of a Datetime object.</source>
           <target state="new">Now, it is of Datetime type, which enables complex selecting and filtering easier based on the intrinsic properties of a Datetime object.</target>
         </trans-unit>
-        <trans-unit id="187" translate="yes" xml:space="preserve">
+        <trans-unit id="183" translate="yes" xml:space="preserve">
           <source>Following is an example that returns all DSC operation records happened on the same day of week as today.</source>
           <target state="new">Following is an example that returns all DSC operation records happened on the same day of week as today.</target>
         </trans-unit>
-        <trans-unit id="188" translate="yes" xml:space="preserve">
+        <trans-unit id="184" translate="yes" xml:space="preserve">
           <source>Records of operations that do not make changes to node’s configuration (i.e. read only operations) are eliminated.</source>
           <target state="new">Records of operations that do not make changes to node’s configuration (i.e. read only operations) are eliminated.</target>
         </trans-unit>
-        <trans-unit id="189" translate="yes" xml:space="preserve">
+        <trans-unit id="185" translate="yes" xml:space="preserve">
           <source>Therefore, Test-DscConfiguration, Get-DscConfiguration operations are no longer adulterated in returned objects from Get-DscConfigurationStatus cmdlet.</source>
           <target state="new">Therefore, Test-DscConfiguration, Get-DscConfiguration operations are no longer adulterated in returned objects from Get-DscConfigurationStatus cmdlet.</target>
         </trans-unit>
-        <trans-unit id="190" translate="yes" xml:space="preserve">
+        <trans-unit id="186" translate="yes" xml:space="preserve">
           <source>Records of meta configuration setting operation is added to the return of Get-DscConfigurationStatus cmdlet.</source>
           <target state="new">Records of meta configuration setting operation is added to the return of Get-DscConfigurationStatus cmdlet.</target>
         </trans-unit>
-        <trans-unit id="191" translate="yes" xml:space="preserve">
+        <trans-unit id="187" translate="yes" xml:space="preserve">
           <source>Following is an example of result returned from Get-DscConfigurationStatus –All cmdlet.</source>
           <target state="new">Following is an example of result returned from Get-DscConfigurationStatus –All cmdlet.</target>
         </trans-unit>
-        <trans-unit id="192" translate="yes" xml:space="preserve">
+        <trans-unit id="188" translate="yes" xml:space="preserve">
           <source>Enhancement in Get-DscLocalConfigurationManager cmdlet</source>
           <target state="new">Enhancement in Get-DscLocalConfigurationManager cmdlet</target>
         </trans-unit>
-        <trans-unit id="193" translate="yes" xml:space="preserve">
+        <trans-unit id="189" translate="yes" xml:space="preserve">
           <source>A new field of LCMStateDetail is added to the object returned from Get-DscLocalConfigurationManager cmdlet.</source>
           <target state="new">A new field of LCMStateDetail is added to the object returned from Get-DscLocalConfigurationManager cmdlet.</target>
         </trans-unit>
-        <trans-unit id="194" translate="yes" xml:space="preserve">
+        <trans-unit id="190" translate="yes" xml:space="preserve">
           <source>This field is populated when LCMState is “Busy”.</source>
           <target state="new">This field is populated when LCMState is “Busy”.</target>
         </trans-unit>
-        <trans-unit id="195" translate="yes" xml:space="preserve">
+        <trans-unit id="191" translate="yes" xml:space="preserve">
           <source>It can be retrieved by following cmdlet:</source>
           <target state="new">It can be retrieved by following cmdlet:</target>
         </trans-unit>
-        <trans-unit id="196" translate="yes" xml:space="preserve">
+        <trans-unit id="192" translate="yes" xml:space="preserve">
           <source>Following is an example output of a continuous monitoring on a configuration that requires two reboots on a remote node.</source>
           <target state="new">Following is an example output of a continuous monitoring on a configuration that requires two reboots on a remote node.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">98a8a8f27661042bef27d0edceccf9a67c9153d1</xliffext:olfilehash>
-  </header>
 </xliff>
