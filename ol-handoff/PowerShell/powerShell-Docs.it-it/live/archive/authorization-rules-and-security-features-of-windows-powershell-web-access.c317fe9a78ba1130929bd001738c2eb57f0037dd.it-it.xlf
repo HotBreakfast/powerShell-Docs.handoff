@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ed586e55f4533ce5be7c68564e5cc537fed05016</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\authorization-rules-and-security-features-of-windows-powershell-web-access.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\authorization-rules-and-security-features-of-windows-powershell-web-access.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ed586e55f4533ce5be7c68564e5cc537fed05016</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -455,12 +456,12 @@
           <target state="new">You cannot use the Windows PowerShell Web Access cmdlets to create custom session configurations.</target>
         </trans-unit>
         <trans-unit id="212" translate="yes" xml:space="preserve">
-          <source>For more information about creating custom session configurations, see <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
-          <target state="new">For more information about creating custom session configurations, see <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
+          <source>For more information about creating custom session configurations, see <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
+          <target state="new">For more information about creating custom session configurations, see <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
         </trans-unit>
         <trans-unit id="213" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Web Access cmdlets support one wildcard character, an asterisk ( \* ).</source>
-          <target state="new">Windows PowerShell Web Access cmdlets support one wildcard character, an asterisk ( \* ).</target>
+          <source>Windows PowerShell Web Access cmdlets support one wildcard character, an asterisk ( <ph id="ph1">\*</ph> ).</source>
+          <target state="new">Windows PowerShell Web Access cmdlets support one wildcard character, an asterisk ( <ph id="ph1">\*</ph> ).</target>
         </trans-unit>
         <trans-unit id="214" translate="yes" xml:space="preserve">
           <source>Wildcard characters within strings are not supported; use a single asterisk per property (users, computers, or session configurations).</source>
@@ -495,8 +496,8 @@
           <target state="new">Optional step for restricting user access by using session configurations:<ph id="ph1">&lt;/span&gt;</ph> Verify that session configurations that you want to use in your rules already exist.</target>
         </trans-unit>
         <trans-unit id="222" translate="yes" xml:space="preserve">
-          <source>If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
-          <target state="new">If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about\_Session\_Configuration\_Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
+          <source>If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</source>
+          <target state="new">If they have not yet been created, use instructions for creating session configurations in <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configuration<ph id="ph3">\_</ph>Files<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/hh847838.aspx)</ept> on MSDN.</target>
         </trans-unit>
         <trans-unit id="223" translate="yes" xml:space="preserve">
           <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>.</source>
@@ -511,20 +512,20 @@
           <target state="new">This authorization rule allows a specific user access to one computer on the network to which they typically have access, with access to a specific session configuration that is scoped to the user’s typical scripting and cmdlet needs.</target>
         </trans-unit>
         <trans-unit id="226" translate="yes" xml:space="preserve">
-          <source>In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso\_214<ph id="ph6">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph7">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph8">&lt;/span&gt;</ph>.</source>
-          <target state="new">In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso\_214<ph id="ph6">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph7">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph8">&lt;/span&gt;</ph>.</target>
+          <source>In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso<ph id="ph6">\_</ph>214<ph id="ph7">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph8">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph9">&lt;/span&gt;</ph>.</source>
+          <target state="new">In the following example, a user named <ph id="ph1">&lt;span class="code"&gt;</ph>JSmith<ph id="ph2">&lt;/span&gt;</ph> in the <ph id="ph3">&lt;span class="code"&gt;</ph>Contoso<ph id="ph4">&lt;/span&gt;</ph> domain is granted access to manage the computer <ph id="ph5">&lt;span class="code"&gt;</ph>Contoso<ph id="ph6">\_</ph>214<ph id="ph7">&lt;/span&gt;</ph>, and use a session configuration named <ph id="ph8">&lt;span class="code"&gt;</ph>NewAdminsOnly<ph id="ph9">&lt;/span&gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="227" translate="yes" xml:space="preserve">
           <source>[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_4e760377-e401-4ef4-988f-7a0aec1b2a90'); "Copy to clipboard.")</source>
           <target state="new">[Copy](javascript:if%20(window.epx.codeSnippet)window.epx.codeSnippet.copyCode('CodeSnippetContainerCode_4e760377-e401-4ef4-988f-7a0aec1b2a90'); "Copy to clipboard.")</target>
         </trans-unit>
         <trans-unit id="228" translate="yes" xml:space="preserve">
-          <source>Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain\\user | computer\\user<ph id="ph2">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph3">&amp;lt;</ph>computer\_name<ph id="ph4">&amp;gt;</ph>.</source>
-          <target state="new">Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain\\user | computer\\user<ph id="ph2">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph3">&amp;lt;</ph>computer\_name<ph id="ph4">&amp;gt;</ph>.</target>
+          <source>Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain<ph id="ph2">\\</ph>user | computer<ph id="ph3">\\</ph>user<ph id="ph4">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph5">&amp;lt;</ph>computer<ph id="ph6">\_</ph>name<ph id="ph7">&amp;gt;</ph>.</source>
+          <target state="new">Verify that the rule has been created by running either the <bpt id="p1">**</bpt>Get-PswaAuthorizationRule<ept id="p1">**</ept> cmdlet, or <bpt id="p2">**</bpt>Test-PswaAuthorizationRule -UserName <ph id="ph1">&amp;lt;</ph>domain<ph id="ph2">\\</ph>user | computer<ph id="ph3">\\</ph>user<ph id="ph4">&amp;gt;</ph> -ComputerName<ept id="p2">**</ept> <ph id="ph5">&amp;lt;</ph>computer<ph id="ph6">\_</ph>name<ph id="ph7">&amp;gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="229" translate="yes" xml:space="preserve">
-          <source>For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214<ept id="p1">**</ept>.</source>
-          <target state="new">For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso\\JSmith –ComputerName Contoso\_214<ept id="p1">**</ept>.</target>
+          <source>For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso<ph id="ph1">\\</ph>JSmith –ComputerName Contoso<ph id="ph2">\_</ph>214<ept id="p1">**</ept>.</source>
+          <target state="new">For example, <bpt id="p1">**</bpt>Test-PswaAuthorizationRule –UserName Contoso<ph id="ph1">\\</ph>JSmith –ComputerName Contoso<ph id="ph2">\_</ph>214<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="230" translate="yes" xml:space="preserve">
           <source>To remove an authorization rule</source>
@@ -587,8 +588,8 @@
           <target state="new">The session configuration can be distributed (by using Group Policy) to all computers that administrators want to make accessible through Windows PowerShell Web Access.</target>
         </trans-unit>
         <trans-unit id="245" translate="yes" xml:space="preserve">
-          <source>For more information about session configurations, see <bpt id="p1">[</bpt>about\_Session\_Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept>.</source>
-          <target state="new">For more information about session configurations, see <bpt id="p1">[</bpt>about\_Session\_Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept>.</target>
+          <source>For more information about session configurations, see <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept>.</source>
+          <target state="new">For more information about session configurations, see <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept>.</target>
         </trans-unit>
         <trans-unit id="246" translate="yes" xml:space="preserve">
           <source>The following are some examples of this scenario.</source>
@@ -599,8 +600,8 @@
           <target state="new">An administrator creates an endpoint, called <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>, with a restricted runspace.</target>
         </trans-unit>
         <trans-unit id="248" translate="yes" xml:space="preserve">
-          <source>Then, the administrator creates a rule, <bpt id="p1">**</bpt>\*,\*,PswaEndpoint<ept id="p1">**</ept>, and distributes the endpoint to other computers.</source>
-          <target state="new">Then, the administrator creates a rule, <bpt id="p1">**</bpt>\*,\*,PswaEndpoint<ept id="p1">**</ept>, and distributes the endpoint to other computers.</target>
+          <source>Then, the administrator creates a rule, <bpt id="p1">**</bpt><ph id="ph1">\*</ph>,<ph id="ph2">\*</ph>,PswaEndpoint<ept id="p1">**</ept>, and distributes the endpoint to other computers.</source>
+          <target state="new">Then, the administrator creates a rule, <bpt id="p1">**</bpt><ph id="ph1">\*</ph>,<ph id="ph2">\*</ph>,PswaEndpoint<ept id="p1">**</ept>, and distributes the endpoint to other computers.</target>
         </trans-unit>
         <trans-unit id="249" translate="yes" xml:space="preserve">
           <source>The rule allows all users to access all computers with the endpoint <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>.</source>
@@ -615,8 +616,8 @@
           <target state="new">The administrator created an endpoint with a restricted runspace called <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>,and wants to restrict access to specific users.</target>
         </trans-unit>
         <trans-unit id="252" translate="yes" xml:space="preserve">
-          <source>The administrator creates a group of users called <bpt id="p1">**</bpt>Level1Support<ept id="p1">**</ept>, and defines the following rule: <bpt id="p2">**</bpt>Level1Support,\*,PswaEndpoint<ept id="p2">**</ept>.</source>
-          <target state="new">The administrator creates a group of users called <bpt id="p1">**</bpt>Level1Support<ept id="p1">**</ept>, and defines the following rule: <bpt id="p2">**</bpt>Level1Support,\*,PswaEndpoint<ept id="p2">**</ept>.</target>
+          <source>The administrator creates a group of users called <bpt id="p1">**</bpt>Level1Support<ept id="p1">**</ept>, and defines the following rule: <bpt id="p2">**</bpt>Level1Support,<ph id="ph1">\*</ph>,PswaEndpoint<ept id="p2">**</ept>.</source>
+          <target state="new">The administrator creates a group of users called <bpt id="p1">**</bpt>Level1Support<ept id="p1">**</ept>, and defines the following rule: <bpt id="p2">**</bpt>Level1Support,<ph id="ph1">\*</ph>,PswaEndpoint<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="253" translate="yes" xml:space="preserve">
           <source>The rule grants any users in the group <bpt id="p1">**</bpt>Level1Support<ept id="p1">**</ept> access to all computers with the <bpt id="p2">**</bpt>PswaEndpoint<ept id="p2">**</ept> configuration.</source>
@@ -635,8 +636,8 @@
           <target state="new">For example, an administrator creates two user groups, <bpt id="p1">**</bpt>Admins<ept id="p1">**</ept> and <bpt id="p2">**</bpt>BasicSupport<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="257" translate="yes" xml:space="preserve">
-          <source>The administrator also creates an endpoint with a restricted runspace called <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>, and defines the following two rules: <bpt id="p2">**</bpt>Admins,\*,\*<ept id="p2">**</ept> and <bpt id="p3">**</bpt>BasicSupport,\*,PswaEndpoint<ept id="p3">**</ept>.</source>
-          <target state="new">The administrator also creates an endpoint with a restricted runspace called <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>, and defines the following two rules: <bpt id="p2">**</bpt>Admins,\*,\*<ept id="p2">**</ept> and <bpt id="p3">**</bpt>BasicSupport,\*,PswaEndpoint<ept id="p3">**</ept>.</target>
+          <source>The administrator also creates an endpoint with a restricted runspace called <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>, and defines the following two rules: <bpt id="p2">**</bpt>Admins,<ph id="ph1">\*</ph>,<ph id="ph2">\*</ph><ept id="p2">**</ept> and <bpt id="p3">**</bpt>BasicSupport,<ph id="ph3">\*</ph>,PswaEndpoint<ept id="p3">**</ept>.</source>
+          <target state="new">The administrator also creates an endpoint with a restricted runspace called <bpt id="p1">**</bpt>PswaEndpoint<ept id="p1">**</ept>, and defines the following two rules: <bpt id="p2">**</bpt>Admins,<ph id="ph1">\*</ph>,<ph id="ph2">\*</ph><ept id="p2">**</ept> and <bpt id="p3">**</bpt>BasicSupport,<ph id="ph3">\*</ph>,PswaEndpoint<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="258" translate="yes" xml:space="preserve">
           <source>The first rule provides all users in the <bpt id="p1">**</bpt>Admin<ept id="p1">**</ept> group access to all computers, and the second rule provides all users in the <bpt id="p2">**</bpt>BasicSupport<ept id="p2">**</ept> group access only to those computers with <bpt id="p3">**</bpt>PswaEndpoint<ept id="p3">**</ept>.</source>
@@ -651,12 +652,12 @@
           <target state="new">Because this is a private test environment, the administrator creates an authorization rule that is not secure.</target>
         </trans-unit>
         <trans-unit id="261" translate="yes" xml:space="preserve">
-          <source>The administrator runs the cmdlet <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule \* \* \*<ph id="ph2">&lt;/span&gt;</ph>, which uses the wildcard character <bpt id="p1">**</bpt><ph id="ph3">\*</ph><ept id="p1">**</ept> to represent all users, all computers, and all configurations.</source>
-          <target state="new">The administrator runs the cmdlet <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule \* \* \*<ph id="ph2">&lt;/span&gt;</ph>, which uses the wildcard character <bpt id="p1">**</bpt><ph id="ph3">\*</ph><ept id="p1">**</ept> to represent all users, all computers, and all configurations.</target>
+          <source>The administrator runs the cmdlet <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule <ph id="ph2">\*</ph> <ph id="ph3">\*</ph> <ph id="ph4">\*&lt;/span&gt;</ph>, which uses the wildcard character <bpt id="p1">**</bpt><ph id="ph5">\*</ph><ept id="p1">**</ept> to represent all users, all computers, and all configurations.</source>
+          <target state="new">The administrator runs the cmdlet <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule <ph id="ph2">\*</ph> <ph id="ph3">\*</ph> <ph id="ph4">\*&lt;/span&gt;</ph>, which uses the wildcard character <bpt id="p1">**</bpt><ph id="ph5">\*</ph><ept id="p1">**</ept> to represent all users, all computers, and all configurations.</target>
         </trans-unit>
         <trans-unit id="262" translate="yes" xml:space="preserve">
-          <source>This rule is the equivalent of the following: <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule –UserName \* -ComputerName \* -ConfigurationName \*<ph id="ph2">&lt;/span&gt;</ph>.</source>
-          <target state="new">This rule is the equivalent of the following: <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule –UserName \* -ComputerName \* -ConfigurationName \*<ph id="ph2">&lt;/span&gt;</ph>.</target>
+          <source>This rule is the equivalent of the following: <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule –UserName <ph id="ph2">\*</ph> -ComputerName <ph id="ph3">\*</ph> -ConfigurationName <ph id="ph4">\*&lt;/span&gt;</ph>.</source>
+          <target state="new">This rule is the equivalent of the following: <ph id="ph1">&lt;span class="code"&gt;</ph>Add-PswaAuthorizationRule –UserName <ph id="ph2">\*</ph> -ComputerName <ph id="ph3">\*</ph> -ConfigurationName <ph id="ph4">\*&lt;/span&gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="263" translate="yes" xml:space="preserve">
           <source>Security Note</source>
@@ -679,8 +680,8 @@
           <target state="new">User <bpt id="p1">*</bpt>Chris<ept id="p1">*</ept> is an authorized local user on both the workgroup gateway server and the target computer.</target>
         </trans-unit>
         <trans-unit id="268" translate="yes" xml:space="preserve">
-          <source>His user name on the workgroup server is <bpt id="p1">*</bpt>chrisLocal<ept id="p1">*</ept>; and his user name on the target computer is <bpt id="p2">*</bpt>contoso\\chris<ept id="p2">*</ept>.</source>
-          <target state="new">His user name on the workgroup server is <bpt id="p1">*</bpt>chrisLocal<ept id="p1">*</ept>; and his user name on the target computer is <bpt id="p2">*</bpt>contoso\\chris<ept id="p2">*</ept>.</target>
+          <source>His user name on the workgroup server is <bpt id="p1">*</bpt>chrisLocal<ept id="p1">*</ept>; and his user name on the target computer is <bpt id="p2">*</bpt>contoso<ph id="ph1">\\</ph>chris<ept id="p2">*</ept>.</source>
+          <target state="new">His user name on the workgroup server is <bpt id="p1">*</bpt>chrisLocal<ept id="p1">*</ept>; and his user name on the target computer is <bpt id="p2">*</bpt>contoso<ph id="ph1">\\</ph>chris<ept id="p2">*</ept>.</target>
         </trans-unit>
         <trans-unit id="269" translate="yes" xml:space="preserve">
           <source>To authorize access to srv1.contoso.com for Chris, the administrator adds the following rule.</source>
@@ -695,8 +696,8 @@
           <target state="new">The preceding rule example authenticates Chris on the gateway server, and then authorizes his access to <bpt id="p1">*</bpt>srv1<ept id="p1">*</ept>.</target>
         </trans-unit>
         <trans-unit id="272" translate="yes" xml:space="preserve">
-          <source>On the sign-in page, Chris must provide a second set of credentials in the <bpt id="p1">**</bpt>Optional connection settings<ept id="p1">**</ept> area (<bpt id="p2">*</bpt>contoso\\chris<ept id="p2">*</ept>).</source>
-          <target state="new">On the sign-in page, Chris must provide a second set of credentials in the <bpt id="p1">**</bpt>Optional connection settings<ept id="p1">**</ept> area (<bpt id="p2">*</bpt>contoso\\chris<ept id="p2">*</ept>).</target>
+          <source>On the sign-in page, Chris must provide a second set of credentials in the <bpt id="p1">**</bpt>Optional connection settings<ept id="p1">**</ept> area (<bpt id="p2">*</bpt>contoso<ph id="ph1">\\</ph>chris<ept id="p2">*</ept>).</source>
+          <target state="new">On the sign-in page, Chris must provide a second set of credentials in the <bpt id="p1">**</bpt>Optional connection settings<ept id="p1">**</ept> area (<bpt id="p2">*</bpt>contoso<ph id="ph1">\\</ph>chris<ept id="p2">*</ept>).</target>
         </trans-unit>
         <trans-unit id="273" translate="yes" xml:space="preserve">
           <source>The gateway server uses the additional set of credentials to authenticate him on the target computer, <bpt id="p1">*</bpt>srv1.contoso.com<ept id="p1">*</ept>.</source>
@@ -707,8 +708,8 @@
           <target state="new">In the preceding scenario, Windows PowerShell Web Access establishes a successful connection to the target computer only after the following have been successful, and allowed by at least one authorization rule.</target>
         </trans-unit>
         <trans-unit id="275" translate="yes" xml:space="preserve">
-          <source>Authentication on the workgroup gateway server by adding a user name in the format <bpt id="p1">*</bpt>server\_name<ept id="p1">*</ept><ph id="ph1">\\</ph><bpt id="p2">*</bpt>user\_name<ept id="p2">*</ept> to the authorization rule</source>
-          <target state="new">Authentication on the workgroup gateway server by adding a user name in the format <bpt id="p1">*</bpt>server\_name<ept id="p1">*</ept><ph id="ph1">\\</ph><bpt id="p2">*</bpt>user\_name<ept id="p2">*</ept> to the authorization rule</target>
+          <source>Authentication on the workgroup gateway server by adding a user name in the format <bpt id="p1">*</bpt>server<ph id="ph1">\_</ph>name<ept id="p1">*</ept><ph id="ph2">\\</ph><bpt id="p2">*</bpt>user<ph id="ph3">\_</ph>name<ept id="p2">*</ept> to the authorization rule</source>
+          <target state="new">Authentication on the workgroup gateway server by adding a user name in the format <bpt id="p1">*</bpt>server<ph id="ph1">\_</ph>name<ept id="p1">*</ept><ph id="ph2">\\</ph><bpt id="p2">*</bpt>user<ph id="ph3">\_</ph>name<ept id="p2">*</ept> to the authorization rule</target>
         </trans-unit>
         <trans-unit id="276" translate="yes" xml:space="preserve">
           <source>Authentication on the target computer by using alternate credentials provided on the sign-in page, in the <bpt id="p1">**</bpt>Optional connection settings<ept id="p1">**</ept> area</source>
@@ -747,12 +748,12 @@
           <target state="new">Authorization rules are stored in an XML file.</target>
         </trans-unit>
         <trans-unit id="285" translate="yes" xml:space="preserve">
-          <source>By default, the path name of the XML file is %windir%\\Web\\PowershellWebAccess\\data\\AuthorizationRules.xml.</source>
-          <target state="new">By default, the path name of the XML file is %windir%\\Web\\PowershellWebAccess\\data\\AuthorizationRules.xml.</target>
+          <source>By default, the path name of the XML file is %windir%<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>PowershellWebAccess<ph id="ph3">\\</ph>data<ph id="ph4">\\</ph>AuthorizationRules.xml.</source>
+          <target state="new">By default, the path name of the XML file is %windir%<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>PowershellWebAccess<ph id="ph3">\\</ph>data<ph id="ph4">\\</ph>AuthorizationRules.xml.</target>
         </trans-unit>
         <trans-unit id="286" translate="yes" xml:space="preserve">
-          <source>The path to the authorization rules XML file is stored in the <bpt id="p1">**</bpt>powwa.config<ept id="p1">**</ept> file, which is found in %windir%\\Web\\PowershellWebAccess\\data.</source>
-          <target state="new">The path to the authorization rules XML file is stored in the <bpt id="p1">**</bpt>powwa.config<ept id="p1">**</ept> file, which is found in %windir%\\Web\\PowershellWebAccess\\data.</target>
+          <source>The path to the authorization rules XML file is stored in the <bpt id="p1">**</bpt>powwa.config<ept id="p1">**</ept> file, which is found in %windir%<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>PowershellWebAccess<ph id="ph3">\\</ph>data.</source>
+          <target state="new">The path to the authorization rules XML file is stored in the <bpt id="p1">**</bpt>powwa.config<ept id="p1">**</ept> file, which is found in %windir%<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>PowershellWebAccess<ph id="ph3">\\</ph>data.</target>
         </trans-unit>
         <trans-unit id="287" translate="yes" xml:space="preserve">
           <source>The administrator has the flexibility to change the reference to the default path in <bpt id="p1">**</bpt>powwa.config<ept id="p1">**</ept> to suit preferences or requirements.</source>
@@ -775,8 +776,8 @@
           <target state="new">You can edit the web application’s <bpt id="p1">**</bpt>web.config<ept id="p1">**</ept> file in IIS Manager to support a different number of sessions per user.</target>
         </trans-unit>
         <trans-unit id="292" translate="yes" xml:space="preserve">
-          <source>The path to the <bpt id="p1">**</bpt>web.config<ept id="p1">**</ept> file is $Env:Windir\\Web\\PowerShellWebAccess\\wwwroot\\Web.config.</source>
-          <target state="new">The path to the <bpt id="p1">**</bpt>web.config<ept id="p1">**</ept> file is $Env:Windir\\Web\\PowerShellWebAccess\\wwwroot\\Web.config.</target>
+          <source>The path to the <bpt id="p1">**</bpt>web.config<ept id="p1">**</ept> file is $Env:Windir<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>PowerShellWebAccess<ph id="ph3">\\</ph>wwwroot<ph id="ph4">\\</ph>Web.config.</source>
+          <target state="new">The path to the <bpt id="p1">**</bpt>web.config<ept id="p1">**</ept> file is $Env:Windir<ph id="ph1">\\</ph>Web<ph id="ph2">\\</ph>PowerShellWebAccess<ph id="ph3">\\</ph>wwwroot<ph id="ph4">\\</ph>Web.config.</target>
         </trans-unit>
         <trans-unit id="293" translate="yes" xml:space="preserve">
           <source>By default, Web Server (IIS) is configured to restart the application pool if any settings are edited.</source>
@@ -860,10 +861,10 @@
         </trans-unit>
         <trans-unit id="313" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Install and Use Windows PowerShell Web Access<ept id="p1">](https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt>about\_Session\_Configurations<ept id="p2">](https://technet.microsoft.com/library/dd819508.aspx)</ept><ph id="ph2">
+</ph><bpt id="p2">[</bpt>about<ph id="ph2">\_</ph>Session<ph id="ph3">\_</ph>Configurations<ept id="p2">](https://technet.microsoft.com/library/dd819508.aspx)</ept><ph id="ph4">
 </ph><bpt id="p3">[</bpt>Windows PowerShell Web Access Cmdlets<ept id="p3">](https://technet.microsoft.com/library/hh918342.aspx)</ept></source>
           <target state="new"><bpt id="p1">[</bpt>Install and Use Windows PowerShell Web Access<ept id="p1">](https://technet.microsoft.com/en-us/library/hh831611(v=ws.11).aspx)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt>about\_Session\_Configurations<ept id="p2">](https://technet.microsoft.com/library/dd819508.aspx)</ept><ph id="ph2">
+</ph><bpt id="p2">[</bpt>about<ph id="ph2">\_</ph>Session<ph id="ph3">\_</ph>Configurations<ept id="p2">](https://technet.microsoft.com/library/dd819508.aspx)</ept><ph id="ph4">
 </ph><bpt id="p3">[</bpt>Windows PowerShell Web Access Cmdlets<ept id="p3">](https://technet.microsoft.com/library/hh918342.aspx)</ept></target>
         </trans-unit>
         <trans-unit id="314" translate="yes" xml:space="preserve">

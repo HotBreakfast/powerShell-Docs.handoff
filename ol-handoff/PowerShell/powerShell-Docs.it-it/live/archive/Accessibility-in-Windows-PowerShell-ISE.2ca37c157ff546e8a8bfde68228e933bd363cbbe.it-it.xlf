@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a6581fe76bf29a0090f9dfa5ad41ec4fc7572998</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Accessibility-in-Windows-PowerShell-ISE.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Accessibility-in-Windows-PowerShell-ISE.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a6581fe76bf29a0090f9dfa5ad41ec4fc7572998</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -107,8 +108,8 @@
           <target state="new">Pause the pointer on the split line between the Script Pane and Console Pane.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.</source>
-          <target state="new">When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.</target>
+          <source>When the mouse pointer changes to a two<ph id="ph1">\-</ph>headed arrow, drag the border to change the size of the pane.</source>
+          <target state="new">When the mouse pointer changes to a two<ph id="ph1">\-</ph>headed arrow, drag the border to change the size of the pane.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>To move the Script Pane and Console Pane</source>
@@ -119,16 +120,16 @@
           <target state="new">Do one of the following:</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>To move the Script Pane above the Command and Output Panes, press <bpt id="p1">**</bpt>CTRL\+1<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Top<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Top<ept id="p4">**</ept>.</source>
-          <target state="new">To move the Script Pane above the Command and Output Panes, press <bpt id="p1">**</bpt>CTRL\+1<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Top<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Top<ept id="p4">**</ept>.</target>
+          <source>To move the Script Pane above the Command and Output Panes, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>1<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Top<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Top<ept id="p4">**</ept>.</source>
+          <target state="new">To move the Script Pane above the Command and Output Panes, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>1<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Top<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Top<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>To move the Script Pane to the right of the Console Pane, press <bpt id="p1">**</bpt>CTRL\+2<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Right<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Right<ept id="p4">**</ept>.</source>
-          <target state="new">To move the Script Pane to the right of the Console Pane, press <bpt id="p1">**</bpt>CTRL\+2<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Right<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Right<ept id="p4">**</ept>.</target>
+          <source>To move the Script Pane to the right of the Console Pane, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>2<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Right<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Right<ept id="p4">**</ept>.</source>
+          <target state="new">To move the Script Pane to the right of the Console Pane, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>2<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Right<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Right<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>To maximize the Script Pane, press <bpt id="p1">**</bpt>CTRL\+3<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Maximized<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Maximized<ept id="p4">**</ept>.</source>
-          <target state="new">To maximize the Script Pane, press <bpt id="p1">**</bpt>CTRL\+3<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Maximized<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Maximized<ept id="p4">**</ept>.</target>
+          <source>To maximize the Script Pane, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>3<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Maximized<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Maximized<ept id="p4">**</ept>.</source>
+          <target state="new">To maximize the Script Pane, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>3<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Show Script Pane Maximized<ept id="p2">**</ept> icon, or in the <bpt id="p3">**</bpt>View<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Show Script Pane Maximized<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
           <source>To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the <bpt id="p1">**</bpt>Hide Script Pane<ept id="p1">**</ept> icon, in the <bpt id="p2">**</bpt>View<ept id="p2">**</ept> menu, click to deselect the <bpt id="p3">**</bpt>Show Script Pane<ept id="p3">**</ept> menu option.</source>
@@ -163,8 +164,8 @@
           <target state="new">Copy</target>
         </trans-unit>
         <trans-unit id="139" translate="yes" xml:space="preserve">
-          <source>CTRL\+C</source>
-          <target state="new">CTRL\+C</target>
+          <source>CTRL<ph id="ph1">\+</ph>C</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>C</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
           <source>Script Pane, Command Pane, Output Pane</source>
@@ -175,8 +176,8 @@
           <target state="new">Cut</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
-          <source>CTRL\+X</source>
-          <target state="new">CTRL\+X</target>
+          <source>CTRL<ph id="ph1">\+</ph>X</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>X</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>Script Pane, Command Pane</source>
@@ -187,8 +188,8 @@
           <target state="new">Find in Script</target>
         </trans-unit>
         <trans-unit id="145" translate="yes" xml:space="preserve">
-          <source>CTRL\+F</source>
-          <target state="new">CTRL\+F</target>
+          <source>CTRL<ph id="ph1">\+</ph>F</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>F</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>Script Pane</source>
@@ -211,8 +212,8 @@
           <target state="new">Find Previous in Script</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
-          <source>SHIFT\+F3</source>
-          <target state="new">SHIFT\+F3</target>
+          <source>SHIFT<ph id="ph1">\+</ph>F3</source>
+          <target state="new">SHIFT<ph id="ph1">\+</ph>F3</target>
         </trans-unit>
         <trans-unit id="152" translate="yes" xml:space="preserve">
           <source>Script Pane</source>
@@ -223,8 +224,8 @@
           <target state="new">Paste</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
-          <source>CTRL\+V</source>
-          <target state="new">CTRL\+V</target>
+          <source>CTRL<ph id="ph1">\+</ph>V</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>V</target>
         </trans-unit>
         <trans-unit id="155" translate="yes" xml:space="preserve">
           <source>Script Pane, Command Pane</source>
@@ -235,8 +236,8 @@
           <target state="new">Redo</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
-          <source>CTRL\+Y</source>
-          <target state="new">CTRL\+Y</target>
+          <source>CTRL<ph id="ph1">\+</ph>Y</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>Y</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
           <source>Script Pane, Command Pane</source>
@@ -247,8 +248,8 @@
           <target state="new">Replace in Script</target>
         </trans-unit>
         <trans-unit id="160" translate="yes" xml:space="preserve">
-          <source>CTRL\+H</source>
-          <target state="new">CTRL\+H</target>
+          <source>CTRL<ph id="ph1">\+</ph>H</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>H</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
           <source>Script Pane</source>
@@ -259,8 +260,8 @@
           <target state="new">Save</target>
         </trans-unit>
         <trans-unit id="163" translate="yes" xml:space="preserve">
-          <source>CTRL\+S</source>
-          <target state="new">CTRL\+S</target>
+          <source>CTRL<ph id="ph1">\+</ph>S</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>S</target>
         </trans-unit>
         <trans-unit id="164" translate="yes" xml:space="preserve">
           <source>Script Pane</source>
@@ -271,8 +272,8 @@
           <target state="new">Select All</target>
         </trans-unit>
         <trans-unit id="166" translate="yes" xml:space="preserve">
-          <source>CTRL\+A</source>
-          <target state="new">CTRL\+A</target>
+          <source>CTRL<ph id="ph1">\+</ph>A</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>A</target>
         </trans-unit>
         <trans-unit id="167" translate="yes" xml:space="preserve">
           <source>Script Pane, Command Pane, Output Pane</source>
@@ -283,8 +284,8 @@
           <target state="new">Undo</target>
         </trans-unit>
         <trans-unit id="169" translate="yes" xml:space="preserve">
-          <source>CTRL\+Z</source>
-          <target state="new">CTRL\+Z</target>
+          <source>CTRL<ph id="ph1">\+</ph>Z</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>Z</target>
         </trans-unit>
         <trans-unit id="170" translate="yes" xml:space="preserve">
           <source>Script Pane, Command Pane</source>
@@ -311,16 +312,16 @@
           <target state="new">New</target>
         </trans-unit>
         <trans-unit id="176" translate="yes" xml:space="preserve">
-          <source>CTRL\+N</source>
-          <target state="new">CTRL\+N</target>
+          <source>CTRL<ph id="ph1">\+</ph>N</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>N</target>
         </trans-unit>
         <trans-unit id="177" translate="yes" xml:space="preserve">
           <source>Open</source>
           <target state="new">Open</target>
         </trans-unit>
         <trans-unit id="178" translate="yes" xml:space="preserve">
-          <source>CTRL\+O</source>
-          <target state="new">CTRL\+O</target>
+          <source>CTRL<ph id="ph1">\+</ph>O</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>O</target>
         </trans-unit>
         <trans-unit id="179" translate="yes" xml:space="preserve">
           <source>Run</source>
@@ -343,28 +344,28 @@
           <target state="new">Stop Execution</target>
         </trans-unit>
         <trans-unit id="184" translate="yes" xml:space="preserve">
-          <source>CTRL\+BREAK.</source>
-          <target state="new">CTRL\+BREAK.</target>
+          <source>CTRL<ph id="ph1">\+</ph>BREAK.</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>BREAK.</target>
         </trans-unit>
         <trans-unit id="185" translate="yes" xml:space="preserve">
-          <source>CTRL\+C can be used when the context is unambiguous (when there is no text selected).</source>
-          <target state="new">CTRL\+C can be used when the context is unambiguous (when there is no text selected).</target>
+          <source>CTRL<ph id="ph1">\+</ph>C can be used when the context is unambiguous (when there is no text selected).</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>C can be used when the context is unambiguous (when there is no text selected).</target>
         </trans-unit>
         <trans-unit id="186" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> (to next script)</source>
           <target state="new"><bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> (to next script)</target>
         </trans-unit>
         <trans-unit id="187" translate="yes" xml:space="preserve">
-          <source>CTRL\+TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.</source>
-          <target state="new">CTRL\+TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.</target>
+          <source>CTRL<ph id="ph1">\+</ph>TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.</target>
         </trans-unit>
         <trans-unit id="188" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> (to previous script)</source>
           <target state="new"><bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> (to previous script)</target>
         </trans-unit>
         <trans-unit id="189" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.</source>
-          <target state="new">CTRL\+SHIFT\+TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>TAB <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.</target>
         </trans-unit>
         <trans-unit id="190" translate="yes" xml:space="preserve">
           <source>Keyboard shortcuts for customizing the view</source>
@@ -391,80 +392,80 @@
           <target state="new">Go to Command Pane</target>
         </trans-unit>
         <trans-unit id="196" translate="yes" xml:space="preserve">
-          <source>CTRL\+D</source>
-          <target state="new">CTRL\+D</target>
+          <source>CTRL<ph id="ph1">\+</ph>D</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>D</target>
         </trans-unit>
         <trans-unit id="197" translate="yes" xml:space="preserve">
           <source>Go to Output Pane</source>
           <target state="new">Go to Output Pane</target>
         </trans-unit>
         <trans-unit id="198" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+O</source>
-          <target state="new">CTRL\+SHIFT\+O</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>O</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>O</target>
         </trans-unit>
         <trans-unit id="199" translate="yes" xml:space="preserve">
           <source>Go to Script Pane</source>
           <target state="new">Go to Script Pane</target>
         </trans-unit>
         <trans-unit id="200" translate="yes" xml:space="preserve">
-          <source>CTRL\+I</source>
-          <target state="new">CTRL\+I</target>
+          <source>CTRL<ph id="ph1">\+</ph>I</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>I</target>
         </trans-unit>
         <trans-unit id="201" translate="yes" xml:space="preserve">
           <source>Show Script Pane</source>
           <target state="new">Show Script Pane</target>
         </trans-unit>
         <trans-unit id="202" translate="yes" xml:space="preserve">
-          <source>CTRL\+R</source>
-          <target state="new">CTRL\+R</target>
+          <source>CTRL<ph id="ph1">\+</ph>R</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>R</target>
         </trans-unit>
         <trans-unit id="203" translate="yes" xml:space="preserve">
           <source>Hide Script Pane</source>
           <target state="new">Hide Script Pane</target>
         </trans-unit>
         <trans-unit id="204" translate="yes" xml:space="preserve">
-          <source>CTRL\+R</source>
-          <target state="new">CTRL\+R</target>
+          <source>CTRL<ph id="ph1">\+</ph>R</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>R</target>
         </trans-unit>
         <trans-unit id="205" translate="yes" xml:space="preserve">
           <source>Move Script Pane Up</source>
           <target state="new">Move Script Pane Up</target>
         </trans-unit>
         <trans-unit id="206" translate="yes" xml:space="preserve">
-          <source>CTRL\+1</source>
-          <target state="new">CTRL\+1</target>
+          <source>CTRL<ph id="ph1">\+</ph>1</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>1</target>
         </trans-unit>
         <trans-unit id="207" translate="yes" xml:space="preserve">
           <source>Move Script Pane Right</source>
           <target state="new">Move Script Pane Right</target>
         </trans-unit>
         <trans-unit id="208" translate="yes" xml:space="preserve">
-          <source>CTRL\+2</source>
-          <target state="new">CTRL\+2</target>
+          <source>CTRL<ph id="ph1">\+</ph>2</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>2</target>
         </trans-unit>
         <trans-unit id="209" translate="yes" xml:space="preserve">
           <source>Maximize Script Pane</source>
           <target state="new">Maximize Script Pane</target>
         </trans-unit>
         <trans-unit id="210" translate="yes" xml:space="preserve">
-          <source>CTRL\+3</source>
-          <target state="new">CTRL\+3</target>
+          <source>CTRL<ph id="ph1">\+</ph>3</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>3</target>
         </trans-unit>
         <trans-unit id="211" translate="yes" xml:space="preserve">
           <source>Zoom In</source>
           <target state="new">Zoom In</target>
         </trans-unit>
         <trans-unit id="212" translate="yes" xml:space="preserve">
-          <source>CTRL\+PLUS SIGN</source>
-          <target state="new">CTRL\+PLUS SIGN</target>
+          <source>CTRL<ph id="ph1">\+</ph>PLUS SIGN</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>PLUS SIGN</target>
         </trans-unit>
         <trans-unit id="213" translate="yes" xml:space="preserve">
           <source>Zoom Out</source>
           <target state="new">Zoom Out</target>
         </trans-unit>
         <trans-unit id="214" translate="yes" xml:space="preserve">
-          <source>CTRL\+MINUS SIGN</source>
-          <target state="new">CTRL\+MINUS SIGN</target>
+          <source>CTRL<ph id="ph1">\+</ph>MINUS SIGN</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>MINUS SIGN</target>
         </trans-unit>
         <trans-unit id="215" translate="yes" xml:space="preserve">
           <source>Keyboard shortcuts for debugging scripts</source>
@@ -487,8 +488,8 @@
           <target state="new">Use in</target>
         </trans-unit>
         <trans-unit id="220" translate="yes" xml:space="preserve">
-          <source>Run\/Continue</source>
-          <target state="new">Run\/Continue</target>
+          <source>Run<ph id="ph1">\/</ph>Continue</source>
+          <target state="new">Run<ph id="ph1">\/</ph>Continue</target>
         </trans-unit>
         <trans-unit id="221" translate="yes" xml:space="preserve">
           <source>F5</source>
@@ -527,8 +528,8 @@
           <target state="new">Step Out</target>
         </trans-unit>
         <trans-unit id="230" translate="yes" xml:space="preserve">
-          <source>SHIFT\+F11</source>
-          <target state="new">SHIFT\+F11</target>
+          <source>SHIFT<ph id="ph1">\+</ph>F11</source>
+          <target state="new">SHIFT<ph id="ph1">\+</ph>F11</target>
         </trans-unit>
         <trans-unit id="231" translate="yes" xml:space="preserve">
           <source>Script Pane, when debugging a script</source>
@@ -539,8 +540,8 @@
           <target state="new">Display Call Stack</target>
         </trans-unit>
         <trans-unit id="233" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+D</source>
-          <target state="new">CTRL\+SHIFT\+D</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>D</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>D</target>
         </trans-unit>
         <trans-unit id="234" translate="yes" xml:space="preserve">
           <source>Script Pane, when debugging a script</source>
@@ -551,8 +552,8 @@
           <target state="new">List Breakpoints</target>
         </trans-unit>
         <trans-unit id="236" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+L</source>
-          <target state="new">CTRL\+SHIFT\+L</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>L</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>L</target>
         </trans-unit>
         <trans-unit id="237" translate="yes" xml:space="preserve">
           <source>Script Pane, when debugging a script</source>
@@ -575,8 +576,8 @@
           <target state="new">Remove All Breakpoints</target>
         </trans-unit>
         <trans-unit id="242" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+F9</source>
-          <target state="new">CTRL\+SHIFT\+F9</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>F9</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>F9</target>
         </trans-unit>
         <trans-unit id="243" translate="yes" xml:space="preserve">
           <source>Script Pane, when debugging a script</source>
@@ -587,8 +588,8 @@
           <target state="new">Stop Debugger</target>
         </trans-unit>
         <trans-unit id="245" translate="yes" xml:space="preserve">
-          <source>SHIFT\+F5</source>
-          <target state="new">SHIFT\+F5</target>
+          <source>SHIFT<ph id="ph1">\+</ph>F5</source>
+          <target state="new">SHIFT<ph id="ph1">\+</ph>F5</target>
         </trans-unit>
         <trans-unit id="246" translate="yes" xml:space="preserve">
           <source>Script Pane, when debugging a script</source>
@@ -743,24 +744,24 @@
           <target state="new">Close PowerShell Tab</target>
         </trans-unit>
         <trans-unit id="284" translate="yes" xml:space="preserve">
-          <source>CTRL\+W</source>
-          <target state="new">CTRL\+W</target>
+          <source>CTRL<ph id="ph1">\+</ph>W</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>W</target>
         </trans-unit>
         <trans-unit id="285" translate="yes" xml:space="preserve">
           <source>New PowerShell Tab</source>
           <target state="new">New PowerShell Tab</target>
         </trans-unit>
         <trans-unit id="286" translate="yes" xml:space="preserve">
-          <source>CTRL\+T</source>
-          <target state="new">CTRL\+T</target>
+          <source>CTRL<ph id="ph1">\+</ph>T</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>T</target>
         </trans-unit>
         <trans-unit id="287" translate="yes" xml:space="preserve">
           <source>Previous PowerShell tab</source>
           <target state="new">Previous PowerShell tab</target>
         </trans-unit>
         <trans-unit id="288" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+TAB.</source>
-          <target state="new">CTRL\+SHIFT\+TAB.</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>TAB.</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>TAB.</target>
         </trans-unit>
         <trans-unit id="289" translate="yes" xml:space="preserve">
           <source>This shortcut works only when no files are open on any PowerShell tab.</source>
@@ -771,8 +772,8 @@
           <target state="new">Next Windows PowerShell tab</target>
         </trans-unit>
         <trans-unit id="291" translate="yes" xml:space="preserve">
-          <source>CTRL\+TAB.</source>
-          <target state="new">CTRL\+TAB.</target>
+          <source>CTRL<ph id="ph1">\+</ph>TAB.</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>TAB.</target>
         </trans-unit>
         <trans-unit id="292" translate="yes" xml:space="preserve">
           <source>This shortcut works only when no files are open on any PowerShell tab.</source>
@@ -799,16 +800,16 @@
           <target state="new">Exit</target>
         </trans-unit>
         <trans-unit id="298" translate="yes" xml:space="preserve">
-          <source>ALT\+F4</source>
-          <target state="new">ALT\+F4</target>
+          <source>ALT<ph id="ph1">\+</ph>F4</source>
+          <target state="new">ALT<ph id="ph1">\+</ph>F4</target>
         </trans-unit>
         <trans-unit id="299" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Start PowerShell.exe<ept id="p1">**</ept> (Windows PowerShell console)</source>
           <target state="new"><bpt id="p1">**</bpt>Start PowerShell.exe<ept id="p1">**</ept> (Windows PowerShell console)</target>
         </trans-unit>
         <trans-unit id="300" translate="yes" xml:space="preserve">
-          <source>CTRL\+SHIFT\+P</source>
-          <target state="new">CTRL\+SHIFT\+P</target>
+          <source>CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>P</source>
+          <target state="new">CTRL<ph id="ph1">\+</ph>SHIFT<ph id="ph2">\+</ph>P</target>
         </trans-unit>
         <trans-unit id="301" translate="yes" xml:space="preserve">
           <source>See Also</source>

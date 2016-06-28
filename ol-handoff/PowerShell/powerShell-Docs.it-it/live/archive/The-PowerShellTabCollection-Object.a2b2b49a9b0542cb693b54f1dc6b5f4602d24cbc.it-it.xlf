@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4456b1e165130fd52249ffdbd7c22ff591061a8e</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-PowerShellTabCollection-Object.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">4456b1e165130fd52249ffdbd7c22ff591061a8e</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -39,8 +40,8 @@
           <target state="new">Methods</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Add\(\)</source>
-          <target state="new">Add\(\)</target>
+          <source>Add</source>
+          <target state="new">Add</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -55,8 +56,8 @@
           <target state="new">It returns the newly added tab.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>Remove\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)</source>
-          <target state="new">Remove\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)</target>
+          <source>Remove<ph id="ph1">\(</ph>Microsoft.PowerShell.Host.ISE.PowerShellTab psTab</source>
+          <target state="new">Remove<ph id="ph1">\(</ph>Microsoft.PowerShell.Host.ISE.PowerShellTab psTab</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -73,8 +74,8 @@
 </ph> The PowerShell tab to remove.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>SetSelectedPowerShellTab\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)</source>
-          <target state="new">SetSelectedPowerShellTab\(Microsoft.PowerShell.Host.ISE.PowerShellTab psTab\)</target>
+          <source>SetSelectedPowerShellTab<ph id="ph1">\(</ph>Microsoft.PowerShell.Host.ISE.PowerShellTab psTab</source>
+          <target state="new">SetSelectedPowerShellTab<ph id="ph1">\(</ph>Microsoft.PowerShell.Host.ISE.PowerShellTab psTab</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>

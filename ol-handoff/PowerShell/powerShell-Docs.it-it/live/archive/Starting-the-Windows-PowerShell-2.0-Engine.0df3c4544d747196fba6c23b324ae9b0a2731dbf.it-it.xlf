@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">45102cbc730d8eaac9ebdcb73456b1d1e149c6f2</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Starting-the-Windows-PowerShell-2.0-Engine.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Starting-the-Windows-PowerShell-2.0-Engine.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">45102cbc730d8eaac9ebdcb73456b1d1e149c6f2</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -27,8 +28,8 @@
           <target state="new">Windows PowerShell 4.0 and Windows PowerShell 3.0 are designed to be backwards compatible with Windows PowerShell 2.0.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Cmdlets, providers, snap\-ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 4.0 and Windows PowerShell 3.0.</source>
-          <target state="new">Cmdlets, providers, snap\-ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 4.0 and Windows PowerShell 3.0.</target>
+          <source>Cmdlets, providers, snap<ph id="ph1">\-</ph>ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 4.0 and Windows PowerShell 3.0.</source>
+          <target state="new">Cmdlets, providers, snap<ph id="ph1">\-</ph>ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 4.0 and Windows PowerShell 3.0.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
           <source>However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, Windows PowerShell host programs that were written for Windows PowerShell 2.0 and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in Windows PowerShell 3.0 or Windows PowerShell 4.0, which are compiled with CLR 4.0.</source>

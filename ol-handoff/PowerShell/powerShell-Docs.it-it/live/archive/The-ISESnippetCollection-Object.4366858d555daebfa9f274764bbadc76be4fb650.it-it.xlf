@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d899709f3a0caa2c957fc8b84f00eeb597a47fa</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISESnippetCollection-Object.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISESnippetCollection-Object.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d899709f3a0caa2c957fc8b84f00eeb597a47fa</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -35,24 +36,24 @@
           <target state="new">Methods</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Load\( FilePathName \)</source>
-          <target state="new">Load\( FilePathName \)</target>
+          <source>Load<ph id="ph1">\(</ph> FilePathName</source>
+          <target state="new">Load<ph id="ph1">\(</ph> FilePathName</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</source>
           <target state="new">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>Loads a .snippets.ps1xml file that contains user\-defined snippets.</source>
-          <target state="new">Loads a .snippets.ps1xml file that contains user\-defined snippets.</target>
+          <source>Loads a .snippets.ps1xml file that contains user<ph id="ph1">\-</ph>defined snippets.</source>
+          <target state="new">Loads a .snippets.ps1xml file that contains user<ph id="ph1">\-</ph>defined snippets.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>The easiest way to create snippets is to use the New\-IseSnippet cmdlet, which automatically stores them in your profile folder so that they are loaded every time that you start Windows PowerShell ISE.</source>
-          <target state="new">The easiest way to create snippets is to use the New\-IseSnippet cmdlet, which automatically stores them in your profile folder so that they are loaded every time that you start Windows PowerShell ISE.</target>
+          <source>The easiest way to create snippets is to use the New<ph id="ph1">\-</ph>IseSnippet cmdlet, which automatically stores them in your profile folder so that they are loaded every time that you start Windows PowerShell ISE.</source>
+          <target state="new">The easiest way to create snippets is to use the New<ph id="ph1">\-</ph>IseSnippet cmdlet, which automatically stores them in your profile folder so that they are loaded every time that you start Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>FilePathName<ept id="p1">**</ept> – String  The path and file name to a .snippets.ps1xml file that contains snippet definitions.</source>
-          <target state="new"><bpt id="p1">**</bpt>FilePathName<ept id="p1">**</ept> – String  The path and file name to a .snippets.ps1xml file that contains snippet definitions.</target>
+          <source><bpt id="p1">**</bpt>FilePathName<ept id="p1">**</ept> – String The path and file name to a .snippets.ps1xml file that contains snippet definitions.</source>
+          <target state="new"><bpt id="p1">**</bpt>FilePathName<ept id="p1">**</ept> – String The path and file name to a .snippets.ps1xml file that contains snippet definitions.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>See Also</source>

@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9bfb74ba438dd27fc2799263fc12a20edd2bb8cb</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\Windows-PowerShell-ISE-Object-Model-Reference.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\Windows-PowerShell-ISE-Object-Model-Reference.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9bfb74ba438dd27fc2799263fc12a20edd2bb8cb</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -46,9 +47,9 @@
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>The ISEFile Object<ept id="p1">](The-ISEFile-Object.md)</ept><ph id="ph1">
-</ph> Examples: $psISE.CurrentFile, $psISE.PowerShellTabs.Files\[0\].</source>
+</ph> Examples: $psISE.CurrentFile, $psISE.PowerShellTabs.Files<ph id="ph2">\[</ph>0<ph id="ph3">\]</ph>.</source>
           <target state="new"><bpt id="p1">[</bpt>The ISEFile Object<ept id="p1">](The-ISEFile-Object.md)</ept><ph id="ph1">
-</ph> Examples: $psISE.CurrentFile, $psISE.PowerShellTabs.Files\[0\].</target>
+</ph> Examples: $psISE.CurrentFile, $psISE.PowerShellTabs.Files<ph id="ph2">\[</ph>0<ph id="ph3">\]</ph>.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>The ISEFileCollection Object<ept id="p1">](The-ISEFileCollection-Object.md)</ept><ph id="ph1">
@@ -58,9 +59,9 @@
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>The ISEMenuItem Object<ept id="p1">](The-ISEMenuItem-Object.md)</ept><ph id="ph1">
-</ph> Examples: $psISE.CurrentPowerShellTab.AddOnsMenu , $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus\[0\].</source>
+</ph> Examples: $psISE.CurrentPowerShellTab.AddOnsMenu , $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus<ph id="ph2">\[</ph>0<ph id="ph3">\]</ph>.</source>
           <target state="new"><bpt id="p1">[</bpt>The ISEMenuItem Object<ept id="p1">](The-ISEMenuItem-Object.md)</ept><ph id="ph1">
-</ph> Examples: $psISE.CurrentPowerShellTab.AddOnsMenu , $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus\[0\].</target>
+</ph> Examples: $psISE.CurrentPowerShellTab.AddOnsMenu , $psISE.CurrentPowerShellTab.AddOnsMenu.Submenus<ph id="ph2">\[</ph>0<ph id="ph3">\]</ph>.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>The ISEMenuItemCollection Object<ept id="p1">](The-ISEMenuItemCollection-Object.md)</ept><ph id="ph1">
@@ -82,9 +83,9 @@
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>The PowerShellTab Object<ept id="p1">](The-PowerShellTab-Object.md)</ept><ph id="ph1">
-</ph> Examples: $psISE.CurrentPowerShellTab, $psISE.PowerShellTabs\[0\].</source>
+</ph> Examples: $psISE.CurrentPowerShellTab, $psISE.PowerShellTabs<ph id="ph2">\[</ph>0<ph id="ph3">\]</ph>.</source>
           <target state="new"><bpt id="p1">[</bpt>The PowerShellTab Object<ept id="p1">](The-PowerShellTab-Object.md)</ept><ph id="ph1">
-</ph> Examples: $psISE.CurrentPowerShellTab, $psISE.PowerShellTabs\[0\].</target>
+</ph> Examples: $psISE.CurrentPowerShellTab, $psISE.PowerShellTabs<ph id="ph2">\[</ph>0<ph id="ph3">\]</ph>.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>The PowerShellTabCollection Object<ept id="p1">](The-PowerShellTabCollection-Object.md)</ept><ph id="ph1">

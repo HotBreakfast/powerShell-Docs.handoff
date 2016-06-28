@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1c1534bc37d0a53262caffdfa60400e1ff8d98e7</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\How-to-Write-and-Run-Scripts-in-the-Windows-PowerShell-ISE.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\How-to-Write-and-Run-Scripts-in-the-Windows-PowerShell-ISE.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1c1534bc37d0a53262caffdfa60400e1ff8d98e7</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -163,12 +164,12 @@
           <target state="new">To stop a running script</target>
         </trans-unit>
         <trans-unit id="139" translate="yes" xml:space="preserve">
-          <source>On the toolbar, click <bpt id="p1">**</bpt>Stop Operation<ept id="p1">**</ept>, press CTRL\+BREAK, or on the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Stop Operation<ept id="p3">**</ept>.</source>
-          <target state="new">On the toolbar, click <bpt id="p1">**</bpt>Stop Operation<ept id="p1">**</ept>, press CTRL\+BREAK, or on the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Stop Operation<ept id="p3">**</ept>.</target>
+          <source>On the toolbar, click <bpt id="p1">**</bpt>Stop Operation<ept id="p1">**</ept>, press CTRL<ph id="ph1">\+</ph>BREAK, or on the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Stop Operation<ept id="p3">**</ept>.</source>
+          <target state="new">On the toolbar, click <bpt id="p1">**</bpt>Stop Operation<ept id="p1">**</ept>, press CTRL<ph id="ph1">\+</ph>BREAK, or on the <bpt id="p2">**</bpt>File<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Stop Operation<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source>Pressing <bpt id="p1">**</bpt>CTRL\+C<ept id="p1">**</ept> also works unless some text is currently selected, in which case <bpt id="p2">**</bpt>CTRL\+C<ept id="p2">**</ept> maps to the copy function for the selected text.</source>
-          <target state="new">Pressing <bpt id="p1">**</bpt>CTRL\+C<ept id="p1">**</ept> also works unless some text is currently selected, in which case <bpt id="p2">**</bpt>CTRL\+C<ept id="p2">**</ept> maps to the copy function for the selected text.</target>
+          <source>Pressing <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>C<ept id="p1">**</ept> also works unless some text is currently selected, in which case <bpt id="p2">**</bpt>CTRL<ph id="ph2">\+</ph>C<ept id="p2">**</ept> maps to the copy function for the selected text.</source>
+          <target state="new">Pressing <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>C<ept id="p1">**</ept> also works unless some text is currently selected, in which case <bpt id="p2">**</bpt>CTRL<ph id="ph2">\+</ph>C<ept id="p2">**</ept> maps to the copy function for the selected text.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
           <source>How to write and edit text in the Script Pane</source>
@@ -215,24 +216,24 @@
           <target state="new">To find text in the Script Pane</target>
         </trans-unit>
         <trans-unit id="152" translate="yes" xml:space="preserve">
-          <source>To find text anywhere, press <bpt id="p1">**</bpt>CTRL\+F<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find in Script<ept id="p3">**</ept>.</source>
-          <target state="new">To find text anywhere, press <bpt id="p1">**</bpt>CTRL\+F<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find in Script<ept id="p3">**</ept>.</target>
+          <source>To find text anywhere, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>F<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find in Script<ept id="p3">**</ept>.</source>
+          <target state="new">To find text anywhere, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>F<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find in Script<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
           <source>To find text after the cursor, press <bpt id="p1">**</bpt>F3<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find Next in Script<ept id="p3">**</ept>.</source>
           <target state="new">To find text after the cursor, press <bpt id="p1">**</bpt>F3<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find Next in Script<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
-          <source>To find text before the cursor, press <bpt id="p1">**</bpt>SHIFT\+F3<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find Previous in Script<ept id="p3">**</ept>.</source>
-          <target state="new">To find text before the cursor, press <bpt id="p1">**</bpt>SHIFT\+F3<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find Previous in Script<ept id="p3">**</ept>.</target>
+          <source>To find text before the cursor, press <bpt id="p1">**</bpt>SHIFT<ph id="ph1">\+</ph>F3<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find Previous in Script<ept id="p3">**</ept>.</source>
+          <target state="new">To find text before the cursor, press <bpt id="p1">**</bpt>SHIFT<ph id="ph1">\+</ph>F3<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Find Previous in Script<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="155" translate="yes" xml:space="preserve">
           <source>To find and replace text in the Script Pane</source>
           <target state="new">To find and replace text in the Script Pane</target>
         </trans-unit>
         <trans-unit id="156" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CRTL\+H<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Replace in Script<ept id="p3">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CRTL\+H<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Replace in Script<ept id="p3">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CRTL<ph id="ph1">\+</ph>H<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Replace in Script<ept id="p3">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CRTL<ph id="ph1">\+</ph>H<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Replace in Script<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
           <source>Enter both the text you want to find and the text with which you want to replace it, and then press <bpt id="p1">**</bpt>ENTER<ept id="p1">**</ept>.</source>
@@ -243,8 +244,8 @@
           <target state="new">To go to a particular line of text in the Script Pane</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
-          <source>In the Script Pane, press <bpt id="p1">**</bpt>CTRL\+G<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Go to Line<ept id="p3">**</ept>.</source>
-          <target state="new">In the Script Pane, press <bpt id="p1">**</bpt>CTRL\+G<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Go to Line<ept id="p3">**</ept>.</target>
+          <source>In the Script Pane, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>G<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Go to Line<ept id="p3">**</ept>.</source>
+          <target state="new">In the Script Pane, press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>G<ept id="p1">**</ept> or, on the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> menu, click <bpt id="p3">**</bpt>Go to Line<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="160" translate="yes" xml:space="preserve">
           <source>Enter a line number.</source>
@@ -259,8 +260,8 @@
           <target state="new">In the Script Pane, select the text that you want to copy.</target>
         </trans-unit>
         <trans-unit id="163" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CTRL\+C<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Copy<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Copy<ept id="p4">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CTRL\+C<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Copy<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Copy<ept id="p4">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>C<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Copy<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Copy<ept id="p4">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>C<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Copy<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Copy<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="164" translate="yes" xml:space="preserve">
           <source>To cut text in the Script Pane</source>
@@ -271,32 +272,32 @@
           <target state="new">In the Script Pane, select the text that you want to cut.</target>
         </trans-unit>
         <trans-unit id="166" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CTRL\+X<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Cut<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Cut<ept id="p4">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CTRL\+X<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Cut<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Cut<ept id="p4">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>X<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Cut<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Cut<ept id="p4">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>X<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Cut<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Cut<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="167" translate="yes" xml:space="preserve">
           <source>To paste text into the Script Pane</source>
           <target state="new">To paste text into the Script Pane</target>
         </trans-unit>
         <trans-unit id="168" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CTRL\+V<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Paste<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Paste<ept id="p4">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CTRL\+V<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Paste<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Paste<ept id="p4">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>V<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Paste<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Paste<ept id="p4">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>V<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Paste<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Paste<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="169" translate="yes" xml:space="preserve">
           <source>To undo an action in the Script Pane</source>
           <target state="new">To undo an action in the Script Pane</target>
         </trans-unit>
         <trans-unit id="170" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CTRL\+Z<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Undo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Undo<ept id="p4">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CTRL\+Z<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Undo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Undo<ept id="p4">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>Z<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Undo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Undo<ept id="p4">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>Z<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Undo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Undo<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="171" translate="yes" xml:space="preserve">
           <source>To redo an action in the Script Pane</source>
           <target state="new">To redo an action in the Script Pane</target>
         </trans-unit>
         <trans-unit id="172" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CTRL\+Y<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Redo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Redo<ept id="p4">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CTRL\+Y<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Redo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Redo<ept id="p4">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>Y<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Redo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Redo<ept id="p4">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>Y<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Redo<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Redo<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="173" translate="yes" xml:space="preserve">
           <source>How to save a script</source>
@@ -319,8 +320,8 @@
           <target state="new">To save a script</target>
         </trans-unit>
         <trans-unit id="178" translate="yes" xml:space="preserve">
-          <source>Press <bpt id="p1">**</bpt>CTRL\+S<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>File<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Save<ept id="p4">**</ept>.</source>
-          <target state="new">Press <bpt id="p1">**</bpt>CTRL\+S<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>File<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Save<ept id="p4">**</ept>.</target>
+          <source>Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>S<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>File<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Save<ept id="p4">**</ept>.</source>
+          <target state="new">Press <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>S<ept id="p1">**</ept> or, on the toolbar, click the <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> icon, or on the <bpt id="p3">**</bpt>File<ept id="p3">**</ept> menu, click <bpt id="p4">**</bpt>Save<ept id="p4">**</ept>.</target>
         </trans-unit>
         <trans-unit id="179" translate="yes" xml:space="preserve">
           <source>To save and name a script</source>
@@ -343,8 +344,8 @@
           <target state="new">In the <bpt id="p1">**</bpt>Save as type<ept id="p1">**</ept> box, select a file type.</target>
         </trans-unit>
         <trans-unit id="184" translate="yes" xml:space="preserve">
-          <source>For example, in the <bpt id="p1">**</bpt>Save as type<ept id="p1">**</ept> box, select “PowerShell Scripts (\* .ps1)”.</source>
-          <target state="new">For example, in the <bpt id="p1">**</bpt>Save as type<ept id="p1">**</ept> box, select “PowerShell Scripts (\* .ps1)”.</target>
+          <source>For example, in the <bpt id="p1">**</bpt>Save as type<ept id="p1">**</ept> box, select “PowerShell Scripts (<ph id="ph1">\*</ph> .ps1)”.</source>
+          <target state="new">For example, in the <bpt id="p1">**</bpt>Save as type<ept id="p1">**</ept> box, select “PowerShell Scripts (<ph id="ph1">\*</ph> .ps1)”.</target>
         </trans-unit>
         <trans-unit id="185" translate="yes" xml:space="preserve">
           <source>Click <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>

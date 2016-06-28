@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8a61e974e7f7ea479ecc447c2db91c677cd8931f</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Installing-the-Windows-PowerShell-2.0-Engine.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\Installing-the-Windows-PowerShell-2.0-Engine.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8a61e974e7f7ea479ecc447c2db91c677cd8931f</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -27,16 +28,16 @@
           <target state="new">Windows PowerShell 3.0 is designed to be backwards compatible with Windows PowerShell 2.0.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Cmdlets, providers, snap\-ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 3.0 and Windows PowerShell 4.0.</source>
-          <target state="new">Cmdlets, providers, snap\-ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 3.0 and Windows PowerShell 4.0.</target>
+          <source>Cmdlets, providers, snap<ph id="ph1">\-</ph>ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 3.0 and Windows PowerShell 4.0.</source>
+          <target state="new">Cmdlets, providers, snap<ph id="ph1">\-</ph>ins, modules, and scripts written for Windows PowerShell 2.0 run unchanged in Windows PowerShell 3.0 and Windows PowerShell 4.0.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
           <source>However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, Windows PowerShell host programs that were written for Windows PowerShell 2.0 and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in later releases of Windows PowerShell, which is compiled with CLR 4.0.</source>
           <target state="new">However, due to a change in the runtime activation policy in Microsoft .NET Framework 4, Windows PowerShell host programs that were written for Windows PowerShell 2.0 and compiled with Common Language Runtime (CLR) 2.0 cannot run without modification in later releases of Windows PowerShell, which is compiled with CLR 4.0.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>To maintain backward compatibility with commands and host programs that are affected by these changes, the Windows PowerShell 2.0, Windows PowerShell 3.0, and Windows PowerShell 4.0 engines are designed to run side\-by\-side.</source>
-          <target state="new">To maintain backward compatibility with commands and host programs that are affected by these changes, the Windows PowerShell 2.0, Windows PowerShell 3.0, and Windows PowerShell 4.0 engines are designed to run side\-by\-side.</target>
+          <source>To maintain backward compatibility with commands and host programs that are affected by these changes, the Windows PowerShell 2.0, Windows PowerShell 3.0, and Windows PowerShell 4.0 engines are designed to run side<ph id="ph1">\-</ph>by<ph id="ph2">\-</ph>side.</source>
+          <target state="new">To maintain backward compatibility with commands and host programs that are affected by these changes, the Windows PowerShell 2.0, Windows PowerShell 3.0, and Windows PowerShell 4.0 engines are designed to run side<ph id="ph1">\-</ph>by<ph id="ph2">\-</ph>side.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Also, the Windows PowerShell 2.0 Engine is included in Windows Server 2012 R2, Windows 8.1, Windows 8, Windows Server 2012, and Windows Management Framework 3.0.</source>
@@ -147,12 +148,12 @@
           <target state="new">In <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, from the <bpt id="p2">**</bpt>Manage<ept id="p2">**</ept> menu, select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
-          <source>Or in <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right\-click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</source>
-          <target state="new">Or in <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right\-click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</target>
+          <source>Or in <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right<ph id="ph1">\-</ph>click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</source>
+          <target state="new">Or in <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right<ph id="ph1">\-</ph>click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="136" translate="yes" xml:space="preserve">
-          <source>On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role\-based or feature\-based installation<ept id="p2">**</ept>.</source>
-          <target state="new">On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role\-based or feature\-based installation<ept id="p2">**</ept>.</target>
+          <source>On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role<ph id="ph1">\-</ph>based or feature<ph id="ph2">\-</ph>based installation<ept id="p2">**</ept>.</source>
+          <target state="new">On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role<ph id="ph1">\-</ph>based or feature<ph id="ph2">\-</ph>based installation<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>On the <bpt id="p1">**</bpt>Features<ept id="p1">**</ept> page, expand the <bpt id="p2">**</bpt>.NET 3.5 Framework Features<ept id="p2">**</ept> node and select <bpt id="p3">**</bpt>.NET Framework 3.5 (includes .NET 2.0 and 3.0)<ept id="p3">**</ept>.</source>
@@ -171,12 +172,12 @@
           <target state="new">In <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, from the <bpt id="p2">**</bpt>Manage<ept id="p2">**</ept> menu, select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source>Or <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right\-click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</source>
-          <target state="new">Or <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right\-click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</target>
+          <source>Or <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right<ph id="ph1">\-</ph>click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</source>
+          <target state="new">Or <bpt id="p1">**</bpt>Server Manager<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>All Servers<ept id="p2">**</ept>, right<ph id="ph1">\-</ph>click a server name, and then select <bpt id="p3">**</bpt>Add Roles and Features<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
-          <source>On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role\-based or feature\-based installation<ept id="p2">**</ept>.</source>
-          <target state="new">On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role\-based or feature\-based installation<ept id="p2">**</ept>.</target>
+          <source>On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role<ph id="ph1">\-</ph>based or feature<ph id="ph2">\-</ph>based installation<ept id="p2">**</ept>.</source>
+          <target state="new">On the <bpt id="p1">**</bpt>Installation Type<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Role<ph id="ph1">\-</ph>based or feature<ph id="ph2">\-</ph>based installation<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>On the <bpt id="p1">**</bpt>Features<ept id="p1">**</ept> page, expand the <bpt id="p2">**</bpt>Windows PowerShell (Installed)<ept id="p2">**</ept> node and select <bpt id="p3">**</bpt>Windows PowerShell 2.0 Engine<ept id="p3">**</ept>.</source>

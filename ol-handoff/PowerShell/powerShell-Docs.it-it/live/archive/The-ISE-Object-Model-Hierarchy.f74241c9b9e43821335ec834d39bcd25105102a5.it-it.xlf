@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">77f368782a4adb395dc3446e140e4d0ab6c21f18</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISE-Object-Model-Hierarchy.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISE-Object-Model-Hierarchy.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">77f368782a4adb395dc3446e140e4d0ab6c21f18</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -251,8 +252,8 @@
           <target state="new">The <bpt id="p1">**</bpt>$psISE.CurrentVisibleHorizontalTool<ept id="p1">**</ept> object is an instance of the <bpt id="p2">[</bpt>ISEAddOnTool<ept id="p2">](The-ISEAddOnTool-Object.md)</ept> class.</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
-          <source>It represents the installed add\-on tool that is currently docked to the top edge of the Windows PowerShell ISE window.</source>
-          <target state="new">It represents the installed add\-on tool that is currently docked to the top edge of the Windows PowerShell ISE window.</target>
+          <source>It represents the installed add<ph id="ph1">\-</ph>on tool that is currently docked to the top edge of the Windows PowerShell ISE window.</source>
+          <target state="new">It represents the installed add<ph id="ph1">\-</ph>on tool that is currently docked to the top edge of the Windows PowerShell ISE window.</target>
         </trans-unit>
         <trans-unit id="162" translate="yes" xml:space="preserve">
           <source>This object makes the following objects available for scripting:</source>
@@ -279,8 +280,8 @@
           <target state="new">The <bpt id="p1">**</bpt>$psISE.CurrentVisibleHorizontalTool<ept id="p1">**</ept> object is an instance of the <bpt id="p2">[</bpt>ISEAddOnTool<ept id="p2">](The-ISEAddOnTool-Object.md)</ept> class.</target>
         </trans-unit>
         <trans-unit id="168" translate="yes" xml:space="preserve">
-          <source>It represents the installed add\-on tool that is currently docked to the right\-hand edge of the Windows PowerShell ISE window.</source>
-          <target state="new">It represents the installed add\-on tool that is currently docked to the right\-hand edge of the Windows PowerShell ISE window.</target>
+          <source>It represents the installed add<ph id="ph1">\-</ph>on tool that is currently docked to the right<ph id="ph2">\-</ph>hand edge of the Windows PowerShell ISE window.</source>
+          <target state="new">It represents the installed add<ph id="ph1">\-</ph>on tool that is currently docked to the right<ph id="ph2">\-</ph>hand edge of the Windows PowerShell ISE window.</target>
         </trans-unit>
         <trans-unit id="169" translate="yes" xml:space="preserve">
           <source>This object makes the following objects available for scripting:</source>

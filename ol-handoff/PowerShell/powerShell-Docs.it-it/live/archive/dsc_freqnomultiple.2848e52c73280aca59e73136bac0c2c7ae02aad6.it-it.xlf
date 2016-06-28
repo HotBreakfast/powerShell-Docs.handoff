@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="it-it">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">2c2aaa65ee09f0aade41fe0ca4088036c63dea2a</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_freqnomultiple.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -8,117 +16,18 @@
           <target state="new">Frequencies for RefreshMode and ConfigurationMode don't need to be multiples of each other</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
-          <source>In the previous version of DSC, the LCM would treat <ph id="ph1">`RefreshFrequencyMins`</ph> and <ph id="ph2">`ConfigurationModeFrequencyMins`</ph> as multiples of each other as explained in the blog <bpt id="p1">[</bpt>here<ept id="p1">](http://blogs.msdn.com/b/powershell/archive/2013/12/09/understanding-meta-configuration-in-windows-powershell-desired-state-configuration.aspx)</ept>.</source>
-          <target state="new">In the previous version of DSC, the LCM would treat <ph id="ph1">`RefreshFrequencyMins`</ph> and <ph id="ph2">`ConfigurationModeFrequencyMins`</ph> as multiples of each other as explained in the blog <bpt id="p1">[</bpt>here<ept id="p1">](http://blogs.msdn.com/b/powershell/archive/2013/12/09/understanding-meta-configuration-in-windows-powershell-desired-state-configuration.aspx)</ept>.</target>
+          <source>In the previous version of DSC, the LCM would treat <ph id="ph1">`RefreshFrequencyMins`</ph> and <ph id="ph2">`ConfigurationModeFrequencyMins`</ph> as multiples of each other.</source>
+          <target state="new">In the previous version of DSC, the LCM would treat <ph id="ph1">`RefreshFrequencyMins`</ph> and <ph id="ph2">`ConfigurationModeFrequencyMins`</ph> as multiples of each other.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
           <source>In WMF 5.0 RTM, these properties are processed independent of each other.</source>
           <target state="new">In WMF 5.0 RTM, these properties are processed independent of each other.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>The tables below illustrate this behavior:</source>
-          <target state="new">The tables below illustrate this behavior:</target>
-        </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Behaviour in <bpt id="p1">**</bpt>PULL<ept id="p1">**</ept> mode:</source>
-          <target state="new">Behaviour in <bpt id="p1">**</bpt>PULL<ept id="p1">**</ept> mode:</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>Value in Meta Configuration</source>
-          <target state="new">Value in Meta Configuration</target>
-        </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Value after Meta Configuration is applied</source>
-          <target state="new">Value after Meta Configuration is applied</target>
-        </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>How often pull happens (in mins)</source>
-          <target state="new">How often pull happens (in mins)</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>How often configuration is applied (in mins)</source>
-          <target state="new">How often configuration is applied (in mins)</target>
-        </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>ConfigurationModeFrequencyMins</source>
-          <target state="new">ConfigurationModeFrequencyMins</target>
-        </trans-unit>
-        <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>70</source>
-          <target state="new">70</target>
-        </trans-unit>
-        <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>70</source>
-          <target state="new">70</target>
-        </trans-unit>
-        <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>70</source>
-          <target state="new">70</target>
-        </trans-unit>
-        <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>RefreshFrequencyMins</source>
-          <target state="new">RefreshFrequencyMins</target>
-        </trans-unit>
-        <trans-unit id="115" translate="yes" xml:space="preserve">
-          <source>40</source>
-          <target state="new">40</target>
-        </trans-unit>
-        <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>40</source>
-          <target state="new">40</target>
-        </trans-unit>
-        <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>40</source>
-          <target state="new">40</target>
-        </trans-unit>
-        <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>Behavior in <bpt id="p1">**</bpt>PUSH<ept id="p1">**</ept> mode:</source>
-          <target state="new">Behavior in <bpt id="p1">**</bpt>PUSH<ept id="p1">**</ept> mode:</target>
-        </trans-unit>
-        <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>Value in Meta Configuration</source>
-          <target state="new">Value in Meta Configuration</target>
-        </trans-unit>
-        <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>Value after Meta Configuration is applied</source>
-          <target state="new">Value after Meta Configuration is applied</target>
-        </trans-unit>
-        <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>How often configuration is applied (in mins)</source>
-          <target state="new">How often configuration is applied (in mins)</target>
-        </trans-unit>
-        <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>ConfigurationModeFrequencyMins</source>
-          <target state="new">ConfigurationModeFrequencyMins</target>
-        </trans-unit>
-        <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>70</source>
-          <target state="new">70</target>
-        </trans-unit>
-        <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>70</source>
-          <target state="new">70</target>
-        </trans-unit>
-        <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>70</source>
-          <target state="new">70</target>
-        </trans-unit>
-        <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source>RefreshFrequencyMins</source>
-          <target state="new">RefreshFrequencyMins</target>
-        </trans-unit>
-        <trans-unit id="127" translate="yes" xml:space="preserve">
-          <source>40</source>
-          <target state="new">40</target>
-        </trans-unit>
-        <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>40</source>
-          <target state="new">40</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Configuring the Local Configuration Manager<ept id="p1">](../dsc/metaConfig.md)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Configuring the Local Configuration Manager<ept id="p1">](../dsc/metaConfig.md)</ept>.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">34a0df793382c9bc882bcd94f8fdd1b426814fd4</xliffext:olfilehash>
-  </header>
 </xliff>

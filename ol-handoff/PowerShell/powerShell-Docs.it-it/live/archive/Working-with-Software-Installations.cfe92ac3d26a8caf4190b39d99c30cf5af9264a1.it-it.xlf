@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f60be9bebe9dfaa98f495c8e9a9c0d8c2fa5cc2</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Working-with-Software-Installations.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Working-with-Software-Installations.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f60be9bebe9dfaa98f495c8e9a9c0d8c2fa5cc2</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">Working with Software Installations</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>Applications that are designed to use Windows Installer can be accessed through WMI's <bpt id="p1">**</bpt>Win32\_Product<ept id="p1">**</ept> class, but not all applications in use today use the Windows Installer.</source>
-          <target state="new">Applications that are designed to use Windows Installer can be accessed through WMI's <bpt id="p1">**</bpt>Win32\_Product<ept id="p1">**</ept> class, but not all applications in use today use the Windows Installer.</target>
+          <source>Applications that are designed to use Windows Installer can be accessed through WMI's <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Product<ept id="p1">**</ept> class, but not all applications in use today use the Windows Installer.</source>
+          <target state="new">Applications that are designed to use Windows Installer can be accessed through WMI's <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Product<ept id="p1">**</ept> class, but not all applications in use today use the Windows Installer.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>Because the Windows Installer provides the widest range of standard techniques for working with installable applications, we will focus primarily on those applications.</source>
@@ -51,12 +52,12 @@
           <target state="new">To list the applications installed with the Windows Installer on a local or remote system, use the following simple WMI query:</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>To display all of the properties of the Win32\_Product object to the display, use the Properties parameter of the formatting cmdlets, such as the Format\-List cmdlet, with a value of \* (all).</source>
-          <target state="new">To display all of the properties of the Win32\_Product object to the display, use the Properties parameter of the formatting cmdlets, such as the Format\-List cmdlet, with a value of \* (all).</target>
+          <source>To display all of the properties of the Win32<ph id="ph1">\_</ph>Product object to the display, use the Properties parameter of the formatting cmdlets, such as the Format<ph id="ph2">\-</ph>List cmdlet, with a value of <ph id="ph3">\*</ph> (all).</source>
+          <target state="new">To display all of the properties of the Win32<ph id="ph1">\_</ph>Product object to the display, use the Properties parameter of the formatting cmdlets, such as the Format<ph id="ph2">\-</ph>List cmdlet, with a value of <ph id="ph3">\*</ph> (all).</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>Or, you could use the <bpt id="p1">**</bpt>Get\-WmiObject Filter<ept id="p1">**</ept> parameter to select only Microsoft .NET Framework 2.0.</source>
-          <target state="new">Or, you could use the <bpt id="p1">**</bpt>Get\-WmiObject Filter<ept id="p1">**</ept> parameter to select only Microsoft .NET Framework 2.0.</target>
+          <source>Or, you could use the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>WmiObject Filter<ept id="p1">**</ept> parameter to select only Microsoft .NET Framework 2.0.</source>
+          <target state="new">Or, you could use the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>WmiObject Filter<ept id="p1">**</ept> parameter to select only Microsoft .NET Framework 2.0.</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
           <source>Because the filter used in this command is a WMI filter, it uses WMI Query Language (WQL) syntax, not Windows PowerShell syntax.</source>
@@ -75,8 +76,8 @@
           <target state="new">For this reason, it is prudent to always enclose the value of the Filter parameter in quotation marks.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>You can also use the Windows PowerShell escape character, a backtick (\`), although it may not improve readability.</source>
-          <target state="new">You can also use the Windows PowerShell escape character, a backtick (\`), although it may not improve readability.</target>
+          <source>You can also use the Windows PowerShell escape character, a backtick (<ph id="ph1">\`</ph>), although it may not improve readability.</source>
+          <target state="new">You can also use the Windows PowerShell escape character, a backtick (<ph id="ph1">\`</ph>), although it may not improve readability.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>The following command is equivalent to the previous command and returns the same results, but uses the backtick to escape special characters, instead of quoting the entire filter string.</source>
@@ -87,8 +88,8 @@
           <target state="new">To list only the properties that interest you, use the Property parameter of the formatting cmdlets to list the desired properties.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>Finally, to find only the names of installed applications, a simple <bpt id="p1">**</bpt>Format\-Wide<ept id="p1">**</ept> statement simplifies the output:</source>
-          <target state="new">Finally, to find only the names of installed applications, a simple <bpt id="p1">**</bpt>Format\-Wide<ept id="p1">**</ept> statement simplifies the output:</target>
+          <source>Finally, to find only the names of installed applications, a simple <bpt id="p1">**</bpt>Format<ph id="ph1">\-</ph>Wide<ept id="p1">**</ept> statement simplifies the output:</source>
+          <target state="new">Finally, to find only the names of installed applications, a simple <bpt id="p1">**</bpt>Format<ph id="ph1">\-</ph>Wide<ept id="p1">**</ept> statement simplifies the output:</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
           <source>Although we now have several ways to look at applications that used the Windows Installer for installation, we have not considered other applications.</source>
@@ -111,8 +112,8 @@
           <target state="new">Add or Remove Programs finds these applications in the following registry key:</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall<ept id="p1">**</ept>.</source>
-          <target state="new"><bpt id="p1">**</bpt>HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall<ept id="p1">**</ept>.</target>
+          <source><bpt id="p1">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ph id="ph3">\\</ph>Software<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>Windows<ph id="ph6">\\</ph>CurrentVersion<ph id="ph7">\\</ph>Uninstall<ept id="p1">**</ept>.</source>
+          <target state="new"><bpt id="p1">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ph id="ph3">\\</ph>Software<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>Windows<ph id="ph6">\\</ph>CurrentVersion<ph id="ph7">\\</ph>Uninstall<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>We can also examine this key to find applications.</source>
@@ -123,16 +124,16 @@
           <target state="new">To make it easier to view the Uninstall key, we can map a Windows PowerShell drive to this registry location:</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> drive is mapped to the root of <bpt id="p2">**</bpt>HKEY\_LOCAL\_MACHINE<ept id="p2">**</ept>, so we used that drive in the path to the Uninstall key.</source>
-          <target state="new">The <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> drive is mapped to the root of <bpt id="p2">**</bpt>HKEY\_LOCAL\_MACHINE<ept id="p2">**</ept>, so we used that drive in the path to the Uninstall key.</target>
+          <source>The <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> drive is mapped to the root of <bpt id="p2">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ept id="p2">**</ept>, so we used that drive in the path to the Uninstall key.</source>
+          <target state="new">The <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> drive is mapped to the root of <bpt id="p2">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ept id="p2">**</ept>, so we used that drive in the path to the Uninstall key.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>Instead of <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> we could have specified the registry path by using either <bpt id="p2">**</bpt>HKLM<ept id="p2">**</ept> or <bpt id="p3">**</bpt>HKEY\_LOCAL\_MACHINE<ept id="p3">**</ept>.</source>
-          <target state="new">Instead of <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> we could have specified the registry path by using either <bpt id="p2">**</bpt>HKLM<ept id="p2">**</ept> or <bpt id="p3">**</bpt>HKEY\_LOCAL\_MACHINE<ept id="p3">**</ept>.</target>
+          <source>Instead of <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> we could have specified the registry path by using either <bpt id="p2">**</bpt>HKLM<ept id="p2">**</ept> or <bpt id="p3">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ept id="p3">**</ept>.</source>
+          <target state="new">Instead of <bpt id="p1">**</bpt>HKLM:<ept id="p1">**</ept> we could have specified the registry path by using either <bpt id="p2">**</bpt>HKLM<ept id="p2">**</ept> or <bpt id="p3">**</bpt>HKEY<ph id="ph1">\_</ph>LOCAL<ph id="ph2">\_</ph>MACHINE<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
-          <source>The advantage of using an existing registry drive is that we can use tab\-completion to fill in the keys names, so we do not need to type them.</source>
-          <target state="new">The advantage of using an existing registry drive is that we can use tab\-completion to fill in the keys names, so we do not need to type them.</target>
+          <source>The advantage of using an existing registry drive is that we can use tab<ph id="ph1">\-</ph>completion to fill in the keys names, so we do not need to type them.</source>
+          <target state="new">The advantage of using an existing registry drive is that we can use tab<ph id="ph1">\-</ph>completion to fill in the keys names, so we do not need to type them.</target>
         </trans-unit>
         <trans-unit id="132" translate="yes" xml:space="preserve">
           <source>We now have a drive named "Uninstall" that can be used to quickly and conveniently look for application installations.</source>
@@ -143,8 +144,8 @@
           <target state="new">We can find the number of installed applications by counting the number of registry keys in the Uninstall: Windows PowerShell drive:</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
-          <source>We can search this list of applications further by using a variety of techniques, beginning with <bpt id="p1">**</bpt>Get\-ChildItem<ept id="p1">**</ept>.</source>
-          <target state="new">We can search this list of applications further by using a variety of techniques, beginning with <bpt id="p1">**</bpt>Get\-ChildItem<ept id="p1">**</ept>.</target>
+          <source>We can search this list of applications further by using a variety of techniques, beginning with <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>ChildItem<ept id="p1">**</ept>.</source>
+          <target state="new">We can search this list of applications further by using a variety of techniques, beginning with <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>ChildItem<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
           <source>To get a list of applications and save them in the <bpt id="p1">**</bpt>$UninstallableApplications<ept id="p1">**</ept> variable, use the following command:</source>
@@ -159,8 +160,8 @@
           <target state="new">In actual use, there is no reason to use long names.</target>
         </trans-unit>
         <trans-unit id="138" translate="yes" xml:space="preserve">
-          <source>Although you can use tab\-completion for variable names, you can also use 1–2 character names for speed.</source>
-          <target state="new">Although you can use tab\-completion for variable names, you can also use 1–2 character names for speed.</target>
+          <source>Although you can use tab<ph id="ph1">\-</ph>completion for variable names, you can also use 1–2 character names for speed.</source>
+          <target state="new">Although you can use tab<ph id="ph1">\-</ph>completion for variable names, you can also use 1–2 character names for speed.</target>
         </trans-unit>
         <trans-unit id="139" translate="yes" xml:space="preserve">
           <source>Longer, descriptive names are most useful when you are developing code for reuse.</source>
@@ -191,24 +192,24 @@
           <target state="new">Installing Applications</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>You can use the <bpt id="p1">**</bpt>Win32\_Product<ept id="p1">**</ept> class to install Windows Installer packages, remotely or locally.</source>
-          <target state="new">You can use the <bpt id="p1">**</bpt>Win32\_Product<ept id="p1">**</ept> class to install Windows Installer packages, remotely or locally.</target>
+          <source>You can use the <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Product<ept id="p1">**</ept> class to install Windows Installer packages, remotely or locally.</source>
+          <target state="new">You can use the <bpt id="p1">**</bpt>Win32<ph id="ph1">\_</ph>Product<ept id="p1">**</ept> class to install Windows Installer packages, remotely or locally.</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source><ph id="ph1">[!NOTE]</ph> On Windows Vista, Windows Server 2008, and later versions of Windows, to install an application, you must start Windows PowerShell with the "Run as administrator" option.</source>
-          <target state="new"><ph id="ph1">[!NOTE]</ph> On Windows Vista, Windows Server 2008, and later versions of Windows, to install an application, you must start Windows PowerShell with the "Run as administrator" option.</target>
+          <source>On Windows Vista, Windows Server 2008, and later versions of Windows, to install an application, you must start Windows PowerShell with the "Run as administrator" option.</source>
+          <target state="new">On Windows Vista, Windows Server 2008, and later versions of Windows, to install an application, you must start Windows PowerShell with the "Run as administrator" option.</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>When installing remotely, use a Universal Naming Convention (UNC) network path to specify the path to the .msi package, because the WMI subsystem does not understand Windows PowerShell paths.</source>
           <target state="new">When installing remotely, use a Universal Naming Convention (UNC) network path to specify the path to the .msi package, because the WMI subsystem does not understand Windows PowerShell paths.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>For example, to install the NewPackage.msi package located in the network share \\\\AppServ\\dsp on the remote computer PC01, type the following command at the Windows PowerShell prompt:</source>
-          <target state="new">For example, to install the NewPackage.msi package located in the network share \\\\AppServ\\dsp on the remote computer PC01, type the following command at the Windows PowerShell prompt:</target>
+          <source>For example, to install the NewPackage.msi package located in the network share <ph id="ph1">\\\\</ph>AppServ<ph id="ph2">\\</ph>dsp on the remote computer PC01, type the following command at the Windows PowerShell prompt:</source>
+          <target state="new">For example, to install the NewPackage.msi package located in the network share <ph id="ph1">\\\\</ph>AppServ<ph id="ph2">\\</ph>dsp on the remote computer PC01, type the following command at the Windows PowerShell prompt:</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source>Applications that do not use Windows Installer technology may have application\-specific methods available for automated deployment.</source>
-          <target state="new">Applications that do not use Windows Installer technology may have application\-specific methods available for automated deployment.</target>
+          <source>Applications that do not use Windows Installer technology may have application<ph id="ph1">\-</ph>specific methods available for automated deployment.</source>
+          <target state="new">Applications that do not use Windows Installer technology may have application<ph id="ph1">\-</ph>specific methods available for automated deployment.</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
           <source>To determine whether there is a method for deployment automation, check the documentation for the application or consult the application vendor's support system.</source>

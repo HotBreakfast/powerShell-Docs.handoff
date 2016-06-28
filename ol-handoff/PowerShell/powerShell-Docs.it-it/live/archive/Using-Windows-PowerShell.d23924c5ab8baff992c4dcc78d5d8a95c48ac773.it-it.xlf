@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d00a67656fc6682675a934645bddcb300a48808</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Using-Windows-PowerShell.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Using-Windows-PowerShell.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">1d00a67656fc6682675a934645bddcb300a48808</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">Using Windows PowerShell</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>Windows PowerShellÂ® is a task\-based command\-line shell and scripting language designed especially for system administration.</source>
-          <target state="new">Windows PowerShellÂ® is a task\-based command\-line shell and scripting language designed especially for system administration.</target>
+          <source>Windows PowerShellÂ® is a task<ph id="ph1">\-</ph>based command<ph id="ph2">\-</ph>line shell and scripting language designed especially for system administration.</source>
+          <target state="new">Windows PowerShellÂ® is a task<ph id="ph1">\-</ph>based command<ph id="ph2">\-</ph>line shell and scripting language designed especially for system administration.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>Built on the .NET Framework, Windows PowerShell helps IT professionals and power users control and automate the administration of the Windows operating system and applications that run on Windows.</source>
@@ -95,8 +96,8 @@
           <target state="new">Related Technologies</target>
         </trans-unit>
         <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell is part of a family of related scripting technologies that help you automate remote management of Windows\-based computers.</source>
-          <target state="new">Windows PowerShell is part of a family of related scripting technologies that help you automate remote management of Windows\-based computers.</target>
+          <source>Windows PowerShell is part of a family of related scripting technologies that help you automate remote management of Windows<ph id="ph1">\-</ph>based computers.</source>
+          <target state="new">Windows PowerShell is part of a family of related scripting technologies that help you automate remote management of Windows<ph id="ph1">\-</ph>based computers.</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
           <source>Links to more information about these technologies are included here for you.</source>
@@ -115,20 +116,20 @@
           <target state="new"><bpt id="p1">[</bpt>Windows PowerShell Web Access<ept id="p1">](http://technet.microsoft.com/library/hh831611.aspx)</ept>.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
-          <source>First introduced in Windows Server 2012, Windows PowerShell Web Access acts as a Windows PowerShell gateway, providing a web\-based Windows PowerShell console that is targeted at a remote computer.</source>
-          <target state="new">First introduced in Windows Server 2012, Windows PowerShell Web Access acts as a Windows PowerShell gateway, providing a web\-based Windows PowerShell console that is targeted at a remote computer.</target>
+          <source>First introduced in Windows Server 2012, Windows PowerShell Web Access acts as a Windows PowerShell gateway, providing a web<ph id="ph1">\-</ph>based Windows PowerShell console that is targeted at a remote computer.</source>
+          <target state="new">First introduced in Windows Server 2012, Windows PowerShell Web Access acts as a Windows PowerShell gateway, providing a web<ph id="ph1">\-</ph>based Windows PowerShell console that is targeted at a remote computer.</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>It enables IT Pros to run Windows PowerShell commands and scripts from a Windows PowerShell console in a web browser, with no Windows PowerShell, remote management software, or browser plug\-in installation necessary on the client device.</source>
-          <target state="new">It enables IT Pros to run Windows PowerShell commands and scripts from a Windows PowerShell console in a web browser, with no Windows PowerShell, remote management software, or browser plug\-in installation necessary on the client device.</target>
+          <source>It enables IT Pros to run Windows PowerShell commands and scripts from a Windows PowerShell console in a web browser, with no Windows PowerShell, remote management software, or browser plug<ph id="ph1">\-</ph>in installation necessary on the client device.</source>
+          <target state="new">It enables IT Pros to run Windows PowerShell commands and scripts from a Windows PowerShell console in a web browser, with no Windows PowerShell, remote management software, or browser plug<ph id="ph1">\-</ph>in installation necessary on the client device.</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Windows PowerShell Web Services (Management OData IIS Extension)<ept id="p1">](http://msdn.microsoft.com/library/windows/desktop/hh880865.aspx)</ept>.</source>
           <target state="new"><bpt id="p1">[</bpt>Windows PowerShell Web Services (Management OData IIS Extension)<ept id="p1">](http://msdn.microsoft.com/library/windows/desktop/hh880865.aspx)</ept>.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Web Services is a framework for easily exposing Windows PowerShell cmdlets through an OData\-based web service that is running in Web Server (IIS).</source>
-          <target state="new">Windows PowerShell Web Services is a framework for easily exposing Windows PowerShell cmdlets through an OData\-based web service that is running in Web Server (IIS).</target>
+          <source>Windows PowerShell Web Services is a framework for easily exposing Windows PowerShell cmdlets through an OData<ph id="ph1">\-</ph>based web service that is running in Web Server (IIS).</source>
+          <target state="new">Windows PowerShell Web Services is a framework for easily exposing Windows PowerShell cmdlets through an OData<ph id="ph1">\-</ph>based web service that is running in Web Server (IIS).</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Get Started with Windows PowerShell Desired State Configuration<ept id="p1">](https://technet.microsoft.com/en-us/library/c134aa32-b085-4656-9a89-955d8ff768d0)</ept>.</source>
@@ -239,8 +240,8 @@
           <target state="new">A Windows PowerShell cmdlet that downloads and installs the newest versions of help topics for Windows PowerShell modules on your computer.</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
-          <source>For more information about the Updatable Help system in Windows PowerShell, including how to install Updatable Help on network\-isolated computers, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](http://technet.microsoft.com/library/hh847735.aspx)</ept>, <bpt id="p2">[</bpt>Save-Help<ept id="p2">](http://technet.microsoft.com/library/hh849724.aspx)</ept>, and <bpt id="p3">[</bpt>Supporting Updatable Help<ept id="p3">](http://msdn.microsoft.com/library/hh852754.aspx)</ept>.</source>
-          <target state="new">For more information about the Updatable Help system in Windows PowerShell, including how to install Updatable Help on network\-isolated computers, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](http://technet.microsoft.com/library/hh847735.aspx)</ept>, <bpt id="p2">[</bpt>Save-Help<ept id="p2">](http://technet.microsoft.com/library/hh849724.aspx)</ept>, and <bpt id="p3">[</bpt>Supporting Updatable Help<ept id="p3">](http://msdn.microsoft.com/library/hh852754.aspx)</ept>.</target>
+          <source>For more information about the Updatable Help system in Windows PowerShell, including how to install Updatable Help on network<ph id="ph1">\-</ph>isolated computers, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](http://technet.microsoft.com/library/hh847735.aspx)</ept>, <bpt id="p2">[</bpt>Save-Help<ept id="p2">](http://technet.microsoft.com/library/hh849724.aspx)</ept>, and <bpt id="p3">[</bpt>Supporting Updatable Help<ept id="p3">](http://msdn.microsoft.com/library/hh852754.aspx)</ept>.</source>
+          <target state="new">For more information about the Updatable Help system in Windows PowerShell, including how to install Updatable Help on network<ph id="ph1">\-</ph>isolated computers, see <bpt id="p1">[</bpt>about_Updatable_Help<ept id="p1">](http://technet.microsoft.com/library/hh847735.aspx)</ept>, <bpt id="p2">[</bpt>Save-Help<ept id="p2">](http://technet.microsoft.com/library/hh849724.aspx)</ept>, and <bpt id="p3">[</bpt>Supporting Updatable Help<ept id="p3">](http://msdn.microsoft.com/library/hh852754.aspx)</ept>.</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Get-Help<ept id="p1">](http://technet.microsoft.com/library/hh849696(v=wps.630).aspx)</ept> cmdlet.</source>

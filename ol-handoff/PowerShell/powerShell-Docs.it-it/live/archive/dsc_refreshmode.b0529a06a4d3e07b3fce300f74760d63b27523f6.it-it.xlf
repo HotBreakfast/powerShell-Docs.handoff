@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="it-it">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">92bb8c98776a2a7fa8cae8e6988d88820b887a6c</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_refreshmode.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -16,13 +24,10 @@
           <target state="new">When this mode is set, LCM does not do document management.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>This mode can be used when a third party configuration management tool is used instead of DSC while still making use of DSC resources with the <ph id="ph1">`Invoke-DscResource`</ph> cmdlet or if you just need to stop DSC processing for any reason.</source>
-          <target state="new">This mode can be used when a third party configuration management tool is used instead of DSC while still making use of DSC resources with the <ph id="ph1">`Invoke-DscResource`</ph> cmdlet or if you just need to stop DSC processing for any reason.</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Configuring the Local Configuration Manager<ept id="p1">](../dsc/metaConfig.md)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Configuring the Local Configuration Manager<ept id="p1">](../dsc/metaConfig.md)</ept>.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5bf341e02933b3c6cb49d6dac20ded189f0d889c</xliffext:olfilehash>
-  </header>
 </xliff>
