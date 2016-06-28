@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a25734261fdcf657d0b97b1f037580f89b04881d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Working-with-Objects.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Working-with-Objects.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a25734261fdcf657d0b97b1f037580f89b04881d</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">Working with Objects</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>We have discussed how Windows PowerShell uses objects to transfer data between cmdlets, and demonstrated a few ways to view detailed information about objects by using Get\-Member and Format cmdlets to view particular properties of objects.</source>
-          <target state="new">We have discussed how Windows PowerShell uses objects to transfer data between cmdlets, and demonstrated a few ways to view detailed information about objects by using Get\-Member and Format cmdlets to view particular properties of objects.</target>
+          <source>We have discussed how Windows PowerShell uses objects to transfer data between cmdlets, and demonstrated a few ways to view detailed information about objects by using Get<ph id="ph1">\-</ph>Member and Format cmdlets to view particular properties of objects.</source>
+          <target state="new">We have discussed how Windows PowerShell uses objects to transfer data between cmdlets, and demonstrated a few ways to view detailed information about objects by using Get<ph id="ph1">\-</ph>Member and Format cmdlets to view particular properties of objects.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>The power of objects is that they provide you with access to a lot of complex data, and it is already correlated.</source>

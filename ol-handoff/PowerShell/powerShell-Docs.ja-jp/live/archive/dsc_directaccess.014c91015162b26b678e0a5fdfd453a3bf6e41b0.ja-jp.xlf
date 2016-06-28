@@ -2,10 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cd9360babcd367c621455b0fce6316137fd83a3d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_directaccess.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dff9d6cfd92efac3f7a5f68b4ebe37719dbce111</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-9794c66" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -14,32 +16,16 @@
           <target state="new">Direct access to DSC resource methods</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
-          <source>The <ph id="ph1">`Invoke-DscResource`</ph> cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test).</source>
-          <target state="new">The <ph id="ph1">`Invoke-DscResource`</ph> cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test).</target>
+          <source>The <bpt id="p1">[</bpt>Invoke-DscResource<ept id="p1">](https://technet.microsoft.com/en-us/library/mt517869.aspx)</ept> cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test).</source>
+          <target state="new">The <bpt id="p1">[</bpt>Invoke-DscResource<ept id="p1">](https://technet.microsoft.com/en-us/library/mt517869.aspx)</ept> cmdlet has been added to allow direct access to DSC resources and their methods (Get, Set or Test).</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
           <source>It can be used by third-parties that want to take advantage of DSC resources.</source>
           <target state="new">It can be used by third-parties that want to take advantage of DSC resources.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>This cmdlet is typically used in combination with <ph id="ph1">`refreshMode = ‘Disabled’`</ph> but can be used no matter what refreshMode is set to.</source>
-          <target state="new">This cmdlet is typically used in combination with <ph id="ph1">`refreshMode = ‘Disabled’`</ph> but can be used no matter what refreshMode is set to.</target>
-        </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Below are some examples of how to use the new cmdlet:</source>
-          <target state="new">Below are some examples of how to use the new cmdlet:</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>Ensure a file is present</source>
-          <target state="new">Ensure a file is present</target>
-        </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Test that a file is present</source>
-          <target state="new">Test that a file is present</target>
-        </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Get the contents of file</source>
-          <target state="new">Get the contents of file</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Calling DSC resource methods directly<ept id="p1">](../dsc/directCallResource.md)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Calling DSC resource methods directly<ept id="p1">](../dsc/directCallResource.md)</ept>.</target>
         </trans-unit>
       </group>
     </body>
