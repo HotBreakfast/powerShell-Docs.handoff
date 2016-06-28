@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc44c1deb8c3162b0d2188c2af313bf064290267</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\core-modules\Windows-PowerShell-Core-About-Topics.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\core-modules\Windows-PowerShell-Core-About-Topics.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cc44c1deb8c3162b0d2188c2af313bf064290267</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -87,8 +88,8 @@
           <target state="new">about_Checkpoint-Workflow</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>Describes that Checkpoint\-Workflow activity, which takes a checkpoint in a workflow.</source>
-          <target state="new">Describes that Checkpoint\-Workflow activity, which takes a checkpoint in a workflow.</target>
+          <source>Describes that Checkpoint<ph id="ph1">\-</ph>Workflow activity, which takes a checkpoint in a workflow.</source>
+          <target state="new">Describes that Checkpoint<ph id="ph1">\-</ph>Workflow activity, which takes a checkpoint in a workflow.</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
           <source>about_Command_Precedence [v4]</source>
@@ -111,8 +112,8 @@
           <target state="new">about_Comment_Based_Help [v4]</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source>Explains how to write comment\-based help topics for functions and scripts.</source>
-          <target state="new">Explains how to write comment\-based help topics for functions and scripts.</target>
+          <source>Explains how to write comment<ph id="ph1">\-</ph>based help topics for functions and scripts.</source>
+          <target state="new">Explains how to write comment<ph id="ph1">\-</ph>based help topics for functions and scripts.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>about_CommonParameters [v4]</source>
@@ -191,8 +192,8 @@
           <target state="new">about_Escape_Characters [v4]</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>Introduces the escape character in Windows PowerShell (\`) and explains its effect.</source>
-          <target state="new">Introduces the escape character in Windows PowerShell (\`) and explains its effect.</target>
+          <source>Introduces the escape character in Windows PowerShell (<ph id="ph1">\`</ph>) and explains its effect.</source>
+          <target state="new">Introduces the escape character in Windows PowerShell (<ph id="ph1">\`</ph>) and explains its effect.</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
           <source>about_Eventlogs [v4]</source>
@@ -475,16 +476,16 @@
           <target state="new">about_PowerShell.exe</target>
         </trans-unit>
         <trans-unit id="217" translate="yes" xml:space="preserve">
-          <source>Displays help for the PowerShell.exe command\-line tool.</source>
-          <target state="new">Displays help for the PowerShell.exe command\-line tool.</target>
+          <source>Displays help for the PowerShell.exe command<ph id="ph1">\-</ph>line tool.</source>
+          <target state="new">Displays help for the PowerShell.exe command<ph id="ph1">\-</ph>line tool.</target>
         </trans-unit>
         <trans-unit id="218" translate="yes" xml:space="preserve">
           <source>about_PowerShell_Ise.exe</source>
           <target state="new">about_PowerShell_Ise.exe</target>
         </trans-unit>
         <trans-unit id="219" translate="yes" xml:space="preserve">
-          <source>Displays help for the PowerShell\_ISE.exe command\-line tool.</source>
-          <target state="new">Displays help for the PowerShell\_ISE.exe command\-line tool.</target>
+          <source>Displays help for the PowerShell<ph id="ph1">\_</ph>ISE.exe command<ph id="ph2">\-</ph>line tool.</source>
+          <target state="new">Displays help for the PowerShell<ph id="ph1">\_</ph>ISE.exe command<ph id="ph2">\-</ph>line tool.</target>
         </trans-unit>
         <trans-unit id="220" translate="yes" xml:space="preserve">
           <source>about_Preference_Variables [v4]</source>
@@ -547,16 +548,16 @@
           <target state="new">about_PSSnapins [v4]</target>
         </trans-unit>
         <trans-unit id="235" translate="yes" xml:space="preserve">
-          <source>Describes Windows PowerShell snap\-ins and explains how to use them to extend Windows PowerShell.</source>
-          <target state="new">Describes Windows PowerShell snap\-ins and explains how to use them to extend Windows PowerShell.</target>
+          <source>Describes Windows PowerShell snap<ph id="ph1">\-</ph>ins and explains how to use them to extend Windows PowerShell.</source>
+          <target state="new">Describes Windows PowerShell snap<ph id="ph1">\-</ph>ins and explains how to use them to extend Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="236" translate="yes" xml:space="preserve">
           <source>about_Quoting_Rules [v4]</source>
           <target state="new">about_Quoting_Rules [v4]</target>
         </trans-unit>
         <trans-unit id="237" translate="yes" xml:space="preserve">
-          <source>Explains the rules for using single and double quotation marks in Windows PowerShell, including here\-strings.</source>
-          <target state="new">Explains the rules for using single and double quotation marks in Windows PowerShell, including here\-strings.</target>
+          <source>Explains the rules for using single and double quotation marks in Windows PowerShell, including here<ph id="ph1">\-</ph>strings.</source>
+          <target state="new">Explains the rules for using single and double quotation marks in Windows PowerShell, including here<ph id="ph1">\-</ph>strings.</target>
         </trans-unit>
         <trans-unit id="238" translate="yes" xml:space="preserve">
           <source>about_Redirection [v4]</source>
@@ -655,8 +656,8 @@
           <target state="new">about_Requires [v4]</target>
         </trans-unit>
         <trans-unit id="262" translate="yes" xml:space="preserve">
-          <source>Describes the <bpt id="p1">**</bpt>Requires<ept id="p1">**</ept> statement, which prevents a script from running without required snap\-ins and versions.</source>
-          <target state="new">Describes the <bpt id="p1">**</bpt>Requires<ept id="p1">**</ept> statement, which prevents a script from running without required snap\-ins and versions.</target>
+          <source>Describes the <bpt id="p1">**</bpt>Requires<ept id="p1">**</ept> statement, which prevents a script from running without required snap<ph id="ph1">\-</ph>ins and versions.</source>
+          <target state="new">Describes the <bpt id="p1">**</bpt>Requires<ept id="p1">**</ept> statement, which prevents a script from running without required snap<ph id="ph1">\-</ph>ins and versions.</target>
         </trans-unit>
         <trans-unit id="263" translate="yes" xml:space="preserve">
           <source>about_Reserved_Words [v4]</source>
@@ -679,8 +680,8 @@
           <target state="new">about_Run_With_PowerShell</target>
         </trans-unit>
         <trans-unit id="268" translate="yes" xml:space="preserve">
-          <source>Explains how to use the "Run with PowerShell" feature to run a script by right\-clicking its entry in File Explorer.</source>
-          <target state="new">Explains how to use the "Run with PowerShell" feature to run a script by right\-clicking its entry in File Explorer.</target>
+          <source>Explains how to use the "Run with PowerShell" feature to run a script by right<ph id="ph1">\-</ph>clicking its entry in File Explorer.</source>
+          <target state="new">Explains how to use the "Run with PowerShell" feature to run a script by right<ph id="ph1">\-</ph>clicking its entry in File Explorer.</target>
         </trans-unit>
         <trans-unit id="269" translate="yes" xml:space="preserve">
           <source>about_Scheduled_Jobs</source>
@@ -879,8 +880,8 @@
           <target state="new">about_Wildcards [v4]</target>
         </trans-unit>
         <trans-unit id="318" translate="yes" xml:space="preserve">
-          <source>Explains how to use the wildcard character (\*) in Windows PowerShell.</source>
-          <target state="new">Explains how to use the wildcard character (\*) in Windows PowerShell.</target>
+          <source>Explains how to use the wildcard character (<ph id="ph1">\*</ph>) in Windows PowerShell.</source>
+          <target state="new">Explains how to use the wildcard character (<ph id="ph1">\*</ph>) in Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="319" translate="yes" xml:space="preserve">
           <source>about_Windows_PowerShell_5.0</source>
@@ -919,8 +920,8 @@
           <target state="new">about_WMI</target>
         </trans-unit>
         <trans-unit id="328" translate="yes" xml:space="preserve">
-          <source>Describes Windows Management Instrumentation (WMI), which is Microsoft’s implementation of the Web\-Based Enterprise Management (WBEM) industry standard.</source>
-          <target state="new">Describes Windows Management Instrumentation (WMI), which is Microsoft’s implementation of the Web\-Based Enterprise Management (WBEM) industry standard.</target>
+          <source>Describes Windows Management Instrumentation (WMI), which is Microsoft’s implementation of the Web<ph id="ph1">\-</ph>Based Enterprise Management (WBEM) industry standard.</source>
+          <target state="new">Describes Windows Management Instrumentation (WMI), which is Microsoft’s implementation of the Web<ph id="ph1">\-</ph>Based Enterprise Management (WBEM) industry standard.</target>
         </trans-unit>
         <trans-unit id="329" translate="yes" xml:space="preserve">
           <source>about_WMI_Cmdlets [v3]</source>
@@ -947,8 +948,8 @@
           <target state="new">Describes the cmdlets in the Microsoft.WsMan.Management module.</target>
         </trans-unit>
         <trans-unit id="335" translate="yes" xml:space="preserve">
-          <source>Explains how to use them together to manage WS\-Management features, including the WSMan provider drive.</source>
-          <target state="new">Explains how to use them together to manage WS\-Management features, including the WSMan provider drive.</target>
+          <source>Explains how to use them together to manage WS<ph id="ph1">\-</ph>Management features, including the WSMan provider drive.</source>
+          <target state="new">Explains how to use them together to manage WS<ph id="ph1">\-</ph>Management features, including the WSMan provider drive.</target>
         </trans-unit>
         <trans-unit id="336" translate="yes" xml:space="preserve">
           <source>See Also</source>

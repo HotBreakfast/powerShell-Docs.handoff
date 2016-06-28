@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="es-es">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">73d6ffec22390fa09e258f283fab2cdca001de16</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_partialconfig.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -12,25 +20,10 @@
           <target state="new">WMF 5.0 helps you deliver configuration documents to a node in fragments.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>For a node to receive multiple fragments of a configuration document, its Local Configuration Manager (LCM) must be set to specify the expected fragments, as shown in this example.</source>
-          <target state="new">For a node to receive multiple fragments of a configuration document, its Local Configuration Manager (LCM) must be set to specify the expected fragments, as shown in this example.</target>
-        </trans-unit>
-        <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>In a partial configuration, the configuration name must match what is defined in the LCM.</source>
-          <target state="new">In a partial configuration, the configuration name must match what is defined in the LCM.</target>
-        </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>In the above example, the configurations should be named <ph id="ph1">`OSConfig`</ph> and <ph id="ph2">`SQLConfig`</ph>.</source>
-          <target state="new">In the above example, the configurations should be named <ph id="ph1">`OSConfig`</ph> and <ph id="ph2">`SQLConfig`</ph>.</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>Setting the LCM for partial configurations enables configuration coordination, but does NOT provide security functionality.</source>
-          <target state="new">Setting the LCM for partial configurations enables configuration coordination, but does NOT provide security functionality.</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Partial configurations<ept id="p1">](../dsc/partialConfigs.md)</ept>.</source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Partial configurations<ept id="p1">](../dsc/partialConfigs.md)</ept>.</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c0a49b1266b01f7333cee2b39349f220c924d16d</xliffext:olfilehash>
-  </header>
 </xliff>

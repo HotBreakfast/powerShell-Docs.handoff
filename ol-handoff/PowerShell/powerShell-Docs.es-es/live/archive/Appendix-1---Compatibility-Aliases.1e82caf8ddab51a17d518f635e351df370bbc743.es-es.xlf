@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">38a6cb1b0402825b307652e6747ea65baafd1d8b</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Appendix-1---Compatibility-Aliases.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Appendix-1---Compatibility-Aliases.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">38a6cb1b0402825b307652e6747ea65baafd1d8b</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -27,12 +28,12 @@
           <target state="new">The most common aliases are shown in the table below, along with the Windows PowerShell command behind the alias and the standard Windows PowerShell alias if one exists.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>You can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get\-Alias cmdlet.</source>
-          <target state="new">You can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get\-Alias cmdlet.</target>
+          <source>You can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get<ph id="ph1">\-</ph>Alias cmdlet.</source>
+          <target state="new">You can find the Windows PowerShell command that any alias points to from within Windows PowerShell by using the Get<ph id="ph1">\-</ph>Alias cmdlet.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>For example, type <bpt id="p1">**</bpt>get\-alias cls<ept id="p1">**</ept>.</source>
-          <target state="new">For example, type <bpt id="p1">**</bpt>get\-alias cls<ept id="p1">**</ept>.</target>
+          <source>For example, type <bpt id="p1">**</bpt>get<ph id="ph1">\-</ph>alias cls<ept id="p1">**</ept>.</source>
+          <target state="new">For example, type <bpt id="p1">**</bpt>get<ph id="ph1">\-</ph>alias cls<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>CMD Command</source>
@@ -59,8 +60,8 @@
           <target state="new">ls</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>Get\-ChildItem</source>
-          <target state="new">Get\-ChildItem</target>
+          <source>Get<ph id="ph1">\-</ph>ChildItem</source>
+          <target state="new">Get<ph id="ph1">\-</ph>ChildItem</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
           <source>gci</source>
@@ -75,12 +76,12 @@
           <target state="new">clear</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Clear\-Host<ept id="p1">**</ept> (function)</source>
-          <target state="new"><bpt id="p1">**</bpt>Clear\-Host<ept id="p1">**</ept> (function)</target>
+          <source><bpt id="p1">**</bpt>Clear<ph id="ph1">\-</ph>Host<ept id="p1">**</ept> (function)</source>
+          <target state="new"><bpt id="p1">**</bpt>Clear<ph id="ph1">\-</ph>Host<ept id="p1">**</ept> (function)</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>N\/A</source>
-          <target state="new">N\/A</target>
+          <source>N<ph id="ph1">\/</ph>A</source>
+          <target state="new">N<ph id="ph1">\/</ph>A</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>del, erase, rmdir</source>
@@ -91,8 +92,8 @@
           <target state="new">rm</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>Remove\-Item</source>
-          <target state="new">Remove\-Item</target>
+          <source>Remove<ph id="ph1">\-</ph>Item</source>
+          <target state="new">Remove<ph id="ph1">\-</ph>Item</target>
         </trans-unit>
         <trans-unit id="122" translate="yes" xml:space="preserve">
           <source>ri</source>
@@ -107,8 +108,8 @@
           <target state="new">cp</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>Copy\-Item</source>
-          <target state="new">Copy\-Item</target>
+          <source>Copy<ph id="ph1">\-</ph>Item</source>
+          <target state="new">Copy<ph id="ph1">\-</ph>Item</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>ci</source>
@@ -123,8 +124,8 @@
           <target state="new">mv</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>Move\-Item</source>
-          <target state="new">Move\-Item</target>
+          <source>Move<ph id="ph1">\-</ph>Item</source>
+          <target state="new">Move<ph id="ph1">\-</ph>Item</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
           <source>mi</source>
@@ -139,8 +140,8 @@
           <target state="new">mv</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
-          <source>Rename\-Item</source>
-          <target state="new">Rename\-Item</target>
+          <source>Rename<ph id="ph1">\-</ph>Item</source>
+          <target state="new">Rename<ph id="ph1">\-</ph>Item</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
           <source>rni</source>
@@ -155,8 +156,8 @@
           <target state="new">cat</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
-          <source>Get\-Content</source>
-          <target state="new">Get\-Content</target>
+          <source>Get<ph id="ph1">\-</ph>Content</source>
+          <target state="new">Get<ph id="ph1">\-</ph>Content</target>
         </trans-unit>
         <trans-unit id="138" translate="yes" xml:space="preserve">
           <source>gc</source>
@@ -171,8 +172,8 @@
           <target state="new">cd</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source>Set\-Location</source>
-          <target state="new">Set\-Location</target>
+          <source>Set<ph id="ph1">\-</ph>Location</source>
+          <target state="new">Set<ph id="ph1">\-</ph>Location</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
           <source>sl</source>
@@ -187,44 +188,44 @@
           <target state="new">mkdir</target>
         </trans-unit>
         <trans-unit id="145" translate="yes" xml:space="preserve">
-          <source>New\-Item</source>
-          <target state="new">New\-Item</target>
+          <source>New<ph id="ph1">\-</ph>Item</source>
+          <target state="new">New<ph id="ph1">\-</ph>Item</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>ni</source>
           <target state="new">ni</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source>N\/A</source>
-          <target state="new">N\/A</target>
+          <source>N<ph id="ph1">\/</ph>A</source>
+          <target state="new">N<ph id="ph1">\/</ph>A</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>pushd</source>
           <target state="new">pushd</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>Push\-Location</source>
-          <target state="new">Push\-Location</target>
+          <source>Push<ph id="ph1">\-</ph>Location</source>
+          <target state="new">Push<ph id="ph1">\-</ph>Location</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source>N\/A</source>
-          <target state="new">N\/A</target>
+          <source>N<ph id="ph1">\/</ph>A</source>
+          <target state="new">N<ph id="ph1">\/</ph>A</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
-          <source>N\/A</source>
-          <target state="new">N\/A</target>
+          <source>N<ph id="ph1">\/</ph>A</source>
+          <target state="new">N<ph id="ph1">\/</ph>A</target>
         </trans-unit>
         <trans-unit id="152" translate="yes" xml:space="preserve">
           <source>popd</source>
           <target state="new">popd</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
-          <source>Pop\-Location</source>
-          <target state="new">Pop\-Location</target>
+          <source>Pop<ph id="ph1">\-</ph>Location</source>
+          <target state="new">Pop<ph id="ph1">\-</ph>Location</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
-          <source>N\/A</source>
-          <target state="new">N\/A</target>
+          <source>N<ph id="ph1">\/</ph>A</source>
+          <target state="new">N<ph id="ph1">\/</ph>A</target>
         </trans-unit>
       </group>
     </body>

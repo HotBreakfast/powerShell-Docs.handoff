@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">644dbbb51e98efda9735f0ff23489e936f6b28a2</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\console\Using-Tab-Expansion.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\console\Using-Tab-Expansion.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">644dbbb51e98efda9735f0ff23489e936f6b28a2</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">Using Tab Expansion</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>Command\-line shells often provide a way to complete the names of long files or commands automatically, speeding up command entry and providing hints.</source>
-          <target state="new">Command\-line shells often provide a way to complete the names of long files or commands automatically, speeding up command entry and providing hints.</target>
+          <source>Command<ph id="ph1">\-</ph>line shells often provide a way to complete the names of long files or commands automatically, speeding up command entry and providing hints.</source>
+          <target state="new">Command<ph id="ph1">\-</ph>line shells often provide a way to complete the names of long files or commands automatically, speeding up command entry and providing hints.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>Windows PowerShell allows you to fill in file names and cmdlet names by pressing the <bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> key.</source>
@@ -59,20 +60,20 @@
           <target state="new">You can fill in more of the name for a partial match.</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>For example, if you type <bpt id="p1">**</bpt>get\-co<ept id="p1">**</ept> and then press the <bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> key, Windows PowerShell will automatically expand this to the <bpt id="p3">**</bpt>Get\-Command<ept id="p3">**</ept> cmdlet (notice that it also changes the case of letters to their standard form).</source>
-          <target state="new">For example, if you type <bpt id="p1">**</bpt>get\-co<ept id="p1">**</ept> and then press the <bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> key, Windows PowerShell will automatically expand this to the <bpt id="p3">**</bpt>Get\-Command<ept id="p3">**</ept> cmdlet (notice that it also changes the case of letters to their standard form).</target>
+          <source>For example, if you type <bpt id="p1">**</bpt>get<ph id="ph1">\-</ph>co<ept id="p1">**</ept> and then press the <bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> key, Windows PowerShell will automatically expand this to the <bpt id="p3">**</bpt>Get<ph id="ph2">\-</ph>Command<ept id="p3">**</ept> cmdlet (notice that it also changes the case of letters to their standard form).</source>
+          <target state="new">For example, if you type <bpt id="p1">**</bpt>get<ph id="ph1">\-</ph>co<ept id="p1">**</ept> and then press the <bpt id="p2">**</bpt>Tab<ept id="p2">**</ept> key, Windows PowerShell will automatically expand this to the <bpt id="p3">**</bpt>Get<ph id="ph2">\-</ph>Command<ept id="p3">**</ept> cmdlet (notice that it also changes the case of letters to their standard form).</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>If you press <bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> key again, Windows PowerShell replaces this with the only other matching cmdlet name, <bpt id="p2">**</bpt>Get\-Content<ept id="p2">**</ept>.</source>
-          <target state="new">If you press <bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> key again, Windows PowerShell replaces this with the only other matching cmdlet name, <bpt id="p2">**</bpt>Get\-Content<ept id="p2">**</ept>.</target>
+          <source>If you press <bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> key again, Windows PowerShell replaces this with the only other matching cmdlet name, <bpt id="p2">**</bpt>Get<ph id="ph1">\-</ph>Content<ept id="p2">**</ept>.</source>
+          <target state="new">If you press <bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> key again, Windows PowerShell replaces this with the only other matching cmdlet name, <bpt id="p2">**</bpt>Get<ph id="ph1">\-</ph>Content<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>You can use tab expansion repeatedly on the same line.</source>
           <target state="new">You can use tab expansion repeatedly on the same line.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>For example, you can use tab expansion on the name of the <bpt id="p1">**</bpt>Get\-Content<ept id="p1">**</ept> cmdlet by entering:</source>
-          <target state="new">For example, you can use tab expansion on the name of the <bpt id="p1">**</bpt>Get\-Content<ept id="p1">**</ept> cmdlet by entering:</target>
+          <source>For example, you can use tab expansion on the name of the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Content<ept id="p1">**</ept> cmdlet by entering:</source>
+          <target state="new">For example, you can use tab expansion on the name of the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Content<ept id="p1">**</ept> cmdlet by entering:</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>When you press the <bpt id="p1">**</bpt>Tab<ept id="p1">**</ept> key, the command expands to:</source>

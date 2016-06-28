@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="es-es">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e5017e8821d2cb11a270286e6896206805866300</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_waitfor.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">24a680a5f41f6b6cb150226f347e90a2c5eafb25</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-02a95cf" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -14,40 +16,12 @@
           <target state="new">Specifying Cross Node Dependencies</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
-          <source>By using the built-in WaitFor\* resources (WaitForAll, WaitForAny, and WaitForSome), you can now specify dependencies across computers during configuration runs, without external orchestration.</source>
-          <target state="new">By using the built-in WaitFor\* resources (WaitForAll, WaitForAny, and WaitForSome), you can now specify dependencies across computers during configuration runs, without external orchestration.</target>
+          <source>By using the built-in WaitFor<ph id="ph1">\*</ph> resources (<ph id="ph2">`WaitForAll`</ph>, <ph id="ph3">`WaitForAny`</ph>, and <ph id="ph4">`WaitForSome`</ph>), you can now specify dependencies across computers during configuration runs without external orchestration.</source>
+          <target state="new">By using the built-in WaitFor<ph id="ph1">\*</ph> resources (<ph id="ph2">`WaitForAll`</ph>, <ph id="ph3">`WaitForAny`</ph>, and <ph id="ph4">`WaitForSome`</ph>), you can now specify dependencies across computers during configuration runs without external orchestration.</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>The behavior or each WaitFor\* resource is:</source>
-          <target state="new">The behavior or each WaitFor\* resource is:</target>
-        </trans-unit>
-        <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>WaitForAll<ept id="p1">**</ept> Waits for the specified resource to be in the desired state on <bpt id="p2">*</bpt>All<ept id="p2">*</ept> target nodes defined in the NodeName property.</source>
-          <target state="new"><bpt id="p1">**</bpt>WaitForAll<ept id="p1">**</ept> Waits for the specified resource to be in the desired state on <bpt id="p2">*</bpt>All<ept id="p2">*</ept> target nodes defined in the NodeName property.</target>
-        </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>WaitForAny<ept id="p1">**</ept> Waits for the specified resource to be in the desired state on <bpt id="p2">*</bpt>Any<ept id="p2">*</ept> target node defined in the NodeName property.</source>
-          <target state="new"><bpt id="p1">**</bpt>WaitForAny<ept id="p1">**</ept> Waits for the specified resource to be in the desired state on <bpt id="p2">*</bpt>Any<ept id="p2">*</ept> target node defined in the NodeName property.</target>
-        </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>WaitForSome<ept id="p1">**</ept> Waits for the specified resource to be in the desired state on specific number, defined by the property NodeCount, of target nodes defined in the NodeName property.</source>
-          <target state="new"><bpt id="p1">**</bpt>WaitForSome<ept id="p1">**</ept> Waits for the specified resource to be in the desired state on specific number, defined by the property NodeCount, of target nodes defined in the NodeName property.</target>
-        </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>These resources provide node-to-node synchronization by using CIM connections over the WS-Man protocol.</source>
-          <target state="new">These resources provide node-to-node synchronization by using CIM connections over the WS-Man protocol.</target>
-        </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>By using these resources, a configuration can wait for another computer’s specific resource state to change before it continues with its own configuration.</source>
-          <target state="new">By using these resources, a configuration can wait for another computer’s specific resource state to change before it continues with its own configuration.</target>
-        </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>For example, in the following configuration, the target node is waiting for the <bpt id="p1">**</bpt>xADDomain<ept id="p1">**</ept> resource to finish on the <bpt id="p2">**</bpt>MyDC<ept id="p2">**</ept> node with a few retries, before the target node can join the domain.</source>
-          <target state="new">For example, in the following configuration, the target node is waiting for the <bpt id="p1">**</bpt>xADDomain<ept id="p1">**</ept> resource to finish on the <bpt id="p2">**</bpt>MyDC<ept id="p2">**</ept> node with a few retries, before the target node can join the domain.</target>
-        </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Hint:<ept id="p1">**</ept> By default the WaitFor\* resources try one time and then fail so although it is not required, you will typically want to specify a retry interval and count.</source>
-          <target state="new"><bpt id="p1">**</bpt>Hint:<ept id="p1">**</ept> By default the WaitFor\* resources try one time and then fail so although it is not required, you will typically want to specify a retry interval and count.</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Specifying cross-node dependencies<ept id="p1">](../dsc/crossNodeDependencies.md)</ept></source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Specifying cross-node dependencies<ept id="p1">](../dsc/crossNodeDependencies.md)</ept></target>
         </trans-unit>
       </group>
     </body>
