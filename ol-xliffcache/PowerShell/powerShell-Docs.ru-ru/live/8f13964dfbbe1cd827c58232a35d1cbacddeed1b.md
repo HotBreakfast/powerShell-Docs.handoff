@@ -1,65 +1,75 @@
 ---
-title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
+ms.openlocfilehash: 8f13964dfbbe1cd827c58232a35d1cbacddeed1b
+
 ---
 
-# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
+# Метод GetConfigurationResultOutput класса MSFT_DSCLocalConfigurationManager
 
-Gets the Configuration Agent output associated with a specific job.
+Получает выходные данные агента конфигурации, относящиеся к определенному заданию.
 
-Syntax
+Синтаксис
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-Parameters
+Параметры
 ----------
 
 *jobId* \[in\]  
-The ID of the job for which to get output data.
+Идентификатор задания, для которого необходимо получить выходные данные.
 
 *resumeOutputBookmark* \[in\]  
-Specifies that the output should be a continuation from a previous bookmark.
+Указывает, что выходные данные должны быть продолжением от предыдущей закладки.
 
 *output* \[out\]  
-The output for the specified job.
+Выходные данные для указанного задания.
 
-## Return value
+## Возвращаемое значение
 ------------
 
-Returns zero on success; otherwise returns an error code.
+Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Remarks
+## Замечания
 
-This is a static method.
+Это статический метод.
 
-## Requirements
+## Требования
 ------------
->**MOF:** DscCore.mof
+>**MOF-файл:** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+
+<!--HONumber=Jun16_HO4-->
 
 

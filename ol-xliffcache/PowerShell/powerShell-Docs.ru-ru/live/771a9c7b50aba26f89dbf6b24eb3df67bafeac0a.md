@@ -1,59 +1,69 @@
 ---
-title: RollBack method of the MSFT_DSCLocalConfigurationManager class 
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Метод RollBack класса MSFT_DSCLocalConfigurationManager"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
+ms.openlocfilehash: 771a9c7b50aba26f89dbf6b24eb3df67bafeac0a
+
 ---
 
 
-# RollBack method of the MSFT_DSCLocalConfigurationManager class
+# Метод RollBack класса MSFT_DSCLocalConfigurationManager
 
-Rolls back the configuration to a previous version.
+Выполняет откат конфигурации к предыдущей версии.
 
-Syntax
+Синтаксис
 ------
 
 ```mof
 uint32 RollBack(
-  [in] uint8 configurationNumber
+  [in] uint8 configurationNumber
 );
 ```
 
-Parameters
+Параметры
 ----------
 
 *configurationNumber* \[in\]  
-Specifies the requested configuration. 
+Указывает запрошенную конфигурацию. 
 
-## Return value
+## Возвращаемое значение
 ------------
 
-Returns zero on success; otherwise returns an error code.
+Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
 
-## Remarks
+## Замечания
 
-This is a static method.
+Это статический метод.
 
-## Requirements
+## Требования
 ------------
->**MOF:** DscCore.mof
+>**MOF-файл:** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## См. также:
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+
+<!--HONumber=Jun16_HO4-->
 
 
