@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="zh-tw">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">841bf46cc17ef9121c56ac003cda25478a21b798</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_importdscresource.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -48,13 +56,10 @@
           <target state="new">It cannot be used with resource names using only the <ph id="ph1">`–Name`</ph> parameter.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>Before this, the only way to specify the module version when loading DSC resources was by using the Module specification object e.g.: <ph id="ph1">`–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`</ph></source>
-          <target state="new">Before this, the only way to specify the module version when loading DSC resources was by using the Module specification object e.g.: <ph id="ph1">`–ModuleName @{ModuleName="UserConfigProvider";ModuleVersion="3.0"}`</ph></target>
+          <source>Before this, the only way to specify the module version when loading DSC resources was by using the Module specification object e.g.:</source>
+          <target state="new">Before this, the only way to specify the module version when loading DSC resources was by using the Module specification object e.g.:</target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cde72b65d75ded4968090264dd536874b4d2ac70</xliffext:olfilehash>
-  </header>
 </xliff>

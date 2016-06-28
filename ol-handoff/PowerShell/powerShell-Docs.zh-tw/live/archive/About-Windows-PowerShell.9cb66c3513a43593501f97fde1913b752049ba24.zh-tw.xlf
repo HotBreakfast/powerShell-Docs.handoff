@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-tw">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b990fb5c6855aaffeb241e9596c333014050e059</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\About-Windows-PowerShell.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\About-Windows-PowerShell.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b990fb5c6855aaffeb241e9596c333014050e059</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -19,8 +20,8 @@
           <target state="new">About Windows PowerShell</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell is designed to improve the command\-line and scripting environment by eliminating long\-standing problems and adding new features.</source>
-          <target state="new">Windows PowerShell is designed to improve the command\-line and scripting environment by eliminating long\-standing problems and adding new features.</target>
+          <source>Windows PowerShell is designed to improve the command<ph id="ph1">\-</ph>line and scripting environment by eliminating long<ph id="ph2">\-</ph>standing problems and adding new features.</source>
+          <target state="new">Windows PowerShell is designed to improve the command<ph id="ph1">\-</ph>line and scripting environment by eliminating long<ph id="ph2">\-</ph>standing problems and adding new features.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>Discoverability</source>
@@ -35,24 +36,24 @@
           <target state="new">For example, to find a list of cmdlets that view and change Windows services, type:</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>After discovering which cmdlet accomplishes a task, you can learn more about the cmdlet by using the Get\-Help cmdlet.</source>
-          <target state="new">After discovering which cmdlet accomplishes a task, you can learn more about the cmdlet by using the Get\-Help cmdlet.</target>
+          <source>After discovering which cmdlet accomplishes a task, you can learn more about the cmdlet by using the Get<ph id="ph1">\-</ph>Help cmdlet.</source>
+          <target state="new">After discovering which cmdlet accomplishes a task, you can learn more about the cmdlet by using the Get<ph id="ph1">\-</ph>Help cmdlet.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>For example, to display help about the Get\-Service cmdlet, type:</source>
-          <target state="new">For example, to display help about the Get\-Service cmdlet, type:</target>
+          <source>For example, to display help about the Get<ph id="ph1">\-</ph>Service cmdlet, type:</source>
+          <target state="new">For example, to display help about the Get<ph id="ph1">\-</ph>Service cmdlet, type:</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>Most cmdlets emit objects which can be manipulated and then rendered into text for display.</source>
           <target state="new">Most cmdlets emit objects which can be manipulated and then rendered into text for display.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>To fully understand the output of that cmdlet, pipe its output to the Get\-Member cmdlet.</source>
-          <target state="new">To fully understand the output of that cmdlet, pipe its output to the Get\-Member cmdlet.</target>
+          <source>To fully understand the output of that cmdlet, pipe its output to the Get<ph id="ph1">\-</ph>Member cmdlet.</source>
+          <target state="new">To fully understand the output of that cmdlet, pipe its output to the Get<ph id="ph1">\-</ph>Member cmdlet.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source>For example, the following command displays information about the members of the object output by the Get\-Service cmdlet.</source>
-          <target state="new">For example, the following command displays information about the members of the object output by the Get\-Service cmdlet.</target>
+          <source>For example, the following command displays information about the members of the object output by the Get<ph id="ph1">\-</ph>Service cmdlet.</source>
+          <target state="new">For example, the following command displays information about the members of the object output by the Get<ph id="ph1">\-</ph>Service cmdlet.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>Consistency</source>
@@ -63,16 +64,16 @@
           <target state="new">Managing systems can be a complex endeavor and tools that have a consistent interface help to control the inherent complexity.</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>Unfortunately, neither command\-line tools nor scriptable COM objects have been known for their consistency.</source>
-          <target state="new">Unfortunately, neither command\-line tools nor scriptable COM objects have been known for their consistency.</target>
+          <source>Unfortunately, neither command<ph id="ph1">\-</ph>line tools nor scriptable COM objects have been known for their consistency.</source>
+          <target state="new">Unfortunately, neither command<ph id="ph1">\-</ph>line tools nor scriptable COM objects have been known for their consistency.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>The consistency of Windows PowerShell is one of its primary assets.</source>
           <target state="new">The consistency of Windows PowerShell is one of its primary assets.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>For example, if you learn how to use the Sort\-Object cmdlet, you can use that knowledge to sort the output of any cmdlet.</source>
-          <target state="new">For example, if you learn how to use the Sort\-Object cmdlet, you can use that knowledge to sort the output of any cmdlet.</target>
+          <source>For example, if you learn how to use the Sort<ph id="ph1">\-</ph>Object cmdlet, you can use that knowledge to sort the output of any cmdlet.</source>
+          <target state="new">For example, if you learn how to use the Sort<ph id="ph1">\-</ph>Object cmdlet, you can use that knowledge to sort the output of any cmdlet.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>You do not have to learn the different sorting routines of each cmdlet.</source>
@@ -87,24 +88,24 @@
           <target state="new">Windows PowerShell gives them a framework that provides the basic features and forces them to be consistent about many aspects of the interface.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>The framework eliminates some of the choices that are typically left to the developer, but, in return, it makes the development of robust and easy\-to\-use cmdlets much simpler.</source>
-          <target state="new">The framework eliminates some of the choices that are typically left to the developer, but, in return, it makes the development of robust and easy\-to\-use cmdlets much simpler.</target>
+          <source>The framework eliminates some of the choices that are typically left to the developer, but, in return, it makes the development of robust and easy<ph id="ph1">\-</ph>to<ph id="ph2">\-</ph>use cmdlets much simpler.</source>
+          <target state="new">The framework eliminates some of the choices that are typically left to the developer, but, in return, it makes the development of robust and easy<ph id="ph1">\-</ph>to<ph id="ph2">\-</ph>use cmdlets much simpler.</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
           <source>Interactive and Scripting Environments</source>
           <target state="new">Interactive and Scripting Environments</target>
         </trans-unit>
         <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell is a combined interactive and scripting environment that gives you access to command\-line tools and COM objects, and also enables you to use the power of the .NET Framework Class Library (FCL).</source>
-          <target state="new">Windows PowerShell is a combined interactive and scripting environment that gives you access to command\-line tools and COM objects, and also enables you to use the power of the .NET Framework Class Library (FCL).</target>
+          <source>Windows PowerShell is a combined interactive and scripting environment that gives you access to command<ph id="ph1">\-</ph>line tools and COM objects, and also enables you to use the power of the .NET Framework Class Library (FCL).</source>
+          <target state="new">Windows PowerShell is a combined interactive and scripting environment that gives you access to command<ph id="ph1">\-</ph>line tools and COM objects, and also enables you to use the power of the .NET Framework Class Library (FCL).</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>This environment improves upon the Windows Command Prompt, which provides an interactive environment with multiple command\-line tools.</source>
-          <target state="new">This environment improves upon the Windows Command Prompt, which provides an interactive environment with multiple command\-line tools.</target>
+          <source>This environment improves upon the Windows Command Prompt, which provides an interactive environment with multiple command<ph id="ph1">\-</ph>line tools.</source>
+          <target state="new">This environment improves upon the Windows Command Prompt, which provides an interactive environment with multiple command<ph id="ph1">\-</ph>line tools.</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>It also improves upon Windows Script Host (WSH) scripts, which let you use multiple command\-line tools and COM automation objects, but do not provide an interactive environment.</source>
-          <target state="new">It also improves upon Windows Script Host (WSH) scripts, which let you use multiple command\-line tools and COM automation objects, but do not provide an interactive environment.</target>
+          <source>It also improves upon Windows Script Host (WSH) scripts, which let you use multiple command<ph id="ph1">\-</ph>line tools and COM automation objects, but do not provide an interactive environment.</source>
+          <target state="new">It also improves upon Windows Script Host (WSH) scripts, which let you use multiple command<ph id="ph1">\-</ph>line tools and COM automation objects, but do not provide an interactive environment.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>By combining access to all of these features, Windows PowerShell extends the ability of the interactive user and the script writer, and makes system administration more manageable.</source>
@@ -127,8 +128,8 @@
           <target state="new">You can send the output object to another command as its input.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>As a result, Windows PowerShell provides a familiar interface to people experienced with other shells, while introducing a new and powerful command\-line paradigm.</source>
-          <target state="new">As a result, Windows PowerShell provides a familiar interface to people experienced with other shells, while introducing a new and powerful command\-line paradigm.</target>
+          <source>As a result, Windows PowerShell provides a familiar interface to people experienced with other shells, while introducing a new and powerful command<ph id="ph1">\-</ph>line paradigm.</source>
+          <target state="new">As a result, Windows PowerShell provides a familiar interface to people experienced with other shells, while introducing a new and powerful command<ph id="ph1">\-</ph>line paradigm.</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
           <source>It extends the concept of sending data between commands by enabling you to send objects, rather than text.</source>
