@@ -1,23 +1,25 @@
 ---
-title:   Writing help for DSC configurations
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "DSC 구성에 대한 도움말 작성"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: f4dc0265246195cc2320bcaf9d7f9abf7b1405a3
+ms.openlocfilehash: becacd2dcbc6fd0edd9154a45342edc5c536935b
+
 ---
 
-# Writing help for DSC configurations
+# DSC 구성에 대한 도움말 작성
 
->Applies To: Windows Windows PowerShell 5.0
+>적용 대상: Windows Windows PowerShell 5.0
 
-You can use comment-based help in DSC configurations. Users can access the help by calling the configuration function with `-?`, or by using the 
-[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. For more information about PowerShell comment-based help, see 
-[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
+DSC 구성에 설명 기반 도움말을 사용할 수 있습니다. 사용자는 `-?`가 포함된 구성 함수를 호출하거나 [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet을 사용하여 도움말에 액세스할 수 있습니다. PowerShell 설명 기반 도움말에 대한 자세한 내용은 [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx)를 참조하세요.
 
-The following example shows a script that contains a configuration and comment-based help for it:
+다음 예제는 구성 및 각 구성에 대한 설명 기반 도움말을 포함하는 스크립트를 보여 줍니다.
 
 ```powershell
 <#
@@ -52,19 +54,18 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$ComputerName,[string]$FilePath)
-    File f
-    {
-		Contents="Hello World"
-        DestinationPath = "c:\Destination.txt"
-    }
+    param([string]$ComputerName,[string]$FilePath)
+    File f
+    {
+        Contents="Hello World"
+        DestinationPath = "c:\Destination.txt"
+    }
 }
 ```
 
-## Viewing configuration help
+## 구성 도움말 보기
 
-To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`. The following is the output
-of the previous function when passed to **Get-Help**:
+구성에 대한 도움말을 보려면 함수의 이름과 함께 **Get-Help** cmdlet을 사용하거나 함수의 이름 뒤에 `-?`를 붙여 입력하세요. 다음은 **Get-Help**로 전달된 경우의 이전 함수 출력입니다.
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -93,6 +94,12 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## See Also
-* [DSC Configurations](configurations.md)
+## 참고 항목
+* [DSC 구성](configurations.md)
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
