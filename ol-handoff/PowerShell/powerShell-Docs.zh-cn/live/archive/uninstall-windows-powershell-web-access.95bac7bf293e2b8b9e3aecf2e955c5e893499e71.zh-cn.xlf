@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ee5e88ece27add955fcef3a9df0a441a08251e77</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\uninstall-windows-powershell-web-access.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\uninstall-windows-powershell-web-access.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ee5e88ece27add955fcef3a9df0a441a08251e77</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -119,8 +120,8 @@
           <target state="new">On the Windows <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> screen, right-click <bpt id="p2">**</bpt>Windows PowerShell<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Run as Administrator<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer\_name<ept id="p2">*</ept> represents a remote server from which you want to remove Windows PowerShell Web Access.</source>
-          <target state="new">Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer\_name<ept id="p2">*</ept> represents a remote server from which you want to remove Windows PowerShell Web Access.</target>
+          <source>Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer<ph id="ph1">\_</ph>name<ept id="p2">*</ept> represents a remote server from which you want to remove Windows PowerShell Web Access.</source>
+          <target state="new">Type the following, and then press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept>, where <bpt id="p2">*</bpt>computer<ph id="ph1">\_</ph>name<ept id="p2">*</ept> represents a remote server from which you want to remove Windows PowerShell Web Access.</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
           <source>The <ph id="ph1">&lt;span class="code"&gt;</ph>–Restart<ph id="ph2">&lt;/span&gt;</ph> parameter automatically restarts destination servers if required by the removal.</source>
@@ -147,8 +148,8 @@
           <target state="new">When removal is finished, verify that you removed Windows PowerShell Web Access by opening the <bpt id="p1">**</bpt>All Servers<ept id="p1">**</ept> page in Server Manager, selecting a server from which you removed the feature, and viewing the <bpt id="p2">**</bpt>Roles and Features<ept id="p2">**</ept> tile on the page for the selected server.</target>
         </trans-unit>
         <trans-unit id="135" translate="yes" xml:space="preserve">
-          <source>You can also run the <ph id="ph1">&lt;span class="code"&gt;</ph>Get-WindowsFeature<ph id="ph2">&lt;/span&gt;</ph> cmdlet targeted at the selected server (Get-WindowsFeature -ComputerName <ph id="ph3">&amp;lt;</ph><bpt id="p1">*</bpt>computer\_name<ept id="p1">*</ept><ph id="ph4">&amp;gt;</ph>) to view a list of roles and features that are installed on the server.</source>
-          <target state="new">You can also run the <ph id="ph1">&lt;span class="code"&gt;</ph>Get-WindowsFeature<ph id="ph2">&lt;/span&gt;</ph> cmdlet targeted at the selected server (Get-WindowsFeature -ComputerName <ph id="ph3">&amp;lt;</ph><bpt id="p1">*</bpt>computer\_name<ept id="p1">*</ept><ph id="ph4">&amp;gt;</ph>) to view a list of roles and features that are installed on the server.</target>
+          <source>You can also run the <ph id="ph1">&lt;span class="code"&gt;</ph>Get-WindowsFeature<ph id="ph2">&lt;/span&gt;</ph> cmdlet targeted at the selected server (Get-WindowsFeature -ComputerName <ph id="ph3">&amp;lt;</ph><bpt id="p1">*</bpt>computer<ph id="ph4">\_</ph>name<ept id="p1">*</ept><ph id="ph5">&amp;gt;</ph>) to view a list of roles and features that are installed on the server.</source>
+          <target state="new">You can also run the <ph id="ph1">&lt;span class="code"&gt;</ph>Get-WindowsFeature<ph id="ph2">&lt;/span&gt;</ph> cmdlet targeted at the selected server (Get-WindowsFeature -ComputerName <ph id="ph3">&amp;lt;</ph><bpt id="p1">*</bpt>computer<ph id="ph4">\_</ph>name<ept id="p1">*</ept><ph id="ph5">&amp;gt;</ph>) to view a list of roles and features that are installed on the server.</target>
         </trans-unit>
         <trans-unit id="136" translate="yes" xml:space="preserve">
           <source>Custom uninstallation</source>

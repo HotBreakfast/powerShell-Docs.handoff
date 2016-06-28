@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">02964dd763ccccbf27a963c0f8eef20aa23cc117</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\use-the-web-based-windows-powershell-console.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\web-access\use-the-web-based-windows-powershell-console.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">02964dd763ccccbf27a963c0f8eef20aa23cc117</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -155,8 +156,8 @@
           <target state="new">Your Windows PowerShell Web Access administrator should provide you with a URL that is the address of your organization’s Windows PowerShell Web Access gateway website.</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
-          <source>By default, this website address is https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa.</source>
-          <target state="new">By default, this website address is https://<ph id="ph1">&amp;lt;</ph>server\_name<ph id="ph2">&amp;gt;</ph>/pswa.</target>
+          <source>By default, this website address is https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa.</source>
+          <target state="new">By default, this website address is https://<ph id="ph1">&amp;lt;</ph>server<ph id="ph2">\_</ph>name<ph id="ph3">&amp;gt;</ph>/pswa.</target>
         </trans-unit>
         <trans-unit id="138" translate="yes" xml:space="preserve">
           <source>Before you sign in to Windows PowerShell Web Access, be sure that you have the name or IP address of the remote computer that you want to manage.</source>
@@ -195,20 +196,20 @@
           <target state="new">Note</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source>If the destination computer is in a workgroup, use the following syntax to provide your user name and sign in to the computer:<ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;lt;&lt;em&gt;</ph>user_name<ph id="ph3">&lt;/em&gt;&amp;gt;</ph>.</source>
-          <target state="new">If the destination computer is in a workgroup, use the following syntax to provide your user name and sign in to the computer:<ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;lt;&lt;em&gt;</ph>user_name<ph id="ph3">&lt;/em&gt;&amp;gt;</ph>.</target>
+          <source>If the destination computer is in a workgroup, use the following syntax to provide your user name and sign in to the computer:<ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;</ph>lt;<ph id="ph3">&lt;em&gt;</ph>user_name<ph id="ph4">&lt;/em&gt;&amp;gt;</ph>.</source>
+          <target state="new">If the destination computer is in a workgroup, use the following syntax to provide your user name and sign in to the computer:<ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup_name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;</ph>lt;<ph id="ph3">&lt;em&gt;</ph>user_name<ph id="ph4">&lt;/em&gt;&amp;gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>If the destination computer is the gateway server, you can specify <ph id="ph1">&lt;strong&gt;</ph>localhost<ph id="ph2">&lt;/strong&gt;</ph> in the <ph id="ph3">&lt;strong&gt;</ph>Computer name<ph id="ph4">&lt;/strong&gt;</ph> field.</source>
           <target state="new">If the destination computer is the gateway server, you can specify <ph id="ph1">&lt;strong&gt;</ph>localhost<ph id="ph2">&lt;/strong&gt;</ph> in the <ph id="ph3">&lt;strong&gt;</ph>Computer name<ph id="ph4">&lt;/strong&gt;</ph> field.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>If the destination computer is the gateway server, and the gateway server is in a workgroup, you can use <ph id="ph1">&lt;strong&gt;</ph>localhost<ph id="ph2">&lt;/strong&gt;</ph> in the <ph id="ph3">&lt;strong&gt;</ph>Computer name<ph id="ph4">&lt;/strong&gt;</ph> field, but do not use localhost\<ph id="ph5">&amp;lt;&lt;em&gt;</ph>user_name<ph id="ph6">&lt;/em&gt;&amp;gt;</ph> in the <ph id="ph7">&lt;strong&gt;</ph>User name<ph id="ph8">&lt;/strong&gt;</ph> field.</source>
-          <target state="new">If the destination computer is the gateway server, and the gateway server is in a workgroup, you can use <ph id="ph1">&lt;strong&gt;</ph>localhost<ph id="ph2">&lt;/strong&gt;</ph> in the <ph id="ph3">&lt;strong&gt;</ph>Computer name<ph id="ph4">&lt;/strong&gt;</ph> field, but do not use localhost\<ph id="ph5">&amp;lt;&lt;em&gt;</ph>user_name<ph id="ph6">&lt;/em&gt;&amp;gt;</ph> in the <ph id="ph7">&lt;strong&gt;</ph>User name<ph id="ph8">&lt;/strong&gt;</ph> field.</target>
+          <source>If the destination computer is the gateway server, and the gateway server is in a workgroup, you can use <ph id="ph1">&lt;strong&gt;</ph>localhost<ph id="ph2">&lt;/strong&gt;</ph> in the <ph id="ph3">&lt;strong&gt;</ph>Computer name<ph id="ph4">&lt;/strong&gt;</ph> field, but do not use localhost<ph id="ph5">\&amp;</ph>lt;<ph id="ph6">&lt;em&gt;</ph>user_name<ph id="ph7">&lt;/em&gt;&amp;gt;</ph> in the <ph id="ph8">&lt;strong&gt;</ph>User name<ph id="ph9">&lt;/strong&gt;</ph> field.</source>
+          <target state="new">If the destination computer is the gateway server, and the gateway server is in a workgroup, you can use <ph id="ph1">&lt;strong&gt;</ph>localhost<ph id="ph2">&lt;/strong&gt;</ph> in the <ph id="ph3">&lt;strong&gt;</ph>Computer name<ph id="ph4">&lt;/strong&gt;</ph> field, but do not use localhost<ph id="ph5">\&amp;</ph>lt;<ph id="ph6">&lt;em&gt;</ph>user_name<ph id="ph7">&lt;/em&gt;&amp;gt;</ph> in the <ph id="ph8">&lt;strong&gt;</ph>User name<ph id="ph9">&lt;/strong&gt;</ph> field.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
-          <source>You must use <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;lt;&lt;em&gt;</ph>user_name<ph id="ph3">&lt;/em&gt;&amp;gt;</ph>.</source>
-          <target state="new">You must use <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;lt;&lt;em&gt;</ph>user_name<ph id="ph3">&lt;/em&gt;&amp;gt;</ph>.</target>
+          <source>You must use <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;</ph>lt;<ph id="ph3">&lt;em&gt;</ph>user_name<ph id="ph4">&lt;/em&gt;&amp;gt;</ph>.</source>
+          <target state="new">You must use <ph id="ph1">&amp;lt;&lt;em&gt;</ph>workgroup name<ph id="ph2">&lt;/em&gt;&amp;gt;\&amp;</ph>lt;<ph id="ph3">&lt;em&gt;</ph>user_name<ph id="ph4">&lt;/em&gt;&amp;gt;</ph>.</target>
         </trans-unit>
         <trans-unit id="151" translate="yes" xml:space="preserve">
           <source>The <bpt id="p1">**</bpt>Optional Connection Settings<ept id="p1">**</ept> section relates to the authorization requirements of the remote computer that you want to manage.</source>
@@ -235,8 +236,8 @@
           <target state="new">If the Windows PowerShell Web Access administrator has created a custom session configuration for Windows PowerShell Web Access users, type the name of the session configuration name in the <bpt id="p1">**</bpt>Configuration name<ept id="p1">**</ept> field.</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
-          <source>For more information about session configurations, see <bpt id="p1">[</bpt>about\_Session\_Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept> on the Microsoft website.</source>
-          <target state="new">For more information about session configurations, see <bpt id="p1">[</bpt>about\_Session\_Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept> on the Microsoft website.</target>
+          <source>For more information about session configurations, see <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept> on the Microsoft website.</source>
+          <target state="new">For more information about session configurations, see <bpt id="p1">[</bpt>about<ph id="ph1">\_</ph>Session<ph id="ph2">\_</ph>Configurations<ept id="p1">](https://technet.microsoft.com/library/dd819508.aspx)</ept> on the Microsoft website.</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
           <source>Keep the <bpt id="p1">**</bpt>Authentication type<ept id="p1">**</ept> set to <bpt id="p2">**</bpt>Default<ept id="p2">**</ept> unless you have been instructed to do otherwise by the Windows PowerShell Web Access administrator.</source>

@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce9364e8fb73a2d31b728430c590fef4175ebe26</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEFile-Object.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEFile-Object.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce9364e8fb73a2d31b728430c590fef4175ebe26</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -39,8 +40,8 @@
           <target state="new">Methods</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Save\( \[saveEncoding\] \)</source>
-          <target state="new">Save\( \[saveEncoding\] \)</target>
+          <source>Save<ph id="ph1">\(</ph> <ph id="ph2">\[</ph>saveEncoding</source>
+          <target state="new">Save<ph id="ph1">\(</ph> <ph id="ph2">\[</ph>saveEncoding</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -51,9 +52,9 @@
           <target state="new">Saves the file to disk.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>\[saveEncoding\]<ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph1">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\[</ph>saveEncoding<ph id="ph2">\]</ph><ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph3">
 </ph> An optional character encoding parameter to be used for the saved file.</source>
-          <target state="new"><bpt id="p1">**</bpt>\[saveEncoding\]<ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph1">
+          <target state="new"><bpt id="p1">**</bpt><ph id="ph1">\[</ph>saveEncoding<ph id="ph2">\]</ph><ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph3">
 </ph> An optional character encoding parameter to be used for the saved file.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
@@ -69,8 +70,8 @@
           <target state="new"><bpt id="p1">**</bpt>System.IO.IOException<ept id="p1">**</ept>: The file could not be saved.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
-          <source>SaveAs\(filename, \[saveEncoding\]\)</source>
-          <target state="new">SaveAs\(filename, \[saveEncoding\]\)</target>
+          <source>SaveAs<ph id="ph1">\(</ph>filename, <ph id="ph2">\[</ph>saveEncoding</source>
+          <target state="new">SaveAs<ph id="ph1">\(</ph>filename, <ph id="ph2">\[</ph>saveEncoding</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -81,13 +82,13 @@
           <target state="new">Saves the file with the specified file name and encoding.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>filename<ept id="p1">**</ept> \- String  The name to be used to save the file.</source>
-          <target state="new"><bpt id="p1">**</bpt>filename<ept id="p1">**</ept> \- String  The name to be used to save the file.</target>
+          <source><bpt id="p1">**</bpt>filename<ept id="p1">**</ept> <ph id="ph1">\-</ph> String The name to be used to save the file.</source>
+          <target state="new"><bpt id="p1">**</bpt>filename<ept id="p1">**</ept> <ph id="ph1">\-</ph> String The name to be used to save the file.</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>\[saveEncoding\]<ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph1">
+          <source><bpt id="p1">**</bpt><ph id="ph1">\[</ph>saveEncoding<ph id="ph2">\]</ph><ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph3">
 </ph> An optional character encoding parameter to be used for the saved file.</source>
-          <target state="new"><bpt id="p1">**</bpt>\[saveEncoding\]<ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph1">
+          <target state="new"><bpt id="p1">**</bpt><ph id="ph1">\[</ph>saveEncoding<ph id="ph2">\]</ph><ept id="p1">**</ept> – optional <bpt id="p2">[</bpt>System.Text.Encoding<ept id="p2">](http://msdn.microsoft.com/library/system.text.encoding.aspx)</ept><ph id="ph3">
 </ph> An optional character encoding parameter to be used for the saved file.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
@@ -123,16 +124,16 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the string that contains the display name of this file.</source>
-          <target state="new">The read\-only property that gets the string that contains the display name of this file.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the string that contains the display name of this file.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the string that contains the display name of this file.</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
           <source>The name is shown on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> tab at the top of the editor.</source>
           <target state="new">The name is shown on the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> tab at the top of the editor.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>The presence of an asterisk \(\*\) at the end of the name indicates that the file has changes that have not been saved.</source>
-          <target state="new">The presence of an asterisk \(\*\) at the end of the name indicates that the file has changes that have not been saved.</target>
+          <source>The presence of an asterisk <ph id="ph1">\(\*\)</ph> at the end of the name indicates that the file has changes that have not been saved.</source>
+          <target state="new">The presence of an asterisk <ph id="ph1">\(\*\)</ph> at the end of the name indicates that the file has changes that have not been saved.</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
           <source>Editor</source>
@@ -143,8 +144,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the <bpt id="p1">[</bpt>editor object<ept id="p1">](The-ISEEditor-Object.md)</ept> that is used for the specified file.</source>
-          <target state="new">The read\-only property that gets the <bpt id="p1">[</bpt>editor object<ept id="p1">](The-ISEEditor-Object.md)</ept> that is used for the specified file.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the <bpt id="p1">[</bpt>editor object<ept id="p1">](The-ISEEditor-Object.md)</ept> that is used for the specified file.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the <bpt id="p1">[</bpt>editor object<ept id="p1">](The-ISEEditor-Object.md)</ept> that is used for the specified file.</target>
         </trans-unit>
         <trans-unit id="134" translate="yes" xml:space="preserve">
           <source>Encoding</source>
@@ -155,8 +156,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="136" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the original file encoding.</source>
-          <target state="new">The read\-only property that gets the original file encoding.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the original file encoding.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the original file encoding.</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>This is a <bpt id="p1">**</bpt>System.Text.Encoding<ept id="p1">**</ept> object.</source>
@@ -171,8 +172,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source>The read\-only property that gets the string that specifies the full path of the opened file.</source>
-          <target state="new">The read\-only property that gets the string that specifies the full path of the opened file.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that gets the string that specifies the full path of the opened file.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that gets the string that specifies the full path of the opened file.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
           <source>IsSaved</source>
@@ -183,8 +184,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
-          <source>The read\-only Boolean property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has been saved after it was last modified.</source>
-          <target state="new">The read\-only Boolean property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has been saved after it was last modified.</target>
+          <source>The read<ph id="ph1">\-</ph>only Boolean property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has been saved after it was last modified.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only Boolean property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has been saved after it was last modified.</target>
         </trans-unit>
         <trans-unit id="144" translate="yes" xml:space="preserve">
           <source>IsUntitled</source>
@@ -195,8 +196,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>The read\-only property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has never been given a title.</source>
-          <target state="new">The read\-only property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has never been given a title.</target>
+          <source>The read<ph id="ph1">\-</ph>only property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has never been given a title.</source>
+          <target state="new">The read<ph id="ph1">\-</ph>only property that returns <bpt id="p1">**</bpt>$true<ept id="p1">**</ept> if the file has never been given a title.</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
           <source>See Also</source>

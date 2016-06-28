@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" original="md" source-language="en-US" target-language="zh-cn">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">81b391b6c1bc334cb88f9af00f31a99d95df8270</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\dsc_nodeid.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
     <body>
       <group id="content" extype="content">
         <trans-unit id="101" translate="yes" xml:space="preserve">
@@ -48,161 +56,10 @@
           <target state="new">You can use these new features or the older ones with the new pull server shipping in this release.</target>
         </trans-unit>
         <trans-unit id="112" translate="yes" xml:space="preserve">
-          <source>Agent ID</source>
-          <target state="new">Agent ID</target>
-        </trans-unit>
-        <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>This feature is for users who do not want to setup and manage unique identifiers for each target node.</source>
-          <target state="new">This feature is for users who do not want to setup and manage unique identifiers for each target node.</target>
-        </trans-unit>
-        <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>Now, there is no more bookkeeping of GUIDs required.</source>
-          <target state="new">Now, there is no more bookkeeping of GUIDs required.</target>
-        </trans-unit>
-        <trans-unit id="115" translate="yes" xml:space="preserve">
-          <source>DSC automatically generates an agent ID that it uses when communicating with the pull server.</source>
-          <target state="new">DSC automatically generates an agent ID that it uses when communicating with the pull server.</target>
-        </trans-unit>
-        <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>This ID is used by the pull server to uniquely identify all information with a given node.</source>
-          <target state="new">This ID is used by the pull server to uniquely identify all information with a given node.</target>
-        </trans-unit>
-        <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>It also means that you do not need to set up each target node with a unique meta-configuation containing a unique ID so a single meta-configuation can be used by many target nodes while still retaining each node's unique identity.</source>
-          <target state="new">It also means that you do not need to set up each target node with a unique meta-configuation containing a unique ID so a single meta-configuation can be used by many target nodes while still retaining each node's unique identity.</target>
-        </trans-unit>
-        <trans-unit id="118" translate="yes" xml:space="preserve">
-          <source>Configuration name</source>
-          <target state="new">Configuration name</target>
-        </trans-unit>
-        <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>The configuration name is a friendly name that defines that name of the configuration that a target node will apply.</source>
-          <target state="new">The configuration name is a friendly name that defines that name of the configuration that a target node will apply.</target>
-        </trans-unit>
-        <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>The changes associated to this are as follows:</source>
-          <target state="new">The changes associated to this are as follows:</target>
-        </trans-unit>
-        <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>Friendly naming</source>
-          <target state="new">Friendly naming</target>
-        </trans-unit>
-        <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>This can be any string!</source>
-          <target state="new">This can be any string!</target>
-        </trans-unit>
-        <trans-unit id="123" translate="yes" xml:space="preserve">
-          <source>It does not need to be in the format of a GUID so a configuration that sets up SQL server can simply be named 'SQL_Server'.</source>
-          <target state="new">It does not need to be in the format of a GUID so a configuration that sets up SQL server can simply be named 'SQL_Server'.</target>
-        </trans-unit>
-        <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>This makes it much easier to identify what a given configuration does.</source>
-          <target state="new">This makes it much easier to identify what a given configuration does.</target>
-        </trans-unit>
-        <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>Assignment</source>
-          <target state="new">Assignment</target>
-        </trans-unit>
-        <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source>The configuration that a target node is assigned is centrally managed on the pull server.</source>
-          <target state="new">The configuration that a target node is assigned is centrally managed on the pull server.</target>
-        </trans-unit>
-        <trans-unit id="127" translate="yes" xml:space="preserve">
-          <source>This can be bootstrapped by defining the ConfigrationName property in the meta-configuration but this is only used during registration.</source>
-          <target state="new">This can be bootstrapped by defining the ConfigrationName property in the meta-configuration but this is only used during registration.</target>
-        </trans-unit>
-        <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>After registration, the server tells the target node what configuration it will get.</source>
-          <target state="new">After registration, the server tells the target node what configuration it will get.</target>
-        </trans-unit>
-        <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>For the on-premises pull server this mapping between configurations and target nodes can only be done during registration, but in Azure Automation these changes can be made easily in the UI or through their cmdlets.</source>
-          <target state="new">For the on-premises pull server this mapping between configurations and target nodes can only be done during registration, but in Azure Automation these changes can be made easily in the UI or through their cmdlets.</target>
-        </trans-unit>
-        <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>To change the configuration assigned to a target node for the on-premises pull server you can re-run registration.</source>
-          <target state="new">To change the configuration assigned to a target node for the on-premises pull server you can re-run registration.</target>
-        </trans-unit>
-        <trans-unit id="131" translate="yes" xml:space="preserve">
-          <source>Multiple/Partial configurations</source>
-          <target state="new">Multiple/Partial configurations</target>
-        </trans-unit>
-        <trans-unit id="132" translate="yes" xml:space="preserve">
-          <source>If multiple configuration names are assigned to a target node, they will be treated like partial configurations.</source>
-          <target state="new">If multiple configuration names are assigned to a target node, they will be treated like partial configurations.</target>
-        </trans-unit>
-        <trans-unit id="133" translate="yes" xml:space="preserve">
-          <source>In order for this to work, the meta-configuration on the target node must be configured to accept the partial configurations.</source>
-          <target state="new">In order for this to work, the meta-configuration on the target node must be configured to accept the partial configurations.</target>
-        </trans-unit>
-        <trans-unit id="134" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is only supported on the on-premises pull server.</source>
-          <target state="new"><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is only supported on the on-premises pull server.</target>
-        </trans-unit>
-        <trans-unit id="135" translate="yes" xml:space="preserve">
-          <source>Azure Automation does not support partial configurations.</source>
-          <target state="new">Azure Automation does not support partial configurations.</target>
-        </trans-unit>
-        <trans-unit id="136" translate="yes" xml:space="preserve">
-          <source>Registration</source>
-          <target state="new">Registration</target>
-        </trans-unit>
-        <trans-unit id="137" translate="yes" xml:space="preserve">
-          <source>Because configuration names are no longer GUIDs (they are now friendly names), anyone can guess them.</source>
-          <target state="new">Because configuration names are no longer GUIDs (they are now friendly names), anyone can guess them.</target>
-        </trans-unit>
-        <trans-unit id="138" translate="yes" xml:space="preserve">
-          <source>To mitigate the inherent security issue with this, we added a registration step before a node can start requesting configurations from a server.</source>
-          <target state="new">To mitigate the inherent security issue with this, we added a registration step before a node can start requesting configurations from a server.</target>
-        </trans-unit>
-        <trans-unit id="139" translate="yes" xml:space="preserve">
-          <source>A node registers itself with the pull server with a shared secret (which the node and the server both know already), and, optionally, the name of the configuration it will request.</source>
-          <target state="new">A node registers itself with the pull server with a shared secret (which the node and the server both know already), and, optionally, the name of the configuration it will request.</target>
-        </trans-unit>
-        <trans-unit id="140" translate="yes" xml:space="preserve">
-          <source>This shared secret doesn't have to be unique for each computer.</source>
-          <target state="new">This shared secret doesn't have to be unique for each computer.</target>
-        </trans-unit>
-        <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source>Assumption: the shared secret is a hard-to-guess identifier, like a GUID.</source>
-          <target state="new">Assumption: the shared secret is a hard-to-guess identifier, like a GUID.</target>
-        </trans-unit>
-        <trans-unit id="142" translate="yes" xml:space="preserve">
-          <source>This shared secret is defined by the <bpt id="p1">**</bpt>RegistrationKey<ept id="p1">**</ept> property in the target node's meta-configuration.</source>
-          <target state="new">This shared secret is defined by the <bpt id="p1">**</bpt>RegistrationKey<ept id="p1">**</ept> property in the target node's meta-configuration.</target>
-        </trans-unit>
-        <trans-unit id="143" translate="yes" xml:space="preserve">
-          <source>Example meta-configuration</source>
-          <target state="new">Example meta-configuration</target>
-        </trans-unit>
-        <trans-unit id="144" translate="yes" xml:space="preserve">
-          <source>The RegistrationKey value must be defined by on the pull server.</source>
-          <target state="new">The RegistrationKey value must be defined by on the pull server.</target>
-        </trans-unit>
-        <trans-unit id="145" translate="yes" xml:space="preserve">
-          <source>In order to do this while setting up the pull server, create a text file with the name <bpt id="p1">**</bpt>RegistrationKeys.txt<ept id="p1">**</ept> in a specific location, and then set this location in the web.config of the pull server, as shown below.</source>
-          <target state="new">In order to do this while setting up the pull server, create a text file with the name <bpt id="p1">**</bpt>RegistrationKeys.txt<ept id="p1">**</ept> in a specific location, and then set this location in the web.config of the pull server, as shown below.</target>
-        </trans-unit>
-        <trans-unit id="146" translate="yes" xml:space="preserve">
-          <source>Use the latest version of the xDSCWebService DSC resource to fully deploy an on-premises pull server for use with this.</source>
-          <target state="new">Use the latest version of the xDSCWebService DSC resource to fully deploy an on-premises pull server for use with this.</target>
-        </trans-unit>
-        <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source>See <bpt id="p1">[</bpt>Example Configuration<ept id="p1">](https://github.com/grayzu/PSSummitEU2015/blob/master/PullServer/02%20-%20PullServer%20Config.ps1)</ept> for a complete configuration.</source>
-          <target state="new">See <bpt id="p1">[</bpt>Example Configuration<ept id="p1">](https://github.com/grayzu/PSSummitEU2015/blob/master/PullServer/02%20-%20PullServer%20Config.ps1)</ept> for a complete configuration.</target>
-        </trans-unit>
-        <trans-unit id="148" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This feature is not supported when the pull server is set up to be a file share.</source>
-          <target state="new"><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This feature is not supported when the pull server is set up to be a file share.</target>
-        </trans-unit>
-        <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>It is only supported for the web-based pull server.</source>
-          <target state="new">It is only supported for the web-based pull server.</target>
+          <source>For more information, see <bpt id="p1">[</bpt>Setting up a pull client using configuration names<ept id="p1">](../dsc/pullClientConfigNames.md)</ept></source>
+          <target state="new">For more information, see <bpt id="p1">[</bpt>Setting up a pull client using configuration names<ept id="p1">](../dsc/pullClientConfigNames.md)</ept></target>
         </trans-unit>
       </group>
     </body>
   </file>
-  <header xmlns="">
-    <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">517c1d3654cd87b2356abadabf474c76580767f4</xliffext:olfilehash>
-  </header>
 </xliff>
