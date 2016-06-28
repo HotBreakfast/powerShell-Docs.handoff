@@ -1,65 +1,75 @@
 ---
-title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "MSFT_DSCLocalConfigurationManager 类的 GetConfigurationResultOutput 方法"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
+ms.openlocfilehash: 8f13964dfbbe1cd827c58232a35d1cbacddeed1b
+
 ---
 
-# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
+# MSFT_DSCLocalConfigurationManager 类的 GetConfigurationResultOutput 方法
 
-Gets the Configuration Agent output associated with a specific job.
+获取与特定作业相关的配置代理输出。
 
-Syntax
+语法
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-Parameters
+参数
 ----------
 
 *jobId* \[in\]  
-The ID of the job for which to get output data.
+要为其获取输出数据的作业 ID。
 
 *resumeOutputBookmark* \[in\]  
-Specifies that the output should be a continuation from a previous bookmark.
+指定输出应从上一个书签中延续。
 
 *output* \[out\]  
-The output for the specified job.
+指定作业的输出。
 
-## Return value
+## 返回值
 ------------
 
-Returns zero on success; otherwise returns an error code.
+如果成功，则返回零；否则返回错误代码。
 
-## Remarks
+## 备注
 
-This is a static method.
+这是一种静态方法。
 
-## Requirements
+## 要求
 ------------
->**MOF:** DscCore.mof
+>**MOF：** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**命名空间**：Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## 另请参阅
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+
+<!--HONumber=Jun16_HO4-->
 
 
