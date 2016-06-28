@@ -1,21 +1,25 @@
 ---
-title:   DSC WindowsProcess Resource
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: "Ресурс WindowsProcess в DSC"
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
+ms.openlocfilehash: d7bd873cde4a4bda12490d69acdd5e2b0ba8cdec
+
 ---
 
-# DSC WindowsProcess Resource
+# Ресурс WindowsProcess в DSC
 
-> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
+> Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-The **WindowsProcess** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to configure processes on a target node.
+Ресурс **WindowsProcess** в DSC Windows PowerShell предоставляет механизм настройки процессов на целевом узле.
 
-## Syntax
+## Синтаксис
 
 ```
 WindowsProcess [string] #ResourceName
@@ -32,16 +36,22 @@ WindowsProcess [string] #ResourceName
 }
 ```
 
-## Properties
-|  Property  |  Description   | 
+## Свойства
+|  Свойство  |  Описание   | 
 |---|---| 
-| Arguments| Indicates a string of arguments to pass to the process as-is. If you need to pass several arguments, put them all in this string.| 
-| Path| Indicates the path to the process executable. If you set this property to the name of the executable, DSC will look in the __Path__ variable. If you give a fully qualified domain name, the process must exist there because DSC will not check the __Path__ variable in this case.| 
-| Credential| Indicates the credentials for starting the process.| 
-| Ensure| Indicates if the process exists. Set this property to "Present" to ensure that the process exists. Otherwise, set it to "Absent". The default is "Present".| 
-| DependsOn | Indicates that the configuration of another resource must run before this resource is configured. For example, if the ID of the resource configuration script block that you want to run first is __ResourceName__ and its type is __ResourceType__, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"`` .| 
-| StandardErrorPath| Indicates the directory path to write the standard error. Any existing file there will be overwritten.| 
-| StandardInputPath| Indicates the standard input location.| 
-| StandardOutputPath| Indicates the location to write the standard output. Any existing file there will be overwritten.| 
-| WorkingDirectory| Indicates the location that will be used as the current working directory for the process.| 
+| Аргументы| Указывает строку аргументов, которая будет передана процессу "как есть". Если необходимо передать несколько аргументов, поместите их все в эту строку.| 
+| путь| Указывает путь к исполняемому файлу процесса. Если этому свойству присвоено имя исполняемого файла, DSC будет использовать переменную __Path__. Если указано полное доменное имя, то процесс должен существовать по этому имени, так как в этом случае DSC не будет проверять переменную __Path__.| 
+| Учетные данные| Указывает учетные данные для запуска процесса.| 
+| Ensure| Указывает, существует ли процесс. Если процесс существует, укажите для этого свойства значение Present. В противном случае укажите значение Absent. Значение по умолчанию — Present.| 
+| DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — __ResourceName__, а его тип — __ResourceType__, то синтаксис использования этого свойства таков: 'DependsOn = "[ResourceType]ResourceName"''.| 
+| StandardErrorPath| Указывает путь к каталогу для записи стандартных ошибок. Все существующие файлы в этом каталоге будут перезаписаны.| 
+| StandardInputPath| Указывает расположение стандартного ввода.| 
+| StandardOutputPath| Указывает расположение стандартного вывода. Все существующие файлы в этом каталоге будут перезаписаны.| 
+| WorkingDirectory| Указывает расположение, которое будет использоваться в качестве текущего рабочего каталога для процесса.| 
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
