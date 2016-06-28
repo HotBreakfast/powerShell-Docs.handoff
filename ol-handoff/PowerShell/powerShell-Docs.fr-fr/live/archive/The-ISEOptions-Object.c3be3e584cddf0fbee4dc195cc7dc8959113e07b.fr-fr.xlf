@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">272749d487a59ccf5eb30352dc902591228746f3</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEOptions-Object.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\ise\The-ISEOptions-Object.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">272749d487a59ccf5eb30352dc902591228746f3</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -219,8 +220,8 @@
           <target state="new">Methods</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
-          <source>RestoreDefaultConsoleTokenColors\(\)</source>
-          <target state="new">RestoreDefaultConsoleTokenColors\(\)</target>
+          <source>RestoreDefaultConsoleTokenColors</source>
+          <target state="new">RestoreDefaultConsoleTokenColors</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</source>
@@ -231,8 +232,8 @@
           <target state="new">Restores the default values of the token colors in the Console pane.</target>
         </trans-unit>
         <trans-unit id="156" translate="yes" xml:space="preserve">
-          <source>RestoreDefaults\(\)</source>
-          <target state="new">RestoreDefaults\(\)</target>
+          <source>RestoreDefaults</source>
+          <target state="new">RestoreDefaults</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -247,8 +248,8 @@
           <target state="new">It also resets the behavior of various warning messages that provide the standard check box to prevent the message from being shown again.</target>
         </trans-unit>
         <trans-unit id="160" translate="yes" xml:space="preserve">
-          <source>RestoreDefaultTokenColors\(\)</source>
-          <target state="new">RestoreDefaultTokenColors\(\)</target>
+          <source>RestoreDefaultTokenColors</source>
+          <target state="new">RestoreDefaultTokenColors</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 2.0 and later.</source>
@@ -259,8 +260,8 @@
           <target state="new">Restores the default values of the token colors in the Script pane.</target>
         </trans-unit>
         <trans-unit id="163" translate="yes" xml:space="preserve">
-          <source>RestoreDefaultXmlTokenColors\(\)</source>
-          <target state="new">RestoreDefaultXmlTokenColors\(\)</target>
+          <source>RestoreDefaultXmlTokenColors</source>
+          <target state="new">RestoreDefaultXmlTokenColors</target>
         </trans-unit>
         <trans-unit id="164" translate="yes" xml:space="preserve">
           <source>Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</source>
@@ -383,8 +384,8 @@
           <target state="new">Specifies the colors of the IntelliSense tokens in the Windows PowerShell ISE Console pane.</target>
         </trans-unit>
         <trans-unit id="194" translate="yes" xml:space="preserve">
-          <source>This property is a dictionary object that contains name\/value pairs of token types and colors for the Console pane.</source>
-          <target state="new">This property is a dictionary object that contains name\/value pairs of token types and colors for the Console pane.</target>
+          <source>This property is a dictionary object that contains name<ph id="ph1">\/</ph>value pairs of token types and colors for the Console pane.</source>
+          <target state="new">This property is a dictionary object that contains name<ph id="ph1">\/</ph>value pairs of token types and colors for the Console pane.</target>
         </trans-unit>
         <trans-unit id="195" translate="yes" xml:space="preserve">
           <source>To change the colors of the IntelliSense tokens in the Script pane, see <bpt id="p1">[</bpt>TokenColors<ept id="p1">](#tc)</ept>.</source>
@@ -563,8 +564,8 @@
           <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneBackgroundColor<ept id="p1">](#conpbc)</ept>.</target>
         </trans-unit>
         <trans-unit id="239" translate="yes" xml:space="preserve">
-          <source>The read\/write property that gets or sets the background color for the Output pane itself.</source>
-          <target state="new">The read\/write property that gets or sets the background color for the Output pane itself.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that gets or sets the background color for the Output pane itself.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that gets or sets the background color for the Output pane itself.</target>
         </trans-unit>
         <trans-unit id="240" translate="yes" xml:space="preserve">
           <source>It is an instance of the <bpt id="p1">**</bpt>System.Windows.Media.Color<ept id="p1">**</ept> class.</source>
@@ -583,8 +584,8 @@
           <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneForegroundColor<ept id="p1">](#conpfc)</ept>.</target>
         </trans-unit>
         <trans-unit id="244" translate="yes" xml:space="preserve">
-          <source>The read\/write property that changes the foreground color of the text in the Output pane in Windows PowerShell ISE 2.0.</source>
-          <target state="new">The read\/write property that changes the foreground color of the text in the Output pane in Windows PowerShell ISE 2.0.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that changes the foreground color of the text in the Output pane in Windows PowerShell ISE 2.0.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that changes the foreground color of the text in the Output pane in Windows PowerShell ISE 2.0.</target>
         </trans-unit>
         <trans-unit id="245" translate="yes" xml:space="preserve">
           <source>OutputPaneTextBackgroundColor</source>
@@ -599,8 +600,8 @@
           <target state="new">For later versions, see <bpt id="p1">[</bpt>ConsolePaneTextBackgroundColor<ept id="p1">](#conptbc)</ept>.</target>
         </trans-unit>
         <trans-unit id="248" translate="yes" xml:space="preserve">
-          <source>The read\/write property that changes the background color of the text in the Output pane.</source>
-          <target state="new">The read\/write property that changes the background color of the text in the Output pane.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that changes the background color of the text in the Output pane.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that changes the background color of the text in the Output pane.</target>
         </trans-unit>
         <trans-unit id="249" translate="yes" xml:space="preserve">
           <source>ScriptPaneBackgroundColor</source>
@@ -611,8 +612,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="251" translate="yes" xml:space="preserve">
-          <source>The read\/write property that gets or sets the background color for files.</source>
-          <target state="new">The read\/write property that gets or sets the background color for files.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that gets or sets the background color for files.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that gets or sets the background color for files.</target>
         </trans-unit>
         <trans-unit id="252" translate="yes" xml:space="preserve">
           <source>It is an instance of the <bpt id="p1">**</bpt>System.Windows.Media.Color<ept id="p1">**</ept> class.</source>
@@ -627,8 +628,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="255" translate="yes" xml:space="preserve">
-          <source>The read\/write property that gets or sets the foreground color for non\-script files in the Script pane.</source>
-          <target state="new">The read\/write property that gets or sets the foreground color for non\-script files in the Script pane.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that gets or sets the foreground color for non<ph id="ph2">\-</ph>script files in the Script pane.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that gets or sets the foreground color for non<ph id="ph2">\-</ph>script files in the Script pane.</target>
         </trans-unit>
         <trans-unit id="256" translate="yes" xml:space="preserve">
           <source>To set the foreground color for script files, use the <bpt id="p1">[</bpt>TokenColors<ept id="p1">](The-ISEOptions-Object.md#tc)</ept> property.</source>
@@ -643,8 +644,8 @@
           <target state="new">Supported in Windows PowerShell ISE 2.0 and later.</target>
         </trans-unit>
         <trans-unit id="259" translate="yes" xml:space="preserve">
-          <source>The read\/write property that gets or sets the position of the Script pane on the display.</source>
-          <target state="new">The read\/write property that gets or sets the position of the Script pane on the display.</target>
+          <source>The read<ph id="ph1">\/</ph>write property that gets or sets the position of the Script pane on the display.</source>
+          <target state="new">The read<ph id="ph1">\/</ph>write property that gets or sets the position of the Script pane on the display.</target>
         </trans-unit>
         <trans-unit id="260" translate="yes" xml:space="preserve">
           <source>The string can be either "Maximized", "Top", or "Right".</source>
@@ -659,12 +660,12 @@
           <target state="new">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</target>
         </trans-unit>
         <trans-unit id="263" translate="yes" xml:space="preserve">
-          <source>Specifies whether the <bpt id="p1">**</bpt>CTRL\+J<ept id="p1">**</ept> list of snippets includes the starter set that is included in Windows PowerShell.</source>
-          <target state="new">Specifies whether the <bpt id="p1">**</bpt>CTRL\+J<ept id="p1">**</ept> list of snippets includes the starter set that is included in Windows PowerShell.</target>
+          <source>Specifies whether the <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>J<ept id="p1">**</ept> list of snippets includes the starter set that is included in Windows PowerShell.</source>
+          <target state="new">Specifies whether the <bpt id="p1">**</bpt>CTRL<ph id="ph1">\+</ph>J<ept id="p1">**</ept> list of snippets includes the starter set that is included in Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="264" translate="yes" xml:space="preserve">
-          <source>When set to <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, only user\-defined snippets appear in the <bpt id="p2">**</bpt>CTRL\+J<ept id="p2">**</ept> list.</source>
-          <target state="new">When set to <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, only user\-defined snippets appear in the <bpt id="p2">**</bpt>CTRL\+J<ept id="p2">**</ept> list.</target>
+          <source>When set to <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, only user<ph id="ph1">\-</ph>defined snippets appear in the <bpt id="p2">**</bpt>CTRL<ph id="ph2">\+</ph>J<ept id="p2">**</ept> list.</source>
+          <target state="new">When set to <bpt id="p1">**</bpt>$false<ept id="p1">**</ept>, only user<ph id="ph1">\-</ph>defined snippets appear in the <bpt id="p2">**</bpt>CTRL<ph id="ph2">\+</ph>J<ept id="p2">**</ept> list.</target>
         </trans-unit>
         <trans-unit id="265" translate="yes" xml:space="preserve">
           <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
@@ -731,8 +732,8 @@
           <target state="new">Specifies whether the Script pane displays expandable and collapsible brackets next to sections of code in the left margin.</target>
         </trans-unit>
         <trans-unit id="281" translate="yes" xml:space="preserve">
-          <source>When they are displayed, you can click the minus \(\-\) icons next to a block of text to collapse it or click the plus \(\+\) icon to expand a block of text.</source>
-          <target state="new">When they are displayed, you can click the minus \(\-\) icons next to a block of text to collapse it or click the plus \(\+\) icon to expand a block of text.</target>
+          <source>When they are displayed, you can click the minus <ph id="ph1">\(\-\)</ph> icons next to a block of text to collapse it or click the plus <ph id="ph2">\(\+\)</ph> icon to expand a block of text.</source>
+          <target state="new">When they are displayed, you can click the minus <ph id="ph1">\(\-\)</ph> icons next to a block of text to collapse it or click the plus <ph id="ph2">\(\+\)</ph> icon to expand a block of text.</target>
         </trans-unit>
         <trans-unit id="282" translate="yes" xml:space="preserve">
           <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
@@ -807,8 +808,8 @@
           <target state="new">Specifies the colors of the IntelliSense tokens in the Windows PowerShell ISE Script pane.</target>
         </trans-unit>
         <trans-unit id="300" translate="yes" xml:space="preserve">
-          <source>This property is a dictionary object that contains name\/value pairs of token types and colors for the Script pane.</source>
-          <target state="new">This property is a dictionary object that contains name\/value pairs of token types and colors for the Script pane.</target>
+          <source>This property is a dictionary object that contains name<ph id="ph1">\/</ph>value pairs of token types and colors for the Script pane.</source>
+          <target state="new">This property is a dictionary object that contains name<ph id="ph1">\/</ph>value pairs of token types and colors for the Script pane.</target>
         </trans-unit>
         <trans-unit id="301" translate="yes" xml:space="preserve">
           <source>To change the colors of the IntelliSense tokens in the Console pane, see <bpt id="p1">[</bpt>ConsoleTokenColors<ept id="p1">](#contc)</ept>.</source>
@@ -847,8 +848,8 @@
           <target state="new">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</target>
         </trans-unit>
         <trans-unit id="310" translate="yes" xml:space="preserve">
-          <source>Specifies whether you can use the Enter key to select an IntelliSense\-provided option in the Script pane.</source>
-          <target state="new">Specifies whether you can use the Enter key to select an IntelliSense\-provided option in the Script pane.</target>
+          <source>Specifies whether you can use the Enter key to select an IntelliSense<ph id="ph1">\-</ph>provided option in the Script pane.</source>
+          <target state="new">Specifies whether you can use the Enter key to select an IntelliSense<ph id="ph1">\-</ph>provided option in the Script pane.</target>
         </trans-unit>
         <trans-unit id="311" translate="yes" xml:space="preserve">
           <source>The default value is <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>.</source>
@@ -867,8 +868,8 @@
           <target state="new">Specifies whether the locally installed Help or the online TechNet Library Help appears when you press F1 with the cursor positioned in a keyword.</target>
         </trans-unit>
         <trans-unit id="315" translate="yes" xml:space="preserve">
-          <source>If set to <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>, then a pop\-up window shows content from the locally installed Help.</source>
-          <target state="new">If set to <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>, then a pop\-up window shows content from the locally installed Help.</target>
+          <source>If set to <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>, then a pop<ph id="ph1">\-</ph>up window shows content from the locally installed Help.</source>
+          <target state="new">If set to <bpt id="p1">**</bpt>$true<ept id="p1">**</ept>, then a pop<ph id="ph1">\-</ph>up window shows content from the locally installed Help.</target>
         </trans-unit>
         <trans-unit id="316" translate="yes" xml:space="preserve">
           <source>You can install the Help files by running the <ph id="ph1">`Update-Help`</ph> command.</source>
@@ -951,8 +952,8 @@
           <target state="new">Supported in Windows PowerShell ISE 3.0 and later, and not present in earlier versions.</target>
         </trans-unit>
         <trans-unit id="336" translate="yes" xml:space="preserve">
-          <source>Specifies a dictionary object that contains name\/value pairs of token types and colors for XML content that is displayed in Windows PowerShell ISE.</source>
-          <target state="new">Specifies a dictionary object that contains name\/value pairs of token types and colors for XML content that is displayed in Windows PowerShell ISE.</target>
+          <source>Specifies a dictionary object that contains name<ph id="ph1">\/</ph>value pairs of token types and colors for XML content that is displayed in Windows PowerShell ISE.</source>
+          <target state="new">Specifies a dictionary object that contains name<ph id="ph1">\/</ph>value pairs of token types and colors for XML content that is displayed in Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="337" translate="yes" xml:space="preserve">
           <source>Token colors can be set for the following: Attribute, Command, CommandArgument, CommandParameter, Comment, GroupEnd, GroupStart, Keyword, LineContinuation, LoopLabel, Member, NewLine, Number, Operator, Position, StatementSeparator, String, Type, Unknown, Variable.</source>

@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d4a801c534075db568cb38eb51cb11db40cce15</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Windows-PowerShell-Basics.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\fundamental\Windows-PowerShell-Basics.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8d4a801c534075db568cb38eb51cb11db40cce15</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -27,20 +28,20 @@
           <target state="new">Users rely on the familiarity of those interfaces to accomplish tasks.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Operating systems present users with a graphical representation of items that can be browsed, usually with drop\-down menus for accessing specific functionality and context menus for accessing context\-specific functionality.</source>
-          <target state="new">Operating systems present users with a graphical representation of items that can be browsed, usually with drop\-down menus for accessing specific functionality and context menus for accessing context\-specific functionality.</target>
+          <source>Operating systems present users with a graphical representation of items that can be browsed, usually with drop<ph id="ph1">\-</ph>down menus for accessing specific functionality and context menus for accessing context<ph id="ph2">\-</ph>specific functionality.</source>
+          <target state="new">Operating systems present users with a graphical representation of items that can be browsed, usually with drop<ph id="ph1">\-</ph>down menus for accessing specific functionality and context menus for accessing context<ph id="ph2">\-</ph>specific functionality.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>A command\-line interface (CLI), such as Windows PowerShell, must use a different approach to expose information, because it does not have menus or graphical systems to help the user.</source>
-          <target state="new">A command\-line interface (CLI), such as Windows PowerShell, must use a different approach to expose information, because it does not have menus or graphical systems to help the user.</target>
+          <source>A command<ph id="ph1">\-</ph>line interface (CLI), such as Windows PowerShell, must use a different approach to expose information, because it does not have menus or graphical systems to help the user.</source>
+          <target state="new">A command<ph id="ph1">\-</ph>line interface (CLI), such as Windows PowerShell, must use a different approach to expose information, because it does not have menus or graphical systems to help the user.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>You need to know command names before you can use them.</source>
           <target state="new">You need to know command names before you can use them.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
-          <source>Although you can type complex commands that are equivalent to the features in a GUI environment, you must become familiar with commonly\-used commands and command parameters.</source>
-          <target state="new">Although you can type complex commands that are equivalent to the features in a GUI environment, you must become familiar with commonly\-used commands and command parameters.</target>
+          <source>Although you can type complex commands that are equivalent to the features in a GUI environment, you must become familiar with commonly<ph id="ph1">\-</ph>used commands and command parameters.</source>
+          <target state="new">Although you can type complex commands that are equivalent to the features in a GUI environment, you must become familiar with commonly<ph id="ph1">\-</ph>used commands and command parameters.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>Most CLIs do not have patterns that can help the user to learn the interface.</source>
@@ -71,8 +72,8 @@
           <target state="new">They include:</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>Using Get\-Command</source>
-          <target state="new">Using Get\-Command</target>
+          <source>Using Get<ph id="ph1">\-</ph>Command</source>
+          <target state="new">Using Get<ph id="ph1">\-</ph>Command</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>Using Cmd.exe and UNIX commands</source>
@@ -83,12 +84,12 @@
           <target state="new">Using External Commands</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>Using Tab\-Completion</source>
-          <target state="new">Using Tab\-Completion</target>
+          <source>Using Tab<ph id="ph1">\-</ph>Completion</source>
+          <target state="new">Using Tab<ph id="ph1">\-</ph>Completion</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>Using Get\-Help</source>
-          <target state="new">Using Get\-Help</target>
+          <source>Using Get<ph id="ph1">\-</ph>Help</source>
+          <target state="new">Using Get<ph id="ph1">\-</ph>Help</target>
         </trans-unit>
       </group>
     </body>

@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e986e85a5d7416d8deaec06c0784263ee09fc9ff</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Creating-.NET-and-COM-Objects--New-Object-.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Creating-.NET-and-COM-Objects--New-Object-.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e986e85a5d7416d8deaec06c0784263ee09fc9ff</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -35,16 +36,16 @@
           <target state="new">We will demonstrate how to get around this limitation when managing event logs by using the .NET Framework <bpt id="p1">**</bpt>System.Diagnostics.EventLog<ept id="p1">**</ept> class directly from Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>Using New\-Object for Event Log Access</source>
-          <target state="new">Using New\-Object for Event Log Access</target>
+          <source>Using New<ph id="ph1">\-</ph>Object for Event Log Access</source>
+          <target state="new">Using New<ph id="ph1">\-</ph>Object for Event Log Access</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>The .NET Framework Class Library includes a class named <bpt id="p1">**</bpt>System.Diagnostics.EventLog<ept id="p1">**</ept> that can be used to manage event logs.</source>
           <target state="new">The .NET Framework Class Library includes a class named <bpt id="p1">**</bpt>System.Diagnostics.EventLog<ept id="p1">**</ept> that can be used to manage event logs.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>You can create a new instance of a .NET Framework class by using the <bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> cmdlet with the <bpt id="p2">**</bpt>TypeName<ept id="p2">**</ept> parameter.</source>
-          <target state="new">You can create a new instance of a .NET Framework class by using the <bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> cmdlet with the <bpt id="p2">**</bpt>TypeName<ept id="p2">**</ept> parameter.</target>
+          <source>You can create a new instance of a .NET Framework class by using the <bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> cmdlet with the <bpt id="p2">**</bpt>TypeName<ept id="p2">**</ept> parameter.</source>
+          <target state="new">You can create a new instance of a .NET Framework class by using the <bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> cmdlet with the <bpt id="p2">**</bpt>TypeName<ept id="p2">**</ept> parameter.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>For example, the following command creates an event log reference:</source>
@@ -63,16 +64,16 @@
           <target state="new">How do you get a real event log?</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>Using Constructors with New\-Object</source>
-          <target state="new">Using Constructors with New\-Object</target>
+          <source>Using Constructors with New<ph id="ph1">\-</ph>Object</source>
+          <target state="new">Using Constructors with New<ph id="ph1">\-</ph>Object</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>To refer to a specific event log, you need to specify the name of the log.</source>
           <target state="new">To refer to a specific event log, you need to specify the name of the log.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> has an <bpt id="p2">**</bpt>ArgumentList<ept id="p2">**</ept> parameter.</source>
-          <target state="new"><bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> has an <bpt id="p2">**</bpt>ArgumentList<ept id="p2">**</ept> parameter.</target>
+          <source><bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> has an <bpt id="p2">**</bpt>ArgumentList<ept id="p2">**</ept> parameter.</source>
+          <target state="new"><bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> has an <bpt id="p2">**</bpt>ArgumentList<ept id="p2">**</ept> parameter.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>The arguments you pass as values to this parameter are used by a special startup method of the object.</source>
@@ -127,12 +128,12 @@
           <target state="new">If you then type $AppLog, you can see that it contains the Application log:</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>Accessing a Remote Event Log with New\-Object</source>
-          <target state="new">Accessing a Remote Event Log with New\-Object</target>
+          <source>Accessing a Remote Event Log with New<ph id="ph1">\-</ph>Object</source>
+          <target state="new">Accessing a Remote Event Log with New<ph id="ph1">\-</ph>Object</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
-          <source>The commands used in the preceding section target the local computer; the <bpt id="p1">**</bpt>Get\-EventLog<ept id="p1">**</ept> cmdlet can do that.</source>
-          <target state="new">The commands used in the preceding section target the local computer; the <bpt id="p1">**</bpt>Get\-EventLog<ept id="p1">**</ept> cmdlet can do that.</target>
+          <source>The commands used in the preceding section target the local computer; the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>EventLog<ept id="p1">**</ept> cmdlet can do that.</source>
+          <target state="new">The commands used in the preceding section target the local computer; the <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>EventLog<ept id="p1">**</ept> cmdlet can do that.</target>
         </trans-unit>
         <trans-unit id="132" translate="yes" xml:space="preserve">
           <source>To access the Application log on a remote computer, you must supply both the log name and a computer name (or IP address) as arguments.</source>
@@ -151,8 +152,8 @@
           <target state="new">Objects often have methods that can be called to perform tasks.</target>
         </trans-unit>
         <trans-unit id="136" translate="yes" xml:space="preserve">
-          <source>You can use <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> to display the methods associated with an object.</source>
-          <target state="new">You can use <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> to display the methods associated with an object.</target>
+          <source>You can use <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> to display the methods associated with an object.</source>
+          <target state="new">You can use <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> to display the methods associated with an object.</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>The following command and selected output show some the methods of the EventLog class:</source>
@@ -183,28 +184,28 @@
           <target state="new">You will see that the event log was cleared, and now has 0 entries instead of 262:</target>
         </trans-unit>
         <trans-unit id="144" translate="yes" xml:space="preserve">
-          <source>Creating COM Objects with New\-Object</source>
-          <target state="new">Creating COM Objects with New\-Object</target>
+          <source>Creating COM Objects with New<ph id="ph1">\-</ph>Object</source>
+          <target state="new">Creating COM Objects with New<ph id="ph1">\-</ph>Object</target>
         </trans-unit>
         <trans-unit id="145" translate="yes" xml:space="preserve">
-          <source>You can use <bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> to work with Component Object Model (COM) components.</source>
-          <target state="new">You can use <bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> to work with Component Object Model (COM) components.</target>
+          <source>You can use <bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> to work with Component Object Model (COM) components.</source>
+          <target state="new">You can use <bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> to work with Component Object Model (COM) components.</target>
         </trans-unit>
         <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>Components range from the various libraries included with Windows Script Host (WSH) to ActiveX applications such as Internet Explorer that are installed on most systems.</source>
           <target state="new">Components range from the various libraries included with Windows Script Host (WSH) to ActiveX applications such as Internet Explorer that are installed on most systems.</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> uses .NET Framework Runtime\-Callable Wrappers to create COM objects, so it has the same limitations that .NET Framework does when calling COM objects.</source>
-          <target state="new"><bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> uses .NET Framework Runtime\-Callable Wrappers to create COM objects, so it has the same limitations that .NET Framework does when calling COM objects.</target>
+          <source><bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> uses .NET Framework Runtime<ph id="ph2">\-</ph>Callable Wrappers to create COM objects, so it has the same limitations that .NET Framework does when calling COM objects.</source>
+          <target state="new"><bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> uses .NET Framework Runtime<ph id="ph2">\-</ph>Callable Wrappers to create COM objects, so it has the same limitations that .NET Framework does when calling COM objects.</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>To create a COM object, you need to specify the <bpt id="p1">**</bpt>ComObject<ept id="p1">**</ept> parameter with the Programmatic Identifier or <bpt id="p2">*</bpt>ProgId<ept id="p2">*</ept> of the COM class you want to use.</source>
           <target state="new">To create a COM object, you need to specify the <bpt id="p1">**</bpt>ComObject<ept id="p1">**</ept> parameter with the Programmatic Identifier or <bpt id="p2">*</bpt>ProgId<ept id="p2">*</ept> of the COM class you want to use.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
-          <source>A complete discussion of the limitations of COM use and determining what ProgIds are available on a system is beyond the scope of this user's guide, but most well\-known objects from environments such as WSH can be used within Windows PowerShell.</source>
-          <target state="new">A complete discussion of the limitations of COM use and determining what ProgIds are available on a system is beyond the scope of this user's guide, but most well\-known objects from environments such as WSH can be used within Windows PowerShell.</target>
+          <source>A complete discussion of the limitations of COM use and determining what ProgIds are available on a system is beyond the scope of this user's guide, but most well<ph id="ph1">\-</ph>known objects from environments such as WSH can be used within Windows PowerShell.</source>
+          <target state="new">A complete discussion of the limitations of COM use and determining what ProgIds are available on a system is beyond the scope of this user's guide, but most well<ph id="ph1">\-</ph>known objects from environments such as WSH can be used within Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="150" translate="yes" xml:space="preserve">
           <source>You can create the WSH objects by specifying these progids: <bpt id="p1">**</bpt>WScript.Shell<ept id="p1">**</ept>, <bpt id="p2">**</bpt>WScript.Network<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Scripting.Dictionary<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Scripting.FileSystemObject<ept id="p4">**</ept>.</source>
@@ -235,24 +236,24 @@
           <target state="new">You first need to create a reference to <bpt id="p1">**</bpt>WScript.Shell<ept id="p1">**</ept>, which we will store in a variable named <bpt id="p2">**</bpt>$WshShell<ept id="p2">**</ept>:</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
-          <source>Get\-Member works with COM objects, so you can explore the members of the object by typing:</source>
-          <target state="new">Get\-Member works with COM objects, so you can explore the members of the object by typing:</target>
+          <source>Get<ph id="ph1">\-</ph>Member works with COM objects, so you can explore the members of the object by typing:</source>
+          <target state="new">Get<ph id="ph1">\-</ph>Member works with COM objects, so you can explore the members of the object by typing:</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> has an optional <bpt id="p2">**</bpt>InputObject<ept id="p2">**</ept> parameter you can use instead of piping to provide input to <bpt id="p3">**</bpt>Get\-Member<ept id="p3">**</ept>.</source>
-          <target state="new"><bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> has an optional <bpt id="p2">**</bpt>InputObject<ept id="p2">**</ept> parameter you can use instead of piping to provide input to <bpt id="p3">**</bpt>Get\-Member<ept id="p3">**</ept>.</target>
+          <source><bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> has an optional <bpt id="p2">**</bpt>InputObject<ept id="p2">**</ept> parameter you can use instead of piping to provide input to <bpt id="p3">**</bpt>Get<ph id="ph2">\-</ph>Member<ept id="p3">**</ept>.</source>
+          <target state="new"><bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> has an optional <bpt id="p2">**</bpt>InputObject<ept id="p2">**</ept> parameter you can use instead of piping to provide input to <bpt id="p3">**</bpt>Get<ph id="ph2">\-</ph>Member<ept id="p3">**</ept>.</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
-          <source>You would get the same output as shown above if you instead used the command <bpt id="p1">**</bpt>Get\-Member \-InputObject $WshShell<ept id="p1">**</ept>.</source>
-          <target state="new">You would get the same output as shown above if you instead used the command <bpt id="p1">**</bpt>Get\-Member \-InputObject $WshShell<ept id="p1">**</ept>.</target>
+          <source>You would get the same output as shown above if you instead used the command <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member <ph id="ph2">\-</ph>InputObject $WshShell<ept id="p1">**</ept>.</source>
+          <target state="new">You would get the same output as shown above if you instead used the command <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member <ph id="ph2">\-</ph>InputObject $WshShell<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="160" translate="yes" xml:space="preserve">
           <source>If you use <bpt id="p1">**</bpt>InputObject<ept id="p1">**</ept>, it treats its argument as a single item.</source>
           <target state="new">If you use <bpt id="p1">**</bpt>InputObject<ept id="p1">**</ept>, it treats its argument as a single item.</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
-          <source>This means that if you have several objects in a variable, <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> treats them as an array of objects.</source>
-          <target state="new">This means that if you have several objects in a variable, <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept> treats them as an array of objects.</target>
+          <source>This means that if you have several objects in a variable, <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> treats them as an array of objects.</source>
+          <target state="new">This means that if you have several objects in a variable, <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept> treats them as an array of objects.</target>
         </trans-unit>
         <trans-unit id="162" translate="yes" xml:space="preserve">
           <source>For example:</source>
@@ -279,12 +280,12 @@
           <target state="new">We can specify the path to the home folder by using this variable, and then add the name of the Desktop folder and the name for the shortcut to create by typing:</target>
         </trans-unit>
         <trans-unit id="168" translate="yes" xml:space="preserve">
-          <source>When you use something that looks like a variable name inside double\-quotes, Windows PowerShell tries to substitute a matching value.</source>
-          <target state="new">When you use something that looks like a variable name inside double\-quotes, Windows PowerShell tries to substitute a matching value.</target>
+          <source>When you use something that looks like a variable name inside double<ph id="ph1">\-</ph>quotes, Windows PowerShell tries to substitute a matching value.</source>
+          <target state="new">When you use something that looks like a variable name inside double<ph id="ph1">\-</ph>quotes, Windows PowerShell tries to substitute a matching value.</target>
         </trans-unit>
         <trans-unit id="169" translate="yes" xml:space="preserve">
-          <source>If you use single\-quotes, Windows PowerShell does not try to substitute the variable value.</source>
-          <target state="new">If you use single\-quotes, Windows PowerShell does not try to substitute the variable value.</target>
+          <source>If you use single<ph id="ph1">\-</ph>quotes, Windows PowerShell does not try to substitute the variable value.</source>
+          <target state="new">If you use single<ph id="ph1">\-</ph>quotes, Windows PowerShell does not try to substitute the variable value.</target>
         </trans-unit>
         <trans-unit id="170" translate="yes" xml:space="preserve">
           <source>For example, try typing the following commands:</source>
@@ -295,8 +296,8 @@
           <target state="new">We now have a variable named <bpt id="p1">**</bpt>$lnk<ept id="p1">**</ept> that contains a new shortcut reference.</target>
         </trans-unit>
         <trans-unit id="172" translate="yes" xml:space="preserve">
-          <source>If you want to see its members, you can pipe it to <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept>.</source>
-          <target state="new">If you want to see its members, you can pipe it to <bpt id="p1">**</bpt>Get\-Member<ept id="p1">**</ept>.</target>
+          <source>If you want to see its members, you can pipe it to <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept>.</source>
+          <target state="new">If you want to see its members, you can pipe it to <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="173" translate="yes" xml:space="preserve">
           <source>The output below shows the members we need to use to finish creating our shortcut:</source>
@@ -327,8 +328,8 @@
           <target state="new">Many applications (including the Microsoft Office family of applications and Internet Explorer) can be automated by using COM.</target>
         </trans-unit>
         <trans-unit id="180" translate="yes" xml:space="preserve">
-          <source>Internet Explorer illustrates some of the typical techniques and issues involved in working with COM\-based applications.</source>
-          <target state="new">Internet Explorer illustrates some of the typical techniques and issues involved in working with COM\-based applications.</target>
+          <source>Internet Explorer illustrates some of the typical techniques and issues involved in working with COM<ph id="ph1">\-</ph>based applications.</source>
+          <target state="new">Internet Explorer illustrates some of the typical techniques and issues involved in working with COM<ph id="ph1">\-</ph>based applications.</target>
         </trans-unit>
         <trans-unit id="181" translate="yes" xml:space="preserve">
           <source>You create an Internet Explorer instance by specifying the Internet Explorer ProgId, <bpt id="p1">**</bpt>InternetExplorer.Application<ept id="p1">**</ept>:</source>
@@ -339,8 +340,8 @@
           <target state="new">This command starts Internet Explorer, but does not make it visible.</target>
         </trans-unit>
         <trans-unit id="183" translate="yes" xml:space="preserve">
-          <source>If you type Get\-Process, you can see that a process named iexplore is running.</source>
-          <target state="new">If you type Get\-Process, you can see that a process named iexplore is running.</target>
+          <source>If you type Get<ph id="ph1">\-</ph>Process, you can see that a process named iexplore is running.</source>
+          <target state="new">If you type Get<ph id="ph1">\-</ph>Process, you can see that a process named iexplore is running.</target>
         </trans-unit>
         <trans-unit id="184" translate="yes" xml:space="preserve">
           <source>In fact, if you exit Windows PowerShell, the process will continue to run.</source>
@@ -359,8 +360,8 @@
           <target state="new">If they create a window but do not make it visible, like Internet Explorer, the focus will generally move to the Windows desktop and you must make the window visible to interact with it.</target>
         </trans-unit>
         <trans-unit id="188" translate="yes" xml:space="preserve">
-          <source>By typing <bpt id="p1">**</bpt>$ie | Get\-Member<ept id="p1">**</ept>, you can view properties and methods for Internet Explorer.</source>
-          <target state="new">By typing <bpt id="p1">**</bpt>$ie | Get\-Member<ept id="p1">**</ept>, you can view properties and methods for Internet Explorer.</target>
+          <source>By typing <bpt id="p1">**</bpt>$ie | Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept>, you can view properties and methods for Internet Explorer.</source>
+          <target state="new">By typing <bpt id="p1">**</bpt>$ie | Get<ph id="ph1">\-</ph>Member<ept id="p1">**</ept>, you can view properties and methods for Internet Explorer.</target>
         </trans-unit>
         <trans-unit id="189" translate="yes" xml:space="preserve">
           <source>To see the Internet Explorer window, set the Visible property to $true by typing:</source>
@@ -395,8 +396,8 @@
           <target state="new">If you attempt to use it, you will get an automation error:</target>
         </trans-unit>
         <trans-unit id="197" translate="yes" xml:space="preserve">
-          <source>You can either remove the remaining reference with a command like $ie \= $null, or completely remove the variable by typing:</source>
-          <target state="new">You can either remove the remaining reference with a command like $ie \= $null, or completely remove the variable by typing:</target>
+          <source>You can either remove the remaining reference with a command like $ie <ph id="ph1">\=</ph> $null, or completely remove the variable by typing:</source>
+          <target state="new">You can either remove the remaining reference with a command like $ie <ph id="ph1">\=</ph> $null, or completely remove the variable by typing:</target>
         </trans-unit>
         <trans-unit id="198" translate="yes" xml:space="preserve">
           <source>There is no common standard for whether ActiveX executables exit or continue to run when you remove a reference to one.</source>
@@ -411,16 +412,16 @@
           <target state="new">For this reason, you should test termination behavior for each ActiveX executable you want to use in Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="201" translate="yes" xml:space="preserve">
-          <source>Getting Warnings About .NET Framework\-Wrapped COM Objects</source>
-          <target state="new">Getting Warnings About .NET Framework\-Wrapped COM Objects</target>
+          <source>Getting Warnings About .NET Framework<ph id="ph1">\-</ph>Wrapped COM Objects</source>
+          <target state="new">Getting Warnings About .NET Framework<ph id="ph1">\-</ph>Wrapped COM Objects</target>
         </trans-unit>
         <trans-unit id="202" translate="yes" xml:space="preserve">
-          <source>In some cases, a COM object might have an associated .NET Framework <bpt id="p1">*</bpt>Runtime\-Callable Wrapper<ept id="p1">*</ept> or RCW, and this will be used by <bpt id="p2">**</bpt>New\-Object<ept id="p2">**</ept>.</source>
-          <target state="new">In some cases, a COM object might have an associated .NET Framework <bpt id="p1">*</bpt>Runtime\-Callable Wrapper<ept id="p1">*</ept> or RCW, and this will be used by <bpt id="p2">**</bpt>New\-Object<ept id="p2">**</ept>.</target>
+          <source>In some cases, a COM object might have an associated .NET Framework <bpt id="p1">*</bpt>Runtime<ph id="ph1">\-</ph>Callable Wrapper<ept id="p1">*</ept> or RCW, and this will be used by <bpt id="p2">**</bpt>New<ph id="ph2">\-</ph>Object<ept id="p2">**</ept>.</source>
+          <target state="new">In some cases, a COM object might have an associated .NET Framework <bpt id="p1">*</bpt>Runtime<ph id="ph1">\-</ph>Callable Wrapper<ept id="p1">*</ept> or RCW, and this will be used by <bpt id="p2">**</bpt>New<ph id="ph2">\-</ph>Object<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="203" translate="yes" xml:space="preserve">
-          <source>Since the behavior of the RCW may be different from the behavior of the normal COM object, <bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> has a <bpt id="p2">**</bpt>Strict<ept id="p2">**</ept> parameter to warn you about RCW access.</source>
-          <target state="new">Since the behavior of the RCW may be different from the behavior of the normal COM object, <bpt id="p1">**</bpt>New\-Object<ept id="p1">**</ept> has a <bpt id="p2">**</bpt>Strict<ept id="p2">**</ept> parameter to warn you about RCW access.</target>
+          <source>Since the behavior of the RCW may be different from the behavior of the normal COM object, <bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> has a <bpt id="p2">**</bpt>Strict<ept id="p2">**</ept> parameter to warn you about RCW access.</source>
+          <target state="new">Since the behavior of the RCW may be different from the behavior of the normal COM object, <bpt id="p1">**</bpt>New<ph id="ph1">\-</ph>Object<ept id="p1">**</ept> has a <bpt id="p2">**</bpt>Strict<ept id="p2">**</ept> parameter to warn you about RCW access.</target>
         </trans-unit>
         <trans-unit id="204" translate="yes" xml:space="preserve">
           <source>If you specify the <bpt id="p1">**</bpt>Strict<ept id="p1">**</ept> parameter and then create a COM object that uses an RCW, you get a warning message:</source>
