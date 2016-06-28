@@ -1,65 +1,75 @@
 ---
-title:  GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
-ms.date:  2016-05-16
-keywords:  powershell,DSC
-description:  
-ms.topic:  article
-author:  eslesar
-manager:  dongill
-ms.prod:  powershell
+title: Metodo GetConfigurationResultOutput della classe MSFT_DSCLocalConfigurationManager
+ms.date: 2016-05-16
+keywords: powershell,DSC
+description: 
+ms.topic: article
+author: eslesar
+manager: dongill
+ms.prod: powershell
+translationtype: Human Translation
+ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
+ms.openlocfilehash: 8f13964dfbbe1cd827c58232a35d1cbacddeed1b
+
 ---
 
-# GetConfigurationResultOutput method of the MSFT_DSCLocalConfigurationManager class
+# Metodo GetConfigurationResultOutput della classe MSFT_DSCLocalConfigurationManager
 
-Gets the Configuration Agent output associated with a specific job.
+Recupera l'output dell'agente di configurazione associato a un processo specifico.
 
-Syntax
+Sintassi
 ------
 
 ```mof
 uint32 GetConfigurationResultOutput(
-  [in]  string                      jobId,
-  [in]  uint8                       resumeOutputBookmark[],
-  [out] MSFT_DSCConfigurationOutput output[]
+  [in]  string                      jobId,
+  [in]  uint8                       resumeOutputBookmark[],
+  [out] MSFT_DSCConfigurationOutput output[]
 );
 ```
 
-Parameters
+Parametri
 ----------
 
 *jobId* \[in\]  
-The ID of the job for which to get output data.
+L'ID del processo di cui ottenere i dati di output.
 
 *resumeOutputBookmark* \[in\]  
-Specifies that the output should be a continuation from a previous bookmark.
+Specifica che l'output deve essere la continuazione di un segnalibro precedente.
 
 *output* \[out\]  
-The output for the specified job.
+L'output per il processo specificato.
 
-## Return value
+## Valore restituito
 ------------
 
-Returns zero on success; otherwise returns an error code.
+In caso di esito positivo, il valore restituisce zero, altrimenti, restituisce un codice di errore.
 
-## Remarks
+## Osservazioni
 
-This is a static method.
+Si tratta di un metodo statico.
 
-## Requirements
+## Requisiti
 ------------
 >**MOF:** DscCore.mof
 
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Spazio dei nomi**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## See also
+## Vedere anche
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
- 
+ 
 
- 
+ 
 
+
+
+
+
+
+<!--HONumber=Jun16_HO4-->
 
 
