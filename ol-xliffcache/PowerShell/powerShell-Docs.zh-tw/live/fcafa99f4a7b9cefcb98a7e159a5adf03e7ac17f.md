@@ -1,8 +1,8 @@
-# Interact with Symbolic links using improved Item cmdlets
+# 使用改進的 Item Cmdlet 與符號連結互動
 
-To support symbolic links, **\*-Item** and a few related cmdlets have been extended. Now you can create symbolic links in a single, simple line with **New-Item**. You’ll notice that the Item-related cmdlets (**Remove-Item, Get-ChildItem**) behave very similarly to before.
+為了支援符號連結，已擴充 **\*-Item** 和幾個相關 Cmdlet。 現在您可以用 **New-Item** 在單一、簡單的行中建立符號連結。 您會發現與項目相關的 Cmdlet (**Remove-Item, Get-ChildItem**) 行為與之前非常類似。
 
-The following shows some use cases of the new capabilities:
+下圖示範某些新功能的使用案例︰
 
 ## NEW-ITEM
 
@@ -113,3 +113,8 @@ Remove-Item C:\Temp\MySymLinkDir
 # Removes the files in the target directory and MySymLinkDir
 Remove-Item C:\Temp\MySymLinkDir -Force
 ```
+
+
+<!--HONumber=Jun16_HO4-->
+
+
