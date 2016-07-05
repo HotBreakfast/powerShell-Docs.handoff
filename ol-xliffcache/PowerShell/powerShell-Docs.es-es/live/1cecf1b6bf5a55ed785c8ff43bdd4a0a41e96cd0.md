@@ -1,87 +1,96 @@
 ---
-description:  
-manager:  dongill
-ms.topic:  article
-author:  jpjofre
-ms.prod:  powershell
-keywords:  powershell,cmdlet,jea
-ms.date:  2016-06-22
-title:  README
-ms.technology:  powershell
+description: 
+manager: dongill
+ms.topic: article
+author: jpjofre
+ms.prod: powershell
+keywords: powershell,cmdlet,jea
+ms.date: 2016-06-22
+title: "ARCHIVO LÉAME"
+ms.technology: powershell
+ms.sourcegitcommit: 47593773fb0f34e0b52d35617522d7b1db7f48e6
+ms.openlocfilehash: 1cecf1b6bf5a55ed785c8ff43bdd4a0a41e96cd0
+
 ---
 
 # Just Enough Administration
-Just Enough Administration (JEA) is a security technology that enables delegated administration for anything that can be managed with PowerShell.
-With JEA, you can:
-- **Reduce the number of administrators on your machines** by leveraging virtual accounts that perform privileged actions on behalf of regular users.
-- **Limit what users can do** by specifying which cmdlets, functions, and external commands they can run.
-- **Better understand what your users are doing** with "over the shoulder" transcriptions that show you exactly what commands a user executed during a session.
+Just Enough Administration (JEA) es una tecnología de seguridad que permite la administración delegada de todo lo que se puede administrar con PowerShell.
+Con JEA, se puede hacer lo siguiente:
+- **Reducir el número de administradores de las máquinas** aprovechando las cuentas virtuales que realizan acciones con privilegios en nombre de usuarios normales.
+- **Limitar lo que pueden hacer los usuarios** especificando qué cmdlets, funciones y comandos externos pueden ejecutar.
+- **Entender mejor lo que hacen los usuarios** con transcripciones "con consentimiento temporal" que muestran exactamente qué comandos ejecutó un usuario durante una sesión.
 
-**Why is this important?**  
-Consider the common scenario where your DNS servers are co-located with your Active Directory Domain Controllers.
-Your DNS administrators need to have local administrator privileges to fix issues with the DNS server, but in order to do so you have to make them members of the highly privileged "Domain Admins" security group.
-This approach effectively gives DNS Administrators control over your whole domain and access to all resources on that machine.
+**¿Por qué es importante?**  
+Considere el escenario común en el que los servidores DNS coexisten con los controladores de dominio de Active Directory.
+Los administradores DNS necesitan tener privilegios de administrador local para solucionar problemas con el servidor DNS, pero para ello tiene que hacerlos miembros del grupo de seguridad "Administradores de dominio" con privilegios elevados.
+Este enfoque proporciona a los administradores de DNS el control sobre todo el dominio y les permite acceder a todos los recursos de la máquina.
 
-With JEA in place, you can configure a role for your DNS administrators that gives them access to all the commands they need to get their job done, but nothing more.
-This means you can provide the appropriate access to repair a poisoned DNS cache without unintentionally giving them rights to Active Directory, or to browse the file system, or run potentially dangerous scripts.
-Better yet, when the JEA session is configured to use one-time privileged virtual accounts, your DNS adminstrators can connect to the server using *unprivileged* credentials and still be able to run privileged commands.
+Con JEA, puede configurar un rol para los administradores DNS que les proporcione acceso a todos los comandos que necesitan para realizar su trabajo, pero a nada más.
+Esto significa que puede proporcionar el acceso adecuado para reparar una caché DNS dudosa sin concederles involuntariamente derechos en Active Directory, para examinar el sistema de archivos o para ejecutar scripts potencialmente peligrosos.
+Y lo que es mejor, cuando la sesión de JEA está configurada para usar cuentas virtuales con privilegios de un solo uso, los administradores de DNS pueden conectarse al servidor mediante credenciales *sin privilegios* y seguir siendo capaces de ejecutar comandos con privilegios.
 
-## Availability
-JEA is being developed in parallel to Windows Server 2016, and is available on older versions of Windows through Windows Management Framework updates.
-The current release of JEA is available on the following platforms:
+## Disponibilidad
+JEA se está desarrollando en paralelo a Windows Server 2016, y está disponible en versiones anteriores de Windows mediante actualizaciones de Windows Management Framework.
+La versión actual de JEA está disponible en las siguientes plataformas:
 
 **Windows Server**
-- Windows Server 2016 Technical Preview 4 and higher
-- Windows Server 2012 R2, 2012, and 2008 R2\* with [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) installed
+- Windows Server 2016 Technical Preview 4 y versiones posteriores
+- Windows Server 2012 R2, 2012 y 2008 R2\* con [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) instalado
 
-**Windows Client**
-- Windows 10 with the November Update (1511) installed
-- Windows 8.1, 8, and 7\* with [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) installed
+**Cliente de Windows**
+- Windows 10 con la actualización de noviembre (1511) instalada
+- Windows 8.1, 8 y 7\* con [Windows Management Framework 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) instalado
 
-\* Support for virtual accounts in JEA sessions is currently not available on Windows Server 2008 R2 or Windows 7.
+\* La compatibilidad con cuentas virtuales en sesiones de JEA no está disponible en Windows Server 2008 R2 o Windows 7.
 
 
-## Explore the experience guide
-Ready to learn how to author, deploy, and use your own JEA endpoint?
+## Explorar la guía de la experiencia
+¿Listo para aprender a crear, implementar y utilizar su propio punto de conexión JEA?
 
-This guide gets you started quickly with a pre-built JEA endpoint to get an idea of what the end-user experience is like, then walks you through recreating an endpoint from scratch to help demonstrate concepts like session configurations and Role Capabilities.
+Esta guía incluye una rápida introducción con un punto de conexión de JEA predefinido para que se haga una idea de cómo es la experiencia del usuario final y, después, describe el proceso de crear un punto de conexión desde cero para demostrar conceptos como las configuraciones de sesión y las funcionalidades de rol.
 
-1.	[Introduction](introduction.md)   
-Briefly review why you should care about JEA
+1.  [Introducción](introduction.md)   
+Revise brevemente por qué debería interesarle JEA.
 
-2.	[Prerequisites](prerequisites.md)  
-Explains how to Set up your environment
+2.  [Requisitos previos](prerequisites.md)  
+Explica cómo configurar su entorno.
 
-3.	[Using JEA](using-jea.md)  
-Helps you start by understanding the operator experience of using JEA
+3.  [Uso de JEA](using-jea.md)  
+Ayuda a entender la experiencia de usuario de JEA.
 
-4.	[Remake the Demo](remake-the-demo-endpoint.md)  
-Create a JEA Session Configuration from scratch
+4.  [Recreación de la demostración](remake-the-demo-endpoint.md)  
+Cree una configuración de sesión de JEA desde cero.
 
-5.	[Role Capabilities](role-capabilities.md)  
-Learn about how to customize JEA capabilities with Role Capability Files
+5.  [Funcionalidades de rol](role-capabilities.md)  
+Aprenda cómo personalizar las funcionalidades JEA con archivos de funcionalidad de rol.
 
-6.	[End to End - Active Directory](end-to-end---active-directory.md)  
-Make a whole new endpoint for managing Active Directory
+6.  [De un extremo a otro: Active Directory](end-to-end---active-directory.md)  
+Cree un punto de conexión completamente nuevo para administrar Active Directory.
 
-7.	[Multi-machine Deployment and Maintenance](multi-machine-deployment-and-maintenance.md)  
-Discover how deployment and authoring changes with scale
+7.  [Implementación y mantenimiento de varias máquinas](multi-machine-deployment-and-maintenance.md)  
+Descubra cómo cambia la implementación y la creación según la escala.
 
-8.	[Reporting on JEA](reporting-on-jea.md)  
-Discover how to audit and report on all JEA actions and infrastructure
+8.  [Generación de informes en JEA](reporting-on-jea.md)  
+Descubra cómo auditar e informar sobre todas las acciones y la infraestructura de JEA.
 
-9.	Appendixes
-  - [Key Concepts Used Throughout This Guide](key-concepts-used-throughout-this-guide.md)  
-  -  [Creating a Domain Controller](creating-a-domain-controller.md)  
-  -  [On Blacklisting](on-blacklisting.md)  
-  -  [Considerations When Limiting Commands](considerations-when-limiting-commands.md)  
-  -  [Common Role Capability Pitfalls](common-role-capability-pitfalls.md)
+9.  Apéndices
+  - [Conceptos clave usados a lo largo de esta guía](key-concepts-used-throughout-this-guide.md)  
+  -  [Creación de un controlador de dominio](creating-a-domain-controller.md)  
+  -  [Acerca de la lista negra](on-blacklisting.md)  
+  -  [Consideraciones al limitar comandos](considerations-when-limiting-commands.md)  
+  -  [Dificultades comunes de las funcionalidades de rol](common-role-capability-pitfalls.md)
 
-## Start authoring your own JEA endpoints
-It's easy to author a JEA endpoint -- all you need is a JEA-enabled system and a text editor (like PowerShell ISE).
-One helpful tip to get started is to create skeleton files using `New-PSRoleCapabilityFile -Path <path>` and `New-PSSessionCapabilityFile -Path <Path>` without any other arguments.
-These skeleton files contain all of the applicable configuration fields along with helpful comments to explain what each field can be used for.
+## Empiece a crear sus propios puntos de conexión de JEA
+Es fácil crear un punto de conexión de JEA: lo único que necesita es un sistema habilitado para JEA y un editor de texto (como PowerShell ISE).
+Se recomienda que, para empezar, cree archivos esqueleto mediante `New-PSRoleCapabilityFile -Path <path>` y `New-PSSessionCapabilityFile -Path <Path>` sin ningún otro argumento.
+Estos archivos esqueleto contienen todos los campos de configuración aplicables, junto con comentarios útiles que explican para qué puede usarse cada campo.
 
-To make authoring JEA endpoints even easier, check out the [JEA Toolkit Helper](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx) which provides a GUI with which you can author Session Configuration and Role Capability files.
-It even supports generating Role Capabilities based on PowerShell logs to start you off with the commands your users regularly run to get their jobs done.
+Para facilitar la creación de puntos de conexión de JEA, consulte el [JEA Toolkit Helper](http://blogs.technet.com/b/privatecloud/archive/2015/12/20/introducing-the-updated-jea-helper-tool.aspx) (Asistente para el kit de herramientas de JEA), que proporciona una GUI con la que puede crear archivos de configuración de sesión y funcionalidad de rol.
+Incluso permite generar funcionalidades de rol basadas en los registros de PowerShell para que tome como punto de partida los comandos que los usuarios ejecutan habitualmente para realizar su trabajo.
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
