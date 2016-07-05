@@ -1,42 +1,46 @@
 ---
-title:  Removing Objects from the Pipeline  Where Object 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  01df8b22-2d22-4e2c-a18d-c004cd3cc284
+title: "从管道中删除对象 (Where Object)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 0c5e2b60d96a6c64aedfa9522cbdc0ce5d4aa6b0
+
 ---
 
-# Removing Objects from the Pipeline (Where-Object)
-In Windows PowerShell, you often generate and pass along more objects to a pipeline than you want. You can specify the properties of particular objects to display by using the **Format** cmdlets, but this does not help with the problem of removing entire objects from the display. You may want to filter objects before the end of a pipeline, so you can perform actions on only a subset of the initially\-generated objects.
+# 从管道中删除对象 (Where-Object)
+在 Windows PowerShell 中，你通常会生成和传递比预期更多的对象到管道中。 可以通过使用 **Format** cmdlet 指定特定对象的属性进行显示，但是这对从显示中删除整个对象的问题没有任何帮助。 你可能希望在管道结束之前筛选对象，以便你可以只对初始生成对象的子集执行操作。
 
-Windows PowerShell includes a **Where\-Object** cmdlet that allows you to test each object in the pipeline and only pass it along the pipeline if it meets a particular test condition. Objects that do not pass the test are removed from the pipeline. You supply the test condition as the value of the **Where\-ObjectFilterScript** parameter.
+Windows PowerShell 包括 **Where\-Object** cmdlet，它可让你在管道中测试每个对象，并且仅沿管道传递满足特定测试条件的对象。 将从管道中删除未通过测试的对象。 提供测试条件作为 **Where\-ObjectFilterScript** 参数的值。
 
-### Performing Simple Tests with Where\-Object
-The value of **FilterScript** is a *script block* \-  one or more Windows PowerShell commands surrounded by braces {} \- that evaluates to true or false. These script blocks can be very simple, but creating them requires knowing about another Windows PowerShell concept, comparison operators. A comparison operator compares the items that appear on each side of it. Comparison operators begin with a '\-' character and are followed by a name. Basic comparison operators work on almost any kind of object. The more advanced comparison operators might only work on text or arrays.
+### 使用 Where\-Object 执行简单测试
+**FilterScript** 的值是一个*脚本块* \- 由大括号 {} \- 括起来的一个或多个 Windows PowerShell 命令，其计算结果为 True 或 False。 这些脚本块可能非常简单，但是创建它们需要了解有关 Windows PowerShell 的另一个概念，即比较运算符。 比较运算符比较其每一侧显示的项。 比较运算符以“\-”字符开头，后跟名称。 基本比较运算符适用于几乎任何类型的对象。 更高级的比较运算符可能仅适用于文本或数组。
 
 > [!NOTE]
-> By default, when working with text, Windows PowerShell comparison operators are case\-insensitive.
+> 默认情况下，在处理文本时，Windows PowerShell 比较运算符不区分大小写。
 
-Due to parsing considerations, symbols such as <,>, and \= are not used as comparison operators. Instead, comparison operators are comprised of letters. The basic comparison operators are listed in the following table.
+出于分析考虑，<、> 和 \= 等符号不用作比较运算符。 相反，比较运算符由字母组成。 下表中列出了基本比较运算符。
 
-|Comparison Operator|Meaning|Example (returns true)|
+|比较运算符|含义|示例（返回 True）|
 |-----------------------|-----------|--------------------------|
-|\-eq|is equal to|1 \-eq 1|
-|\-ne|Is not equal to|1 \-ne 2|
-|\-lt|Is less than|1 \-lt 2|
-|\-le|Is less than or equal to|1 \-le 2|
-|\-gt|Is greater than|2 \-gt 1|
-|\-ge|Is greater than or equal to|2 \-ge 1|
-|\-like|Is like (wildcard comparison for text)|"file.doc" \-like "f\*.do?"|
-|\-notlike|Is not like (wildcard comparison for text)|"file.doc" \-notlike "p\*.doc"|
-|\-contains|Contains|1,2,3 \-contains 1|
-|\-notcontains|Does not contain|1,2,3 \-notcontains 4|
+|\-eq|等于|1 \-eq 1|
+|\-ne|不等于|1 \-ne 2|
+|\-lt|小于|1 \-lt 2|
+|\-le|小于或等于|1 \-le 2|
+|\-gt|大于|2 \-gt 1|
+|\-ge|大于或等于|2 \-ge 1|
+|\-like|相似（文本的通配符比较）|"file.doc" \-like "f\*.do?"|
+|\-notlike|不相似（文本的通配符比较）|"file.doc" \-notlike "p\*.doc"|
+|\-contains|包含|1,2,3 \-contains 1|
+|\-notcontains|不包含|1,2,3 \-notcontains 4|
 
-Where\-Object script blocks use the special variable '$\_' to refer to the current object in the pipeline. Here is an example of how it works. If you have a list of numbers, and only want to return the ones that are less than 3, you can use Where\-Object to filter the numbers by typing:
+Where\-Object 脚本块使用特殊变量“$\_”来指代管道中的当前对象。 以下是其工作原理示例。 如果你有一个数字列表，且希望仅返回小于 3 的数字，则可使用 Where\-Object 通过键入以下内容来筛选数字：
 
 ```
 PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
@@ -44,16 +48,16 @@ PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
 2
 ```
 
-### Filtering Based on Object Properties
-Since $\_ refers to the current pipeline object, we can access its properties for our tests.
+### 基于对象属性进行筛选
+既然 $\_ 指代当前管道对象，我们就可以访问其属性以进行测试。
 
-As an example, we can look at the Win32\_SystemDriver class in WMI. There might be hundreds of system drivers on a particular system, but you might only be interested in a particular set of the system drivers, such as those which are currently running. If you use Get\-Member to view Win32\_SystemDriver members (**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType Property**) you will see that the relevant property is State, and that it has a value of "Running" when the driver is running. You can filter the system drivers, selecting only the running ones by typing:
+例如，我们可以看看 WMI 中的 Win32\_SystemDriver 类。 一个特定的系统上可能有数百个系统驱动程序，但是你可能只对特定一些系统驱动程序感兴趣，例如那些当前正在运行的程序。 如果你使用 Get\-Member 查看 Win32\_SystemDriver 成员（**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType 属性**），你将发现相关属性为 State，并且在驱动程序运行时，它的值为“Running”。 你可以筛选系统驱动程序，通过键入以下内容仅选择正在运行的驱动程序：
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"}
 ```
 
-This still produces a long list. You may want to filter to only select the drivers set to start automatically by testing the StartMode value as well:
+这仍会生成一个较长的列表。 你可能还希望进行筛选，以通过测试 StartMode 值仅选择自动启动的驱动程序集：
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Auto"}
@@ -71,7 +75,7 @@ Status      : OK
 Started     : True
 ```
 
-This gives us a lot of information we no longer need because we know that the drivers are running. In fact, the only information we probably need at this point are the name and the display name. The following command includes only those two properties, resulting in much simpler output:
+这为我们提供了大量不再需要的信息，因为我们知道驱动程序正在运行。 事实上，此时我们可能需要的唯一信息就是名称和显示名。 下面的命令仅包括这两种属性，从而使输出更简单：
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Manual"} | Format-Table -Property Name,DisplayName
@@ -88,18 +92,24 @@ MRxDAV                                  WebDav Client Redirector
 mssmbios                                Microsoft System Management BIOS Driver
 ```
 
-There are two Where\-Object elements in the above command, but they can be expressed in a single Where\-Object element by using the \-and logical operator, like this:
+上面的命令包含两个 Where\-Object 元素，但是可以使用 \-and 逻辑运算符将其表示为一个 Where\-Object 元素，如下所示：
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State -eq "Running") -and ($_.StartMode -eq "Manual") } | Format-Table -Property Name,DisplayName
 ```
 
-The standard logical operators are listed in the following table.
+下表中列出了标准逻辑运算符。
 
-|Logical Operator|Meaning|Example (returns true)|
+|逻辑运算符|含义|示例（返回 True）|
 |--------------------|-----------|--------------------------|
-|\-and|Logical and; true if both sides are true|(1 \-eq 1) \-and (2 \-eq 2)|
-|\-or|Logical or; true if either side is true|(1 \-eq 1) \-or (1 \-eq 2)|
-|\-not|Logical not; reverses true and false|\-not (1 \-eq 2)|
-|\!|Logical not; reverses true and false|\!(1 \-eq 2)|
+|\-和|Logical and；如果两侧都为 True，则返回 True|(1 \-eq 1) \-and (2 \-eq 2)|
+|\-或|Logical or；如果某一侧为 True，则返回 True|(1 \-eq 1) \-or (1 \-eq 2)|
+|\-非|Logical not；反转 True 和 False|\-not (1 \-eq 2)|
+|\!|Logical not；反转 True 和 False|\!(1 \-eq 2)|
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
