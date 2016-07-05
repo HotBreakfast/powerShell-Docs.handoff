@@ -1,20 +1,24 @@
 ---
-title:  Creating a Custom Input Box
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  0b12e56c-299f-40ee-afbf-d30d23ed2565
+title: "建立自訂輸入方塊"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 0b12e56c-299f-40ee-afbf-d30d23ed2565
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 628062cfadcadcec3311dcb8bfdd6bd3b9a9e567
+
 ---
 
-# Creating a Custom Input Box
-Script a graphical custom input box by using Microsoft .NET Framework form\-building features in Windows PowerShell 3.0 and later releases.
+# 建立自訂輸入方塊
+使用 Windows PowerShell 3.0 和更新版本中 Microsoft .NET Framework 的表單建立功能，撰寫圖形化自訂輸入方塊的指令碼。
 
-## Create a custom, graphical input box
-Copy and then paste the following into Windows PowerShell ISE, and then save it as a Windows PowerShell script (.ps1).
+## 建立自訂的圖形化輸入方塊
+將下列程式碼複製並貼上到 Windows PowerShell ISE，然後將它儲存為 Windows PowerShell 指令碼 (.ps1)。
 
 ```
 Add-Type -AssemblyName System.Windows.Forms
@@ -64,19 +68,19 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-The script begins by loading two .NET Framework classes: **System.Drawing** and **System.Windows.Forms**. You then start a new instance of the .NET Framework class **System.Windows.Forms.Form**; that provides a blank form or window to which you can start adding controls.
+指令碼一開始會載入兩個 .NET Framework 類別：**System.Drawing** 和 **System.Windows.Forms**。 接著，您會啟動新的 .NET Framework 類別 **System.Windows.Forms.Form** 的執行個體，這樣可以提供空白表單或視窗讓您可以開始新增控制項。
 
 ```
 $form = New-Object System.Windows.Forms.Form
 ```
 
-After you create an instance of the Form class, assign values to three properties of this class.
+建立 Form 類別的執行個體之後，指派值給此類別的三個屬性。
 
--   **Text.** This becomes the title of the window.
+-   **Text。** 這會成為視窗的標題。
 
--   **Size.** This is the size of the form, in pixels. The preceding script creates a form that’s 300 pixels wide by 200 pixels tall.
+-   **Size。** 這是表單的大小，單位為像素。 上述指令碼會建立 300 像素寬、200 像素高的表單。
 
--   **StartingPosition.** This optional property is set to **CenterScreen** in the preceding script. If you don’t add this property, Windows selects a location when the form is opened. By setting the **StartingPosition** to **CenterScreen**, you’re automatically displaying the form in the middle of the screen each time it loads.
+-   **StartingPosition。** 此選擇性屬性在上述指令碼中是設定為 **CenterScreen**。 若未新增此屬性，Windows 會在表單開啟時選取一個位置。 透過將 **StartingPosition** 設定為 **CenterScreen**，您可以在每次載入表單時，將表單自動顯示在畫面中間。
 
 ```
 $form.Text = "Data Entry Form"
@@ -84,7 +88,7 @@ $form.Size = New-Object System.Drawing.Size(300,200)
 $form.StartPosition = "CenterScreen"
 ```
 
-Next, create an **OK** button for your form. Specify the size and behavior of the **OK** button. In this example, the button position is 120 pixels from the form’s top edge, and 75 pixels from the left edge. The button height is 23 pixels, while the button length is 75 pixels. The script uses predefined Windows Forms types to determine the button behaviors.
+接著，為您的表單建立 **[確定]** 按鈕。 指定 **[確定]** 按鈕的大小與行為。 在此範例中，按鈕位置是距離表單上邊緣 120 像素，並距離左邊緣 75 像素。 按鈕高度是 23 像素，而按鈕寬度是 75 像素。 指令碼會使用預先定義的 Windows Forms 類型來決定按鈕行為。
 
 ```
 $OKButton = New-Object System.Windows.Forms.Button
@@ -96,7 +100,7 @@ $form.AcceptButton = $OKButton
 $form.Controls.Add($OKButton)
 ```
 
-Similarly, you create a **Cancel** button. The **Cancel** button is 120 pixels from the top, but 150 pixels from the left edge of the window.
+同樣地，您也會建立 **[取消]** 按鈕。 **[取消]** 按鈕距離上邊緣 120 像素，但距離視窗左邊緣 150 像素。
 
 ```
 $CancelButton = New-Object System.Windows.Forms.Button
@@ -108,7 +112,7 @@ $form.CancelButton = $CancelButton
 $form.Controls.Add($CancelButton)
 ```
 
-Next, provide label text on your window that describes the information you want users to provide.
+接下來，在您的視窗上提供標籤文字，以描述您希望使用者提供的資訊。
 
 ```
 $label = New-Object System.Windows.Forms.Label
@@ -118,7 +122,7 @@ $label.Text = "Please enter the information in the space below:"
 $form.Controls.Add($label)
 ```
 
-Add the control (in this case, a text box) that lets users provide the information you’ve described in your label text. There are many other controls you can apply besides text boxes; for more controls, see [System.Windows.Forms Namespace](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) on MSDN.
+新增控制項 (在此範例中為文字方塊)，讓使用者提供您在標籤文字中描述的資訊。 除了文字方塊外，還有許多其他您可以套用的控制項；如需更多控制項，請參閱 MSDN 上的 [System.Windows.Forms Namespace (System.Windows.Forms 命名空間)](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx)。
 
 ```
 $textBox = New-Object System.Windows.Forms.TextBox 
@@ -127,36 +131,42 @@ $textBox.Size = New-Object System.Drawing.Size(260,20)
 $form.Controls.Add($textBox)
 ```
 
-Set the **Topmost** property to **$True** to force the window to open atop other open windows and dialog boxes.
+將 **Topmost** 屬性設定為 **$True**，以強制視窗開啟在其他已開啟視窗與對話方塊的上方。
 
 ```
 $form.Topmost = $True
 ```
 
-Next, add this line of code to activate the form, and set the focus to the text box that you created.
+接下來，新增這行程式碼來啟動表單，並將焦點設定在您建立的文字方塊。
 
 ```
 $form.Add_Shown({$textBox.Select()})
 ```
 
-Add the following line of code to display the form in Windows.
+新增下面這行程式碼，以在 Windows 中顯示該表單。
 
 ```
 $result = $form.ShowDialog()
 ```
 
-Finally, the code inside the **If** block instructs Windows what to do with the form after users provide text in the text box, and then click the **OK** button or press the **Enter** key.
+最後，**If** 區塊內的程式碼會指示 Windows 當使用者在文字方塊中提供文字並按一下 **[確定]** 按鈕或按下 **Enter** 鍵時要執行的表單動作。
 
 ```
 if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 {
-    $x = $textBox.Text
-    $x
+    $x = $textBox.Text
+    $x
 }
 ```
 
-## See Also
-[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week:  Creating a Custom Input Box](http://technet.microsoft.com/library/ff730941.aspx)
+## 另請參閱
+[Hey Scripting Guy: Why don’t these PowerShell GUI examples work?](http://go.microsoft.com/fwlink/?LinkId=506644)
+ (指令碼高手您好：這些 PowerShell GUI 範例為何無法運作？) [GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
+ (GitHub：Dave Wyatt 的 WinFormsExampleUpdates) [本週 Windows PowerShell 秘訣︰建立自訂輸入方塊](http://technet.microsoft.com/library/ff730941.aspx)
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
