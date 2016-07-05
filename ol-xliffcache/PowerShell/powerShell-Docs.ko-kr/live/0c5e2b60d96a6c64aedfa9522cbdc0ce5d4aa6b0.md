@@ -1,42 +1,46 @@
 ---
-title:  Removing Objects from the Pipeline  Where Object 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  01df8b22-2d22-4e2c-a18d-c004cd3cc284
+title: "파이프라인에서 개체 제거(Where-Object)"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 0c5e2b60d96a6c64aedfa9522cbdc0ce5d4aa6b0
+
 ---
 
-# Removing Objects from the Pipeline (Where-Object)
-In Windows PowerShell, you often generate and pass along more objects to a pipeline than you want. You can specify the properties of particular objects to display by using the **Format** cmdlets, but this does not help with the problem of removing entire objects from the display. You may want to filter objects before the end of a pipeline, so you can perform actions on only a subset of the initially\-generated objects.
+# 파이프라인에서 개체 제거(Where-Object)
+일반적으로 Windows PowerShell은 필요한 것보다 많은 개체를 만들어 파이프라인에 전달합니다. **Format** cmdlet을 사용하면 표시할 특정 개체의 속성을 지정할 수 있지만 전체 개체를 표시하지 않는 문제에는 도움이 되지 않습니다. 파이프라인 끝에 도달하기 전에 개체를 필터링하여 처음 만들어진 개체의 하위 집합에 대해서만 특정 작업을 수행할 수 있습니다.
 
-Windows PowerShell includes a **Where\-Object** cmdlet that allows you to test each object in the pipeline and only pass it along the pipeline if it meets a particular test condition. Objects that do not pass the test are removed from the pipeline. You supply the test condition as the value of the **Where\-ObjectFilterScript** parameter.
+Windows PowerShell에는 파이프라인에 있는 각 개체를 테스트하고 특정 테스트 조건을 통과하는 개체만 파이프라인을 통해 전달할 수 있는 **Where\-Object** cmdlet이 포함되어 있습니다. 테스트를 통과하지 못한 개체는 파이프라인에서 제거됩니다. 테스트 조건은 **Where\-ObjectFilterScript** 매개 변수의 값으로 지정됩니다.
 
-### Performing Simple Tests with Where\-Object
-The value of **FilterScript** is a *script block* \-  one or more Windows PowerShell commands surrounded by braces {} \- that evaluates to true or false. These script blocks can be very simple, but creating them requires knowing about another Windows PowerShell concept, comparison operators. A comparison operator compares the items that appear on each side of it. Comparison operators begin with a '\-' character and are followed by a name. Basic comparison operators work on almost any kind of object. The more advanced comparison operators might only work on text or arrays.
+### Where\-Object를 사용하여 간단한 테스트 수행
+**FilterScript**의 값은 하나의 *스크립트 블록* 으로, true 또는 false로 평가되는 하나 이상의 Windows PowerShell 명령이 중괄호({})로 묶여 있습니다. 이러한 스크립트 블록은 매우 간단할 수 있지만 비교 연산자와 같은 다른 Windows PowerShell 개념을 알고 있어야 만들 수 있습니다. 비교 연산자는 자신을 중심으로 양쪽에 표시되는 두 항목을 비교합니다. 비교 연산자의 이름은 '\-' 문자로 시작됩니다. 기본 비교 연산자는 거의 모든 유형의 개체에서 작동하지만 고급 비교 연산자는 텍스트나 배열에서만 작동할 수 있습니다.
 
 > [!NOTE]
-> By default, when working with text, Windows PowerShell comparison operators are case\-insensitive.
+> 기본적으로 Windows PowerShell 비교 연산자는 텍스트를 비교할 때 대/소문자를 구분합니다.
 
-Due to parsing considerations, symbols such as <,>, and \= are not used as comparison operators. Instead, comparison operators are comprised of letters. The basic comparison operators are listed in the following table.
+구문 오류가 발생할 수 있으므로 <, >, \= 등의 기호는 비교 연산자로 사용할 수 없고 문자만 비교 연산자로 사용할 수 있습니다. 다음 표에는 기본 비교 연산자가 나와 있습니다.
 
-|Comparison Operator|Meaning|Example (returns true)|
+|비교 연산자|의미|예제(true 반환)|
 |-----------------------|-----------|--------------------------|
-|\-eq|is equal to|1 \-eq 1|
-|\-ne|Is not equal to|1 \-ne 2|
-|\-lt|Is less than|1 \-lt 2|
-|\-le|Is less than or equal to|1 \-le 2|
-|\-gt|Is greater than|2 \-gt 1|
-|\-ge|Is greater than or equal to|2 \-ge 1|
-|\-like|Is like (wildcard comparison for text)|"file.doc" \-like "f\*.do?"|
-|\-notlike|Is not like (wildcard comparison for text)|"file.doc" \-notlike "p\*.doc"|
-|\-contains|Contains|1,2,3 \-contains 1|
-|\-notcontains|Does not contain|1,2,3 \-notcontains 4|
+|\-eq|같음|1 \-eq 1|
+|\-ne|같지 않음|1 \-ne 2|
+|\-lt|보다 작음|1 \-lt 2|
+|\-le|작거나 같음|1 \-le 2|
+|\-gt|보다 큼|2 \-gt 1|
+|\-ge|크거나 같음|2 \-ge 1|
+|\-like|비슷함(텍스트의 와일드카드 비교)|"file.doc" \-like "f\*.do?"|
+|\-notlike|비슷하지 않음(텍스트의 와일드카드 비교)|"file.doc" \-notlike "p\*.doc"|
+|\-contains|포함|1,2,3 \-contains 1|
+|\-notcontains|포함 안 함|1,2,3 \-notcontains 4|
 
-Where\-Object script blocks use the special variable '$\_' to refer to the current object in the pipeline. Here is an example of how it works. If you have a list of numbers, and only want to return the ones that are less than 3, you can use Where\-Object to filter the numbers by typing:
+Where\-Object 스크립트 블록은 특수 변수 '$\_'를 사용하여 파이프라인에 있는 현재 개체를 참조합니다. 다음은 이러한 동작을 보여 주는 예제입니다. 일련의 숫자 중에서 3보다 작은 숫자만 반환하려면 다음과 같이 Where\-Object 를 사용하여 숫자를 필터링하면 됩니다.
 
 ```
 PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
@@ -44,16 +48,16 @@ PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
 2
 ```
 
-### Filtering Based on Object Properties
-Since $\_ refers to the current pipeline object, we can access its properties for our tests.
+### 개체 속성을 기반으로 필터링
+$\_가 현재 파이프라인 개체를 참조하므로 테스트를 위해 이 개체의 속성에 액세스할 수 있습니다.
 
-As an example, we can look at the Win32\_SystemDriver class in WMI. There might be hundreds of system drivers on a particular system, but you might only be interested in a particular set of the system drivers, such as those which are currently running. If you use Get\-Member to view Win32\_SystemDriver members (**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType Property**) you will see that the relevant property is State, and that it has a value of "Running" when the driver is running. You can filter the system drivers, selecting only the running ones by typing:
+예를 들어 WMI에서 Win32\_SystemDriver 클래스를 살펴보면 특정 시스템에 수백 개의 시스템 드라이버가 있을 수 있지만 현재 실행 중인 드라이버와 같은 특정 시스템 드라이버 집합만 사용할 수 있습니다. Get\-Member를 사용하여 Win32\_SystemDriver 멤버(**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType Property**)를 보면 관련 속성이 State이고 드라이버가 실행 중일 때 해당 값이 "Running"인 것을 확인할 수 있습니다. 다음과 같이 입력하면 시스템 드라이버를 필터링하여 실행 중인 드라이버만 선택할 수 있습니다.
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"}
 ```
 
-This still produces a long list. You may want to filter to only select the drivers set to start automatically by testing the StartMode value as well:
+그러나 이 목록에는 아직도 필요한 것보다 많은 항목이 포함되어 있으므로 다음과 같이 StartMode 값도 테스트하여 자동으로 시작되도록 설정된 드라이버만 선택하도록 필터링할 수 있습니다.
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Auto"}
@@ -71,7 +75,7 @@ Status      : OK
 Started     : True
 ```
 
-This gives us a lot of information we no longer need because we know that the drivers are running. In fact, the only information we probably need at this point are the name and the display name. The following command includes only those two properties, resulting in much simpler output:
+드라이버가 실행 중이라는 것을 앞에서 확인했기 때문에 이 목록에는 아직도 불필요한 정보가 포함되어 있습니다. 사실 이 시점에서 필요한 정보는 이름과 표시 이름뿐입니다. 다음 명령은 목록에 이러한 두 속성만 포함하여 출력을 훨씬 더 간단하게 만듭니다.
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Manual"} | Format-Table -Property Name,DisplayName
@@ -88,18 +92,24 @@ MRxDAV                                  WebDav Client Redirector
 mssmbios                                Microsoft System Management BIOS Driver
 ```
 
-There are two Where\-Object elements in the above command, but they can be expressed in a single Where\-Object element by using the \-and logical operator, like this:
+위의 명령에는 두 개의 Where\-Object 요소가 있지만 다음과 같이\- 논리 연산자를 사용하면 단일 Where\-Object 요소로 표시할 수 있습니다.
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State -eq "Running") -and ($_.StartMode -eq "Manual") } | Format-Table -Property Name,DisplayName
 ```
 
-The standard logical operators are listed in the following table.
+다음 표에는 기본 논리 연산자가 나와 있습니다.
 
-|Logical Operator|Meaning|Example (returns true)|
+|논리 연산자|의미|예제(true 반환)|
 |--------------------|-----------|--------------------------|
-|\-and|Logical and; true if both sides are true|(1 \-eq 1) \-and (2 \-eq 2)|
-|\-or|Logical or; true if either side is true|(1 \-eq 1) \-or (1 \-eq 2)|
-|\-not|Logical not; reverses true and false|\-not (1 \-eq 2)|
-|\!|Logical not; reverses true and false|\!(1 \-eq 2)|
+|\-및|논리곱(둘 다 true일 경우 true임)|(1 \-eq 1) \-and (2 \-eq 2)|
+|\-또는|논리합(둘 중 하나만 true여도 true임)|(1 \-eq 1) \-or (1 \-eq 2)|
+|\-not|논리 부정(true와 false를 반대로 바꿈)|\-not (1 \-eq 2)|
+|\!|논리 부정(true와 false를 반대로 바꿈)|\!(1 \-eq 2)|
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
