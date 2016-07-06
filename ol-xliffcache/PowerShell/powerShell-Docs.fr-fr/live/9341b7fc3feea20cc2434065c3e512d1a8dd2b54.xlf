@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9341b7fc3feea20cc2434065c3e512d1a8dd2b54</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\5.1\scenarios-features.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>New Scenarios and Features in WMF 5.1 (Preview)</source>
+          <target state="new">New Scenarios and Features in WMF 5.1 (Preview)</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>New Scenarios and Features in WMF 5.1 (Preview)</source>
+          <target state="new">New Scenarios and Features in WMF 5.1 (Preview)</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Note: This information is preliminary and subject to change.</source>
+          <target state="new">Note: This information is preliminary and subject to change.</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>PowerShell Editions</source>
+          <target state="new">PowerShell Editions</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Starting with version 5.1, PowerShell is available in different editions which denote varying feature sets and platform compatibility.</source>
+          <target state="new">Starting with version 5.1, PowerShell is available in different editions which denote varying feature sets and platform compatibility.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Desktop Edition:<ept id="p1">**</ept> Built on .NET Framework and provides compatibility with scripts and modules targeting versions of PowerShell running on full footprint editions of Windows such as Server Core and Windows Desktop.</source>
+          <target state="new"><bpt id="p1">**</bpt>Desktop Edition:<ept id="p1">**</ept> Built on .NET Framework and provides compatibility with scripts and modules targeting versions of PowerShell running on full footprint editions of Windows such as Server Core and Windows Desktop.</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Core Edition:<ept id="p1">**</ept> Built on .NET Core and provides compatibility with scripts and modules targeting versions of PowerShell running on reduced footprint editions of Windows such as Nano Server and Windows IoT.</source>
+          <target state="new"><bpt id="p1">**</bpt>Core Edition:<ept id="p1">**</ept> Built on .NET Core and provides compatibility with scripts and modules targeting versions of PowerShell running on reduced footprint editions of Windows such as Nano Server and Windows IoT.</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Learn more about using PowerShell Editions</source>
+          <target state="new">Learn more about using PowerShell Editions</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Determine running edition of PowerShell</source>
+          <target state="new">Determine running edition of PowerShell</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Declare a module's compatibility to specific PowerShell versions</source>
+          <target state="new">Declare a module's compatibility to specific PowerShell versions</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Filter Get-Module results by CompatiblePSEditions</source>
+          <target state="new">Filter Get-Module results by CompatiblePSEditions</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Prevent script execution unless run on a comaptible edition of PowerShell</source>
+          <target state="new">Prevent script execution unless run on a comaptible edition of PowerShell</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Module Analysis Cache</source>
+          <target state="new">Module Analysis Cache</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Starting with WMF 5.1, PowerShell provides control over the file that is used to cache data about a module, such as the commands it exports.</source>
+          <target state="new">Starting with WMF 5.1, PowerShell provides control over the file that is used to cache data about a module, such as the commands it exports.</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>By default, this cache is stored in the file <ph id="ph1">`${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache`</ph>.</source>
+          <target state="new">By default, this cache is stored in the file <ph id="ph1">`${env:LOCALAPPDATA}\Microsoft\Windows\PowerShell\ModuleAnalysisCache`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>The cache is typically read at startup while searching for a command and is written on a background thread sometime after a module is imported.</source>
+          <target state="new">The cache is typically read at startup while searching for a command and is written on a background thread sometime after a module is imported.</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>To change the default location of the cache, set the environment variable PSModuleAnalysisCachePath before starting PowerShell.</source>
+          <target state="new">To change the default location of the cache, set the environment variable PSModuleAnalysisCachePath before starting PowerShell.</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Changes to this environment variable will only affect children processes.</source>
+          <target state="new">Changes to this environment variable will only affect children processes.</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>The value should name a full path (including filename) that PowerShell has permission to create and write files.</source>
+          <target state="new">The value should name a full path (including filename) that PowerShell has permission to create and write files.</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>To disable the file cache, set this value to an invalid location, for example:</source>
+          <target state="new">To disable the file cache, set this value to an invalid location, for example:</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>This sets the path to an invalid device.</source>
+          <target state="new">This sets the path to an invalid device.</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Iff PowerShell can't write to the path, no error is returned, but you can see error reporting via a tracer:</source>
+          <target state="new">Iff PowerShell can't write to the path, no error is returned, but you can see error reporting via a tracer:</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>When writing out the cache, PowerShell will check for modules that no longer exist to avoid an unnecessarily large cache.</source>
+          <target state="new">When writing out the cache, PowerShell will check for modules that no longer exist to avoid an unnecessarily large cache.</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Sometimes these checks are not desirable, in which case you can turn them off by setting</source>
+          <target state="new">Sometimes these checks are not desirable, in which case you can turn them off by setting</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Setting this environment variable will take effect immediately in the current process.</source>
+          <target state="new">Setting this environment variable will take effect immediately in the current process.</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Specifying module version</source>
+          <target state="new">Specifying module version</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>In WMF 5.1, <ph id="ph1">`using module`</ph> behaves the same way as other module-related constructions in PowerShell.</source>
+          <target state="new">In WMF 5.1, <ph id="ph1">`using module`</ph> behaves the same way as other module-related constructions in PowerShell.</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Previously, you had no way to specify a particular module version; if there were multiple versions present, this resulted in an error.</source>
+          <target state="new">Previously, you had no way to specify a particular module version; if there were multiple versions present, this resulted in an error.</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>In WMF 5.1:</source>
+          <target state="new">In WMF 5.1:</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>You can use <ph id="ph1">`ModuleSpecification`</ph> <bpt id="p1">[</bpt>hashtable<ept id="p1">](https://msdn.microsoft.com/en-us/library/jj136290(v=vs.85).aspx)</ept>.</source>
+          <target state="new">You can use <ph id="ph1">`ModuleSpecification`</ph> <bpt id="p1">[</bpt>hashtable<ept id="p1">](https://msdn.microsoft.com/en-us/library/jj136290(v=vs.85).aspx)</ept>.</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>This hashtable has the same format as <ph id="ph1">`Get-Module -FullyQualifiedName`</ph>.</source>
+          <target state="new">This hashtable has the same format as <ph id="ph1">`Get-Module -FullyQualifiedName`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Example:</source>
+          <target state="new">Example:</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>If there are multiple versions of the module, PowerShell uses the <bpt id="p1">**</bpt>same resolution logic<ept id="p1">**</ept> as <ph id="ph1">`Import-Module`</ph> and doesn't return an error--the same behavior as <ph id="ph2">`Import-Module`</ph> and <ph id="ph3">`Import-DscResource`</ph>.</source>
+          <target state="new">If there are multiple versions of the module, PowerShell uses the <bpt id="p1">**</bpt>same resolution logic<ept id="p1">**</ept> as <ph id="ph1">`Import-Module`</ph> and doesn't return an error--the same behavior as <ph id="ph2">`Import-Module`</ph> and <ph id="ph3">`Import-DscResource`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>PowerShell console improvements</source>
+          <target state="new">PowerShell console improvements</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>The following changes have been made to Powershell.exe in WMF 5.1 to improve the console experience:</source>
+          <target state="new">The following changes have been made to Powershell.exe in WMF 5.1 to improve the console experience:</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>VT100 support</source>
+          <target state="new">VT100 support</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Windows 10 added support for <bpt id="p1">[</bpt>VT100 escape sequences<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/mt638032(v=vs.85).aspx)</ept>.</source>
+          <target state="new">Windows 10 added support for <bpt id="p1">[</bpt>VT100 escape sequences<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/mt638032(v=vs.85).aspx)</ept>.</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>PowerShell will ignore certain VT100 formatting escape sequences when calculating table widths.</source>
+          <target state="new">PowerShell will ignore certain VT100 formatting escape sequences when calculating table widths.</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>PowerShell also added a new API that can be used in formatting code to determine if VT100 is supported.</source>
+          <target state="new">PowerShell also added a new API that can be used in formatting code to determine if VT100 is supported.</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="new">For example:</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Here is a complete <bpt id="p1">[</bpt>example<ept id="p1">](https://gist.github.com/lzybkr/dcb973dccd54900b67783c48083c28f7)</ept> that can be used to highlight matches from Select-String.</source>
+          <target state="new">Here is a complete <bpt id="p1">[</bpt>example<ept id="p1">](https://gist.github.com/lzybkr/dcb973dccd54900b67783c48083c28f7)</ept> that can be used to highlight matches from Select-String.</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>Save the example in a file named <ph id="ph1">`MatchInfo.format.ps1xml`</ph>, then to use it, in your profile or elsewhere, run <ph id="ph2">`Update-FormatData -Prepend MatchInfo.format.ps1xml`</ph>.</source>
+          <target state="new">Save the example in a file named <ph id="ph1">`MatchInfo.format.ps1xml`</ph>, then to use it, in your profile or elsewhere, run <ph id="ph2">`Update-FormatData -Prepend MatchInfo.format.ps1xml`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Note that VT100 escape sequences are only supported starting with the Windows 10 Anniversary update; they are not supported on earlier systems.</source>
+          <target state="new">Note that VT100 escape sequences are only supported starting with the Windows 10 Anniversary update; they are not supported on earlier systems.</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Vi mode support in PSReadline</source>
+          <target state="new">Vi mode support in PSReadline</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">[</bpt>PSReadline<ept id="p1">](https://github.com/lzybkr/PSReadLine)</ept> adds support for vi mode.</source>
+          <target state="new"><bpt id="p1">[</bpt>PSReadline<ept id="p1">](https://github.com/lzybkr/PSReadLine)</ept> adds support for vi mode.</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>To use vi mode, run <ph id="ph1">`Set-PSReadline -EditMode vi`</ph>.</source>
+          <target state="new">To use vi mode, run <ph id="ph1">`Set-PSReadline -EditMode vi`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Redirected stdin w/ interactive input</source>
+          <target state="new">Redirected stdin w/ interactive input</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>In earlier versions, starting PowerShell with <ph id="ph1">`powershell -File -`</ph> was required when stdin was redirected and you wanted to enter commands interactively.</source>
+          <target state="new">In earlier versions, starting PowerShell with <ph id="ph1">`powershell -File -`</ph> was required when stdin was redirected and you wanted to enter commands interactively.</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>With WMF 5.1, this hard to discover option is no longer necessary, you can start powershell without any options, e.g. <ph id="ph1">`powershell`</ph>.</source>
+          <target state="new">With WMF 5.1, this hard to discover option is no longer necessary, you can start powershell without any options, e.g. <ph id="ph1">`powershell`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Note that PSReadline does not currently supported redirected stdin, and the builtin commanding line editing experience with redirected stdin is extremely limited, e.g. arrow keys don't work.</source>
+          <target state="new">Note that PSReadline does not currently supported redirected stdin, and the builtin commanding line editing experience with redirected stdin is extremely limited, e.g. arrow keys don't work.</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>A future release of PSReadline should address this issue.</source>
+          <target state="new">A future release of PSReadline should address this issue.</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>PowerShell engine improvements</source>
+          <target state="new">PowerShell engine improvements</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>The following improvements to the core PowerShell engine have been implemented in WMF 5.1:</source>
+          <target state="new">The following improvements to the core PowerShell engine have been implemented in WMF 5.1:</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Performance</source>
+          <target state="new">Performance</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Performance has improved in some important areas:</source>
+          <target state="new">Performance has improved in some important areas:</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Startup</source>
+          <target state="new">Startup</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Pipelining to cmdlets like ForEach-Object and Where-Object is approximately 50% faster</source>
+          <target state="new">Pipelining to cmdlets like ForEach-Object and Where-Object is approximately 50% faster</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Some example improvements (your results may vary depending your your hardware):</source>
+          <target state="new">Some example improvements (your results may vary depending your your hardware):</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>Scenario</source>
+          <target state="new">Scenario</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>5.0 Time (ms)</source>
+          <target state="new">5.0 Time (ms)</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>5.1 Time (ms)</source>
+          <target state="new">5.1 Time (ms)</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>900</source>
+          <target state="new">900</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>250</source>
+          <target state="new">250</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>First ever PowerShell run:</source>
+          <target state="new">First ever PowerShell run:</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>30000</source>
+          <target state="new">30000</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>13000</source>
+          <target state="new">13000</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Command analysis cache built:</source>
+          <target state="new">Command analysis cache built:</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>7000</source>
+          <target state="new">7000</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>520</source>
+          <target state="new">520</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>`1..1000000</source>
+          <target state="new">`1..1000000</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>% { }`</source>
+          <target state="new">% { }`</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>1400</source>
+          <target state="new">1400</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>750</source>
+          <target state="new">750</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>One change related to startup might impact some unsupported scenarios.</source>
+          <target state="new">One change related to startup might impact some unsupported scenarios.</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>PowerShell no longer reads the files <ph id="ph1">`$pshome\*.ps1xml`</ph> - these files have been converted to C# to avoid some file and CPU overhead of processing the XML files.</source>
+          <target state="new">PowerShell no longer reads the files <ph id="ph1">`$pshome\*.ps1xml`</ph> - these files have been converted to C# to avoid some file and CPU overhead of processing the XML files.</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>The files still exist to support V2 side-by-side, so if you change the file contents, it will not have any effect to V5, only V2.</source>
+          <target state="new">The files still exist to support V2 side-by-side, so if you change the file contents, it will not have any effect to V5, only V2.</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Note that changing the contents of these files was never a supported scenario.</source>
+          <target state="new">Note that changing the contents of these files was never a supported scenario.</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Another visible change is how PowerShell caches the exported commands and other information for modules that are installed on a system.</source>
+          <target state="new">Another visible change is how PowerShell caches the exported commands and other information for modules that are installed on a system.</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Previous, this cache was stored in the directory <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`</ph>.</source>
+          <target state="new">Previous, this cache was stored in the directory <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>In WMF 5.1, the cache is a single file <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\ModuleAnalysisCache`</ph>.</source>
+          <target state="new">In WMF 5.1, the cache is a single file <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\ModuleAnalysisCache`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>See <bpt id="p1">[</bpt>analysis_cache.md<ept id="p1">]()</ept> for more details.</source>
+          <target state="new">See <bpt id="p1">[</bpt>analysis_cache.md<ept id="p1">]()</ept> for more details.</target>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Bug fixes</source>
+          <target state="new">Bug fixes</target>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>The following notable bugs were fixed:</source>
+          <target state="new">The following notable bugs were fixed:</target>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>Module auto-discovery fully honors</source>
+          <target state="new">Module auto-discovery fully honors</target>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>Module auto-discovery (loading modules automatically without an explicit Import-Module when calling a command) was introduced in WMF 3.</source>
+          <target state="new">Module auto-discovery (loading modules automatically without an explicit Import-Module when calling a command) was introduced in WMF 3.</target>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>When introduced, PowerShell checked for commands in <ph id="ph1">`$PSHome\Modules`</ph> before using <ph id="ph2">`$env:PSModulePath`</ph>.</source>
+          <target state="new">When introduced, PowerShell checked for commands in <ph id="ph1">`$PSHome\Modules`</ph> before using <ph id="ph2">`$env:PSModulePath`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>WMF 5.1 changes this behavior to honor <ph id="ph1">`$env:PSModulePath`</ph> completely.</source>
+          <target state="new">WMF 5.1 changes this behavior to honor <ph id="ph1">`$env:PSModulePath`</ph> completely.</target>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>This allows for a user-authored module that defines commands provided by PowerShell (e.g. <ph id="ph1">`Get-ChildItem`</ph>) to be auto-loaded and correctly overriding the built-in command.</source>
+          <target state="new">This allows for a user-authored module that defines commands provided by PowerShell (e.g. <ph id="ph1">`Get-ChildItem`</ph>) to be auto-loaded and correctly overriding the built-in command.</target>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>File redirection no longer hard-codes</source>
+          <target state="new">File redirection no longer hard-codes</target>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>In all previous versions of PowerShell, it was impossible to control the file encoding used by the file redirection operator, e.g. <ph id="ph1">`get-childitem &gt; out.txt`</ph> because PowerShell added <ph id="ph2">`-Encoding Unicode`</ph>.</source>
+          <target state="new">In all previous versions of PowerShell, it was impossible to control the file encoding used by the file redirection operator, e.g. <ph id="ph1">`get-childitem &gt; out.txt`</ph> because PowerShell added <ph id="ph2">`-Encoding Unicode`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Starting with WMF 5.1, you can now change the file encoding of redirection by setting <ph id="ph1">`$PSDefaultParameterValues`</ph>, e.g.</source>
+          <target state="new">Starting with WMF 5.1, you can now change the file encoding of redirection by setting <ph id="ph1">`$PSDefaultParameterValues`</ph>, e.g.</target>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Fixed a regression in accessing members of</source>
+          <target state="new">Fixed a regression in accessing members of</target>
+        </trans-unit>
+        <trans-unit id="193" translate="yes" xml:space="preserve">
+          <source>A regression introduced in WMF 5.0 broke accessing members of <ph id="ph1">`System.Reflection.RuntimeType`</ph>, e.g. <ph id="ph2">`[int].ImplementedInterfaces`</ph>.</source>
+          <target state="new">A regression introduced in WMF 5.0 broke accessing members of <ph id="ph1">`System.Reflection.RuntimeType`</ph>, e.g. <ph id="ph2">`[int].ImplementedInterfaces`</ph>.</target>
+        </trans-unit>
+        <trans-unit id="194" translate="yes" xml:space="preserve">
+          <source>This bug has been fixed in WMF5.1.</source>
+          <target state="new">This bug has been fixed in WMF5.1.</target>
+        </trans-unit>
+        <trans-unit id="195" translate="yes" xml:space="preserve">
+          <source>Fixed some issues with COM objects</source>
+          <target state="new">Fixed some issues with COM objects</target>
+        </trans-unit>
+        <trans-unit id="196" translate="yes" xml:space="preserve">
+          <source>WMF 5.0 introduced a new COM binder for invoking methods on COM objects and accessing properties of COM objects.</source>
+          <target state="new">WMF 5.0 introduced a new COM binder for invoking methods on COM objects and accessing properties of COM objects.</target>
+        </trans-unit>
+        <trans-unit id="197" translate="yes" xml:space="preserve">
+          <source>This new binder improved performance significantly but also introduced some bugs which have been fixed in WMF5.1.</source>
+          <target state="new">This new binder improved performance significantly but also introduced some bugs which have been fixed in WMF5.1.</target>
+        </trans-unit>
+        <trans-unit id="198" translate="yes" xml:space="preserve">
+          <source>Argument conversions were not always performed correctly</source>
+          <target state="new">Argument conversions were not always performed correctly</target>
+        </trans-unit>
+        <trans-unit id="199" translate="yes" xml:space="preserve">
+          <source>In the following example:</source>
+          <target state="new">In the following example:</target>
+        </trans-unit>
+        <trans-unit id="200" translate="yes" xml:space="preserve">
+          <source>The SendKeys method expects a string, but PowerShell did not convert the char to a string, deferring the conversion to IDispatch::Invoke, which uses VariantChangeType to do the conversion, which in this example resulted in sending the keys '1', '7', and '3' instead of the expected Volume.Mute key.</source>
+          <target state="new">The SendKeys method expects a string, but PowerShell did not convert the char to a string, deferring the conversion to IDispatch::Invoke, which uses VariantChangeType to do the conversion, which in this example resulted in sending the keys '1', '7', and '3' instead of the expected Volume.Mute key.</target>
+        </trans-unit>
+        <trans-unit id="201" translate="yes" xml:space="preserve">
+          <source>Enumerable COM objects not always handled correctly</source>
+          <target state="new">Enumerable COM objects not always handled correctly</target>
+        </trans-unit>
+        <trans-unit id="202" translate="yes" xml:space="preserve">
+          <source>PowerShell normally enumerates most enumerable objects, but a regression introduced in WMF 5.0 prevented the enumeration of COM objects that implement IEnumerable.</source>
+          <target state="new">PowerShell normally enumerates most enumerable objects, but a regression introduced in WMF 5.0 prevented the enumeration of COM objects that implement IEnumerable.</target>
+        </trans-unit>
+        <trans-unit id="203" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="new">For example:</target>
+        </trans-unit>
+        <trans-unit id="204" translate="yes" xml:space="preserve">
+          <source>In the above example, WMF 5.0 incorrectly wrote the Scripting.Dictionary to the pipeline instead of enumerating the key value pairs.</source>
+          <target state="new">In the above example, WMF 5.0 incorrectly wrote the Scripting.Dictionary to the pipeline instead of enumerating the key value pairs.</target>
+        </trans-unit>
+        <trans-unit id="205" translate="yes" xml:space="preserve">
+          <source>was not allowed inside classes</source>
+          <target state="new">was not allowed inside classes</target>
+        </trans-unit>
+        <trans-unit id="206" translate="yes" xml:space="preserve">
+          <source>WMF5 introduced classes with validation of type literals used in classes.</source>
+          <target state="new">WMF5 introduced classes with validation of type literals used in classes.</target>
+        </trans-unit>
+        <trans-unit id="207" translate="yes" xml:space="preserve">
+          <source>looks like a type literal but is not a true .Net type.</source>
+          <target state="new">looks like a type literal but is not a true .Net type.</target>
+        </trans-unit>
+        <trans-unit id="208" translate="yes" xml:space="preserve">
+          <source>WMF5 incorrectly reported an error on <ph id="ph1">`[ordered]`</ph> inside a class:</source>
+          <target state="new">WMF5 incorrectly reported an error on <ph id="ph1">`[ordered]`</ph> inside a class:</target>
+        </trans-unit>
+        <trans-unit id="209" translate="yes" xml:space="preserve">
+          <source>Help on About topics with multiple versions does not work</source>
+          <target state="new">Help on About topics with multiple versions does not work</target>
+        </trans-unit>
+        <trans-unit id="210" translate="yes" xml:space="preserve">
+          <source>Before WMF 5.1, if you had multiple versions of a module installed and they all shared a help topic, for example, about_PSReadline, <ph id="ph1">`help about_PSReadline`</ph> would return multiple topics with no obvious way to view the real help.</source>
+          <target state="new">Before WMF 5.1, if you had multiple versions of a module installed and they all shared a help topic, for example, about_PSReadline, <ph id="ph1">`help about_PSReadline`</ph> would return multiple topics with no obvious way to view the real help.</target>
+        </trans-unit>
+        <trans-unit id="211" translate="yes" xml:space="preserve">
+          <source>WMF 5.1 fixes this by returning the help for the latest version of the topic.</source>
+          <target state="new">WMF 5.1 fixes this by returning the help for the latest version of the topic.</target>
+        </trans-unit>
+        <trans-unit id="212" translate="yes" xml:space="preserve">
+          <source>Get-Help does not provide a way to specify which version you want help for.</source>
+          <target state="new">Get-Help does not provide a way to specify which version you want help for.</target>
+        </trans-unit>
+        <trans-unit id="213" translate="yes" xml:space="preserve">
+          <source>To work around this, navigate to the modules directory and view the help directly with a tool like your favorite editor.</source>
+          <target state="new">To work around this, navigate to the modules directory and view the help directly with a tool like your favorite editor.</target>
+        </trans-unit>
+        <trans-unit id="214" translate="yes" xml:space="preserve">
+          <source>OneGet improvements</source>
+          <target state="new">OneGet improvements</target>
+        </trans-unit>
+        <trans-unit id="215" translate="yes" xml:space="preserve">
+          <source>WMF 5.1 includes a number of fixes and improvements to address some of the user experience gaps in the WMF 5.0 release.</source>
+          <target state="new">WMF 5.1 includes a number of fixes and improvements to address some of the user experience gaps in the WMF 5.0 release.</target>
+        </trans-unit>
+        <trans-unit id="216" translate="yes" xml:space="preserve">
+          <source>Version alias removed</source>
+          <target state="new">Version alias removed</target>
+        </trans-unit>
+        <trans-unit id="217" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario<ept id="p1">**</ept>: If you have version 1.0 and 2.0 of a package, P1, installed on your system, and you want to uninstall version 1.0, you would run "uninstall-package -name P1 -version 1.0" and expect version 1.0 to be uninstalled after running the cmdlet.</source>
+          <target state="new"><bpt id="p1">**</bpt>Scenario<ept id="p1">**</ept>: If you have version 1.0 and 2.0 of a package, P1, installed on your system, and you want to uninstall version 1.0, you would run "uninstall-package -name P1 -version 1.0" and expect version 1.0 to be uninstalled after running the cmdlet.</target>
+        </trans-unit>
+        <trans-unit id="218" translate="yes" xml:space="preserve">
+          <source>However the result is that version 2.0 gets uninstalled.</source>
+          <target state="new">However the result is that version 2.0 gets uninstalled.</target>
+        </trans-unit>
+        <trans-unit id="219" translate="yes" xml:space="preserve">
+          <source>This occurs because the "-version" parameter is an alias of the "-minimumversion" parameter.</source>
+          <target state="new">This occurs because the "-version" parameter is an alias of the "-minimumversion" parameter.</target>
+        </trans-unit>
+        <trans-unit id="220" translate="yes" xml:space="preserve">
+          <source>When OneGet is looking for a qualified package with the minimum version of 1.0, it returns the latest version.</source>
+          <target state="new">When OneGet is looking for a qualified package with the minimum version of 1.0, it returns the latest version.</target>
+        </trans-unit>
+        <trans-unit id="221" translate="yes" xml:space="preserve">
+          <source>This behavior is expected in normal cases because finding the latest version is usually the desired result.</source>
+          <target state="new">This behavior is expected in normal cases because finding the latest version is usually the desired result.</target>
+        </trans-unit>
+        <trans-unit id="222" translate="yes" xml:space="preserve">
+          <source>However, it should not apply to the uninstall-package case.</source>
+          <target state="new">However, it should not apply to the uninstall-package case.</target>
+        </trans-unit>
+        <trans-unit id="223" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: In WMF 5.1, the -version alias is removed entirely in OneGet and PowerShellGet.</source>
+          <target state="new"><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: In WMF 5.1, the -version alias is removed entirely in OneGet and PowerShellGet.</target>
+        </trans-unit>
+        <trans-unit id="224" translate="yes" xml:space="preserve">
+          <source>Multiple prompts for bootstrapping the NuGet provider</source>
+          <target state="new">Multiple prompts for bootstrapping the NuGet provider</target>
+        </trans-unit>
+        <trans-unit id="225" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario<ept id="p1">**</ept>: When you run Find-Module or Install-module or other OneGet cmdlets on your computer for the first time, OneGet tries to bootstrap the NuGet provider.</source>
+          <target state="new"><bpt id="p1">**</bpt>Scenario<ept id="p1">**</ept>: When you run Find-Module or Install-module or other OneGet cmdlets on your computer for the first time, OneGet tries to bootstrap the NuGet provider.</target>
+        </trans-unit>
+        <trans-unit id="226" translate="yes" xml:space="preserve">
+          <source>It does this because the PowerShellGet provider also uses the NuGet provider to download PowerShell modules.</source>
+          <target state="new">It does this because the PowerShellGet provider also uses the NuGet provider to download PowerShell modules.</target>
+        </trans-unit>
+        <trans-unit id="227" translate="yes" xml:space="preserve">
+          <source>OneGet then prompts the user for permission to install the NuGet provider.</source>
+          <target state="new">OneGet then prompts the user for permission to install the NuGet provider.</target>
+        </trans-unit>
+        <trans-unit id="228" translate="yes" xml:space="preserve">
+          <source>After the user selects "yes" for the bootstrapping, the latest version of the NuGet provider will be installed.</source>
+          <target state="new">After the user selects "yes" for the bootstrapping, the latest version of the NuGet provider will be installed.</target>
+        </trans-unit>
+        <trans-unit id="229" translate="yes" xml:space="preserve">
+          <source>However, in some cases, when you have an old version of NuGet provider installed on your computer, the older version of NuGet sometimes gets loaded first into the PowerShell session (that's the race condition in OneGet).</source>
+          <target state="new">However, in some cases, when you have an old version of NuGet provider installed on your computer, the older version of NuGet sometimes gets loaded first into the PowerShell session (that's the race condition in OneGet).</target>
+        </trans-unit>
+        <trans-unit id="230" translate="yes" xml:space="preserve">
+          <source>However PowerShellGet requires the later version of the NuGet provider to work, so PowerShellGet asks the OneGet for bootstrapping the NuGet provider again.</source>
+          <target state="new">However PowerShellGet requires the later version of the NuGet provider to work, so PowerShellGet asks the OneGet for bootstrapping the NuGet provider again.</target>
+        </trans-unit>
+        <trans-unit id="231" translate="yes" xml:space="preserve">
+          <source>This results in multiple prompts for bootstrapping the NuGet provider.</source>
+          <target state="new">This results in multiple prompts for bootstrapping the NuGet provider.</target>
+        </trans-unit>
+        <trans-unit id="232" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: In WMF 5.1, OneGet now loads the latest version of the NuGet provider to avoid multiple prompts for bootstrapping the NuGet provider.</source>
+          <target state="new"><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: In WMF 5.1, OneGet now loads the latest version of the NuGet provider to avoid multiple prompts for bootstrapping the NuGet provider.</target>
+        </trans-unit>
+        <trans-unit id="233" translate="yes" xml:space="preserve">
+          <source>You could also work around this issue by manually deleting the old version of the NuGet provider (NuGet-Anycpu.exe) if exists from $env:ProgramFiles\PackageManagement\ProviderAssemblies $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies</source>
+          <target state="new">You could also work around this issue by manually deleting the old version of the NuGet provider (NuGet-Anycpu.exe) if exists from $env:ProgramFiles\PackageManagement\ProviderAssemblies $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies</target>
+        </trans-unit>
+        <trans-unit id="234" translate="yes" xml:space="preserve">
+          <source>Support for OneGet on computers with intranet access only</source>
+          <target state="new">Support for OneGet on computers with intranet access only</target>
+        </trans-unit>
+        <trans-unit id="235" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Scenario<ept id="p1">**</ept>: In WMF 5.0, OneGet did not support computers that have only intranet (but not internet) access.</source>
+          <target state="new"><bpt id="p1">**</bpt>Scenario<ept id="p1">**</ept>: In WMF 5.0, OneGet did not support computers that have only intranet (but not internet) access.</target>
+        </trans-unit>
+        <trans-unit id="236" translate="yes" xml:space="preserve">
+          <source><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: In WMF 5.1, you can follow these steps to allow intranet computers to use OneGet:</source>
+          <target state="new"><bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: In WMF 5.1, you can follow these steps to allow intranet computers to use OneGet:</target>
+        </trans-unit>
+        <trans-unit id="237" translate="yes" xml:space="preserve">
+          <source>Download the NuGet provider using another computer that has an internet connection by using Install-PackageProvider NuGet.</source>
+          <target state="new">Download the NuGet provider using another computer that has an internet connection by using Install-PackageProvider NuGet.</target>
+        </trans-unit>
+        <trans-unit id="238" translate="yes" xml:space="preserve">
+          <source>Find the NuGet provider under either  $env:ProgramFiles\PackageManagement\ProviderAssemblies\nuget  or  $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies\nuget.</source>
+          <target state="new">Find the NuGet provider under either  $env:ProgramFiles\PackageManagement\ProviderAssemblies\nuget  or  $env:LOCALAPPDATA\PackageManagement\ProviderAssemblies\nuget.</target>
+        </trans-unit>
+        <trans-unit id="239" translate="yes" xml:space="preserve">
+          <source>Copy the binaries to a folder or network share location that the intranet computer can access, and then install the NuGet provider with "Install-PackageProvider NuGet -Source <ph id="ph1">&lt;Path to folder&gt;</ph>".</source>
+          <target state="new">Copy the binaries to a folder or network share location that the intranet computer can access, and then install the NuGet provider with "Install-PackageProvider NuGet -Source <ph id="ph1">&lt;Path to folder&gt;</ph>".</target>
+        </trans-unit>
+        <trans-unit id="240" translate="yes" xml:space="preserve">
+          <source>Event logging improvements</source>
+          <target state="new">Event logging improvements</target>
+        </trans-unit>
+        <trans-unit id="241" translate="yes" xml:space="preserve">
+          <source>When you install packages, you are changing the state of the computer.</source>
+          <target state="new">When you install packages, you are changing the state of the computer.</target>
+        </trans-unit>
+        <trans-unit id="242" translate="yes" xml:space="preserve">
+          <source>In WMF 5.1, OneGet now logs events to the Windows event log for install, uninstall, and save-package activities.</source>
+          <target state="new">In WMF 5.1, OneGet now logs events to the Windows event log for install, uninstall, and save-package activities.</target>
+        </trans-unit>
+        <trans-unit id="243" translate="yes" xml:space="preserve">
+          <source>The Event channel is the same as for PowerShell, that is, Microsoft-Windows-PowerShell, Operational.</source>
+          <target state="new">The Event channel is the same as for PowerShell, that is, Microsoft-Windows-PowerShell, Operational.</target>
+        </trans-unit>
+        <trans-unit id="244" translate="yes" xml:space="preserve">
+          <source>Support for basic authentication</source>
+          <target state="new">Support for basic authentication</target>
+        </trans-unit>
+        <trans-unit id="245" translate="yes" xml:space="preserve">
+          <source>In WMF 5.1, OneGet supports finding and installing packages from a repository that requires basic authentication.</source>
+          <target state="new">In WMF 5.1, OneGet supports finding and installing packages from a repository that requires basic authentication.</target>
+        </trans-unit>
+        <trans-unit id="246" translate="yes" xml:space="preserve">
+          <source>You can supply your credentials to the Find-Package and Install-Package cmdlets.</source>
+          <target state="new">You can supply your credentials to the Find-Package and Install-Package cmdlets.</target>
+        </trans-unit>
+        <trans-unit id="247" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="new">For example:</target>
+        </trans-unit>
+        <trans-unit id="248" translate="yes" xml:space="preserve">
+          <source>Support for using OneGet behind a proxy</source>
+          <target state="new">Support for using OneGet behind a proxy</target>
+        </trans-unit>
+        <trans-unit id="249" translate="yes" xml:space="preserve">
+          <source>In WMF 5.1, OneGet now takes new proxy parameters: -ProxyCredential and -Proxy.</source>
+          <target state="new">In WMF 5.1, OneGet now takes new proxy parameters: -ProxyCredential and -Proxy.</target>
+        </trans-unit>
+        <trans-unit id="250" translate="yes" xml:space="preserve">
+          <source>Using these parameters, you can specify the proxy URL and credentials to OneGet cmdlets.</source>
+          <target state="new">Using these parameters, you can specify the proxy URL and credentials to OneGet cmdlets.</target>
+        </trans-unit>
+        <trans-unit id="251" translate="yes" xml:space="preserve">
+          <source>By default, system proxy settings are used.</source>
+          <target state="new">By default, system proxy settings are used.</target>
+        </trans-unit>
+        <trans-unit id="252" translate="yes" xml:space="preserve">
+          <source>For example:</source>
+          <target state="new">For example:</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
