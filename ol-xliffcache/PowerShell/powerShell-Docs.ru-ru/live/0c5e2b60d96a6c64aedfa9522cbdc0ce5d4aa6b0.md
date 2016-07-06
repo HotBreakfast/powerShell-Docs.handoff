@@ -1,42 +1,46 @@
 ---
-title:  Removing Objects from the Pipeline  Where Object 
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  01df8b22-2d22-4e2c-a18d-c004cd3cc284
+title: "Удаление объектов из конвейера с помощью Where-Object"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 01df8b22-2d22-4e2c-a18d-c004cd3cc284
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 0c5e2b60d96a6c64aedfa9522cbdc0ce5d4aa6b0
+
 ---
 
-# Removing Objects from the Pipeline (Where-Object)
-In Windows PowerShell, you often generate and pass along more objects to a pipeline than you want. You can specify the properties of particular objects to display by using the **Format** cmdlets, but this does not help with the problem of removing entire objects from the display. You may want to filter objects before the end of a pipeline, so you can perform actions on only a subset of the initially\-generated objects.
+# Удаление объектов из конвейера (Where-Object)
+В Windows PowerShell часто создается и передается в конвейер большее количество объектов, чем требуется. Чтобы указать свойства конкретного объекта, которые требуется отобразить, можно воспользоваться командлетом **Format**, но это не позволяет решить проблему удаления с экрана всех объектов. Может потребоваться отфильтровать объекты до достижения конца конвейера, чтобы выполнить те или иные действия только с подмножеством объектов, созданных изначально.
 
-Windows PowerShell includes a **Where\-Object** cmdlet that allows you to test each object in the pipeline and only pass it along the pipeline if it meets a particular test condition. Objects that do not pass the test are removed from the pipeline. You supply the test condition as the value of the **Where\-ObjectFilterScript** parameter.
+В Windows PowerShell имеется командлет **Where\-Object**, позволяющий проверить каждый объект в конвейере и передать его дальше, только если он удовлетворяет условию теста. Объекты, не прошедшие проверку, удаляются из конвейера. Условие теста передается в виде значения параметра **Where\-ObjectFilterScript**.
 
-### Performing Simple Tests with Where\-Object
-The value of **FilterScript** is a *script block* \-  one or more Windows PowerShell commands surrounded by braces {} \- that evaluates to true or false. These script blocks can be very simple, but creating them requires knowing about another Windows PowerShell concept, comparison operators. A comparison operator compares the items that appear on each side of it. Comparison operators begin with a '\-' character and are followed by a name. Basic comparison operators work on almost any kind of object. The more advanced comparison operators might only work on text or arrays.
+### Выполнение простых проверок с командлетом Where\-Object
+Значение **FilterScript** представляет собой *блок сценария* — одну или несколько команд Windows PowerShell, заключенных в фигурные скобки {}, — результатом которого могут быть значения True или False. Такие блоки сценариев могут быть очень простыми, но для их создания требуется понимание другой концепции Windows PowerShell, а именно операторов сравнения. Оператор сравнения сравнивает элементы, расположенные с обеих сторон оператора. Запись операторов сравнения начинается знаком "\-", после которого следует имя оператора. Основные операторы сравнения работают, как правило, с любыми видами объектов. Более сложные операторы сравнения работают только с текстом или массивами.
 
 > [!NOTE]
-> By default, when working with text, Windows PowerShell comparison operators are case\-insensitive.
+> По умолчанию при работе с текстом в Windows PowerShell операторы сравнения нечувствительны к регистру.
 
-Due to parsing considerations, symbols such as <,>, and \= are not used as comparison operators. Instead, comparison operators are comprised of letters. The basic comparison operators are listed in the following table.
+Исходя из соображений синтаксического анализа, знаки, такие как <, > и \=, не используются в качестве операторов сравнения. Вместо этого операторы сравнения записываются в буквенной форме. Основные операторы сравнения перечислены в таблице ниже.
 
-|Comparison Operator|Meaning|Example (returns true)|
+|Оператор сравнения|Значение|Пример (возвращает значение True)|
 |-----------------------|-----------|--------------------------|
-|\-eq|is equal to|1 \-eq 1|
-|\-ne|Is not equal to|1 \-ne 2|
-|\-lt|Is less than|1 \-lt 2|
-|\-le|Is less than or equal to|1 \-le 2|
-|\-gt|Is greater than|2 \-gt 1|
-|\-ge|Is greater than or equal to|2 \-ge 1|
-|\-like|Is like (wildcard comparison for text)|"file.doc" \-like "f\*.do?"|
-|\-notlike|Is not like (wildcard comparison for text)|"file.doc" \-notlike "p\*.doc"|
-|\-contains|Contains|1,2,3 \-contains 1|
-|\-notcontains|Does not contain|1,2,3 \-notcontains 4|
+|\-eq|равно|1 \-eq 1|
+|\-ne|не равно|1 \-ne 2|
+|\-lt|меньше|1 \-lt 2|
+|\-le|меньше или равно|1 \-le 2|
+|\-gt|больше|2 \-gt 1|
+|\-ge|больше или равно|2 \-ge 1|
+|\-like|сравнение на совпадение с учетом подстановочного знака в тексте|"file.doc" \-like "f\*.do?"|
+|\-notlike|сравнение на несовпадение с учетом подстановочного знака в тексте|"file.doc" \-notlike "p\*.doc"|
+|\-contains|Содержит|1,2,3 \-contains 1|
+|\-notcontains|не содержит|1,2,3 \-notcontains 4|
 
-Where\-Object script blocks use the special variable '$\_' to refer to the current object in the pipeline. Here is an example of how it works. If you have a list of numbers, and only want to return the ones that are less than 3, you can use Where\-Object to filter the numbers by typing:
+В блоках сценариев командлета Where\-Object для обращения к текущему объекту конвейера используется специальная переменная $\_. Ниже приведен пример использования этой переменной. Если в списке содержатся числа и требуется вернуть только те, которые меньше 3, в командлете Where\-Object можно настроить фильтр чисел:
 
 ```
 PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
@@ -44,16 +48,16 @@ PS> 1,2,3,4 | Where-Object -FilterScript {$_ -lt 3}
 2
 ```
 
-### Filtering Based on Object Properties
-Since $\_ refers to the current pipeline object, we can access its properties for our tests.
+### Фильтрация, основанная на свойствах объектов
+Поскольку переменная $\_ ссылается на текущий объект конвейера, для выполнения проверок можно обратиться к ее свойствам.
 
-As an example, we can look at the Win32\_SystemDriver class in WMI. There might be hundreds of system drivers on a particular system, but you might only be interested in a particular set of the system drivers, such as those which are currently running. If you use Get\-Member to view Win32\_SystemDriver members (**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType Property**) you will see that the relevant property is State, and that it has a value of "Running" when the driver is running. You can filter the system drivers, selecting only the running ones by typing:
+Например, в инструментарии WMI можно просмотреть класс Win32\_SystemDriver. В какой-то конкретной системе могут содержаться сотни системных драйверов, но для проверки необходим определенный набор системных драйверов — таких, которые запущены в данный момент. Если для просмотра объектов класса Win32\_SystemDriver использовать командлет Get\-Member (**Get\-WmiObject \-Class Win32\_SystemDriver | Get\-Member \-MemberType Property**), можно увидеть, что соответствующее свойство State принимает значение "Running", когда драйвер запущен. Таким образом, фильтровать системные драйверы и выбирать только запущенные можно с помощью строки:
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"}
 ```
 
-This still produces a long list. You may want to filter to only select the drivers set to start automatically by testing the StartMode value as well:
+В результате будет получен длинный список. Отфильтровать эти драйверы и выбирать только такие, запуск которых выполняется автоматически, можно проверкой значения StartMode:
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Auto"}
@@ -71,7 +75,7 @@ Status      : OK
 Started     : True
 ```
 
-This gives us a lot of information we no longer need because we know that the drivers are running. In fact, the only information we probably need at this point are the name and the display name. The following command includes only those two properties, resulting in much simpler output:
+Результат выполнения этой команды содержит много ненужных сведений, поскольку драйверы, запущенные в данный момент, уже известны. В действительности, из всех сведений на данном этапе требуется только имя и отображаемое имя. Следующая команда включает только эти два свойства, что дает более простые выходные данные:
 
 ```
 PS> Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -eq "Running"} | Where-Object -FilterScript {$_.StartMode -eq "Manual"} | Format-Table -Property Name,DisplayName
@@ -88,18 +92,24 @@ MRxDAV                                  WebDav Client Redirector
 mssmbios                                Microsoft System Management BIOS Driver
 ```
 
-There are two Where\-Object elements in the above command, but they can be expressed in a single Where\-Object element by using the \-and logical operator, like this:
+Приведенная выше команда содержит два элемента Where\-Object, но их можно объединить, используя знак "\-" и логический оператор:
 
 ```
 Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript { ($_.State -eq "Running") -and ($_.StartMode -eq "Manual") } | Format-Table -Property Name,DisplayName
 ```
 
-The standard logical operators are listed in the following table.
+Стандартные логические операторы перечислены в следующей таблице.
 
-|Logical Operator|Meaning|Example (returns true)|
+|Логический оператор|Значение|Пример (возвращает значение True)|
 |--------------------|-----------|--------------------------|
-|\-and|Logical and; true if both sides are true|(1 \-eq 1) \-and (2 \-eq 2)|
-|\-or|Logical or; true if either side is true|(1 \-eq 1) \-or (1 \-eq 2)|
-|\-not|Logical not; reverses true and false|\-not (1 \-eq 2)|
-|\!|Logical not; reverses true and false|\!(1 \-eq 2)|
+|\-и|Логическое И; возвращает значение True, если оба операнда принимают значение True|(1 \-eq 1) \-and (2 \-eq 2)|
+|\-или|Логическое ИЛИ; возвращает значение True, если один из операндов принимает значение True|(1 \-eq 1) \-or (1 \-eq 2)|
+|\-not|Логическое НЕ; изменяет значение (True или False) на противоположное|\-not (1 \-eq 2)|
+|\!|Логическое НЕ; изменяет значение (True или False) на противоположное|\!(1 \-eq 2)|
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
