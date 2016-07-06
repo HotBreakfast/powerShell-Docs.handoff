@@ -1,20 +1,24 @@
 ---
-title:  Creating a Custom Input Box
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  0b12e56c-299f-40ee-afbf-d30d23ed2565
+title: Crear un cuadro de entrada personalizado
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: 0b12e56c-299f-40ee-afbf-d30d23ed2565
+translationtype: Human Translation
+ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
+ms.openlocfilehash: 628062cfadcadcec3311dcb8bfdd6bd3b9a9e567
+
 ---
 
-# Creating a Custom Input Box
-Script a graphical custom input box by using Microsoft .NET Framework form\-building features in Windows PowerShell 3.0 and later releases.
+# Crear un cuadro de entrada personalizado
+Cree un script de un cuadro de entrada gráfico personalizado con las características de creación de formularios de Microsoft .NET Framework de Windows PowerShell 3.0, y las versiones posteriores.
 
-## Create a custom, graphical input box
-Copy and then paste the following into Windows PowerShell ISE, and then save it as a Windows PowerShell script (.ps1).
+## Crear un cuadro de entrada gráfico personalizado
+Copie y pegue lo siguiente en Windows PowerShell ISE y, después, guárdelo como un script de Windows PowerShell (.ps1).
 
 ```
 Add-Type -AssemblyName System.Windows.Forms
@@ -64,19 +68,19 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-The script begins by loading two .NET Framework classes: **System.Drawing** and **System.Windows.Forms**. You then start a new instance of the .NET Framework class **System.Windows.Forms.Form**; that provides a blank form or window to which you can start adding controls.
+El script comienza con la carga de dos clases de .NET Framework: **System.Drawing** y **System.Windows.Forms**. A continuación, se inicia una nueva instancia de la clase de .NET Framework **System.Windows.Forms.Form**, que proporciona un formulario o ventana en blanco en la que puede empezar a agregar controles.
 
 ```
 $form = New-Object System.Windows.Forms.Form
 ```
 
-After you create an instance of the Form class, assign values to three properties of this class.
+Tras crear una instancia de la clase Form, asigne valores a las tres propiedades de esta clase.
 
--   **Text.** This becomes the title of the window.
+-   **Text.** Es el título de la ventana.
 
--   **Size.** This is the size of the form, in pixels. The preceding script creates a form that’s 300 pixels wide by 200 pixels tall.
+-   **Size.** Es el tamaño del formulario en píxeles. El script anterior crea un formulario de 300 píxeles de ancho y 200 píxeles de alto.
 
--   **StartingPosition.** This optional property is set to **CenterScreen** in the preceding script. If you don’t add this property, Windows selects a location when the form is opened. By setting the **StartingPosition** to **CenterScreen**, you’re automatically displaying the form in the middle of the screen each time it loads.
+-   **StartingPosition.** Esta propiedad opcional está establecida en **CenterScreen** en el script anterior. Si no agrega esta propiedad, Windows selecciona una ubicación cuando el formulario se abre. Cuando **StartingPosition** se establece en **CenterScreen**, el formulario aparece automáticamente en el centro de la pantalla cada vez que se carga.
 
 ```
 $form.Text = "Data Entry Form"
@@ -84,7 +88,7 @@ $form.Size = New-Object System.Drawing.Size(300,200)
 $form.StartPosition = "CenterScreen"
 ```
 
-Next, create an **OK** button for your form. Specify the size and behavior of the **OK** button. In this example, the button position is 120 pixels from the form’s top edge, and 75 pixels from the left edge. The button height is 23 pixels, while the button length is 75 pixels. The script uses predefined Windows Forms types to determine the button behaviors.
+A continuación, cree un botón **Aceptar** para el formulario. Indique un tamaño y el comportamiento del botón **Aceptar**. En este ejemplo, la posición del botón es de 120 píxeles desde el borde superior del formulario y de 75 píxeles desde el borde izquierdo. La altura del botón es 23 píxeles y la longitud, 75 píxeles. El script usa tipos predefinidos de Windows Forms para definir el comportamiento del botón.
 
 ```
 $OKButton = New-Object System.Windows.Forms.Button
@@ -96,7 +100,7 @@ $form.AcceptButton = $OKButton
 $form.Controls.Add($OKButton)
 ```
 
-Similarly, you create a **Cancel** button. The **Cancel** button is 120 pixels from the top, but 150 pixels from the left edge of the window.
+De manera similar, cree un botón **Cancelar**. El botón **Cancelar** está a 120 píxeles de la parte superior, pero a 150 píxeles del borde izquierdo de la ventana.
 
 ```
 $CancelButton = New-Object System.Windows.Forms.Button
@@ -108,7 +112,7 @@ $form.CancelButton = $CancelButton
 $form.Controls.Add($CancelButton)
 ```
 
-Next, provide label text on your window that describes the information you want users to provide.
+A continuación, escriba texto de etiqueta en la ventana para describir la información que quiera que los usuarios proporcionen.
 
 ```
 $label = New-Object System.Windows.Forms.Label
@@ -118,7 +122,7 @@ $label.Text = "Please enter the information in the space below:"
 $form.Controls.Add($label)
 ```
 
-Add the control (in this case, a text box) that lets users provide the information you’ve described in your label text. There are many other controls you can apply besides text boxes; for more controls, see [System.Windows.Forms Namespace](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) on MSDN.
+Agregue el control (en este caso, un cuadro de texto) que permita a los usuarios proporcionar la información descrita en el texto de etiqueta. Aparte de los cuadros de texto, hay otros muchos controles que se pueden aplicar; para conocerlos, vea el tema sobre el [espacio de nombres System.Windows.Forms](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) en MSDN.
 
 ```
 $textBox = New-Object System.Windows.Forms.TextBox 
@@ -127,36 +131,42 @@ $textBox.Size = New-Object System.Drawing.Size(260,20)
 $form.Controls.Add($textBox)
 ```
 
-Set the **Topmost** property to **$True** to force the window to open atop other open windows and dialog boxes.
+Establezca la propiedad **Topmost** en **$True** para forzar que la ventana se abra encima del resto de ventanas y cuadros de diálogo abiertos.
 
 ```
 $form.Topmost = $True
 ```
 
-Next, add this line of code to activate the form, and set the focus to the text box that you created.
+A continuación, agregue esta línea de código para activar el formulario y establezca el foco en el cuadro de texto que ha creado.
 
 ```
 $form.Add_Shown({$textBox.Select()})
 ```
 
-Add the following line of code to display the form in Windows.
+Agregue la siguiente línea de código para mostrar el formulario en Windows.
 
 ```
 $result = $form.ShowDialog()
 ```
 
-Finally, the code inside the **If** block instructs Windows what to do with the form after users provide text in the text box, and then click the **OK** button or press the **Enter** key.
+Por último, el código del bloque **If** indica a Windows qué hacer con el formulario después de que los usuarios proporcionen el texto en el cuadro de texto y hagan clic en **Aceptar** o presionen la tecla **Entrar**.
 
 ```
 if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 {
-    $x = $textBox.Text
-    $x
+    $x = $textBox.Text
+    $x
 }
 ```
 
-## See Also
-[Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Windows PowerShell Tip of the Week:  Creating a Custom Input Box](http://technet.microsoft.com/library/ff730941.aspx)
+## Consulte también
+[Hey Scripting Guy: Why don’t these PowerShell GUI examples work? (Hey Scripting Guy: ¿Por qué no funcionan estos ejemplos de GUI de PowerShell?)](http://go.microsoft.com/fwlink/?LinkId=506644)
+[GitHub: Dave Wyatt's WinFormsExampleUpdates (GitHub: WinFormsExampleUpdates de Dave Wyatt)](https://github.com/dlwyatt/WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week: Creating a Custom Input Box (Sugerencia de la semana de Windows PowerShell: Crear un cuadro de entrada personalizado)](http://technet.microsoft.com/library/ff730941.aspx)
+
+
+
+
+<!--HONumber=Jun16_HO4-->
+
 
