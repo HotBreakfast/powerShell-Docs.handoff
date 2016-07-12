@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ja-jp">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">c68e6d7d26a8a9b1e32a35e82dd705d95480c9bf</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Other-Useful-Scripting-Objects.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\getting-started\cookbooks\Other-Useful-Scripting-Objects.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9f97cc71d42200fef268e344c9e20c5967b376f2</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -63,8 +64,8 @@
           <target state="new">$psLocalHelp</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>This is a dictionary object that maintains a context\-sensitive mapping between Help topics and their associated links in the local compiled HTML Help file.</source>
-          <target state="new">This is a dictionary object that maintains a context\-sensitive mapping between Help topics and their associated links in the local compiled HTML Help file.</target>
+          <source>This is a dictionary object that maintains a context<ph id="ph1">\-</ph>sensitive mapping between Help topics and their associated links in the local compiled HTML Help file.</source>
+          <target state="new">This is a dictionary object that maintains a context<ph id="ph1">\-</ph>sensitive mapping between Help topics and their associated links in the local compiled HTML Help file.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>It is used to locate the local Help for a particular topic.</source>
@@ -75,28 +76,28 @@
           <target state="new">You can add or delete topics from this list.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
-          <source>The following code example shows some example key\-value pairs that are contained in <bpt id="p1">**</bpt>$psLocalHelp<ept id="p1">**</ept>.</source>
-          <target state="new">The following code example shows some example key\-value pairs that are contained in <bpt id="p1">**</bpt>$psLocalHelp<ept id="p1">**</ept>.</target>
+          <source>The following code example shows some example key<ph id="ph1">\-</ph>value pairs that are contained in <bpt id="p1">**</bpt>$psLocalHelp<ept id="p1">**</ept>.</source>
+          <target state="new">The following code example shows some example key<ph id="ph1">\-</ph>value pairs that are contained in <bpt id="p1">**</bpt>$psLocalHelp<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>Sample Output</source>
           <target state="new">Sample Output</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>Key : Add\-Computer</source>
-          <target state="new">Key : Add\-Computer</target>
+          <source>Key : Add<ph id="ph1">\-</ph>Computer</source>
+          <target state="new">Key : Add<ph id="ph1">\-</ph>Computer</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source>Value : WindowsPowerShellHelp.chm::\/html\/093f660c\-b8d5\-43cf\-aa0c\-54e5e54e76f9.htm</source>
-          <target state="new">Value : WindowsPowerShellHelp.chm::\/html\/093f660c\-b8d5\-43cf\-aa0c\-54e5e54e76f9.htm</target>
+          <source>Value : WindowsPowerShellHelp.chm::<ph id="ph1">\/</ph>html<ph id="ph2">\/</ph>093f660c<ph id="ph3">\-</ph>b8d5<ph id="ph4">\-</ph>43cf<ph id="ph5">\-</ph>aa0c<ph id="ph6">\-</ph>54e5e54e76f9.htm</source>
+          <target state="new">Value : WindowsPowerShellHelp.chm::<ph id="ph1">\/</ph>html<ph id="ph2">\/</ph>093f660c<ph id="ph3">\-</ph>b8d5<ph id="ph4">\-</ph>43cf<ph id="ph5">\-</ph>aa0c<ph id="ph6">\-</ph>54e5e54e76f9.htm</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
-          <source>Key : Add\-Content</source>
-          <target state="new">Key : Add\-Content</target>
+          <source>Key : Add<ph id="ph1">\-</ph>Content</source>
+          <target state="new">Key : Add<ph id="ph1">\-</ph>Content</target>
         </trans-unit>
         <trans-unit id="122" translate="yes" xml:space="preserve">
-          <source>Value : WindowsPowerShellHelp.chm::\/html\/0c836a1b\-f389\-4e9a\-9325\-0f415686d194.htm</source>
-          <target state="new">Value : WindowsPowerShellHelp.chm::\/html\/0c836a1b\-f389\-4e9a\-9325\-0f415686d194.htm</target>
+          <source>Value : WindowsPowerShellHelp.chm::<ph id="ph1">\/</ph>html<ph id="ph2">\/</ph>0c836a1b<ph id="ph3">\-</ph>f389<ph id="ph4">\-</ph>4e9a<ph id="ph5">\-</ph>9325<ph id="ph6">\-</ph>0f415686d194.htm</source>
+          <target state="new">Value : WindowsPowerShellHelp.chm::<ph id="ph1">\/</ph>html<ph id="ph2">\/</ph>0c836a1b<ph id="ph3">\-</ph>f389<ph id="ph4">\-</ph>4e9a<ph id="ph5">\-</ph>9325<ph id="ph6">\-</ph>0f415686d194.htm</target>
         </trans-unit>
         <trans-unit id="123" translate="yes" xml:space="preserve">
           <source>The following script adds an entry to the list.</source>
@@ -107,8 +108,8 @@
           <target state="new">$psOnlineHelp</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>This is a dictionary object that maintains a context\-sensitive mapping between topic titles of Help topics and their associated external URLs.</source>
-          <target state="new">This is a dictionary object that maintains a context\-sensitive mapping between topic titles of Help topics and their associated external URLs.</target>
+          <source>This is a dictionary object that maintains a context<ph id="ph1">\-</ph>sensitive mapping between topic titles of Help topics and their associated external URLs.</source>
+          <target state="new">This is a dictionary object that maintains a context<ph id="ph1">\-</ph>sensitive mapping between topic titles of Help topics and their associated external URLs.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>It is used to locate the Help for a particular topic on the web.</source>
@@ -123,20 +124,20 @@
           <target state="new">Sample Output</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
-          <source>Key : Add\-Computer</source>
-          <target state="new">Key : Add\-Computer</target>
+          <source>Key : Add<ph id="ph1">\-</ph>Computer</source>
+          <target state="new">Key : Add<ph id="ph1">\-</ph>Computer</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>Value : http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=135194</source>
-          <target state="new">Value : http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=135194</target>
+          <source>Value : http:<ph id="ph1">\/\/</ph>go.microsoft.com<ph id="ph2">\/</ph>fwlink<ph id="ph3">\/</ph>p<ph id="ph4">\/</ph>?LinkID<ph id="ph5">\=</ph>135194</source>
+          <target state="new">Value : http:<ph id="ph1">\/\/</ph>go.microsoft.com<ph id="ph2">\/</ph>fwlink<ph id="ph3">\/</ph>p<ph id="ph4">\/</ph>?LinkID<ph id="ph5">\=</ph>135194</target>
         </trans-unit>
         <trans-unit id="131" translate="yes" xml:space="preserve">
-          <source>Key : Add\-Content</source>
-          <target state="new">Key : Add\-Content</target>
+          <source>Key : Add<ph id="ph1">\-</ph>Content</source>
+          <target state="new">Key : Add<ph id="ph1">\-</ph>Content</target>
         </trans-unit>
         <trans-unit id="132" translate="yes" xml:space="preserve">
-          <source>Value : http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=113278</source>
-          <target state="new">Value : http:\/\/go.microsoft.com\/fwlink\/p\/?LinkID\=113278</target>
+          <source>Value : http:<ph id="ph1">\/\/</ph>go.microsoft.com<ph id="ph2">\/</ph>fwlink<ph id="ph3">\/</ph>p<ph id="ph4">\/</ph>?LinkID<ph id="ph5">\=</ph>113278</source>
+          <target state="new">Value : http:<ph id="ph1">\/\/</ph>go.microsoft.com<ph id="ph2">\/</ph>fwlink<ph id="ph3">\/</ph>p<ph id="ph4">\/</ph>?LinkID<ph id="ph5">\=</ph>113278</target>
         </trans-unit>
         <trans-unit id="133" translate="yes" xml:space="preserve">
           <source>The following script adds an entry to the list.</source>
