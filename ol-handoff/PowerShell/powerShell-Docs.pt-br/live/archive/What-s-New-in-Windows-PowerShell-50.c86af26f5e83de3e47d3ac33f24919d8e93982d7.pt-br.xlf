@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="pt-br">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">87e4a23f93d19219a8d00671f319ef93a96fbbf6</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">cd94291f225851a99253f5f54e10d6174e63f413</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\whats-new\What-s-New-in-Windows-PowerShell-50.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
@@ -20,16 +20,16 @@
           <target state="new">What&amp;#39;s New in Windows PowerShell</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell ® 5.0 includes significant new features that extend its use, improve its usability, and allow you to control and manage Windows<ph id="ph1">\-</ph>based environments more easily and comprehensively.</source>
-          <target state="new">Windows PowerShell ® 5.0 includes significant new features that extend its use, improve its usability, and allow you to control and manage Windows<ph id="ph1">\-</ph>based environments more easily and comprehensively.</target>
+          <source>Windows PowerShell ® 5.0 includes significant new features that extend its use, improve its usability, and allow you to control and manage Windows-based environments more easily and comprehensively.</source>
+          <target state="new">Windows PowerShell ® 5.0 includes significant new features that extend its use, improve its usability, and allow you to control and manage Windows-based environments more easily and comprehensively.</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell 5.0 is backward<ph id="ph1">\-</ph>compatible.</source>
-          <target state="new">Windows PowerShell 5.0 is backward<ph id="ph1">\-</ph>compatible.</target>
+          <source>Windows PowerShell 5.0 is backward-compatible.</source>
+          <target state="new">Windows PowerShell 5.0 is backward-compatible.</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>Cmdlets, providers, modules, snap<ph id="ph1">\-</ph>ins, scripts, functions, and profiles that were designed for Windows PowerShell 4.0, Windows PowerShell 3.0, and Windows PowerShell 2.0 generally work in Windows PowerShell 5.0 without changes.</source>
-          <target state="new">Cmdlets, providers, modules, snap<ph id="ph1">\-</ph>ins, scripts, functions, and profiles that were designed for Windows PowerShell 4.0, Windows PowerShell 3.0, and Windows PowerShell 2.0 generally work in Windows PowerShell 5.0 without changes.</target>
+          <source>Cmdlets, providers, modules, snap-ins, scripts, functions, and profiles that were designed for Windows PowerShell 4.0, Windows PowerShell 3.0, and Windows PowerShell 2.0 generally work in Windows PowerShell 5.0 without changes.</source>
+          <target state="new">Cmdlets, providers, modules, snap-ins, scripts, functions, and profiles that were designed for Windows PowerShell 4.0, Windows PowerShell 3.0, and Windows PowerShell 2.0 generally work in Windows PowerShell 5.0 without changes.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
           <source>Windows PowerShell 5.0 is installed by default on Windows Server ® 2016 Technical Preview and Windows 10 ®.</source>
@@ -84,12 +84,12 @@
           <target state="new"><bpt id="p1">[</bpt>Get-DscResource<ept id="p1">](http://technet.microsoft.com/library/dn521625.aspx)</ept> is faster (especially in ISE).</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> has a new parameter, –UseExisting, which reapplies the last<ph id="ph1">\-</ph>applied configuration.</source>
-          <target state="new"><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> has a new parameter, –UseExisting, which reapplies the last<ph id="ph1">\-</ph>applied configuration.</target>
+          <source><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> has a new parameter, –UseExisting, which reapplies the last applied configuration.</source>
+          <target state="new"><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> has a new parameter, –UseExisting, which reapplies the last applied configuration.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> <ph id="ph1">\-</ph>Force has been fixed.</source>
-          <target state="new"><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> <ph id="ph1">\-</ph>Force has been fixed.</target>
+          <source><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> -Force has been fixed.</source>
+          <target state="new"><bpt id="p1">[</bpt>Start-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn521623.aspx)</ept> -Force has been fixed.</target>
         </trans-unit>
         <trans-unit id="121" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Get-DscLocalConfigurationManager<ept id="p1">](http://technet.microsoft.com/library/dn407378.aspx)</ept> displays more useful information about the engine state.</source>
@@ -108,8 +108,8 @@
           <target state="new">New cmdlets in the <bpt id="p1">[</bpt>PSDesiredStateConfiguration<ept id="p1">](http://technet.microsoft.com/library/dn391651(v=wps.640).aspx)</ept> module</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">[</bpt>Update-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/mt143541(v=wps.630).aspx)</ept>:  Performs an on<ph id="ph1">\-</ph>demand pull server check.</source>
-          <target state="new"><bpt id="p1">[</bpt>Update-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/mt143541(v=wps.630).aspx)</ept>:  Performs an on<ph id="ph1">\-</ph>demand pull server check.</target>
+          <source><bpt id="p1">[</bpt>Update-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/mt143541(v=wps.630).aspx)</ept>:  Performs an on-demand pull server check.</source>
+          <target state="new"><bpt id="p1">[</bpt>Update-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/mt143541(v=wps.630).aspx)</ept>:  Performs an on-demand pull server check.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
           <source><bpt id="p1">[</bpt>Stop-DscConfiguration<ept id="p1">](http://technet.microsoft.com/library/mt143542(v=wps.630).aspx)</ept>:  Stops a configuration that is already running.</source>
@@ -200,8 +200,8 @@
           <target state="new">StopConfiguration: Do not automatically resume a configuration after a node restarts.</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
-          <source>A consistency run can now occur more often than a PULL operation, or vice<ph id="ph1">\-</ph>versa.</source>
-          <target state="new">A consistency run can now occur more often than a PULL operation, or vice<ph id="ph1">\-</ph>versa.</target>
+          <source>A consistency run can now occur more often than a PULL operation, or vice-versa.</source>
+          <target state="new">A consistency run can now occur more often than a PULL operation, or vice-versa.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
           <source>Versioning support:  DSC can now recognize a document that was generated on a newer client (included with <bpt id="p1">[</bpt>WMF 5.0<ept id="p1">](http://aka.ms/wmf5download)</ept>).</source>
@@ -216,8 +216,8 @@
           <target state="new">Module version is now enforced before a configuration is applied.</target>
         </trans-unit>
         <trans-unit id="152" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>DebugPreference<ept id="p1">**</ept> is now set correctly for Get<ph id="ph1">\-</ph>, Set<ph id="ph2">\-</ph>, or Test<ph id="ph3">\-</ph>TargetResource calls.</source>
-          <target state="new"><bpt id="p1">**</bpt>DebugPreference<ept id="p1">**</ept> is now set correctly for Get<ph id="ph1">\-</ph>, Set<ph id="ph2">\-</ph>, or Test<ph id="ph3">\-</ph>TargetResource calls.</target>
+          <source><bpt id="p1">**</bpt>DebugPreference<ept id="p1">**</ept> is now set correctly for Get-, Set-, or Test-TargetResource calls.</source>
+          <target state="new"><bpt id="p1">**</bpt>DebugPreference<ept id="p1">**</ept> is now set correctly for Get-, Set-, or Test-TargetResource calls.</target>
         </trans-unit>
         <trans-unit id="153" translate="yes" xml:space="preserve">
           <source>Credential handling improvements</source>
@@ -228,8 +228,8 @@
           <target state="new">A certificate is now used, if both <bpt id="p1">**</bpt>Certificate<ept id="p1">**</ept> and <bpt id="p2">**</bpt>PSDscAllowPlainTextPassword<ept id="p2">**</ept> are specified.</target>
         </trans-unit>
         <trans-unit id="155" translate="yes" xml:space="preserve">
-          <source>Credentials are decrypted, even for Get<ph id="ph1">\-</ph>TargetResource.</source>
-          <target state="new">Credentials are decrypted, even for Get<ph id="ph1">\-</ph>TargetResource.</target>
+          <source>Credentials are decrypted, even for Get-TargetResource.</source>
+          <target state="new">Credentials are decrypted, even for Get-TargetResource.</target>
         </trans-unit>
         <trans-unit id="156" translate="yes" xml:space="preserve">
           <source>Metaconfiguration credentials are encrypted and decrypted.</source>
@@ -240,8 +240,8 @@
           <target state="new">PSCredentials are now decrypted when they are in an embedded object.</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
-          <source>Built<ph id="ph1">\-</ph>in resource improvements</source>
-          <target state="new">Built<ph id="ph1">\-</ph>in resource improvements</target>
+          <source>Built-in resource improvements</source>
+          <target state="new">Built-in resource improvements</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
           <source>The Package resource</source>
@@ -292,24 +292,24 @@
           <target state="new">New features in Windows PowerShell</target>
         </trans-unit>
         <trans-unit id="171" translate="yes" xml:space="preserve">
-          <source>Starting in Windows PowerShell 5.0, you can develop by using classes, by using formal syntax and semantics that are similar to other object<ph id="ph1">\-</ph>oriented programming languages.</source>
-          <target state="new">Starting in Windows PowerShell 5.0, you can develop by using classes, by using formal syntax and semantics that are similar to other object<ph id="ph1">\-</ph>oriented programming languages.</target>
+          <source>Starting in Windows PowerShell 5.0, you can develop by using classes, by using formal syntax and semantics that are similar to other object-oriented programming languages.</source>
+          <target state="new">Starting in Windows PowerShell 5.0, you can develop by using classes, by using formal syntax and semantics that are similar to other object-oriented programming languages.</target>
         </trans-unit>
         <trans-unit id="172" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>Class<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Enum<ept id="p2">**</ept>, and other keywords have been added to the Windows PowerShell language to support the new feature.</source>
           <target state="new"><bpt id="p1">**</bpt>Class<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Enum<ept id="p2">**</ept>, and other keywords have been added to the Windows PowerShell language to support the new feature.</target>
         </trans-unit>
         <trans-unit id="173" translate="yes" xml:space="preserve">
-          <source>For more information about working with classes, see about<ph id="ph1">\_</ph>Classes.</source>
-          <target state="new">For more information about working with classes, see about<ph id="ph1">\_</ph>Classes.</target>
+          <source>For more information about working with classes, see about_Classes.</source>
+          <target state="new">For more information about working with classes, see about_Classes.</target>
         </trans-unit>
         <trans-unit id="174" translate="yes" xml:space="preserve">
           <source>Windows PowerShell 5.0 introduces a new, structured information stream that you can use to transmit structured data between a script and its callers (or hosting environment).</source>
           <target state="new">Windows PowerShell 5.0 introduces a new, structured information stream that you can use to transmit structured data between a script and its callers (or hosting environment).</target>
         </trans-unit>
         <trans-unit id="175" translate="yes" xml:space="preserve">
-          <source>You can now use Write<ph id="ph1">\-</ph>Host to emit output to the information stream.</source>
-          <target state="new">You can now use Write<ph id="ph1">\-</ph>Host to emit output to the information stream.</target>
+          <source>You can now use Write-Host to emit output to the information stream.</source>
+          <target state="new">You can now use Write-Host to emit output to the information stream.</target>
         </trans-unit>
         <trans-unit id="176" translate="yes" xml:space="preserve">
           <source>Information streams also work for PowerShell.Streams, jobs, scheduled jobs, and workflows.</source>
@@ -320,16 +320,16 @@
           <target state="new">The following features support the information stream.</target>
         </trans-unit>
         <trans-unit id="178" translate="yes" xml:space="preserve">
-          <source>A new Write<ph id="ph1">\-</ph>Information cmdlet that lets you specify how Windows PowerShell handles information stream data for a command.</source>
-          <target state="new">A new Write<ph id="ph1">\-</ph>Information cmdlet that lets you specify how Windows PowerShell handles information stream data for a command.</target>
+          <source>A new Write-Information cmdlet that lets you specify how Windows PowerShell handles information stream data for a command.</source>
+          <target state="new">A new Write-Information cmdlet that lets you specify how Windows PowerShell handles information stream data for a command.</target>
         </trans-unit>
         <trans-unit id="179" translate="yes" xml:space="preserve">
-          <source>Write<ph id="ph1">\-</ph>Host is a wrapper for Write<ph id="ph2">\-</ph>Information.</source>
-          <target state="new">Write<ph id="ph1">\-</ph>Host is a wrapper for Write<ph id="ph2">\-</ph>Information.</target>
+          <source>Write-Host is a wrapper for Write-Information.</source>
+          <target state="new">Write-Host is a wrapper for Write-Information.</target>
         </trans-unit>
         <trans-unit id="180" translate="yes" xml:space="preserve">
-          <source>Write<ph id="ph1">\-</ph>Information is also a supported workflow activity.</source>
-          <target state="new">Write<ph id="ph1">\-</ph>Information is also a supported workflow activity.</target>
+          <source>Write-Information is also a supported workflow activity.</source>
+          <target state="new">Write-Information is also a supported workflow activity.</target>
         </trans-unit>
         <trans-unit id="181" translate="yes" xml:space="preserve">
           <source>Two new common parameters, InformationVariable and InformationAction, let you determine how information streams from a command are displayed.</source>
@@ -340,8 +340,8 @@
           <target state="new">Valid values for InformationAction are SilentlyContinue, Stop, Continue, Inquire, Ignore, or Suspend, with SilentlyContinue being the default.</target>
         </trans-unit>
         <trans-unit id="183" translate="yes" xml:space="preserve">
-          <source>InformationVariable specifies a string as the name of a variable to which you want the Write<ph id="ph1">\-</ph>Host data from a command saved.</source>
-          <target state="new">InformationVariable specifies a string as the name of a variable to which you want the Write<ph id="ph1">\-</ph>Host data from a command saved.</target>
+          <source>InformationVariable specifies a string as the name of a variable to which you want the Write-Host data from a command saved.</source>
+          <target state="new">InformationVariable specifies a string as the name of a variable to which you want the Write-Host data from a command saved.</target>
         </trans-unit>
         <trans-unit id="184" translate="yes" xml:space="preserve">
           <source>A new preference variable, InformationPreference, specifies your default preference for information stream data in a Windows PowerShell session.</source>
@@ -356,24 +356,24 @@
           <target state="new">Two new workflow common parameters, PSInformation and InformationAction, have been added.</target>
         </trans-unit>
         <trans-unit id="187" translate="yes" xml:space="preserve">
-          <source>When you use the Format<ph id="ph1">\-</ph>Table command, table columns are now automatically formatted by evaluating the first 300ms of data that passes through the stream.</source>
-          <target state="new">When you use the Format<ph id="ph1">\-</ph>Table command, table columns are now automatically formatted by evaluating the first 300ms of data that passes through the stream.</target>
+          <source>When you use the Format-Table command, table columns are now automatically formatted by evaluating the first 300ms of data that passes through the stream.</source>
+          <target state="new">When you use the Format-Table command, table columns are now automatically formatted by evaluating the first 300ms of data that passes through the stream.</target>
         </trans-unit>
         <trans-unit id="188" translate="yes" xml:space="preserve">
-          <source>In collaboration with <bpt id="p1">[</bpt>Microsoft Research<ept id="p1">](http://research.microsoft.com/)</ept>, a new cmdlet, ConvertFrom<ph id="ph1">\-</ph>String, has been added.</source>
-          <target state="new">In collaboration with <bpt id="p1">[</bpt>Microsoft Research<ept id="p1">](http://research.microsoft.com/)</ept>, a new cmdlet, ConvertFrom<ph id="ph1">\-</ph>String, has been added.</target>
+          <source>In collaboration with <bpt id="p1">[</bpt>Microsoft Research<ept id="p1">](http://research.microsoft.com/)</ept>, a new cmdlet, ConvertFrom-String, has been added.</source>
+          <target state="new">In collaboration with <bpt id="p1">[</bpt>Microsoft Research<ept id="p1">](http://research.microsoft.com/)</ept>, a new cmdlet, ConvertFrom-String, has been added.</target>
         </trans-unit>
         <trans-unit id="189" translate="yes" xml:space="preserve">
-          <source>ConvertFrom<ph id="ph1">\-</ph>String lets you extract and parse structured objects from the content of text strings.</source>
-          <target state="new">ConvertFrom<ph id="ph1">\-</ph>String lets you extract and parse structured objects from the content of text strings.</target>
+          <source>ConvertFrom-String lets you extract and parse structured objects from the content of text strings.</source>
+          <target state="new">ConvertFrom-String lets you extract and parse structured objects from the content of text strings.</target>
         </trans-unit>
         <trans-unit id="190" translate="yes" xml:space="preserve">
-          <source>For more information, see ConvertFrom<ph id="ph1">\-</ph>String.</source>
-          <target state="new">For more information, see ConvertFrom<ph id="ph1">\-</ph>String.</target>
+          <source>For more information, see ConvertFrom-String.</source>
+          <target state="new">For more information, see ConvertFrom-String.</target>
         </trans-unit>
         <trans-unit id="191" translate="yes" xml:space="preserve">
-          <source>A new Convert<ph id="ph1">\-</ph>String cmdlet automatically formats text based on an example that you provide in an <ph id="ph2">\-</ph>Example parameter.</source>
-          <target state="new">A new Convert<ph id="ph1">\-</ph>String cmdlet automatically formats text based on an example that you provide in an <ph id="ph2">\-</ph>Example parameter.</target>
+          <source>A new Convert-String cmdlet automatically formats text based on an example that you provide in an -Example parameter.</source>
+          <target state="new">A new Convert-String cmdlet automatically formats text based on an example that you provide in an -Example parameter.</target>
         </trans-unit>
         <trans-unit id="192" translate="yes" xml:space="preserve">
           <source>A new module, Microsoft.PowerShell.Archive, includes cmdlets that let you compress files and folders into archive (also known as ZIP) files, extract files from existing ZIP files, and update ZIP files with newer versions of files compressed within them.</source>
@@ -388,76 +388,76 @@
           <target state="new">The PackageManagement (formerly known as OneGet) module is a manager or multiplexer of existing package managers (also called package providers) to unify Windows package management with a single Windows PowerShell interface.</target>
         </trans-unit>
         <trans-unit id="195" translate="yes" xml:space="preserve">
-          <source>A new module, PowerShellGet, lets you find, install, publish, and update modules and DSC resources on the <bpt id="p1">[</bpt>PowerShell Gallery<ept id="p1">](http://www.powershellgallery.com/)</ept>, or on an internal module repository that you can set up by running the Register<ph id="ph1">\-</ph>PSRepository cmdlet.</source>
-          <target state="new">A new module, PowerShellGet, lets you find, install, publish, and update modules and DSC resources on the <bpt id="p1">[</bpt>PowerShell Gallery<ept id="p1">](http://www.powershellgallery.com/)</ept>, or on an internal module repository that you can set up by running the Register<ph id="ph1">\-</ph>PSRepository cmdlet.</target>
+          <source>A new module, PowerShellGet, lets you find, install, publish, and update modules and DSC resources on the <bpt id="p1">[</bpt>PowerShell Gallery<ept id="p1">](http://www.powershellgallery.com/)</ept>, or on an internal module repository that you can set up by running the Register-PSRepository cmdlet.</source>
+          <target state="new">A new module, PowerShellGet, lets you find, install, publish, and update modules and DSC resources on the <bpt id="p1">[</bpt>PowerShell Gallery<ept id="p1">](http://www.powershellgallery.com/)</ept>, or on an internal module repository that you can set up by running the Register-PSRepository cmdlet.</target>
         </trans-unit>
         <trans-unit id="196" translate="yes" xml:space="preserve">
-          <source>A new language keyword, <bpt id="p1">**</bpt>Hidden<ept id="p1">**</ept>, has been added to specify that a member (a property or a method) is not shown by default in Get<ph id="ph1">\-</ph>Member results (unless you add the <ph id="ph2">\-</ph>Force parameter).</source>
-          <target state="new">A new language keyword, <bpt id="p1">**</bpt>Hidden<ept id="p1">**</ept>, has been added to specify that a member (a property or a method) is not shown by default in Get<ph id="ph1">\-</ph>Member results (unless you add the <ph id="ph2">\-</ph>Force parameter).</target>
+          <source>A new language keyword, <bpt id="p1">**</bpt>Hidden<ept id="p1">**</ept>, has been added to specify that a member (a property or a method) is not shown by default in Get-Member results (unless you add the -Force parameter).</source>
+          <target state="new">A new language keyword, <bpt id="p1">**</bpt>Hidden<ept id="p1">**</ept>, has been added to specify that a member (a property or a method) is not shown by default in Get-Member results (unless you add the -Force parameter).</target>
         </trans-unit>
         <trans-unit id="197" translate="yes" xml:space="preserve">
           <source>Properties or methods that have been marked hidden also do not show up in IntelliSense results, unless you are in a context where the member should be visible; for example, the automatic variable $This should show hidden members when in the class method.</source>
           <target state="new">Properties or methods that have been marked hidden also do not show up in IntelliSense results, unless you are in a context where the member should be visible; for example, the automatic variable $This should show hidden members when in the class method.</target>
         </trans-unit>
         <trans-unit id="198" translate="yes" xml:space="preserve">
-          <source>New<ph id="ph1">\-</ph>Item, Remove<ph id="ph2">\-</ph>Item, and Get<ph id="ph3">\-</ph>ChildItem have been enhanced to support creating and managing <bpt id="p1">[</bpt>symbolic links<ept id="p1">](http://en.wikipedia.org/wiki/Symbolic_link)</ept>.</source>
-          <target state="new">New<ph id="ph1">\-</ph>Item, Remove<ph id="ph2">\-</ph>Item, and Get<ph id="ph3">\-</ph>ChildItem have been enhanced to support creating and managing <bpt id="p1">[</bpt>symbolic links<ept id="p1">](http://en.wikipedia.org/wiki/Symbolic_link)</ept>.</target>
+          <source>New-Item, Remove-Item, and Get-ChildItem have been enhanced to support creating and managing <bpt id="p1">[</bpt>symbolic links<ept id="p1">](http://en.wikipedia.org/wiki/Symbolic_link)</ept>.</source>
+          <target state="new">New-Item, Remove-Item, and Get-ChildItem have been enhanced to support creating and managing <bpt id="p1">[</bpt>symbolic links<ept id="p1">](http://en.wikipedia.org/wiki/Symbolic_link)</ept>.</target>
         </trans-unit>
         <trans-unit id="199" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p1">**</bpt>ItemType<ept id="p1">**</ept> parameter for New<ph id="ph1">\-</ph>Item accepts a new value, <bpt id="p2">**</bpt>SymbolicLink<ept id="p2">**</ept>.</source>
-          <target state="new">The <bpt id="p1">**</bpt>ItemType<ept id="p1">**</ept> parameter for New<ph id="ph1">\-</ph>Item accepts a new value, <bpt id="p2">**</bpt>SymbolicLink<ept id="p2">**</ept>.</target>
+          <source>The <bpt id="p1">**</bpt>-ItemType<ept id="p1">**</ept> parameter for New-Item accepts a new value, <bpt id="p2">**</bpt>SymbolicLink<ept id="p2">**</ept>.</source>
+          <target state="new">The <bpt id="p1">**</bpt>-ItemType<ept id="p1">**</ept> parameter for New-Item accepts a new value, <bpt id="p2">**</bpt>SymbolicLink<ept id="p2">**</ept>.</target>
         </trans-unit>
         <trans-unit id="200" translate="yes" xml:space="preserve">
-          <source>Now you can create symbolic links in a single line by running the New<ph id="ph1">\-</ph>Item cmdlet.</source>
-          <target state="new">Now you can create symbolic links in a single line by running the New<ph id="ph1">\-</ph>Item cmdlet.</target>
+          <source>Now you can create symbolic links in a single line by running the New-Item cmdlet.</source>
+          <target state="new">Now you can create symbolic links in a single line by running the New-Item cmdlet.</target>
         </trans-unit>
         <trans-unit id="201" translate="yes" xml:space="preserve">
-          <source>Get<ph id="ph1">\-</ph>ChildItem also has a new –Depth parameter, which you use with the –Recurse parameter to limit the recursion.</source>
-          <target state="new">Get<ph id="ph1">\-</ph>ChildItem also has a new –Depth parameter, which you use with the –Recurse parameter to limit the recursion.</target>
+          <source>Get-ChildItem also has a new –Depth parameter, which you use with the –Recurse parameter to limit the recursion.</source>
+          <target state="new">Get-ChildItem also has a new –Depth parameter, which you use with the –Recurse parameter to limit the recursion.</target>
         </trans-unit>
         <trans-unit id="202" translate="yes" xml:space="preserve">
-          <source>For example, Get<ph id="ph1">\-</ph>ChildItem –Recurse –Depth 2 returns results from the current folder, all of the child folders within the current folder, and all of the folders within the child folders.</source>
-          <target state="new">For example, Get<ph id="ph1">\-</ph>ChildItem –Recurse –Depth 2 returns results from the current folder, all of the child folders within the current folder, and all of the folders within the child folders.</target>
+          <source>For example, Get-ChildItem –Recurse –Depth 2 returns results from the current folder, all of the child folders within the current folder, and all of the folders within the child folders.</source>
+          <target state="new">For example, Get-ChildItem –Recurse –Depth 2 returns results from the current folder, all of the child folders within the current folder, and all of the folders within the child folders.</target>
         </trans-unit>
         <trans-unit id="203" translate="yes" xml:space="preserve">
-          <source>Copy<ph id="ph1">\-</ph>Item now lets you copy files or folders from one Windows PowerShell session to another, meaning that you can copy files to sessions that are connected to remote computers, (including computers that are running <bpt id="p1">[</bpt>Windows Nano Server<ept id="p1">](http://blogs.technet.com/b/windowsserver/archive/2015/04/08/microsoft-announces-nano-server-for-modern-apps-and-cloud.aspx)</ept>, and thus have no other interface).</source>
-          <target state="new">Copy<ph id="ph1">\-</ph>Item now lets you copy files or folders from one Windows PowerShell session to another, meaning that you can copy files to sessions that are connected to remote computers, (including computers that are running <bpt id="p1">[</bpt>Windows Nano Server<ept id="p1">](http://blogs.technet.com/b/windowsserver/archive/2015/04/08/microsoft-announces-nano-server-for-modern-apps-and-cloud.aspx)</ept>, and thus have no other interface).</target>
+          <source>Copy-Item now lets you copy files or folders from one Windows PowerShell session to another, meaning that you can copy files to sessions that are connected to remote computers, (including computers that are running <bpt id="p1">[</bpt>Nano Server<ept id="p1">](http://blogs.technet.com/b/windowsserver/archive/2015/04/08/microsoft-announces-nano-server-for-modern-apps-and-cloud.aspx)</ept>, and thus have no other interface).</source>
+          <target state="new">Copy-Item now lets you copy files or folders from one Windows PowerShell session to another, meaning that you can copy files to sessions that are connected to remote computers, (including computers that are running <bpt id="p1">[</bpt>Nano Server<ept id="p1">](http://blogs.technet.com/b/windowsserver/archive/2015/04/08/microsoft-announces-nano-server-for-modern-apps-and-cloud.aspx)</ept>, and thus have no other interface).</target>
         </trans-unit>
         <trans-unit id="204" translate="yes" xml:space="preserve">
-          <source>To copy files, specify PSSession IDs as the value of the new <ph id="ph1">\-</ph>FromSession and <ph id="ph2">\-</ph>ToSession parameters, and add –Path and –Destination to specify origin path and destination, respectively.</source>
-          <target state="new">To copy files, specify PSSession IDs as the value of the new <ph id="ph1">\-</ph>FromSession and <ph id="ph2">\-</ph>ToSession parameters, and add –Path and –Destination to specify origin path and destination, respectively.</target>
+          <source>To copy files, specify PSSession IDs as the value of the new -FromSession and -ToSession parameters, and add –Path and –Destination to specify origin path and destination, respectively.</source>
+          <target state="new">To copy files, specify PSSession IDs as the value of the new -FromSession and -ToSession parameters, and add –Path and –Destination to specify origin path and destination, respectively.</target>
         </trans-unit>
         <trans-unit id="205" translate="yes" xml:space="preserve">
-          <source>For example, Copy<ph id="ph1">\-</ph>Item <ph id="ph2">\-</ph>Path c:<ph id="ph3">\\</ph>myFile.txt <ph id="ph4">\-</ph>ToSession $s <ph id="ph5">\-</ph>Destination d:<ph id="ph6">\\</ph>destinationFolder.</source>
-          <target state="new">For example, Copy<ph id="ph1">\-</ph>Item <ph id="ph2">\-</ph>Path c:<ph id="ph3">\\</ph>myFile.txt <ph id="ph4">\-</ph>ToSession $s <ph id="ph5">\-</ph>Destination d:<ph id="ph6">\\</ph>destinationFolder.</target>
+          <source>For example, Copy-Item -Path c:<ph id="ph1">\\</ph>myFile.txt -ToSession $s -Destination d:<ph id="ph2">\\</ph>destinationFolder.</source>
+          <target state="new">For example, Copy-Item -Path c:<ph id="ph1">\\</ph>myFile.txt -ToSession $s -Destination d:<ph id="ph2">\\</ph>destinationFolder.</target>
         </trans-unit>
         <trans-unit id="206" translate="yes" xml:space="preserve">
           <source>Windows PowerShell transcription has been improved to apply to all hosting applications (such as Windows PowerShell ISE) in addition to the console host (<bpt id="p1">**</bpt>powershell.exe<ept id="p1">**</ept>).</source>
           <target state="new">Windows PowerShell transcription has been improved to apply to all hosting applications (such as Windows PowerShell ISE) in addition to the console host (<bpt id="p1">**</bpt>powershell.exe<ept id="p1">**</ept>).</target>
         </trans-unit>
         <trans-unit id="207" translate="yes" xml:space="preserve">
-          <source>Transcription options (including enabling a system<ph id="ph1">\-</ph>wide transcript) can be configured by enabling the <bpt id="p1">**</bpt>Turn on PowerShell Transcription<ept id="p1">**</ept> Group Policy setting, found in Administrative Templates<ph id="ph2">\/</ph>Windows Components<ph id="ph3">\/</ph>Windows PowerShell.</source>
-          <target state="new">Transcription options (including enabling a system<ph id="ph1">\-</ph>wide transcript) can be configured by enabling the <bpt id="p1">**</bpt>Turn on PowerShell Transcription<ept id="p1">**</ept> Group Policy setting, found in Administrative Templates<ph id="ph2">\/</ph>Windows Components<ph id="ph3">\/</ph>Windows PowerShell.</target>
+          <source>Transcription options (including enabling a system-wide transcript) can be configured by enabling the <bpt id="p1">**</bpt>Turn on PowerShell Transcription<ept id="p1">**</ept> Group Policy setting, found in Administrative Templates/Windows Components/Windows PowerShell.</source>
+          <target state="new">Transcription options (including enabling a system-wide transcript) can be configured by enabling the <bpt id="p1">**</bpt>Turn on PowerShell Transcription<ept id="p1">**</ept> Group Policy setting, found in Administrative Templates/Windows Components/Windows PowerShell.</target>
         </trans-unit>
         <trans-unit id="208" translate="yes" xml:space="preserve">
           <source>A new detailed script tracing feature lets you enable detailed tracking and analysis of Windows PowerShell scripting use on a system.</source>
           <target state="new">A new detailed script tracing feature lets you enable detailed tracking and analysis of Windows PowerShell scripting use on a system.</target>
         </trans-unit>
         <trans-unit id="209" translate="yes" xml:space="preserve">
-          <source>After you enable detailed script tracing, Windows PowerShell logs all script blocks to the Event Tracing for Windows (ETW) event log, <bpt id="p1">**</bpt>Microsoft<ph id="ph1">\-</ph>Windows<ph id="ph2">\-</ph>PowerShell<ph id="ph3">\/</ph>Operational<ept id="p1">**</ept>.</source>
-          <target state="new">After you enable detailed script tracing, Windows PowerShell logs all script blocks to the Event Tracing for Windows (ETW) event log, <bpt id="p1">**</bpt>Microsoft<ph id="ph1">\-</ph>Windows<ph id="ph2">\-</ph>PowerShell<ph id="ph3">\/</ph>Operational<ept id="p1">**</ept>.</target>
+          <source>After you enable detailed script tracing, Windows PowerShell logs all script blocks to the Event Tracing for Windows (ETW) event log, <bpt id="p1">**</bpt>Microsoft-Windows-PowerShell/Operational<ept id="p1">**</ept>.</source>
+          <target state="new">After you enable detailed script tracing, Windows PowerShell logs all script blocks to the Event Tracing for Windows (ETW) event log, <bpt id="p1">**</bpt>Microsoft-Windows-PowerShell/Operational<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="210" translate="yes" xml:space="preserve">
           <source>Starting in Windows PowerShell 5.0, new Cryptographic Message Syntax cmdlets support encryption and decryption of content by using the IETF standard format for cryptographically protecting messages as documented by <bpt id="p1">[</bpt>RFC5652<ept id="p1">](http://tools.ietf.org/html/rfc5652)</ept>.</source>
           <target state="new">Starting in Windows PowerShell 5.0, new Cryptographic Message Syntax cmdlets support encryption and decryption of content by using the IETF standard format for cryptographically protecting messages as documented by <bpt id="p1">[</bpt>RFC5652<ept id="p1">](http://tools.ietf.org/html/rfc5652)</ept>.</target>
         </trans-unit>
         <trans-unit id="211" translate="yes" xml:space="preserve">
-          <source>The Get<ph id="ph1">\-</ph>CmsMessage, Protect<ph id="ph2">\-</ph>CmsMessage, and Unprotect<ph id="ph3">\-</ph>CmsMessage cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Security<ept id="p1">](http://technet.microsoft.com/library/hh849807.aspx)</ept> module.</source>
-          <target state="new">The Get<ph id="ph1">\-</ph>CmsMessage, Protect<ph id="ph2">\-</ph>CmsMessage, and Unprotect<ph id="ph3">\-</ph>CmsMessage cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Security<ept id="p1">](http://technet.microsoft.com/library/hh849807.aspx)</ept> module.</target>
+          <source>The Get-CmsMessage, Protect-CmsMessage, and Unprotect-CmsMessage cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Security<ept id="p1">](http://technet.microsoft.com/library/hh849807.aspx)</ept> module.</source>
+          <target state="new">The Get-CmsMessage, Protect-CmsMessage, and Unprotect-CmsMessage cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Security<ept id="p1">](http://technet.microsoft.com/library/hh849807.aspx)</ept> module.</target>
         </trans-unit>
         <trans-unit id="212" translate="yes" xml:space="preserve">
-          <source>New cmdlets in the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module, Get<ph id="ph1">\-</ph>Runspace, Debug<ph id="ph2">\-</ph>Runspace, Get<ph id="ph3">\-</ph>RunspaceDebug, Enable<ph id="ph4">\-</ph>RunspaceDebug, and Disable<ph id="ph5">\-</ph>RunspaceDebug, let you set debug options on a runspace, and start and stop debugging on a runspace.</source>
-          <target state="new">New cmdlets in the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module, Get<ph id="ph1">\-</ph>Runspace, Debug<ph id="ph2">\-</ph>Runspace, Get<ph id="ph3">\-</ph>RunspaceDebug, Enable<ph id="ph4">\-</ph>RunspaceDebug, and Disable<ph id="ph5">\-</ph>RunspaceDebug, let you set debug options on a runspace, and start and stop debugging on a runspace.</target>
+          <source>New cmdlets in the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module, Get-Runspace, Debug-Runspace, Get-RunspaceDebug, Enable-RunspaceDebug, and Disable-RunspaceDebug, let you set debug options on a runspace, and start and stop debugging on a runspace.</source>
+          <target state="new">New cmdlets in the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module, Get-Runspace, Debug-Runspace, Get-RunspaceDebug, Enable-RunspaceDebug, and Disable-RunspaceDebug, let you set debug options on a runspace, and start and stop debugging on a runspace.</target>
         </trans-unit>
         <trans-unit id="213" translate="yes" xml:space="preserve">
           <source>For debugging arbitrary runspaces—that is, runspaces that are not the default runspace for a Windows PowerShell console or Windows PowerShell ISE session—Windows PowerShell lets you set breakpoints in a script, and have added breakpoints stop the script from running until you can attach a debugger to debug the runspace script.</source>
@@ -468,84 +468,84 @@
           <target state="new">Nested debugging support for arbitrary runspaces has been added to the Windows PowerShell script debugger for runspaces.</target>
         </trans-unit>
         <trans-unit id="215" translate="yes" xml:space="preserve">
-          <source>A new Format<ph id="ph1">\-</ph>Hex cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</source>
-          <target state="new">A new Format<ph id="ph1">\-</ph>Hex cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</target>
+          <source>A new Format-Hex cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</source>
+          <target state="new">A new Format-Hex cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</target>
         </trans-unit>
         <trans-unit id="216" translate="yes" xml:space="preserve">
-          <source>Format<ph id="ph1">\-</ph>Hex lets you view text or binary data in hexadecimal format.</source>
-          <target state="new">Format<ph id="ph1">\-</ph>Hex lets you view text or binary data in hexadecimal format.</target>
+          <source>Format-Hex lets you view text or binary data in hexadecimal format.</source>
+          <target state="new">Format-Hex lets you view text or binary data in hexadecimal format.</target>
         </trans-unit>
         <trans-unit id="217" translate="yes" xml:space="preserve">
-          <source>Get<ph id="ph1">\-</ph>Clipboard and Set<ph id="ph2">\-</ph>Clipboard cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module; they ease the transfer of content to and from a Windows PowerShell session.</source>
-          <target state="new">Get<ph id="ph1">\-</ph>Clipboard and Set<ph id="ph2">\-</ph>Clipboard cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module; they ease the transfer of content to and from a Windows PowerShell session.</target>
+          <source>Get-Clipboard and Set-Clipboard cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module; they ease the transfer of content to and from a Windows PowerShell session.</source>
+          <target state="new">Get-Clipboard and Set-Clipboard cmdlets have been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module; they ease the transfer of content to and from a Windows PowerShell session.</target>
         </trans-unit>
         <trans-unit id="218" translate="yes" xml:space="preserve">
           <source>The Clipboard cmdlets support images, audio files, file lists, and text.</source>
           <target state="new">The Clipboard cmdlets support images, audio files, file lists, and text.</target>
         </trans-unit>
         <trans-unit id="219" translate="yes" xml:space="preserve">
-          <source>A new cmdlet, Clear<ph id="ph1">\-</ph>RecycleBin, has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Management<ept id="p1">](http://technet.microsoft.com/library/hh849827(v=wps.640).aspx)</ept> module; this cmdlet empties the Recycle Bin for a fixed drive, which includes external drives.</source>
-          <target state="new">A new cmdlet, Clear<ph id="ph1">\-</ph>RecycleBin, has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Management<ept id="p1">](http://technet.microsoft.com/library/hh849827(v=wps.640).aspx)</ept> module; this cmdlet empties the Recycle Bin for a fixed drive, which includes external drives.</target>
+          <source>A new cmdlet, Clear-RecycleBin, has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Management<ept id="p1">](http://technet.microsoft.com/library/hh849827(v=wps.640).aspx)</ept> module; this cmdlet empties the Recycle Bin for a fixed drive, which includes external drives.</source>
+          <target state="new">A new cmdlet, Clear-RecycleBin, has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Management<ept id="p1">](http://technet.microsoft.com/library/hh849827(v=wps.640).aspx)</ept> module; this cmdlet empties the Recycle Bin for a fixed drive, which includes external drives.</target>
         </trans-unit>
         <trans-unit id="220" translate="yes" xml:space="preserve">
-          <source>By default, you are prompted to confirm a Clear<ph id="ph1">\-</ph>RecycleBin command, because the ConfirmImpact property of the cmdlet is set to ConfirmImpact.High.</source>
-          <target state="new">By default, you are prompted to confirm a Clear<ph id="ph1">\-</ph>RecycleBin command, because the ConfirmImpact property of the cmdlet is set to ConfirmImpact.High.</target>
+          <source>By default, you are prompted to confirm a Clear-RecycleBin command, because the ConfirmImpact property of the cmdlet is set to ConfirmImpact.High.</source>
+          <target state="new">By default, you are prompted to confirm a Clear-RecycleBin command, because the ConfirmImpact property of the cmdlet is set to ConfirmImpact.High.</target>
         </trans-unit>
         <trans-unit id="221" translate="yes" xml:space="preserve">
-          <source>A new cmdlet, New<ph id="ph1">\-</ph>TemporaryFile, lets you create a temporary file as part of scripting.</source>
-          <target state="new">A new cmdlet, New<ph id="ph1">\-</ph>TemporaryFile, lets you create a temporary file as part of scripting.</target>
+          <source>A new cmdlet, New-TemporaryFile, lets you create a temporary file as part of scripting.</source>
+          <target state="new">A new cmdlet, New-TemporaryFile, lets you create a temporary file as part of scripting.</target>
         </trans-unit>
         <trans-unit id="222" translate="yes" xml:space="preserve">
-          <source>By default, the new temporary file is created in C:<ph id="ph1">\\</ph>Users<ph id="ph2">\\&lt;user name&gt;\\</ph>AppData<ph id="ph3">\\</ph>Local<ph id="ph4">\\</ph>Temp.</source>
-          <target state="new">By default, the new temporary file is created in C:<ph id="ph1">\\</ph>Users<ph id="ph2">\\&lt;user name&gt;\\</ph>AppData<ph id="ph3">\\</ph>Local<ph id="ph4">\\</ph>Temp.</target>
+          <source>By default, the new temporary file is created in <ph id="ph1">```C:\Users\&lt;user name&gt;\AppData\Local\Temp```</ph>.</source>
+          <target state="new">By default, the new temporary file is created in <ph id="ph1">```C:\Users\&lt;user name&gt;\AppData\Local\Temp```</ph>.</target>
         </trans-unit>
         <trans-unit id="223" translate="yes" xml:space="preserve">
-          <source>The Out<ph id="ph1">\-</ph>File, Add<ph id="ph2">\-</ph>Content, and Set<ph id="ph3">\-</ph>Content cmdlets now have a new –NoNewline parameter, which omits a new line after the output.</source>
-          <target state="new">The Out<ph id="ph1">\-</ph>File, Add<ph id="ph2">\-</ph>Content, and Set<ph id="ph3">\-</ph>Content cmdlets now have a new –NoNewline parameter, which omits a new line after the output.</target>
+          <source>The Out-File, Add-Content, and Set-Content cmdlets now have a new –NoNewline parameter, which omits a new line after the output.</source>
+          <target state="new">The Out-File, Add-Content, and Set-Content cmdlets now have a new –NoNewline parameter, which omits a new line after the output.</target>
         </trans-unit>
         <trans-unit id="224" translate="yes" xml:space="preserve">
-          <source>The New<ph id="ph1">\-</ph>Guid cmdlet leverages the .NET Framework Guid class to generate a GUID, useful when you are writing scripts or DSC resources.</source>
-          <target state="new">The New<ph id="ph1">\-</ph>Guid cmdlet leverages the .NET Framework Guid class to generate a GUID, useful when you are writing scripts or DSC resources.</target>
+          <source>The New-Guid cmdlet leverages the .NET Framework Guid class to generate a GUID, useful when you are writing scripts or DSC resources.</source>
+          <target state="new">The New-Guid cmdlet leverages the .NET Framework Guid class to generate a GUID, useful when you are writing scripts or DSC resources.</target>
         </trans-unit>
         <trans-unit id="225" translate="yes" xml:space="preserve">
           <source>Because file version information can be misleading, particularly after a file is patched, new FileVersionRaw and ProductVersionRaw script properties are available for FileInfo objects.</source>
           <target state="new">Because file version information can be misleading, particularly after a file is patched, new FileVersionRaw and ProductVersionRaw script properties are available for FileInfo objects.</target>
         </trans-unit>
         <trans-unit id="226" translate="yes" xml:space="preserve">
-          <source>For example, you can run the following command to display the values of these properties for PowerShell.exe, where $pid contains the process ID for a running session of Windows PowerShell:  Get<ph id="ph1">\-</ph>Process <ph id="ph2">\-</ph>Id $pid <ph id="ph3">\-</ph>FileVersionInfo | Format<ph id="ph4">\-</ph>List <ph id="ph5">\*</ph>version<ph id="ph6">\*</ph> <ph id="ph7">\-</ph>Force</source>
-          <target state="new">For example, you can run the following command to display the values of these properties for PowerShell.exe, where $pid contains the process ID for a running session of Windows PowerShell:  Get<ph id="ph1">\-</ph>Process <ph id="ph2">\-</ph>Id $pid <ph id="ph3">\-</ph>FileVersionInfo | Format<ph id="ph4">\-</ph>List <ph id="ph5">\*</ph>version<ph id="ph6">\*</ph> <ph id="ph7">\-</ph>Force</target>
+          <source>For example, you can run the following command to display the values of these properties for powershell.exe, where $pid contains the process ID for a running session of Windows PowerShell:</source>
+          <target state="new">For example, you can run the following command to display the values of these properties for powershell.exe, where $pid contains the process ID for a running session of Windows PowerShell:</target>
         </trans-unit>
         <trans-unit id="227" translate="yes" xml:space="preserve">
-          <source>New cmdlets Enter<ph id="ph1">\-</ph>PSHostProcess and Exit<ph id="ph2">\-</ph>PSHostProcess let you debug Windows PowerShell scripts in processes separate from the current process that is running in the Windows PowerShell console.</source>
-          <target state="new">New cmdlets Enter<ph id="ph1">\-</ph>PSHostProcess and Exit<ph id="ph2">\-</ph>PSHostProcess let you debug Windows PowerShell scripts in processes separate from the current process that is running in the Windows PowerShell console.</target>
+          <source>New cmdlets Enter-PSHostProcess and Exit-PSHostProcess let you debug Windows PowerShell scripts in processes separate from the current process that is running in the Windows PowerShell console.</source>
+          <target state="new">New cmdlets Enter-PSHostProcess and Exit-PSHostProcess let you debug Windows PowerShell scripts in processes separate from the current process that is running in the Windows PowerShell console.</target>
         </trans-unit>
         <trans-unit id="228" translate="yes" xml:space="preserve">
-          <source>Run Enter<ph id="ph1">\-</ph>PSHostProcess to enter, or attach to, a specific process ID, and then run Get<ph id="ph2">\-</ph>Runspace to return the active runspaces within the process.</source>
-          <target state="new">Run Enter<ph id="ph1">\-</ph>PSHostProcess to enter, or attach to, a specific process ID, and then run Get<ph id="ph2">\-</ph>Runspace to return the active runspaces within the process.</target>
+          <source>Run Enter-PSHostProcess to enter, or attach to, a specific process ID, and then run Get-Runspace to return the active runspaces within the process.</source>
+          <target state="new">Run Enter-PSHostProcess to enter, or attach to, a specific process ID, and then run Get-Runspace to return the active runspaces within the process.</target>
         </trans-unit>
         <trans-unit id="229" translate="yes" xml:space="preserve">
-          <source>Run Exit<ph id="ph1">\-</ph>PSHostProcess to detach from the process when you are finished debugging the script within the process.</source>
-          <target state="new">Run Exit<ph id="ph1">\-</ph>PSHostProcess to detach from the process when you are finished debugging the script within the process.</target>
+          <source>Run Exit-PSHostProcess to detach from the process when you are finished debugging the script within the process.</source>
+          <target state="new">Run Exit-PSHostProcess to detach from the process when you are finished debugging the script within the process.</target>
         </trans-unit>
         <trans-unit id="230" translate="yes" xml:space="preserve">
-          <source>A new Wait<ph id="ph1">\-</ph>Debugger cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</source>
-          <target state="new">A new Wait<ph id="ph1">\-</ph>Debugger cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</target>
+          <source>A new Wait-Debugger cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</source>
+          <target state="new">A new Wait-Debugger cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Utility<ept id="p1">](http://technet.microsoft.com/library/hh849958.aspx)</ept> module.</target>
         </trans-unit>
         <trans-unit id="231" translate="yes" xml:space="preserve">
-          <source>You can run Wait<ph id="ph1">\-</ph>Debugger to stop a script in the debugger before running the next statement in the script.</source>
-          <target state="new">You can run Wait<ph id="ph1">\-</ph>Debugger to stop a script in the debugger before running the next statement in the script.</target>
+          <source>You can run Wait-Debugger to stop a script in the debugger before running the next statement in the script.</source>
+          <target state="new">You can run Wait-Debugger to stop a script in the debugger before running the next statement in the script.</target>
         </trans-unit>
         <trans-unit id="232" translate="yes" xml:space="preserve">
           <source>The Windows PowerShell Workflow debugger now supports command or tab completion, and you can debug nested workflow functions.</source>
           <target state="new">The Windows PowerShell Workflow debugger now supports command or tab completion, and you can debug nested workflow functions.</target>
         </trans-unit>
         <trans-unit id="233" translate="yes" xml:space="preserve">
-          <source>You can now press <bpt id="p1">**</bpt>Ctrl<ph id="ph1">\+</ph>Break<ept id="p1">**</ept> to enter the debugger in a running script, in both local and remote sessions, and in a workflow script.</source>
-          <target state="new">You can now press <bpt id="p1">**</bpt>Ctrl<ph id="ph1">\+</ph>Break<ept id="p1">**</ept> to enter the debugger in a running script, in both local and remote sessions, and in a workflow script.</target>
+          <source>You can now press <bpt id="p1">**</bpt>Ctrl+Break<ept id="p1">**</ept> to enter the debugger in a running script, in both local and remote sessions, and in a workflow script.</source>
+          <target state="new">You can now press <bpt id="p1">**</bpt>Ctrl+Break<ept id="p1">**</ept> to enter the debugger in a running script, in both local and remote sessions, and in a workflow script.</target>
         </trans-unit>
         <trans-unit id="234" translate="yes" xml:space="preserve">
-          <source>A Debug<ph id="ph1">\-</ph>Job cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Core<ept id="p1">](http://technet.microsoft.com/library/hh849695.aspx)</ept> module to debug running job scripts for Windows PowerShell Workflow, background, and jobs running in remote sessions.</source>
-          <target state="new">A Debug<ph id="ph1">\-</ph>Job cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Core<ept id="p1">](http://technet.microsoft.com/library/hh849695.aspx)</ept> module to debug running job scripts for Windows PowerShell Workflow, background, and jobs running in remote sessions.</target>
+          <source>A Debug-Job cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Core<ept id="p1">](http://technet.microsoft.com/library/hh849695.aspx)</ept> module to debug running job scripts for Windows PowerShell Workflow, background, and jobs running in remote sessions.</source>
+          <target state="new">A Debug-Job cmdlet has been added to the <bpt id="p1">[</bpt>Microsoft.PowerShell.Core<ept id="p1">](http://technet.microsoft.com/library/hh849695.aspx)</ept> module to debug running job scripts for Windows PowerShell Workflow, background, and jobs running in remote sessions.</target>
         </trans-unit>
         <trans-unit id="235" translate="yes" xml:space="preserve">
           <source>A new state, AtBreakpoint, has been added for Windows PowerShell jobs.</source>
@@ -556,76 +556,76 @@
           <target state="new">The AtBreakpoint state applies when a job is running a script that includes set breakpoints, and the script has hit a breakpoint.</target>
         </trans-unit>
         <trans-unit id="237" translate="yes" xml:space="preserve">
-          <source>When a job is stopped at a debug breakpoint, you must debug the job by running the Debug<ph id="ph1">\-</ph>Job cmdlet.</source>
-          <target state="new">When a job is stopped at a debug breakpoint, you must debug the job by running the Debug<ph id="ph1">\-</ph>Job cmdlet.</target>
+          <source>When a job is stopped at a debug breakpoint, you must debug the job by running the Debug-Job cmdlet.</source>
+          <target state="new">When a job is stopped at a debug breakpoint, you must debug the job by running the Debug-Job cmdlet.</target>
         </trans-unit>
         <trans-unit id="238" translate="yes" xml:space="preserve">
           <source>Windows PowerShell 5.0 implements support for multiple versions of a single Windows PowerShell module in the same folder in $PSModulePath.</source>
           <target state="new">Windows PowerShell 5.0 implements support for multiple versions of a single Windows PowerShell module in the same folder in $PSModulePath.</target>
         </trans-unit>
         <trans-unit id="239" translate="yes" xml:space="preserve">
-          <source>A RequiredVersion property has been added to the ModuleSpecification class to help you get the desired version of a module; this property is mutually<ph id="ph1">\-</ph>exclusive with the ModuleVersion property.</source>
-          <target state="new">A RequiredVersion property has been added to the ModuleSpecification class to help you get the desired version of a module; this property is mutually<ph id="ph1">\-</ph>exclusive with the ModuleVersion property.</target>
+          <source>A RequiredVersion property has been added to the ModuleSpecification class to help you get the desired version of a module; this property is mutually exclusive with the ModuleVersion property.</source>
+          <target state="new">A RequiredVersion property has been added to the ModuleSpecification class to help you get the desired version of a module; this property is mutually exclusive with the ModuleVersion property.</target>
         </trans-unit>
         <trans-unit id="240" translate="yes" xml:space="preserve">
-          <source>RequiredVersion is now supported as part of the value of the FullyQualifiedName parameter of the Get<ph id="ph1">\-</ph>Module, Import<ph id="ph2">\-</ph>Module, and Remove<ph id="ph3">\-</ph>Module cmdlets.</source>
-          <target state="new">RequiredVersion is now supported as part of the value of the FullyQualifiedName parameter of the Get<ph id="ph1">\-</ph>Module, Import<ph id="ph2">\-</ph>Module, and Remove<ph id="ph3">\-</ph>Module cmdlets.</target>
+          <source>RequiredVersion is now supported as part of the value of the FullyQualifiedName parameter of the Get-Module, Import-Module, and Remove-Module cmdlets.</source>
+          <target state="new">RequiredVersion is now supported as part of the value of the FullyQualifiedName parameter of the Get-Module, Import-Module, and Remove-Module cmdlets.</target>
         </trans-unit>
         <trans-unit id="241" translate="yes" xml:space="preserve">
-          <source>You can now perform module version validation by running the Test<ph id="ph1">\-</ph>ModuleManifest cmdlet.</source>
-          <target state="new">You can now perform module version validation by running the Test<ph id="ph1">\-</ph>ModuleManifest cmdlet.</target>
+          <source>You can now perform module version validation by running the Test-ModuleManifest cmdlet.</source>
+          <target state="new">You can now perform module version validation by running the Test-ModuleManifest cmdlet.</target>
         </trans-unit>
         <trans-unit id="242" translate="yes" xml:space="preserve">
-          <source>Results of the Get<ph id="ph1">\-</ph>Command cmdlet now display a Version column; a new Version property has been added to the CommandInfo class.</source>
-          <target state="new">Results of the Get<ph id="ph1">\-</ph>Command cmdlet now display a Version column; a new Version property has been added to the CommandInfo class.</target>
+          <source>Results of the Get-Command cmdlet now display a Version column; a new Version property has been added to the CommandInfo class.</source>
+          <target state="new">Results of the Get-Command cmdlet now display a Version column; a new Version property has been added to the CommandInfo class.</target>
         </trans-unit>
         <trans-unit id="243" translate="yes" xml:space="preserve">
-          <source>Get<ph id="ph1">\-</ph>Command shows commands from multiple versions of the same module.</source>
-          <target state="new">Get<ph id="ph1">\-</ph>Command shows commands from multiple versions of the same module.</target>
+          <source>Get-Command shows commands from multiple versions of the same module.</source>
+          <target state="new">Get-Command shows commands from multiple versions of the same module.</target>
         </trans-unit>
         <trans-unit id="244" translate="yes" xml:space="preserve">
           <source>The Version property is also part of derived classes of CmdletInfo: CmdletInfo and ApplicationInfo.</source>
           <target state="new">The Version property is also part of derived classes of CmdletInfo: CmdletInfo and ApplicationInfo.</target>
         </trans-unit>
         <trans-unit id="245" translate="yes" xml:space="preserve">
-          <source>Get<ph id="ph1">\-</ph>Command has a new parameter, <ph id="ph2">\-</ph>ShowCommandInfo, that returns ShowCommand information as PSObjects.</source>
-          <target state="new">Get<ph id="ph1">\-</ph>Command has a new parameter, <ph id="ph2">\-</ph>ShowCommandInfo, that returns ShowCommand information as PSObjects.</target>
+          <source>Get-Command has a new parameter, -ShowCommandInfo, that returns ShowCommand information as PSObjects.</source>
+          <target state="new">Get-Command has a new parameter, -ShowCommandInfo, that returns ShowCommand information as PSObjects.</target>
         </trans-unit>
         <trans-unit id="246" translate="yes" xml:space="preserve">
-          <source>This is especially useful functionality for when Show<ph id="ph1">\-</ph>Command is run in Windows PowerShell ISE by using Windows PowerShell remoting.</source>
-          <target state="new">This is especially useful functionality for when Show<ph id="ph1">\-</ph>Command is run in Windows PowerShell ISE by using Windows PowerShell remoting.</target>
+          <source>This is especially useful functionality for when Show-Command is run in Windows PowerShell ISE by using Windows PowerShell remoting.</source>
+          <target state="new">This is especially useful functionality for when Show-Command is run in Windows PowerShell ISE by using Windows PowerShell remoting.</target>
         </trans-unit>
         <trans-unit id="247" translate="yes" xml:space="preserve">
-          <source>The –ShowCommandInfo parameter replaces the existing Get<ph id="ph1">\-</ph>SerializedCommand function in the Microsoft.PowerShell.Utility module, but the Get<ph id="ph2">\-</ph>SerializedCommand script is still available to support downlevel scripting.</source>
-          <target state="new">The –ShowCommandInfo parameter replaces the existing Get<ph id="ph1">\-</ph>SerializedCommand function in the Microsoft.PowerShell.Utility module, but the Get<ph id="ph2">\-</ph>SerializedCommand script is still available to support downlevel scripting.</target>
+          <source>The –ShowCommandInfo parameter replaces the existing Get-SerializedCommand function in the Microsoft.PowerShell.Utility module, but the Get-SerializedCommand script is still available to support downlevel scripting.</source>
+          <target state="new">The –ShowCommandInfo parameter replaces the existing Get-SerializedCommand function in the Microsoft.PowerShell.Utility module, but the Get-SerializedCommand script is still available to support downlevel scripting.</target>
         </trans-unit>
         <trans-unit id="248" translate="yes" xml:space="preserve">
-          <source>A new Get<ph id="ph1">\-</ph>ItemPropertyValue cmdlet lets you get the value of a property without using dot notation.</source>
-          <target state="new">A new Get<ph id="ph1">\-</ph>ItemPropertyValue cmdlet lets you get the value of a property without using dot notation.</target>
+          <source>A new Get-ItemPropertyValue cmdlet lets you get the value of a property without using dot notation.</source>
+          <target state="new">A new Get-ItemPropertyValue cmdlet lets you get the value of a property without using dot notation.</target>
         </trans-unit>
         <trans-unit id="249" translate="yes" xml:space="preserve">
-          <source>For example, in older releases of Windows PowerShell, you can run the following command to get the value of the Application Base property of the PowerShellEngine registry key: <bpt id="p1">**</bpt>(Get<ph id="ph1">\-</ph>ItemProperty <ph id="ph2">\-</ph>Path HKLM:<ph id="ph3">\\</ph>SOFTWARE<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>PowerShell<ph id="ph6">\\</ph>3<ph id="ph7">\\</ph>PowerShellEngine <ph id="ph8">\-</ph>Name ApplicationBase).ApplicationBase<ept id="p1">**</ept>.</source>
-          <target state="new">For example, in older releases of Windows PowerShell, you can run the following command to get the value of the Application Base property of the PowerShellEngine registry key: <bpt id="p1">**</bpt>(Get<ph id="ph1">\-</ph>ItemProperty <ph id="ph2">\-</ph>Path HKLM:<ph id="ph3">\\</ph>SOFTWARE<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>PowerShell<ph id="ph6">\\</ph>3<ph id="ph7">\\</ph>PowerShellEngine <ph id="ph8">\-</ph>Name ApplicationBase).ApplicationBase<ept id="p1">**</ept>.</target>
+          <source>For example, in older releases of Windows PowerShell, you can run the following command to get the value of the Application Base property of the PowerShellEngine registry key: <bpt id="p1">**</bpt>(Get-ItemProperty -Path HKLM:<ph id="ph1">\\</ph>SOFTWARE<ph id="ph2">\\</ph>Microsoft<ph id="ph3">\\</ph>PowerShell<ph id="ph4">\\</ph>3<ph id="ph5">\\</ph>PowerShellEngine -Name ApplicationBase).ApplicationBase<ept id="p1">**</ept>.</source>
+          <target state="new">For example, in older releases of Windows PowerShell, you can run the following command to get the value of the Application Base property of the PowerShellEngine registry key: <bpt id="p1">**</bpt>(Get-ItemProperty -Path HKLM:<ph id="ph1">\\</ph>SOFTWARE<ph id="ph2">\\</ph>Microsoft<ph id="ph3">\\</ph>PowerShell<ph id="ph4">\\</ph>3<ph id="ph5">\\</ph>PowerShellEngine -Name ApplicationBase).ApplicationBase<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="250" translate="yes" xml:space="preserve">
-          <source>Starting in Windows PowerShell 5.0, you can run <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>ItemPropertyValue <ph id="ph2">\-</ph>Path HKLM:<ph id="ph3">\\</ph>SOFTWARE<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>PowerShell<ph id="ph6">\\</ph>3<ph id="ph7">\\</ph>PowerShellEngine <ph id="ph8">\-</ph>Name ApplicationBase<ept id="p1">**</ept>.</source>
-          <target state="new">Starting in Windows PowerShell 5.0, you can run <bpt id="p1">**</bpt>Get<ph id="ph1">\-</ph>ItemPropertyValue <ph id="ph2">\-</ph>Path HKLM:<ph id="ph3">\\</ph>SOFTWARE<ph id="ph4">\\</ph>Microsoft<ph id="ph5">\\</ph>PowerShell<ph id="ph6">\\</ph>3<ph id="ph7">\\</ph>PowerShellEngine <ph id="ph8">\-</ph>Name ApplicationBase<ept id="p1">**</ept>.</target>
+          <source>Starting in Windows PowerShell 5.0, you can run <bpt id="p1">**</bpt>Get-ItemPropertyValue -Path HKLM:<ph id="ph1">\\</ph>SOFTWARE<ph id="ph2">\\</ph>Microsoft<ph id="ph3">\\</ph>PowerShell<ph id="ph4">\\</ph>3<ph id="ph5">\\</ph>PowerShellEngine -Name ApplicationBase<ept id="p1">**</ept>.</source>
+          <target state="new">Starting in Windows PowerShell 5.0, you can run <bpt id="p1">**</bpt>Get-ItemPropertyValue -Path HKLM:<ph id="ph1">\\</ph>SOFTWARE<ph id="ph2">\\</ph>Microsoft<ph id="ph3">\\</ph>PowerShell<ph id="ph4">\\</ph>3<ph id="ph5">\\</ph>PowerShellEngine -Name ApplicationBase<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="251" translate="yes" xml:space="preserve">
           <source>The Windows PowerShell console now uses syntax coloring, just as in Windows PowerShell ISE.</source>
           <target state="new">The Windows PowerShell console now uses syntax coloring, just as in Windows PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="252" translate="yes" xml:space="preserve">
-          <source>A new NetworkSwitch module contains cmdlets that enable you to apply switch, virtual LAN (VLAN), and basic Layer 2 network switch port configuration to Windows Server 2012 R2 logo<ph id="ph1">\-</ph>certified network switches.</source>
-          <target state="new">A new NetworkSwitch module contains cmdlets that enable you to apply switch, virtual LAN (VLAN), and basic Layer 2 network switch port configuration to Windows Server 2012 R2 logo<ph id="ph1">\-</ph>certified network switches.</target>
+          <source>A new NetworkSwitch module contains cmdlets that enable you to apply switch, virtual LAN (VLAN), and basic Layer 2 network switch port configuration to Windows Server 2012 R2 logo-certified network switches.</source>
+          <target state="new">A new NetworkSwitch module contains cmdlets that enable you to apply switch, virtual LAN (VLAN), and basic Layer 2 network switch port configuration to Windows Server 2012 R2 logo-certified network switches.</target>
         </trans-unit>
         <trans-unit id="253" translate="yes" xml:space="preserve">
-          <source>The FullyQualifiedName parameter has been added to Import<ph id="ph1">\-</ph>Module and Remove<ph id="ph2">\-</ph>Module cmdlets, to support storing multiple versions of a single module.</source>
-          <target state="new">The FullyQualifiedName parameter has been added to Import<ph id="ph1">\-</ph>Module and Remove<ph id="ph2">\-</ph>Module cmdlets, to support storing multiple versions of a single module.</target>
+          <source>The FullyQualifiedName parameter has been added to Import-Module and Remove-Module cmdlets, to support storing multiple versions of a single module.</source>
+          <target state="new">The FullyQualifiedName parameter has been added to Import-Module and Remove-Module cmdlets, to support storing multiple versions of a single module.</target>
         </trans-unit>
         <trans-unit id="254" translate="yes" xml:space="preserve">
-          <source>Save<ph id="ph1">\-</ph>Help, Update<ph id="ph2">\-</ph>Help, Import<ph id="ph3">\-</ph>PSSession, Export<ph id="ph4">\-</ph>PSSession, and Get<ph id="ph5">\-</ph>Command have a new parameter, FullyQualifiedModule, of type ModuleSpecification.</source>
-          <target state="new">Save<ph id="ph1">\-</ph>Help, Update<ph id="ph2">\-</ph>Help, Import<ph id="ph3">\-</ph>PSSession, Export<ph id="ph4">\-</ph>PSSession, and Get<ph id="ph5">\-</ph>Command have a new parameter, FullyQualifiedModule, of type ModuleSpecification.</target>
+          <source>Save-Help, Update-Help, Import-PSSession, Export-PSSession, and Get-Command have a new parameter, FullyQualifiedModule, of type ModuleSpecification.</source>
+          <target state="new">Save-Help, Update-Help, Import-PSSession, Export-PSSession, and Get-Command have a new parameter, FullyQualifiedModule, of type ModuleSpecification.</target>
         </trans-unit>
         <trans-unit id="255" translate="yes" xml:space="preserve">
           <source>Add this parameter to specify a module by its fully qualified name.</source>
