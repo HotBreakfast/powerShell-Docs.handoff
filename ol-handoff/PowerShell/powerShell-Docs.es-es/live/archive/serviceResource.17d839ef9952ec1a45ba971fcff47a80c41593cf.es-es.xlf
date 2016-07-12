@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="es-es">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ce8d6c1c9e8005c5c4792ae0fa4c5030bb9a92ed</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">10123359213df7180388d9251e032c2bbb673143</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\serviceResource.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
@@ -116,6 +116,46 @@
           <target state="new">Indicates the state you want to ensure for the service.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Indicates the description of the target service.</source>
+          <target state="new">Indicates the description of the target service.</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>DisplayName</source>
+          <target state="new">DisplayName</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Indicates the display name of the target service.</source>
+          <target state="new">Indicates the display name of the target service.</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Ensure</source>
+          <target state="new">Ensure</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Indicates whether the target service exists on the system.</source>
+          <target state="new">Indicates whether the target service exists on the system.</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Set this property to <bpt id="p1">**</bpt>Absent<ept id="p1">**</ept> to ensure that the target service does not exist.</source>
+          <target state="new">Set this property to <bpt id="p1">**</bpt>Absent<ept id="p1">**</ept> to ensure that the target service does not exist.</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Setting it to <bpt id="p1">**</bpt>Present<ept id="p1">**</ept> (the default value) ensures that target service exists.</source>
+          <target state="new">Setting it to <bpt id="p1">**</bpt>Present<ept id="p1">**</ept> (the default value) ensures that target service exists.</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Path</source>
+          <target state="new">Path</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>Indicates the path to the binary file for a new service.</source>
+          <target state="new">Indicates the path to the binary file for a new service.</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>Example</source>
           <target state="new">Example</target>
         </trans-unit>
