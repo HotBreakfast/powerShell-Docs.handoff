@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a3dd4a217f5b1fd80e97adf802c65073ca015bbc</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\role-capabilities.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\role-capabilities.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">5b6dcb205d2c3cbb1a98c6465cb1002b9ed61459</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-48076a9" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -107,16 +108,16 @@
           <target state="new">That being said, it is strongly encouraged to closely examinine every command you expose through JEA.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
-          <source>You have expose an executable (ipconfig) using VisibleExternalCommands.</source>
-          <target state="new">You have expose an executable (ipconfig) using VisibleExternalCommands.</target>
+          <source>You have exposed an executable (ipconfig) using VisibleExternalCommands.</source>
+          <target state="new">You have exposed an executable (ipconfig) using VisibleExternalCommands.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>You can also expose full PowerShell scripts with this field.</source>
           <target state="new">You can also expose full PowerShell scripts with this field.</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
-          <source>It is important to always provide the full path to external commands to ensure a similarly named (and potentially malicous) program placed in the user's path does not get executed instead.</source>
-          <target state="new">It is important to always provide the full path to external commands to ensure a similarly named (and potentially malicous) program placed in the user's path does not get executed instead.</target>
+          <source>It is important to always provide the full path to external commands to ensure a similarly named (and potentially malicious) program placed in the user's path does not get executed instead.</source>
+          <target state="new">It is important to always provide the full path to external commands to ensure a similarly named (and potentially malicious) program placed in the user's path does not get executed instead.</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
           <source>Save the file, then connect to the demo endpoint again to confirm the changes worked.</source>
@@ -195,8 +196,8 @@
           <target state="new">Key Concepts</target>
         </trans-unit>
         <trans-unit id="147" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Role Capability (.psrc)<ept id="p1">**</ept>: A file that define "what" a user can do at a JEA endpoint.</source>
-          <target state="new"><bpt id="p1">**</bpt>Role Capability (.psrc)<ept id="p1">**</ept>: A file that define "what" a user can do at a JEA endpoint.</target>
+          <source><bpt id="p1">**</bpt>Role Capability (.psrc)<ept id="p1">**</ept>: A file that defines "what" a user can do at a JEA endpoint.</source>
+          <target state="new"><bpt id="p1">**</bpt>Role Capability (.psrc)<ept id="p1">**</ept>: A file that defines "what" a user can do at a JEA endpoint.</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
           <source>It details a whitelist of things like visible commands, visible console applications, and more.</source>

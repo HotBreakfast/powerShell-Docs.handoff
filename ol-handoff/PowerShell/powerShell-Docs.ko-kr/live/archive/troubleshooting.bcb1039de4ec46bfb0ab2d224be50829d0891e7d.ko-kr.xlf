@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ko-kr">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a09f228cf232ff9d7cf2ba20c73808fd92c9d560</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">369b6379c3ddc4b7ccd1000aec9b0b002e1934b3</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dsc\troubleshooting.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
@@ -342,10 +342,8 @@
           <target state="new">Getting details of DSC events</target>
         </trans-unit>
         <trans-unit id="183" translate="yes" xml:space="preserve">
-          <source>The <ph id="ph1">`Trace-xDscOperation1 cmdlet returns an object containing a collection of events, their event types, and the message output generated from a particular DSC operation. Typically, when you find a failure 
-in any of the operations using `</ph>Get-xDscOperation`, you would trace that operation to find out which of the events caused a failure.</source>
-          <target state="new">The <ph id="ph1">`Trace-xDscOperation1 cmdlet returns an object containing a collection of events, their event types, and the message output generated from a particular DSC operation. Typically, when you find a failure 
-in any of the operations using `</ph>Get-xDscOperation`, you would trace that operation to find out which of the events caused a failure.</target>
+          <source>The <ph id="ph1">`Trace-xDscOperation1 cmdlet returns an object containing a collection of events, their event types, and the message output generated from a particular DSC operation. Typically, when you find a failure in any of the operations using `</ph>Get-xDscOperation`, you would trace that operation to find out which of the events caused a failure.</source>
+          <target state="new">The <ph id="ph1">`Trace-xDscOperation1 cmdlet returns an object containing a collection of events, their event types, and the message output generated from a particular DSC operation. Typically, when you find a failure in any of the operations using `</ph>Get-xDscOperation`, you would trace that operation to find out which of the events caused a failure.</target>
         </trans-unit>
         <trans-unit id="184" translate="yes" xml:space="preserve">
           <source>Use the  <ph id="ph1">`SequenceID`</ph> parameter to get the events for a specific operation for a specific computer.</source>
