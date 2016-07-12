@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">e1827e102a9b35ea214f89395f7ff3c5e0a58506</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">b1addddd50368fadcbb2581673d3ebc7cad8e32a</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\setup\WinRMSecurity.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
@@ -36,8 +36,8 @@
           <target state="new">What is PowerShell Remoting?</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>PowerShell Remoting uses <bpt id="p1">[</bpt>Windows Remote Management (WinRM)<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)</ept>, which is the Microsoft implementation of the <bpt id="p2">[</bpt>Web Services for Managment (WS-Managment)<ept id="p2">](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)</ept> protocol, to allow users to run PowerShell commands on remote computers.</source>
-          <target state="new">PowerShell Remoting uses <bpt id="p1">[</bpt>Windows Remote Management (WinRM)<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)</ept>, which is the Microsoft implementation of the <bpt id="p2">[</bpt>Web Services for Managment (WS-Managment)<ept id="p2">](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)</ept> protocol, to allow users to run PowerShell commands on remote computers.</target>
+          <source>PowerShell Remoting uses <bpt id="p1">[</bpt>Windows Remote Management (WinRM)<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)</ept>, which is the Microsoft implementation of the <bpt id="p2">[</bpt>Web Services for Management (WS-Management)<ept id="p2">](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)</ept> protocol, to allow users to run PowerShell commands on remote computers.</source>
+          <target state="new">PowerShell Remoting uses <bpt id="p1">[</bpt>Windows Remote Management (WinRM)<ept id="p1">](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384426.aspx)</ept>, which is the Microsoft implementation of the <bpt id="p2">[</bpt>Web Services for Management (WS-Management)<ept id="p2">](http://www.dmtf.org/sites/default/files/standards/documents/DSP0226_1.2.0.pdf)</ept> protocol, to allow users to run PowerShell commands on remote computers.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>You can find more information about using PowerShell Remoting at <bpt id="p1">[</bpt>Running Remote Commands<ept id="p1">](https://technet.microsoft.com/en-us/library/dd819505.aspx)</ept>.</source>
@@ -176,8 +176,8 @@
           <target state="new">As with all protocols that use NTLM for authentication, an attacker with access to a domain-joined computer's machine account could invoke the domain controller to compute an NTLM session-key and thereby impersonate the server.</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
-          <source>NTLM-based authentication is disabled by default, but may be permitted by either configuring SSL on the target server, or by configuring the WinRM TrustedHosts setting.</source>
-          <target state="new">NTLM-based authentication is disabled by default, but may be permitted by either configuring SSL on the target server, or by configuring the WinRM TrustedHosts setting.</target>
+          <source>NTLM-based authentication is disabled by default, but may be permitted by either configuring SSL on the target server, or by configuring the WinRM TrustedHosts setting on the client.</source>
+          <target state="new">NTLM-based authentication is disabled by default, but may be permitted by either configuring SSL on the target server, or by configuring the WinRM TrustedHosts setting on the client.</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>Using SSL certificates to validate server identity during NTLM-based connections</source>
