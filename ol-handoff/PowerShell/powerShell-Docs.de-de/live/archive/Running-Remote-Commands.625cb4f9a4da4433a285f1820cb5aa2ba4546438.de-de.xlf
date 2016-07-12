@@ -2,8 +2,8 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-db30baf" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">75d41569b18e61342809eebcc76b7899ec6363fa</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">48385de53964217b2f7d263d85bfb99b1dbf6507</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\core-powershell\Running-Remote-Commands.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
@@ -32,8 +32,8 @@
           <target state="new">Remoting Without Configuration</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>Many Windows PowerShell cmdlets have a ComputerName parameter that enables you to collect data and change settings one or more remote computers.</source>
-          <target state="new">Many Windows PowerShell cmdlets have a ComputerName parameter that enables you to collect data and change settings one or more remote computers.</target>
+          <source>Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers.</source>
+          <target state="new">Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.</source>
@@ -60,8 +60,8 @@
           <target state="new">Get-EventLog</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source>Get-Hotfix</source>
-          <target state="new">Get-Hotfix</target>
+          <source>Get-HotFix</source>
+          <target state="new">Get-HotFix</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
           <source>Get-Process</source>
@@ -84,8 +84,8 @@
           <target state="new">Get-WmiObject</target>
         </trans-unit>
         <trans-unit id="119" translate="yes" xml:space="preserve">
-          <source>Typically, cmdlets that support remoting without special configuration have a ComputerName parameter and do not have a Session parameter.</source>
-          <target state="new">Typically, cmdlets that support remoting without special configuration have a ComputerName parameter and do not have a Session parameter.</target>
+          <source>Typically, cmdlets that support remoting without special configuration have the ComputerName parameter and do not have the Session parameter.</source>
+          <target state="new">Typically, cmdlets that support remoting without special configuration have the ComputerName parameter and do not have the Session parameter.</target>
         </trans-unit>
         <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>To find these cmdlets in your session, type:</source>
@@ -224,8 +224,8 @@
           <target state="new">And because the sessions are persistent, you can collect data in one command and use it in a subsequent command.</target>
         </trans-unit>
         <trans-unit id="154" translate="yes" xml:space="preserve">
-          <source>For example, the following command runs a Get<ph id="ph1">\-</ph>Hotfix command in the sessions in the $s variable and it saves the results in the $h variable.</source>
-          <target state="new">For example, the following command runs a Get<ph id="ph1">\-</ph>Hotfix command in the sessions in the $s variable and it saves the results in the $h variable.</target>
+          <source>For example, the following command runs a Get<ph id="ph1">\-</ph>HotFix command in the sessions in the $s variable and it saves the results in the $h variable.</source>
+          <target state="new">For example, the following command runs a Get<ph id="ph1">\-</ph>HotFix command in the sessions in the $s variable and it saves the results in the $h variable.</target>
         </trans-unit>
         <trans-unit id="155" translate="yes" xml:space="preserve">
           <source>The $h variable is created in each of the sessions in $s, but it does not exist in the local session.</source>
@@ -260,8 +260,8 @@
           <target state="new">The WSMAN: drive that the provider creates lets you navigate through a hierarchy of configuration settings on the local computer and remote computers.</target>
         </trans-unit>
         <trans-unit id="163" translate="yes" xml:space="preserve">
-          <source>For more information about the WSMan provider, see  <bpt id="p1">[</bpt>WSMan Provider<ept id="p1">](https://technet.microsoft.com/en-us/library/dd819476.aspx)</ept> and <bpt id="p2">  [</bpt>About WS-Management Cmdlets<ept id="p2">](https://technet.microsoft.com/en-us/library/dd819481.aspx)</ept>, or in the Windows PowerShell console, type "get<ph id="ph1">\-</ph>help wsman".</source>
-          <target state="new">For more information about the WSMan provider, see  <bpt id="p1">[</bpt>WSMan Provider<ept id="p1">](https://technet.microsoft.com/en-us/library/dd819476.aspx)</ept> and <bpt id="p2">  [</bpt>About WS-Management Cmdlets<ept id="p2">](https://technet.microsoft.com/en-us/library/dd819481.aspx)</ept>, or in the Windows PowerShell console, type "get<ph id="ph1">\-</ph>help wsman".</target>
+          <source>For more information about the WSMan provider, see  <bpt id="p1">[</bpt>WSMan Provider<ept id="p1">](https://technet.microsoft.com/en-us/library/dd819476.aspx)</ept> and <bpt id="p2">  [</bpt>About WS-Management Cmdlets<ept id="p2">](https://technet.microsoft.com/en-us/library/dd819481.aspx)</ept>, or in the Windows PowerShell console, type "Get<ph id="ph1">\-</ph>Help wsman".</source>
+          <target state="new">For more information about the WSMan provider, see  <bpt id="p1">[</bpt>WSMan Provider<ept id="p1">](https://technet.microsoft.com/en-us/library/dd819476.aspx)</ept> and <bpt id="p2">  [</bpt>About WS-Management Cmdlets<ept id="p2">](https://technet.microsoft.com/en-us/library/dd819481.aspx)</ept>, or in the Windows PowerShell console, type "Get<ph id="ph1">\-</ph>Help wsman".</target>
         </trans-unit>
         <trans-unit id="164" translate="yes" xml:space="preserve">
           <source>For more information, see:</source>

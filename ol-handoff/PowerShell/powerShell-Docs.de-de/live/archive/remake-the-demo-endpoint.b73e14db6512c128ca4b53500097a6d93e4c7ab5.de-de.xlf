@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="de-de">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">acd2cfbd038250a26236c875d0e8b03a32cd84f9</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\remake-the-demo-endpoint.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\remake-the-demo-endpoint.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dabb5023012e90ace3fbc5f347c17821abd92595</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-48076a9" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -111,8 +112,8 @@
           <target state="new">Open the file in PowerShell ISE, or your favorite text editor.</target>
         </trans-unit>
         <trans-unit id="126" translate="yes" xml:space="preserve">
-          <source>Update the following fields in the file with the values below (remember to substitue in your own non-administrator security group):</source>
-          <target state="new">Update the following fields in the file with the values below (remember to substitue in your own non-administrator security group):</target>
+          <source>Update the following fields in the file with the values below (remember to substitute in your own non-administrator security group):</source>
+          <target state="new">Update the following fields in the file with the values below (remember to substitute in your own non-administrator security group):</target>
         </trans-unit>
         <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>Here is what each of those entries mean:</source>
@@ -155,8 +156,8 @@
           <target state="new">This is the core of JEA's RBAC functionality.</target>
         </trans-unit>
         <trans-unit id="137" translate="yes" xml:space="preserve">
-          <source>In this example, you are exposing the pre-made "Demo" RoleCapability to members of the "Contoso\JEA_NonAdmin_Operator" group.</source>
-          <target state="new">In this example, you are exposing the pre-made "Demo" RoleCapability to members of the "Contoso\JEA_NonAdmin_Operator" group.</target>
+          <source>In this example, you are exposing the pre-made "Maintenance" RoleCapability to members of the "Contoso\JEA_NonAdmin_Operator" group.</source>
+          <target state="new">In this example, you are exposing the pre-made "Maintenance" RoleCapability to members of the "Contoso\JEA_NonAdmin_Operator" group.</target>
         </trans-unit>
         <trans-unit id="138" translate="yes" xml:space="preserve">
           <source>The <bpt id="p1">*</bpt>RunAsVirtualAccount<ept id="p1">*</ept> field indicates that PowerShell should "run as" a Virtual Account at this endpoint.</source>
@@ -243,8 +244,8 @@
           <target state="new">Re-run the steps listed in the <bpt id="p1">[</bpt>Using JEA<ept id="p1">](using-jea.md)</ept> section against your new endpoint to confirm it is operating as intended.</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
-          <source>Be sure to use the new endpoint name (JEADemo2) when providing the configuration name to Enter-PSSession.</source>
-          <target state="new">Be sure to use the new endpoint name (JEADemo2) when providing the configuration name to Enter-PSSession.</target>
+          <source>Be sure to use the new endpoint name (JEADemo2) when providing the configuration name to <ph id="ph1">`Enter-PSSession`</ph>.</source>
+          <target state="new">Be sure to use the new endpoint name (JEADemo2) when providing the configuration name to <ph id="ph1">`Enter-PSSession`</ph>.</target>
         </trans-unit>
         <trans-unit id="160" translate="yes" xml:space="preserve">
           <source>Key Concepts</source>
