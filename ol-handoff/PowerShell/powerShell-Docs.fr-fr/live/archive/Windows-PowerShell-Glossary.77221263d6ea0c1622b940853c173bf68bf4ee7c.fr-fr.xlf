@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="fr-fr">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">ab41246eda58eb384500daa1f99aa9a8f9e019e1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\Windows-PowerShell-Glossary.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">scripting\Windows-PowerShell-Glossary.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0cd377653a3ca82052b1b88f00bfe92830f2020f</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-39517ae" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -71,8 +72,8 @@
           <target state="new">A module that exists only in memory.</target>
         </trans-unit>
         <trans-unit id="116" translate="yes" xml:space="preserve">
-          <source>The Import\-PSSession cmdlet creates dynamic modules.</source>
-          <target state="new">The Import\-PSSession cmdlet creates dynamic modules.</target>
+          <source>The New-Module and Import-PSSession cmdlets create dynamic modules.</source>
+          <target state="new">The New-Module and Import-PSSession cmdlets create dynamic modules.</target>
         </trans-unit>
         <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>dynamic parameter</source>
@@ -163,8 +164,8 @@
           <target state="new">The private data in this session state is not available to the user of a Windows PowerShell session.</target>
         </trans-unit>
         <trans-unit id="139" translate="yes" xml:space="preserve">
-          <source>non\-terminating error</source>
-          <target state="new">non\-terminating error</target>
+          <source>non<ph id="ph1">\-</ph>terminating error</source>
+          <target state="new">non<ph id="ph1">\-</ph>terminating error</target>
         </trans-unit>
         <trans-unit id="140" translate="yes" xml:space="preserve">
           <source>An error that does not stop Windows PowerShell from continuing to process the command.</source>
@@ -335,8 +336,8 @@
           <target state="new">Windows PowerShell</target>
         </trans-unit>
         <trans-unit id="182" translate="yes" xml:space="preserve">
-          <source>A command\-line shell and task\-based scripting technology that provides IT administrators comprehensive control and automation of system administration tasks.</source>
-          <target state="new">A command\-line shell and task\-based scripting technology that provides IT administrators comprehensive control and automation of system administration tasks.</target>
+          <source>A command<ph id="ph1">\-</ph>line shell and task<ph id="ph2">\-</ph>based scripting technology that provides IT administrators comprehensive control and automation of system administration tasks.</source>
+          <target state="new">A command<ph id="ph1">\-</ph>line shell and task<ph id="ph2">\-</ph>based scripting technology that provides IT administrators comprehensive control and automation of system administration tasks.</target>
         </trans-unit>
         <trans-unit id="183" translate="yes" xml:space="preserve">
           <source>Windows PowerShell command</source>
@@ -375,24 +376,24 @@
           <target state="new">It can be defined by a Windows PowerShell provider or created at the command line.</target>
         </trans-unit>
         <trans-unit id="192" translate="yes" xml:space="preserve">
-          <source>Drives created at the command line are session\-specific drives and are lost when the session is closed.</source>
-          <target state="new">Drives created at the command line are session\-specific drives and are lost when the session is closed.</target>
+          <source>Drives created at the command line are session<ph id="ph1">\-</ph>specific drives and are lost when the session is closed.</source>
+          <target state="new">Drives created at the command line are session<ph id="ph1">\-</ph>specific drives and are lost when the session is closed.</target>
         </trans-unit>
         <trans-unit id="193" translate="yes" xml:space="preserve">
           <source>Windows PowerShell Integrated Scripting Environment (ISE)</source>
           <target state="new">Windows PowerShell Integrated Scripting Environment (ISE)</target>
         </trans-unit>
         <trans-unit id="194" translate="yes" xml:space="preserve">
-          <source>A Windows PowerShell host application that enables you to run commands and to write, test, and debug scripts in a friendly, syntax\-colored, Unicode\-compliant environment.</source>
-          <target state="new">A Windows PowerShell host application that enables you to run commands and to write, test, and debug scripts in a friendly, syntax\-colored, Unicode\-compliant environment.</target>
+          <source>A Windows PowerShell host application that enables you to run commands and to write, test, and debug scripts in a friendly, syntax<ph id="ph1">\-</ph>colored, Unicode<ph id="ph2">\-</ph>compliant environment.</source>
+          <target state="new">A Windows PowerShell host application that enables you to run commands and to write, test, and debug scripts in a friendly, syntax<ph id="ph1">\-</ph>colored, Unicode<ph id="ph2">\-</ph>compliant environment.</target>
         </trans-unit>
         <trans-unit id="195" translate="yes" xml:space="preserve">
           <source>Windows PowerShell module</source>
           <target state="new">Windows PowerShell module</target>
         </trans-unit>
         <trans-unit id="196" translate="yes" xml:space="preserve">
-          <source>A self\-contained reusable unit that allows you to partition, organize, and abstract your Windows PowerShell  code.</source>
-          <target state="new">A self\-contained reusable unit that allows you to partition, organize, and abstract your Windows PowerShell  code.</target>
+          <source>A self<ph id="ph1">\-</ph>contained reusable unit that allows you to partition, organize, and abstract your Windows PowerShell  code.</source>
+          <target state="new">A self<ph id="ph1">\-</ph>contained reusable unit that allows you to partition, organize, and abstract your Windows PowerShell  code.</target>
         </trans-unit>
         <trans-unit id="197" translate="yes" xml:space="preserve">
           <source>A module can contain cmdlets, providers, functions, variables, and other types of resources that can be imported as a single unit.</source>
@@ -403,8 +404,8 @@
           <target state="new">Windows PowerShell provider</target>
         </trans-unit>
         <trans-unit id="199" translate="yes" xml:space="preserve">
-          <source>A Microsoft .NET Framework\-based program that makes the data in a specialized data store available in Windows PowerShell so that you can view and manage it.</source>
-          <target state="new">A Microsoft .NET Framework\-based program that makes the data in a specialized data store available in Windows PowerShell so that you can view and manage it.</target>
+          <source>A Microsoft .NET Framework<ph id="ph1">\-</ph>based program that makes the data in a specialized data store available in Windows PowerShell so that you can view and manage it.</source>
+          <target state="new">A Microsoft .NET Framework<ph id="ph1">\-</ph>based program that makes the data in a specialized data store available in Windows PowerShell so that you can view and manage it.</target>
         </trans-unit>
         <trans-unit id="200" translate="yes" xml:space="preserve">
           <source>Windows PowerShell script</source>
@@ -423,8 +424,8 @@
           <target state="new">A file that has the .ps1 extension and that contains a script that is written in the Windows PowerShell language.</target>
         </trans-unit>
         <trans-unit id="204" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell snap\-in</source>
-          <target state="new">Windows PowerShell snap\-in</target>
+          <source>Windows PowerShell snap<ph id="ph1">\-</ph>in</source>
+          <target state="new">Windows PowerShell snap<ph id="ph1">\-</ph>in</target>
         </trans-unit>
         <trans-unit id="205" translate="yes" xml:space="preserve">
           <source>A resource that defines a set of cmdlets, providers, and Microsoft .NET Framework types that can be added to the Windows PowerShell environment.</source>
@@ -435,12 +436,12 @@
           <target state="new">Windows PowerShell Workflow</target>
         </trans-unit>
         <trans-unit id="207" translate="yes" xml:space="preserve">
-          <source>A workflow is a sequence of programmed, connected steps that perform long\-running tasks or require the coordination of multiple steps across multiple devices or managed nodes.</source>
-          <target state="new">A workflow is a sequence of programmed, connected steps that perform long\-running tasks or require the coordination of multiple steps across multiple devices or managed nodes.</target>
+          <source>A workflow is a sequence of programmed, connected steps that perform long<ph id="ph1">\-</ph>running tasks or require the coordination of multiple steps across multiple devices or managed nodes.</source>
+          <target state="new">A workflow is a sequence of programmed, connected steps that perform long<ph id="ph1">\-</ph>running tasks or require the coordination of multiple steps across multiple devices or managed nodes.</target>
         </trans-unit>
         <trans-unit id="208" translate="yes" xml:space="preserve">
-          <source>Windows PowerShell Workflow lets IT pros and developers author sequences of multi\-device management activities, or single tasks within a workflow, as workflows.</source>
-          <target state="new">Windows PowerShell Workflow lets IT pros and developers author sequences of multi\-device management activities, or single tasks within a workflow, as workflows.</target>
+          <source>Windows PowerShell Workflow lets IT pros and developers author sequences of multi<ph id="ph1">\-</ph>device management activities, or single tasks within a workflow, as workflows.</source>
+          <target state="new">Windows PowerShell Workflow lets IT pros and developers author sequences of multi<ph id="ph1">\-</ph>device management activities, or single tasks within a workflow, as workflows.</target>
         </trans-unit>
         <trans-unit id="209" translate="yes" xml:space="preserve">
           <source>Windows PowerShell Workflow lets you adapt and run both Windows PowerShell scripts and XAML files as workflows.</source>
