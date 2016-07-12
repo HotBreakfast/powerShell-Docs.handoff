@@ -2,11 +2,12 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
     <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">204909c16d5e3e2099f6ba4247929d61445cd654</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\end-to-end---active-directory.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
-      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">jea\end-to-end---active-directory.md</xliffext:olfilepath>
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0a262e2c83174db7041d3cf35d97542b1cac4386</xliffext:olfilehash>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-48076a9" tool-company="Microsoft" />
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
     </header>
     <body>
       <group id="content" extype="content">
@@ -199,8 +200,8 @@
           <target state="new">There are two important reasons to do this:</target>
         </trans-unit>
         <trans-unit id="148" translate="yes" xml:space="preserve">
-          <source>It is easy to expose give users more capabilities than you intend.</source>
-          <target state="new">It is easy to expose give users more capabilities than you intend.</target>
+          <source>It is easy to give users more capabilities than you intend.</source>
+          <target state="new">It is easy to give users more capabilities than you intend.</target>
         </trans-unit>
         <trans-unit id="149" translate="yes" xml:space="preserve">
           <source>For example, <ph id="ph1">`Set-ADUser`</ph> is an incredibly powerful and flexible command.</source>
@@ -235,8 +236,8 @@
           <target state="new">After reviewing each command, you decide to restrict the following:</target>
         </trans-unit>
         <trans-unit id="157" translate="yes" xml:space="preserve">
-          <source>should only be allowed to run with the "-Title" parameter</source>
-          <target state="new">should only be allowed to run with the "-Title" parameter</target>
+          <source>should only be allowed to run with the -Title parameter</source>
+          <target state="new">should only be allowed to run with the -Title parameter</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
           <source>and <ph id="ph1">`Remove-ADGroupMember`</ph> should only work with certain groups</source>
@@ -251,8 +252,8 @@
           <target state="new">Actually using those cmdlets may not be straightforward in the restricted JEA environment.</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
-          <source>JEA runs in <bpt id="p1">*</bpt>No Language<ept id="p1">*</ept> mode which, among other things, prevents users from using variables.</source>
-          <target state="new">JEA runs in <bpt id="p1">*</bpt>No Language<ept id="p1">*</ept> mode which, among other things, prevents users from using variables.</target>
+          <source>JEA runs in <bpt id="p1">*</bpt>NoLanguage<ept id="p1">*</ept> mode which, among other things, prevents users from using variables.</source>
+          <target state="new">JEA runs in <bpt id="p1">*</bpt>NoLanguage<ept id="p1">*</ept> mode which, among other things, prevents users from using variables.</target>
         </trans-unit>
         <trans-unit id="162" translate="yes" xml:space="preserve">
           <source>In order to ensure that end users have a smooth experience, it's important to check for a few things.</source>
@@ -263,16 +264,16 @@
           <target state="new">As an example, consider <ph id="ph1">`Set-ADAccountPassword`</ph>.</target>
         </trans-unit>
         <trans-unit id="164" translate="yes" xml:space="preserve">
-          <source>The "-NewPassword" parameter requires a secure string.</source>
-          <target state="new">The "-NewPassword" parameter requires a secure string.</target>
+          <source>The -NewPassword parameter requires a secure string.</source>
+          <target state="new">The -NewPassword parameter requires a secure string.</target>
         </trans-unit>
         <trans-unit id="165" translate="yes" xml:space="preserve">
           <source>Often, users create a secure string and pass it in as a variable (as below):</source>
           <target state="new">Often, users create a secure string and pass it in as a variable (as below):</target>
         </trans-unit>
         <trans-unit id="166" translate="yes" xml:space="preserve">
-          <source>However, No Language mode prevents the usage of variables.</source>
-          <target state="new">However, No Language mode prevents the usage of variables.</target>
+          <source>However, <bpt id="p1">*</bpt>NoLanguage<ept id="p1">*</ept> mode prevents the usage of variables.</source>
+          <target state="new">However, <bpt id="p1">*</bpt>NoLanguage<ept id="p1">*</ept> mode prevents the usage of variables.</target>
         </trans-unit>
         <trans-unit id="167" translate="yes" xml:space="preserve">
           <source>You can get around this restriction in two ways:</source>
@@ -383,8 +384,8 @@
           <target state="new">In this section, you will fill in the values in that file.</target>
         </trans-unit>
         <trans-unit id="194" translate="yes" xml:space="preserve">
-          <source>Start by opening the role capability file in ISE.</source>
-          <target state="new">Start by opening the role capability file in ISE.</target>
+          <source>Start by opening the role capability file in PowerShell ISE.</source>
+          <target state="new">Start by opening the role capability file in PowerShell ISE.</target>
         </trans-unit>
         <trans-unit id="195" translate="yes" xml:space="preserve">
           <source>Update the file with the following changes:</source>
@@ -403,8 +404,8 @@
           <target state="new">You may need to explicitly list module names in the "ModulesToImport" field if you notice problems with a module not being autoloaded.</target>
         </trans-unit>
         <trans-unit id="199" translate="yes" xml:space="preserve">
-          <source>If you aren't sure if a command is a cmdlet or a function, run <ph id="ph1">`Get-Command`</ph> and look at the "CommandType"</source>
-          <target state="new">If you aren't sure if a command is a cmdlet or a function, run <ph id="ph1">`Get-Command`</ph> and look at the "CommandType"</target>
+          <source>If you aren't sure if a command is a cmdlet or a function, run <ph id="ph1">`Get-Command`</ph> and look at the "CommandType" property</source>
+          <target state="new">If you aren't sure if a command is a cmdlet or a function, run <ph id="ph1">`Get-Command`</ph> and look at the "CommandType" property</target>
         </trans-unit>
         <trans-unit id="200" translate="yes" xml:space="preserve">
           <source>The ValidatePattern allows you to use a regular expression to restrict parameter arguments if it is not easy to define a set of allowable values.</source>
@@ -459,8 +460,8 @@
           <target state="new">Password = "pa$$w0rd"</target>
         </trans-unit>
         <trans-unit id="213" translate="yes" xml:space="preserve">
-          <source>Remote into the AD Helpdesk endpoint using the non-admin credential:</source>
-          <target state="new">Remote into the AD Helpdesk endpoint using the non-admin credential:</target>
+          <source>Remote into the ADHelpdesk endpoint using the non-admin credential:</source>
+          <target state="new">Remote into the ADHelpdesk endpoint using the non-admin credential:</target>
         </trans-unit>
         <trans-unit id="214" translate="yes" xml:space="preserve">
           <source>Use Set-ADUser to reset a user's title.</source>
@@ -507,8 +508,8 @@
           <target state="new"><bpt id="p1">**</bpt>ValidateSet/ValidatePattern<ept id="p1">**</ept>: When exposing a command, you can restrict valid arguments for specific parameters.</target>
         </trans-unit>
         <trans-unit id="225" translate="yes" xml:space="preserve">
-          <source>A ValidateSet is a specific list of valid commands.</source>
-          <target state="new">A ValidateSet is a specific list of valid commands.</target>
+          <source>A ValidateSet is a specific list of valid arguments.</source>
+          <target state="new">A ValidateSet is a specific list of valid arguments.</target>
         </trans-unit>
         <trans-unit id="226" translate="yes" xml:space="preserve">
           <source>A ValidatePattern is a regular expression that the arguments for that parameter must match.</source>
