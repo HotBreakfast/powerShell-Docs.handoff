@@ -1,152 +1,162 @@
 ---
-title:  Accessibility in Windows PowerShell ISE
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  a078f9d1-dd6b-4323-b16d-0622cd993aa8
+title: "Windows PowerShell ISE のアクセシビリティ"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
+translationtype: Human Translation
+ms.sourcegitcommit: 51b2182de7b563daefb9d64434bdc8b8ab5e0343
+ms.openlocfilehash: cdf1f553d0bea91e2dcd051faef42417ad0cbc7a
+
 ---
 
-# Accessibility in Windows PowerShell ISE
-This topic describes the accessibility features of Windows PowerShell® Integrated Scripting Environment (ISE) that you might find helpful.
+# Windows PowerShell ISE のアクセシビリティ
+このトピックでは、Windows PowerShell® Integrated Scripting Environment (ISE) の役に立つユーザー補助機能について説明します。
 
-* [How to change the size and location of the Console and Script Panes](#bkmk_1)
-* [Keyboard shortcuts for editing text](#bkmk_2)
-* [Keyboard shortcuts for running scripts](#bkmk_3)
-* [Keyboard shortcuts for customizing the view](#bkmk_4)
-* [Keyboard shortcuts for debugging scripts](#bkmk_5)
-* [Keyboard shortcuts for Windows PowerShell tabs](#bkmk_6)
-* [Keyboard shortcuts for starting and exiting](#bkmk_7)
+* [コンソール ウィンドウとスクリプト ウィンドウのサイズと場所を変更する方法](#bkmk_1)
+* [テキストを編集するためのキーボード ショートカット](#bkmk_2)
+* [スクリプトを実行するためのキーボード ショートカット](#bkmk_3)
+* [ビューをカスタマイズするためのキーボード ショートカット](#bkmk_4)
+* [スクリプト デバッグ用のキーボード ショートカット](#bkmk_5)
+* [Windows PowerShell のタブのキーボード ショートカット](#bkmk_6)
+* [開始および終了のキーボード ショートカット](#bkmk_7)
 
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Windows PowerShell ISE more accessible for people with disabilities.
+Microsoft は、あらゆるユーザーの皆様に使いやすい製品とサービスをお届けできるように努めています。 以下のトピックでは、障害のある方に Windows PowerShell ISE を快適にご利用いただくための機能、製品、およびサービスについて説明します。
 
-Windows PowerShell ISE supports high contrast mode. For the visually impaired, breakpoint information is available through the cmdlets for managing breakpoints, such as [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) and [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). For more information please see “How to manage breakpoints” in [How to Debug Scripts in the Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). In addition to accessibility features and utilities in Microsoft Windows, the following features make Windows PowerShell ISE more accessible for people with disabilities:
+Windows PowerShell ISE は、ハイ コントラスト モードをサポートしています。 視覚に障碍のある方のために、ブレークポイントを管理するコマンドレット ([Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6)、[Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420) など) を通じて、ブレークポイント情報をご利用いただけます。 詳しくは、「[Windows PowerShell ISE でスクリプトをデバッグする方法](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1)」の「ブレークポイントを管理する方法」をご覧ください。 Microsoft Windows のアクセシビリティ機能とユーティリティに加え、Windows PowerShell ISE には、身体に障碍のある方に役立つ次の機能が備わっています。
 
--   Keyboard Shortcuts
+-   キーボード ショートカット
 
--   Syntax Coloring Table and the ability to modify several other color settings using the [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) scripting object.
+-   構文を色分けした表や、[$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) スクリプト オブジェクトを使用して他のいくつかの色の設定を変更する機能。
 
--   Text Size Change
+-   テキスト サイズの変更
 
-## <a name="bkmk_1"></a>How to change the size and location of the Console and Script Panes
-You can use the following steps to change the size and location of the Console Pane and the Script Pane. When you open the Windows PowerShell ISE again, the size and location changes you made will be retained.
+## <a name="bkmk_1"></a>コンソール ウィンドウとスクリプト ウィンドウのサイズと場所を変更する方法
+コンソール ウィンドウとスクリプト ウィンドウのサイズと場所の変更は、次の手順で実行できます。 Windows PowerShell ISE を再び開いたときに、サイズと場所に加えた変更が保持されています。
 
-### To resize the Script Pane and Console Pane
+### スクリプト ウィンドウとコンソール ウィンドウのサイズを変更するには
 
-1.  Pause the pointer on the split line between the Script Pane and Console Pane.
+1.  スクリプト ウィンドウとコンソール ウィンドウの間にある境界線の上にマウスのポインターを置いて止めます。
 
-2.  When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.
+2.  マウスのポインターが両方向矢印に変わったら、境界線をドラッグして、ウィンドウ サイズを変更します。
 
-### To move the Script Pane and Console Pane
-Do one of the following:
+### スクリプト ウィンドウとコンソール ウィンドウを移動するには
+次のいずれかの操作を行います。
 
--   To move the Script Pane above the Console Pane, press **CTRL\+1** or, on the toolbar, click the **Show Script Pane Top** icon, or in the **View** menu, click **Show Script Pane Top**.
+-   スクリプト ウィンドウをコンソール ウィンドウの上に移動するには、**Ctrl \+ 1** を押すか、ツール バーの **[スクリプト ウィンドウを上に表示]** アイコンをクリックするか、**[表示]** メニューで **[スクリプト ウィンドウを上に表示]** をクリックします。
 
--   To move the Script Pane to the right of the Console Pane, press **CTRL\+2** or, on the toolbar, click the **Show Script Pane Right** icon, or in the **View** menu, click **Show Script Pane Right**.
+-   スクリプト ウィンドウをコンソール ウィンドウの右側に移動するには、**Ctrl \+ 2** を押すか、ツール バーの **[スクリプト ウィンドウを右側に表示]** アイコンをクリックするか、**[表示]** メニューで **[スクリプト ウィンドウを右側に表示]** をクリックします。
 
--   To maximize the Script Pane, press **CTRL\+3** or, on the toolbar, click the **Show Script Pane Maximized** icon, or in the **View** menu, click **Show Script Pane Maximized**.
+-   スクリプト ウィンドウを最大表示するには、**Ctrl \+ 3** を押すか、ツール バーの **[スクリプト ウィンドウを最大表示]** アイコンをクリックするか、**[表示]** メニューで **[スクリプト ウィンドウを最大表示]** をクリックします。
 
--   To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the **Hide Script Pane** icon, in the **View** menu, click to deselect the **Show Script Pane** menu option.
+-   コンソール ウィンドウを最大表示し、スクリプト ウィンドウを非表示にするには、タブの行の右端にある **[スクリプト ウィンドウを非表示にします]** アイコンをクリックするか、**[表示]** メニューで **[スクリプト ウィンドウを表示]** メニュー オプションをクリックして選択解除します。
 
--   To display the Script Pane when the Console Pane is maximized, on the far right edge of the row of tabs, click the **Show Script Pane** icon, or in the **View** menu, click to select the **Show Script Pane** menu option.
+-   コンソール ウィンドウを最大表示しているときに、スクリプト ウィンドウを表示するには、タブの行の右端にある **[スクリプト ウィンドウを表示]** アイコンをクリックするか、**[表示]** メニューで **[スクリプト ウィンドウを表示]** メニュー オプションをクリックして選びます。
 
-## <a name="bkmk_2"></a>Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## <a name="bkmk_2"></a>テキストを編集するためのキーボード ショートカット
+テキストを編集するときに、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcuts|Use in|
+|操作|キーボード ショートカット|使用する場所|
 |----------|----------------------|----------|
-|**Copy**|CTRL\+C|Script Pane, Console Pane|
-|**Cut**|CTRL\+X|Script Pane, Console Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Console Pane|
-|**Redo**|CTRL\+Y|Script Pane, Console Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Console Pane|
-|**Undo**|CTRL\+Z|Script Pane, Console Pane|
+|**コピー**|Ctrl \+ C|スクリプト ウィンドウ、コンソール ウィンドウ|
+|**［切り取り］**|Ctrl \+ X|スクリプト ウィンドウ、コンソール ウィンドウ|
+|**スクリプト内を検索**|Ctrl \+ X|スクリプト ウィンドウ|
+|**スクリプト内で次を検索**|F3|スクリプト ウィンドウ|
+|**スクリプト内で前を検索**|Shift \+ F3|スクリプト ウィンドウ|
+|**貼り付け**|Ctrl \+ V|スクリプト ウィンドウ、コンソール ウィンドウ|
+|**やり直す**|Ctrl \+ Y|スクリプト ウィンドウ、コンソール ウィンドウ|
+|**スクリプト内で置換**|Ctrl \+ H|スクリプト ウィンドウ|
+|**上書き保存**|Ctrl \+ S|スクリプト ウィンドウ|
+|**［すべて選択］**|Ctrl \+ A|スクリプト ウィンドウ、コンソール ウィンドウ|
+|**元に戻す**|Ctrl \+ Z|スクリプト ウィンドウ、コンソール ウィンドウ|
 
-## <a name="bkmk_3"></a>Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## <a name="bkmk_3"></a>スクリプトを実行するためのキーボード ショートカット
+スクリプト ウィンドウでスクリプトを実行する場合、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.|
+|**新規**|Ctrl \+ N|
+|**［開く］**|Ctrl \+ O|
+|**実行**|F5|
+|**選択範囲の実行**|F8|
+|**実行を中止**|Ctrl \+ Break。 コンテキストが明確な場合 (選ばれているテキストがない場合)、Ctrl \+ C を使用できます。|
+|**タブ移動** (次のスクリプトへ)|Ctrl \+ Tab **メモ:** 次のスクリプトへのタブは、PowerShell タブを 1 つ開いている場合、または PowerShell タブを複数開いている場合にだけ機能します。ただし、フォーカスはスクリプト ウィンドウにあります。|
+|**タブ移動** (前のスクリプトへ)|Ctrl \+ Shift \+ Tab **メモ:** 前のスクリプトへのタブは、PowerShell タブを 1 つだけ開いている場合、または PowerShell タブを複数開いている場合に機能します。フォーカスはスクリプト ウィンドウにあります。|
 
-## <a name="bkmk_4"></a>Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE. They are accessible from all the panes in the application.
+## <a name="bkmk_4"></a>ビューをカスタマイズするためのキーボード ショートカット
+次のキーボード ショートカットを使用して、Windows PowerShell ISE のビューをカスタマイズできます。 アプリケーションのすべてのウィンドウから利用可能です。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**Go to Console Pane**|CTRL\+D|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
+|**コンソール ウィンドウに移動**|Ctrl \+ D|
+|**スクリプト ウィンドウに移動**|Ctrl \+ I|
+|**スクリプト ウィンドウを表示**|Ctrl \+ R|
+|**スクリプト ウィンドウを隠す**|Ctrl \+ R|
 ||
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**スクリプト ウィンドウを上に移動**|Ctrl \+ 1|
+|**スクリプト ウィンドウを右に移動**|Ctrl \+ 2|
+|**スクリプト ウィンドウを最大表示**|Ctrl \+ 3|
+|**拡大**|Ctrl \+ プラス記号 (+)|
+|**縮小**|Ctrl \+ マイナス記号 (-)|
 
-## <a name="bkmk_5"></a>Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## <a name="bkmk_5"></a>スクリプト デバッグ用のキーボード ショートカット
+スクリプトをデバッグするときに、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcut|Use in|
+|操作|キーボード ショートカット|使用する場所|
 |----------|---------------------|----------|
-|**Run/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**実行/続行**|F5|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ステップ イン**|F11|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ステップ オーバー**|F10|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ステップ アウト**|Shift \+ F11|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**呼び出し履歴の表示**|Ctrl \+ Shift \+ D|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ブレークポイントの一覧表示**|Ctrl \+ Shift \+ L|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**ブレークポイントの設定/解除**|F9|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**すべてのブレークポイントを削除**|Ctrl \+ Shift \+ F9|スクリプト ウィンドウ、スクリプトのデバッグ時|
+|**デバッガーの停止**|Shift \+ F5|スクリプト ウィンドウ、スクリプトのデバッグ時|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Console Pane and press ENTER.
+> Windows PowerShell ISE でスクリプトをデバッグする場合は、Windows PowerShell コンソール用に設計されたキーボード ショートカットも使用できます。 それらのショートカットを使用するには、コンソール ウィンドウでショートカットを入力してから Enter キーを押します。
 
-|Action|Keyboard Shortcut|Use in|
+|操作|キーボード ショートカット|使用する場所|
 |----------|---------------------|----------|
-|**Continue**|C|Console Pane, when debugging a script|
-|**Step Into**|S|Console Pane, when debugging a script|
-|**Step Over**|V|Console Pane, when debugging a script|
-|**Step Out**|O|Console Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
-|**Display Call Stack**|K|Console Pane, when debugging a script|
-|**Stop Debugging**|Q|Console Pane, when debugging a script|
-|**List the Script**|L|Console Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
+|**続行**|C|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**ステップ イン**|S|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**ステップ オーバー**|V|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**ステップ アウト**|O|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**最後のコマンドを繰り返す** (ステップ インまたはステップ オーバーで使用)|Enter|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**呼び出し履歴の表示**|K|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**デバッグの停止**|Q|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**スクリプトの一覧を表示**|L|コンソール ウィンドウ、スクリプトのデバッグ時|
+|**コンソールのデバッグ コマンドの表示**|H または ?|コンソール ウィンドウ、スクリプトのデバッグ時|
 
-## <a name="bkmk_6"></a>Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## <a name="bkmk_6"></a>Windows PowerShell のタブのキーボード ショートカット
+Windows PowerShell のタブを使用するときに、次のキーボード ショートカットを使用できます。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
+|**PowerShell タブを閉じる**|Ctrl \+ W|
+|**PowerShell タブの新規作成**|Ctrl \+ T|
+|**前の PowerShell タブ**|Ctrl \+ Shift \+ Tab。 このショートカットは、任意の PowerShell タブ上で開いているファイルがない場合にのみ機能します。|
+|**次の Windows PowerShell タブ**|Ctrl \+ Tab。 このショートカットは、任意の PowerShell タブ上で開いているファイルがない場合にのみ機能します。|
 
-## <a name="bkmk_7"></a>Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.
+## <a name="bkmk_7"></a>開始および終了のキーボード ショートカット
+次のキーボード ショートカットを使用して、Windows PowerShell コンソール (PowerShell.exe) を起動したり、Windows PowerShell ISE を終了したりできます。
 
-|Action|Keyboard Shortcut|
+|操作|キーボード ショートカット|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** (Windows PowerShell console)|CTRL\+SHIFT\+P|
+|**終了**|Alt \+ F4|
+|**PowerShell.exe を起動** (Windows PowerShell コンソール)|Ctrl \+ Shift \+ P|
 
-## See Also
-[Using the Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+## 参照
+[Windows PowerShell ISE の使用](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+
+<!--HONumber=Jul16_HO1-->
+
 
