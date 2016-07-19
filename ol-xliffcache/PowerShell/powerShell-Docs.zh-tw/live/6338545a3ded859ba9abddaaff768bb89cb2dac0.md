@@ -1,12 +1,17 @@
-# Side-By-Side Module Versioning Support for DSC Resources
+# DSC 資源的並行模組版本管理支援
 
-Modules containing DSC resources can be installed side-by-side, and DSC configurations can use a specific version of the resource that is installed on the system.
+包含 DSC 資源的模組可以並行安裝，且 DSC 設定可以使用安裝於系統上的特定資源版本。
 
-For more information, see [Using resources with multiple versions](https://msdn.microsoft.com/powershell/dsc/sxsresource).
+如需詳細資訊，請參閱[使用多個版本的資源](https://msdn.microsoft.com/powershell/dsc/sxsresource)。
 
-## Known issues
+## 已知問題
 
-In this release, the following are known issues of side-by-side installation:
+下列為此版本中已知的並行安裝問題︰
 
--   Using two different versions of the DSC resource within the same configuration is not supported.
+-   不支援在相同設定中使用兩個不同的 DSC 資源版本。
+
+
+
+<!--HONumber=Jul16_HO1-->
+
 

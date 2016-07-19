@@ -1,152 +1,162 @@
 ---
-title:  Accessibility in Windows PowerShell ISE
-ms.date:  2016-05-11
-keywords:  powershell,cmdlet
-description:  
-ms.topic:  article
-author:  jpjofre
-manager:  dongill
-ms.prod:  powershell
-ms.assetid:  a078f9d1-dd6b-4323-b16d-0622cd993aa8
+title: "Windows PowerShell ISE 的協助工具"
+ms.date: 2016-05-11
+keywords: powershell,cmdlet
+description: 
+ms.topic: article
+author: jpjofre
+manager: dongill
+ms.prod: powershell
+ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
+translationtype: Human Translation
+ms.sourcegitcommit: 51b2182de7b563daefb9d64434bdc8b8ab5e0343
+ms.openlocfilehash: cdf1f553d0bea91e2dcd051faef42417ad0cbc7a
+
 ---
 
-# Accessibility in Windows PowerShell ISE
-This topic describes the accessibility features of Windows PowerShell® Integrated Scripting Environment (ISE) that you might find helpful.
+# Windows PowerShell ISE 的協助工具
+本主題說明 Windows PowerShell® 整合式指令碼環境 (ISE) 的協助工具功能，您可能會發現這些功能很有幫助。
 
-* [How to change the size and location of the Console and Script Panes](#bkmk_1)
-* [Keyboard shortcuts for editing text](#bkmk_2)
-* [Keyboard shortcuts for running scripts](#bkmk_3)
-* [Keyboard shortcuts for customizing the view](#bkmk_4)
-* [Keyboard shortcuts for debugging scripts](#bkmk_5)
-* [Keyboard shortcuts for Windows PowerShell tabs](#bkmk_6)
-* [Keyboard shortcuts for starting and exiting](#bkmk_7)
+* [如何變更主控台和指令碼窗格的大小和位置](#bkmk_1)
+* [編輯文字的鍵盤快速鍵](#bkmk_2)
+* [執行指令碼的鍵盤快速鍵](#bkmk_3)
+* [自訂檢視的鍵盤快速鍵](#bkmk_4)
+* [偵錯指令碼的鍵盤快速鍵](#bkmk_5)
+* [Windows PowerShell 索引標籤的鍵盤快速鍵](#bkmk_6)
+* [開始和結束的鍵盤快速鍵](#bkmk_7)
 
-Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Windows PowerShell ISE more accessible for people with disabilities.
+Microsoft 致力於讓所有使用者都能輕鬆使用其產品與服務。 下列主題提供可更方便殘障人士使用 Windows PowerShell ISE 的功能、產品及服務的相關資訊。
 
-Windows PowerShell ISE supports high contrast mode. For the visually impaired, breakpoint information is available through the cmdlets for managing breakpoints, such as [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) and [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). For more information please see “How to manage breakpoints” in [How to Debug Scripts in the Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). In addition to accessibility features and utilities in Microsoft Windows, the following features make Windows PowerShell ISE more accessible for people with disabilities:
+Windows PowerShell ISE 支援高對比模式。 對視覺障礙者來說，可透過 Cmdlet 使用中斷點資訊來管理中斷點，例如 [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) 和 [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420)。 如需詳細資訊，請參閱[如何在 Windows PowerShell ISE 中偵錯指令碼](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1)的＜如何管理中斷點＞。 除了 Microsoft Windows 中的協助工具功能和公用程式之外，下列功能也可以讓 Windows PowerShell ISE 更方便殘障人士使用：
 
--   Keyboard Shortcuts
+-   鍵盤快速鍵
 
--   Syntax Coloring Table and the ability to modify several other color settings using the [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) scripting object.
+-   語法著色表，以及可使用 [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) 指令碼物件修改其他多項色彩設定的功能。
 
--   Text Size Change
+-   文字大小變更
 
-## <a name="bkmk_1"></a>How to change the size and location of the Console and Script Panes
-You can use the following steps to change the size and location of the Console Pane and the Script Pane. When you open the Windows PowerShell ISE again, the size and location changes you made will be retained.
+## <a name="bkmk_1"></a>如何變更主控台和指令碼窗格的大小和位置
+您可以使用下列步驟來變更主控台窗格和指令碼窗格的位置和大小。 當您再次開啟 Windows PowerShell ISE 時，即會保留您所做的大小和位置變更。
 
-### To resize the Script Pane and Console Pane
+### 若要調整指令碼窗格和主控台窗格的大小
 
-1.  Pause the pointer on the split line between the Script Pane and Console Pane.
+1.  將指標停在指令碼窗格和主控台窗格的分割線上。
 
-2.  When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.
+2.  當滑鼠指標變成雙箭號時，拖曳框線以變更窗格的大小。
 
-### To move the Script Pane and Console Pane
-Do one of the following:
+### 若要移動指令碼窗格和主控台窗格
+執行下列其中一個動作：
 
--   To move the Script Pane above the Console Pane, press **CTRL\+1** or, on the toolbar, click the **Show Script Pane Top** icon, or in the **View** menu, click **Show Script Pane Top**.
+-   若要將指令碼窗格移動到主控台窗格上方，請按 **CTRL\+1**，或者按一下工具列的**靠上顯示指令碼窗格**圖示，或在 **[檢視]** 功能表中，按一下 **[靠上顯示指令碼窗格]**。
 
--   To move the Script Pane to the right of the Console Pane, press **CTRL\+2** or, on the toolbar, click the **Show Script Pane Right** icon, or in the **View** menu, click **Show Script Pane Right**.
+-   若要將指令碼窗格移動到主控台窗格右方，請按 **CTRL\+2**，或者按一下工具列的**靠右顯示指令碼窗格**圖示，或在 **[檢視]** 功能表中，按一下 **[靠右顯示指令碼窗格]**。
 
--   To maximize the Script Pane, press **CTRL\+3** or, on the toolbar, click the **Show Script Pane Maximized** icon, or in the **View** menu, click **Show Script Pane Maximized**.
+-   若要將指令碼窗格最大化，請按 **CTRL\+3**，或者按一下工具列的**顯示最大化的指令碼窗格**圖示，或在 **[檢視]** 功能表中，按一下 **[顯示最大化的指令碼窗格]**。
 
--   To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the **Hide Script Pane** icon, in the **View** menu, click to deselect the **Show Script Pane** menu option.
+-   若要將主控台窗格最大化，並將指令碼窗格隱藏在索引標籤資料列最右側，請按一下**隱藏指令碼窗格**圖示；或在 **[檢視]** 功能表中，按一下以取消選取 **[顯示指令碼窗格]** 功能表選項。
 
--   To display the Script Pane when the Console Pane is maximized, on the far right edge of the row of tabs, click the **Show Script Pane** icon, or in the **View** menu, click to select the **Show Script Pane** menu option.
+-   若要在主控台窗格最大化時顯示指令碼窗格，請按一下**顯示指令碼窗格**圖示；或在 **[檢視]** 功能表中，按一下以選取 **[顯示指令碼窗格]** 功能表選項。
 
-## <a name="bkmk_2"></a>Keyboard shortcuts for editing text
-You can use the following keyboard shortcuts when you edit text.
+## <a name="bkmk_2"></a>編輯文字的鍵盤快速鍵
+編輯文字時，您可以使用下列鍵盤快速鍵。
 
-|Action|Keyboard Shortcuts|Use in|
+|動作|鍵盤快速鍵|使用位置|
 |----------|----------------------|----------|
-|**Copy**|CTRL\+C|Script Pane, Console Pane|
-|**Cut**|CTRL\+X|Script Pane, Console Pane|
-|**Find in Script**|CTRL\+F|Script Pane|
-|**Find Next in Script**|F3|Script Pane|
-|**Find Previous in Script**|SHIFT\+F3|Script Pane|
-|**Paste**|CTRL\+V|Script Pane, Console Pane|
-|**Redo**|CTRL\+Y|Script Pane, Console Pane|
-|**Replace in Script**|CTRL\+H|Script Pane|
-|**Save**|CTRL\+S|Script Pane|
-|**Select All**|CTRL\+A|Script Pane, Console Pane|
-|**Undo**|CTRL\+Z|Script Pane, Console Pane|
+|**複製**|CTRL\+C|指令碼窗格，主控台窗格|
+|**剪下**|CTRL\+X|指令碼窗格，主控台窗格|
+|**在指令碼中尋找**|CTRL\+F|指令碼窗格|
+|**在指令碼中找下一個**|F3|指令碼窗格|
+|**在指令碼中找上一個**|SHIFT\+F3|指令碼窗格|
+|**貼上**|CTRL\+V|指令碼窗格，主控台窗格|
+|**取消復原**|CTRL\+Y|指令碼窗格，主控台窗格|
+|**在指令碼中取代**|CTRL\+H|指令碼窗格|
+|**儲存**|CTRL\+S|指令碼窗格|
+|**全選**|CTRL\+A|指令碼窗格，主控台窗格|
+|**復原**|CTRL\+Z|指令碼窗格，主控台窗格|
 
-## <a name="bkmk_3"></a>Keyboard shortcuts for running scripts
-You can use the following keyboard shortcuts when you run scripts in the Script Pane.
+## <a name="bkmk_3"></a>執行指令碼的鍵盤快速鍵
+在指令碼窗格中執行指令碼時，您可以使用下列鍵盤快速鍵。
 
-|Action|Keyboard Shortcut|
+|動作|鍵盤快速鍵|
 |----------|---------------------|
-|**New**|CTRL\+N|
-|**Open**|CTRL\+O|
-|**Run**|F5|
-|**Run Selection**|F8|
-|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
-|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.|
-|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.|
+|**新增**|CTRL\+N|
+|**開啟**|CTRL\+O|
+|**執行**|F5|
+|**執行選取項目**|F8|
+|**停止執行**|CTRL\+BREAK。 在內容明確 (未選取文字) 的情況下，可以使用 CTRL\+C。|
+|**Tab** (至下一個指令碼)|CTRL\+TAB **注意︰**Tab 至下一個指令碼僅適用於開啟單一 PowerShell 索引標籤的情況下，或開啟多個 PowerShell 索引標籤，但焦點是在指令碼窗格中的情況。|
+|**Tab** (至上一個指令碼)|CTRL\+SHIFT\+TAB **注意︰**Tab 至上一個指令碼僅適用於開啟單一 PowerShell 索引標籤的情況下，或開啟多個 PowerShell 索引標籤，但焦點是在指令碼窗格中的情況。|
 
-## <a name="bkmk_4"></a>Keyboard shortcuts for customizing the view
-You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE. They are accessible from all the panes in the application.
+## <a name="bkmk_4"></a>自訂檢視的鍵盤快速鍵
+您可以使用下列鍵盤快速鍵，在 Windows PowerShell ISE 中自訂檢視。 您可從應用程式的所有窗格存取這些快速鍵。
 
-|Action|Keyboard Shortcut|
+|動作|鍵盤快速鍵|
 |----------|---------------------|
-|**Go to Console Pane**|CTRL\+D|
-|**Go to Script Pane**|CTRL\+I|
-|**Show Script Pane**|CTRL\+R|
-|**Hide Script Pane**|CTRL\+R|
+|**移至主控台窗格**|CTRL\+D|
+|**前往指令碼窗格**|CTRL\+I|
+|**顯示指令碼窗格**|CTRL\+R|
+|**隱藏指令碼窗格**|CTRL\+R|
 ||
-|**Move Script Pane Up**|CTRL\+1|
-|**Move Script Pane Right**|CTRL\+2|
-|**Maximize Script Pane**|CTRL\+3|
-|**Zoom In**|CTRL\+PLUS SIGN|
-|**Zoom Out**|CTRL\+MINUS SIGN|
+|**將指令碼窗格向上移**|CTRL\+1|
+|**將指令碼窗格向右移**|CTRL\+2|
+|**最大化指令碼窗格**|CTRL\+3|
+|**放大**|CTRL\+加號|
+|**縮小**|CTRL\+減號|
 
-## <a name="bkmk_5"></a>Keyboard shortcuts for debugging scripts
-You can use the following keyboard shortcuts when you debug scripts.
+## <a name="bkmk_5"></a>偵錯指令碼的鍵盤快速鍵
+偵錯程式碼時，您可以使用下列鍵盤快速鍵。
 
-|Action|Keyboard Shortcut|Use in|
+|動作|鍵盤快速鍵|使用位置|
 |----------|---------------------|----------|
-|**Run/Continue**|F5|Script Pane, when debugging a script|
-|**Step Into**|F11|Script Pane, when debugging a script|
-|**Step Over**|F10|Script Pane, when debugging a script|
-|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
-|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
-|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
-|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
-|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
-|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
+|**執行/繼續**|F5|偵錯指令碼時的指令碼窗格|
+|**逐步執行**|F11|偵錯指令碼時的指令碼窗格|
+|**逐程序**|F10|偵錯指令碼時的指令碼窗格|
+|**跳出**|SHIFT\+F11|偵錯指令碼時的指令碼窗格|
+|**顯示呼叫堆疊**|CTRL\+SHIFT\+D|偵錯指令碼時的指令碼窗格|
+|**列出中斷點**|CTRL\+SHIFT\+L|偵錯指令碼時的指令碼窗格|
+|**切換中斷點**|F9|偵錯指令碼時的指令碼窗格|
+|**移除所有中斷點**|CTRL\+SHIFT\+F9|偵錯指令碼時的指令碼窗格|
+|**停止偵錯工具**|SHIFT\+F5|偵錯指令碼時的指令碼窗格|
 
 > [!NOTE]
-> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Console Pane and press ENTER.
+> 當您在 Windows PowerShell ISE 中進行指令碼偵錯時，也可以使用專為 Windows PowerShell 主控台設計的鍵盤快速鍵。 若要使用這些快速鍵，您必須在主控台窗格中輸入捷徑，然後按 ENTER 鍵。
 
-|Action|Keyboard Shortcut|Use in|
+|動作|鍵盤快速鍵|使用位置|
 |----------|---------------------|----------|
-|**Continue**|C|Console Pane, when debugging a script|
-|**Step Into**|S|Console Pane, when debugging a script|
-|**Step Over**|V|Console Pane, when debugging a script|
-|**Step Out**|O|Console Pane, when debugging a script|
-|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
-|**Display Call Stack**|K|Console Pane, when debugging a script|
-|**Stop Debugging**|Q|Console Pane, when debugging a script|
-|**List the Script**|L|Console Pane, when debugging a script|
-|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
+|**繼續**|C|偵錯指令碼時的主控台窗格|
+|**逐步執行**|S|偵錯指令碼時的主控台窗格|
+|**逐程序**|V|偵錯指令碼時的主控台窗格|
+|**跳出**|O|偵錯指令碼時的主控台窗格|
+|**重複最後一個命令** (適用於逐步執行或逐程序)|ENTER|偵錯指令碼時的主控台窗格|
+|**顯示呼叫堆疊**|K|偵錯指令碼時的主控台窗格|
+|**停止偵錯**|Q|偵錯指令碼時的主控台窗格|
+|**列出指令碼**|L|偵錯指令碼時的主控台窗格|
+|**顯示主控台偵錯命令**|H 或 ?|偵錯指令碼時的主控台窗格|
 
-## <a name="bkmk_6"></a>Keyboard shortcuts for Windows PowerShell tabs
-You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
+## <a name="bkmk_6"></a>Windows PowerShell 索引標籤的鍵盤快速鍵
+使用 Windows PowerShell 索引標籤時，您可以使用下列鍵盤快速鍵。
 
-|Action|Keyboard Shortcut|
+|動作|鍵盤快速鍵|
 |----------|---------------------|
-|**Close PowerShell Tab**|CTRL\+W|
-|**New PowerShell Tab**|CTRL\+T|
-|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
-|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
+|**關閉 PowerShell 索引標籤**|CTRL\+W|
+|**新增 PowerShell 索引標籤**|CTRL\+T|
+|**上一個 PowerShell 索引標籤**|CTRL\+SHIFT\+TAB。 僅有當任何 PowerShell 索引標籤上沒有檔案開啟時，才適用這個快速鍵。|
+|**下一個 Windows PowerShell 索引標籤**|CTRL\+TAB。 僅有當任何 PowerShell 索引標籤上沒有檔案開啟時，才適用這個快速鍵。|
 
-## <a name="bkmk_7"></a>Keyboard shortcuts for starting and exiting
-You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.
+## <a name="bkmk_7"></a>開始和結束的鍵盤快速鍵
+您可以使用下列鍵盤快速鍵，啟動 Windows PowerShell 主控台 (PowerShell.exe) 或結束 Windows PowerShell ISE。
 
-|Action|Keyboard Shortcut|
+|動作|鍵盤快速鍵|
 |----------|---------------------|
-|**Exit**|ALT\+F4|
-|**Start PowerShell.exe** (Windows PowerShell console)|CTRL\+SHIFT\+P|
+|**結束**|ALT\+F4|
+|**啟動 PowerShell.exe** (Windows PowerShell 主控台)|CTRL\+SHIFT\+P|
 
-## See Also
-[Using the Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+## 另請參閱
+[使用 Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
+
+
+
+
+<!--HONumber=Jul16_HO1-->
+
 
