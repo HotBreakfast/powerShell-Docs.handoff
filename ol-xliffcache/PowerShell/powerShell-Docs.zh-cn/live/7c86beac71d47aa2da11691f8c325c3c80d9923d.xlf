@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-10eed0e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">7c86beac71d47aa2da11691f8c325c3c80d9923d</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">gallery\psget\psget_cmdlets_reference.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">265683be964379e937f7b84b4790895e77ce0a97</xliffext:olskeletonhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>PowerShellGet cmdlet reference</source>
+          <target state="new">PowerShellGet cmdlet reference</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>Register-PSRepository</source>
+          <target state="new">Register-PSRepository</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>Get-PSRepository</source>
+          <target state="new">Get-PSRepository</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Set-PSRepository</source>
+          <target state="new">Set-PSRepository</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Unregister-PSRepository</source>
+          <target state="new">Unregister-PSRepository</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Find-Module</source>
+          <target state="new">Find-Module</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>Find-Command</source>
+          <target state="new">Find-Command</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Find-DscResource</source>
+          <target state="new">Find-DscResource</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Find-RoleCapability</source>
+          <target state="new">Find-RoleCapability</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Save-Module</source>
+          <target state="new">Save-Module</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Install-Module</source>
+          <target state="new">Install-Module</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>Get-InstalledModule</source>
+          <target state="new">Get-InstalledModule</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Update-Module</source>
+          <target state="new">Update-Module</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Uninstall-Module</source>
+          <target state="new">Uninstall-Module</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Publish-Module</source>
+          <target state="new">Publish-Module</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Update-ModuleManifest</source>
+          <target state="new">Update-ModuleManifest</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Find-Script</source>
+          <target state="new">Find-Script</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Save-Script</source>
+          <target state="new">Save-Script</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Install-Script</source>
+          <target state="new">Install-Script</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Get-InstalledScript</source>
+          <target state="new">Get-InstalledScript</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Update-Script</source>
+          <target state="new">Update-Script</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Uninstall-Script</source>
+          <target state="new">Uninstall-Script</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>New-ScriptFileInfo</source>
+          <target state="new">New-ScriptFileInfo</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Test-ScriptFileInfo</source>
+          <target state="new">Test-ScriptFileInfo</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Update-ScriptFileInfo</source>
+          <target state="new">Update-ScriptFileInfo</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Publish-Script</source>
+          <target state="new">Publish-Script</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
