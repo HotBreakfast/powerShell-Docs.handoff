@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
+    <header>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-10eed0e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">79c660e8ef65c42f52585101f6157f9d5ffc96b1</xliffext:olfilehash>
+      <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\TOC.md</xliffext:olfilepath>
+      <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
+      </xliffext:oltranslationpriority>
+      <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">9c473f5f941a11eaafb083fdcc0f1f5fcd21ba71</xliffext:olskeletonhash>
+    </header>
+    <body>
+      <group id="content" extype="content">
+        <trans-unit id="101" translate="yes" xml:space="preserve">
+          <source>Windows Management Framework (WMF) Overview</source>
+          <target state="new">Windows Management Framework (WMF) Overview</target>
+        </trans-unit>
+        <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>WMF 5.1</source>
+          <target state="new">WMF 5.1</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
+          <source>New Scenarios and Features</source>
+          <target state="new">New Scenarios and Features</target>
+        </trans-unit>
+        <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Improvements in Desired State Configuration (DSC)</source>
+          <target state="new">Improvements in Desired State Configuration (DSC)</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Improvements in the PowerShell Console</source>
+          <target state="new">Improvements in the PowerShell Console</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
+          <source>Improvements in the PowerShell Engine</source>
+          <target state="new">Improvements in the PowerShell Engine</target>
+        </trans-unit>
+        <trans-unit id="107" translate="yes" xml:space="preserve">
+          <source>[Improvements in Package Management] (5/1/package-management-improvements.md)</source>
+          <target state="new">[Improvements in Package Management] (5/1/package-management-improvements.md)</target>
+        </trans-unit>
+        <trans-unit id="108" translate="yes" xml:space="preserve">
+          <source>Bugs Fixed in WMF 5.1</source>
+          <target state="new">Bugs Fixed in WMF 5.1</target>
+        </trans-unit>
+        <trans-unit id="109" translate="yes" xml:space="preserve">
+          <source>Install and Configure</source>
+          <target state="new">Install and Configure</target>
+        </trans-unit>
+        <trans-unit id="110" translate="yes" xml:space="preserve">
+          <source>Known Issues</source>
+          <target state="new">Known Issues</target>
+        </trans-unit>
+        <trans-unit id="111" translate="yes" xml:space="preserve">
+          <source>Compatibility</source>
+          <target state="new">Compatibility</target>
+        </trans-unit>
+        <trans-unit id="112" translate="yes" xml:space="preserve">
+          <source>WMF 5.0</source>
+          <target state="new">WMF 5.0</target>
+        </trans-unit>
+        <trans-unit id="113" translate="yes" xml:space="preserve">
+          <source>Installation Details</source>
+          <target state="new">Installation Details</target>
+        </trans-unit>
+        <trans-unit id="114" translate="yes" xml:space="preserve">
+          <source>Known Issues and Limitations</source>
+          <target state="new">Known Issues and Limitations</target>
+        </trans-unit>
+        <trans-unit id="115" translate="yes" xml:space="preserve">
+          <source>Desired State Configuration (DSC) Known Issues</source>
+          <target state="new">Desired State Configuration (DSC) Known Issues</target>
+        </trans-unit>
+        <trans-unit id="116" translate="yes" xml:space="preserve">
+          <source>Product Compatibility Status</source>
+          <target state="new">Product Compatibility Status</target>
+        </trans-unit>
+        <trans-unit id="117" translate="yes" xml:space="preserve">
+          <source>Scenarios Enabled by WMF 5.0</source>
+          <target state="new">Scenarios Enabled by WMF 5.0</target>
+        </trans-unit>
+        <trans-unit id="118" translate="yes" xml:space="preserve">
+          <source>Just Enough Administration (JEA)</source>
+          <target state="new">Just Enough Administration (JEA)</target>
+        </trans-unit>
+        <trans-unit id="119" translate="yes" xml:space="preserve">
+          <source>Creating and Connecting to a JEA Endpoint</source>
+          <target state="new">Creating and Connecting to a JEA Endpoint</target>
+        </trans-unit>
+        <trans-unit id="120" translate="yes" xml:space="preserve">
+          <source>Reporting on JEA</source>
+          <target state="new">Reporting on JEA</target>
+        </trans-unit>
+        <trans-unit id="121" translate="yes" xml:space="preserve">
+          <source>Creating Custom Types using PowerShell Classes</source>
+          <target state="new">Creating Custom Types using PowerShell Classes</target>
+        </trans-unit>
+        <trans-unit id="122" translate="yes" xml:space="preserve">
+          <source>Define Custom Types</source>
+          <target state="new">Define Custom Types</target>
+        </trans-unit>
+        <trans-unit id="123" translate="yes" xml:space="preserve">
+          <source>Declare Base Class</source>
+          <target state="new">Declare Base Class</target>
+        </trans-unit>
+        <trans-unit id="124" translate="yes" xml:space="preserve">
+          <source>Declare Implemented Interface</source>
+          <target state="new">Declare Implemented Interface</target>
+        </trans-unit>
+        <trans-unit id="125" translate="yes" xml:space="preserve">
+          <source>Call Base Class Constructor</source>
+          <target state="new">Call Base Class Constructor</target>
+        </trans-unit>
+        <trans-unit id="126" translate="yes" xml:space="preserve">
+          <source>Call Base Class Method</source>
+          <target state="new">Call Base Class Method</target>
+        </trans-unit>
+        <trans-unit id="127" translate="yes" xml:space="preserve">
+          <source>Improvements in PowerShell Script Debugging</source>
+          <target state="new">Improvements in PowerShell Script Debugging</target>
+        </trans-unit>
+        <trans-unit id="128" translate="yes" xml:space="preserve">
+          <source>Improvements in Desired State Configuration (DSC)</source>
+          <target state="new">Improvements in Desired State Configuration (DSC)</target>
+        </trans-unit>
+        <trans-unit id="129" translate="yes" xml:space="preserve">
+          <source>Configurations</source>
+          <target state="new">Configurations</target>
+        </trans-unit>
+        <trans-unit id="130" translate="yes" xml:space="preserve">
+          <source>Specifying Cross Node Dependencies</source>
+          <target state="new">Specifying Cross Node Dependencies</target>
+        </trans-unit>
+        <trans-unit id="131" translate="yes" xml:space="preserve">
+          <source>Encrypted MOFs</source>
+          <target state="new">Encrypted MOFs</target>
+        </trans-unit>
+        <trans-unit id="132" translate="yes" xml:space="preserve">
+          <source>Help support for DSC Configuration</source>
+          <target state="new">Help support for DSC Configuration</target>
+        </trans-unit>
+        <trans-unit id="133" translate="yes" xml:space="preserve">
+          <source>Authoring Improvements using PowerShell ISE</source>
+          <target state="new">Authoring Improvements using PowerShell ISE</target>
+        </trans-unit>
+        <trans-unit id="134" translate="yes" xml:space="preserve">
+          <source>Allowance for Identical Duplicate Resources in a Configuration</source>
+          <target state="new">Allowance for Identical Duplicate Resources in a Configuration</target>
+        </trans-unit>
+        <trans-unit id="135" translate="yes" xml:space="preserve">
+          <source>Import-DscResource keyword supports -moduleversion parameter</source>
+          <target state="new">Import-DscResource keyword supports -moduleversion parameter</target>
+        </trans-unit>
+        <trans-unit id="136" translate="yes" xml:space="preserve">
+          <source>WOW64 support for Configuration Keyword</source>
+          <target state="new">WOW64 support for Configuration Keyword</target>
+        </trans-unit>
+        <trans-unit id="137" translate="yes" xml:space="preserve">
+          <source>Resources</source>
+          <target state="new">Resources</target>
+        </trans-unit>
+        <trans-unit id="138" translate="yes" xml:space="preserve">
+          <source>Class-based DSC Resources</source>
+          <target state="new">Class-based DSC Resources</target>
+        </trans-unit>
+        <trans-unit id="139" translate="yes" xml:space="preserve">
+          <source>DSC Resource Script Debugging</source>
+          <target state="new">DSC Resource Script Debugging</target>
+        </trans-unit>
+        <trans-unit id="140" translate="yes" xml:space="preserve">
+          <source>Automatic RunAs support for DSC Resources</source>
+          <target state="new">Automatic RunAs support for DSC Resources</target>
+        </trans-unit>
+        <trans-unit id="141" translate="yes" xml:space="preserve">
+          <source>Side-By-Side Versioning Support for DSC Resources</source>
+          <target state="new">Side-By-Side Versioning Support for DSC Resources</target>
+        </trans-unit>
+        <trans-unit id="142" translate="yes" xml:space="preserve">
+          <source>New in-box Resources</source>
+          <target state="new">New in-box Resources</target>
+        </trans-unit>
+        <trans-unit id="143" translate="yes" xml:space="preserve">
+          <source>Local Configuration Manager</source>
+          <target state="new">Local Configuration Manager</target>
+        </trans-unit>
+        <trans-unit id="144" translate="yes" xml:space="preserve">
+          <source>Configure Node with Multiple Configuration Fragments</source>
+          <target state="new">Configure Node with Multiple Configuration Fragments</target>
+        </trans-unit>
+        <trans-unit id="145" translate="yes" xml:space="preserve">
+          <source>Support for Mixed RefreshModes</source>
+          <target state="new">Support for Mixed RefreshModes</target>
+        </trans-unit>
+        <trans-unit id="146" translate="yes" xml:space="preserve">
+          <source>Configure DSC Engine with New Attribute</source>
+          <target state="new">Configure DSC Engine with New Attribute</target>
+        </trans-unit>
+        <trans-unit id="147" translate="yes" xml:space="preserve">
+          <source>Detailed information about LCM State</source>
+          <target state="new">Detailed information about LCM State</target>
+        </trans-unit>
+        <trans-unit id="148" translate="yes" xml:space="preserve">
+          <source>Frequencies for RefreshMode and ConfigurationMode need not be multiple of each other</source>
+          <target state="new">Frequencies for RefreshMode and ConfigurationMode need not be multiple of each other</target>
+        </trans-unit>
+        <trans-unit id="149" translate="yes" xml:space="preserve">
+          <source>Additional Value for RefreshMode Property</source>
+          <target state="new">Additional Value for RefreshMode Property</target>
+        </trans-unit>
+        <trans-unit id="150" translate="yes" xml:space="preserve">
+          <source>Cmdlets</source>
+          <target state="new">Cmdlets</target>
+        </trans-unit>
+        <trans-unit id="151" translate="yes" xml:space="preserve">
+          <source>Details about Configuration Status</source>
+          <target state="new">Details about Configuration Status</target>
+        </trans-unit>
+        <trans-unit id="152" translate="yes" xml:space="preserve">
+          <source>Test-DscConfiguration cmdlet supports Reference Configurations</source>
+          <target state="new">Test-DscConfiguration cmdlet supports Reference Configurations</target>
+        </trans-unit>
+        <trans-unit id="153" translate="yes" xml:space="preserve">
+          <source>Direct Access to DSC Resource Methods</source>
+          <target state="new">Direct Access to DSC Resource Methods</target>
+        </trans-unit>
+        <trans-unit id="154" translate="yes" xml:space="preserve">
+          <source>Deliver Configuration Document without Applying</source>
+          <target state="new">Deliver Configuration Document without Applying</target>
+        </trans-unit>
+        <trans-unit id="155" translate="yes" xml:space="preserve">
+          <source>Remove DSC Documents</source>
+          <target state="new">Remove DSC Documents</target>
+        </trans-unit>
+        <trans-unit id="156" translate="yes" xml:space="preserve">
+          <source>Unified and Consistent State and Status Representation</source>
+          <target state="new">Unified and Consistent State and Status Representation</target>
+        </trans-unit>
+        <trans-unit id="157" translate="yes" xml:space="preserve">
+          <source>Set-DscLocalConfigurationManager cmdlet supports -force parameter</source>
+          <target state="new">Set-DscLocalConfigurationManager cmdlet supports -force parameter</target>
+        </trans-unit>
+        <trans-unit id="158" translate="yes" xml:space="preserve">
+          <source>Pull Mode</source>
+          <target state="new">Pull Mode</target>
+        </trans-unit>
+        <trans-unit id="159" translate="yes" xml:space="preserve">
+          <source>On-demand PULL of DSC Configurations</source>
+          <target state="new">On-demand PULL of DSC Configurations</target>
+        </trans-unit>
+        <trans-unit id="160" translate="yes" xml:space="preserve">
+          <source>Separation of Node and Configuration Ids</source>
+          <target state="new">Separation of Node and Configuration Ids</target>
+        </trans-unit>
+        <trans-unit id="161" translate="yes" xml:space="preserve">
+          <source>Separation of Configuration, Resource and Report Repositories</source>
+          <target state="new">Separation of Configuration, Resource and Report Repositories</target>
+        </trans-unit>
+        <trans-unit id="162" translate="yes" xml:space="preserve">
+          <source>Report Configuration Status to Central Location</source>
+          <target state="new">Report Configuration Status to Central Location</target>
+        </trans-unit>
+        <trans-unit id="163" translate="yes" xml:space="preserve">
+          <source>Audit PowerShell Usage using Transcript and Logging</source>
+          <target state="new">Audit PowerShell Usage using Transcript and Logging</target>
+        </trans-unit>
+        <trans-unit id="164" translate="yes" xml:space="preserve">
+          <source>Enhanced Transcription Options</source>
+          <target state="new">Enhanced Transcription Options</target>
+        </trans-unit>
+        <trans-unit id="165" translate="yes" xml:space="preserve">
+          <source>Script Tracing and Logging</source>
+          <target state="new">Script Tracing and Logging</target>
+        </trans-unit>
+        <trans-unit id="166" translate="yes" xml:space="preserve">
+          <source>Cryptographic Message Syntax (CMS) cmdlets</source>
+          <target state="new">Cryptographic Message Syntax (CMS) cmdlets</target>
+        </trans-unit>
+        <trans-unit id="167" translate="yes" xml:space="preserve">
+          <source>Software Discovery, Install, and Inventory with PackageManagement</source>
+          <target state="new">Software Discovery, Install, and Inventory with PackageManagement</target>
+        </trans-unit>
+        <trans-unit id="168" translate="yes" xml:space="preserve">
+          <source>PackageManagement Cmdlets</source>
+          <target state="new">PackageManagement Cmdlets</target>
+        </trans-unit>
+        <trans-unit id="169" translate="yes" xml:space="preserve">
+          <source>PowerShell Module Discovery, Install, and Inventory with PowerShellGet</source>
+          <target state="new">PowerShell Module Discovery, Install, and Inventory with PowerShellGet</target>
+        </trans-unit>
+        <trans-unit id="170" translate="yes" xml:space="preserve">
+          <source>Register a PowerShell Repository</source>
+          <target state="new">Register a PowerShell Repository</target>
+        </trans-unit>
+        <trans-unit id="171" translate="yes" xml:space="preserve">
+          <source>Side-by-Side Version Support on PowerShell 5.0 or newer</source>
+          <target state="new">Side-by-Side Version Support on PowerShell 5.0 or newer</target>
+        </trans-unit>
+        <trans-unit id="172" translate="yes" xml:space="preserve">
+          <source>Installation of Module Dependencies</source>
+          <target state="new">Installation of Module Dependencies</target>
+        </trans-unit>
+        <trans-unit id="173" translate="yes" xml:space="preserve">
+          <source>PowerShellGet Cmdlets for Module Management</source>
+          <target state="new">PowerShellGet Cmdlets for Module Management</target>
+        </trans-unit>
+        <trans-unit id="174" translate="yes" xml:space="preserve">
+          <source>PowerShell Script Discovery, Install, and Management with PowerShellGet</source>
+          <target state="new">PowerShell Script Discovery, Install, and Management with PowerShellGet</target>
+        </trans-unit>
+        <trans-unit id="175" translate="yes" xml:space="preserve">
+          <source>PowerShellGet Cmdlets for Script Management</source>
+          <target state="new">PowerShellGet Cmdlets for Script Management</target>
+        </trans-unit>
+        <trans-unit id="176" translate="yes" xml:space="preserve">
+          <source>New and updated cmdlets based on community feedback</source>
+          <target state="new">New and updated cmdlets based on community feedback</target>
+        </trans-unit>
+        <trans-unit id="177" translate="yes" xml:space="preserve">
+          <source>Symbolic links using Item cmdlets</source>
+          <target state="new">Symbolic links using Item cmdlets</target>
+        </trans-unit>
+        <trans-unit id="178" translate="yes" xml:space="preserve">
+          <source>Archive cmdlets</source>
+          <target state="new">Archive cmdlets</target>
+        </trans-unit>
+        <trans-unit id="179" translate="yes" xml:space="preserve">
+          <source>Clipboard cmdlets</source>
+          <target state="new">Clipboard cmdlets</target>
+        </trans-unit>
+        <trans-unit id="180" translate="yes" xml:space="preserve">
+          <source>Convert-String</source>
+          <target state="new">Convert-String</target>
+        </trans-unit>
+        <trans-unit id="181" translate="yes" xml:space="preserve">
+          <source>Extract and Parse Structured Objects out of String</source>
+          <target state="new">Extract and Parse Structured Objects out of String</target>
+        </trans-unit>
+        <trans-unit id="182" translate="yes" xml:space="preserve">
+          <source>Format-Hex</source>
+          <target state="new">Format-Hex</target>
+        </trans-unit>
+        <trans-unit id="183" translate="yes" xml:space="preserve">
+          <source>NoNewLine parameter</source>
+          <target state="new">NoNewLine parameter</target>
+        </trans-unit>
+        <trans-unit id="184" translate="yes" xml:space="preserve">
+          <source>New-TemporaryFile</source>
+          <target state="new">New-TemporaryFile</target>
+        </trans-unit>
+        <trans-unit id="185" translate="yes" xml:space="preserve">
+          <source>New-Guid</source>
+          <target state="new">New-Guid</target>
+        </trans-unit>
+        <trans-unit id="186" translate="yes" xml:space="preserve">
+          <source>Get-ChildItem has -Depth parameter</source>
+          <target state="new">Get-ChildItem has -Depth parameter</target>
+        </trans-unit>
+        <trans-unit id="187" translate="yes" xml:space="preserve">
+          <source>Updates to FileInfo object</source>
+          <target state="new">Updates to FileInfo object</target>
+        </trans-unit>
+        <trans-unit id="188" translate="yes" xml:space="preserve">
+          <source>Modules support for declaring version ranges (1.*, etc)</source>
+          <target state="new">Modules support for declaring version ranges (1.*, etc)</target>
+        </trans-unit>
+        <trans-unit id="189" translate="yes" xml:space="preserve">
+          <source>Information Stream</source>
+          <target state="new">Information Stream</target>
+        </trans-unit>
+        <trans-unit id="190" translate="yes" xml:space="preserve">
+          <source>Generate PowerShell Cmdlets based on OData Endpoint</source>
+          <target state="new">Generate PowerShell Cmdlets based on OData Endpoint</target>
+        </trans-unit>
+        <trans-unit id="191" translate="yes" xml:space="preserve">
+          <source>Network Switch Management with PowerShell</source>
+          <target state="new">Network Switch Management with PowerShell</target>
+        </trans-unit>
+        <trans-unit id="192" translate="yes" xml:space="preserve">
+          <source>Software Inventory Logging (SIL)</source>
+          <target state="new">Software Inventory Logging (SIL)</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
