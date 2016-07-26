@@ -2,12 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="ru-ru">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-22243b3" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">8a10903c421f62311a28c9f32e352bba75f21052</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-10eed0e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">42bad0a9dd2862895bb43ca83b2277fcfb9980d7</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\5.1\install-configure.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d30233ff3a8fb1b3b08dcad12edf9bea54b1337</xliffext:olskeletonhash>
     </header>
     <body>
       <group id="content" extype="content">
@@ -16,192 +17,198 @@
           <target state="new">Install and configure WMF 5.1 (Preview)</target>
         </trans-unit>
         <trans-unit id="102" translate="yes" xml:space="preserve">
+          <source>PowerShell, DSC, WMF</source>
+          <target state="new">PowerShell, DSC, WMF</target>
+        </trans-unit>
+        <trans-unit id="103" translate="yes" xml:space="preserve">
           <source>Install and Configure WMF 5.1 (Preview)</source>
           <target state="new">Install and Configure WMF 5.1 (Preview)</target>
         </trans-unit>
-        <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">***</bpt>Please Note:<ept id="p1">***</ept><ph id="ph1"> 
-</ph><bpt id="p2">*</bpt>This content is placeholder. The links below point to WMF 5.0 versions, and will be updated when binaries are released.<ept id="p2">*</ept></source>
-          <target state="new"><bpt id="p1">***</bpt>Please Note:<ept id="p1">***</ept><ph id="ph1"> 
-</ph><bpt id="p2">*</bpt>This content is placeholder. The links below point to WMF 5.0 versions, and will be updated when binaries are released.<ept id="p2">*</ept></target>
-        </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
+          <source>Note: This content is placeholder.</source>
+          <target state="new">Note: This content is placeholder.</target>
+        </trans-unit>
+        <trans-unit id="105" translate="yes" xml:space="preserve">
+          <source>Download links will be added when WMF 5.1 Preview will be released.</source>
+          <target state="new">Download links will be added when WMF 5.1 Preview will be released.</target>
+        </trans-unit>
+        <trans-unit id="106" translate="yes" xml:space="preserve">
           <source>Download the WMF 5.1 package for the operating system and architecture you wish to install it on:</source>
           <target state="new">Download the WMF 5.1 package for the operating system and architecture you wish to install it on:</target>
         </trans-unit>
-        <trans-unit id="105" translate="yes" xml:space="preserve">
+        <trans-unit id="107" translate="yes" xml:space="preserve">
           <source>Operating System</source>
           <target state="new">Operating System</target>
         </trans-unit>
-        <trans-unit id="106" translate="yes" xml:space="preserve">
+        <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Architecture</source>
           <target state="new">Architecture</target>
         </trans-unit>
-        <trans-unit id="107" translate="yes" xml:space="preserve">
+        <trans-unit id="109" translate="yes" xml:space="preserve">
           <source>Package Name</source>
           <target state="new">Package Name</target>
         </trans-unit>
-        <trans-unit id="108" translate="yes" xml:space="preserve">
+        <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>Windows Server 2012 R2</source>
           <target state="new">Windows Server 2012 R2</target>
         </trans-unit>
-        <trans-unit id="109" translate="yes" xml:space="preserve">
+        <trans-unit id="111" translate="yes" xml:space="preserve">
           <source>x64</source>
           <target state="new">x64</target>
         </trans-unit>
-        <trans-unit id="110" translate="yes" xml:space="preserve">
+        <trans-unit id="112" translate="yes" xml:space="preserve">
           <source>Win8.1AndW2K12R2-KB3156422-x64.msu</source>
           <target state="new">Win8.1AndW2K12R2-KB3156422-x64.msu</target>
         </trans-unit>
-        <trans-unit id="111" translate="yes" xml:space="preserve">
+        <trans-unit id="113" translate="yes" xml:space="preserve">
           <source>Windows Server 2012</source>
           <target state="new">Windows Server 2012</target>
         </trans-unit>
-        <trans-unit id="112" translate="yes" xml:space="preserve">
+        <trans-unit id="114" translate="yes" xml:space="preserve">
           <source>x64</source>
           <target state="new">x64</target>
         </trans-unit>
-        <trans-unit id="113" translate="yes" xml:space="preserve">
+        <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>W2K12-KB3156423-x64.msu</source>
           <target state="new">W2K12-KB3156423-x64.msu</target>
         </trans-unit>
-        <trans-unit id="114" translate="yes" xml:space="preserve">
+        <trans-unit id="116" translate="yes" xml:space="preserve">
           <source>Windows Server 2008 R2</source>
           <target state="new">Windows Server 2008 R2</target>
         </trans-unit>
-        <trans-unit id="115" translate="yes" xml:space="preserve">
+        <trans-unit id="117" translate="yes" xml:space="preserve">
           <source>x64</source>
           <target state="new">x64</target>
         </trans-unit>
-        <trans-unit id="116" translate="yes" xml:space="preserve">
+        <trans-unit id="118" translate="yes" xml:space="preserve">
           <source>Win7AndW2K8R2-KB3156424-x64.msu</source>
           <target state="new">Win7AndW2K8R2-KB3156424-x64.msu</target>
         </trans-unit>
-        <trans-unit id="117" translate="yes" xml:space="preserve">
+        <trans-unit id="119" translate="yes" xml:space="preserve">
           <source>Windows 8.1</source>
           <target state="new">Windows 8.1</target>
         </trans-unit>
-        <trans-unit id="118" translate="yes" xml:space="preserve">
+        <trans-unit id="120" translate="yes" xml:space="preserve">
           <source>x64</source>
           <target state="new">x64</target>
         </trans-unit>
-        <trans-unit id="119" translate="yes" xml:space="preserve">
+        <trans-unit id="121" translate="yes" xml:space="preserve">
           <source>Win8.1AndW2K12R2-KB3156422-x64.msu</source>
           <target state="new">Win8.1AndW2K12R2-KB3156422-x64.msu</target>
         </trans-unit>
-        <trans-unit id="120" translate="yes" xml:space="preserve">
+        <trans-unit id="122" translate="yes" xml:space="preserve">
           <source>Windows 8.1</source>
           <target state="new">Windows 8.1</target>
         </trans-unit>
-        <trans-unit id="121" translate="yes" xml:space="preserve">
+        <trans-unit id="123" translate="yes" xml:space="preserve">
           <source>x86</source>
           <target state="new">x86</target>
         </trans-unit>
-        <trans-unit id="122" translate="yes" xml:space="preserve">
+        <trans-unit id="124" translate="yes" xml:space="preserve">
           <source>Win8.1-KB3156422-x86.msu</source>
           <target state="new">Win8.1-KB3156422-x86.msu</target>
         </trans-unit>
-        <trans-unit id="123" translate="yes" xml:space="preserve">
+        <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>Windows 7 SP1</source>
           <target state="new">Windows 7 SP1</target>
         </trans-unit>
-        <trans-unit id="124" translate="yes" xml:space="preserve">
+        <trans-unit id="126" translate="yes" xml:space="preserve">
           <source>x64</source>
           <target state="new">x64</target>
         </trans-unit>
-        <trans-unit id="125" translate="yes" xml:space="preserve">
+        <trans-unit id="127" translate="yes" xml:space="preserve">
           <source>Win7AndW2K8R2-KB3156424-x64.msu</source>
           <target state="new">Win7AndW2K8R2-KB3156424-x64.msu</target>
         </trans-unit>
-        <trans-unit id="126" translate="yes" xml:space="preserve">
+        <trans-unit id="128" translate="yes" xml:space="preserve">
           <source>Windows 7 SP1</source>
           <target state="new">Windows 7 SP1</target>
         </trans-unit>
-        <trans-unit id="127" translate="yes" xml:space="preserve">
+        <trans-unit id="129" translate="yes" xml:space="preserve">
           <source>x86</source>
           <target state="new">x86</target>
         </trans-unit>
-        <trans-unit id="128" translate="yes" xml:space="preserve">
+        <trans-unit id="130" translate="yes" xml:space="preserve">
           <source>Win7-KB3156424-x86.msu</source>
           <target state="new">Win7-KB3156424-x86.msu</target>
         </trans-unit>
-        <trans-unit id="129" translate="yes" xml:space="preserve">
+        <trans-unit id="131" translate="yes" xml:space="preserve">
           <source>Install WMF 5.1 from Windows Explorer (or File Explorer in Windows Server 2012 R2 or Windows 8.1)</source>
           <target state="new">Install WMF 5.1 from Windows Explorer (or File Explorer in Windows Server 2012 R2 or Windows 8.1)</target>
         </trans-unit>
-        <trans-unit id="130" translate="yes" xml:space="preserve">
+        <trans-unit id="132" translate="yes" xml:space="preserve">
           <source>Navigate to the folder into which you downloaded the MSU file.</source>
           <target state="new">Navigate to the folder into which you downloaded the MSU file.</target>
         </trans-unit>
-        <trans-unit id="131" translate="yes" xml:space="preserve">
+        <trans-unit id="133" translate="yes" xml:space="preserve">
           <source>Double-click the MSU to run it.</source>
           <target state="new">Double-click the MSU to run it.</target>
         </trans-unit>
-        <trans-unit id="132" translate="yes" xml:space="preserve">
+        <trans-unit id="134" translate="yes" xml:space="preserve">
           <source>Install WMF 5.1 from the command prompt</source>
           <target state="new">Install WMF 5.1 from the command prompt</target>
         </trans-unit>
-        <trans-unit id="133" translate="yes" xml:space="preserve">
+        <trans-unit id="135" translate="yes" xml:space="preserve">
           <source>After downloading the correct package for your computer's architecture, open a Command Prompt window with elevated user rights (Run as Administrator).</source>
           <target state="new">After downloading the correct package for your computer's architecture, open a Command Prompt window with elevated user rights (Run as Administrator).</target>
         </trans-unit>
-        <trans-unit id="134" translate="yes" xml:space="preserve">
+        <trans-unit id="136" translate="yes" xml:space="preserve">
           <source>On the Server Core installation options of Windows Server 2012 R2 or Windows Server 2012 or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.</source>
           <target state="new">On the Server Core installation options of Windows Server 2012 R2 or Windows Server 2012 or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.</target>
         </trans-unit>
-        <trans-unit id="135" translate="yes" xml:space="preserve">
+        <trans-unit id="137" translate="yes" xml:space="preserve">
           <source>Change directories to the folder into which you have downloaded or copied the WMF 5.1 installation package.</source>
           <target state="new">Change directories to the folder into which you have downloaded or copied the WMF 5.1 installation package.</target>
         </trans-unit>
-        <trans-unit id="136" translate="yes" xml:space="preserve">
+        <trans-unit id="138" translate="yes" xml:space="preserve">
           <source>Run one of the following commands:</source>
           <target state="new">Run one of the following commands:</target>
         </trans-unit>
-        <trans-unit id="137" translate="yes" xml:space="preserve">
+        <trans-unit id="139" translate="yes" xml:space="preserve">
           <source>On computers that are running Windows Server 2012 R2 or Windows 8.1 x64, run <ph id="ph1">`Win8.1AndW2K12R2-KB3156422-x64.msu /quiet`</ph>.</source>
           <target state="new">On computers that are running Windows Server 2012 R2 or Windows 8.1 x64, run <ph id="ph1">`Win8.1AndW2K12R2-KB3156422-x64.msu /quiet`</ph>.</target>
         </trans-unit>
-        <trans-unit id="138" translate="yes" xml:space="preserve">
+        <trans-unit id="140" translate="yes" xml:space="preserve">
           <source>On computers that are running Windows Server 2012, run <ph id="ph1">`W2K12-KB3156423-x64.msu /quiet`</ph>.</source>
           <target state="new">On computers that are running Windows Server 2012, run <ph id="ph1">`W2K12-KB3156423-x64.msu /quiet`</ph>.</target>
         </trans-unit>
-        <trans-unit id="139" translate="yes" xml:space="preserve">
+        <trans-unit id="141" translate="yes" xml:space="preserve">
           <source>On computers that are running Windows Server 2008 R2 SP1 or Windows 7 SP1 x64, run <ph id="ph1">`Win7AndW2K8R2-KB3156424-x64.msu /quiet`</ph>.</source>
           <target state="new">On computers that are running Windows Server 2008 R2 SP1 or Windows 7 SP1 x64, run <ph id="ph1">`Win7AndW2K8R2-KB3156424-x64.msu /quiet`</ph>.</target>
         </trans-unit>
-        <trans-unit id="140" translate="yes" xml:space="preserve">
+        <trans-unit id="142" translate="yes" xml:space="preserve">
           <source>On computers that are running Windows 8.1 x86, run <ph id="ph1">`Win8.1-KB3156422-x86.msu /quiet`</ph>.</source>
           <target state="new">On computers that are running Windows 8.1 x86, run <ph id="ph1">`Win8.1-KB3156422-x86.msu /quiet`</ph>.</target>
         </trans-unit>
-        <trans-unit id="141" translate="yes" xml:space="preserve">
+        <trans-unit id="143" translate="yes" xml:space="preserve">
           <source>On computers that are running Windows 7 SP1 x86, run <ph id="ph1">`Win7-KB3156424-x86.msu /quiet`</ph>.</source>
           <target state="new">On computers that are running Windows 7 SP1 x86, run <ph id="ph1">`Win7-KB3156424-x86.msu /quiet`</ph>.</target>
         </trans-unit>
-        <trans-unit id="142" translate="yes" xml:space="preserve">
+        <trans-unit id="144" translate="yes" xml:space="preserve">
           <source>Additional Installation Notes for Windows Server 2008 SP1 and Windows 7 SP1</source>
           <target state="new">Additional Installation Notes for Windows Server 2008 SP1 and Windows 7 SP1</target>
         </trans-unit>
-        <trans-unit id="143" translate="yes" xml:space="preserve">
+        <trans-unit id="145" translate="yes" xml:space="preserve">
           <source>Installation of WMF 5.1 on either Windows Server 2008 SP1 or Windows 7 SP1, require the installation of:</source>
           <target state="new">Installation of WMF 5.1 on either Windows Server 2008 SP1 or Windows 7 SP1, require the installation of:</target>
         </trans-unit>
-        <trans-unit id="144" translate="yes" xml:space="preserve">
+        <trans-unit id="146" translate="yes" xml:space="preserve">
           <source>Latest service pack.</source>
           <target state="new">Latest service pack.</target>
         </trans-unit>
-        <trans-unit id="145" translate="yes" xml:space="preserve">
+        <trans-unit id="147" translate="yes" xml:space="preserve">
           <source>WMF 4.0</source>
           <target state="new">WMF 4.0</target>
         </trans-unit>
-        <trans-unit id="146" translate="yes" xml:space="preserve">
+        <trans-unit id="148" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>WinRM Dependency<ept id="p1">**</ept> - Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</source>
           <target state="new"><bpt id="p1">**</bpt>WinRM Dependency<ept id="p1">**</ept> - Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</target>
         </trans-unit>
-        <trans-unit id="147" translate="yes" xml:space="preserve">
+        <trans-unit id="149" translate="yes" xml:space="preserve">
           <source>WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7.</source>
           <target state="new">WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7.</target>
         </trans-unit>
-        <trans-unit id="148" translate="yes" xml:space="preserve">
+        <trans-unit id="150" translate="yes" xml:space="preserve">
           <source>To enable WinRM, in a Windows PowerShell elevated session, run <ph id="ph1">`Set-WSManQuickConfig`</ph>.</source>
           <target state="new">To enable WinRM, in a Windows PowerShell elevated session, run <ph id="ph1">`Set-WSManQuickConfig`</ph>.</target>
         </trans-unit>
