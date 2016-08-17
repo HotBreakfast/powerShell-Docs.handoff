@@ -2,13 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f61a62f" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">12f2c084ab92134b733ee037c3d9fbd512af2e4c</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-56a7a5e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">83061e651b190bab3e5914bb6270a5857f7aa7a5</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\5.1\release-notes.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
-      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">a7f27e3c3230a937e6ec977aa3df8d223faf0ff8</xliffext:olskeletonhash>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">55dab41f0ac456f60a424cd89749ec99a5c3ca63</xliffext:olskeletonhash>
     </header>
     <body>
       <group id="content" extype="content">
@@ -61,12 +61,12 @@
           <target state="new">Important notes:</target>
         </trans-unit>
         <trans-unit id="113" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>WMF 5.1 Preview requires Windows Management Framework 4.6<ept id="p1">**</ept>.</source>
-          <target state="new"><bpt id="p1">**</bpt>WMF 5.1 Preview requires Windows Management Framework 4.6<ept id="p1">**</ept>.</target>
+          <source><bpt id="p1">**</bpt>WMF 5.1 Preview requires the .NET Framework 4.6<ept id="p1">**</ept>.</source>
+          <target state="new"><bpt id="p1">**</bpt>WMF 5.1 Preview requires the .NET Framework 4.6<ept id="p1">**</ept>.</target>
         </trans-unit>
         <trans-unit id="114" translate="yes" xml:space="preserve">
-          <source>Installation will succeed, but key features will fail if .Net 4.6 is not installed.</source>
-          <target state="new">Installation will succeed, but key features will fail if .Net 4.6 is not installed.</target>
+          <source>Installation will succeed, but key features will fail if .NET 4.6 is not installed.</source>
+          <target state="new">Installation will succeed, but key features will fail if .NET 4.6 is not installed.</target>
         </trans-unit>
         <trans-unit id="115" translate="yes" xml:space="preserve">
           <source>Instructions are available in the <bpt id="p1">[</bpt>Install and Configure WMF 5.1 (Preview)<ept id="p1">](https://msdn.microsoft.com/en-us/powershell/wmf/5.1/install-configure)</ept> topic.</source>

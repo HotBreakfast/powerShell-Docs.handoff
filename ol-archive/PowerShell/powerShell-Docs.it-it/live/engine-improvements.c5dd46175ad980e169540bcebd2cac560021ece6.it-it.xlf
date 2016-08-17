@@ -2,13 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="it-it">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f61a62f" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">af0f58c5d84e21416cb15e4bd53c24369fa9c1b6</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-56a7a5e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">bb7efc55b1c948c349aa778b700e5cb1277b9762</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\5.1\engine-improvements.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
-      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">dc242c00ffe145b73f77fa18242b53d20c7b887f</xliffext:olskeletonhash>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0d687b16ea831c985906ab7098cb8f3a4e297159</xliffext:olskeletonhash>
     </header>
     <body>
       <group id="content" extype="content">
@@ -21,8 +21,8 @@
           <target state="new">PowerShell, DSC, WMF</target>
         </trans-unit>
         <trans-unit id="103" translate="yes" xml:space="preserve">
-          <source>PowerShell engine improvements</source>
-          <target state="new">PowerShell engine improvements</target>
+          <source>PowerShell Engine Improvements</source>
+          <target state="new">PowerShell Engine Improvements</target>
         </trans-unit>
         <trans-unit id="104" translate="yes" xml:space="preserve">
           <source>The following improvements to the core PowerShell engine have been implemented in WMF 5.1:</source>
@@ -45,8 +45,8 @@
           <target state="new">Pipelining to cmdlets like ForEach-Object and Where-Object is approximately 50% faster</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source>Some example improvements (your results may vary depending your your hardware):</source>
-          <target state="new">Some example improvements (your results may vary depending your your hardware):</target>
+          <source>Some example improvements (your results may vary depending on your hardware):</source>
+          <target state="new">Some example improvements (your results may vary depending on your hardware):</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
           <source>Scenario</source>
@@ -105,8 +105,8 @@
           <target state="new">Note One change related to startup might impact some unsupported scenarios.</target>
         </trans-unit>
         <trans-unit id="124" translate="yes" xml:space="preserve">
-          <source>PowerShell no longer reads the files <ph id="ph1">`$pshome\*.ps1xml`</ph> - these files have been converted to C# to avoid some file and CPU overhead of processing the XML files.</source>
-          <target state="new">PowerShell no longer reads the files <ph id="ph1">`$pshome\*.ps1xml`</ph> - these files have been converted to C# to avoid some file and CPU overhead of processing the XML files.</target>
+          <source>PowerShell no longer reads the files <ph id="ph1">`$pshome\*.ps1xml`</ph> -- these files have been converted to C# to avoid some file and CPU overhead of processing the XML files.</source>
+          <target state="new">PowerShell no longer reads the files <ph id="ph1">`$pshome\*.ps1xml`</ph> -- these files have been converted to C# to avoid some file and CPU overhead of processing the XML files.</target>
         </trans-unit>
         <trans-unit id="125" translate="yes" xml:space="preserve">
           <source>The files still exist to support V2 side-by-side, so if you change the file contents, it will not have any effect to V5, only V2.</source>
@@ -121,16 +121,16 @@
           <target state="new">Another visible change is how PowerShell caches the exported commands and other information for modules that are installed on a system.</target>
         </trans-unit>
         <trans-unit id="128" translate="yes" xml:space="preserve">
-          <source>Previous, this cache was stored in the directory <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`</ph>.</source>
-          <target state="new">Previous, this cache was stored in the directory <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`</ph>.</target>
+          <source>Previously, this cache was stored in the directory <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`</ph>.</source>
+          <target state="new">Previously, this cache was stored in the directory <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\CommandAnalysis`</ph>.</target>
         </trans-unit>
         <trans-unit id="129" translate="yes" xml:space="preserve">
           <source>In WMF 5.1, the cache is a single file <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\ModuleAnalysisCache`</ph>.</source>
           <target state="new">In WMF 5.1, the cache is a single file <ph id="ph1">`$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\ModuleAnalysisCache`</ph>.</target>
         </trans-unit>
         <trans-unit id="130" translate="yes" xml:space="preserve">
-          <source>See <bpt id="p1">[</bpt>analysis_cache.md<ept id="p1">]()</ept> for more details.</source>
-          <target state="new">See <bpt id="p1">[</bpt>analysis_cache.md<ept id="p1">]()</ept> for more details.</target>
+          <source>See <bpt id="p1">[</bpt>Module Analysis Cache<ept id="p1">](scenarios-features.md#module-analysis-cache)</ept> for more details.</source>
+          <target state="new">See <bpt id="p1">[</bpt>Module Analysis Cache<ept id="p1">](scenarios-features.md#module-analysis-cache)</ept> for more details.</target>
         </trans-unit>
       </group>
     </body>
