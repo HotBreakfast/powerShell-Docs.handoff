@@ -2,13 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" original="markdown" source-language="en-US" target-language="zh-cn">
     <header>
-      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-f61a62f" tool-company="Microsoft" />
-      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">058d18deeb3d4926970ea25a157f92ad14836e4b</xliffext:olfilehash>
+      <tool tool-id="mdxliff" tool-name="mdxliff" tool-version="1.0-56a7a5e" tool-company="Microsoft" />
+      <xliffext:olfilehash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">26a325dc7a18ba167ddc56ca226fce3eded79f52</xliffext:olfilehash>
       <xliffext:olfilepath xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">wmf\5.1\install-configure.md</xliffext:olfilepath>
       <xliffext:oltranslationpriority xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">
       </xliffext:oltranslationpriority>
       <xliffext:oltranslationtype xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">Human Translation</xliffext:oltranslationtype>
-      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">0910804299aa9e6d43747d8be092bba6ad83b59f</xliffext:olskeletonhash>
+      <xliffext:olskeletonhash xmlns:xliffext="urn:microsoft:content:schema:xliffextensions">70ced389575493b62e05d9c594bfffd372f0e9a6</xliffext:olskeletonhash>
     </header>
     <body>
       <group id="content" extype="content">
@@ -29,28 +29,28 @@
           <target state="new">Install .Net 4.6</target>
         </trans-unit>
         <trans-unit id="105" translate="yes" xml:space="preserve">
-          <source>You must install the .Net Framework 4.6 to use WMF 5.1.</source>
-          <target state="new">You must install the .Net Framework 4.6 to use WMF 5.1.</target>
+          <source>You must install the .NET Framework 4.6 to use WMF 5.1.</source>
+          <target state="new">You must install the .NET Framework 4.6 to use WMF 5.1.</target>
         </trans-unit>
         <trans-unit id="106" translate="yes" xml:space="preserve">
-          <source>This is require to enable the new catalog-signing features, which impacts several areas of module and script loading in WMF 5.1.</source>
-          <target state="new">This is require to enable the new catalog-signing features, which impacts several areas of module and script loading in WMF 5.1.</target>
+          <source>This is required to enable the new catalog-signing features, which impacts several areas of module and script loading in WMF 5.1.</source>
+          <target state="new">This is required to enable the new catalog-signing features, which impacts several areas of module and script loading in WMF 5.1.</target>
         </trans-unit>
         <trans-unit id="107" translate="yes" xml:space="preserve">
-          <source>The <bpt id="p1">[</bpt>.Net Framework 4.6 is available as KB 3045560<ept id="p1">](https://support.microsoft.com/en-us/kb/3045560)</ept>.</source>
-          <target state="new">The <bpt id="p1">[</bpt>.Net Framework 4.6 is available as KB 3045560<ept id="p1">](https://support.microsoft.com/en-us/kb/3045560)</ept>.</target>
+          <source>The <bpt id="p1">[</bpt>.NET Framework 4.6 is available as KB 3045560<ept id="p1">](https://support.microsoft.com/en-us/kb/3045560)</ept>.</source>
+          <target state="new">The <bpt id="p1">[</bpt>.NET Framework 4.6 is available as KB 3045560<ept id="p1">](https://support.microsoft.com/en-us/kb/3045560)</ept>.</target>
         </trans-unit>
         <trans-unit id="108" translate="yes" xml:space="preserve">
           <source>Install instructions are available at the download location.</source>
           <target state="new">Install instructions are available at the download location.</target>
         </trans-unit>
         <trans-unit id="109" translate="yes" xml:space="preserve">
-          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> It is a known issue that .NET 4.6 requirement is not detected by the WMF 5.1 Preview installer, so you will be able to install WMF 5.1 Preview before installing .Net 4.6.</source>
-          <target state="new"><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> It is a known issue that .NET 4.6 requirement is not detected by the WMF 5.1 Preview installer, so you will be able to install WMF 5.1 Preview before installing .Net 4.6.</target>
+          <source><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> It is a known issue that .NET 4.6 requirement is not detected by the WMF 5.1 Preview installer, so you will be able to install WMF 5.1 Preview before installing .NET 4.6.</source>
+          <target state="new"><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> It is a known issue that .NET 4.6 requirement is not detected by the WMF 5.1 Preview installer, so you will be able to install WMF 5.1 Preview before installing .NET 4.6.</target>
         </trans-unit>
         <trans-unit id="110" translate="yes" xml:space="preserve">
-          <source>Our testing has shown that you can install .Net 4.6 after installing the WMF 5.1 Preview.</source>
-          <target state="new">Our testing has shown that you can install .Net 4.6 after installing the WMF 5.1 Preview.</target>
+          <source>Our testing has shown that you can install .NET 4.6 after installing the WMF 5.1 Preview.</source>
+          <target state="new">Our testing has shown that you can install .NET 4.6 after installing the WMF 5.1 Preview.</target>
         </trans-unit>
         <trans-unit id="111" translate="yes" xml:space="preserve">
           <source>The final version of WMF 5.1 will correctly check this prerequisite requirement before installing.</source>
@@ -173,16 +173,16 @@
           <target state="new">Double-click the MSU to run it.</target>
         </trans-unit>
         <trans-unit id="141" translate="yes" xml:space="preserve">
-          <source>Install WMF 5.1 from the command prompt</source>
-          <target state="new">Install WMF 5.1 from the command prompt</target>
+          <source>Install WMF 5.1 from the Command Prompt</source>
+          <target state="new">Install WMF 5.1 from the Command Prompt</target>
         </trans-unit>
         <trans-unit id="142" translate="yes" xml:space="preserve">
           <source>After downloading the correct package for your computer's architecture, open a Command Prompt window with elevated user rights (Run as Administrator).</source>
           <target state="new">After downloading the correct package for your computer's architecture, open a Command Prompt window with elevated user rights (Run as Administrator).</target>
         </trans-unit>
         <trans-unit id="143" translate="yes" xml:space="preserve">
-          <source>On the Server Core installation options of Windows Server 2012 R2 or Windows Server 2012 or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.</source>
-          <target state="new">On the Server Core installation options of Windows Server 2012 R2 or Windows Server 2012 or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.</target>
+          <source>On the Server Core installation options of Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.</source>
+          <target state="new">On the Server Core installation options of Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1, Command Prompt opens with elevated user rights by default.</target>
         </trans-unit>
         <trans-unit id="144" translate="yes" xml:space="preserve">
           <source>Change directories to the folder into which you have downloaded or copied the WMF 5.1 installation package.</source>
@@ -241,8 +241,8 @@
           <target state="new">Security update for <bpt id="p1">[</bpt>SHA-2 Code Signing<ept id="p1">](https://technet.microsoft.com/en-us/library/security/3033929)</ept>.</target>
         </trans-unit>
         <trans-unit id="158" translate="yes" xml:space="preserve">
-          <source>This is needed to use new PowerShell cmdlets for windows catalog files.</source>
-          <target state="new">This is needed to use new PowerShell cmdlets for windows catalog files.</target>
+          <source>This is needed to use new PowerShell cmdlets for Windows catalog files.</source>
+          <target state="new">This is needed to use new PowerShell cmdlets for Windows catalog files.</target>
         </trans-unit>
         <trans-unit id="159" translate="yes" xml:space="preserve">
           <source><bpt id="p1">**</bpt>WinRM Dependency<ept id="p1">**</ept> - Windows PowerShell Desired State Configuration (DSC) depends on WinRM.</source>
@@ -253,8 +253,8 @@
           <target state="new">WinRM is not enabled by default on Windows Server 2008 R2 and Windows 7.</target>
         </trans-unit>
         <trans-unit id="161" translate="yes" xml:space="preserve">
-          <source>To enable WinRM, in a Windows PowerShell elevated session, run <ph id="ph1">`Set-WSManQuickConfig`</ph>.</source>
-          <target state="new">To enable WinRM, in a Windows PowerShell elevated session, run <ph id="ph1">`Set-WSManQuickConfig`</ph>.</target>
+          <source>Run <ph id="ph1">`Set-WSManQuickConfig`</ph>, in a Windows PowerShell elevated session, to enable WinRM.</source>
+          <target state="new">Run <ph id="ph1">`Set-WSManQuickConfig`</ph>, in a Windows PowerShell elevated session, to enable WinRM.</target>
         </trans-unit>
       </group>
     </body>
