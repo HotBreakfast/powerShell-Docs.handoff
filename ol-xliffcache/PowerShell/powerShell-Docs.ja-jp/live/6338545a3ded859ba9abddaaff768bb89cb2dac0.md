@@ -1,17 +1,12 @@
-# DSC リソースのサイド バイ サイドのモジュール バージョン管理サポート
+# Side-By-Side Module Versioning Support for DSC Resources
 
-DSC リソースに含まれるモジュールは、サイド バイ サイドでインストールして、システムにインストールされるリソースの特定のバージョンを DSC 構成が使うようにできます。
+Modules containing DSC resources can be installed side-by-side, and DSC configurations can use a specific version of the resource that is installed on the system.
 
-詳細については、「[複数のバージョンがあるリソースの使用](https://msdn.microsoft.com/powershell/dsc/sxsresource)」を参照してください。
+For more information, see [Using resources with multiple versions](https://msdn.microsoft.com/powershell/dsc/sxsresource).
 
-## 既知の問題
+## Known issues
 
-このリリースでは、サイド バイ サイドのインストールについて次に挙げる既知の問題があります。
+In this release, the following are known issues of side-by-side installation:
 
--   同じ構成内で DSC リソースの 2 つの異なるバージョンを使うことはサポートされていません。
-
-
-
-<!--HONumber=Jul16_HO1-->
-
+-   Using two different versions of the DSC resource within the same configuration is not supported.
 
