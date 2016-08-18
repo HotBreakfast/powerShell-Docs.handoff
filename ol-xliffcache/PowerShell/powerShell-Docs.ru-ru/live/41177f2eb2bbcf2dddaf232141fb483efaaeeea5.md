@@ -1,77 +1,67 @@
 ---
-title: "Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: eslesar
-manager: dongill
-ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
-ms.openlocfilehash: 41177f2eb2bbcf2dddaf232141fb483efaaeeea5
-
+title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 
-# Метод SendConfigurationApplyAsync класса MSFT_DSCLocalConfigurationManager
+# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
 
-Асинхронно отправляет документ конфигурации на управляемый узел и использует агент конфигурации для применения конфигурации.
+Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
 
-Синтаксис
+Syntax
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-Параметры
+Parameters
 ----------
 
 *ConfigurationData* \[in\]  
-Данные среды для конфигурации.
+The environment data for the configuration.
 
 *force* \[in\]  
-Значение **true** для принудительной остановки конфигурации.
+**true** to force the configuration to stop.
 
 *jobId* \[in\]  
-Идентификатор задания, для которого отправляется конфигурация.
+The ID of the job for which to send the configuration.
 
-## Возвращаемое значение
+## Return value
 ------------
 
-Возвращает нуль в случае успешного выполнения; в противном случае возвращает код ошибки.
+Returns zero on success; otherwise returns an error code.
 
-## Замечания
+## Remarks
 
-Это статический метод.
+This is a static method.
 
-## Требования
+## Requirements
 ------------
->**MOF-файл:** DscCore.mof
+>**MOF:** DscCore.mof
 
->**Пространство имен**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## См. также:
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-
-<!--HONumber=Jun16_HO4-->
 
 

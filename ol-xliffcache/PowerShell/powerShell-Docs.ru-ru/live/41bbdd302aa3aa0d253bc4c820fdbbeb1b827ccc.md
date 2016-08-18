@@ -1,68 +1,58 @@
 ---
-title: "Запуск 32-разрядной версии Windows PowerShell"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
-description: 
-ms.topic: article
-author: jpjofre
-manager: dongill
-ms.prod: powershell
-ms.assetid: 12b31890-2609-4a76-8c24-0ebe78084f50
-translationtype: Human Translation
-ms.sourcegitcommit: b6ab9bfdd779a865c1f543bf16e91ec17b43c4b0
-ms.openlocfilehash: 41bbdd302aa3aa0d253bc4c820fdbbeb1b827ccc
-
+title:  Starting the 32 Bit Version of Windows PowerShell
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  12b31890-2609-4a76-8c24-0ebe78084f50
 ---
 
-# Запуск 32-разрядной версии Windows PowerShell
-При установке Windows PowerShell на 64\-разрядном компьютере в дополнение к 64**разрядной версии устанавливается **Windows PowerShell (x86)\- — 32\-разрядная версия Windows PowerShell. При открытии Windows PowerShell по умолчанию запускается 64\-разрядная версия.
+# Starting the 32-Bit Version of Windows PowerShell
+When you install Windows PowerShell on a 64\-bit computer, **Windows PowerShell (x86)**, a 32\-bit version of Windows PowerShell is installed in addition to the 64\-bit version. When you run Windows PowerShell, the 64\-bit version runs by default.
 
-Но в некоторых случаях следует запустить **Windows PowerShell (x86)**, например при использовании модуля, которому нужна 32\-разрядная версия, или при удаленном подключении к 32\-разрядному компьютеру.
+However, you might occasionally need to run **Windows PowerShell (x86)**, such as when you are using a module that requires the 32\-bit version or when you are connecting remotely to a 32\-bit computer.
 
-Для запуска 32\-разрядной версии Windows PowerShell воспользуйтесь любой из следующих процедур.
+To start a 32\-bit version of Windows PowerShell, use any of the following procedures.
 
-#### В Windows Server® 2012 R2
+#### In Windows ServerÂ® 2012 R2
 
--   На экране **Пуск** щелкните **Windows PowerShell (x86)**. Щелкните плитку **Windows PowerShell x86**.
+-   On the **Start** screen, type **Windows PowerShell (x86)**. Click the **Windows PowerShell x86** tile.
 
--   Выберите пункт **Windows PowerShell (x86)** в меню **Сервис** **диспетчера сервера**.
+-   In **Server Manager**, from the **Tools** menu, select **Windows PowerShell (x86)**.
 
--   На рабочем столе переместите курсор в правый верхний угол, щелкните элемент **Поиск**, введите **PowerShell x86** и выберите **Windows PowerShell (x86)**.
+-   On the desktop, move the cursor to the upper right corner, click **Search**, type **PowerShell x86** and then click **Windows PowerShell (x86)**.
 
--   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
+-   Via command line, enter: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### В Windows Server 2012
+#### In Windows Server 2012
 
--   На экране **Пуск** введите **PowerShell** и выберите **Windows PowerShell (x86)**.
+-   On the **Start** screen, type **PowerShell** and then click **Windows PowerShell (x86)**.
 
--   Выберите пункт **Windows PowerShell (x86)** в меню **Сервис** **диспетчера сервера**.
+-   In **Server Manager**, from the **Tools** menu, select **Windows PowerShell (x86)**.
 
--   На рабочем столе переместите курсор в правый верхний угол, щелкните элемент **Поиск**, введите **PowerShell** и выберите **Windows PowerShell (x86)**.
+-   On the desktop, move the cursor to the upper right corner, click **Search**, type **PowerShell** and then click **Windows PowerShell (x86)**.
 
--   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
+-   Via command line, enter: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### В Windows 8.1
+#### In Windows 8.1
 
--   На экране **Пуск** щелкните **Windows PowerShell (x86)**. Щелкните плитку **Windows PowerShell x86**.
+-   On the **Start** screen, type **Windows PowerShell (x86)**. Click the **Windows PowerShell x86** tile.
 
--   Если вы используете [средства удаленного администрирования сервера](http://go.microsoft.com/fwlink/?LinkID=304145) для Windows 8.1, можно также открыть Windows PowerShell x86 из меню **Сервис** диспетчера сервера. Выберите **Windows PowerShell (x86)**.
+-   If you are running [Remote Server Administration Tools](http://go.microsoft.com/fwlink/?LinkID=304145) for Windows 8.1, you can also open Windows PowerShell x86 from the **Server ManagerTools** menu. Select **Windows PowerShell (x86)**.
 
--   На рабочем столе переместите курсор в правый верхний угол, щелкните элемент **Поиск**, введите **PowerShell x86** и выберите **Windows PowerShell (x86)**.
+-   On the desktop, move the cursor to the upper right corner, click **Search**, type **PowerShell x86** and then click **Windows PowerShell (x86)**.
    
--   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
+-   Via command line, enter: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
 
-#### В Windows 8
+#### In Windows 8
 
--   На экране **Пуск** переместите курсор в правый верхний угол, щелкните **Параметры**, **Плитки**, а затем переместите ползунок **Показать средства администрирования** в значение "Да". Введите **PowerShell** и выберите **Windows PowerShell (x86)**.
+-   On the **Start** screen, move the cursor to the upper right corner, click **Settings**, click **Tiles**, and then move the **Show Administrative Tools** slider to Yes. Then, type **PowerShell** and click **Windows PowerShell (x86)**.
 
--   Если вы используете [средства удаленного администрирования сервера](http://www.microsoft.com/download/details.aspx?id=28972) для Windows 8, можно также открыть Windows PowerShell x86 из меню **Сервис** диспетчера сервера. Выберите **Windows PowerShell (x86)**.
+-   If you are running [Remote Server Administration Tools](http://www.microsoft.com/download/details.aspx?id=28972) for Windows 8, you can also open Windows PowerShell x86 from the **Server ManagerTools** menu. Select **Windows PowerShell (x86)**.
 
--   На экране **Пуск** или рабочем столе введите **PowerShell (x86)** и выберите **Windows PowerShell (x86)**.
+-   On the **Start** screen or the desktop, type **PowerShell (x86)** and then click **Windows PowerShell (x86)**.
 
--   В командной строке введите следующее: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
-
-
-
-<!--HONumber=Jun16_HO4-->
-
-
+-   Via command line, enter: `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`

@@ -1,25 +1,21 @@
 ---
-title: "Ресурс Package в DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: eslesar
-manager: dongill
-ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: bcaf82cbafe67cc309765e16b3c9cd6eff0a982a
-
+title:   DSC Package Resource
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
-# Ресурс Package в DSC
+# DSC Package Resource
 
-> Область применения: Windows PowerShell 4.0, Windows PowerShell 5.0
+> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-Ресурс **Package** в DSC Windows PowerShell предоставляет механизм установки или удаления пакетов, таких как пакеты установщика Windows и setup.exe, на целевом узле.
+The **Package** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to install or uninstall packages, such as Windows Installer and setup.exe packages, on a target node.
 
-## Синтаксис
+## Syntax
 
 ```
 Package [string] #ResourceName
@@ -36,22 +32,22 @@ Package [string] #ResourceName
 }
 ```
 
-## Свойства
-|  Свойство  |  Описание   | 
+## Properties
+|  Property  |  Description   | 
 |---|---| 
-| Название| Указывает имя пакета, для которого требуется обеспечить определенное состояние.| 
-| путь| Указывает путь к файлу пакета.| 
-| ProductID| Указывает уникальный идентификатор пакета.| 
-| Аргументы| Указывает строку аргументов, которая будет передана в пакет в указанном виде.| 
-| Учетные данные| Предоставляет доступ к пакету в удаленном источнике. Это свойство не используется для установки пакета. Пакет всегда устанавливается в локальной системе.| 
-| Ensure| Указывает, установлен ли пакет. Если это свойство имеет значение Absent, пакет не устанавливается (а если он уже установлен, то удаляется). Если это свойство имеет значение Present (по умолчанию), пакет устанавливается.| 
-| LogPath| Указывает полный путь к папке, где нужно сохранить файл журнала для установки или удаления пакета.| 
-| DependsOn | Указывает, что перед настройкой этого ресурса необходимо запустить настройку другого ресурса. Например, если идентификатор первого запускаемого блока сценария для конфигурации ресурса — **ResourceName**, а его тип — **ResourceType**, то синтаксис использования этого свойства таков: "DependsOn = "[ResourceType]ResourceName"".| 
-| ReturnCode| Указывает ожидаемый код возврата. Если фактический код возврата не соответствует указанному здесь значению, настройка вернет ошибку.| 
+| Name| Indicates the name of the package for which you want to ensure a specific state.| 
+| Path| Indicates the path where the package resides.| 
+| ProductId| Indicates the product ID that uniquely identifies the package.| 
+| Arguments| Lists a string of arguments that will be passed to the package exactly as provided.| 
+| Credential| Provides access to the package on a remote source. This property is not used to install the package. The package is always installed on the local system.| 
+| Ensure| Indicates if the package is installed. Set this property to "Absent" to ensure the package is not installed (or uninstall the package if it is installed). Set it to "Present" (the default value) to ensure the package is installed.| 
+| LogPath| Indicates the full path where you want the provider to save a log file to install or uninstall the package.| 
+| DependsOn | Indicates that the configuration of another resource must run before this resource is configured. For example, if the ID of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"``.| 
+| ReturnCode| Indicates the expected return code. If the actual return code does not match the expected value provided here, the configuration will return an error.| 
 
-## Пример
+## Example
 
-В этом примере выполняется установщик MSI, который находится по указанному пути и имеет указанный идентификатор.
+This example runs the .msi installer that is located at the specified path and has the specified product ID.
 
 ```powershell
 Package PackageExample
@@ -62,10 +58,4 @@ Package PackageExample
     ProductId = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
 } 
 ```
-
-
-
-
-<!--HONumber=Jun16_HO4-->
-
 
