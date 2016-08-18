@@ -1,24 +1,20 @@
 ---
-title: "Création d'une zone d'entrée personnalisée"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
-description: 
-ms.topic: article
-author: jpjofre
-manager: dongill
-ms.prod: powershell
-ms.assetid: 0b12e56c-299f-40ee-afbf-d30d23ed2565
-translationtype: Human Translation
-ms.sourcegitcommit: 03ac4b90d299b316194f1fa932e7dbf62d4b1c8e
-ms.openlocfilehash: 628062cfadcadcec3311dcb8bfdd6bd3b9a9e567
-
+title:  Creating a Custom Input Box
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  0b12e56c-299f-40ee-afbf-d30d23ed2565
 ---
 
-# Création d'une zone d'entrée personnalisée
-Dans Windows PowerShell 3.0 et versions ultérieures, utilisez les fonctionnalités de création de formulaires de Microsoft .NET Framework pour créer une zone d’entrée graphique personnalisée à l’aide d’un script.
+# Creating a Custom Input Box
+Script a graphical custom input box by using Microsoft .NET Framework form\-building features in Windows PowerShell 3.0 and later releases.
 
-## Créer une zone d'entrée graphique personnalisée
-Copiez le code suivant, puis collez-le dans Windows PowerShell ISE. Ensuite, enregistrez-le en tant que script Windows PowerShell (.ps1).
+## Create a custom, graphical input box
+Copy and then paste the following into Windows PowerShell ISE, and then save it as a Windows PowerShell script (.ps1).
 
 ```
 Add-Type -AssemblyName System.Windows.Forms
@@ -68,19 +64,19 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 }
 ```
 
-Le script commence par charger deux classes .NET Framework : **System.Drawing** et **System.Windows.Forms**. Démarrez ensuite une nouvelle instance de la classe .NET Framework **System.Windows.Forms.Form**. Celle-ci affiche une fenêtre ou un formulaire vide où vous pouvez commencer à ajouter des contrôles.
+The script begins by loading two .NET Framework classes: **System.Drawing** and **System.Windows.Forms**. You then start a new instance of the .NET Framework class **System.Windows.Forms.Form**; that provides a blank form or window to which you can start adding controls.
 
 ```
 $form = New-Object System.Windows.Forms.Form
 ```
 
-Après avoir créé une instance de la classe Form, affectez des valeurs à trois propriétés de cette classe.
+After you create an instance of the Form class, assign values to three properties of this class.
 
--   **Text.** Il s'agit du titre de la fenêtre.
+-   **Text.** This becomes the title of the window.
 
--   **Size.** Il s'agit de la taille du formulaire en pixels. Le script précédent crée un formulaire de 300 pixels de largeur par 200 pixels de hauteur.
+-   **Size.** This is the size of the form, in pixels. The preceding script creates a form that’s 300 pixels wide by 200 pixels tall.
 
--   **StartingPosition.** Cette propriété facultative a la valeur **CenterScreen** dans le script précédent. Si vous n'ajoutez pas cette propriété, Windows sélectionne un emplacement quand le formulaire est ouvert. Si vous affectez à **StartingPosition** la valeur **CenterScreen**, le formulaire s’affiche automatiquement au milieu de l’écran à chaque chargement.
+-   **StartingPosition.** This optional property is set to **CenterScreen** in the preceding script. If you don’t add this property, Windows selects a location when the form is opened. By setting the **StartingPosition** to **CenterScreen**, you’re automatically displaying the form in the middle of the screen each time it loads.
 
 ```
 $form.Text = "Data Entry Form"
@@ -88,7 +84,7 @@ $form.Size = New-Object System.Drawing.Size(300,200)
 $form.StartPosition = "CenterScreen"
 ```
 
-Ensuite, créez un bouton **OK** dans votre formulaire. Spécifiez la taille et le comportement du bouton **OK**. Dans cet exemple, le bouton se trouve à 120 pixels du bord supérieur du formulaire et à 75 pixels du bord gauche. Le bouton mesure 23 pixels de haut et 75 pixels de long. Le script utilise des types Windows Forms prédéfinis pour déterminer le comportement du bouton.
+Next, create an **OK** button for your form. Specify the size and behavior of the **OK** button. In this example, the button position is 120 pixels from the form’s top edge, and 75 pixels from the left edge. The button height is 23 pixels, while the button length is 75 pixels. The script uses predefined Windows Forms types to determine the button behaviors.
 
 ```
 $OKButton = New-Object System.Windows.Forms.Button
@@ -100,7 +96,7 @@ $form.AcceptButton = $OKButton
 $form.Controls.Add($OKButton)
 ```
 
-De la même façon, créez un bouton **Annuler**. Le bouton **Annuler** se trouve à 120 pixels du bord supérieur de la fenêtre, mais à 150 pixels du bord gauche.
+Similarly, you create a **Cancel** button. The **Cancel** button is 120 pixels from the top, but 150 pixels from the left edge of the window.
 
 ```
 $CancelButton = New-Object System.Windows.Forms.Button
@@ -112,7 +108,7 @@ $form.CancelButton = $CancelButton
 $form.Controls.Add($CancelButton)
 ```
 
-Ensuite, entrez le texte d'étiquette décrivant les informations que doivent fournir les utilisateurs dans la fenêtre.
+Next, provide label text on your window that describes the information you want users to provide.
 
 ```
 $label = New-Object System.Windows.Forms.Label
@@ -122,7 +118,7 @@ $label.Text = "Please enter the information in the space below:"
 $form.Controls.Add($label)
 ```
 
-Ajoutez le contrôle (dans ce cas, une zone de texte) qui permet aux utilisateurs de fournir les informations que vous avez décrites dans votre texte d'étiquette. Hormis les zones de texte, vous pouvez appliquer de nombreux autres contrôles. Pour plus de contrôles, voir [Espace de noms System.Windows.Forms](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) sur MSDN.
+Add the control (in this case, a text box) that lets users provide the information you’ve described in your label text. There are many other controls you can apply besides text boxes; for more controls, see [System.Windows.Forms Namespace](http://msdn.microsoft.com/library/k50ex0x9(v=vs.110).aspx) on MSDN.
 
 ```
 $textBox = New-Object System.Windows.Forms.TextBox 
@@ -131,42 +127,36 @@ $textBox.Size = New-Object System.Drawing.Size(260,20)
 $form.Controls.Add($textBox)
 ```
 
-Affectez à la propriété **Topmost** la valeur **$True** pour forcer la fenêtre à s’ouvrir au-dessus des autres fenêtres et boîtes de dialogue.
+Set the **Topmost** property to **$True** to force the window to open atop other open windows and dialog boxes.
 
 ```
 $form.Topmost = $True
 ```
 
-Ensuite, ajoutez cette ligne de code pour activer le formulaire et définissez le focus sur la zone de texte que vous avez créée.
+Next, add this line of code to activate the form, and set the focus to the text box that you created.
 
 ```
 $form.Add_Shown({$textBox.Select()})
 ```
 
-Ajoutez la ligne de code suivante pour afficher le formulaire dans Windows.
+Add the following line of code to display the form in Windows.
 
 ```
 $result = $form.ShowDialog()
 ```
 
-Enfin, le code à l’intérieur du bloc **If** indique à Windows comment traiter le formulaire quand un utilisateur entre du texte dans la zone de texte, puis clique sur le bouton **OK** ou appuie sur la touche **Entrée**.
+Finally, the code inside the **If** block instructs Windows what to do with the form after users provide text in the text box, and then click the **OK** button or press the **Enter** key.
 
 ```
 if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 {
-    $x = $textBox.Text
-    $x
+    $x = $textBox.Text
+    $x
 }
 ```
 
-## Voir aussi
+## See Also
 [Hey Scripting Guy:  Why don’t these PowerShell GUI examples work?](http://go.microsoft.com/fwlink/?LinkId=506644)
-[GitHub: Dave Wyatt’s WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
-[Astuce Windows PowerShell de la semaine : Création d’une zone d’entrée personnalisée](http://technet.microsoft.com/library/ff730941.aspx)
-
-
-
-
-<!--HONumber=Jun16_HO4-->
-
+[GitHub: Dave Wyatt's WinFormsExampleUpdates](https://github.com/dlwyatt/WinFormsExampleUpdates)
+[Windows PowerShell Tip of the Week:  Creating a Custom Input Box](http://technet.microsoft.com/library/ff730941.aspx)
 

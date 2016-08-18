@@ -1,17 +1,12 @@
-# Prise en charge du contrôle de version de modules côte à côte pour les ressources DSC
+# Side-By-Side Module Versioning Support for DSC Resources
 
-Les modules contenant des ressources DSC peuvent être installés côte à côte, et les configurations DSC peuvent utiliser une version spécifique de la ressource installée sur le système.
+Modules containing DSC resources can be installed side-by-side, and DSC configurations can use a specific version of the resource that is installed on the system.
 
-Pour plus d’informations, consultez [Utilisation de ressources avec plusieurs versions](https://msdn.microsoft.com/powershell/dsc/sxsresource).
+For more information, see [Using resources with multiple versions](https://msdn.microsoft.com/powershell/dsc/sxsresource).
 
-## Problèmes connus
+## Known issues
 
-Voici une liste des problèmes connus avec l’installation côte à côte dans cette version :
+In this release, the following are known issues of side-by-side installation:
 
--   L’utilisation de deux versions différentes de la ressource DSC dans la même configuration n’est pas prise en charge.
-
-
-
-<!--HONumber=Jul16_HO1-->
-
+-   Using two different versions of the DSC resource within the same configuration is not supported.
 

@@ -1,162 +1,152 @@
 ---
-title: "Accessibilité dans Windows PowerShell ISE"
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
-description: 
-ms.topic: article
-author: jpjofre
-manager: dongill
-ms.prod: powershell
-ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-translationtype: Human Translation
-ms.sourcegitcommit: 51b2182de7b563daefb9d64434bdc8b8ab5e0343
-ms.openlocfilehash: cdf1f553d0bea91e2dcd051faef42417ad0cbc7a
-
+title:  Accessibility in Windows PowerShell ISE
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  a078f9d1-dd6b-4323-b16d-0622cd993aa8
 ---
 
-# Accessibilité dans Windows PowerShell ISE
-Cette rubrique décrit les fonctionnalités d’accessibilité de Windows PowerShell® Integrated Scripting Environment (ISE) qui peuvent s’avérer utiles.
+# Accessibility in Windows PowerShell ISE
+This topic describes the accessibility features of Windows PowerShell® Integrated Scripting Environment (ISE) that you might find helpful.
 
-* [Comment modifier la taille et l’emplacement des volets Console et Script](#bkmk_1)
-* [Raccourcis clavier pour l’édition de texte](#bkmk_2)
-* [Raccourcis clavier pour exécuter les scripts](#bkmk_3)
-* [Raccourcis clavier pour la personnalisation de l’affichage](#bkmk_4)
-* [Raccourcis clavier pour le débogage des scripts](#bkmk_5)
-* [Raccourcis clavier pour les onglets Windows PowerShell](#bkmk_6)
-* [Raccourcis clavier pour le démarrage et la fermeture](#bkmk_7)
+* [How to change the size and location of the Console and Script Panes](#bkmk_1)
+* [Keyboard shortcuts for editing text](#bkmk_2)
+* [Keyboard shortcuts for running scripts](#bkmk_3)
+* [Keyboard shortcuts for customizing the view](#bkmk_4)
+* [Keyboard shortcuts for debugging scripts](#bkmk_5)
+* [Keyboard shortcuts for Windows PowerShell tabs](#bkmk_6)
+* [Keyboard shortcuts for starting and exiting](#bkmk_7)
 
-Microsoft s'attache à rendre ses produits et services conviviaux. Les rubriques suivantes fournissent des informations sur les fonctionnalités, les produits et les services qui rendent Windows PowerShell ISE plus accessible aux personnes handicapées.
+Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Windows PowerShell ISE more accessible for people with disabilities.
 
-Windows PowerShell ISE prend en charge l’affichage à contraste élevé. Pour les malvoyants, les informations de point d’arrêt sont disponibles via les applets de commande pour la gestion des points d’arrêt, telles que [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) et [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). Pour plus d’informations, voir « Comment gérer des points d’arrêt » dans [Comment déboguer des scripts dans Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). En plus des fonctionnalités et utilitaires d’accessibilité dans Microsoft Windows, les fonctionnalités suivantes rendent Windows PowerShell ISE plus accessible aux personnes handicapées :
+Windows PowerShell ISE supports high contrast mode. For the visually impaired, breakpoint information is available through the cmdlets for managing breakpoints, such as [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) and [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). For more information please see “How to manage breakpoints” in [How to Debug Scripts in the Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). In addition to accessibility features and utilities in Microsoft Windows, the following features make Windows PowerShell ISE more accessible for people with disabilities:
 
--   Raccourcis clavier
+-   Keyboard Shortcuts
 
--   Table de coloration de la syntaxe et capacité de modifier plusieurs autres paramètres de couleur à l’aide de l’objet de script [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb).
+-   Syntax Coloring Table and the ability to modify several other color settings using the [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) scripting object.
 
--   Modification de la taille du texte
+-   Text Size Change
 
-## <a name="bkmk_1"></a>Comment modifier la taille et l’emplacement des volets Console et Script
-Pour modifier la taille et l’emplacement des volets Console et Script, vous pouvez procéder comme suit. Quand vous rouvrez Windows PowerShell ISE, les modifications de taille et d’emplacement sont conservées.
+## <a name="bkmk_1"></a>How to change the size and location of the Console and Script Panes
+You can use the following steps to change the size and location of the Console Pane and the Script Pane. When you open the Windows PowerShell ISE again, the size and location changes you made will be retained.
 
-### Pour redimensionner les volets Script et Console
+### To resize the Script Pane and Console Pane
 
-1.  Placez le pointeur sur la ligne de séparation entre les volets Script et Console.
+1.  Pause the pointer on the split line between the Script Pane and Console Pane.
 
-2.  Quand le pointeur de la souris prend la forme d’une flèche à deux pointes, faites glisser la bordure pour modifier la taille du volet.
+2.  When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.
 
-### Pour déplacer les volets Script et Console
-Effectuez l'une des opérations suivantes :
+### To move the Script Pane and Console Pane
+Do one of the following:
 
--   Pour déplacer le volet Script au-dessus du volet Console, appuyez sur **Ctrl\+1** ou, dans la barre d’outils, cliquez sur l’icône **Afficher le volet Script en haut**, ou encore, dans le menu **Affichage**, cliquez sur **Afficher le volet Script en haut**.
+-   To move the Script Pane above the Console Pane, press **CTRL\+1** or, on the toolbar, click the **Show Script Pane Top** icon, or in the **View** menu, click **Show Script Pane Top**.
 
--   Pour déplacer le volet Script à droite du volet Console, appuyez sur **Ctrl\+2** ou, dans la barre d’outils, cliquez sur l’icône **Afficher le volet Script à droite**, ou encore, dans le menu **Affichage**, cliquez sur **Afficher le volet Script à droite**.
+-   To move the Script Pane to the right of the Console Pane, press **CTRL\+2** or, on the toolbar, click the **Show Script Pane Right** icon, or in the **View** menu, click **Show Script Pane Right**.
 
--   Pour agrandir le volet Script, appuyez sur **Ctrl\+3** ou, dans la barre d’outils, cliquez sur l’icône **Afficher le volet Script agrandi**, ou encore, dans le menu **Affichage**, cliquez sur **Afficher le volet Script agrandi**.
+-   To maximize the Script Pane, press **CTRL\+3** or, on the toolbar, click the **Show Script Pane Maximized** icon, or in the **View** menu, click **Show Script Pane Maximized**.
 
--   Pour agrandir le volet Console et masquer le volet Script, sur le bord de droit de la ligne d’onglets, cliquez sur l’icône **Masquer le volet Script**, ou, dans le menu **Affichage**, cliquez pour désactiver l’option de menu **Afficher le volet Script**.
+-   To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the **Hide Script Pane** icon, in the **View** menu, click to deselect the **Show Script Pane** menu option.
 
--   Pour afficher le volet Script quand le volet Console est agrandi, sur le bord de droit de la ligne d’onglets, cliquez sur l’icône **Afficher le volet Script**, ou, dans le menu **Affichage**, cliquez pour activer l’option de menu **Afficher le volet Script**.
+-   To display the Script Pane when the Console Pane is maximized, on the far right edge of the row of tabs, click the **Show Script Pane** icon, or in the **View** menu, click to select the **Show Script Pane** menu option.
 
-## <a name="bkmk_2"></a>Raccourcis clavier pour l’édition de texte
-Lorsque vous éditez un texte, vous pouvez utiliser les raccourcis clavier suivants.
+## <a name="bkmk_2"></a>Keyboard shortcuts for editing text
+You can use the following keyboard shortcuts when you edit text.
 
-|Action|Raccourcis clavier|Utiliser dans|
+|Action|Keyboard Shortcuts|Use in|
 |----------|----------------------|----------|
-|**Copier**|Ctrl\+C|Volet Script, volet Console|
-|**Couper**|Ctrl\+X|Volet Script, volet Console|
-|**Rechercher dans le script**|Ctrl\+F|Volet Script|
-|**Rechercher suivant dans le script**|F3|Volet Script|
-|**Rechercher précédent dans le script**|Maj\+F3|Volet Script|
-|**Coller**|Ctrl\+V|Volet Script, volet Console|
-|**Rétablir**|Ctrl\+Y|Volet Script, volet Console|
-|**Remplacer dans le script**|Ctrl\+H|Volet Script|
-|**Enregistrer**|Ctrl\+S|Volet Script|
-|**Sélectionner tout**|Ctrl\+A|Volet Script, volet Console|
-|**Annuler**|Ctrl\+Z|Volet Script, volet Console|
+|**Copy**|CTRL\+C|Script Pane, Console Pane|
+|**Cut**|CTRL\+X|Script Pane, Console Pane|
+|**Find in Script**|CTRL\+F|Script Pane|
+|**Find Next in Script**|F3|Script Pane|
+|**Find Previous in Script**|SHIFT\+F3|Script Pane|
+|**Paste**|CTRL\+V|Script Pane, Console Pane|
+|**Redo**|CTRL\+Y|Script Pane, Console Pane|
+|**Replace in Script**|CTRL\+H|Script Pane|
+|**Save**|CTRL\+S|Script Pane|
+|**Select All**|CTRL\+A|Script Pane, Console Pane|
+|**Undo**|CTRL\+Z|Script Pane, Console Pane|
 
-## <a name="bkmk_3"></a>Raccourcis clavier pour exécuter les scripts
-Lorsque vous exécutez des scripts dans le volet Script, vous pouvez utiliser les raccourcis clavier suivants.
+## <a name="bkmk_3"></a>Keyboard shortcuts for running scripts
+You can use the following keyboard shortcuts when you run scripts in the Script Pane.
 
-|Action|Raccourci clavier|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Nouveau**|Ctrl\+N|
-|**Ouvrir**|Ctrl\+O|
-|**Exécuter**|F5|
-|**Exécuter la sélection**|F8|
-|**Arrêter l’exécution**|Ctrl\+Pause. Vous pouvez utiliser Ctrl\+C quand le contexte est sans ambiguïté (quand aucun texte n’est sélectionné).|
-|**Tab** (pour accéder au script suivant)|Ctrl\+Tab **Remarque :** L’usage de la touche Tab pour accéder au script suivant fonctionne uniquement quand un seul onglet PowerShell est ouvert ou, si plusieurs onglets PowerShell sont ouverts, quand le focus est dans le volet Script.|
-|**Tab** (pour accéder au script précédent)|Ctrl\+Maj\+Tab **Remarque :** L’usage de la touche Tab pour accéder au script précédent fonctionne uniquement quand un seul onglet PowerShell est ouvert ou, si plusieurs onglets PowerShell sont ouverts, quand le focus est dans le volet Script.|
+|**New**|CTRL\+N|
+|**Open**|CTRL\+O|
+|**Run**|F5|
+|**Run Selection**|F8|
+|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
+|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.|
+|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.|
 
-## <a name="bkmk_4"></a>Raccourcis clavier pour la personnalisation de l’affichage
-Pour personnaliser l’affichage dans Windows PowerShell ISE, vous pouvez utiliser les raccourcis clavier suivants. Ils sont accessibles à partir de tous les volets de l’application.
+## <a name="bkmk_4"></a>Keyboard shortcuts for customizing the view
+You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE. They are accessible from all the panes in the application.
 
-|Action|Raccourci clavier|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Accéder au volet Console**|Ctrl\+D|
-|**Accéder au volet Script**|Ctrl\+I|
-|**Afficher le volet Script**|Ctrl\+R|
-|**Masquer le volet Script**|Ctrl\+R|
+|**Go to Console Pane**|CTRL\+D|
+|**Go to Script Pane**|CTRL\+I|
+|**Show Script Pane**|CTRL\+R|
+|**Hide Script Pane**|CTRL\+R|
 ||
-|**Déplacer le volet Script vers le haut**|Ctrl\+1|
-|**Déplacer le volet Script vers la droite**|Ctrl\+2|
-|**Maximiser le volet Script**|Ctrl\+3|
-|**Zoom avant**|Ctrl\+Signe plus|
-|**Zoom arrière**|Ctrl\+Signe moins|
+|**Move Script Pane Up**|CTRL\+1|
+|**Move Script Pane Right**|CTRL\+2|
+|**Maximize Script Pane**|CTRL\+3|
+|**Zoom In**|CTRL\+PLUS SIGN|
+|**Zoom Out**|CTRL\+MINUS SIGN|
 
-## <a name="bkmk_5"></a>Raccourcis clavier pour le débogage des scripts
-Lors du débogage de scripts, vous pouvez utiliser les raccourcis clavier suivants.
+## <a name="bkmk_5"></a>Keyboard shortcuts for debugging scripts
+You can use the following keyboard shortcuts when you debug scripts.
 
-|Action|Raccourci clavier|Utiliser dans|
+|Action|Keyboard Shortcut|Use in|
 |----------|---------------------|----------|
-|**Exécuter/continuer**|F5|Volet Script, lors du débogage d’un script|
-|**Pas à pas détaillé**|F11|Volet Script, lors du débogage d’un script|
-|**Pas à pas principal**|F10|Volet Script, lors du débogage d’un script|
-|**Pas à pas sortant**|Maj\+F11|Volet Script, lors du débogage d’un script|
-|**Afficher la pile des appels**|Ctrl\+Maj\+D|Volet Script, lors du débogage d’un script|
-|**Afficher la liste des points d’arrêt**|Ctrl\+Maj\+L|Volet Script, lors du débogage d’un script|
-|**Basculer le point d’arrêt**|F9|Volet Script, lors du débogage d’un script|
-|**Supprimer tous les points d’arrêt**|Ctrl\+Maj\+F9|Volet Script, lors du débogage d’un script|
-|**Arrêter le débogueur**|Maj\+F5|Volet Script, lors du débogage d’un script|
+|**Run/Continue**|F5|Script Pane, when debugging a script|
+|**Step Into**|F11|Script Pane, when debugging a script|
+|**Step Over**|F10|Script Pane, when debugging a script|
+|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
+|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
+|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
+|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
+|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
+|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
 
 > [!NOTE]
-> Lors du débogage de scripts dans Windows PowerShell ISE, vous pouvez également utiliser les raccourcis clavier conçus pour la console Windows PowerShell. Pour utiliser ces raccourcis, vous devez les taper dans le volet Console, puis appuyer sur Entrée.
+> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Console Pane and press ENTER.
 
-|Action|Raccourci clavier|Utiliser dans|
+|Action|Keyboard Shortcut|Use in|
 |----------|---------------------|----------|
-|**Continuer**|C|Volet Console, lors du débogage d’un script|
-|**Pas à pas détaillé**|S|Volet Console, lors du débogage d’un script|
-|**Pas à pas principal**|V|Volet Console, lors du débogage d’un script|
-|**Pas à pas sortant**|O|Volet Console, lors du débogage d’un script|
-|**Répéter la dernière commande** (pour un pas à pas détaillé ou un pas à pas principal)|ENTRÉE|Volet Console, lors du débogage d’un script|
-|**Afficher la pile des appels**|K|Volet Console, lors du débogage d’un script|
-|**Arrêter le débogage**|Q|Volet Console, lors du débogage d’un script|
-|**Afficher le script**|L|Volet Console, lors du débogage d’un script|
-|**Afficher les commandes de débogage de la console**|H ou ?|Volet Console, lors du débogage d’un script|
+|**Continue**|C|Console Pane, when debugging a script|
+|**Step Into**|S|Console Pane, when debugging a script|
+|**Step Over**|V|Console Pane, when debugging a script|
+|**Step Out**|O|Console Pane, when debugging a script|
+|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
+|**Display Call Stack**|K|Console Pane, when debugging a script|
+|**Stop Debugging**|Q|Console Pane, when debugging a script|
+|**List the Script**|L|Console Pane, when debugging a script|
+|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
 
-## <a name="bkmk_6"></a>Raccourcis clavier pour les onglets Windows PowerShell
-Lorsque vous utilisez les onglets Windows PowerShell, vous pouvez utiliser les raccourcis clavier suivants.
+## <a name="bkmk_6"></a>Keyboard shortcuts for Windows PowerShell tabs
+You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
 
-|Action|Raccourci clavier|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Fermer l’onglet PowerShell**|Ctrl\+W|
-|**Nouvel onglet PowerShell**|Ctrl\+T|
-|**Onglet PowerShell précédent**|Ctrl\+Maj\+Tab Ce raccourci ne fonctionne que si aucun fichier n’est ouvert sous aucun onglet PowerShell.|
-|**Onglet Windows PowerShell suivant**|Ctrl\+Tab Ce raccourci ne fonctionne que si aucun fichier n’est ouvert sous aucun onglet PowerShell.|
+|**Close PowerShell Tab**|CTRL\+W|
+|**New PowerShell Tab**|CTRL\+T|
+|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
+|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
 
-## <a name="bkmk_7"></a>Raccourcis clavier pour le démarrage et la fermeture
-Pour démarrer la console Windows PowerShell (PowerShell.exe) ou pour quitter Windows PowerShell ISE, vous pouvez utiliser les raccourcis clavier suivants.
+## <a name="bkmk_7"></a>Keyboard shortcuts for starting and exiting
+You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.
 
-|Action|Raccourci clavier|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Quitter**|Alt\+F4|
-|**Démarrer PowerShell.exe** (console Windows PowerShell)|Ctrl\+Maj\+P|
+|**Exit**|ALT\+F4|
+|**Start PowerShell.exe** (Windows PowerShell console)|CTRL\+SHIFT\+P|
 
-## Voir aussi
-[Utilisation de Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
-
-
-
-
-<!--HONumber=Jul16_HO1-->
-
+## See Also
+[Using the Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 
