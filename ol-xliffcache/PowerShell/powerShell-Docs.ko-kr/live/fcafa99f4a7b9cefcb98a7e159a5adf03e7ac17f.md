@@ -1,12 +1,12 @@
-# 향상된 Item cmdlet을 사용하여 기호화된 링크 조작
+# Interact with Symbolic links using improved Item cmdlets
 
-기호화된 링크를 지원하기 위해 **\*-Item** 및 몇 가지 관련 cmdlet이 확장되었습니다. 이제 **New-Item**을 사용하여 한 줄에 기호화된 링크를 만들 수 있습니다. 항목 관련 cmdlet(**Remove-Item, Get-ChildItem**)이 이전과 매우 유사하게 동작함을 알 수 있습니다.
+To support symbolic links, **\*-Item** and a few related cmdlets have been extended. Now you can create symbolic links in a single, simple line with **New-Item**. You’ll notice that the Item-related cmdlets (**Remove-Item, Get-ChildItem**) behave very similarly to before.
 
-다음에서는 새 기능의 몇 가지 사용 사례를 보여 줍니다.
+The following shows some use cases of the new capabilities:
 
 ## NEW-ITEM
 
-### 기호화된 링크 파일
+### SYMBOLIC LINK FILES
 
 ```powershell
 # Create a new symbolic link file named MySymLinkFile.txt in C:\Temp which links to $pshome\profile.ps1
@@ -20,7 +20,7 @@ New-Item -ItemType SymbolicLink -Path C:\Temp\MySymLinkFile.txt -Value $pshome\p
 New-Item -ItemType SymbolicLink -Name C:\Temp\MySymLinkFile.txt -Value $pshome\profile.ps1
 ```
 
-### 기호화된 링크 디렉터리
+### SYMBOLIC LINK DIRECTORIES
 
 ```powershell
 # Create a new symbolic link directory named MySymLinkDir in C:\Temp which links to the $pshome folder
@@ -35,14 +35,14 @@ New-Item -ItemType SymbolicLink -Path C:\Temp\MySymLinkDir -Value $pshome
 New-Item -ItemType SymbolicLink -Name C:\Temp\MySymLinkDir -Value $pshome
 ```
 
-### 하드 링크
+### HARD LINKS
 
 ```powershell
 New-Item -ItemType HardLink -Path C:\Temp -Name MyHardLinkFile.txt -Value $pshome\profile.ps1
 # Same combinations of Path and Name allowed as described above
 ```
 
-### 디렉터리 연결
+### DIRECTORY JUNCTIONS
 
 ```powershell
 New-Item -ItemType Junction -Path C:\Temp\MyJunctionDir -Value $pshome
@@ -113,8 +113,3 @@ Remove-Item C:\Temp\MySymLinkDir
 # Removes the files in the target directory and MySymLinkDir
 Remove-Item C:\Temp\MySymLinkDir -Force
 ```
-
-
-<!--HONumber=Jun16_HO4-->
-
-

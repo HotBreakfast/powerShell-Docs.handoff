@@ -1,77 +1,67 @@
 ---
-title: "MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: eslesar
-manager: dongill
-ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
-ms.openlocfilehash: 41177f2eb2bbcf2dddaf232141fb483efaaeeea5
-
+title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 
-# MSFT_DSCLocalConfigurationManager 클래스의 SendConfigurationApplyAsync 메서드
+# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
 
-구성 문서를 비동기적으로 관리 노드로 보내고, 구성 에이전트를 사용해 구성을 적용합니다.
+Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
 
-구문
+Syntax
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-매개 변수
+Parameters
 ----------
 
 *ConfigurationData* \[in\]  
-구성에 대한 환경 데이터입니다.
+The environment data for the configuration.
 
 *force* \[in\]  
-**true**이면 구성을 강제로 중지합니다.
+**true** to force the configuration to stop.
 
 *jobId* \[in\]  
-구성을 보낼 작업의 ID입니다.
+The ID of the job for which to send the configuration.
 
-## 반환 값
+## Return value
 ------------
 
-성공하면 0을 반환하고 그렇지 않으면 오류 코드를 반환합니다.
+Returns zero on success; otherwise returns an error code.
 
-## 설명
+## Remarks
 
-정적 메서드입니다.
+This is a static method.
 
-## 요구 사항
+## Requirements
 ------------
 >**MOF:** DscCore.mof
 
->**네임스페이스**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## 참고 항목
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-
-<!--HONumber=Jun16_HO4-->
 
 
