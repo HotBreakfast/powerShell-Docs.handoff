@@ -1,77 +1,67 @@
 ---
-title: "Método SendConfigurationApplyAsync de la clase MSFT_DSCLocalConfigurationManager"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: eslesar
-manager: dongill
-ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: c915ebd021ed20209bc491505d45cff2ac89f21d
-ms.openlocfilehash: 41177f2eb2bbcf2dddaf232141fb483efaaeeea5
-
+title:  SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
 
-# Método SendConfigurationApplyAsync de la clase MSFT_DSCLocalConfigurationManager
+# SendConfigurationApplyAsync method of the MSFT_DSCLocalConfigurationManager class
 
-Envía el documento de configuración de forma asincrónica al nodo administrado y usa el agente de configuración para aplicar la configuración.
+Sends the configuration document asynchronously to the managed node and uses the Configuration Agent to apply the configuration.
 
-Sintaxis
+Syntax
 ------
 
 ```mof
 uint32 SendConfigurationApplyAsync(
-  [in] uint8   ConfigurationData[],
-  [in] boolean force,
-  [in] string  jobId
+  [in] uint8   ConfigurationData[],
+  [in] boolean force,
+  [in] string  jobId
 );
 ```
 
-Parámetros
+Parameters
 ----------
 
 *ConfigurationData* \[in\]  
-Datos del entorno para la configuración.
+The environment data for the configuration.
 
 *force* \[in\]  
-**true** para forzar la configuración que se detendrá.
+**true** to force the configuration to stop.
 
 *jobId* \[in\]  
-Identificador del trabajo al que se enviará la configuración.
+The ID of the job for which to send the configuration.
 
-## Valor devuelto
+## Return value
 ------------
 
-Devuelve cero si se ejecuta correctamente; de lo contrario, devuelve un código de error.
+Returns zero on success; otherwise returns an error code.
 
-## Observaciones
+## Remarks
 
-Se trata de un método estático.
+This is a static method.
 
-## Requisitos
+## Requirements
 ------------
 >**MOF:** DscCore.mof
 
->**Espacio de nombres**: Root\Microsoft\Windows\DesiredStateConfiguration
+>**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
-## Vea también
+## See also
 
 
 [**MSFT_DSCLocalConfigurationManager**](msft-dsclocalconfigurationmanager.md)
 
 
- 
+ 
 
- 
+ 
 
-
-
-
-
-
-<!--HONumber=Jun16_HO4-->
 
 

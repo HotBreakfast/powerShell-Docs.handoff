@@ -1,162 +1,152 @@
 ---
-title: Accesibilidad en ISE de Windows PowerShell
-ms.date: 2016-05-11
-keywords: powershell,cmdlet
-description: 
-ms.topic: article
-author: jpjofre
-manager: dongill
-ms.prod: powershell
-ms.assetid: a078f9d1-dd6b-4323-b16d-0622cd993aa8
-translationtype: Human Translation
-ms.sourcegitcommit: 51b2182de7b563daefb9d64434bdc8b8ab5e0343
-ms.openlocfilehash: cdf1f553d0bea91e2dcd051faef42417ad0cbc7a
-
+title:  Accessibility in Windows PowerShell ISE
+ms.date:  2016-05-11
+keywords:  powershell,cmdlet
+description:  
+ms.topic:  article
+author:  jpjofre
+manager:  dongill
+ms.prod:  powershell
+ms.assetid:  a078f9d1-dd6b-4323-b16d-0622cd993aa8
 ---
 
-# Accesibilidad en ISE de Windows PowerShell
-En este tema se describen las características de accesibilidad del Entorno de scripting integrado (ISE) de Windows PowerShell® que pueden resultar útiles.
+# Accessibility in Windows PowerShell ISE
+This topic describes the accessibility features of Windows PowerShell® Integrated Scripting Environment (ISE) that you might find helpful.
 
-* [Cómo cambiar el tamaño y la ubicación de los paneles de consola y de scripts](#bkmk_1)
-* [Métodos abreviados de teclado para editar texto](#bkmk_2)
-* [Métodos abreviados de teclado para ejecutar scripts](#bkmk_3)
-* [Métodos abreviados de teclado para personalizar la vista](#bkmk_4)
-* [Métodos abreviados de teclado para depurar scripts](#bkmk_5)
-* [Métodos abreviados de teclado para las pestañas de Windows PowerShell](#bkmk_6)
-* [Métodos abreviados de teclado para iniciar y salir](#bkmk_7)
+* [How to change the size and location of the Console and Script Panes](#bkmk_1)
+* [Keyboard shortcuts for editing text](#bkmk_2)
+* [Keyboard shortcuts for running scripts](#bkmk_3)
+* [Keyboard shortcuts for customizing the view](#bkmk_4)
+* [Keyboard shortcuts for debugging scripts](#bkmk_5)
+* [Keyboard shortcuts for Windows PowerShell tabs](#bkmk_6)
+* [Keyboard shortcuts for starting and exiting](#bkmk_7)
 
-Microsoft tiene el compromiso de que todas las personas puedan utilizar fácilmente sus productos y servicios. En los siguientes temas se proporciona información sobre las características, los productos y los servicios que permiten que Windows PowerShell ISE sea más accesible para las personas con discapacidades.
+Microsoft is committed to making its products and services easier for everyone to use. The following topics provide information about the features, products, and services that make Windows PowerShell ISE more accessible for people with disabilities.
 
-Windows PowerShell ISE admite el modo de contraste alto. Para las personas con discapacidad visual, existe información de punto de interrupción disponible a través de los cmdlets de administración de puntos de interrupción, como [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) y [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). Para obtener más información, consulte "Cómo administrar los puntos de interrupción" en [Cómo depurar scripts en ISE de Windows PowerShell](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). Además de las características de accesibilidad y las utilidades de Microsoft Windows, las siguientes características hacen que Windows PowerShell ISE sea más accesible para las personas con discapacidades:
+Windows PowerShell ISE supports high contrast mode. For the visually impaired, breakpoint information is available through the cmdlets for managing breakpoints, such as [Get-PSBreakpoint](https://technet.microsoft.com/en-us/library/0bf48936-00ab-411c-b5e0-9b10a812a3c6) and [Set-PSBreakpoint](https://technet.microsoft.com/en-us/library/6afd5d2c-a285-4796-8607-3cbf49471420). For more information please see “How to manage breakpoints” in [How to Debug Scripts in the Windows PowerShell ISE](../core-powershell/ise/How-to-Debug-Scripts-in-Windows-PowerShell-ISE.md#bkmk_1). In addition to accessibility features and utilities in Microsoft Windows, the following features make Windows PowerShell ISE more accessible for people with disabilities:
 
--   Métodos abreviados de teclado.
+-   Keyboard Shortcuts
 
--   La tabla de colores de sintaxis y la capacidad de modificar otras opciones de color mediante el objeto de scripting [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb).
+-   Syntax Coloring Table and the ability to modify several other color settings using the [$psISE.Options](https://technet.microsoft.com/en-us/library/75e2a76f-f3d1-490b-ad5d-e3829946aabb) scripting object.
 
--   Cambio de tamaño del texto.
+-   Text Size Change
 
-## <a name="bkmk_1"></a>Cómo cambiar el tamaño y la ubicación de los paneles de consola y de scripts
-Puede usar los siguientes pasos para cambiar el tamaño y la ubicación del panel de consola y el panel de scripts. Al abrir de nuevo Windows PowerShell ISE, se conservarán los cambios realizados en el tamaño y la ubicación.
+## <a name="bkmk_1"></a>How to change the size and location of the Console and Script Panes
+You can use the following steps to change the size and location of the Console Pane and the Script Pane. When you open the Windows PowerShell ISE again, the size and location changes you made will be retained.
 
-### Para cambiar el tamaño del panel de scripts y el panel de consola
+### To resize the Script Pane and Console Pane
 
-1.  Detenga el puntero en la línea de división entre el panel de scripts y el panel de consola.
+1.  Pause the pointer on the split line between the Script Pane and Console Pane.
 
-2.  Cuando el puntero del mouse cambie a una flecha con dos puntas, arrastre el borde para cambiar el tamaño del panel.
+2.  When the mouse pointer changes to a two\-headed arrow, drag the border to change the size of the pane.
 
-### Para mover el panel de scripts y el panel de consola
-Realice una de las siguientes acciones:
+### To move the Script Pane and Console Pane
+Do one of the following:
 
--   Para mover el panel de scripts encima del panel de consola, presione **CTRL\+1** o, en la barra de herramientas, haga clic en el icono **Mostrar panel de scripts arriba** o, en el menú **Ver**, haga clic en **Mostrar panel de scripts arriba**.
+-   To move the Script Pane above the Console Pane, press **CTRL\+1** or, on the toolbar, click the **Show Script Pane Top** icon, or in the **View** menu, click **Show Script Pane Top**.
 
--   Para mover el panel de scripts a la derecha del panel de consola, presione **CTRL\+2** o, en la barra de herramientas, haga clic en el icono **Mostrar panel de scripts a la derecha** o, en el menú **Ver**, haga clic en **Mostrar panel de scripts a la derecha**.
+-   To move the Script Pane to the right of the Console Pane, press **CTRL\+2** or, on the toolbar, click the **Show Script Pane Right** icon, or in the **View** menu, click **Show Script Pane Right**.
 
--   Para maximizar el panel de scripts, presione **CTRL\+3** o, en la barra de herramientas, haga clic en el icono **Mostrar panel de scripts maximizado** o, en el menú **Ver**, haga clic en **Mostrar panel de scripts maximizado**.
+-   To maximize the Script Pane, press **CTRL\+3** or, on the toolbar, click the **Show Script Pane Maximized** icon, or in the **View** menu, click **Show Script Pane Maximized**.
 
--   Para maximizar el panel de consola y ocultar el panel de scripts, en el extremo derecho de la fila de pestañas, haga clic en el icono **Ocultar panel de scripts** y, en el menú **Ver**, haga clic para anular la selección de la opción de menú **Mostrar panel de scripts**.
+-   To maximize the Console Pane and hide the Script Pane, on the far right edge of the row of tabs, click the **Hide Script Pane** icon, in the **View** menu, click to deselect the **Show Script Pane** menu option.
 
--   Para mostrar el panel de scripts cuando el panel de consola esté maximizado, en el extremo derecho de la fila de pestañas, haga clic en el icono **Mostrar panel de scripts** o, en el menú **Ver**, haga clic para seleccionar la opción de menú **Mostrar panel de scripts**.
+-   To display the Script Pane when the Console Pane is maximized, on the far right edge of the row of tabs, click the **Show Script Pane** icon, or in the **View** menu, click to select the **Show Script Pane** menu option.
 
-## <a name="bkmk_2"></a>Métodos abreviados de teclado para editar texto
-Puede usar los siguientes métodos abreviados de teclado cuando edite texto.
+## <a name="bkmk_2"></a>Keyboard shortcuts for editing text
+You can use the following keyboard shortcuts when you edit text.
 
-|Acción|Métodos abreviados de teclado.|Usar en|
+|Action|Keyboard Shortcuts|Use in|
 |----------|----------------------|----------|
-|**Copiar**|CTRL\+C|Panel de scripts, panel de consola|
-|**Cortar**|CTRL\+X|Panel de scripts, panel de consola|
-|**Buscar en el script**|CTRL\+F|Panel de scripts|
-|**Buscar siguiente en el script**|F3|Panel de scripts|
-|**Buscar anterior en el script**|MAYÚS\+F3|Panel de scripts|
-|**Pegar**|CTRL\+V|Panel de scripts, panel de consola|
-|**Rehacer**|CTRL\+Y|Panel de scripts, panel de consola|
-|**Reemplazar en el script**|CTRL\+H|Panel de scripts|
-|**Guardar**|CTRL\+S|Panel de scripts|
-|**Seleccionar todo**|CTRL\+A|Panel de scripts, panel de consola|
-|**Deshacer**|CTRL\+Z|Panel de scripts, panel de consola|
+|**Copy**|CTRL\+C|Script Pane, Console Pane|
+|**Cut**|CTRL\+X|Script Pane, Console Pane|
+|**Find in Script**|CTRL\+F|Script Pane|
+|**Find Next in Script**|F3|Script Pane|
+|**Find Previous in Script**|SHIFT\+F3|Script Pane|
+|**Paste**|CTRL\+V|Script Pane, Console Pane|
+|**Redo**|CTRL\+Y|Script Pane, Console Pane|
+|**Replace in Script**|CTRL\+H|Script Pane|
+|**Save**|CTRL\+S|Script Pane|
+|**Select All**|CTRL\+A|Script Pane, Console Pane|
+|**Undo**|CTRL\+Z|Script Pane, Console Pane|
 
-## <a name="bkmk_3"></a>Métodos abreviados de teclado para ejecutar scripts
-Puede usar los siguientes métodos abreviados de teclado cuando ejecute scripts en el panel de scripts.
+## <a name="bkmk_3"></a>Keyboard shortcuts for running scripts
+You can use the following keyboard shortcuts when you run scripts in the Script Pane.
 
-|Acción|Método abreviado de teclado|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
 |**New**|CTRL\+N|
-|**Abrir**|CTRL\+O|
-|**Ejecutar**|F5|
-|**Ejecutar selección**|F8|
-|**Detener la ejecución**|CTRL\+INTERRUMPIR. CTRL\+C se puede usar cuando el contexto no es ambiguo (cuando no hay texto seleccionado).|
-|**Tabulación** (para el siguiente script)|CTRL\+TAB **Nota:** El desplazamiento con la tecla TAB al siguiente script solo funciona si hay una sola pestaña de PowerShell abierta, o bien si hay más de una abierta, pero el foco está en el panel de scripts.|
-|**Tabulación** (para el script anterior)|CTRL\+MAYÚS\+TAB **Nota:** El desplazamiento con la tecla TAB al script anterior solo funciona si hay una sola pestaña de PowerShell abierta, o si hay más de una abierta, pero el foco está en el panel de scripts.|
+|**Open**|CTRL\+O|
+|**Run**|F5|
+|**Run Selection**|F8|
+|**Stop Execution**|CTRL\+BREAK. CTRL\+C can be used when the context is unambiguous (when there is no text selected).|
+|**Tab** (to next script)|CTRL\+TAB **Note:** Tab to next script works only when you have a single PowerShell tab open, or when you have more than one PowerShell tab open, but the focus is in the Script Pane.|
+|**Tab** (to previous script)|CTRL\+SHIFT\+TAB **Note:** Tab to previous script works when you have only one PowerShell tab open, or if you have more  than one PowerShell tab open, and the focus is in the Script Pane.|
 
-## <a name="bkmk_4"></a>Métodos abreviados de teclado para personalizar la vista
-Puede usar los siguientes métodos abreviados de teclado cuando personalice la vista en Windows PowerShell ISE. Son accesibles desde todos los paneles de la aplicación.
+## <a name="bkmk_4"></a>Keyboard shortcuts for customizing the view
+You can use the following keyboard shortcuts to customize the view in Windows PowerShell ISE. They are accessible from all the panes in the application.
 
-|Acción|Método abreviado de teclado|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Ir a panel de consola**|CTRL\+D|
-|**Ir al panel de scripts**|CTRL\+I|
-|**Ir al panel de scripts**|CTRL\+R|
-|**Ocultar el panel de scripts**|CTRL\+R|
+|**Go to Console Pane**|CTRL\+D|
+|**Go to Script Pane**|CTRL\+I|
+|**Show Script Pane**|CTRL\+R|
+|**Hide Script Pane**|CTRL\+R|
 ||
-|**Subir el panel de scripts**|CTRL\+1|
-|**Mover el panel de scripts a la derecha**|CTRL\+2|
-|**Maximizar el panel de scripts**|CTRL\+3|
-|**Acercar**|CTRL\+SIGNO MÁS|
-|**Alejar**|CTRL\+SIGNO MENOS|
+|**Move Script Pane Up**|CTRL\+1|
+|**Move Script Pane Right**|CTRL\+2|
+|**Maximize Script Pane**|CTRL\+3|
+|**Zoom In**|CTRL\+PLUS SIGN|
+|**Zoom Out**|CTRL\+MINUS SIGN|
 
-## <a name="bkmk_5"></a>Métodos abreviados de teclado para depurar scripts
-Puede usar los siguientes métodos abreviados de teclado cuando depure scripts.
+## <a name="bkmk_5"></a>Keyboard shortcuts for debugging scripts
+You can use the following keyboard shortcuts when you debug scripts.
 
-|Acción|Método abreviado de teclado|Usar en|
+|Action|Keyboard Shortcut|Use in|
 |----------|---------------------|----------|
-|**Ejecutar o continuar**|F5|Panel de scripts, al depurar un script|
-|**Depurar paso a paso por instrucciones**|F11|Panel de scripts, al depurar un script|
-|**Depurar paso a paso por procedimientos**|F10|Panel de scripts, al depurar un script|
-|**Depurar paso a paso para salir**|MAYÚS\+F11|Panel de scripts, al depurar un script|
-|**Mostrar pila de llamadas**|CTRL\+MAYÚS\+D|Panel de scripts, al depurar un script|
-|**Mostrar puntos de interrupción**|CTRL\+MAYÚS\+L|Panel de scripts, al depurar un script|
-|**Alternar punto de interrupción**|F9|Panel de scripts, al depurar un script|
-|**Quitar todos los puntos de interrupción**|CTRL\+MAYÚS\+F9|Panel de scripts, al depurar un script|
-|**Detener el depurador**|MAYÚS\+F5|Panel de scripts, al depurar un script|
+|**Run/Continue**|F5|Script Pane, when debugging a script|
+|**Step Into**|F11|Script Pane, when debugging a script|
+|**Step Over**|F10|Script Pane, when debugging a script|
+|**Step Out**|SHIFT\+F11|Script Pane, when debugging a script|
+|**Display Call Stack**|CTRL\+SHIFT\+D|Script Pane, when debugging a script|
+|**List Breakpoints**|CTRL\+SHIFT\+L|Script Pane, when debugging a script|
+|**Toggle Breakpoint**|F9|Script Pane, when debugging a script|
+|**Remove All Breakpoints**|CTRL\+SHIFT\+F9|Script Pane, when debugging a script|
+|**Stop Debugger**|SHIFT\+F5|Script Pane, when debugging a script|
 
 > [!NOTE]
-> También puede usar los métodos abreviados de teclado diseñados para la consola de Windows PowerShell cuando depure scripts en Windows PowerShell ISE. Para usar estos métodos abreviados, debe escribir el método abreviado en el panel de consola y presionar ENTRAR.
+> You can also use the keyboard shortcuts designed for the Windows PowerShell console when you debug scripts in Windows PowerShell ISE. To use these shortcuts, you must type the shortcut in the Console Pane and press ENTER.
 
-|Acción|Método abreviado de teclado|Usar en|
+|Action|Keyboard Shortcut|Use in|
 |----------|---------------------|----------|
-|**Continuar**|C|Panel de consola, al depurar un script|
-|**Depurar paso a paso por instrucciones**|S|Panel de consola, al depurar un script|
-|**Depurar paso a paso por procedimientos**|V|Panel de consola, al depurar un script|
-|**Depurar paso a paso para salir**|O|Panel de consola, al depurar un script|
-|**Repetir el último comando** (para depurar paso a paso por instrucciones o por procedimientos)|ENTRAR|Panel de consola, al depurar un script|
-|**Mostrar pila de llamadas**|K|Panel de consola, al depurar un script|
-|**Detener la depuración**|Q|Panel de consola, al depurar un script|
-|**Enumerar el script**|L|Panel de consola, al depurar un script|
-|**Mostrar los comandos de depuración de la consola**|H o ?|Panel de consola, al depurar un script|
+|**Continue**|C|Console Pane, when debugging a script|
+|**Step Into**|S|Console Pane, when debugging a script|
+|**Step Over**|V|Console Pane, when debugging a script|
+|**Step Out**|O|Console Pane, when debugging a script|
+|**Repeat Last Command** (for Step Into or Step Over)|ENTER|Console Pane, when debugging a script|
+|**Display Call Stack**|K|Console Pane, when debugging a script|
+|**Stop Debugging**|Q|Console Pane, when debugging a script|
+|**List the Script**|L|Console Pane, when debugging a script|
+|**Display Console Debugging Commands**|H or ?|Console Pane, when debugging a script|
 
-## <a name="bkmk_6"></a>Métodos abreviados de teclado para las pestañas de Windows PowerShell
-Puede usar los siguientes métodos abreviados de teclado cuando use las pestañas de Windows PowerShell.
+## <a name="bkmk_6"></a>Keyboard shortcuts for Windows PowerShell tabs
+You can use the following keyboard shortcuts when you use Windows PowerShell tabs.
 
-|Acción|Método abreviado de teclado|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Cerrar la pestaña de PowerShell**|CTRL\+W|
-|**Nueva pestaña de PowerShell**|CTRL\+T|
-|**Pestaña de PowerShell anterior**|CTRL\+MAYÚS\+TAB. Este método abreviado solo funciona si no hay archivos abiertos en ninguna pestaña de PowerShell.|
-|**Pestaña de Windows PowerShell siguiente**|CTRL\+TAB. Este método abreviado solo funciona si no hay archivos abiertos en ninguna pestaña de PowerShell.|
+|**Close PowerShell Tab**|CTRL\+W|
+|**New PowerShell Tab**|CTRL\+T|
+|**Previous PowerShell tab**|CTRL\+SHIFT\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
+|**Next Windows PowerShell tab**|CTRL\+TAB. This shortcut works only when no files are open on any PowerShell tab.|
 
-## <a name="bkmk_7"></a>Métodos abreviados de teclado para iniciar y salir
-Puede usar los siguientes métodos abreviados de teclado para iniciar la consola de Windows PowerShell (PowerShell.exe) o para salir de Windows PowerShell ISE.
+## <a name="bkmk_7"></a>Keyboard shortcuts for starting and exiting
+You can use the following keyboard shortcuts to start the Windows PowerShell console (PowerShell.exe) or to exit Windows PowerShell ISE.
 
-|Acción|Método abreviado de teclado|
+|Action|Keyboard Shortcut|
 |----------|---------------------|
-|**Salir**|ALT\+F4|
-|**Iniciar PowerShell.exe** (consola de Windows PowerShell)|CTRL\+MAYÚS\+P|
+|**Exit**|ALT\+F4|
+|**Start PowerShell.exe** (Windows PowerShell console)|CTRL\+SHIFT\+P|
 
-## Consulte también
-[Usar Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
-
-
-
-
-<!--HONumber=Jul16_HO1-->
-
+## See Also
+[Using the Windows PowerShell ISE](../core-powershell/ise/Using-the-Windows-PowerShell-ISE.md)
 

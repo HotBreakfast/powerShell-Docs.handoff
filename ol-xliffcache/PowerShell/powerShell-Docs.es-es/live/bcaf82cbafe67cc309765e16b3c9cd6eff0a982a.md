@@ -1,25 +1,21 @@
 ---
-title: Recursos de DSC Package
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: eslesar
-manager: dongill
-ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: 6477ae8575c83fc24150f9502515ff5b82bc8198
-ms.openlocfilehash: bcaf82cbafe67cc309765e16b3c9cd6eff0a982a
-
+title:   DSC Package Resource
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
-# Recursos de DSC Package
+# DSC Package Resource
 
-> Se aplica a: Windows PowerShell 4.0, Windows PowerShell 5.0
+> Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
 
-El recurso **Package** de la configuración de estado deseado (DSC) de Windows PowerShell ofrece un mecanismo para instalar o desinstalar paquetes, como los paquetes de Windows Installer y setup.exe, en un nodo de destino.
+The **Package** resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to install or uninstall packages, such as Windows Installer and setup.exe packages, on a target node.
 
-## Sintaxis
+## Syntax
 
 ```
 Package [string] #ResourceName
@@ -36,22 +32,22 @@ Package [string] #ResourceName
 }
 ```
 
-## Propiedades
-|  Propiedad  |  Descripción   | 
+## Properties
+|  Property  |  Description   | 
 |---|---| 
-| Nombre| Indica el nombre del paquete para el que quiere garantizar un estado específico.| 
-| Ruta| Indica la ruta de acceso donde reside el paquete.| 
-| ProductId| Indica el id. de producto que identifica el paquete.| 
-| Argumentos| Muestra una cadena de argumentos que se pasarán al paquete tal y como se faciliten.| 
-| Credential| Proporciona acceso al paquete en un origen remoto. Esta propiedad no se utiliza para instalar el paquete. El paquete siempre se instala en el sistema local.| 
-| Ensure| Indica si el paquete está instalado. Establezca esta propiedad en "Absent" para asegurarse de que el paquete no esté instalado (o se desinstale el paquete si está instalado). Establézcala en "Present" (el valor predeterminado) para asegurarse de que el paquete esté instalado.| 
-| LogPath| Indica la ruta de acceso completa donde quiere que el proveedor guarde un archivo de registro para instalar o desinstalar el paquete.| 
-| DependsOn | Indica que la configuración de otro recurso debe ejecutarse antes de que se configure este recurso. Por ejemplo, si el elemento ID del bloque del script de configuración del recurso que quiere ejecutar primero es **ResourceName** y su tipo es **ResourceType**, la sintaxis para usar esta propiedad es `DependsOn = "[ResourceType]ResourceName"``.| 
-| ReturnCode| Indica el código de retorno esperado. Si el código de retorno real no a coincide con el valor esperado facilitado aquí, la configuración devolverá un error.| 
+| Name| Indicates the name of the package for which you want to ensure a specific state.| 
+| Path| Indicates the path where the package resides.| 
+| ProductId| Indicates the product ID that uniquely identifies the package.| 
+| Arguments| Lists a string of arguments that will be passed to the package exactly as provided.| 
+| Credential| Provides access to the package on a remote source. This property is not used to install the package. The package is always installed on the local system.| 
+| Ensure| Indicates if the package is installed. Set this property to "Absent" to ensure the package is not installed (or uninstall the package if it is installed). Set it to "Present" (the default value) to ensure the package is installed.| 
+| LogPath| Indicates the full path where you want the provider to save a log file to install or uninstall the package.| 
+| DependsOn | Indicates that the configuration of another resource must run before this resource is configured. For example, if the ID of the resource configuration script block that you want to run first is **ResourceName** and its type is **ResourceType**, the syntax for using this property is `DependsOn = "[ResourceType]ResourceName"``.| 
+| ReturnCode| Indicates the expected return code. If the actual return code does not match the expected value provided here, the configuration will return an error.| 
 
-## Ejemplo
+## Example
 
-En este ejemplo se ejecuta al instalador .msi que se encuentra en la ruta de acceso especificada y tiene el identificador de producto especificado.
+This example runs the .msi installer that is located at the specified path and has the specified product ID.
 
 ```powershell
 Package PackageExample
@@ -62,10 +58,4 @@ Package PackageExample
     ProductId = "ACDDCDAF-80C6-41E6-A1B9-8ABD8A05027E"
 } 
 ```
-
-
-
-
-<!--HONumber=Jun16_HO4-->
-
 

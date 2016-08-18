@@ -1,17 +1,12 @@
-# Compatibilidad del control de versiones de módulos en paralelo para recursos de DSC
+# Side-By-Side Module Versioning Support for DSC Resources
 
-Los módulos que contienen recursos de DSC pueden instalarse en paralelo y las configuraciones de DSC pueden usar una versión específica del recurso que está instalado en el sistema.
+Modules containing DSC resources can be installed side-by-side, and DSC configurations can use a specific version of the resource that is installed on the system.
 
-Para más información, consulte [Uso de recursos con varias versiones](https://msdn.microsoft.com/powershell/dsc/sxsresource).
+For more information, see [Using resources with multiple versions](https://msdn.microsoft.com/powershell/dsc/sxsresource).
 
-## Problemas conocidos
+## Known issues
 
-En esta versión, se conocen los siguientes problemas de instalación en paralelo:
+In this release, the following are known issues of side-by-side installation:
 
--   No se admite el uso de dos versiones diferentes del recurso de DSC en la misma configuración.
-
-
-
-<!--HONumber=Jul16_HO1-->
-
+-   Using two different versions of the DSC resource within the same configuration is not supported.
 
