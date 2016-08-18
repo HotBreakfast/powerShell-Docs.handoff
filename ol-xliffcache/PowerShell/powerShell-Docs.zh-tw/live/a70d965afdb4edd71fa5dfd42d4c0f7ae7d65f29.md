@@ -1,35 +1,31 @@
-# 呼叫基底類別建構函式
+# Call Base Class Constructor
 
-若要從子類別中呼叫基底類別建構函式，請使用關鍵字 **base**：
+To call a base class constructor from a subclass, use the keyword **base**:
 
 ```PowerShell
 class A 
 {
-    [int]$a
+	[int]$a
 
-    A([int]$a)
-    {
-        $this.a = $a
-    }
+	A([int]$a)
+	{
+		$this.a = $a
+	}
 }
 
 class B : A
 {
-    B() : base(103) {}
+	B() : base(103) {}
 }
 
 [B]::new().a # return 103
 ```
 
-如果基底類別有預設的 (無參數) 建構函式，您可以省略明確的建構函式呼叫︰
+If a base class has a default (no parameter) constructor, you can omit an explicit constructor call:
 
 ```PowerShell
 class C : B
 {
-    C([int]$c) {}
+	C([int]$c) {}
 }
 ```
-
-<!--HONumber=Jun16_HO4-->
-
-
