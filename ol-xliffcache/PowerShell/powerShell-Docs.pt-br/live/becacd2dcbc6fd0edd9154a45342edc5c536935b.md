@@ -1,25 +1,23 @@
 ---
-title: "Escrever ajuda para configurações de DSC"
-ms.date: 2016-05-16
-keywords: powershell,DSC
-description: 
-ms.topic: article
-author: eslesar
-manager: dongill
-ms.prod: powershell
-translationtype: Human Translation
-ms.sourcegitcommit: f4dc0265246195cc2320bcaf9d7f9abf7b1405a3
-ms.openlocfilehash: becacd2dcbc6fd0edd9154a45342edc5c536935b
-
+title:   Writing help for DSC configurations
+ms.date:  2016-05-16
+keywords:  powershell,DSC
+description:  
+ms.topic:  article
+author:  eslesar
+manager:  dongill
+ms.prod:  powershell
 ---
 
-# Escrever ajuda para configurações de DSC
+# Writing help for DSC configurations
 
->Aplica-se a: Windows Windows PowerShell 5.0
+>Applies To: Windows Windows PowerShell 5.0
 
-Você pode usar a ajuda baseada em comentários em configurações de DSC. Os usuários podem acessar a ajuda chamando a função de configuração com `-?` ou usando o cmdlet [Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx). Para saber mais sobre a ajuda baseada em comentários do PowerShell, veja [about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
+You can use comment-based help in DSC configurations. Users can access the help by calling the configuration function with `-?`, or by using the 
+[Get-Help](https://technet.microsoft.com/en-us/library/hh849696.aspx) cmdlet. For more information about PowerShell comment-based help, see 
+[about_Comment_Based_Help](https://technet.microsoft.com/en-us/library/hh847834.aspx).
 
-O exemplo a seguir mostra um script que contém uma configuração e ajuda baseada em comentários para cada configuração:
+The following example shows a script that contains a configuration and comment-based help for it:
 
 ```powershell
 <#
@@ -54,18 +52,19 @@ This example will be labeled "EXAMPLE 2" when help is displayed to the user.
 
 configuration HelpSample1
 {
-    param([string]$ComputerName,[string]$FilePath)
-    File f
-    {
-        Contents="Hello World"
-        DestinationPath = "c:\Destination.txt"
-    }
+    param([string]$ComputerName,[string]$FilePath)
+    File f
+    {
+		Contents="Hello World"
+        DestinationPath = "c:\Destination.txt"
+    }
 }
 ```
 
-## Exibindo a ajuda de configuração
+## Viewing configuration help
 
-Para exibir a ajuda para uma configuração, use o cmdlet **Get-Help** com o nome da função, ou digite o nome da função seguido por `-?`. Veja a seguir a saída da função anterior quando passada para **Get-Help**:
+To view the help for a configuration, use the **Get-Help** cmdlet with the name of the function, or type the name of the function followed by `-?`. The following is the output
+of the previous function when passed to **Get-Help**:
 
 ```powershell
 PS C:\> Get-Help HelpSample1
@@ -94,12 +93,6 @@ REMARKS
     For technical information, type: "get-help HelpSample1 -full".
 ```
 
-## Consulte Também
-* [Configurações DSC](configurations.md)
-
-
-
-
-<!--HONumber=Jun16_HO4-->
-
+## See Also
+* [DSC Configurations](configurations.md)
 
